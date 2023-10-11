@@ -68,11 +68,11 @@ function PageSearch() {
         suffix={suffix}
       />
       <div className='searchCount'>
-        {searchTerm
-          ? `${filteredApps.length} matching apps`
-          : `${apps.length} apps and ${tools.length} forensic tools in the database. You can ` +
-            <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>}
-      </div>
+  {searchTerm
+    ? `${filteredApps.length} matching apps`
+    : `${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
+    {!searchTerm && <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>}!
+</div>
 
       </div>
       <Row gutter={[16, 16]} justify={'center'}>
