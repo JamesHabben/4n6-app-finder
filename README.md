@@ -6,9 +6,9 @@ This common inquiry among forensic examiners led to the creation of the 4n6 App 
 
 ## Using the Project
 
-Check out the live build [here](https://4n6appfinder.habben.net).
+Check out the live build at https://4n6appfinder.habben.net
 
-This project was not meant to be run on local computers and is designed to run from a live web server. Simply click the link above to get going.
+This project was not meant to be run by anyone on local computers and is designed to run from a live web server. Simply click the link above to get going.
 
 ## Contributing
 
@@ -23,17 +23,17 @@ We welcome contributions to make this project more comprehensive and accurate. H
 
 Your insights and expertise will help make 4n6 App Finder a valuable resource for the digital forensics community!
 
-## Core Apps Database Structure (`apps-core.json`)
+## Core Apps Database Structure
 
 Each record in the `apps-core.json` file represents an app and follows this structure:
 
-- `appName`: (String) The official name of the app.
-- `icon`: (String) Link to an icon image for the app.
-- `appWebsite`: (String) Official website of the app.
-- `appleStoreUrl`: (String) URLs to the app on various app stores.
-- `googlePlayUrl`: (String) URLs to the app on various app stores.
-- `notes`: (String) Any additional information or context about the app.
-- `alternateNames`: (Array) Other names or aliases the app might go by.
+- `appName`: The official name of the app.
+- `icon`: Link to an icon image for the app.
+- `appWebsite`: Official website of the app.
+- `appleStoreUrl`: URL to the app on various app stores.
+- `googlePlayUrl`: URL to the app on various app stores.
+- `notes`: Any additional information or context about the app.
+- `alternateNames`: (Array of Strings) Other names or aliases the app might go by.
 
 This structure helps to organize information about each app in a consistent manner, making data retrieval straightforward.
 
