@@ -3122,16 +3122,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames":[]
-    },
-    {
-        "appName": "TikTok Lite",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "alternateNames":[]
+        "alternateNames":["TikTok Lite"]
     },
     {
         "appName": "Tinder",
@@ -3266,7 +3257,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames":[]
+        "alternateNames":["Twitter", "X"]
     },
     {
         "appName": "Twitterrific",
@@ -3302,16 +3293,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames":[]
-    },
-    {
-        "appName": "UC Browser Lite",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "alternateNames":[]
+        "alternateNames":["UC Browser Lite"]
     },
     {
         "appName": "Unigram",
@@ -4055,6 +4037,15 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "T-Mobile Digits",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "The app doesn't sync data in the iOS backup so tools cannot parse from there. The data can be extracted from the web interface and is located in the 'IndexDB' found in the browser Dev Tools.",
         "alternateNames":[]
     },
     {
