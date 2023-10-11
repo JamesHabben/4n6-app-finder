@@ -1,0 +1,50 @@
+[
+    {
+        "toolShortName": "Oxygen",
+        "toolLongName": "Oxygen Forensic Detective",
+        "website": "https://teeltech.com/mobile-device-forensic-tools/oxygen-forensic-detective/",
+        "toolVersion": "16.0.0.114",
+        "toolReleaseDate": "2023-09-01",
+        "icon": "tool-logo-oxygen.png",
+        "artifactListFile": "artifacts-oxygen.json",
+        "appNameKey": "Application",
+        "documentationLocation": "In the app, click the upper right menu drop down and look for 'Supported Applications' in the tiles.",
+        "extractionNotes": "App support data is in app only, but fairly clean in a table format making it easy to understand."
+    },
+    {
+        "toolShortName": "Cellebrite",
+        "toolLongName": "Cellebrite Physical Analyzer",
+        "website": "https://cellebrite.com/en/physical-analyzer/",
+        "toolVersion": "7.62",
+        "toolReleaseDate": "2023-05-01",
+        "icon": "tool-logo-cellebrite-pa.png",
+        "artifactListFile": "artifacts-cellebrite.json",
+        "appNameKey": "App Name",
+        "documentationLocation": "",
+        "extractionNotes": ""
+    },
+    {
+        "toolShortName": "Magnet",
+        "toolLongName": "Magnet Axiom",
+        "website": "https://www.magnetforensics.com/products/magnet-axiom/",
+        "toolVersion": "7.5",
+        "toolReleaseDate": "2023-09-06",
+        "icon": "tool-logo-magnet.png",
+        "artifactListFile": "artifacts-magnet.json",
+        "appNameKey": "Application",
+        "documentationLocation": "",
+        "extractionNotes": ""
+    },
+    {
+        "toolShortName": "iLEAPP",
+        "toolLongName": "iLEAPP iOS Parser",
+        "website": "https://github.com/abrignoni/iLEAPP",
+        "toolVersion": "",
+        "toolReleaseDate": "2023-10-09",
+        "icon": "tool-logo-ileapp.jpg",
+        "artifactListFile": "artifacts-ileapp.json",
+        "appNameKey": "name",
+        "documentationLocation": "",
+        "extractionNotes": ""
+    }
+]

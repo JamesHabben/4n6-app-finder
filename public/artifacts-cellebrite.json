@@ -1,0 +1,612 @@
+[
+    {
+        "App Name": "Bit Pay",
+        "Supported versions": "14.7.8",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Any.DO",
+        "Supported versions": "5.3.0;4.39.7;4.39.5;4.39.15",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "ASKfm",
+        "Supported versions": "4.58;4.53;4.51",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Azar",
+        "Supported versions": "1.43.1;1.41.0;1.40.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Badoo",
+        "Supported versions": "5.168.0;5.148.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Baidu Maps",
+        "Supported versions": "10.23.0;10.21.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Booking.com",
+        "Supported versions": "22.1.1;22.0.2;23.9",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Calendar",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Calls",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Chrome",
+        "Supported versions": "110.5481.114;83.0.4103.88;80.3987.95;108.0.5359.52",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Coinbase",
+        "Supported versions": "28.17",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Confide",
+        "Supported versions": "9.3.3;9.3.1;9.2.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Ctrip",
+        "Supported versions": "7.5.4;7.5.1;7.4.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "DJI GO",
+        "Supported versions": "3.1.62;3.1.60",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "DJI Go 4",
+        "Supported versions": "4.3.32",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Dropbox",
+        "Supported versions": "192.2;178.2;174.2",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Email",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Email-iCloud (iOS)",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Evernote",
+        "Supported versions": "8.24.6",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Expedia",
+        "Supported versions": "20.9",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Facebook",
+        "Supported versions": "405.1;394;276.0;274.0;272.0;266.0;263.0;262.0;260.0;257.0;254.0;251.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Facebook Messenger",
+        "Supported versions": "406.0.0.30.114;390.0.0.20.104;271.0;270.1;269.0;266.0;258.0;256.0;255.0;251.0;249.0;246.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Firefox",
+        "Supported versions": "110.0;107.2;26.0;23.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Fitbit",
+        "Supported versions": "3.12.1;3.23;3.16;3.13",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Flipboard",
+        "Supported versions": "4.2.76;4.2.68;4.2.65;4.2.64",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Foursquare",
+        "Supported versions": "11.16.7;11.16.2;11.16.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Garmin Connect",
+        "Supported versions": "4.31.2;4.25.2;4.26",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Glide",
+        "Supported versions": "6.3.16",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Gmail",
+        "Supported versions": "6.0.221113",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Gmail/Inbox",
+        "Supported versions": "6.0.200531;6.0.200308;6.0.200224;6.0.200209;6.0.200112;6.0.191215",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Google Docs",
+        "Supported versions": "1.2020.8202;1.2020.22203;1.2020.2203;1.2019.49203",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Google Drive",
+        "Supported versions": "4.2020.26200;4.2020.23200;4.2020.20202;4.2020.12203;4.2020.08201;4.2020.06203;4.2020.02201;4.2019.49206",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Google Maps",
+        "Supported versions": "6.55.0;5.37.0;6.47;5.46;5.45;5.44;5.40;5.38;5.35;5.34",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Google photos",
+        "Supported versions": "5.0;4.53;4.46;4.43;4.40;4.35",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Google Tasks",
+        "Supported versions": "1.8.200124;1.7.191126;1.11.200513",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Google Translate",
+        "Supported versions": "6.9.0;6.6.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Grindr",
+        "Supported versions": "6.4.3;6.2.3;6.16.1;6.14.0;6.11.1;6.1.0;6.0.2;5.23.3",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "GroupMe",
+        "Supported versions": "5.41.0;5.40.0;5.39.0;5.38.0;5.36.0;5.3.6.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Growlr",
+        "Supported versions": "12.0;11.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Hangouts",
+        "Supported versions": "27.0.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "HERE Maps",
+        "Supported versions": "2.0.55;2.0.52",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Hide My Email",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "hike messenger",
+        "Supported versions": "6.3.16;6.2.191;6.2.161;6.2.151",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Hot or Not",
+        "Supported versions": "5.168.1;5.154.0;5.148.0;5.145.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "ICQ",
+        "Supported versions": "8.3.1;9.1;8.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "imo",
+        "Supported versions": "2023.02.0202;2020.5.3;2020.3.1;2020.2.1;2020.1.1;2019.12.5",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Instagram",
+        "Supported versions": "270;262;148.0;147.0;146.0;144.0;143.0;135.0;133.0;131.0;128.0;126.0;123.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Kakao Story",
+        "Supported versions": "5.16.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "KakaoTalk",
+        "Supported versions": "9.9.8;8.9.2;8.9.0;8.8.7;8.7.8;8.7.4;8.7.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Keeper",
+        "Supported versions": "14.9.0;14.8.2;14.10.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Keepsafe",
+        "Supported versions": "8.40.0;10.1.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Kik Messenger",
+        "Supported versions": "16.8.1;16.7.1;15.23.0;15.21.2;15.20.0;15.19.0;15.18.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "KnowledgeC",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Life360",
+        "Supported versions": "20.2.1;19.8.0;19.7.1;20.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Line",
+        "Supported versions": "13.1.0;9.19.0;12.20.0;10.8.0;10.3.0;10.2.1;10.10.0;10.1.1;10.0.2",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Linkedin",
+        "Supported versions": "9.1.180;9.1.169;9.1.163;9.1.159",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Locations",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Mail.Ru",
+        "Supported versions": "12.2.1;12.0.2;11.9;11.5;11.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Meet24",
+        "Supported versions": "1.7.82;1.7.78;1.7.75;1.7.74;1.7.72",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "MeetMe",
+        "Supported versions": "14.8.0;14.12.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Metamask",
+        "Supported versions": "5.11.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "MMS",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Momo",
+        "Supported versions": "8.25.1;8.22.1;8.21.5;8.23",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "My Ether Wallet",
+        "Supported versions": "1.8.2",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Nike+ Run Club",
+        "Supported versions": "6.9.0;6.8.0;6.5.1;6.4.1;6.4.0;6.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Notes (iOS)",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Odnoklassniki",
+        "Supported versions": "8.47.2;8.37.1;8.34.1;8.32.1;8.30.3;8.46;8.45;8.40",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "OKCupid",
+        "Supported versions": "42.4.0;41.5.0;39.3.0;38.1.0;37.4.0;36.2.0;11.19.11;11.15.8",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Pinterest",
+        "Supported versions": "8.22.1;8.17.0;8.4;8.10",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Pokemon GO",
+        "Supported versions": "1.145.0;1.141.2;1.135.3;1.131.2",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Privet Photo Vault",
+        "Supported versions": "14.8;14.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "ProtonMail",
+        "Supported versions": "4.1.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "QQ",
+        "Supported versions": "8.3.9;8.3.0;8.2.9;8.2.6",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "QQ Browser",
+        "Supported versions": "10.5.1;10.0.2",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Remember The Milk",
+        "Supported versions": "5.0.18",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Reminder",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Safari (iOS)",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "SayHi",
+        "Supported versions": "7.76;7.72;7.69;7.68;7.66",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Scruff",
+        "Supported versions": "6.2101;6.1900;6.1301;6.1100;6.1006",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Signal Private Messenger",
+        "Supported versions": "6.12.0;3.12.3;3.10.5;6.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Signal Private Messenger / TextSecure",
+        "Supported versions": "3.9.0;3.6.1;3.4.3;3.2.1;3.1.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Skout",
+        "Supported versions": "6.20.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Skype",
+        "Supported versions": "8.94.3422;8.56.104;8.91;8.61;8.60;8.58;8.57",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "SMS",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "SnapChat",
+        "Supported versions": "12.31.0;12.12.1.40;10.85.0.69;10.84.0.52;10.83.1.69;10.79.0.70;10.77.0.54;10.75.0.67;10.74.1.1;10.72.5.69",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Snapchat Warrant Return",
+        "Supported versions": "10.78.5.65",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Swarm",
+        "Supported versions": "6.4.9;6.4.8;6.4.3;6.4.10",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "SwiftKey",
+        "Supported versions": "2.8.0;2.7.4;6.17.1580839547;6.15.240638",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Taxify",
+        "Supported versions": "CI.4.18;CI.4.14;4.31",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Telegram",
+        "Supported versions": "9.6.2;9.3;6.0.1;5.15.2;5.13.1;9.2;5.15;5.14",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Text Me!",
+        "Supported versions": "3.23.5;3.23.3;3.22.0;3.21.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "TextPlus",
+        "Supported versions": "7.7.3;7.7.1;7.6.8",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "TigerText",
+        "Supported versions": "8.8.1;8.9;8.7",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "TikTok",
+        "Supported versions": "28.2.0;27.1.0;16.6.2;16.4.0;16.2.0;15.5.0;15.1.0;14.7.0;14.2.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Tinder",
+        "Supported versions": "11.6.0;11.18.0;11.15.0;11.11.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Truecaller",
+        "Supported versions": "11.7;11.4;11.0;10.30",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Trust Wallet",
+        "Supported versions": "7.22",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Tumblr",
+        "Supported versions": "16.3;16.0;15.2;14.9",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Twitter",
+        "Supported versions": "9.45;8.25.1;8.8;8.6;8.5;8.22;8.20;8.14;8.11",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Twitterrific",
+        "Supported versions": "6.1.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Uber",
+        "Supported versions": "3.411.10005;3.405.10002;3.382.10006",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Viber",
+        "Supported versions": "19.4.1;19.0.0;13.2.1;12.5.2;12.3.5;12.2.1;13.2;13.1;12.6;12.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Vkontakte",
+        "Supported versions": "6.5.1;6.4.1;6.0.1;5.53.3;5.34.1;5.32.1;5.31.2;6.7",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Voxer",
+        "Supported versions": "3.22.9;3.22.7;3.21.41;3.21.40;3.21.38",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Waze",
+        "Supported versions": "4.64;4.63;4.61;4.60;4.59;4.58",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Weather",
+        "Supported versions": "13.3.1",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "WeChat",
+        "Supported versions": "8.0.34;8.0.31;7.0.15;7.0.14;7.0.12;7.0.11;7.0.10",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Weibo",
+        "Supported versions": "9.12.3;10.6.0;10.4.0;10.3.2;10.1.2",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Whatsapp",
+        "Supported versions": "2.23.8.78;2.20.61;2.20.52;2.20.40;2.20.31;2.20.22;2.20.11;2.19.124",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "WhatsApp Business",
+        "Supported versions": "22.23.77;2.22.24.81;2.20.70;2.20.61;2.20.52;2.20.40;2.20.31;2.20.22;2.20.11;2.19.124",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Whisper",
+        "Supported versions": "8.22.0;8.20.0;8.19.0;8.18.0;8.17.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Wickr",
+        "Supported versions": "6.4.2;6.0.5;5.57.2;5.55.9",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "wickr",
+        "Supported versions": "5.55.7",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Yahoo Mail",
+        "Supported versions": "5.47.12;6.5.1;6.3.3;6.2.4",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Yandex Browser",
+        "Supported versions": "6.9;6.11;20.6.1.288;20.4.2.269;20.3.1.247",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Yandex Mail",
+        "Supported versions": "20.2.1.272;19.12.0.263;4.8.0;4.17.0;4.15.0",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Yandex Maps",
+        "Supported versions": "4.12.0;12.5.3;12.1.5",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Yubo",
+        "Supported versions": "12.5;12.1;3.49.0;3.47.4;3.43.0;3.41.5",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Zalo",
+        "Supported versions": "3.40.3;20.07.01;20.05.01;20.04.02;20.03.01;20.01.01;19.12.03",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Zello",
+        "Supported versions": "4.96.1;4.94.1;4.91;4.85",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "Web.de",
+        "Supported versions": "8.43",
+        "Platform": "Apple iOS"
+    },
+    {
+        "App Name": "GMX",
+        "Supported versions": "8.73",
+        "Platform": "Apple iOS"
+    }
+]

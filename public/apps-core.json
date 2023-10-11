@@ -1,0 +1,4069 @@
+[
+    {
+        "appName": "1Password",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Bit Pay",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Any.DO",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Any.Do"]
+    },
+    {
+        "appName": "ASKfm",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Addison Lee London Minicabs",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Adium",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Aeroflot",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Afaria",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Airbnb",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "AliExpress",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Amazon browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Amazon Photos",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Amazon Shopping",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Amazon shopping"]
+    },
+    {
+        "appName": "American Airlines",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Aniways Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Anonymous Chat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "AnyDesk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Apple Calendar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": ["Calendar"]
+    },
+    {
+        "appName": "Apple Contacts",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Apple Contacts - macOS", "Apple Contacts Groups"]
+    },
+    {
+        "appName": "Apple Health",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Apple Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Email-iCloud (iOS)"]
+    },
+    {
+        "appName": "Apple Phone",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Calls"]
+    },
+    {
+        "appName": "Apple Maps",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Apple Messages",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Apple Notes",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Notes (iOS)"]
+    },
+    {
+        "appName": "Apple Photos",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Apple Reminders",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Apple Wallet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "AppLock",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Around Me",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Atomic Web Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Atomic Web Browser Lite"]
+    },
+    {
+        "appName": "Automatic Call Recorder",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "AWS Wickr",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Azar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Backup and Sync from Google",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Badoo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Baidu Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Baidu Browser HD", "Baidu Browser Mini"]
+    },
+    {
+        "appName": "Baidu Maps",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "BBM",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Beekeeper",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "BeReal",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "BigoLive",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Bigo Live"]
+    },
+    {
+        "appName": "BiP",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Bird ",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "BlaBlaCar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Boat Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": ["Boat Browser for Tablets", "Boat Browser Mini"]
+    },
+    {
+        "appName": "Booking.com",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "BOTIM",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Box",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Brave Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": ["Brave", "Brave browser"]
+    },
+    {
+        "appName": "BRD - bitcoin wallet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "breadwallet - bitcoin wallet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Briar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Brosix",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Bump",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Burner",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Android Burner Conversations", "Android Burner Numbers"]
+    },
+    {
+        "appName": "C-Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Calculator#",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Calculator+ light",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Calculator+",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Catch",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "ChatON",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "ChatSecure",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Chatwork",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "CheckMyTrip",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Chromium",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Clubhouse",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Clubhouse "]
+    },
+    {
+        "appName": "CM Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Coffee Meets Bagel",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "CoverMe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Craigslist",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "CyberGhost VPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Cyberghost VPN"]
+    },
+    {
+        "appName": "Default Web Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Digital Wellbeing",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "DingTalk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Discord",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "DJI GO",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["DJI GO 4", "DJI Go 4"]
+    },
+    {
+        "appName": "Docomo Mail (SP Mode Mail)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Dolphin Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": ["Dolphin Browser", "Dolphin Browser Classic", "Dolphin Browser Express", "Dolphin Browser Mini", "Dolphin Web Browser"]
+    },
+    {
+        "appName": "Dropbox",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["DropBox"]
+    },
+    {
+        "appName": "DrugVokrug",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "DU browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "DuckDuckGo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "easyJet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Ebay",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "eBLASTER mobile",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Ebuddy",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Element",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Elyments",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Email",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Email.cz",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Emergency information",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Endomondo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Endomondo Pro",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Evernote",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Expedia",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Express VPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FaceApp",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Facebook",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Facebook Lite", "Facebook Messenger", "Facebook Messenger Lite", "Cloud Facebook Messenger Messages",
+            "FacebookMessenger"]
+    },
+    {
+        "appName": "Files by Google",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FileSafe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FileZilla",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Find My",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Find My Friends",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Firechat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Firefox",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Firefox Focus browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Firefox Lockwise",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Fitbit",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FlashFox Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FlexiSPY Lite",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Flickr",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Flipboard",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Flock",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Fly Delta",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FMWhatsApp Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Foursquare",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Freeflight 6",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "FreeFlight Pro",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Frim",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Fring",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Gajim",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "GalleryVault",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Gate Guru",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Gay Cities",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "GBWhatsApp Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Getcontact",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "GetTaxi",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Admin",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Allo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Calendar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Chat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Chrome",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": ["Chrome"]
+    },
+    {
+        "appName": "Google Contacts",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Docs",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Drive",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Drive for desktop",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Duo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Earth",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Fit",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Home",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Keep",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Gmail", "Gmail/Inbox"]
+    },
+    {
+        "appName": "Google Maps",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Meet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Pay",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google photos",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Talk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Tasks",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Translate",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google Voice",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Google+",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "GPS Camera 55",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Grindr",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "GroupMe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Hangouts",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Here Maps",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["HERE Maps"]
+    },
+    {
+        "appName": "HeyTell",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Hide it Pro",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Hide Photos, Video-Hide it Pro",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Hide Pictures in Vaulty",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "HipChat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "HouseParty",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "HTC Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Huawei Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Huawei HiCloud",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Huawei HiDisk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Huawei Notes",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "iBooks",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "iCloud Drive",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "iCloud for Windows",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "ICQ",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "IM+",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "iMe Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["iMe Messenger & Crypto Wallet"]
+    },
+    {
+        "appName": "Imgur",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Imo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["imo", "Imo beta", "IMO Messenger"]
+    },
+    {
+        "appName": "Inbox.eu",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Inbox.lt",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Inbox.lv",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Instagram",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Instagram (web)"]
+    },
+    {
+        "appName": "IRL",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "iScanner",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Jaxx Blockchain Wallet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "JioChat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "JioCloud",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "JioPages",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "JusTalk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "K9-Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Kate Mobile",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Kate Mobile Lite",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "KAYAK",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Keek",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "KeepSafe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Keepsafe"]
+    },
+    {
+        "appName": "Kik Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "KiteTech Notepad Notes",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "KYMS - Keep your media safe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "letgo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Life360",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Likee",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Lime",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Lime "]
+    },
+    {
+        "appName": "Line",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "LinkedIn",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Linkedin"]
+    },
+    {
+        "appName": "Litchi for DJI Drones",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Live.ly",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Lyft",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mail and Calendar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mail.ee",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mail.Ru",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Mail.Ru - Email App", "Mail.Ru Agent", "Cloud Mail.Ru"]
+    },
+    {
+        "appName": "Mamba",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mandarin",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Marco Polo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Maxthon Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Media",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "MeetMe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mega",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["MEGA Accounts", "MEGA Chat", "MEGA Contacts"]
+    },
+    {
+        "appName": "Mercury Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Mercury Web Browser"]
+    },
+    {
+        "appName": "Mercury Pro Web Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Messenger By Google",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mi Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft Bing",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft Edge",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft Edge/IE",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft Internet Explorer",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft OneDrive",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["OneDrive", "OneDrive (web)"]
+    },
+    {
+        "appName": "Microsoft Outlook",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Outlook"]
+    },
+    {
+        "appName": "Microsoft Remote Desktop",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft Teams",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Microsoft To Do",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mobile Spy",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mobistealth Lite",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Moj",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mozilla",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Mozilla Thunderbird",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "MX TakaTak",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "My Tracks",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "MySpace",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Navitel Navigator",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Next Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Nike+ Running",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Nike+ Run Club"]
+    },
+    {
+        "appName": "Ninesky Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Nord VPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["NordVPN"]
+    },
+    {
+        "appName": "Notepad Vault-AppHider",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Notepad++",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Notes",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Notion",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "NQ Vault",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "OBWhatsApp Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "OK",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "OkCupid",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["OKCupid"]
+    },
+    {
+        "appName": "Omlet Arcade",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "OneNote",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "ooVoo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "OpenSignal",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Opera",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Opera Mini", "Opera mini", "Opera Mobile"]
+    },
+    {
+        "appName": "Parler",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Paypal",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Peeks Social",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Periscope",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Personal Photo Vault",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Phoenix browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Phone by Google",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Photo Vault Pro",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Pidgin",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Pinterest",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Plenty of Fish",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Plus Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Pokemon Go",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Pokemon GO"]
+    },
+    {
+        "appName": "Prey Anti-Theft",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Price Negotiator",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Private Photo Vault",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Private Photo Vault Pro",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "ProtonMail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Puffin Web Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "PureVPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "QIP",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Qip"]
+    },
+    {
+        "appName": "QQ",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["QQ International", "QQ Browser"]
+    },
+    {
+        "appName": "Quick office",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Rail Russia",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Reddit",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Remember The Milk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Ring",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Rocket Chat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Rocket.Chat"]
+    },
+    {
+        "appName": "ROMEO - Gay Chat & Dating",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "RunKeeper",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Runtastic",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Rus VPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["RusVPN"]
+    },
+    {
+        "appName": "Safari",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Safari Browser", "Safari (iOS)"]
+    },
+    {
+        "appName": "SafeCalc",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Samsung Customization Service",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Samsung Email",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Samsung Health",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Samsung Internet Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Samsung Memo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Samsung Notes",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Sberbank online",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SberDisk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SCRUFF",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Session",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SHAREit",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Shazam",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Signal",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Silent Phone",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Skout",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SkyFire Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Skyfire Browser"]
+    },
+    {
+        "appName": "Skype",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Skype (deprecated)", "Skype (desktop)", "Skype (store)", "Skype Lite"]
+    },
+    {
+        "appName": "Skyscanner",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Slack",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Slack (desktop)", "Slack (store)", "Slack (web)"]
+    },
+    {
+        "appName": "Smart Voice Recorder",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SMS Center",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Snapchat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["SnapChat"]
+    },
+    {
+        "appName": "SocialCam",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Solocator",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Sound recorder",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SoundHound",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Spark",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Speedtest",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Springpad",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Steam",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Strava",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Sup Live Journal",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "SuperNote",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Swarm",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Talkatone",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TamTam",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TamTam Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Tango",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TanTan",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Tappsk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TeamViewer",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Telegram",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Telegram (desktop)", "Telegram for macOS (desktop)", "Telegram for macOS (store)", 
+            "Telegram in Russian", "Telegram Web", "Telegram (store)"]
+    },
+    {
+        "appName": "Telegram X",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Temp Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Text Free - Free Text + Call",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Text Free",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Text Me",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Text Me!",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Textie",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TextMe",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TextNow",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TextPlus",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Textra SMS",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Threads",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Threema",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TigerConnect",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Tiki",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TikTok",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TikTok Lite",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Tinder",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TomTom Argentina and Uruguay",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TomTom GPS",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["TomTom Australia","TomTom GPS Navigation Traffic","TomTom Russia","TomTom South East Asia","TomTom U.S.A."]
+    },
+    {
+        "appName": "Tor Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Touch",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Transaero",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TripAdvisor",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TripIt",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TrueCaller",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Tumblr",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "TweetDeck",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Twinkle",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Twist",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Twitch",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Twitter",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Twitterrific",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Uber",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Uber Russia",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "UC Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "UC Browser Lite",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Unigram",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Urban Spin",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "US Airways",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Verizon Messages",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Viber",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Video Locker",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Vine",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VIPole",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VIPole Private Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VIPole Secure Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Visa QIWI Wallet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Vivaldi",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Vivaldi Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VK",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VK Calls",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VK for iPad",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VK Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VK Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VKontakte",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VLC Media Player",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["VLC Media Player (desktop)", "VLC Media Player (store)"]
+    },
+    {
+        "appName": "Voice Memos",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Voicemail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Voxer",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "VSCO",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Waze",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Web Browser (Litter Penguin)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "WeChat",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Weibo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "WhatsApp Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["WhatsApp (desktop)","WhatsApp (store)","WhatsApp Business backup","WhatsApp Business",
+            "WhatsApp Backup","WhatsApp (web)","WhatsApp Messenger backup", "Whatsapp Contacts", "Whatsapp Messages",
+            "Android WhatsApp Accounts Information", "Android WhatsApp Chats", "Android WhatsApp Contacts",
+            "Android WhatsApp Groups", "Android WhatsApp Live Locations", "Android WhatsApp Messages", 
+            "Android WhatsApp Profile Pictures", "Android WhatsApp User Profiles"]
+    },
+    {
+        "appName": "Blackberry Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["BlackBerry Messenger Contacts", "BlackBerry Messenger File Transfers", 
+            "BlackBerry Messenger Invitations", "BlackBerry Messenger Locations", "BlackBerry Messenger Messages",
+            "BlackBerry Messenger Profile"]
+    },
+    {
+        "appName": "Whisper",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Wickr Me",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["WickrMe"]
+    },
+    {
+        "appName": "Wildberries",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "WinRAR",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Wire",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Workplace",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Workplace chat by Facebook",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Xabber",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Xabber Beta"]
+    },
+    {
+        "appName": "Xiaomi Notes",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "XMS",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yahoo Search",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yahoo!",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yahoo! Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Yahoo!Mail"]
+    },
+    {
+        "appName": "Yahoo! Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Yahoo! messenger"]
+    },
+    {
+        "appName": "Yandex",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yandex Go",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yandex Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Yandex.Browser", "Yandex.Browser (iPad)", "Yandex.Browser Alpha"]
+    },
+    {
+        "appName": "Yandex.Disk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yandex.Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yandex.Maps",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yandex.Money",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yandex.Navigator",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yaxim",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Yelp iPhone",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Your Phone",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "YouTube",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Youtube"]
+    },
+    {
+        "appName": "Zalo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Zangi Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["Zangi private messenger"]
+    },
+    {
+        "appName": "Zello",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Zenly",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Zenmate VPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["ZenMate VPN"]
+    },
+    {
+        "appName": "Zepp Life",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Zoho Mail",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Zoom",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Zynn",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Confide",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Garmin Connect",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Ctrip",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Glide",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Growlr",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Hide My Email",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "hike messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Hot or Not",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Kakao Story",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Kakao Talk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["KakaoTalk"]
+    },
+    {
+        "appName": "Keeper",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "KnowledgeC",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Meet24",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Metamask",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":["metamask"]
+    },
+    {
+        "appName": "My Ether Wallet",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Momo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Odnoklassniki",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    },
+    {
+        "appName": "Coinbase",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames":[]
+    }
+]
