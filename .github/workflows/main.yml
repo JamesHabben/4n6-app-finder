@@ -1,0 +1,54 @@
+name: Apply Patches
+
+on:
+  workflow_dispatch: # allows manual trigger
+
+jobs:
+  apply-patches:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: datacontributions  # specifies to checkout the datacontributions branch
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: npm install json-patch
+
+      - name: Run script to apply patches
+        run: node .github/scripts/apply-patches.js
+
+      - name: Checkout data branch
+        uses: actions/checkout@v2
+        with:
+          ref: data  # specifies to checkout the data branch
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Action"
+          git config user.email "action@github.com"
+
+      - name: Commit changes
+        run: |
+          git add -A
+          git commit -m "Apply patches from datacontributions branch"
+          git push
+
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: "Apply patches from datacontributions branch"
+          base: main  # PR will propose to merge into main branch
+          branch: data  # specifies the branch to merge from
+
+      - name: Output PR details
+        run: |
+          echo "PR number: ${{ steps.cpr.outputs.pull-request-number }}"
+          echo "PR URL: ${{ steps.cpr.outputs.pull-request-url }}"
