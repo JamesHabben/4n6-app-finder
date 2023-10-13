@@ -3277,15 +3277,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Taxify",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "alternateNames": []
-    },
-    {
         "appName": "TeamViewer",
         "icon": "",
         "websiteUrl": "",
@@ -3429,6 +3420,15 @@
     },
     {
         "appName": "TigerConnect",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "TigerText",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
