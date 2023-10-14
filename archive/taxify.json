@@ -1,0 +1,15 @@
+[
+    {
+        "op": "add",
+        "path": "/-",
+        "value": {
+            "appName": "Taxify",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "notes": "",
+            "alternateNames": []
+        }
+    }
+]
