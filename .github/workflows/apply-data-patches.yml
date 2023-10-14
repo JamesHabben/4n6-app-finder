@@ -16,7 +16,7 @@ jobs:
       - name: Create 'data' branch if doesn't exist
         run: |
           git checkout -b data
-          git push origin data
+          #git push origin data
 
       - name: Checkout datacontributions branch
         uses: actions/checkout@v2
