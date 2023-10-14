@@ -11,7 +11,16 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          ref: datacontributions  # specifies to checkout the datacontributions branch
+          ref: main  # checkout main to create data branch from it
+
+      - name: Create and push data branch if doesn't exist
+        run: |
+          git ls-remote --heads origin data || (git checkout -b data && git push origin data)
+
+      - name: Checkout datacontributions branch
+        uses: actions/checkout@v2
+        with:
+          ref: datacontributions  # checkout datacontributions branch for applying patches
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
@@ -27,7 +36,7 @@ jobs:
       - name: Checkout data branch
         uses: actions/checkout@v2
         with:
-          ref: data  # specifies to checkout the data branch
+          ref: data  # checkout data branch to commit changes
 
       - name: Configure Git
         run: |
