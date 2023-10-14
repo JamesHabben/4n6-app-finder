@@ -1,9 +1,12 @@
 import React, { useEffect} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import PageSearch from './PageSearch';
-import PageStats from './PageStats';
-import PageAdmin from './PageAdmin';
+import AppRoutes from './Routes';
+import PageSearch from './components/PageSearch';
+import PageStats from './components/PageStats';
+import PageAdmin from './components/PageAdmin';
 import VersionInfo from './VersionInfo';
+import { AuthProvider } from './AuthContext';
+
 import './App.css';
 
 function App() {
@@ -19,6 +22,8 @@ function App() {
 
   return (
     <Router>
+      <AuthProvider>
+      
       <div className="app-container">
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0rem' }}>
           <img src="/4af-logo.png" alt="Logo" width={'200px'} height={'200px'} 
@@ -37,12 +42,9 @@ function App() {
           </Link>
         </ul>
         <VersionInfo />
-        <Routes>
-          <Route path="/" element={<PageSearch />} />
-          <Route path="/statistics" element={<PageStats />} />
-          <Route path="/admin" element={<PageAdmin />} />
-        </Routes>
+        <AppRoutes />
       </div>
+      </AuthProvider>
     </Router>
   );
 }

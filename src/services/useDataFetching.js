@@ -7,8 +7,8 @@ export function useDataFetching() {
   const [isLoadingTools, setIsLoadingTools] = useState(true);
 
   const fetchArtifacts =  (appName, toolsData, appsData) => {
-    console.log('toolsData', toolsData)
-    console.log('apps data:', apps)
+    //console.log('toolsData', toolsData)
+    //console.log('apps data:', apps)
     const toolArtifacts = toolsData.flatMap(tool =>
       tool.artifactList.filter(toolApp =>
         appName === toolApp[tool.appNameKey] ||
@@ -16,7 +16,7 @@ export function useDataFetching() {
       )
       .map(toolApp => ({ ...toolApp, toolName: tool.toolLongName, toolIcon: tool.icon, toolWebsite: tool.website }))
     );
-    console.log('Tool Artifacts for', appName, toolArtifacts);
+    //console.log('Tool Artifacts for', appName, toolArtifacts);
     return toolArtifacts;
   };
 
@@ -30,7 +30,7 @@ export function useDataFetching() {
     fetch('/tools.json')
       .then((response) => response.json())
       .then((data) => {
-        console.log('Fetched tools.json');
+        //console.log('Fetched tools.json');
         const promises = data.map((tool) =>
           fetch(`/${tool.artifactListFile}`)
             .then((response) => response.json())
@@ -38,7 +38,7 @@ export function useDataFetching() {
         );
         Promise.all(promises).then(toolsData => {
           setTools(toolsData.sort((a, b) => a.toolLongName.localeCompare(b.toolLongName)));
-          console.log('Set tools data');
+          //console.log('Set tools data');
           setIsLoadingTools(false);
         });
       });

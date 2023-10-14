@@ -2,9 +2,9 @@ import React, { useState, useEffect, useMemo } from 'react';
 import { Input, Card, Row, Col, Modal  } from 'antd';
 import { CloseCircleOutlined } from '@ant-design/icons';
 
-import { useDataFetching } from './useDataFetching';
-import AppDetails from './AppDetails';
-import './App.css'
+import { useDataFetching } from 'services/useDataFetching';
+import AppDetails from 'components/AppDetails';
+import 'App.css'
 
 function PageSearch() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -68,11 +68,11 @@ function PageSearch() {
         suffix={suffix}
       />
       <div className='searchCount'>
-  {searchTerm
-    ? `${filteredApps.length} matching apps`
-    : `${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
-    {!searchTerm && <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>}!
-</div>
+        {searchTerm
+          ? `${filteredApps.length} matching apps`
+          : `${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
+          {!searchTerm && <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>}!
+      </div>
 
       </div>
       <Row gutter={[16, 16]} justify={'center'}>
@@ -100,7 +100,7 @@ function PageSearch() {
       </Row>
       <Modal
         title="App Details"
-        visible={isModalVisible}
+        open={isModalVisible}
         onCancel={() => setIsModalVisible(false)}
         footer={null}
         width={"80%"}

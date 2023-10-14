@@ -1,4 +1,5 @@
 import React, { createContext, useState, useEffect  } from 'react';
+import { githubService } from 'services/githubService';
 
 export const AuthContext = createContext();
 
@@ -33,12 +34,16 @@ export const AuthProvider = ({ children }) => {
         headers: { Authorization: `Bearer ${token}` },
         });
         const userData = await response.json();
-        
+
+        const ghservice = githubService(token);
+        const userLevel = await ghservice.checkUserElevation(userData.login);
+
         // Update auth state with token and user data
         setAuthState({
             token,
             username: userData.login,
             avatarUrl: userData.avatar_url,
+            level: userLevel
         });
         console.log("auth state (login): " + authState)
     };

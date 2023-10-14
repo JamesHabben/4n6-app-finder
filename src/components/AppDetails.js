@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink, Link, useParams } from 'react-router-dom';
-import { useDataFetching, fetchArtifacts } from './useDataFetching';
+import { useDataFetching, fetchArtifacts } from '../services/useDataFetching';
 
 function AppDetails({ app, tools }) {
     const { apps, fetchArtifacts, isLoadingTools  } = useDataFetching();

@@ -24,7 +24,7 @@ function AuthLoginButton() {
     return (
         <div className="user-info" style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
             <GithubOutlined style={{ fontSize: '24px' }} />
-            {authState.username}
+            {authState.username} ({authState.level})
             <Button onClick={logout}>Logout</Button>
         </div>
     );
