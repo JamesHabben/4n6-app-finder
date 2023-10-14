@@ -1,0 +1,36 @@
+name: Upload to Azure Blob Storage
+
+on:
+  push:
+    branches:
+      - main  # Trigger this action on push to the main branch (modify as needed)
+
+jobs:
+  upload_files:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+
+    - name: Upload apps-core.json to Blob Storage
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72  # specify a version of Azure CLI that you want to use
+        inlineScript: |
+          az storage blob upload --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} --container-name ${{ env.AZURE_CONTAINER_NAME }} --type text/plain --name apps-core.json --type application/json --file public/apps-core.json
+
+    - name: Upload artifacts files to Blob Storage
+      uses: azure/CLI@v1
+      with:
+        azcliversion: 2.0.72
+        inlineScript: |
+          for file in public/artifacts-*.json; do
+            blobname=$(basename $file)
+            az storage blob upload --account-name ${{ env.AZURE_STORAGE_ACCOUNT_NAME }} --container-name ${{ env.AZURE_CONTAINER_NAME }} --type text/plain --name $blobname --type application/json --file $file
+          done
