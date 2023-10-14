@@ -14,4 +14,4 @@ jobs:
 
     - name: Call Azure Function
       run: |
-        curl -X POST AZURE_RUN_DATA_UPDATE_FUNCTION_URL 
+        curl -X POST "${{ secrets.AZURE_RUN_DATA_UPDATE_FUNCTION_URL }}"
