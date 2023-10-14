@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # allows manual trigger
 
 jobs:
-  apply-patches:
+  apply-data-patches:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,9 +13,11 @@ jobs:
         with:
           ref: main  # checkout main to create data branch from it
 
-      - name: Create and push data branch if doesn't exist
+      - name: Create 'data' branch if doesn't exist
         run: |
-          git ls-remote --heads origin data || (git checkout -b data && git push origin data)
+          git fetch origin
+          git branch data origin/main || true
+          git push -u origin data || true
 
       - name: Checkout datacontributions branch
         uses: actions/checkout@v2
