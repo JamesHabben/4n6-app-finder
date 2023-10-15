@@ -1,0 +1,21 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "MMS",
+                "icon": "asdf",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "notes": "",
+                "dateAdded": "2023-10-15",
+                "alternateNames": [
+                    "asdf"
+                ]
+            }
+        }
+    ]
+}
