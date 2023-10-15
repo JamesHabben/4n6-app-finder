@@ -63,10 +63,11 @@ function PageAdmin() {
         </div>
 
         {/* Right column for content */}
-        <div style={{ flex: '1', padding: '1rem', overflowY: 'auto', maxHeight: 'calc(100vh - 315px)' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', flex: '1', padding: '1rem', 
+          overflowY: 'auto', maxHeight: 'calc(100vh - 315px)' }}>
            
             {selectedItem ? (
-            <div>
+            <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
                 <h2>{selectedItem.name}</h2>
                 {selectedItem.contentComponent && (
                   <selectedItem.contentComponent />

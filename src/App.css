@@ -84,6 +84,16 @@
 }
 
 
+/* Style for the tool cards */
+.artifact-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 
 /* Style for the tool cards */
 .tool-card {

@@ -1,13 +1,18 @@
-import { useDataFetching } from "services/useDataFetching";
 import { useState, useContext, useEffect } from "react";
-import { AuthContext } from "AuthContext";
 import { Button, Modal, Input } from 'antd';
+//import { VariableSizeList as List } from 'react-window';
+import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
+
+
+import { useDataFetching } from "services/useDataFetching";
+import { AuthContext } from "AuthContext";
 import { appsService } from "services/appsService";
 
 function ToolsArtifactsListContent() {
     const { apps, tools } = useDataFetching();
     const [selectedTool, setSelectedTool] = useState(null);
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
+    const [displayedArtifactList, setDisplayedArtifactList] = useState([]);
     const { authState } = useContext(AuthContext);
     const [isModalVisible, setIsModalVisible] = useState(false);
     const [selectedArtifact, setSelectedArtifact] = useState(null);
@@ -19,7 +24,7 @@ function ToolsArtifactsListContent() {
     const [isDupe, setIsDupe] = useState(false);
     const [newRecord, setNewRecord] = useState(null);
     const [newAlternateName, setNewAlternateName] = useState('');
-  
+    
     useEffect(() => {
       // Reset the states when selectedArtifact changes
       setSearchInput('');
@@ -29,6 +34,18 @@ function ToolsArtifactsListContent() {
       setNewAppName('');
       fetchNewRecord();
     }, [selectedArtifact]);
+
+    useEffect(() => {
+      if (selectedTool) {
+        console.log("list ", selectedTool.artifactList)
+        if (showOnlyHighlighted) {
+            const filteredList = selectedTool.artifactList.filter(artifact => shouldHighlight(artifact));
+            setDisplayedArtifactList(filteredList);
+        } else {
+            setDisplayedArtifactList(selectedTool.artifactList);
+        }
+      }
+    }, [showOnlyHighlighted, selectedTool]);
   
     useEffect(() => {
       if (apps) {
@@ -149,7 +166,7 @@ function ToolsArtifactsListContent() {
           // Catch any errors thrown by handleAdd or handleCreate
           alert(error.message);
       }
-  };
+    };
         
   
     const handleCancel = () => {
@@ -161,6 +178,7 @@ function ToolsArtifactsListContent() {
     };
   
     const getAppByNameKey = (app) => {
+      //console.log("app value: ", app)
       if (selectedTool && selectedTool.appNameKey) {
         const propertyName = selectedTool.appNameKey;
         return app[propertyName];
@@ -177,58 +195,115 @@ function ToolsArtifactsListContent() {
           (appInList.alternateNames && appInList.alternateNames.includes(appName));
       });
     };
-        
-        
+
+    const getItemSize = (index) => {
+      // Assume each property takes up 30px of height for simplicity.
+      // You might need a more accurate way to calculate the height.
+      const numOfProperties = Object.keys(selectedTool.artifactList[index]).length;
+      return 30 * numOfProperties + 100;
+    };
+
+    const cache = new CellMeasurerCache({
+      fixedWidth: true,
+      defaultHeight: 100, 
+    });
+
+    const overlapAdjustment = 50;
+
+    function rowRenderer({ index, key, parent, style }) {
+      const app = displayedArtifactList[index];
+      //console.log("in renderer artifacts: ", selectedTool.artifactList)
+      return (
+        <CellMeasurer
+          cache={cache}
+          columnIndex={0}
+          key={key}
+          parent={parent}
+          rowIndex={index}
+        >
+          {({ measure }) => (
+            <div onLoad={() => {
+              measure();
+              cache.set(index, 0, cache.getHeight(index, 0) + overlapAdjustment);
+            }} 
+            style={{...style, border: '1px solid #ccc',
+                  borderRadius: '8px',
+                  marginBottom: '5px',
+                  padding: '15px',
+                  maxWidth: '90%',
+                  overflowX: 'auto',
+                  boxSizing: "border-box"
+                  //height: (cache.getHeight(index, 0) || style.height) + overlapAdjustment,
+            }} 
+            className={` ${shouldHighlight(app) ? 'highlight' : ''}`}>
+              <h3>{getAppByNameKey(app)}</h3>
+                {shouldHighlight(app) && authState && (
+                        <Button type="primary" style={{ marginBottom: '10px'  }} onClick={() => showModal(app)}>
+                          Suggest an Edit
+                        </Button>
+                      )}
+                <table className="property-table">
+                <tbody>
+                    {Object.keys(app).map((key) => (
+                    <tr key={key} className="property-row">
+                        <td className="property-name">
+                        <strong>{key}:</strong>
+                        </td>
+                        <td style={{ backgroundColor:'white' }}>
+                        {app[key]}
+                        </td>
+                    </tr>
+                    ))}
+                </tbody>
+                </table>
+            </div>
+          )}
+        </CellMeasurer>
+      );
+    }
+    
       
     return (
       <div>
         <div className="tool-buttons">
           {tools.map((tool) => (
-            <button
+            <Button
               key={tool.toolShortName}
-              className={`tool-button ${selectedTool === tool ? 'selected' : ''}`}
+              className={`${selectedTool === tool ? 'selected' : ''}`}
               onClick={() => handleToolClick(tool)}
             >
               {tool.toolShortName} ({tool.artifactList.length})
-            </button>
+            </Button>
           ))}
         </div>
         <div className="tool-content">
           {selectedTool && (
             <div>
               <h2>{selectedTool.toolLongName} - Artifact List</h2>
-              <button style={{ marginBottom: '10px' }} 
+              <Button style={{ marginBottom: '10px' }} 
                 onClick={() => setShowOnlyHighlighted(!showOnlyHighlighted)}>
                   {showOnlyHighlighted ? "Show All Artifacts" : "Show Unmapped Artifacts Only"}
-              </button>
-  
-              {selectedTool.artifactList.map((app, index) => (
-                (!showOnlyHighlighted || (showOnlyHighlighted && shouldHighlight(app))) && (
-                  <div key={index} 
-                          className={`app-info tool-card ${shouldHighlight(app) ? 'highlight' : ''}`}>
-                      <h3>{getAppByNameKey(app)}</h3>
-                      {shouldHighlight(app) && authState && (
-                        <Button type="primary" style={{ marginBottom: '10px'  }} onClick={() => showModal(app)}>
-                          Suggest an Edit
-                        </Button>
-                      )}
-                      <table className="property-table">
-                      <tbody>
-                          {Object.keys(app).map((key) => (
-                          <tr key={key} className="property-row">
-                              <td className="property-name">
-                              <strong>{key}:</strong>
-                              </td>
-                              <td className={`property-value ${shouldHighlight(getAppByNameKey(app)) ? '' : ''}`}>
-                              {app[key]}
-                              </td>
-                          </tr>
-                          ))}
-                      </tbody>
-                      </table>
-                  </div>
-                )
-              ))}
+              </Button>
+            
+              <div style={{ height: '65rem', width: '100%', overflowY: 'auto' }}>
+                <AutoSizer>
+                  {({ height, width }) => {
+                    //console.log("start list", selectedTool); 
+                    return (
+                      <List
+                        width={width}
+                        height={height}
+                        deferredMeasurementCache={cache}
+                        rowHeight={cache.rowHeight}//.bind(cache)}
+                        rowRenderer={rowRenderer}
+                        rowCount={displayedArtifactList.length}
+                        overscanRowCount={5}
+                        //onRowsRendered={() => console.log('Rows rendered')}
+                      />
+                    );
+                  }}
+                </AutoSizer>
+              </div>
             </div>
           )}
         </div>
