@@ -19,9 +19,9 @@ export const AuthProvider = ({ children }) => {
     
         let authUrl = '';
         if (process.env.NODE_ENV === 'development') {
-            authUrl = `https://github.com/login/oauth/authorize?client_id=Iv1.d6703f6d45b020d7&scope=user&response_type=code&redirect_uri=${redirectUri}`;
+            authUrl = `https://github.com/login/oauth/authorize?client_id=Iv1.d6703f6d45b020d7&scope=user&response_type=code`;
         } else {
-            authUrl = `https://github.com/login/oauth/authorize?client_id=Iv1.0b83354237060759&scope=user&response_type=code&redirect_uri=${redirectUri}`;
+            authUrl = `https://github.com/login/oauth/authorize?client_id=Iv1.0b83354237060759&scope=user&response_type=code`;
         }
     
         window.location.href = authUrl;  // This will redirect the user to GitHub's OAuth authorization page

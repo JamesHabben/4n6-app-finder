@@ -7,10 +7,14 @@ function VersionInfo() {
   const isDevMode = process.env.NODE_ENV === 'development';
 
   useEffect(() => {
-    fetch('/version.json')
+    fetch('/version-build.json')
       .then(response => response.json())
       .then(data => {
         setBuildDate(data.buildDate);
+      });
+      fetch('/version-data.json')
+      .then(response => response.json())
+      .then(data => {
         setDataDate(data.dataDate);
       });
   }, []);

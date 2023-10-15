@@ -140,24 +140,48 @@ export const githubService = (token, username) => {
         }
     };
 
-    const createBranch = async (baseBranch, newBranchName, username = owner) => {
+    const createBranch_old = async (baseBranch, newBranchName, username = owner) => {
         try {
           const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
-            owner: username,
+            owner: owner,
             repo,
-            ref: `heads/${baseBranch}`,
+            ref: `heads/${defaultBranch}`,
           });
-    
+          console.log("before createref")
           await octokit.git.createRef({
             owner: username,
             repo,
             ref: `refs/heads/${newBranchName}`,
             sha: latestCommitSha,
           });
+          console.log("after createref")
         } catch (error) {
           console.error('Error creating branch:', error);
         }
     }
+
+    const createBranch = async (newBranchName, username = owner) => {
+        try {
+            // Get the latest commit SHA from the 'datacontributions' branch
+            const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
+                owner: owner,  // Use the repository owner's username here
+                repo,
+                ref: `heads/datacontributions`,
+            });
+    
+            // Create a new branch from the 'datacontributions' branch
+            await octokit.git.createRef({
+                owner: username,
+                repo,
+                ref: `refs/heads/${newBranchName}`,
+                sha: latestCommitSha,
+            });
+        } catch (error) {
+            console.error('Error creating branch:', error);
+            throw error;  // Propagate the error to be handled by the calling code
+        }
+    }
+            
 
     const checkBranchExists = async (branchName) => {
         try {
@@ -246,7 +270,7 @@ export const githubService = (token, username) => {
         }
     }
 
-    const createPullRequest = async (branchName, title, body) => {
+    const createPullRequest = async (branchName, title, body, baseBranch = patchBranch) => {
         if (username == owner) {
             console.log("owner logged in, no need for PR")
             return;
@@ -282,15 +306,20 @@ export const githubService = (token, username) => {
 
 
     const checkExistingPR = async (branchName) => {
-        const { data } = await octokit.pulls.list({
-            owner: username,
-            repo: repo,
-            state: 'open',
-            head: `${username}:${branchName}`
-        });
-        return data.some(pr => pr.head.ref === branchName);
-    }
-
+        try {
+            const { data: prList } = await octokit.pulls.list({
+                owner: owner,  // Change from username to owner to check the original repo
+                repo: repo,
+                state: 'open',
+                head: `${username}:${branchName}`
+            });
+            return prList.find(pr => pr.base.ref === patchBranch && pr.head.ref === branchName) || null;
+        } catch (error) {
+            console.error('Error checking existing PR:', error);
+            throw error;
+        }
+    };
+    
     const checkRepoExists = async () => {
         try {
             const { data } = await octokit.repos.get({

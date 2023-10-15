@@ -149,12 +149,31 @@ export const appsService = () => {
         //console.log("sending commit")
         //await new Promise(resolve => setTimeout(resolve, 4000));
         //return;
+
+        // check for any existing PR to origin branch
+        terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
+        const existingPR = await service.checkExistingPR(service.patchBranch);
+
+        // get branch name from existing PR or create new branch name
+        let branchName;
+        if (existingPR) {
+            // Existing PR found, extract the branch name
+            branchName = existingPR.head.ref;
+            terminal(prevOutput => [...prevOutput, `Existing pull request found, using branch: ${branchName}`]);
+        } else {
+            // No existing PR, create a new branch
+            const timestamp = Date.now();
+            branchName = `${authState.username}-${service.patchBranch}-${timestamp}`;
+            terminal(prevOutput => [...prevOutput, `No existing pull request found, creating new branch: ${branchName}`]);
+            await service.createBranch(branchName, authState.username);
+        }
+
         terminal(prevOutput => [...prevOutput, `Preparing commit`]);
         await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
         terminal(prevOutput => [...prevOutput, `Commit Done`]);
         
-        terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
-        const existingPR = await service.checkExistingPR(service.patchBranch);
+        //terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
+        //const existingPR = await service.checkExistingPR(service.patchBranch);
         //console.log("find done")
         if (!existingPR) {
             const prTitle = 'WebApp Data Update from ' + authState.username;
