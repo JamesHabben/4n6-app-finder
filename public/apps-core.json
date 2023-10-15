@@ -3112,7 +3112,8 @@
         "googlePlayUrl": "",
         "notes": "",
         "alternateNames": [
-            "SnapChat"
+            "SnapChat",
+            "Snapchat Warrant Return"
         ]
     },
     {
@@ -3444,6 +3445,16 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "TigerText",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-15",
         "alternateNames": []
     },
     {
