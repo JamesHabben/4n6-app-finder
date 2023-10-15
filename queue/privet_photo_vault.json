@@ -1,0 +1,22 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Privet Photo Vault",
+                "icon": "",
+                "websiteUrl": "asdf",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "notes": "",
+                "dateAdded": "2023-10-15",
+                "alternateNames": [
+                    "asdf",
+                    "asdfasdf"
+                ]
+            }
+        }
+    ]
+}
