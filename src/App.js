@@ -4,7 +4,7 @@ import AppRoutes from './Routes';
 import PageSearch from './components/PageSearch';
 import PageStats from './components/PageStats';
 import PageAdmin from './components/PageAdmin';
-import VersionInfo from './VersionInfo';
+import VersionInfo from 'components/VersionInfo';
 import { AuthProvider } from './AuthContext';
 
 import './App.css';

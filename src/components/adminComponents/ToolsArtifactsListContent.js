@@ -32,7 +32,7 @@ function ToolsArtifactsListContent() {
   
     useEffect(() => {
       if (apps) {
-          console.log("apps", apps)
+          //console.log("apps", apps)
           fetchNewRecord();
       }
     }, [apps])
@@ -116,8 +116,8 @@ function ToolsArtifactsListContent() {
       setSelectedArtifact(artifact)
       setIsModalVisible(true);
       //if (newAppName == '') setNewAppName(getAppByNameKey(selectedArtifact))
-      console.log(artifact)
-      console.log(selectedTool)
+      //console.log(artifact)
+      //console.log(selectedTool)
     };
   
     const handleOk = async () => {  // Make this method async

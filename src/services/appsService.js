@@ -128,24 +128,25 @@ export const appsService = () => {
     const handleGithubPush = async (appName, patch, authState) => {
         const service = githubService(authState.token, authState.username);
     
-        const githubBranchName = 'datacontributions'
-    
+        const now = new Date();
+        const timestamp = Math.floor(now.getTime() / 100);
+
         const patchJson = JSON.stringify(patch, null, 4);
-        const patchFileName = `${appName.replace(/\s+/g, '_').toLowerCase()}.json`; 
+        const patchFileName = `${appName.replace(/\s+/g, '_').toLowerCase()}.${authState.username}.${timestamp}.json`; 
         const filePath = `queue/${patchFileName}`;
         const commitMessage = 'New app suggestion via WebApp: ' + appName;
         //console.log("sending commit")
-        await service.commitChanges(githubBranchName, patchJson, filePath, commitMessage);
+        await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
         //console.log("commit done")
         
         //console.log("finding pr")
-        const existingPR = await service.checkExistingPR(githubBranchName);
+        const existingPR = await service.checkExistingPR(service.patchBranch);
         //console.log("find done")
         if (!existingPR) {
             const prTitle = 'WebApp Data Update from ' + authState.username;
             const prBody = 'Database updates from ' + authState.username;
             console.log("creating pr")
-            await service.createPullRequest(githubBranchName, prTitle, prBody);
+            await service.createPullRequest(service.patchBranch, prTitle, prBody);
             console.log("pr done")
         }
     }
