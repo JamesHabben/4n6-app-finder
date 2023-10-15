@@ -1,0 +1,1 @@
+"{\n    \"action\": \"edit\",\n    \"appName\": \"WhatsApp Messenger\",\n    \"patch\": [\n        {\n            \"op\": \"add\",\n            \"path\": \"/alternateNames/17\",\n            \"value\": \"Whatsapp\"\n        }\n    ]\n}"
