@@ -41,11 +41,13 @@ export const appsService = () => {
         }
     };
             
-    const handleAdd = async (apps, addToAppName, selectedArtifact, authState) => {
+    const handleAdd = async (apps, addToAppName, selectedArtifact, authState, terminal) => {
         if (!Array.isArray(apps)) {
             console.error('apps is not an array');
             return;
         }
+
+        terminal(prevOutput => [...prevOutput, `Preparing patch file`]);
     
         const appIndex = apps.findIndex(app => app.appName.toLowerCase() === addToAppName.toLowerCase());
         
@@ -68,7 +70,7 @@ export const appsService = () => {
         
         
         try {
-            await handleGithubPush(addToAppName, patchFile, authState);  // Assume this is async
+            await handleGithubPush(addToAppName, patchFile, authState, terminal);  // Assume this is async
             return 'Patch submitted successfully for addition.';
         } catch (error) {
             console.error('Error submitting patch:', error);
@@ -76,15 +78,23 @@ export const appsService = () => {
         }
     }
 
-    const handleCreate = async (apps, newRecord, authState) => {
+    const handleCreate = async (apps, newRecord, artifactName, authState, terminal) => {
         const currentDate = new Date().toISOString().split('T')[0];
         newRecord.dateAdded = currentDate;
+
+        terminal(prevOutput => [...prevOutput, `Preparing patch file`]);
 
         const templateRecord = apps[0];
         if (!validateRecord(newRecord, templateRecord)) {
             alert('The record format is incorrect.');
             return;
         }
+
+        if (newRecord.appName !== artifactName && !newRecord.alternateNames.includes(artifactName)) {
+            newRecord.alternateNames.push(artifactName);
+        }
+        //console.log(newRecord)
+        //return;
     
         const patch = [];
         let patchFile;
@@ -113,11 +123,11 @@ export const appsService = () => {
             };
         }
 
-        //console.log("new record", newRecord)
+        //console.log("new record: ", newRecord)
         //console.log('Patch:', patch);
-        //handleGithubPush(newRecord.appName, patchJson, authState)
+        //return;
         try {
-            await handleGithubPush(newRecord.appName, patchFile, authState);  // Assume this is async
+            await handleGithubPush(newRecord.appName, patchFile, authState, terminal);  // Assume this is async
             return 'Patch submitted successfully for creation.';
         } catch (error) {
             console.error('Error submitting patch:', error);
@@ -125,7 +135,7 @@ export const appsService = () => {
         }
     }
 
-    const handleGithubPush = async (appName, patch, authState) => {
+    const handleGithubPush = async (appName, patch, authState, terminal) => {
         const service = githubService(authState.token, authState.username);
     
         const now = new Date();
@@ -133,21 +143,27 @@ export const appsService = () => {
 
         const patchJson = JSON.stringify(patch, null, 4);
         const patchFileName = `${appName.replace(/\s+/g, '_').toLowerCase()}.${authState.username}.${timestamp}.json`; 
+        terminal(prevOutput => [...prevOutput, `Patch filename: ${patchFileName}`]);
         const filePath = `queue/${patchFileName}`;
         const commitMessage = 'New app suggestion via WebApp: ' + appName;
         //console.log("sending commit")
+        //await new Promise(resolve => setTimeout(resolve, 4000));
+        //return;
+        terminal(prevOutput => [...prevOutput, `Preparing commit`]);
         await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
-        //console.log("commit done")
+        terminal(prevOutput => [...prevOutput, `Commit Done`]);
         
-        //console.log("finding pr")
+        terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
         const existingPR = await service.checkExistingPR(service.patchBranch);
         //console.log("find done")
         if (!existingPR) {
             const prTitle = 'WebApp Data Update from ' + authState.username;
             const prBody = 'Database updates from ' + authState.username;
-            console.log("creating pr")
+            terminal(prevOutput => [...prevOutput, `Preparing pull request`]);
             await service.createPullRequest(service.patchBranch, prTitle, prBody);
-            console.log("pr done")
+            terminal(prevOutput => [...prevOutput, `Pull request done`]);
+        } else {
+            terminal(prevOutput => [...prevOutput, `Pull request already exists, all done`]);
         }
     }
     

@@ -14,7 +14,7 @@ function ToolsArtifactsListContent() {
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
     const [displayedArtifactList, setDisplayedArtifactList] = useState([]);
     const { authState } = useContext(AuthContext);
-    const [isModalVisible, setIsModalVisible] = useState(false);
+    const [isEditModalVisible, setIsEditModalVisible] = useState(false);
     const [selectedArtifact, setSelectedArtifact] = useState(null);
     const [searchInput, setSearchInput] = useState('');
     const [filteredApps, setFilteredApps] = useState([]);
@@ -24,6 +24,11 @@ function ToolsArtifactsListContent() {
     const [isDupe, setIsDupe] = useState(false);
     const [newRecord, setNewRecord] = useState(null);
     const [newAlternateName, setNewAlternateName] = useState('');
+    const [terminalOutput, setTerminalOutput] = useState([]);
+    const [isPerformingUpdate, setIsPerformingUpdate] = useState(false);
+    const [isTermModalVisible, setIsTermModalVisible] = useState(false);
+    const [canCloseTermModal, SetCanCloseTermModal] = useState(false);
+
     
     useEffect(() => {
       // Reset the states when selectedArtifact changes
@@ -37,7 +42,7 @@ function ToolsArtifactsListContent() {
 
     useEffect(() => {
       if (selectedTool) {
-        console.log("list ", selectedTool.artifactList)
+        //console.log("list ", selectedTool.artifactList)
         if (showOnlyHighlighted) {
             const filteredList = selectedTool.artifactList.filter(artifact => shouldHighlight(artifact));
             setDisplayedArtifactList(filteredList);
@@ -65,9 +70,9 @@ function ToolsArtifactsListContent() {
   
   
     const fetchNewRecord = async () => {
-      console.log('Fetching new record...');
+      //console.log('Fetching new record...');
       const record = await appsService().getNewRecord(apps);
-      console.log('Fetched record:', record);
+      //console.log('Fetched record:', record);
       setNewRecord(record);
     };
     
@@ -131,7 +136,7 @@ function ToolsArtifactsListContent() {
   
     const showModal = (artifact) => {
       setSelectedArtifact(artifact)
-      setIsModalVisible(true);
+      setIsEditModalVisible(true);
       //if (newAppName == '') setNewAppName(getAppByNameKey(selectedArtifact))
       //console.log(artifact)
       //console.log(selectedTool)
@@ -141,9 +146,12 @@ function ToolsArtifactsListContent() {
       try {
           if (radioSelection === 'add') {
               if (selectedApp && selectedApp.appName) {
-                  const message = await appsService().handleAdd(apps, selectedApp.appName, getAppByNameKey(selectedArtifact), authState);
-                  setIsModalVisible(false);
-                  alert(message);
+                setIsEditModalVisible(false);  
+                SetCanCloseTermModal(false);
+                setIsTermModalVisible(true);
+                const message = await appsService().handleAdd(apps, selectedApp.appName, getAppByNameKey(selectedArtifact), 
+                  authState, setTerminalOutput);
+                SetCanCloseTermModal(true);
               } else {
                   alert('Please select an app to add this artifact to.');
               }
@@ -152,9 +160,13 @@ function ToolsArtifactsListContent() {
                   if (appsService().isDupeName(apps, newAppName)) {
                       alert('The app name you entered already exists. Please use the "Add to Selected App" option or enter a different name.');
                   } else {
-                      const message = await appsService().handleCreate(apps, newRecord, authState);
-                      setIsModalVisible(false);
-                      alert(message);
+                    setIsEditModalVisible(false);  
+                    SetCanCloseTermModal(false);
+                    setIsTermModalVisible(true);
+                    const message = await appsService().handleCreate(apps, newRecord, getAppByNameKey(selectedArtifact), 
+                      authState, setTerminalOutput);
+                    SetCanCloseTermModal(true);
+                    //alert(message);
                   }
               } else {
                   alert('Please enter a name for the new app.');
@@ -170,7 +182,7 @@ function ToolsArtifactsListContent() {
         
   
     const handleCancel = () => {
-      setIsModalVisible(false);
+      setIsEditModalVisible(false);
     };
   
     const handleToolClick = (tool) => {
@@ -309,7 +321,7 @@ function ToolsArtifactsListContent() {
         </div>
         <Modal
             title="Suggest an Edit"
-            open={isModalVisible}
+            open={isEditModalVisible}
             onOk={handleOk}
             onCancel={handleCancel}
             width={'80%'}
@@ -439,6 +451,34 @@ function ToolsArtifactsListContent() {
                   )}
               </>
           ) : null}
+        </Modal>
+        <Modal
+          title="Sending Change..."
+          open={isTermModalVisible}
+          width='80%'
+          onCancel={() => {
+            if (canCloseTermModal) {
+              setTerminalOutput(''); 
+              setIsTermModalVisible(false)
+            } else {
+              return false
+            }}}
+          footer={[
+            <Button
+              key="submit"
+              type="primary"
+              onClick={() => {setTerminalOutput(''); setIsTermModalVisible(false)}}  // This will close the modal when clicked
+              disabled={!canCloseTermModal}  // Disable the button based on some condition
+            >
+              Close
+            </Button>,
+          ]}
+          >
+            <div style={{ border: '1px solid #ccc', padding: '10px', marginTop: '10px' }}>
+                {terminalOutput.length ? terminalOutput.map((line, index) => (
+                <div key={index}>{line}</div>
+                )) : ''}
+            </div>
         </Modal>
       </div>
     );
