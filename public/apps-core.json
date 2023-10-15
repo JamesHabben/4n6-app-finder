@@ -139,6 +139,19 @@
         "alternateNames": []
     },
     {
+        "appName": "AOL Instant Messenger (AIM)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-15",
+        "alternateNames": [
+            "AIM Messages",
+            "AIM Buddies"
+        ]
+    },
+    {
         "appName": "Apple Calendar",
         "icon": "",
         "websiteUrl": "",
@@ -805,7 +818,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "alternateNames": [
-            "DropBox"
+            "DropBox",
+            "Android Dropbox",
+            "Android Dropbox Account Info"
         ]
     },
     {
