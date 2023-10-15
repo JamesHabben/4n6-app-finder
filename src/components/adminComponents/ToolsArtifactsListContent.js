@@ -1,7 +1,7 @@
 import { useDataFetching } from "services/useDataFetching";
 import { useState, useContext, useEffect } from "react";
 import { AuthContext } from "AuthContext";
-import { Button, Modal, Divider, Input } from 'antd';
+import { Button, Modal, Input } from 'antd';
 import { appsService } from "services/appsService";
 
 function ToolsArtifactsListContent() {
@@ -27,12 +27,12 @@ function ToolsArtifactsListContent() {
       setSelectedApp(null);
       setRadioSelection('');
       setNewAppName('');
-      //fetchNewRecord();
+      fetchNewRecord();
     }, [selectedArtifact]);
   
     useEffect(() => {
       if (apps) {
-          //console.log("apps", apps)
+          console.log("apps", apps)
           fetchNewRecord();
       }
     }, [apps])
@@ -47,8 +47,10 @@ function ToolsArtifactsListContent() {
     }, [newAppName, radioSelection]);
   
   
-    const fetchNewRecord = () => {
-      const record = appsService.getNewRecord(apps);
+    const fetchNewRecord = async () => {
+      console.log('Fetching new record...');
+      const record = await appsService().getNewRecord(apps);
+      console.log('Fetched record:', record);
       setNewRecord(record);
     };
     
@@ -56,7 +58,7 @@ function ToolsArtifactsListContent() {
     useEffect(() => {
       // Detect and alert if new app name is a dupe
       if (newAppName && radioSelection === 'create') {
-        const dupeFound = appsService.isDupeName(apps, newAppName);
+        const dupeFound = appsService().isDupeName(apps, newAppName);
         setIsDupe(dupeFound);
       } else {
         setIsDupe(false); 
@@ -118,29 +120,37 @@ function ToolsArtifactsListContent() {
       console.log(selectedTool)
     };
   
-    const handleOk = () => {
-      if (radioSelection === 'add') {
-        if (selectedApp && selectedApp.appName) {
-          appsService.handleAdd(selectedApp.appName);
-        } else {
-          alert('Please select an app to add this artifact to.');
-        }
-      } else if (radioSelection === 'create') {
-        if (newAppName) {
-          if (appsService.isDupeName(apps, newAppName)) {
-            alert('The app name you entered already exists. Please use the "Add to Selected App" option or enter a different name.');
+    const handleOk = async () => {  // Make this method async
+      try {
+          if (radioSelection === 'add') {
+              if (selectedApp && selectedApp.appName) {
+                  const message = await appsService().handleAdd(apps, selectedApp.appName, getAppByNameKey(selectedArtifact), authState);
+                  setIsModalVisible(false);
+                  alert(message);
+              } else {
+                  alert('Please select an app to add this artifact to.');
+              }
+          } else if (radioSelection === 'create') {
+              if (newAppName) {
+                  if (appsService().isDupeName(apps, newAppName)) {
+                      alert('The app name you entered already exists. Please use the "Add to Selected App" option or enter a different name.');
+                  } else {
+                      const message = await appsService().handleCreate(apps, newRecord, authState);
+                      setIsModalVisible(false);
+                      alert(message);
+                  }
+              } else {
+                  alert('Please enter a name for the new app.');
+              }
           } else {
-            console.log("new record", newRecord)
-            appsService.handleCreate(apps, newRecord, authState);
+              alert('Please select an action (add or create) and fill in the required fields.');
           }
-        } else {
-          alert('Please enter a name for the new app.');
-        }
-      } else {
-        alert('Please select an action (add or create) and fill in the required fields.');
+      } catch (error) {
+          // Catch any errors thrown by handleAdd or handleCreate
+          alert(error.message);
       }
-    };
-      
+  };
+        
   
     const handleCancel = () => {
       setIsModalVisible(false);
@@ -227,6 +237,7 @@ function ToolsArtifactsListContent() {
             open={isModalVisible}
             onOk={handleOk}
             onCancel={handleCancel}
+            width={'80%'}
         >
           {selectedArtifact ? (
               <>
@@ -246,19 +257,21 @@ function ToolsArtifactsListContent() {
                       </tbody>
                   </table>
                   <div style={{ border: '1px solid #000', padding: '10px', marginBottom: '10px'  }}>
-                      <input
+                      <h3>Existing App Search</h3>
+                      <Input
                           type="text"
                           value={searchInput}
                           onChange={handleSearchInputChange}
                           placeholder="Search for an app"
                           style={{ marginBottom: '10px', width: '100%' }}
                       />
-                      <div style={{ maxHeight: '150px', overflowY: 'scroll', border: '1px solid #ccc', padding: '10px' }}>
+                      <div style={{ height: '150px', overflowY: 'scroll', border: '1px solid #ccc', padding: '10px' }}>
                           {filteredApps.map((app, index) => (
                               <div
                                   key={index}
                                   style={{
                                       padding: '10px',
+                                      borderBottom: '1px solid lightgrey',
                                       backgroundColor: selectedApp === app ? 'lightblue' : '',
                                       cursor: 'pointer'
                                   }}
@@ -310,11 +323,11 @@ function ToolsArtifactsListContent() {
                       />
                       {isDupe && <span style={{ color: 'red', marginLeft: '10px' }}>App already exists</span>}
                   </div>
-                  {radioSelection === 'create' && newRecord && (
+                  { radioSelection === 'create' && newRecord && (
                     <div style={{ border: '1px solid #000', padding: '10px', marginBottom: '10px' }}>
                       <h3>New App Record Properties</h3>
                       {Object.keys(newRecord).map((key) => (
-                        key !== 'appName' && key !== 'alternateNames' ? (
+                        key !== 'appName' && key !== 'dateAdded' && key !== 'alternateNames' ? (
                           <div key={key}>
                             <label>{key}:</label>
                             <Input
@@ -326,7 +339,7 @@ function ToolsArtifactsListContent() {
                       ))}
                       <div style={{ padding: '20px' }}>
                           <label>Alternate Names:</label>
-                          {newRecord.alternateNames.map((item, index) => (
+                          { newRecord.alternateNames ? newRecord.alternateNames.map((item, index) => (
                             <div key={index} style={{ display: 'flex', alignItems: 'center' }}>
                               <Input
                                 value={item}
@@ -334,7 +347,7 @@ function ToolsArtifactsListContent() {
                               />
                               <button onClick={() => handleArrayRemove(index)}>X</button>
                             </div>
-                            ))}
+                            )) : ''}
                           <div style={{ display: 'flex', alignItems: 'center', marginTop: '10px' }}>
                               <Input
                                   type="text"

@@ -86,18 +86,29 @@ function GitHubFunctionsContent () {
             
             for (let file of queueFilesList) {
                 const patchContent = await service.getFileContent(service.patchBranch, file.path);
-                const patch = JSON.parse(patchContent);
+                const patchFile = JSON.parse(patchContent);
             
-                // if (patch[0].op === "add" && appsUpdate.some(app => app.appName.toLowerCase() === patch[0].value.appName.toLowerCase())) {
-                //     setTerminalOutput(prevOutput => [...prevOutput, `! Duplicate record detected for appName: ${patch.value.appName}. Stopping process.`]);
-                //     return;  // This will exit the function, stopping the process
-                // }
+                const { action, appName, patch } = patchFile; 
             
-                setTerminalOutput(prevOutput => [...prevOutput, `Applying ${file.path} patch...`]);
-                appsUpdate = appsService.applyPatch(appsUpdate, patch);
+                setTerminalOutput(prevOutput => [...prevOutput, `Applying ${action} ${file.path} patch...`]);
+            
+                if (action === 'edit') {
+                    const appIndex = appsUpdate.findIndex(app => app.appName.toLowerCase() === appName.toLowerCase());
+                    if (appIndex === -1) {
+                        setTerminalOutput(prevOutput => [...prevOutput, `! No matching record found for appName: ${appName}. Skipping patch.`]);
+                        continue;  // Skip to the next iteration of the loop
+                    }
+                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
+                } else if (action === 'new') {
+                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
+                } else {
+                    setTerminalOutput(prevOutput => [...prevOutput, `! Unknown action: ${action}. Skipping patch.`]);
+                    continue;  // Skip to the next iteration of the loop
+                }
             }
-            setTerminalOutput(prevOutput => [...prevOutput, `Applied patches. AppsUpdate now has ${Object.keys(appsUpdate).length} records.`]);
-            
+            console.log("new apps", appsUpdate)
+            setTerminalOutput(prevOutput => [...prevOutput, `Applied patches. AppsUpdate now has ${appsUpdate.length} records.`]);  // Use appsUpdate.length instead of Object.keys(appsUpdate).length
+                        
             appsUpdate.sort((a, b) => {
                 const nameA = a.appName.toUpperCase();
                 const nameB = b.appName.toUpperCase();
@@ -106,7 +117,7 @@ function GitHubFunctionsContent () {
                 return 0;
             });
             //console.log(appsUpdate)
-    
+            //return;
             
             // Commit to dataBranch and create a pull request to the defaultBranch
             setTerminalOutput(prevOutput => [...prevOutput, `Committing apps-core.json on ${service.dataBranch} branch`]);
