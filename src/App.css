@@ -84,6 +84,16 @@
 }
 
 
+/* Style for the tool cards */
+.artifact-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  
+  max-width: 100%;
+  overflow-x: auto;
+}
+
 
 /* Style for the tool cards */
 .tool-card {
@@ -129,4 +139,22 @@
 /* Style for highlighted elements */
 .highlight {
   background-color: lightcoral; /* Set the background color to light red */
+}
+
+
+/* style for scroll to top button */
+.scrollTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
 }

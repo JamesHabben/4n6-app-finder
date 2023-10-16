@@ -6,6 +6,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -15,7 +16,8 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames": []
+        "dateAdded": "2023-10-11",
+        "alternateNames":  []
     },
     {
         "appName": "Adium",
@@ -24,7 +26,8 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames": []
+        "dateAdded": "2023-10-11",
+        "alternateNames":  []
     },
     {
         "appName": "Aeroflot",
@@ -33,7 +36,8 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames": []
+        "dateAdded": "2023-10-11",
+        "alternateNames":  []
     },
     {
         "appName": "Afaria",
@@ -42,7 +46,8 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames": []
+        "dateAdded": "2023-10-11",
+        "alternateNames":  []
     },
     {
         "appName": "Airbnb",
@@ -51,7 +56,8 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
-        "alternateNames": []
+        "dateAdded": "2023-10-11",
+        "alternateNames":  []
     },
     {
         "appName": "AliExpress",
@@ -60,6 +66,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -69,6 +76,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -78,6 +86,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -87,6 +96,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Amazon shopping"
         ]
@@ -98,6 +108,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -107,6 +118,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -116,6 +128,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -125,6 +138,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Any.Do"
         ]
@@ -136,6 +150,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -158,6 +173,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Calendar"
         ]
@@ -169,6 +185,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Apple Contacts - macOS",
             "Apple Contacts Groups"
@@ -181,6 +198,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -190,46 +208,55 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Email-iCloud (iOS)"
         ]
     },
     {
         "appName": "Apple Maps",
+        "appName": "Apple Maps",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Apple Messages",
         "appName": "Apple Messages",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Apple Notes",
         "appName": "Apple Notes",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Notes (iOS)"
         ]
     },
     {
         "appName": "Apple Phone",
+        "appName": "Apple Phone",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Calls"
         ]
@@ -241,6 +268,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -250,6 +278,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -259,6 +288,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -268,6 +298,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -277,6 +308,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -286,6 +318,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -295,6 +328,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Atomic Web Browser Lite"
         ]
@@ -306,6 +340,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -315,6 +350,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -324,6 +360,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -333,6 +370,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -342,6 +380,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -351,6 +390,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Baidu Browser HD",
             "Baidu Browser Mini"
@@ -363,6 +403,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -372,6 +413,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -381,6 +423,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -390,6 +433,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -399,6 +443,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Bigo Live"
         ]
@@ -410,6 +455,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -419,6 +465,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -428,6 +475,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -437,6 +485,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -446,6 +495,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "BlackBerry Messenger Contacts",
             "BlackBerry Messenger File Transfers",
@@ -462,6 +512,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Boat Browser for Tablets",
             "Boat Browser Mini"
@@ -474,6 +525,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -483,6 +535,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -492,6 +545,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -501,6 +555,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Brave",
             "Brave browser"
@@ -513,6 +568,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -522,6 +578,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -531,6 +588,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -540,6 +598,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -549,6 +608,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -558,6 +618,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Android Burner Conversations",
             "Android Burner Numbers"
@@ -570,6 +631,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -579,24 +641,29 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Calculator+",
         "appName": "Calculator+",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Calculator+ light",
         "appName": "Calculator+ light",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -606,6 +673,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -615,6 +683,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -624,6 +693,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -633,6 +703,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -642,6 +713,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -651,6 +723,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -660,6 +733,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Clubhouse "
         ]
@@ -671,6 +745,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -680,6 +755,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -689,6 +765,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -698,6 +775,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -707,6 +785,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -716,6 +795,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -725,6 +805,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -734,6 +815,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Cyberghost VPN"
         ]
@@ -745,6 +827,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -754,6 +837,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -763,6 +847,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -772,6 +857,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -781,6 +867,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "DJI GO 4",
             "DJI Go 4"
@@ -793,6 +880,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -802,6 +890,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Dolphin Browser",
             "Dolphin Browser Classic",
@@ -817,6 +906,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "DropBox",
             "Android Dropbox",
@@ -830,6 +920,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -839,6 +930,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -848,6 +940,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -857,6 +950,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -866,6 +960,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -875,6 +970,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -884,6 +980,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -893,6 +990,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -902,6 +1000,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -911,6 +1010,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -920,6 +1020,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -929,6 +1030,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -938,6 +1040,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -947,6 +1050,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -956,6 +1060,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -965,6 +1070,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -974,6 +1080,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -983,6 +1090,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -992,6 +1100,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Facebook Lite",
             "Facebook Messenger",
@@ -1007,6 +1116,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1016,6 +1126,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1025,6 +1136,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1034,6 +1146,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1043,6 +1156,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1052,6 +1166,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1061,6 +1176,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1070,6 +1186,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1079,6 +1196,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1088,6 +1206,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1097,6 +1216,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1106,6 +1226,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1115,6 +1236,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1124,6 +1246,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1133,6 +1256,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1142,6 +1266,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1151,6 +1276,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1160,6 +1286,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1169,6 +1296,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1178,6 +1306,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1187,6 +1316,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1196,6 +1326,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1205,6 +1336,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1214,6 +1346,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1223,6 +1356,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1232,6 +1366,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1241,6 +1376,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1250,6 +1386,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1259,6 +1396,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1268,6 +1406,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1277,6 +1416,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1286,6 +1426,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1295,6 +1436,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1304,6 +1446,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1313,6 +1456,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1322,6 +1466,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1331,6 +1476,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Chrome"
         ]
@@ -1342,6 +1488,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1351,6 +1498,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1360,6 +1508,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1369,6 +1518,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1378,6 +1528,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1387,6 +1538,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1396,6 +1548,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1405,6 +1558,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1414,6 +1568,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1423,6 +1578,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Gmail",
             "Gmail/Inbox"
@@ -1435,6 +1591,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1444,6 +1601,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1453,6 +1611,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1462,6 +1621,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1471,6 +1631,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1480,6 +1641,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1489,6 +1651,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1498,6 +1661,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1507,6 +1671,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1516,6 +1681,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1525,6 +1691,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1534,6 +1701,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1543,6 +1711,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1552,6 +1721,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1561,6 +1731,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "HERE Maps"
         ]
@@ -1572,6 +1743,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1581,6 +1753,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1590,6 +1763,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1599,6 +1773,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1608,6 +1783,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1617,6 +1793,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1626,6 +1803,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1635,6 +1813,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1644,6 +1823,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1653,6 +1833,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1662,6 +1843,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1671,6 +1853,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1680,6 +1863,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1689,6 +1873,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1698,6 +1883,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1707,6 +1893,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1716,6 +1903,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1725,6 +1913,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1734,6 +1923,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1743,6 +1933,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "iMe Messenger & Crypto Wallet"
         ]
@@ -1754,6 +1945,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1763,6 +1955,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "imo",
             "Imo beta",
@@ -1776,6 +1969,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1785,6 +1979,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1794,6 +1989,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1803,6 +1999,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Instagram (web)"
         ]
@@ -1814,6 +2011,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1823,6 +2021,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1832,6 +2031,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1841,6 +2041,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1850,6 +2051,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1859,6 +2061,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1868,6 +2071,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1877,6 +2081,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1886,6 +2091,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1895,6 +2101,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "KakaoTalk"
         ]
@@ -1906,6 +2113,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1915,6 +2123,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1924,6 +2133,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1933,6 +2143,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1942,6 +2153,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1951,6 +2163,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Keepsafe"
         ]
@@ -1962,6 +2175,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1971,6 +2185,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1980,6 +2195,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1989,6 +2205,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -1998,6 +2215,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2007,6 +2225,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2016,6 +2235,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2025,6 +2245,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Lime "
         ]
@@ -2036,6 +2257,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2045,6 +2267,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Linkedin"
         ]
@@ -2056,6 +2279,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2065,6 +2289,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2074,6 +2299,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2083,6 +2309,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2092,6 +2319,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2101,6 +2329,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Mail.Ru - Email App",
             "Mail.Ru Agent",
@@ -2114,6 +2343,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2123,6 +2353,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2132,6 +2363,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2141,6 +2373,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2150,6 +2383,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2159,6 +2393,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2168,6 +2403,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2177,6 +2413,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "MEGA Accounts",
             "MEGA Chat",
@@ -2190,6 +2427,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Mercury Web Browser"
         ]
@@ -2201,6 +2439,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2210,6 +2449,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2219,6 +2459,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "metamask"
         ]
@@ -2230,6 +2471,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2239,6 +2481,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2248,6 +2491,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2257,6 +2501,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2266,6 +2511,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2275,6 +2521,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "OneDrive",
             "OneDrive (web)"
@@ -2287,6 +2534,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Outlook"
         ]
@@ -2298,6 +2546,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2307,6 +2556,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2316,6 +2566,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2325,6 +2576,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2334,6 +2586,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2343,6 +2596,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2352,6 +2606,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2361,6 +2616,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2370,6 +2626,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2379,6 +2636,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2388,6 +2646,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2397,6 +2656,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2406,6 +2666,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2415,6 +2676,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2424,6 +2686,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2433,6 +2696,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Nike+ Run Club"
         ]
@@ -2444,6 +2708,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2453,6 +2718,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "NordVPN"
         ]
@@ -2464,6 +2730,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2473,6 +2740,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2482,6 +2750,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2491,6 +2760,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2500,6 +2770,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2509,6 +2780,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2518,6 +2790,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2527,6 +2800,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2536,6 +2810,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "OKCupid"
         ]
@@ -2547,6 +2822,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2556,6 +2832,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2565,6 +2842,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2574,6 +2852,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2583,6 +2862,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Opera Mini",
             "Opera mini",
@@ -2596,6 +2876,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2605,6 +2886,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2614,6 +2896,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2623,6 +2906,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2632,6 +2916,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2641,6 +2926,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2650,6 +2936,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2659,6 +2946,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2668,6 +2956,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2677,6 +2966,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2686,6 +2976,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2695,6 +2986,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2704,6 +2996,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Pokemon GO"
         ]
@@ -2715,6 +3008,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2724,6 +3018,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2733,6 +3028,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2742,6 +3038,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2761,6 +3058,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2770,6 +3068,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2779,6 +3078,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2788,6 +3088,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Qip"
         ]
@@ -2799,6 +3100,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "QQ International",
             "QQ Browser"
@@ -2811,6 +3113,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2820,6 +3123,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2829,6 +3133,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2838,6 +3143,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2847,6 +3153,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2856,6 +3163,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Rocket.Chat"
         ]
@@ -2867,6 +3175,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2876,6 +3185,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2885,6 +3195,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2894,6 +3205,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "RusVPN"
         ]
@@ -2905,6 +3217,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Safari Browser",
             "Safari (iOS)"
@@ -2917,6 +3230,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2926,6 +3240,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2935,6 +3250,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2944,6 +3260,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2953,6 +3270,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2962,6 +3280,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2971,6 +3290,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2980,6 +3300,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2989,6 +3310,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -2998,6 +3320,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3007,6 +3330,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3016,6 +3340,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3025,6 +3350,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3034,6 +3360,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3043,6 +3370,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3052,6 +3380,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3061,6 +3390,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Skyfire Browser"
         ]
@@ -3072,6 +3402,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Skype (deprecated)",
             "Skype (desktop)",
@@ -3086,6 +3417,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3095,6 +3427,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Slack (desktop)",
             "Slack (store)",
@@ -3108,6 +3441,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3117,6 +3451,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3126,6 +3461,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "SnapChat",
             "Snapchat Warrant Return"
@@ -3138,6 +3474,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3147,6 +3484,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3156,6 +3494,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3165,6 +3504,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3174,6 +3514,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3183,6 +3524,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3192,6 +3534,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3201,6 +3544,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3210,6 +3554,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3219,6 +3564,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3228,6 +3574,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3237,6 +3584,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3246,6 +3594,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "The app doesn't sync data in the iOS backup so tools cannot parse from there. The data can be extracted from the web interface and is located in the 'IndexDB' found in the browser Dev Tools.",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3255,6 +3604,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3264,6 +3614,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3273,6 +3624,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3282,6 +3634,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3291,6 +3644,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3300,6 +3654,17 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
+        "alternateNames": []
+    },
+    {
+        "appName": "Taxify",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-14",
         "alternateNames": []
     },
     {
@@ -3318,6 +3683,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3327,6 +3693,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Telegram (desktop)",
             "Telegram for macOS (desktop)",
@@ -3343,6 +3710,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3352,24 +3720,29 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Text Free",
         "appName": "Text Free",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Text Free - Free Text + Call",
         "appName": "Text Free - Free Text + Call",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3379,6 +3752,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3388,6 +3762,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3397,6 +3772,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3406,6 +3782,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3415,6 +3792,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3424,6 +3802,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3433,6 +3812,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3442,6 +3822,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3451,6 +3832,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3460,6 +3842,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3479,6 +3862,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3488,6 +3872,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "TikTok Lite"
         ]
@@ -3499,6 +3884,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3508,6 +3894,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3517,6 +3904,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "TomTom Australia",
             "TomTom GPS Navigation Traffic",
@@ -3532,6 +3920,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3541,6 +3930,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3550,6 +3940,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3559,6 +3950,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3568,6 +3960,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3577,6 +3970,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3586,6 +3980,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3595,6 +3990,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3604,6 +4000,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3613,6 +4010,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3622,6 +4020,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3631,6 +4030,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Twitter",
             "X"
@@ -3643,6 +4043,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3652,6 +4053,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3661,6 +4063,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3670,6 +4073,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "UC Browser Lite"
         ]
@@ -3681,6 +4085,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3690,6 +4095,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3699,6 +4105,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3708,6 +4115,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3717,6 +4125,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3726,6 +4135,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3735,6 +4145,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3744,6 +4155,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3753,6 +4165,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3762,6 +4175,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3771,6 +4185,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3780,6 +4195,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3789,6 +4205,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3798,6 +4215,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3807,6 +4225,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3816,6 +4235,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3825,6 +4245,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3834,6 +4255,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3843,6 +4265,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3852,6 +4275,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "VLC Media Player (desktop)",
             "VLC Media Player (store)"
@@ -3864,6 +4288,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3873,6 +4298,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3882,6 +4308,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3891,6 +4318,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3900,6 +4328,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3909,6 +4338,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3918,6 +4348,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3927,6 +4358,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3936,6 +4368,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "WhatsApp (desktop)",
             "WhatsApp (store)",
@@ -3963,6 +4396,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3972,6 +4406,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "WickrMe"
         ]
@@ -3983,6 +4418,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -3992,6 +4428,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4001,6 +4438,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4010,6 +4448,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4019,6 +4458,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4028,6 +4468,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Xabber Beta"
         ]
@@ -4039,6 +4480,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4048,6 +4490,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4057,6 +4500,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4066,6 +4510,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4075,6 +4520,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Yahoo!Mail"
         ]
@@ -4086,6 +4532,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Yahoo! messenger"
         ]
@@ -4097,15 +4544,18 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
+        "appName": "Yandex Browser",
         "appName": "Yandex Browser",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Yandex.Browser",
             "Yandex.Browser (iPad)",
@@ -4114,11 +4564,13 @@
     },
     {
         "appName": "Yandex Go",
+        "appName": "Yandex Go",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4128,6 +4580,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4137,6 +4590,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4146,6 +4600,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4155,6 +4610,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4164,6 +4620,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4173,6 +4630,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4182,6 +4640,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4191,6 +4650,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4200,6 +4660,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Youtube"
         ]
@@ -4211,6 +4672,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4220,6 +4682,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "Zangi private messenger"
         ]
@@ -4231,6 +4694,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4240,6 +4704,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4249,6 +4714,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": [
             "ZenMate VPN"
         ]
@@ -4260,6 +4726,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4269,6 +4736,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4278,6 +4746,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     },
     {
@@ -4287,6 +4756,7 @@
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
+        "dateAdded": "2023-10-11",
         "alternateNames": []
     }
 ]

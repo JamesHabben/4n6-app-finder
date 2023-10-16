@@ -14,6 +14,16 @@ This project was not meant to be run by anyone on local computers and is designe
 
 We welcome contributions to make this project more comprehensive and accurate. Here are ways you can help:
 
+### Easy Mode
+
+1. **Create a Local Fork**: while being signed into GitHub, click on the `Fork` button near the top of the page. When asked, check the box to `include all branches`.
+2. **Install the App**: the `4af-app-finder` GitHub custom app is located here: https://github.com/apps/4af-app-edit
+3. **Limit Repo to App**: part of the install will ask to give the app permissions to all repos, but this only needs to be in the `4n6-app-finder` fork you made.
+4. **Login to WebApp**: Now go to the WebApp (https://4n6appfinder.habben.net) and click on the admin button. Authorize the WebApp to connect with the GitHub app from up above. Note permissions are limited to read/write of content and pull requests.
+5. **Find content to Update**: not everything is built yet, but you can click through tool artifacts and provide the suggestions on how to update the artifact to map it to an app. Sometimes the tool calls it `Whatsapp` (lower A), `WhatsApp Messages`, `WhatsApp Contacts`, and many more that all need to map into the main app record through the `alternateNames` property.
+
+### Hard Mode
+
 1. **Update Core Apps Database**: 
     - Submit an issue or a pull request to update information in `apps-core.json` if an app or its data is missing or outdated.
 2. **Map Unlinked Artifacts**:

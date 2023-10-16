@@ -1,12 +1,17 @@
-import React, { useEffect} from 'react';
+import React, { useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import PageSearch from './PageSearch';
-import PageStats from './PageStats';
-import PageAdmin from './PageAdmin';
-import VersionInfo from './VersionInfo';
+import AppRoutes from './Routes';
+import PageSearch from 'components/PageSearch';
+import PageStats from 'components/PageStats';
+import PageAdmin from 'components/PageAdmin';
+import VersionInfo from 'components/VersionInfo';
+import { AuthProvider } from './AuthContext';
+
 import './App.css';
 
 function App() {
+  const [showScroll, setShowScroll] = useState(false);
+  
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
       document.title = document.title + ' (Dev Mode)';
@@ -15,10 +20,27 @@ function App() {
   
   const [activeTab, setActiveTab] = React.useState(window.location.pathname);
 
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400){
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400){
+      setShowScroll(false);
+    }
+  };
 
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop);
+    return () => window.removeEventListener('scroll', checkScrollTop);
+  });
 
   return (
     <Router>
+      <AuthProvider>
+      
       <div className="app-container">
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0rem' }}>
           <img src="/4af-logo.png" alt="Logo" width={'200px'} height={'200px'} 
@@ -37,12 +59,15 @@ function App() {
           </Link>
         </ul>
         <VersionInfo />
-        <Routes>
-          <Route path="/" element={<PageSearch />} />
-          <Route path="/statistics" element={<PageStats />} />
-          <Route path="/admin" element={<PageAdmin />} />
-        </Routes>
+        <AppRoutes />
+        <div 
+          className="scrollTop" 
+          onClick={scrollTop} 
+          style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+            <span>^</span>  {/* You can replace this with an icon */}
+        </div>
       </div>
+      </AuthProvider>
     </Router>
   );
 }

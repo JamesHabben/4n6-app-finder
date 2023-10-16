@@ -1,6 +1,6 @@
 // version.js
 const fs = require('fs');
-const path = './public/version.json';
+const path = './public/version-build.json';
 
 function formatDate(date) {
   const yyyy = date.getFullYear();
