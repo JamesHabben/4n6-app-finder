@@ -154,6 +154,19 @@
         "alternateNames": []
     },
     {
+        "appName": "AOL Instant Messenger (AIM)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-15",
+        "alternateNames": [
+            "AIM Messages",
+            "AIM Buddies"
+        ]
+    },
+    {
         "appName": "Apple Calendar",
         "icon": "",
         "websiteUrl": "",
@@ -895,7 +908,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "DropBox"
+            "DropBox",
+            "Android Dropbox",
+            "Android Dropbox Account Info"
         ]
     },
     {
@@ -3027,6 +3042,16 @@
         "alternateNames": []
     },
     {
+        "appName": "Privet Photo Vault",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-15",
+        "alternateNames": []
+    },
+    {
         "appName": "ProtonMail",
         "icon": "",
         "websiteUrl": "",
@@ -3438,7 +3463,8 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "SnapChat"
+            "SnapChat",
+            "Snapchat Warrant Return"
         ]
     },
     {
@@ -3642,6 +3668,15 @@
         "alternateNames": []
     },
     {
+        "appName": "Taxify",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "alternateNames": []
+    },
+    {
         "appName": "TeamViewer",
         "icon": "",
         "websiteUrl": "",
@@ -3808,6 +3843,16 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
+        "alternateNames": []
+    },
+    {
+        "appName": "TigerText",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-15",
         "alternateNames": []
     },
     {

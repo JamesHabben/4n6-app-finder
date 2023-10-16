@@ -1,0 +1,17 @@
+name: Trigger Azure Update Data Files Function
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  call-azure-function:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Call Azure Function
+      run: |
+        curl -X POST "${{ secrets.AZURE_RUN_DATA_UPDATE_FUNCTION_URL }}"
