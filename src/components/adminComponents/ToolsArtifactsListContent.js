@@ -243,7 +243,7 @@ function ToolsArtifactsListContent() {
                   marginBottom: '5px',
                   padding: '15px',
                   maxWidth: '90%',
-                  overflowX: 'auto',
+                  //overflowX: 'auto',
                   boxSizing: "border-box"
                   //height: (cache.getHeight(index, 0) || style.height) + overlapAdjustment,
             }} 
@@ -276,7 +276,7 @@ function ToolsArtifactsListContent() {
     
       
     return (
-      <div>
+      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh'}}>
         <div className="tool-buttons">
           {tools.map((tool) => (
             <Button
@@ -288,19 +288,17 @@ function ToolsArtifactsListContent() {
             </Button>
           ))}
         </div>
-        <div className="tool-content">
-          {selectedTool && (
-            <div>
+          {selectedTool && (<>
               <h2>{selectedTool.toolLongName} - Artifact List</h2>
               <Button style={{ marginBottom: '10px' }} 
                 onClick={() => setShowOnlyHighlighted(!showOnlyHighlighted)}>
                   {showOnlyHighlighted ? "Show All Artifacts" : "Show Unmapped Artifacts Only"}
               </Button>
             
-              <div style={{ height: '65rem', width: '100%', overflowY: 'auto' }}>
                 <AutoSizer>
                   {({ height, width }) => {
                     //console.log("start list", selectedTool); 
+                    console.log("AutoSizer dimensions:", height, width);
                     return (
                       <List
                         width={width}
@@ -315,10 +313,7 @@ function ToolsArtifactsListContent() {
                     );
                   }}
                 </AutoSizer>
-              </div>
-            </div>
-          )}
-        </div>
+              </>)}
         <Modal
             title="Suggest an Edit"
             open={isEditModalVisible}

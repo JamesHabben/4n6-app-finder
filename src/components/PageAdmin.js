@@ -38,45 +38,44 @@ function PageAdmin() {
 
 
   return (
-    <div>
+    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
         <h1 className='pageTitle'>Admin Page</h1>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '30px', marginBottom: '10px' }}>
-          <AuthLoginButton/></div>
-        <div style={{ display: 'flex', border: '1px solid #ccc', textAlign: 'left' }}>
-        {/* Left column for items */}
-        <div style={{ flex: '0 0 15%', padding: '1rem', borderRight: '1px solid #ccc' }}>
-            <h2>Items</h2>
-            <ul>
-            {filteredItems.map((item) => (
-                <li
-                key={item.id}
-                style={{
-                    cursor: 'pointer',
-                    textDecoration: selectedItem === item ? 'underline' : 'none',
-                }}
-                onClick={() => onItemClick(item)}
-                >
-                {item.name}
-                </li>
-            ))}
-            </ul>
+            <AuthLoginButton/>
         </div>
+        <div style={{ display: 'flex', border: '1px solid #ccc', textAlign: 'left', flex: 1 }}>
+            {/* Left column for items */}
+            <div style={{ flex: '0 0 15%', padding: '1rem', borderRight: '1px solid #ccc' }}>
+                <h2>Items</h2>
+                <ul>
+                    {filteredItems.map((item) => (
+                        <li
+                            key={item.id}
+                            style={{
+                                cursor: 'pointer',
+                                textDecoration: selectedItem === item ? 'underline' : 'none',
+                            }}
+                            onClick={() => onItemClick(item)}
+                        >
+                            {item.name}
+                        </li>
+                    ))}
+                </ul>
+            </div>
 
-        {/* Right column for content */}
-        <div style={{ display: 'flex', flexDirection: 'column', flex: '1', padding: '1rem', 
-          overflowY: 'auto', maxHeight: 'calc(100vh - 315px)' }}>
-           
-            {selectedItem ? (
-            <div style={{ flex: '1', display: 'flex', flexDirection: 'column' }}>
-                <h2>{selectedItem.name}</h2>
-                {selectedItem.contentComponent && (
-                  <selectedItem.contentComponent />
+            {/* Right column for content */}
+            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '1rem' }}>
+                {selectedItem ? (
+                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}> {/* Set flex: 1 here */}
+                        <h2>{selectedItem.name}</h2>
+                        {selectedItem.contentComponent && (
+                            <selectedItem.contentComponent />
+                        )}
+                    </div>
+                ) : (
+                    <p>Select an item to view its content.</p>
                 )}
             </div>
-            ) : (
-            <p>Select an item to view its content.</p>
-            )}
-        </div>
         </div>
     </div>
   );

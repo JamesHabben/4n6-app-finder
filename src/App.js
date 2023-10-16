@@ -1,15 +1,17 @@
-import React, { useEffect} from 'react';
+import React, { useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import AppRoutes from './Routes';
-import PageSearch from './components/PageSearch';
-import PageStats from './components/PageStats';
-import PageAdmin from './components/PageAdmin';
+import PageSearch from 'components/PageSearch';
+import PageStats from 'components/PageStats';
+import PageAdmin from 'components/PageAdmin';
 import VersionInfo from 'components/VersionInfo';
 import { AuthProvider } from './AuthContext';
 
 import './App.css';
 
 function App() {
+  const [showScroll, setShowScroll] = useState(false);
+  
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
       document.title = document.title + ' (Dev Mode)';
@@ -18,7 +20,22 @@ function App() {
   
   const [activeTab, setActiveTab] = React.useState(window.location.pathname);
 
+  const checkScrollTop = () => {
+    if (!showScroll && window.pageYOffset > 400){
+      setShowScroll(true);
+    } else if (showScroll && window.pageYOffset <= 400){
+      setShowScroll(false);
+    }
+  };
 
+  const scrollTop = () =>{
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop);
+    return () => window.removeEventListener('scroll', checkScrollTop);
+  });
 
   return (
     <Router>
@@ -43,6 +60,12 @@ function App() {
         </ul>
         <VersionInfo />
         <AppRoutes />
+        <div 
+          className="scrollTop" 
+          onClick={scrollTop} 
+          style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+            <span>^</span>  {/* You can replace this with an icon */}
+        </div>
       </div>
       </AuthProvider>
     </Router>
