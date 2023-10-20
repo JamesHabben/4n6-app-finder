@@ -17,7 +17,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames":  []
+        "alternateNames": []
     },
     {
         "appName": "Adium",
@@ -27,7 +27,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames":  []
+        "alternateNames": []
     },
     {
         "appName": "Aeroflot",
@@ -37,7 +37,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames":  []
+        "alternateNames": []
     },
     {
         "appName": "Afaria",
@@ -47,7 +47,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames":  []
+        "alternateNames": []
     },
     {
         "appName": "Airbnb",
@@ -57,7 +57,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames":  []
+        "alternateNames": []
     },
     {
         "appName": "AliExpress",
@@ -215,7 +215,6 @@
     },
     {
         "appName": "Apple Maps",
-        "appName": "Apple Maps",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -226,7 +225,6 @@
     },
     {
         "appName": "Apple Messages",
-        "appName": "Apple Messages",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -236,7 +234,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Apple Notes",
         "appName": "Apple Notes",
         "icon": "",
         "websiteUrl": "",
@@ -249,7 +246,6 @@
         ]
     },
     {
-        "appName": "Apple Phone",
         "appName": "Apple Phone",
         "icon": "",
         "websiteUrl": "",
@@ -646,7 +642,6 @@
     },
     {
         "appName": "Calculator+",
-        "appName": "Calculator+",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -656,7 +651,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Calculator+ light",
         "appName": "Calculator+ light",
         "icon": "",
         "websiteUrl": "",
@@ -3716,7 +3710,6 @@
     },
     {
         "appName": "Text Free",
-        "appName": "Text Free",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -3726,7 +3719,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Text Free - Free Text + Call",
         "appName": "Text Free - Free Text + Call",
         "icon": "",
         "websiteUrl": "",
@@ -4540,7 +4532,6 @@
     },
     {
         "appName": "Yandex Browser",
-        "appName": "Yandex Browser",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -4554,7 +4545,6 @@
         ]
     },
     {
-        "appName": "Yandex Go",
         "appName": "Yandex Go",
         "icon": "",
         "websiteUrl": "",
