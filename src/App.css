@@ -63,6 +63,13 @@
 .nav li.active {
   background-color: #007BFF;
   color: white;
+  
+}
+
+.nav .active {
+  /*background-color: #007BFF;*/
+  color: white;
+  
 }
 
 .nav a {
@@ -74,14 +81,15 @@
   text-decoration: underline;
 }
 
+.nav li a:visited {
+  color: black; 
+}
+
 .nav li.active a {
   color: white;
   text-decoration: none;
 }
 
-.nav li a:visited {
-  color: black; 
-}
 
 
 /* Style for the tool cards */
