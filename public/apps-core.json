@@ -2170,7 +2170,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Android Kik Messenger Contacts",
+            "Android Kik Messenger Attachments"
+        ]
     },
     {
         "appName": "KiteTech Notepad Notes",
