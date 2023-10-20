@@ -17,13 +17,16 @@ function RecentAppsTile({ apps, tools, onAppClick }) {
   }, [sortedApps]);
 
   return (
-    <Row gutter={[16, 16]} justify={'center'}>
-      {recentApps.map((app, index) => (
-        <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
-          <AppTile app={app} tools={tools} onClick={onAppClick} />
-        </Col>
-      ))}
-    </Row>
+    <div>
+      <h2>Recent App Updates</h2>
+      <Row gutter={[16, 16]} justify={'center'}>
+        {recentApps.map((app, index) => (
+          <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
+            <AppTile app={app} tools={tools} onClick={onAppClick} />
+          </Col>
+        ))}
+      </Row>
+    </div>
   );
 }
 

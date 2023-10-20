@@ -29,7 +29,9 @@ function WhatsNewTile() {
 
   return (
     <div style={{ marginBottom:'20px'}}>
+      
       <Card bodyStyle={{ padding: '10px', textAlign: 'left' }} className="whats-new-card" onClick={showModal}>
+        <h1>What's New</h1>
         <ReactMarkdown className="whats-new-content">{previewContent}</ReactMarkdown>
         <a onClick={showModal} style={{ cursor: 'pointer' }}>Show More</a>
       </Card>
