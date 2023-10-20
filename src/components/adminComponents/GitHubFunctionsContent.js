@@ -98,9 +98,9 @@ function GitHubFunctionsContent () {
                         setTerminalOutput(prevOutput => [...prevOutput, `! No matching record found for appName: ${appName}. Skipping patch.`]);
                         continue;  // Skip to the next iteration of the loop
                     }
-                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
+                    appsUpdate = appsService().applyPatch(appsUpdate, patch);
                 } else if (action === 'new') {
-                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
+                    appsUpdate = appsService().applyPatch(appsUpdate, patch);
                 } else {
                     setTerminalOutput(prevOutput => [...prevOutput, `! Unknown action: ${action}. Skipping patch.`]);
                     continue;  // Skip to the next iteration of the loop
