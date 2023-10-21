@@ -3780,7 +3780,13 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Android TextNow Profile",
+            "Android TextNow Groups",
+            "Android TextNow Contacts",
+            "Android TextNow Chat",
+            "Android TextNow Calls"
+        ]
     },
     {
         "appName": "TextPlus",
