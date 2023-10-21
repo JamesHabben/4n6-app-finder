@@ -199,7 +199,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Health"
+        ]
     },
     {
         "appName": "Apple Mail",
@@ -242,7 +244,8 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "Notes (iOS)"
+            "Notes (iOS)",
+            "notes"
         ]
     },
     {
@@ -285,7 +288,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "appleWalletPasses",
+            "appleWalletCards",
+            "appleWalletTransactions"
+        ]
     },
     {
         "appName": "AppLock",
@@ -852,7 +859,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "discordAcct"
+        ]
     },
     {
         "appName": "DJI GO",
@@ -2173,6 +2182,7 @@
         "alternateNames": [
             "Android Kik Messenger Contacts",
             "Android Kik Messenger Attachments",
+            "kikMessages",
             "Android Kik Messenger Messages"
         ]
     },
@@ -3057,7 +3067,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "protonMail"
+        ]
     },
     {
         "appName": "Puffin Web Browser",
@@ -3218,7 +3230,8 @@
         "dateAdded": "2023-10-11",
         "alternateNames": [
             "Safari Browser",
-            "Safari (iOS)"
+            "Safari (iOS)",
+            "safariHistor"
         ]
     },
     {
