@@ -359,8 +359,9 @@ function ToolsArtifactsListContent() {
                                   }}
                                   onClick={() => {
                                     console.log('search result item clicked with app:', app);
-                                    setSelectedApp(app)}
-                                  }
+                                    setSelectedApp(app);
+                                    setRadioSelection('add');
+                                  }}
                               >
                                   {app.appName}
                               </div>

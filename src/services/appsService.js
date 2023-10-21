@@ -4,8 +4,9 @@ import jsonpatch from 'fast-json-patch';
 
 export const appsService = () => {
     const applyPatch = (appsArray, patchFile) => {
+        console.log(patchFile)
         const { action, appName, patch } = patchFile;  // Destructure the action and patch properties from the patchFile
-    
+        
         if (action === 'edit') {
             // Find the index of the app to be patched
             const appIndex = appsArray.findIndex(app => app.appName.toLowerCase() === appName.toLowerCase());
@@ -16,11 +17,14 @@ export const appsService = () => {
     
             try {
                 // Apply the patch to the specific app
-                const patchedApp = jsonpatch.applyPatch(appsArray[appIndex], patchFile.patch).newDocument;
-                // Replace the original app with the patched app in the array
+                //const patchedApp = jsonpatch.applyPatch(appsArray[appIndex], patch).newDocument;
+                const appClone = JSON.parse(JSON.stringify(appsArray[appIndex]));
+                console.log("app ", appClone)
+                jsonpatch.applyPatch(appClone, patch)
                 const updatedAppsArray = [...appsArray];
-                updatedAppsArray[appIndex] = patchedApp;
-                return updatedAppsArray;  // Return the updated array
+                updatedAppsArray[appIndex] = appClone;
+                return updatedAppsArray; //updatedAppsArray;  // Return the updated array
+                
             } catch (error) {
                 console.error('Error applying patch:', error);
                 throw error;
@@ -70,7 +74,7 @@ export const appsService = () => {
         
         
         try {
-            await handleGithubPush(addToAppName, patchFile, authState, terminal);  // Assume this is async
+            await handleGithubPush(addToAppName, patchFile, authState, terminal);
             return 'Patch submitted successfully for addition.';
         } catch (error) {
             console.error('Error submitting patch:', error);
@@ -150,39 +154,46 @@ export const appsService = () => {
         //await new Promise(resolve => setTimeout(resolve, 4000));
         //return;
 
-        // check for any existing PR to origin branch
-        terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
-        const existingPR = await service.checkExistingPR(service.patchBranch);
-
-        // get branch name from existing PR or create new branch name
-        let branchName;
-        if (existingPR) {
-            // Existing PR found, extract the branch name
-            branchName = existingPR.head.ref;
-            terminal(prevOutput => [...prevOutput, `Existing pull request found, using branch: ${branchName}`]);
+        console.log("auth ", authState.username, " own ", service.owner)
+        if (authState.username == service.owner) {
+            terminal(prevOutput => [...prevOutput, `Preparing commit`]);
+            await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
+            terminal(prevOutput => [...prevOutput, `Commit Done`]);
         } else {
-            // No existing PR, create a new branch
-            const timestamp = Date.now();
-            branchName = `${authState.username}-${service.patchBranch}-${timestamp}`;
-            terminal(prevOutput => [...prevOutput, `No existing pull request found, creating new branch: ${branchName}`]);
-            await service.createBranch(branchName, authState.username);
-        }
+            // check for any existing PR to origin branch
+            terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
+            const existingPR = await service.checkExistingPR(service.patchBranch);
 
-        terminal(prevOutput => [...prevOutput, `Preparing commit`]);
-        await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
-        terminal(prevOutput => [...prevOutput, `Commit Done`]);
-        
-        //terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
-        //const existingPR = await service.checkExistingPR(service.patchBranch);
-        //console.log("find done")
-        if (!existingPR) {
-            const prTitle = 'WebApp Data Update from ' + authState.username;
-            const prBody = 'Database updates from ' + authState.username;
-            terminal(prevOutput => [...prevOutput, `Preparing pull request`]);
-            await service.createPullRequest(service.patchBranch, prTitle, prBody);
-            terminal(prevOutput => [...prevOutput, `Pull request done`]);
-        } else {
-            terminal(prevOutput => [...prevOutput, `Pull request already exists, all done`]);
+            // get branch name from existing PR or create new branch name
+            let branchName;
+            if (existingPR) {
+                // Existing PR found, extract the branch name
+                branchName = existingPR.head.ref;
+                terminal(prevOutput => [...prevOutput, `Existing pull request found, using branch: ${branchName}`]);
+            } else {
+                // No existing PR, create a new branch
+                const timestamp = Date.now();
+                branchName = `${authState.username}-${service.patchBranch}-${timestamp}`;
+                terminal(prevOutput => [...prevOutput, `No existing pull request found, creating new branch: ${branchName}`]);
+                await service.createBranch(branchName, authState.username);
+            }
+
+            terminal(prevOutput => [...prevOutput, `Preparing commit`]);
+            await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
+            terminal(prevOutput => [...prevOutput, `Commit Done`]);
+            
+            //terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
+            //const existingPR = await service.checkExistingPR(service.patchBranch);
+            //console.log("find done")
+            if (!existingPR) {
+                const prTitle = 'WebApp Data Update from ' + authState.username;
+                const prBody = 'Database updates from ' + authState.username;
+                terminal(prevOutput => [...prevOutput, `Preparing pull request`]);
+                await service.createPullRequest(service.patchBranch, prTitle, prBody);
+                terminal(prevOutput => [...prevOutput, `Pull request done`]);
+            } else {
+                terminal(prevOutput => [...prevOutput, `Pull request already exists, all done`]);
+            }
         }
     }
     

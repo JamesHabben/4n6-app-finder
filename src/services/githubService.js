@@ -13,7 +13,7 @@ export const githubService = (token, username) => {
         try {
           // Check if user is the owner of the repository
           //const repoData = await octokit.repos.get({ owner });
-          if (owner == username) {
+          if (owner === username) {
             return 'owner';
           }
     
@@ -147,14 +147,14 @@ export const githubService = (token, username) => {
             repo,
             ref: `heads/${defaultBranch}`,
           });
-          console.log("before createref")
+          //console.log("before createref")
           await octokit.git.createRef({
             owner: username,
             repo,
             ref: `refs/heads/${newBranchName}`,
             sha: latestCommitSha,
           });
-          console.log("after createref")
+          //console.log("after createref")
         } catch (error) {
           console.error('Error creating branch:', error);
         }
@@ -205,6 +205,7 @@ export const githubService = (token, username) => {
                 base: baseBranch,
                 head: headBranch
             });
+            //console.log(comparison)
             // If the behind_by value is 0, the head branch is up-to-date with the base branch
             return comparison.data.behind_by === 0;
         } catch (error) {
@@ -212,6 +213,53 @@ export const githubService = (token, username) => {
             throw error;
         }
     };
+
+    const compareBranches = async (headBranch, baseBranch) => {
+        try {
+            const comparison = await octokit.repos.compareCommits({
+                owner,
+                repo,
+                base: baseBranch,
+                head: headBranch
+            });
+            return {
+                isUpToDate: comparison.data.behind_by === 0,
+                ahead_by: comparison.data.ahead_by,
+                behind_by: comparison.data.behind_by,
+            };
+        } catch (error) {
+            console.error('Error comparing branches:', error.message);
+            throw error;
+        }
+    };
+    
+    const catchUpBranch = async () => {
+        //console.log("catch up")
+        try {
+            await mergeBranches(dataBranch, defaultBranch);
+            // Refresh the branch comparison after the merge
+            const comparison = await compareBranches(dataBranch, defaultBranch);
+            return(comparison.isUpToDate ? 'Up to date' : `Not up to date. Ahead by ${comparison.ahead_by}, behind by ${comparison.behind_by}.`);
+        } catch (error) {
+            console.error('Error catching up branch:', error.message);
+        }
+    };
+
+    const mergeBranches = async (baseBranch, headBranch) => {
+        try {
+            const response = await octokit.repos.merge({
+                owner,
+                repo,
+                base: baseBranch, // the branch you want to merge into
+                head: headBranch, // the branch you want to merge
+            });
+            //console.log('Merge response:', response);
+        } catch (error) {
+            console.error('Error merging branches:', error.message);
+            throw error;
+        }
+    };
+    
     
 
 
@@ -339,6 +387,7 @@ export const githubService = (token, username) => {
         patchBranch,
         dataBranch,
         defaultBranch,
+        owner,
         createBranch,
         commitChanges,
         createPullRequest,
@@ -350,6 +399,8 @@ export const githubService = (token, username) => {
         getFilesInFolder,
         getBranch,
         isBranchUpToDate,
+        compareBranches,
+        catchUpBranch,
         getFileContent,
         moveFile,
     }
