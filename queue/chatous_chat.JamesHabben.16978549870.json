@@ -1,0 +1,21 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Chatous Chat",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "notes": "",
+                "dateAdded": "2023-10-21",
+                "alternateNames": [
+                    "Chatous Chat Messages"
+                ]
+            }
+        }
+    ]
+}
