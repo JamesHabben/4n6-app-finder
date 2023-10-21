@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Safari",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "safariHistor"
+        }
+    ]
+}
