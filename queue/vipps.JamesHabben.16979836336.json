@@ -1,0 +1,22 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Vipps",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "https://apps.apple.com/us/app/vipps/id984380185",
+                "googlePlayUrl": "",
+                "notes": "",
+                "dateAdded": "2023-10-22",
+                "alternateNames": [
+                    "vippsContacts",
+                    "vipps"
+                ]
+            }
+        }
+    ]
+}
