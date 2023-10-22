@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Apple Contacts",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Address Book Contacts"
+        }
+    ]
+}
