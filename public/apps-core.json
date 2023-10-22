@@ -605,6 +605,18 @@
         "alternateNames": []
     },
     {
+        "appName": "Bumble",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/bumble-dating-friends-app/id930441707",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-21",
+        "alternateNames": [
+            "bumble"
+        ]
+    },
+    {
         "appName": "Bump",
         "icon": "",
         "websiteUrl": "",
@@ -2004,7 +2016,8 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "Instagram (web)"
+            "Instagram (web)",
+            "instagramThreads"
         ]
     },
     {
@@ -2183,7 +2196,8 @@
             "Android Kik Messenger Contacts",
             "Android Kik Messenger Attachments",
             "kikMessages",
-            "Android Kik Messenger Messages"
+            "Android Kik Messenger Messages",
+            "kikBplistmeta"
         ]
     },
     {
@@ -3231,7 +3245,8 @@
         "alternateNames": [
             "Safari Browser",
             "Safari (iOS)",
-            "safariHistor"
+            "safariHistor",
+            "safariBookmarks"
         ]
     },
     {
@@ -3442,7 +3457,8 @@
         "alternateNames": [
             "Slack (desktop)",
             "Slack (store)",
-            "Slack (web)"
+            "Slack (web)",
+            "slack"
         ]
     },
     {
@@ -3702,7 +3718,8 @@
             "Telegram for macOS (store)",
             "Telegram in Russian",
             "Telegram Web",
-            "Telegram (store)"
+            "Telegram (store)",
+            "Telegram Messages"
         ]
     },
     {
@@ -4115,6 +4132,18 @@
         "alternateNames": []
     },
     {
+        "appName": "Venmo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-22",
+        "alternateNames": [
+            "venmo"
+        ]
+    },
+    {
         "appName": "Verizon Messages",
         "icon": "",
         "websiteUrl": "",
@@ -4132,7 +4161,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Viber Artifacts"
+        ]
     },
     {
         "appName": "Video Locker",
