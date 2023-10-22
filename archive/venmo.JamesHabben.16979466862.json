@@ -1,0 +1,21 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Venmo",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "notes": "",
+                "dateAdded": "2023-10-22",
+                "alternateNames": [
+                    "venmo"
+                ]
+            }
+        }
+    ]
+}
