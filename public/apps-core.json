@@ -70,6 +70,16 @@
         "alternateNames": []
     },
     {
+        "appName": "AllTrails",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/alltrails-hike-bike-run/id405075943",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-22",
+        "alternateNames": []
+    },
+    {
         "appName": "Amazon browser",
         "icon": "",
         "websiteUrl": "",
@@ -188,7 +198,8 @@
         "dateAdded": "2023-10-11",
         "alternateNames": [
             "Apple Contacts - macOS",
-            "Apple Contacts Groups"
+            "Apple Contacts Groups",
+            "Address Book Contacts"
         ]
     },
     {
@@ -278,7 +289,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "reminders"
+        ]
     },
     {
         "appName": "Apple Wallet",
@@ -292,6 +305,18 @@
             "appleWalletPasses",
             "appleWalletCards",
             "appleWalletTransactions"
+        ]
+    },
+    {
+        "appName": "Apple Weather",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-22",
+        "alternateNames": [
+            "weatherAppLocations"
         ]
     },
     {
@@ -2197,7 +2222,9 @@
             "Android Kik Messenger Attachments",
             "kikMessages",
             "Android Kik Messenger Messages",
-            "kikBplistmeta"
+            "kikBplistmeta",
+            "kikPendingUploads",
+            "kikUsersgroups"
         ]
     },
     {
@@ -2579,7 +2606,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "teams"
+        ]
     },
     {
         "appName": "Microsoft To Do",
@@ -3897,7 +3926,8 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "TikTok Lite"
+            "TikTok Lite",
+            "tikTok"
         ]
     },
     {
@@ -4214,6 +4244,19 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": []
+    },
+    {
+        "appName": "Vipps",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/vipps/id984380185",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-22",
+        "alternateNames": [
+            "vippsContacts",
+            "vipps"
+        ]
     },
     {
         "appName": "Visa QIWI Wallet",
