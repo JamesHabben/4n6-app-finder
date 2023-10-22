@@ -1,0 +1,21 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Bumble",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "https://apps.apple.com/us/app/bumble-dating-friends-app/id930441707",
+                "googlePlayUrl": "",
+                "notes": "",
+                "dateAdded": "2023-10-21",
+                "alternateNames": [
+                    "bumble"
+                ]
+            }
+        }
+    ]
+}
