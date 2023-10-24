@@ -154,11 +154,11 @@ export const appsService = () => {
         //await new Promise(resolve => setTimeout(resolve, 4000));
         //return;
 
-        console.log("auth ", authState.username, " own ", service.owner)
+        //console.log("auth ", authState.username, " own ", service.owner)
         if (authState.username == service.owner) {
-            terminal(prevOutput => [...prevOutput, `Preparing commit`]);
-            await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
-            terminal(prevOutput => [...prevOutput, `Commit Done`]);
+            terminal(prevOutput => [...prevOutput, `Owner logged in. Preparing commit.`]);
+            await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage, terminal);
+            //terminal(prevOutput => [...prevOutput, `Commit Done`]);
         } else {
             // check for any existing PR to origin branch
             terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
@@ -175,12 +175,12 @@ export const appsService = () => {
                 const timestamp = Date.now();
                 branchName = `${authState.username}-${service.patchBranch}-${timestamp}`;
                 terminal(prevOutput => [...prevOutput, `No existing pull request found, creating new branch: ${branchName}`]);
-                await service.createBranch(branchName, authState.username);
+                await service.createBranch(service.patchBranch, branchName, authState.username);
             }
 
             terminal(prevOutput => [...prevOutput, `Preparing commit`]);
-            await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage);
-            terminal(prevOutput => [...prevOutput, `Commit Done`]);
+            await service.commitChanges(service.patchBranch, patchJson, filePath, commitMessage, terminal);
+            //terminal(prevOutput => [...prevOutput, `Commit Done`]);
             
             //terminal(prevOutput => [...prevOutput, `Checking for existing pull request`]);
             //const existingPR = await service.checkExistingPR(service.patchBranch);

@@ -160,13 +160,13 @@ export const githubService = (token, username) => {
         }
     }
 
-    const createBranch = async (newBranchName, username = owner) => {
+    const createBranch = async (oldBranchName, newBranchName, username = owner) => {
         try {
             // Get the latest commit SHA from the 'datacontributions' branch
             const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
                 owner: owner,  // Use the repository owner's username here
                 repo,
-                ref: `heads/datacontributions`,
+                ref: `heads/${oldBranchName}`,
             });
     
             // Create a new branch from the 'datacontributions' branch
@@ -263,59 +263,82 @@ export const githubService = (token, username) => {
     
 
 
-    const commitChanges = async (branchName, fileContent, filePath, commitMessage) => {
-        try {
-            const { data: { sha: blobSha } } = await octokit.git.createBlob({
-                owner: username,
-                repo: repo,
-                content: fileContent,
-                encoding: 'utf-8',
-            });
-            console.log('Blob created:', blobSha);
+    const commitChanges = async (branchName, fileContent, filePath, commitMessage, terminal) => {
+        return new Promise(async (resolve, reject) => {
+            let retries = 0;
+            const maxRetries = 6;
+            const retryInterval = 11000; 
 
-            const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
-                owner: username,
-                repo: repo,
-                ref: `heads/${branchName}`,
-            });
-            console.log('Latest commit SHA:', latestCommitSha);
+            const attemptCommit = async () => {
+                try {
+                    terminal(prevOutput => [...prevOutput, 'Creating blob...']);
+                    const { data: { sha: blobSha } } = await octokit.git.createBlob({
+                        owner: username,
+                        repo: repo,
+                        content: fileContent,
+                        encoding: 'utf-8',
+                    });
+                    terminal(prevOutput => [...prevOutput, `Blob created: ${blobSha}`]);
 
-            const { data: { sha: treeSha } } = await octokit.git.createTree({
-                owner: username,
-                repo: repo,
-                base_tree: latestCommitSha,
-                tree: [
-                    {
-                        path: filePath,
-                        mode: '100644',
-                        type: 'blob',
-                        sha: blobSha,
-                    },
-                ],
-            });
-            console.log('Tree created:', treeSha);
+                    terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA...']);
+                    const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
+                        owner: username,
+                        repo: repo,
+                        ref: `heads/${branchName}`,
+                    });
+                    terminal(prevOutput => [...prevOutput, `Latest commit SHA: ${latestCommitSha}`]);
 
-            const { data: commitData } = await octokit.git.createCommit({
-                owner: username,
-                repo: repo,
-                message: commitMessage,
-                tree: treeSha,
-                parents: [latestCommitSha],
-            });
-            console.log('Commit created:', commitData);
+                    terminal(prevOutput => [...prevOutput, 'Creating tree...']);
+                    const { data: { sha: treeSha } } = await octokit.git.createTree({
+                        owner: username,
+                        repo: repo,
+                        base_tree: latestCommitSha,
+                        tree: [
+                            {
+                                path: filePath,
+                                mode: '100644',
+                                type: 'blob',
+                                sha: blobSha,
+                            },
+                        ],
+                    });
+                    terminal(prevOutput => [...prevOutput, `Tree created: ${treeSha}`]);
 
-            await octokit.git.updateRef({
-                owner: username,
-                repo: repo,
-                ref: `heads/${branchName}`,
-                sha: commitData.sha,
-                force: false,  
-            });
-            console.log('Branch updated:', branchName);
+                    terminal(prevOutput => [...prevOutput, 'Creating commit...']);
+                    const { data: commitData } = await octokit.git.createCommit({
+                        owner: username,
+                        repo: repo,
+                        message: commitMessage,
+                        tree: treeSha,
+                        parents: [latestCommitSha],
+                    });
+                    terminal(prevOutput => [...prevOutput, `Commit created: ${commitData.sha}`]);
 
-        } catch (error) {
-            console.error('Error committing changes:', error);
-        }
+                    terminal(prevOutput => [...prevOutput, 'Updating reference...']);
+                    await octokit.git.updateRef({
+                        owner: username,
+                        repo: repo,
+                        ref: `heads/${branchName}`,
+                        sha: commitData.sha,
+                        force: false,
+                    });
+                    terminal(prevOutput => [...prevOutput, `Branch updated: ${branchName}`]);
+                    resolve();
+                } catch (error) {
+                    terminal(prevOutput => [...prevOutput, `Error committing changes: ${error.message}`]);
+                    if (retries < maxRetries) {
+                        retries++;
+                        terminal(prevOutput => [...prevOutput, `Retrying in ${retryInterval / 1000} seconds... Retry ${retries}/${maxRetries}`]);
+                        setTimeout(attemptCommit, retryInterval);
+                    } else {
+                        terminal(prevOutput => [...prevOutput, '! Max retries reached. Commit failed.']);
+                        reject(error);
+                    }
+                }
+            };
+
+            await attemptCommit();
+        });
     }
 
     const createPullRequest = async (branchName, title, body, baseBranch = patchBranch) => {
