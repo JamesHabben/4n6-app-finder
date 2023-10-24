@@ -1081,17 +1081,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
-        "appName": "Endomondo Pro",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Endomondo Pro"
+        ]
     },
     {
         "appName": "Evernote",
@@ -1142,7 +1134,18 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "Facebook Lite",
+            "Facebook Lite"
+        ]
+    },
+    {
+        "appName": "Facebook Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "alternateNames": [
             "Facebook Messenger",
             "Facebook Messenger Lite",
             "Cloud Facebook Messenger Messages",
@@ -1310,16 +1313,6 @@
         "alternateNames": []
     },
     {
-        "appName": "FMWhatsApp Messenger",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
         "appName": "Foursquare",
         "icon": "",
         "websiteUrl": "",
@@ -1411,16 +1404,6 @@
     },
     {
         "appName": "Gay Cities",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
-        "appName": "GBWhatsApp Messenger",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -2155,17 +2138,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
-        "appName": "Kate Mobile Lite",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Kate Mobile Lite"
+        ]
     },
     {
         "appName": "KAYAK",
@@ -2478,18 +2453,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "alternateNames": [
-            "Mercury Web Browser"
+            "Mercury Web Browser",
+            "Mercury Pro Web Browser"
         ]
-    },
-    {
-        "appName": "Mercury Pro Web Browser",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
     },
     {
         "appName": "Messenger By Google",
@@ -2541,17 +2507,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
-        "appName": "Microsoft Edge/IE",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Microsoft Edge/IE"
+        ]
     },
     {
         "appName": "Microsoft Internet Explorer",
@@ -2825,16 +2783,6 @@
         "alternateNames": []
     },
     {
-        "appName": "OBWhatsApp Messenger",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
         "appName": "Odnoklassniki",
         "icon": "",
         "websiteUrl": "",
@@ -3080,17 +3028,9 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "alternateNames": []
-    },
-    {
-        "appName": "Private Photo Vault Pro",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "alternateNames": []
+        "alternateNames": [
+            "Private Photo Vault Pro"
+        ]
     },
     {
         "appName": "Privet Photo Vault",
@@ -4466,7 +4406,10 @@
             "Android WhatsApp Live Locations",
             "Android WhatsApp Messages",
             "Android WhatsApp Profile Pictures",
-            "Android WhatsApp User Profiles"
+            "Android WhatsApp User Profiles",
+            "FMWhatsApp Messenger",
+            "GBWhatsApp Messenger",
+            "OBWhatsApp Messenger"
         ]
     },
     {
