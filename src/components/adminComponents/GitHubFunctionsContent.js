@@ -43,17 +43,32 @@ function GitHubFunctionsContent () {
             setQueueFilesList(filteredQueueFiles)
 
             try {
-                console.log("try branch")
+                //console.log("try branch");
                 const dataBranch = await service.getBranch(service.dataBranch);
-                console.log("after branch")
+                //console.log("after branch");
                 if (dataBranch) {
-                    const isUpToDate = await service.isBranchUpToDate(service.dataBranch, service.defaultBranch);
-                    setDataBranchStatus(isUpToDate ? 'Up to date' : 'Not up to date');
+                    const comparison = await service.compareBranches(service.dataBranch, service.defaultBranch);
+                    let statusElement;
+                    if (comparison.isUpToDate) {
+                        statusElement = 'Up to date';
+                    } else {
+                        statusElement = (
+                            <>
+                                <span>Not up to date. Ahead by {comparison.ahead_by}, behind by {comparison.behind_by}.</span>
+                                {comparison.behind_by > 0 && <Button onClick={service.catchUpBranch}>Catch Up</Button>}
+                            </>
+                        );
+                    }
+                    setDataBranchStatus(statusElement);
                 } else {
-                    setDataBranchStatus(<><span>Data branch does not exist. </span>
-                        <Button onClick={createDataBranch}>Create it now</Button></>);
+                    setDataBranchStatus(
+                        <>
+                            <span>Data branch does not exist. </span>
+                            <Button onClick={createDataBranch}>Create it now</Button>
+                        </>
+                    );
                 }
-            } catch (error) {
+                            } catch (error) {
                 
             }
         } catch (error) {
@@ -98,15 +113,15 @@ function GitHubFunctionsContent () {
                         setTerminalOutput(prevOutput => [...prevOutput, `! No matching record found for appName: ${appName}. Skipping patch.`]);
                         continue;  // Skip to the next iteration of the loop
                     }
-                    appsUpdate = appsService().applyPatch(appsUpdate, patch);
+                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
                 } else if (action === 'new') {
-                    appsUpdate = appsService().applyPatch(appsUpdate, patch);
+                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
                 } else {
                     setTerminalOutput(prevOutput => [...prevOutput, `! Unknown action: ${action}. Skipping patch.`]);
                     continue;  // Skip to the next iteration of the loop
                 }
             }
-            console.log("new apps", appsUpdate)
+            //console.log("new apps", appsUpdate)
             setTerminalOutput(prevOutput => [...prevOutput, `Applied patches. AppsUpdate now has ${appsUpdate.length} records.`]);  // Use appsUpdate.length instead of Object.keys(appsUpdate).length
                         
             appsUpdate.sort((a, b) => {
@@ -145,6 +160,7 @@ function GitHubFunctionsContent () {
 
     return (
         <div>
+            <Button onClick={fetchData}>Refresh Data</Button>
             <p>
                 Queue files count: {queueFilesCount}{' '}
                 {queueFilesCount > 0 && <Button onClick={handleShowQueueListClick} 

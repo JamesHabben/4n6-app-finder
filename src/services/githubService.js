@@ -13,7 +13,7 @@ export const githubService = (token, username) => {
         try {
           // Check if user is the owner of the repository
           //const repoData = await octokit.repos.get({ owner });
-          if (owner == username) {
+          if (owner === username) {
             return 'owner';
           }
     
@@ -147,26 +147,26 @@ export const githubService = (token, username) => {
             repo,
             ref: `heads/${defaultBranch}`,
           });
-          console.log("before createref")
+          //console.log("before createref")
           await octokit.git.createRef({
             owner: username,
             repo,
             ref: `refs/heads/${newBranchName}`,
             sha: latestCommitSha,
           });
-          console.log("after createref")
+          //console.log("after createref")
         } catch (error) {
           console.error('Error creating branch:', error);
         }
     }
 
-    const createBranch = async (newBranchName, username = owner) => {
+    const createBranch = async (oldBranchName, newBranchName, username = owner) => {
         try {
             // Get the latest commit SHA from the 'datacontributions' branch
             const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
                 owner: owner,  // Use the repository owner's username here
                 repo,
-                ref: `heads/datacontributions`,
+                ref: `heads/${oldBranchName}`,
             });
     
             // Create a new branch from the 'datacontributions' branch
@@ -205,6 +205,7 @@ export const githubService = (token, username) => {
                 base: baseBranch,
                 head: headBranch
             });
+            //console.log(comparison)
             // If the behind_by value is 0, the head branch is up-to-date with the base branch
             return comparison.data.behind_by === 0;
         } catch (error) {
@@ -212,62 +213,132 @@ export const githubService = (token, username) => {
             throw error;
         }
     };
+
+    const compareBranches = async (headBranch, baseBranch) => {
+        try {
+            const comparison = await octokit.repos.compareCommits({
+                owner,
+                repo,
+                base: baseBranch,
+                head: headBranch
+            });
+            return {
+                isUpToDate: comparison.data.behind_by === 0,
+                ahead_by: comparison.data.ahead_by,
+                behind_by: comparison.data.behind_by,
+            };
+        } catch (error) {
+            console.error('Error comparing branches:', error.message);
+            throw error;
+        }
+    };
+    
+    const catchUpBranch = async () => {
+        //console.log("catch up")
+        try {
+            await mergeBranches(dataBranch, defaultBranch);
+            // Refresh the branch comparison after the merge
+            const comparison = await compareBranches(dataBranch, defaultBranch);
+            return(comparison.isUpToDate ? 'Up to date' : `Not up to date. Ahead by ${comparison.ahead_by}, behind by ${comparison.behind_by}.`);
+        } catch (error) {
+            console.error('Error catching up branch:', error.message);
+        }
+    };
+
+    const mergeBranches = async (baseBranch, headBranch) => {
+        try {
+            const response = await octokit.repos.merge({
+                owner,
+                repo,
+                base: baseBranch, // the branch you want to merge into
+                head: headBranch, // the branch you want to merge
+            });
+            //console.log('Merge response:', response);
+        } catch (error) {
+            console.error('Error merging branches:', error.message);
+            throw error;
+        }
+    };
+    
     
 
 
-    const commitChanges = async (branchName, fileContent, filePath, commitMessage) => {
-        try {
-            const { data: { sha: blobSha } } = await octokit.git.createBlob({
-                owner: username,
-                repo: repo,
-                content: fileContent,
-                encoding: 'utf-8',
-            });
-            console.log('Blob created:', blobSha);
+    const commitChanges = async (branchName, fileContent, filePath, commitMessage, terminal) => {
+        return new Promise(async (resolve, reject) => {
+            let retries = 0;
+            const maxRetries = 6;
+            const retryInterval = 11000; 
 
-            const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
-                owner: username,
-                repo: repo,
-                ref: `heads/${branchName}`,
-            });
-            console.log('Latest commit SHA:', latestCommitSha);
+            const attemptCommit = async () => {
+                try {
+                    terminal(prevOutput => [...prevOutput, 'Creating blob...']);
+                    const { data: { sha: blobSha } } = await octokit.git.createBlob({
+                        owner: username,
+                        repo: repo,
+                        content: fileContent,
+                        encoding: 'utf-8',
+                    });
+                    terminal(prevOutput => [...prevOutput, `Blob created: ${blobSha}`]);
 
-            const { data: { sha: treeSha } } = await octokit.git.createTree({
-                owner: username,
-                repo: repo,
-                base_tree: latestCommitSha,
-                tree: [
-                    {
-                        path: filePath,
-                        mode: '100644',
-                        type: 'blob',
-                        sha: blobSha,
-                    },
-                ],
-            });
-            console.log('Tree created:', treeSha);
+                    terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA...']);
+                    const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
+                        owner: username,
+                        repo: repo,
+                        ref: `heads/${branchName}`,
+                    });
+                    terminal(prevOutput => [...prevOutput, `Latest commit SHA: ${latestCommitSha}`]);
 
-            const { data: commitData } = await octokit.git.createCommit({
-                owner: username,
-                repo: repo,
-                message: commitMessage,
-                tree: treeSha,
-                parents: [latestCommitSha],
-            });
-            console.log('Commit created:', commitData);
+                    terminal(prevOutput => [...prevOutput, 'Creating tree...']);
+                    const { data: { sha: treeSha } } = await octokit.git.createTree({
+                        owner: username,
+                        repo: repo,
+                        base_tree: latestCommitSha,
+                        tree: [
+                            {
+                                path: filePath,
+                                mode: '100644',
+                                type: 'blob',
+                                sha: blobSha,
+                            },
+                        ],
+                    });
+                    terminal(prevOutput => [...prevOutput, `Tree created: ${treeSha}`]);
 
-            await octokit.git.updateRef({
-                owner: username,
-                repo: repo,
-                ref: `heads/${branchName}`,
-                sha: commitData.sha,
-                force: false,  
-            });
-            console.log('Branch updated:', branchName);
+                    terminal(prevOutput => [...prevOutput, 'Creating commit...']);
+                    const { data: commitData } = await octokit.git.createCommit({
+                        owner: username,
+                        repo: repo,
+                        message: commitMessage,
+                        tree: treeSha,
+                        parents: [latestCommitSha],
+                    });
+                    terminal(prevOutput => [...prevOutput, `Commit created: ${commitData.sha}`]);
 
-        } catch (error) {
-            console.error('Error committing changes:', error);
-        }
+                    terminal(prevOutput => [...prevOutput, 'Updating reference...']);
+                    await octokit.git.updateRef({
+                        owner: username,
+                        repo: repo,
+                        ref: `heads/${branchName}`,
+                        sha: commitData.sha,
+                        force: false,
+                    });
+                    terminal(prevOutput => [...prevOutput, `Branch updated: ${branchName}`]);
+                    resolve();
+                } catch (error) {
+                    terminal(prevOutput => [...prevOutput, `Error committing changes: ${error.message}`]);
+                    if (retries < maxRetries) {
+                        retries++;
+                        terminal(prevOutput => [...prevOutput, `Retrying in ${retryInterval / 1000} seconds... Retry ${retries}/${maxRetries}`]);
+                        setTimeout(attemptCommit, retryInterval);
+                    } else {
+                        terminal(prevOutput => [...prevOutput, '! Max retries reached. Commit failed.']);
+                        reject(error);
+                    }
+                }
+            };
+
+            await attemptCommit();
+        });
     }
 
     const createPullRequest = async (branchName, title, body, baseBranch = patchBranch) => {
@@ -339,6 +410,7 @@ export const githubService = (token, username) => {
         patchBranch,
         dataBranch,
         defaultBranch,
+        owner,
         createBranch,
         commitChanges,
         createPullRequest,
@@ -350,6 +422,8 @@ export const githubService = (token, username) => {
         getFilesInFolder,
         getBranch,
         isBranchUpToDate,
+        compareBranches,
+        catchUpBranch,
         getFileContent,
         moveFile,
     }
