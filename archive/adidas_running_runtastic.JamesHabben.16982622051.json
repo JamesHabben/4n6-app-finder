@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Adidas Running / Runtastic",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "adidas Running: Walk & Run App"
+        }
+    ]
+}
