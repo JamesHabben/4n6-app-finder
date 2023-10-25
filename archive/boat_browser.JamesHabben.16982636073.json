@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Boat Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "com.boatbrowser.tablet"
+        }
+    ]
+}
