@@ -6,7 +6,11 @@ function AppTile({ app, tools, onClick }) {
   return (
     <Card bodyStyle={{ padding: '10px' }} onClick={() => onClick(app)}>
       <div style={{ textAlign: 'center' }}>
-        <img src="/logo192.png" alt="App Logo" style={{ width: '75px', height: '75px', marginBottom: '1rem' }} />
+      <img 
+        src={app.icon ? `/app-icons/${app.icon}` : "/logo192.png"} 
+        alt={`${app.appName} App Logo`} 
+        style={{ width: '75px', height: '75px', marginBottom: '1rem' }} 
+      />
         <div className="app-name">{app.appName}</div>
         <div>
             {tools.map(tool =>

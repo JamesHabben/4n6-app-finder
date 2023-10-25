@@ -30,8 +30,8 @@ function AppDetails({ app, tools }) {
         <div className='AppDetails'>
             <div className='appIcon'>
                 <img className='appIcon'
-                    src={app.icon ? (app.icon.startsWith('data:') ? app.icon : `/${app.icon}`) : '/logo192.png'}
-                    alt={`${app.appName} Icon`}
+                    src={app.icon ? `/app-icons/${app.icon}` : '/logo192.png'}
+                    alt={`${app.appName} App Icon`}
                 />
             </div>
             <h1>{app.appName}</h1>
