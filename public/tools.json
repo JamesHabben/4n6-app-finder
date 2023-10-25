@@ -46,5 +46,17 @@
         "appNameKey": "name",
         "documentationLocation": "",
         "extractionNotes": ""
+    },
+    {
+        "toolShortName": "MOBILEdit",
+        "toolLongName": "MOBILedit Forensic",
+        "website": "https://www.mobiledit.com/mobiledit-forensic",
+        "toolVersion": "",
+        "toolReleaseDate": "2023-10-24",
+        "icon": "tool-logo-mobiledit.jpg",
+        "artifactListFile": "artifacts-mobiledit-20231025.json",
+        "appNameKey": "Application",
+        "documentationLocation": "website at https://apps.mobiledit.com/",
+        "extractionNotes": ""
     }
 ]

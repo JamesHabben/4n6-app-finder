@@ -1,0 +1,5442 @@
+[
+    {
+        "Application": "1Weather Forecasts & Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "3D Flip Clock & Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "3D Sense Clock & Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "7 day weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "7- day weather forecast and daily temperature",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Accurate Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Accurate Weather Forecast App & Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Accurate Weather Live Forecast App",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Accurate Weather Report",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "AccuWeather: Weather Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "adidas Running: Run Tracker",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "adidas Running: Walk & Run App",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Adobe Acrobat Reader: Edit PDF",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Adobe Acrobat Reader: Edit PDF",
+        "Platform": "iOS",
+        "DataType": "Filesystem"
+    },
+    {
+        "Application": "Agoda: Book Hotels and Flights",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Agoda: Book Hotels and Flights",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Airbnb",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Airbnb",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Alarm",
+        "Platform": "Tizen",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Alarm Clock - Wake up Music",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "AliExpress",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Alipay",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Alipay - Simplify Your Life",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Amazon",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Amazon Kindle",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Amazon Kindle",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Amazon Prime Video",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Amazon Shopping",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Amberfog for VK",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "American Airlines",
+        "Platform": "Android",
+        "DataType": "Autofills"
+    },
+    {
+        "Application": "Any.do - To do list & Calendar",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Any.do: To do list & Planner",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "AnyDesk Remote Desktop",
+        "Platform": "Android",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "AnyDesk Remote Desktop",
+        "Platform": "iOS",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "Apple Books",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "AppLock",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Armorfly Browser & Downloader - Private , Safe",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "ASICS Runkeeper - Run Tracker",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ASKfm: Ask & Chat Anonymously",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Automatic Call Recorder",
+        "Platform": "Android",
+        "DataType": "Calls"
+    },
+    {
+        "Application": "Automatic Call Recorder Pro",
+        "Platform": "Android",
+        "DataType": "Calls"
+    },
+    {
+        "Application": "Avast Antivirus & Security",
+        "Platform": "Android",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "AVG AntiVirus & Security",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Azar - Video Chat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Azar - video chat & livestream",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Badoo: Dating. Chat. Friends",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Badoo: Dating. Chat. Meet.",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Baidu Browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Barcode Scanner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Bazo\u0161",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Bazo\u202a\u0161\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "BBC News",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "BBC News - UK & World Stories",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "BBM",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "BBM - Free Calls & Messages",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "BiP - Messenger, Video Call",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "BiP - Messenger, Video Call",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Bitcoin & Crypto DeFi Wallet",
+        "Platform": "Android",
+        "DataType": "Transactions"
+    },
+    {
+        "Application": "Bitcoin Wallet",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "BlackBerry Hub+ Services",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Blendr - Chat, Flirt & Meet",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Blendr - Chat, Flirt & Meet",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Blockchain.com: Crypto Wallet",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Blue Mail - Email | Calendar",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Booking.com: Hotels & Travel",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Booking.com: Hotels & Travel",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Box",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Box: The Content Cloud",
+        "Platform": "iOS",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "Boxer - Workspace ONE",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Boxer - Workspace ONE",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "BRD Bitcoin Wallet Bitcoin BTC",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "BRD Bitcoin Wallet Bitcoin BTC",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Brosix",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Brosix",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Cal - Google Calendar + Widget",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Calculator Pro+ - Private SMS",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Calendar",
+        "Platform": "Tizen",
+        "DataType": "Organizer"
+    },
+    {
+        "Application": "Calls Blacklist - Call Blocker",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Careem \u2013 rides, food & more",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ch.teamtasks.tasks",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Chat & Date: Dating Made Simpl",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Chat & Date: Online Dating App",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Chatous",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "CheckMyTrip",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "CheckMyTrip \u2013 Travel Itinerary",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Chess - Play & Learn",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Chomp SMS",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Chrome Beta",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Chrome Canary (Unstable)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Chrome Dev",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Clock",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Cloud: 1 drive - more storage",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Cloud: Video, photo storage",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "CM Browser - Ad Blocker , Fast Download , Privacy",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "cn.nubia.deskclock.preset",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "cn.nubia.email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "cn.nubia.mms",
+        "Platform": "Android",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "cn.nubia.notepad.preset",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "cn.wps.moffice_",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Coco",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Code Scanner by ScanLife",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Coinbase: Buy Bitcoin & Ether",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Coinbase: Buy Bitcoin & Ether",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ColorNote Notepad Notes",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.amazon.cloud9",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.amberfog.vk",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.android.browser",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.android.deskclock",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.android.email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.android.providers.blockednumber",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.android.providers.calendar",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.android.providers.contacts",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.android.providers.downloads",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "com.android.providers.settings",
+        "Platform": "Android",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "com.android.providers.telephony",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.android.providers.userdictionary",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.android.soundrecorder",
+        "Platform": "Android",
+        "DataType": "Filesystem"
+    },
+    {
+        "Application": "com.apalonapps.wlf",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.apple.Bridge",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.asus.browser",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.asus.email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.audioguidia.weather5days",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.azyncLabs.WhatsPad",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.boatbrowser.free",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.boatbrowser.tablet",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.boatgo.browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.bsn.mercury",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.bsn.mercurypro",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.bvl.weatherapp",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.codality.NotationalFlow",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.coverme.covermeAdhoc",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.crunding.weatherplusfree",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.dchistyakov.vkmessenger.ui",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.diotek.penmemo",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.doukan.QRCode",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.dropbox.carousel",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.duolingo.DuolingoMobile",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.e2uapp.secretfolderfree",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.ebuddy.xms",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.enchantedcloud.photovault",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.enchantedcloud.photovaultpro",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.endomondo.android",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.endomondo.Endomondo",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.endomondo.Endomondo",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.example.android.notepad",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.gemsoftware.textme",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.getboxer.BoxerFree",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.getdropbox.Carousel",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.gogii.textplus",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.android.apps.docs",
+        "Platform": "iOS",
+        "DataType": null
+    },
+    {
+        "Application": "com.google.android.apps.photos",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.android.email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.android.maps.mytracks",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.calendar",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.fireball",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.GoogleMobile",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.google.GooglePlus",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.google.Trips",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.hipchat.ios",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.htc.fm",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.htc.sense.browser",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.htc.sense.socialnetwork.googleplus",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.htc.sense.socialnetwork.twitter",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.huawei.android.totemweather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.huawei.compass",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.huawei.hidisk",
+        "Platform": "Android",
+        "DataType": "Filesystem"
+    },
+    {
+        "Application": "com.ideashower.ReadItLaterPro",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.ilegendsoft.mercury",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.impalastudios.theweatherfree",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.instanza.CoCo",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.iphone.XapoApp",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.itwcalculator.fullscreenradarusafree",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.itwcalculator.weatherplusfree",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.itwcalculator.worldradarfree",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.jahin.DeluxeQRReader01",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.jaumo.iphoneapp",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "com.jb.zerosms",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.jiubang.browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.jrdcom.ui.notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.kingsoft.office.wpsoffice",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.kiss2go.iphone",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.lenovo.calendar_row",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "com.lge.email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.lge.qmemoplus",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.lge.task",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.limebike",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mamun.qrscanner",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmydogwalk.android2",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmyfitness.MapMyDogWalk",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmyfitnessplus.android2",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmyhikeplus.android2",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmyrideplus.android2",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmyrunplus.android2",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mapmywalkplus.android2",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mediatek.notebook",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.mediatek.todos",
+        "Platform": "Android",
+        "DataType": "Tasks"
+    },
+    {
+        "Application": "com.microsoft.msa.authenticator",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.microsoft.office.officehub",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.microsoft.officelens",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.microsoft.onenoteiPad",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.microsoft.skydrive",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.mile.android.gotasks",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.miniwebs.whatschat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.minus.android",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.miui.notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.mobisystems.OfficeSuiteFree2",
+        "Platform": "iOS",
+        "DataType": "Filesystem"
+    },
+    {
+        "Application": "com.morecast.weather",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.mtag.att.codescanner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.mx.browser.kids",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "com.mx.KidsBrowserHD",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "com.my.mail",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.nakib.FancyScanner02",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.naveenium.foursquare",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.naveenium.foursquare",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.ANZ",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.BRA",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.CAN",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.DEU",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.FRA",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.IND",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.IVS",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.ios.OSM.MEX",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.navfree.iphone.gbi",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.nianticlabs.pokemongo",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.nike.nikeplus-gps",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.ookla.speedtest",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "com.oovoo.iphone.free",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.opensignal.OpenSignalMaps",
+        "Platform": "iOS",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "com.opera.Coast",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.opera.Coast",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.opera.mini.native",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.opera.mini.native.beta",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.opera.OperaMini",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.opera.OperaMini",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.opera.vpn",
+        "Platform": "iOS",
+        "DataType": null
+    },
+    {
+        "Application": "com.opera.vpn",
+        "Platform": "Android",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "com.pinger.pingerphone2",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.pinger.ppa",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.pinger.textfreeVoiceWithVoicemail",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.pinger.textfreeWithVoice",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.planetromeo.mobile",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.prisma-ai.app",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "com.productivityapps.notepadsuper.notiz.nota.note.notes.notas.notizen.block.pro.plus.book.free",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.qo.android.oemvc",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.quickoffice.android",
+        "Platform": "Android",
+        "DataType": "Filesystem"
+    },
+    {
+        "Application": "com.quium.qrscanner",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.rebelvox.voxer-lite",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "com.repkasoft.yowindow.ios.free",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.riavera.personas",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.rokcse.QuickQRScan99",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.runtastic.iphone.mountainbike.lite",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.runtastic.iphone.mountainbike.pro",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.runtastic.iphone.roadbike.lite",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.runtastic.iphone.roadbike.pro",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.saevio.weather",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.samsung.android.app.memo",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.scanbuy.ScanLife",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.sec.android.app.memo",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.sec.android.provider.logsprovider",
+        "Platform": "Android",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "com.sec.android.provider.smemo",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneText",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextAca",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextAcaLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextBBLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextCal",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextCalLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextCar",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextCarLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextFbl",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextFblLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextGolf",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextGolfLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextInv",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextInvLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextPink",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextPinkLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextPot",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextPotLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextPur",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.secondphoneapps.SecondPhoneTextPurLic",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "com.silentcircle.SilentPhone",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.sima.qrbarcode",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.skype.insiders",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.skype.skype",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.skype.SkypeForiPad",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.smartanuj.hideitpro",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "com.smartanuj.protect",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "com.smartanuj.sms",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "com.sonyericsson.notes",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.sonymobile.notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.strava.stravaride",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.swisscom.io",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.talkray.ios",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.TapMediaLtd.QRReader",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.taskbox.Taskbox",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.tcl.note",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.textmeinc.textme2",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.textmeinc.textme3",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.threebanana.notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.togood.gtasks",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.tohsoft.qr.QRCodeScan",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.tripadvisor.LocalPicks",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.tripit.tripitmobile",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.truecaller.messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.truecaller.phoneapp",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.truesoftware.TrueCallerOther",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.tumblra",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.uc.browser.hd",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.usal.jrodrigo.whatschat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.vimov.weatherhdliteed",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.vine.iphone",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.waze.iphone",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "com.weather.TWC",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.weather.wetter.meteo.wow",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.wierashang.speed.browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "com.workpail.InkPad",
+        "Platform": "iOS",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "com.yelp.yelpiphone",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.yourcompany.TestWithCustomTabs",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.yoyoapps.weather",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "com.zello.client.main",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Contacts Storage",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Continuous HR",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "CoverMe - Second Phone Number",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "CoverMe - Second Phone Number",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Credit Card Reader NFC (EMV)",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Croatian-English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "CSL \u2013 Meet, Chat, Pla\u202ay & Date",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Currency",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Currents",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "cz.sa.jizdenky",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Czech - French offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Czech - Spanish offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Czech-English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Czech-German offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "D4D2433BGC",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Daily Live Weather Forecast App",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Daily weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Daily weather forecast widget\u2602",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Datovka",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Datovka",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Day One Journal: Private Diary",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Day One Journal: Private Diary",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "de.meteogroup.meteoearthsd",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "de.meteogroup.WeatherProFree",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Desk Notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Digital Clock & World Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Dingtone: Phone Calls + Texts",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Discord - Chat, Talk & Hangout",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Discord: Talk, Chat & Hang Out",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "DJI Fly",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "DJI GO 4--For drones since P4",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "DJI GO 4--For drones since P4",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "DJI GO--For products before P4",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "DJI GO--For products before P4",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Do It Later: Tasks & To-Dos",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Docs To Go Standard",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Docs To Go\u2122 Office Suite",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Dolphin Browser: Fast, Private",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Dolphin Web Browser for iPad",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Dolphin Web Browser for iPhone",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Dolphin Web Browser for iPhone (Chinese version)",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Dropbox Paper",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Dropbox: Cloud Files Storage",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Dropbox: Secure Cloud Storage",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "DU Browser Mini(Small&Fast)",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "DU Browser\u2014Browse fast & fun",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Dubsmash",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Dubsmash",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "DuckDuckGo Private Browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "DuckDuckGo Private Browser",
+        "Platform": "iOS",
+        "DataType": "Web History"
+    },
+    {
+        "Application": "Duolingo: Language Lessons",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Dust - a safer place to text",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Dust - Private Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Easy BlackList - Call Sms -",
+        "Platform": "Android",
+        "DataType": null
+    },
+    {
+        "Application": "Easy Taxi, a Cabify app",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "eBay Selling & Shopping Online",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "eBay: Online Shopping Deals",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "eBuddy XMS",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Eidoo: Bitcoin and Ethereum Wallet and Exchange",
+        "Platform": "Android",
+        "DataType": "Transactions"
+    },
+    {
+        "Application": "Email",
+        "Platform": "Tizen",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Email Aqua Mail - Fast, Secure",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Email Blue Mail - Calendar",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Email.cz",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Email.cz",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Endomondo - Running & Walking",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Endomondo - Running & Walking",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Evernote - Note Organizer",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Evernote - Notes Organizer",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Expedia: Hotels, Flights & Car",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Expedia: Hotels, Flights & Car",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Exploji",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "FaceApp: Face Editor",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Facebook",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Facebook",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Facebook Lite",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Fake gps - fake location",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Fake GPS location",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Fake GPS Location - Hola",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Fake GPS Location Spoofer",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Fake GPS Location: Joystick an",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Fake GPS Location-GPS JoyStick",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Fast Notepad",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Find My Friends",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Find My iPhone",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Firefox Beta for Testers",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Firefox Fast & Private Browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Firefox Nightly for Developers",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Firefox: Private, Safe Browser",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Fitify: Fitness & Home Workout",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Fitify: Fitness, Home Workout",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "FlashFox - Flash Browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "FlashFox Pro - Flash Browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Flickr",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Flickr",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Flipboard: The Social Magazine",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Flipboard: The Social Magazine",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Foreca Weather",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Foursquare City Guide",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Foursquare City Guide",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Foursquare Swarm: Check In",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "fr.revmob.iphone.scan.simple",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "free live weather on screen",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Free Weather Forecast App Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "FreeTone Calls & Texting",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "French - English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Garmin Connect\u2122",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Garmin Connect\u202a\u2122\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Gboard - the Google Keyboard",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Gear Browser",
+        "Platform": "Tizen",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Geocaching\u00ae",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "German - English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Gett - Ground Transportation",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Gett- Corporate Ground Travel",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GG",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GG Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Gif Chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Glide - Video Chat Messenger",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Global Weather Forecast Widget App",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Gmail",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Gmail - Email by Google",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Gmail Go",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GO Chat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GO SMS Pro - Messenger, Free T",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GO Weather - Widget, Theme, Wallpaper, Efficient",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "GO Weather Lite - Forecast, Widget, Light",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Goibibo: Hotel, Flight Booking",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Goibibo: Hotel, Flight Booking",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Google Allo",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Calendar",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Chrome",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Chrome: Fast & Secure",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Docs",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Docs: Sync, Edit, Share",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Drive",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Drive",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Earth",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Google Fit: Activity Tracking",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Keep - Notes and Lists",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Keep - Notes and lists",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Maps",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Maps",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Meet",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Meet",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Photos",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Photos",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Play Books & Audiobooks",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Play services",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Google Play Store",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Google Sheets",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Sheets",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Slides",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Slides",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Street View",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Translate",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Google Translate",
+        "Platform": "iOS",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Google Trips - Travel Planner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Grindr - Gay chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GroupMe",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GroupMe",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "GTasks: Todo List & Task List",
+        "Platform": "Android",
+        "DataType": "Autofills"
+    },
+    {
+        "Application": "Hangouts",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Hangouts",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "happn - Dating App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "happn \u2014 Dating app",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Health",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "hello-weather-app",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Here We Go",
+        "Platform": "Tizen",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "HERE WeGo: Maps & Navigation",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HERE WeGo: Maps & Navigation",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "HeyTell",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "HeyTell",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Hide Photos, Video and App Loc",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Hide Photos, Video and App Loc",
+        "Platform": "iOS",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "hike messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Hike News & Content",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HipChat - beta version",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HipChat - Chat Built for Teams",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HM.wristband",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Hotels.com: Travel Booking",
+        "Platform": "Android",
+        "DataType": "Autofills"
+    },
+    {
+        "Application": "Hotels.com: Travel Booking",
+        "Platform": "iOS",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Hourly weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "HryFine",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HryFine",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HTC Camera",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "HTC Clock",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "HTC File Manager",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "HTC Mail",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "HTC Scribble",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "HTC Sense Input",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "HTC Service Pack",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "HTC Service\u2014Video Player",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "HTC Social Plugin - Facebook",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Huawei Health",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ICQ \u2013 Video Calls & Chat App",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ICQ Video Calls & Chat Rooms",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "iKatastr",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "iKeyboard -GIF keyboard,Funny",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "IM+",
+        "Platform": "Android",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "IM+",
+        "Platform": "iOS",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "imo beta -video calls and chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "imoimiphone",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "imo-International Calls & Chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Inbox.eu - business email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "inbox.eu.MailApp",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Inbox.lt",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "inbox.lt",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Inbox.lv",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "inbox.lv",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Inkpad Notepad & To do list",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "InMessage: Meet, Chat, Date",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Instagram",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Instagram",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Internet",
+        "Platform": "Tizen",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "io.faceapp.ios",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ios.com.mapfactor.navigator",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Italian - German offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Italian-English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "JAUMO Friends, Chat & Dating",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Just Note",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "K-9 Mail",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "KakaoStory",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "KakaoStory",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "KakaoTalk : Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "KakaoTalk : Messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kaktus",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kaktus",
+        "Platform": "iOS",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "Kate Mobile for VK",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kaufland - Shopping & Offers",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "KAYAK: Flights, Hotels & Cars",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "KAYAK: Flights, Hotels & Cars",
+        "Platform": "iOS",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Keeper Password Manager",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kik \u2014 Messaging & Chat App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kik Messaging & Chat App",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kika Keyboard - Emoji Keyboard, Emoticon, GIF",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Kiwi Browser - Fast & Quiet",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "Klara weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "KMPlayer",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "KMPlayer - All Video Player",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "LastPass Password Manager",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Launcher iOS 16",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "LEO Privacy - Password & Account,Manager and Guard",
+        "Platform": "iOS",
+        "DataType": "Credit cards"
+    },
+    {
+        "Application": "letgo: Sell and Buy Used Stuff",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "letgo: Sell and Buy Used Stuff",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "LG Clock",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Life360: Find Friends & Family",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Life360: Live Location Sharing",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Lime - #RideGreen",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "LINE: Calls & Messages",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "LINE: Calls & Messages",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "LinkedIn Job Search",
+        "Platform": "Android",
+        "DataType": "Web History"
+    },
+    {
+        "Application": "LinkedIn: Jobs & Business News",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "LinkedIn: Network & Job Finder",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Litmatch - Make new friends",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Live Local Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Live Weather & Radar - Alerts",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Live Weather Forecast 2019",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Live Weather Forecast 2019",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Live Weather Forecast App",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Live Weather Forecast Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "live weather widget accurate",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Live Weather&Local Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Local Radar Now with Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Local Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Local Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Local Weather Widget&Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Location Changer - Fake GPS",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Lock App - Smart App Locker",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "LOCX Applock Lock Apps & Photo",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "LOVOO - Singles, Chats & Love",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Luno - BTC & Crypto Investing",
+        "Platform": "Android",
+        "DataType": "Transactions"
+    },
+    {
+        "Application": "Lyft",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Lyft",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Lyft",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mail",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mail.ee",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "mail.ee",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mail.ru - Email App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mail.ru - Email App",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mail.Ru for UA \u2013 Email for Hot",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mail.Ru for UA \u2013 Email for Hot",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MakeMyTrip Flight, Hotel, Bus",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "MakeMyTrip Hotels, Flight, Bus",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Mandarin IM",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mandarin IM",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Fitness by Under Armour",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Fitness Workout Trainer",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Hike by Under Armour",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Hike GPS Hiking",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Ride by Under Armour",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Ride GPS Cycling Riding",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Run by Under Armour",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Run by Under Armour",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Map My Walk by Under Armour",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MapFactor Navigator",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Mappy",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mappy - GPS, trafic & prix",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Maps",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Mapy.cz navigation & maps",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Mapy.cz navigation & off maps",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Mastodon",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mastodon for iPhone and iPad",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Maxthon Browser",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Maxthon browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Maxthon Browser for Tablet",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Meet24 - Flirt, Chat, Singles",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Meet24 - Love, Chat, Singles",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MeetMe - Meet, Chat & Go Live",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MeetMe: Chat & Meet New People",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MeowChat : Live video chat & M",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MeowChat : Live video chat & M",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Message Locker \u2013 Chat lock / AppLock / Lock themes",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Messages",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Messages by Google",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Messenger",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Messenger and Chat Lock",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "Messenger Lite",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Messenger SMS - Text Messages",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Meteor (Po\u010das\u00ed) \u00bb Aladin",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Meteor meteoradar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Mi Remote controller - for TV,",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Microsoft Edge: Browse with AI",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Excel",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Excel: Spreadsheets",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Launcher",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Microsoft Lens - PDF Scanner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft OneDrive",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft OneNote",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft OneNote: Save Notes",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Outlook",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Outlook",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Outlook",
+        "Platform": "Tizen",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft PowerPoint",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft PowerPoint",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft SwiftKey AI Keyboard",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft SwiftKey AI Keyboard",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Teams",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Teams",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft To Do",
+        "Platform": "iOS",
+        "DataType": "Tasks"
+    },
+    {
+        "Application": "Microsoft To Do: Lists & Tasks",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Word",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Microsoft Word: Edit Documents",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mileage Tracker & Log - MileIQ",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MileIQ: Mileage Tracker & Log",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "MOBILedit",
+        "Platform": "iOS",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "MOBILedit Pro",
+        "Platform": "iOS",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "Money Manager: Expense Tracker, Free Budgeting App",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Mood SMS - Custom Text & MMS",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mr. Number - Caller ID & Spam",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Mr. Number Lookup & Call Block",
+        "Platform": "iOS",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "MT43Launcher",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "My Notes - Notepad",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Mycelium Bitcoin Wallet",
+        "Platform": "Android",
+        "DataType": "Transactions"
+    },
+    {
+        "Application": "myMail: for Outlook & Yahoo",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "mysms - Remote Text Messages",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "mysms - SMS Texting & Sync",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "name.shurakov.gootasks",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Naukri.com Job Search",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Naukri.com Job Search App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Navitel Navigator",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Navmii GPS USA (Navfree)",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Navmii GPS USA (Navfree)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Navmii GPS World (Navfree)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Navmii GPS World (Navfree)",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "New 2018 Weather App & Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "New weather forecast app \u2614\ufe0f",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Next SMS",
+        "Platform": "Tizen",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "Nextplus: Phone # Text + Call",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Nextplus: Private Phone Number",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Nike Run Club - Running Coach",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Ninesky Browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "NOAA Weather Radar Live",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "NoiseFit: Health & Fitness",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "NoiseFit: Health & Fitness",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Note Everything",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Notepad",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Odnoklassniki: Social network",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "OfficeSuite Pro + PDF",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "OfficeSuite Pro + PDF (Trial)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "OfficeSuite: Word, Sheets, PDF",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Offline Notepad",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "OK: Social Network",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "OkCupid Dating: Date Singles",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "OkCupid: Date and Find Love",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "OnePlus Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Onion Browser",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "ooVoo Video Calls, Messaging &",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Opensignal - 5G, 4G Speed Test",
+        "Platform": "Android",
+        "DataType": "Networks"
+    },
+    {
+        "Application": "Opera browser beta with AI",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Opera browser with AI",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Opera Mini browser beta",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Opera Mini browser beta",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Opera Mini: Fast Web Browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Opera Mini: Fast Web Browser",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Orfox: Tor Browser for Android",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "org.androworks.Aladin",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "org.voisine.breadwallet",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Paper by Dropbox",
+        "Platform": "iOS",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "PayPal - Send, Shop, Manage",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "PayPal - Send, Shop, Manage",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Pedometer - Step Counter App",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Pedometer - Step Counter App",
+        "Platform": "iOS",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Peeks Social",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Periscope - Live Video",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Phone Copier - MOBILedit",
+        "Platform": "Android",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "Pinterest",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Pinterest",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "PlayStation Messages - Check your online friends",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Plenty of Fish Dating",
+        "Platform": "iOS",
+        "DataType": null
+    },
+    {
+        "Application": "Plenty of Fish Dating App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Plus Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Pocket: Save. Read. Grow.",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Pok\u00e9mon GO",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Polish - English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Polish - German offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Portuguese-German offline dict",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Premium Dating",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Prey: Find My Phone & Security",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Prey: Find My Phone & Security",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Prisma Art Effect Photo Editor",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "Private Message Box",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Private Photo Vault",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "Private Photo Vault - Keepsafe",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "Private Zone - AppLock, Video & Photo Vault",
+        "Platform": "Android",
+        "DataType": "Passwords"
+    },
+    {
+        "Application": "Puffin Academy",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin Academy",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin Browser Pro",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin Browser Pro",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin Cloud Browser",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin Cloud Browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin for Facebook",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin for Facebook",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Puffin TV Browser",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Q5AWL8WCY6.iMapMyFitnessPlus",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Q5AWL8WCY6.iMapMyHikePlus",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Q5AWL8WCY6.iMapMyRidePlus",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Q5AWL8WCY6.iMapMyRunPlus",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Q5AWL8WCY6.iMapMyWalk",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QQ",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QQ",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QQ HD",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QQ International",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QQ International - Chat & Call",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QQ\u8f7b\u804a\u7248",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR & Barcode Scanner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR BARCODE SCANNER",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR Code Reader",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR Code Reader by Scan",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR code reader&QR code Scanner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR Droid",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR Droid Private\u2122",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QR\u30b3\u30fc\u30c9\u30ea\u30fc\u30c0\u30fc EQS",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "QuickMemo+",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Rail Russia \u2013 train tickets",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "RAPS.appstore.com.dolphin.browser.iphone",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "RAPS.appstore.com.dolphin.browser.iphone.ios12",
+        "Platform": "iOS",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "Real Time Live weather Forecast & Weather Alerts",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Real-time weather forecasts",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Reddit",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Reddit",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "RegioJet",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Remember The Milk",
+        "Platform": "Android",
+        "DataType": "Tasks"
+    },
+    {
+        "Application": "Remember The Milk: To-Do List",
+        "Platform": "iOS",
+        "DataType": "Tasks"
+    },
+    {
+        "Application": "Revolut - Mobile Finance",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ROMEO - Gay Dating",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ROMEO - Gay Dating",
+        "Platform": "Android",
+        "DataType": null
+    },
+    {
+        "Application": "ROMEO - Gay Dating",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ROMEO - Gay Dating & Chat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ru.st1ng.vk",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ru.yandex.disk",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "ru.yandex.mobile.navigator",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "RunKeeperPro",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Runtastic",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Runtastic Mountain Bike GPS Tracker",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Runtastic Mountain Bike PRO",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Runtastic Road Bike PRO",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Runtastic Road Bike Trails & GPS Bike Tracker",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "S Note",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Safari",
+        "Platform": "iOS",
+        "DataType": "Credit cards"
+    },
+    {
+        "Application": "Samsung Clock",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Samsung Email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Samsung Internet Browser",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Samsung Internet Browser Beta",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Samsung Notes",
+        "Platform": "Android",
+        "DataType": "Notes"
+    },
+    {
+        "Application": "Sarahah",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Sarahah",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "SayHi Chat - Meet New People",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "SayHi Chat Meet Dating People",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "ScanLife PowerShopper",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "SCRUFF",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "SCRUFF - Gay Dating & Chat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Sense Flip Clock & Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Sense Home Launcher-News,Theme",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Sense V2 Flip Clock & Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "SERVIS 24 Mobilni banka",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Seznam.cz",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Seznam.cz",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Shazam Encore",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Shazam: Music Discovery",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Shazam: Music Discovery",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Signal Private Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Silent Phone - Secure Calling",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Simplenote",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skout \u2014 Meet New People",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "SKOUT - Meet, Chat, Go Live",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skype",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skype",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skype for Business for Android",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Skype for iPad",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skype Insider",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skype Lite - Free Video Call & Chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skyscanner \u2013 travel deals",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Skyscanner Flights Hotels Cars",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Slack",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Slack",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Slovak - English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Slovak - German offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Smart Connect",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "SMS and Call Blocker",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Snapchat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Snapchat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "SoundHound - Music Discovery",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Spanish - German offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Spanish-English offline dict.",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Speedtest by Ookla",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Sports",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Steam",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Steam Mobile",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Strava",
+        "Platform": "Tizen",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Strava: Run, Bike, Hike",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "surespot encrypted messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Suunto",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Swisscom IO",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Sygic GPS Navigation & Maps",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Talkray - Free Calls & Texts",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TamTam Messenger & Video Calls",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TamTam: Messenger, chat, calls",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tango- Live Stream, Video Chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "tango-Live Stream & Video Chat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "team.of.xavier.weather.forecast.v10",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Telegram",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Telegram Messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tetris Math Solver",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Text Free: Call & Texting App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Text Free: WiFi Calling App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Text Me: Second Phone Number",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Textie Messaging - Beautiful free text chat unlimited (SMS)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Textie Messaging - Beautiful free text chat unlimited (SMS)",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TextMe Up Calling & Texts",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TextNow: Call + Text Unlimited",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "textPlus: Text Message + Call",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Textra SMS",
+        "Platform": "Android",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "The Weather Channel - Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Threema",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Threema. The Secure Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TigerConnect - Clinical Soluti",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TikTok",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TikTok",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TikTok",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tinder Dating app. Meet People",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tinder: Dating, Chat & Friends",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "To Do List",
+        "Platform": "Android",
+        "DataType": "Tasks"
+    },
+    {
+        "Application": "Today Weather& Tomorrow weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "todo.snap",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Todoist: to-do list & planner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tor Browser",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Transparent clock and weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Trello: Manage Team Projects",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Trillian",
+        "Platform": "iOS",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "Trip.com: Book Flights, Hotels",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Trip.com: Book Flights, Hotels",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tripadvisor: Plan & Book Trips",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "TripIt: Travel Planner",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Truecaller: Caller ID & Block",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Trust: Crypto & Bitcoin Wallet",
+        "Platform": "Android",
+        "DataType": "Transactions"
+    },
+    {
+        "Application": "Trusted Contacts",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Tumblr",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Tumblr\u2014Fandom, Art, Chaos",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TunnelBear VPN",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "TunnelBear: Secure VPN & Wifi",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Twitch: Live Game Streaming",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Twitch: Live Game Streaming",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Twitterrific: Tweet Your Way",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Uber - Request a ride",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Uber - Request a ride",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Uber Eats: Food Delivery",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "UC Browser Mini for Android Go",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "UC Browser-Safe, Fast, Private",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "UC Mini-Download Video Status",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "Unlimited Texting, Calling App",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Vault - Hide Pics, App Lock",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Vaulty : Hide Pictures Videos",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "Vaulty Stocks",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "vBrowse for iPhone",
+        "Platform": "iOS",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "vBrowser for Hide it Pro",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "VChat. Chat for VK (VKontakte\u202a)\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Verizon Messages",
+        "Platform": "Android",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "VERO - True Social",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "VERO - True Social",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Viber - Safe Chats And Calls",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Viber Messenger: Chats & Calls",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Video Calls & Chat \u2013 Agent",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Video calls and chat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Vine",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "VIPole Private Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "VIPole Private Messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Viva Engage (Yammer\u202a)\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Viva Engage (Yammer)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "VK Messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "VK Messenger",
+        "Platform": "Tizen",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "VK: music, video, messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "vn.com.vng.zingalo",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Voice Memos",
+        "Platform": "iOS",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "Voxer Walkie Talkie Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "W Message",
+        "Platform": "Tizen",
+        "DataType": "Messages"
+    },
+    {
+        "Application": "Walk with Map My Walk",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Waze Navigation & Live Traffic",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Waze Navigation & Live Traffic",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WearPro",
+        "Platform": "Android",
+        "DataType": "Activities"
+    },
+    {
+        "Application": "WearPro",
+        "Platform": "iOS",
+        "DataType": "Activities"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather",
+        "Platform": "Tizen",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Weather - Accurate Weather App",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "weather - weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather & Clock Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather & Radar Live Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "weather app",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather app",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather App \u2014 Live Weather Today",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Channel",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "weather forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast - Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast - The Weather Channel Apps 2019",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast - Weather Map",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast - Widget & Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast & Live Wallpaper",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast (Radar Map)",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast 2019 - live Weather apps",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "weather forecast and weather alert app \u26c8\u26c8",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast App",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather forecast app",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast App & Radar Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast App Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast Free",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather forecast Live",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast- Live Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast- Local Weather Live",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast Pro",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast&Clock Widget",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast: Live Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Forecast: Live Weather & Widget & Radar",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Live",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Live",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather radar & Global weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather radar & Global weather checker",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather radar & Global weather checker",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Radar Alert & Local Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Real-time Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather updates&temperature report",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Weather Wow United States",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Web Browser & Explorer",
+        "Platform": "Android",
+        "DataType": "Bookmarks"
+    },
+    {
+        "Application": "WeChat",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WeChat",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Weibo",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WhatsApp Business",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WhatsApp Business",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WhatsApp for KaiOS",
+        "Platform": "KaiOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WhatsApp Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WhatsApp Messenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WhatsChat Messenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Whisper",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Whisper",
+        "Platform": "iOS",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Wifi Analyser",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Wifi Analyzer",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Wifi Analyzer",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "WiFi Analyzer (open-source)",
+        "Platform": "Android",
+        "DataType": "Other"
+    },
+    {
+        "Application": "Wikipedia",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Wikipedia",
+        "Platform": "iOS",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Wikipedia Beta",
+        "Platform": "Android",
+        "DataType": "Search History"
+    },
+    {
+        "Application": "Windy.com",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Windy.com - Weather Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Wish: Shop and Save",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Wish: Shop And Save",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Workplace from Meta",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Workplace from Meta",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "World Clock",
+        "Platform": "Tizen",
+        "DataType": "Other"
+    },
+    {
+        "Application": "World weather widget&Forecast",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "WorldCard Mobile",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "WorldCard Mobile",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "WorldCard Mobile Lite",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "WorldCard Mobile Lite",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "WowApp - Earn. Share. Do Good",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "WowApp - Earn. Share. Do Good\u202a.\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Wunderlist: To-Do List & Tasks",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Wunderlist: To-Do List & Tasks",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "X",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "X",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Xabber",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Xapo",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "X-plore File Manager",
+        "Platform": "Android",
+        "DataType": "Media Files"
+    },
+    {
+        "Application": "Yahoo Mail \u2013 Organized Email",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yahoo Mail \u2013 Organized Email",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yahoo Weather",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Yahoo Weather",
+        "Platform": "iOS",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "YahooMessenger",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "YahooMessenger",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Browser",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Browser (beta)",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Browser with Protect",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Disk\u2014file cloud storage",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Disk\u2014file cloud storage",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Mail",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Mail - Email App",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Maps & Navigator",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Maps and Navigator",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Navigator",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Navigator",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yandex Start",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yatra - Flights, Hotels & Cabs",
+        "Platform": "iOS",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Yatra - Flights, Hotels, Bus",
+        "Platform": "Android",
+        "DataType": "Notifications"
+    },
+    {
+        "Application": "Yelp: Food, Delivery & Reviews",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "YouTube",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "YouTube: Watch, Listen, Stream",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yr",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    },
+    {
+        "Application": "Yubo : Make new friends",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Yubo: Make new friends",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "za.co.Bitx",
+        "Platform": "iOS",
+        "DataType": "Transactions"
+    },
+    {
+        "Application": "Z\u00e1chranka",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Z\u00e1chranka",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Zalo",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Zello PTT Walkie Talkie",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Zepp Life",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Zoho People - HR Management",
+        "Platform": "Android",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Zoho People - HR management",
+        "Platform": "iOS",
+        "DataType": "Contacts"
+    },
+    {
+        "Application": "Zoho Projects",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Zoom - One Platform to Connect",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "Zoom - One Platform to Connect",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "\u0412\u041a\u043e\u043d\u0442\u0430\u043a\u0442\u0435: \u0441\u043e\u043e\u0431\u0449\u0435\u043d\u0438\u044f, \u0432\u0438\u0434\u0435\u043e\u0447\u0430\u202a\u0442\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "\u0416\u0414 \u0411\u0438\u043b\u0435\u0442\u044b \u041e\u043d\u043b\u0430\u0439\u043d",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "\u042f\u043d\u0434\u0435\u043a\u0441 \u2014 \u0441 \u0410\u043b\u0438\u0441\u043e\u202a\u0439\u202c",
+        "Platform": "iOS",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "\u30c9\u30eb\u30d5\u30a3\u30f3\u30d6\u30e9\u30a6\u30b6\uff1a\u30d5\u30e9\u30c3\u30b7\u30e5\uff06\u30a2\u30c9\u30d6\u30ed\u30c3\u30af\u5bfe\u5fdc\u6700\u901f\u30d6\u30e9\u30a6\u30b6",
+        "Platform": "Android",
+        "DataType": "Downloads"
+    },
+    {
+        "Application": "\u6dd8\u5b9d",
+        "Platform": "Android",
+        "DataType": "Accounts"
+    },
+    {
+        "Application": "\u767e\u5ea6\u5730\u56fe",
+        "Platform": "Android",
+        "DataType": "GPS Locations"
+    }
+]
