@@ -146,7 +146,7 @@ export const appsService = () => {
         const timestamp = Math.floor(now.getTime() / 100);
 
         const patchJson = JSON.stringify(patch, null, 4);
-        const patchFileName = `${appName.replace(/\s+/g, '_').toLowerCase()}.${authState.username}.${timestamp}.json`; 
+        const patchFileName = `${appName.replace(/[\s\/\\]+/g, '_').toLowerCase()}.${authState.username}.${timestamp}.json`; 
         terminal(prevOutput => [...prevOutput, `Patch filename: ${patchFileName}`]);
         const filePath = `queue/${patchFileName}`;
         const commitMessage = 'New app suggestion via WebApp: ' + appName;

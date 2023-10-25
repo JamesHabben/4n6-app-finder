@@ -136,7 +136,8 @@ function GitHubFunctionsContent () {
             
             // Commit to dataBranch and create a pull request to the defaultBranch
             setTerminalOutput(prevOutput => [...prevOutput, `Committing apps-core.json on ${service.dataBranch} branch`]);
-            await service.commitChanges(service.dataBranch, JSON.stringify(appsUpdate, null, 4), 'public/apps-core.json', 'Updated apps-core.json');
+            await service.commitChanges(service.dataBranch, JSON.stringify(appsUpdate, null, 4), 'public/apps-core.json', 
+                'Updated apps-core.json', setTerminalOutput);
             
             setTerminalOutput(prevOutput => [...prevOutput, `Creating Pull Request from ${service.dataBranch} to ${service.defaultBranch}`]);
             await service.createDataPullRequest('Update apps-core.json', 'Updated apps-core.json with new data');

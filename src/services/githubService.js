@@ -280,12 +280,51 @@ export const githubService = (token, username) => {
                     });
                     terminal(prevOutput => [...prevOutput, `Blob created: ${blobSha}`]);
 
-                    terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA...']);
-                    const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
-                        owner: username,
-                        repo: repo,
-                        ref: `heads/${branchName}`,
-                    });
+                    terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA from events...']);
+                    // const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
+                    //     owner: username,
+                    //     repo: repo,
+                    //     ref: `heads/${branchName}`,
+                    // });
+
+                    // const { data: commits } = await octokit.repos.listCommits({
+                    //     owner: username,
+                    //     repo: repo,
+                    //     sha: branchName,  // filter by branch
+                    //     per_page: 1,  // only need the most recent commit
+                    // });
+                    // const latestCommitSha = commits[0].sha;
+
+                    // const response = await octokit.activity.listRepoEvents({ owner, repo, per_page: 5 }); 
+                    // console.log(response.data);
+
+                    // const { data } = await octokit.repos.getBranch({
+                    //     owner: username,
+                    //     repo: repo,
+                    //     branch: branchName
+                    // });
+                    // const latestCommitSha = data.commit.sha;
+                    let latestCommitSha;
+                    try {
+                        const response = await octokit.activity.listRepoEvents({
+                            owner: username,
+                            repo: repo,
+                            per_page: 1
+                        });
+                        latestCommitSha = response.data[0]?.payload?.head;  // Assuming the latest event is a push event
+                    } catch (error) {
+                        terminal(prevOutput => [...prevOutput, `Error fetching latest commit SHA from Events API: ${error.message}`]);
+                    }
+
+                    if (!latestCommitSha) {
+                        terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA from getRef...']);
+                        const { data: { object: { sha } } } = await octokit.git.getRef({
+                            owner: username,
+                            repo: repo,
+                            ref: `heads/${branchName}`,
+                        });
+                        latestCommitSha = sha;
+                    }
                     terminal(prevOutput => [...prevOutput, `Latest commit SHA: ${latestCommitSha}`]);
 
                     terminal(prevOutput => [...prevOutput, 'Creating tree...']);

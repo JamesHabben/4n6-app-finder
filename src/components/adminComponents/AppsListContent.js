@@ -10,10 +10,10 @@ function AppsListContent() {
           <div key={app.appName} className="tool-card">
             <h2>
               <img
-                src={app.icon || 'logo192.png'} // Use 'logo192.png' as the default if 'icon' is empty
+                src={app.icon ? `app-icons/${app.icon}` : 'logo192.png'}
                 alt={`${app.appName} Icon`}
-                width="30"
-                height="30"
+                width="40"
+                height="40"
                 style={{ marginRight: '10px' }}
               />
               {app.appName}
