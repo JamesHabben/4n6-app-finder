@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Huawei HiDisk",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "com.huawei.hidisk"
+        }
+    ]
+}
