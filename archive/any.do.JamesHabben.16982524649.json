@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Any.DO",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Any.do - To do list & Calendar"
+        }
+    ]
+}
