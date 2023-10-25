@@ -22,6 +22,21 @@
         "alternateNames": []
     },
     {
+        "appName": "Adidas Running / Runtastic",
+        "icon": "adidas-running.png",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "2023-10-24",
+        "alternateNames": [
+            "Runtastic",
+            "adidas Running: Walk & Run App",
+            "adidas Running: Run Tracker"
+        ]
+    },
+    {
         "appName": "Adium",
         "icon": "adium.webp",
         "websiteUrl": "",
@@ -165,7 +180,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "Any.Do"
+            "Any.Do",
+            "Any.do - To do list & Calendar"
         ]
     },
     {
@@ -177,7 +193,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-25",
-        "alternateNames": []
+        "alternateNames": [
+            "AnyDesk Remote Desktop"
+        ]
     },
     {
         "appName": "AOL Instant Messenger (AIM)",
@@ -379,7 +397,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "ASKfm: Ask & Chat Anonymously"
+        ]
     },
     {
         "appName": "Atomic Web Browser",
@@ -425,7 +445,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-25",
-        "alternateNames": []
+        "alternateNames": [
+            "Azar - video chat & livestream",
+            "Azar - Video Chat"
+        ]
     },
     {
         "appName": "Backup and Sync from Google",
@@ -448,7 +471,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "Badoo"
+            "Badoo",
+            "Badoo: Dating. Chat. Meet."
         ]
     },
     {
@@ -485,7 +509,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "BBM - Free Calls & Messages"
+        ]
     },
     {
         "appName": "Beekeeper",
@@ -531,7 +557,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-25",
-        "alternateNames": []
+        "alternateNames": [
+            "BiP - Messenger, Video Call"
+        ]
     },
     {
         "appName": "Bird",
@@ -599,7 +627,9 @@
         "dateUpdated": "",
         "alternateNames": [
             "Boat Browser for Tablets",
-            "Boat Browser Mini"
+            "Boat Browser Mini",
+            "com.boatbrowser.tablet",
+            "com.boatbrowser.free"
         ]
     },
     {
@@ -611,7 +641,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "Booking.com: Hotels & Travel"
+        ]
     },
     {
         "appName": "BOTIM",
@@ -633,7 +665,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "Box: The Content Cloud"
+        ]
     },
     {
         "appName": "Brave Browser",
@@ -659,7 +693,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "breadwallet - bitcoin wallet"
+            "breadwallet - bitcoin wallet",
+            "BRD Bitcoin Wallet Bitcoin BTC"
         ]
     },
     {
@@ -819,7 +854,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "CheckMyTrip â Travel Itinerary"
+        ]
     },
     {
         "appName": "Chromium",
@@ -876,7 +913,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "Coinbase: Buy Bitcoin & Ether"
+        ]
     },
     {
         "appName": "Confide",
@@ -1180,7 +1219,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Endomondo Pro"
+            "Endomondo Pro",
+            "com.endomondo.Endomondo"
         ]
     },
     {
@@ -1441,7 +1481,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "com.naveenium.foursquare"
+        ]
     },
     {
         "appName": "Freeflight 6",
@@ -2064,7 +2106,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "com.huawei.hidisk"
+        ]
     },
     {
         "appName": "Huawei Notes",
@@ -2961,7 +3005,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Nike+ Run Club"
+            "Nike+ Run Club",
+            "com.nike.nikeplus-gps"
         ]
     },
     {
@@ -3098,7 +3143,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "com.microsoft.onenoteiPad"
+        ]
     },
     {
         "appName": "ooVoo",
@@ -3478,19 +3525,8 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
-        "appName": "Adidas Running / Runtastic",
-        "icon": "adidas-running.png",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "Runtastic"
+            "ASICS Runkeeper - Run Tracker"
         ]
     },
     {
@@ -4117,7 +4153,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "com.gemsoftware.textme"
+        ]
     },
     {
         "appName": "TextNow",
@@ -4145,7 +4183,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "com.gogii.textplus"
+        ]
     },
     {
         "appName": "Textra SMS",
