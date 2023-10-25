@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "BBM",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "BBM - Free Calls & Messages"
+        }
+    ]
+}
