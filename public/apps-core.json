@@ -1,46 +1,46 @@
 [
     {
         "appName": "1Password",
-        "icon": "",
+        "icon": "1password.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.onepassword.android",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "Addison Lee London Minicabs",
-        "icon": "",
+        "icon": "addison-lee-london.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.haulmont.shamrock.android",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "Adium",
-        "icon": "",
+        "icon": "adium.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tflatam.tflatam",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "Aeroflot",
-        "icon": "",
+        "icon": "aeroflot.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.aeroflot",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
@@ -59,7 +59,7 @@
         "icon": "airbnb.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.airbnb.android",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
@@ -70,7 +70,7 @@
         "icon": "aliexpress.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
@@ -84,7 +84,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alltrails.alltrails&hl=en",
         "notes": "",
         "dateAdded": "2023-10-22",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-24",
         "alternateNames": []
     },
     {
@@ -100,10 +100,10 @@
     },
     {
         "appName": "Amazon Photos",
-        "icon": "",
+        "icon": "amazon-photos.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.clouddrive.photos",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -114,7 +114,7 @@
         "icon": "amazon.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
@@ -127,7 +127,7 @@
         "icon": "american-airlines.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.aa.android",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
@@ -146,13 +146,13 @@
     },
     {
         "appName": "Anonymous Chat",
-        "icon": "",
+        "icon": "anonymous-chat.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.anonchat",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
@@ -160,7 +160,7 @@
         "icon": "any-do.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.anydo",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
@@ -170,24 +170,24 @@
     },
     {
         "appName": "AnyDesk",
-        "icon": "",
+        "icon": "anydesk.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "AOL Instant Messenger (AIM)",
-        "icon": "",
+        "icon": "aol-instant-messenger.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-15",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": [
             "AIM Messages",
             "AIM Buddies"
@@ -350,24 +350,24 @@
     },
     {
         "appName": "AppLock",
-        "icon": "",
+        "icon": "applock.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.domobile.applockwatcher",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "Around Me",
-        "icon": "",
+        "icon": "around-me.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tweakersoft.aroundme&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
@@ -375,7 +375,7 @@
         "icon": "askfm.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.askfm&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
@@ -407,24 +407,24 @@
     },
     {
         "appName": "AWS Wickr",
-        "icon": "",
+        "icon": "aws-wickr.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.wickr.pro&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "Azar",
-        "icon": "",
+        "icon": "azar.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.azarlive.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
@@ -489,81 +489,85 @@
     },
     {
         "appName": "Beekeeper",
-        "icon": "",
+        "icon": "beekeeper.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/beekeeper-digital-workplace/id963759556",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.beekeeper.beekeeper&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "BeReal",
-        "icon": "",
+        "icon": "bereal.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/bereal-your-friends-for-real/id1459645446",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bereal.ft&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
         "appName": "BigoLive",
-        "icon": "",
+        "icon": "bigo.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/bigo-live-live-stream-go-live/id1077137248",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=sg.bigo.live&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": [
             "Bigo Live"
         ]
     },
     {
         "appName": "BiP",
-        "icon": "",
+        "icon": "bip.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/bip-messenger-video-call/id583274826",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.turkcell.bip&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
-        "appName": "Bird ",
-        "icon": "",
+        "appName": "Bird",
+        "icon": "bird.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/bird-ride-electric/id1260842311",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.bird.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-25",
+        "alternateNames": [
+            "Bird "
+        ]
     },
     {
-        "appName": "Bit Pay",
-        "icon": "",
+        "appName": "BitPay",
+        "icon": "bitpay.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/bitpay-bitcoin-wallet-card/id1149581638",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bitpay.wallet&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-25",
+        "alternateNames": [
+            "Bit Pay"
+        ]
     },
     {
         "appName": "BlaBlaCar",
-        "icon": "",
+        "icon": "blablacar.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/blablacar-carpooling-and-bus/id341329033",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.comuto&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-25",
         "alternateNames": []
     },
     {
@@ -600,7 +604,7 @@
     },
     {
         "appName": "Booking.com",
-        "icon": "booking-com.webp",
+        "icon": "booking-com.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.booking",
@@ -4536,37 +4540,18 @@
         "alternateNames": []
     },
     {
-        "appName": "VIPole",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
         "appName": "VIPole Private Messenger",
         "icon": "",
         "websiteUrl": "",
-        "appleStoreUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/vipole-private-messenger/id1020748042",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
-        "appName": "VIPole Secure Messenger",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "VIPole Secure Messenger",
+            "VIPole"
+        ]
     },
     {
         "appName": "Vipps",
