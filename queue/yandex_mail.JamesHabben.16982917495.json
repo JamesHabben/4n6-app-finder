@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Yandex Mail",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Yahoo Mail"
+        }
+    ]
+}
