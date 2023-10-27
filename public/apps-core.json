@@ -389,6 +389,19 @@
         "alternateNames": []
     },
     {
+        "appName": "ASICS RunKeeper",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "ASICS Runkeeper - Run Tracker"
+        ]
+    },
+    {
         "appName": "ASKfm",
         "icon": "askfm.png",
         "websiteUrl": "",
@@ -855,7 +868,7 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "CheckMyTrip â Travel Itinerary"
+            "CheckMyTrip Ã¢ÂÂ Travel Itinerary"
         ]
     },
     {
@@ -1017,7 +1030,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "discordAcct"
+            "discordAcct",
+            "discordJson"
         ]
     },
     {
@@ -1682,7 +1696,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Chrome"
+            "Chrome",
+            "chromeOfflinePages"
         ]
     },
     {
@@ -2449,7 +2464,8 @@
             "Android Kik Messenger Messages",
             "kikBplistmeta",
             "kikPendingUploads",
-            "kikUsersgroups"
+            "kikUsersgroups",
+            "kikGroupadmins"
         ]
     },
     {
@@ -3148,6 +3164,21 @@
         ]
     },
     {
+        "appName": "Ookla Speedtest",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Speedtest",
+            "com.ookla.speedtest",
+            "ooklaSpeedtestData"
+        ]
+    },
+    {
         "appName": "ooVoo",
         "icon": "",
         "websiteUrl": "",
@@ -3424,6 +3455,19 @@
         ]
     },
     {
+        "appName": "QIWI Wallet",
+        "icon": "qiwi-wallet.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/search?q=qiwi%20wallet&c=apps&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "2023-10-25",
+        "alternateNames": [
+            "Visa QIWI Wallet"
+        ]
+    },
+    {
         "appName": "QQ",
         "icon": "",
         "websiteUrl": "",
@@ -3515,19 +3559,6 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
-    },
-    {
-        "appName": "ASICS RunKeeper",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "ASICS Runkeeper - Run Tracker"
-        ]
     },
     {
         "appName": "Rus VPN",
@@ -3710,7 +3741,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "Signal Private Messenger / TextSecure",
+            "Signal Private Messenger"
+        ]
     },
     {
         "appName": "Silent Phone",
@@ -3880,20 +3914,6 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
-    },
-    {
-        "appName": "Ookla Speedtest",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Speedtest",
-            "com.ookla.speedtest"
-        ]
     },
     {
         "appName": "Springpad",
@@ -4393,20 +4413,6 @@
         "alternateNames": []
     },
     {
-        "appName": "X / Twitter",
-        "icon": "x-twitter.webp",
-        "websiteUrl": "",
-        "appleStoreUrl": "https://apps.apple.com/us/app/x/id333903271",
-        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=en",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-25",
-        "alternateNames": [
-            "Twitter",
-            "X"
-        ]
-    },
-    {
         "appName": "Twitterrific",
         "icon": "",
         "websiteUrl": "",
@@ -4563,19 +4569,6 @@
         "alternateNames": [
             "vippsContacts",
             "vipps"
-        ]
-    },
-    {
-        "appName": "QIWI Wallet",
-        "icon": "qiwi-wallet.webp",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "https://play.google.com/store/search?q=qiwi%20wallet&c=apps&hl=en",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-25",
-        "alternateNames": [
-            "Visa QIWI Wallet"
         ]
     },
     {
@@ -4776,7 +4769,8 @@
             "FMWhatsApp Messenger",
             "GBWhatsApp Messenger",
             "OBWhatsApp Messenger",
-            "WhatsApp for KaiOS"
+            "WhatsApp for KaiOS",
+            "Whatsapp"
         ]
     },
     {
@@ -4800,7 +4794,9 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "WickrMe"
+            "WickrMe",
+            "Wickr",
+            "wickr"
         ]
     },
     {
@@ -4849,6 +4845,20 @@
             "Workplace chat by Facebook",
             "Workplace",
             "Workplace from Meta"
+        ]
+    },
+    {
+        "appName": "X / Twitter",
+        "icon": "x-twitter.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/x/id333903271",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "2023-10-25",
+        "alternateNames": [
+            "Twitter",
+            "X"
         ]
     },
     {
@@ -4919,7 +4929,7 @@
         "dateUpdated": "",
         "alternateNames": [
             "Yahoo!Mail",
-            "Yahoo Mail – Organized Email"
+            "Yahoo Mail â Organized Email"
         ]
     },
     {
@@ -4976,20 +4986,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Yandex.Disk",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Yandex Disk—file cloud storage",
-            "Yandex Disk—file cloud storage"
-        ]
-    },
-    {
         "appName": "Yandex Mail",
         "icon": "",
         "websiteUrl": "",
@@ -5000,7 +4996,8 @@
         "dateUpdated": "",
         "alternateNames": [
             "Yandex.Mail",
-            "Yandex Mail - Email App"
+            "Yandex Mail - Email App",
+            "Yahoo Mail"
         ]
     },
     {
@@ -5017,6 +5014,20 @@
             "Yandex.Navigator",
             "Yandex Maps and Navigator",
             "Yandex Navigator"
+        ]
+    },
+    {
+        "appName": "Yandex.Disk",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Yandex Diskâfile cloud storage",
+            "Yandex Diskâfile cloud storage"
         ]
     },
     {
