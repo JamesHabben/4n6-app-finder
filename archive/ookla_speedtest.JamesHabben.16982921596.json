@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Ookla Speedtest",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "ooklaSpeedtestData"
+        }
+    ]
+}
