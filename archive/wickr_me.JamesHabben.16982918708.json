@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Wickr Me",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Wickr"
+        }
+    ]
+}
