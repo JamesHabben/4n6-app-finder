@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "WhatsApp Messenger",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/21",
+            "value": "Whatsapp"
+        }
+    ]
+}
