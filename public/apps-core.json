@@ -872,7 +872,7 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "CheckMyTrip Ã¢ÂÂ Travel Itinerary"
+            "CheckMyTrip ÃÂ¢ÃÂÃÂ Travel Itinerary"
         ]
     },
     {
@@ -1130,7 +1130,7 @@
         "dateUpdated": "",
         "alternateNames": [
             "DU Browser Mini(Small&Fast)",
-            "DU Browser—Browse fast & fun"
+            "DU BrowserâBrowse fast & fun"
         ]
     },
     {
@@ -1325,22 +1325,6 @@
         "dateUpdated": "2023-10-24",
         "alternateNames": [
             "Facebook Lite"
-        ]
-    },
-    {
-        "appName": "Meta Messenger (Facebook)",
-        "icon": "meta-messenger.webp",
-        "websiteUrl": "",
-        "appleStoreUrl": "https://apps.apple.com/us/app/messenger/id454638411",
-        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Facebook Messenger",
-            "Facebook Messenger Lite",
-            "Cloud Facebook Messenger Messages",
-            "FacebookMessenger"
         ]
     },
     {
@@ -2575,7 +2559,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Lime "
+            "Lime ",
+            "Lime - #RideGreen"
         ]
     },
     {
@@ -2599,7 +2584,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Linkedin"
+            "Linkedin",
+            "LinkedIn Job Search"
         ]
     },
     {
@@ -2790,6 +2776,22 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Meta Messenger (Facebook)",
+        "icon": "meta-messenger.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/messenger/id454638411",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Facebook Messenger",
+            "Facebook Messenger Lite",
+            "Cloud Facebook Messenger Messages",
+            "FacebookMessenger"
+        ]
     },
     {
         "appName": "Metamask",
@@ -4963,7 +4965,7 @@
         "dateUpdated": "",
         "alternateNames": [
             "Yahoo!Mail",
-            "Yahoo Mail â Organized Email"
+            "Yahoo Mail Ã¢ÂÂ Organized Email"
         ]
     },
     {
@@ -5060,8 +5062,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Yandex Diskâfile cloud storage",
-            "Yandex Diskâfile cloud storage"
+            "Yandex DiskÃ¢ÂÂfile cloud storage",
+            "Yandex DiskÃ¢ÂÂfile cloud storage"
         ]
     },
     {
