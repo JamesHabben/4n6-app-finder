@@ -181,7 +181,8 @@
         "dateUpdated": "2023-10-24",
         "alternateNames": [
             "Any.Do",
-            "Any.do - To do list & Calendar"
+            "Any.do - To do list & Calendar",
+            "Any.do: To do list & Planner"
         ]
     },
     {
@@ -612,26 +613,28 @@
         "alternateNames": []
     },
     {
-        "appName": "Blackberry Messenger",
-        "icon": "",
+        "appName": "Blackberry Messenger (BBM)",
+        "icon": "bbm.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bbm.enterprise",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-24",
         "alternateNames": [
             "BlackBerry Messenger Contacts",
             "BlackBerry Messenger File Transfers",
             "BlackBerry Messenger Invitations",
             "BlackBerry Messenger Locations",
             "BlackBerry Messenger Messages",
-            "BlackBerry Messenger Profile"
+            "BlackBerry Messenger Profile",
+            "BBM - Free Calls & Messages",
+            "BBM"
         ]
     },
     {
         "appName": "Boat Browser",
-        "icon": "",
+        "icon": "boat-browser.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -642,7 +645,8 @@
             "Boat Browser for Tablets",
             "Boat Browser Mini",
             "com.boatbrowser.tablet",
-            "com.boatbrowser.free"
+            "com.boatbrowser.free",
+            "com.boatgo.browser"
         ]
     },
     {
@@ -943,14 +947,16 @@
     },
     {
         "appName": "CoverMe",
-        "icon": "",
+        "icon": "coverme.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "CoverMe - Second Phone Number"
+        ]
     },
     {
         "appName": "Craigslist",
@@ -1031,21 +1037,26 @@
         "dateUpdated": "2023-10-24",
         "alternateNames": [
             "discordAcct",
-            "discordJson"
+            "discordJson",
+            "Discord - Chat, Talk & Hangout",
+            "Discord: Talk, Chat & Hang Out"
         ]
     },
     {
         "appName": "DJI GO",
-        "icon": "",
+        "icon": "dji-go.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/dji-go/id943780750",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gofly.dji&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
             "DJI GO 4",
-            "DJI Go 4"
+            "DJI Go 4",
+            "DJI Fly",
+            "DJI GO 4--For drones since P4",
+            "DJI GO--For products before P4"
         ]
     },
     {
@@ -1061,34 +1072,40 @@
     },
     {
         "appName": "Dolphin Browser",
-        "icon": "",
+        "icon": "dolphin-browser.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/dolphin-mobile-browser/id634693702",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.mgeek.TunnyBrowser&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-27",
         "alternateNames": [
             "Dolphin Browser",
             "Dolphin Browser Classic",
             "Dolphin Browser Express",
             "Dolphin Browser Mini",
-            "Dolphin Web Browser"
+            "Dolphin Web Browser",
+            "Dolphin Browser: Fast, Private",
+            "Dolphin Web Browser for iPad",
+            "Dolphin Web Browser for iPhone",
+            "Dolphin Web Browser for iPhone (Chinese version)"
         ]
     },
     {
         "appName": "Dropbox",
-        "icon": "",
+        "icon": "dropbox.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/dropbox-cloud-files-storage/id327630330",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dropbox.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-27",
         "alternateNames": [
             "DropBox",
             "Android Dropbox",
-            "Android Dropbox Account Info"
+            "Android Dropbox Account Info",
+            "Dropbox: Cloud Files Storage",
+            "Dropbox: Secure Cloud Storage"
         ]
     },
     {
@@ -1111,7 +1128,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "DU Browser Mini(Small&Fast)",
+            "DU Browser—Browse fast & fun"
+        ]
     },
     {
         "appName": "DuckDuckGo",
@@ -1137,14 +1157,17 @@
     },
     {
         "appName": "Ebay",
-        "icon": "",
+        "icon": "ebay.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/ebay-selling-shopping-online/id282614216",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebay.mobile&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "eBay Selling & Shopping Online",
+            "eBay: Online Shopping Deals"
+        ]
     },
     {
         "appName": "eBLASTER mobile",
@@ -1166,7 +1189,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "eBuddy XMS"
+        ]
     },
     {
         "appName": "Element",
@@ -1225,39 +1250,45 @@
     },
     {
         "appName": "Endomondo",
-        "icon": "",
+        "icon": "endomondo.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-27",
         "alternateNames": [
             "Endomondo Pro",
-            "com.endomondo.Endomondo"
+            "com.endomondo.Endomondo",
+            "com.endomondo.android",
+            "Endomondo - Running & Walking"
         ]
     },
     {
         "appName": "Evernote",
-        "icon": "",
+        "icon": "evernote.png",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/evernote-notes-organizer/id281796108",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.evernote&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-27",
+        "alternateNames": [
+            "Evernote - Note Organizer"
+        ]
     },
     {
         "appName": "Expedia",
-        "icon": "",
+        "icon": "expedia.png",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/expedia-hotels-flights-car/id427916203",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.expedia.bookings&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Expedia: Hotels, Flights & Car"
+        ]
     },
     {
         "appName": "Express VPN",
@@ -1272,14 +1303,16 @@
     },
     {
         "appName": "FaceApp",
-        "icon": "",
+        "icon": "faceapp.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.faceapp&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "FaceApp: Face Editor"
+        ]
     },
     {
         "appName": "Facebook",
@@ -1295,11 +1328,11 @@
         ]
     },
     {
-        "appName": "Facebook Messenger",
-        "icon": "",
+        "appName": "Meta Messenger (Facebook)",
+        "icon": "meta-messenger.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/messenger/id454638411",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -1378,25 +1411,20 @@
     },
     {
         "appName": "Firefox",
-        "icon": "",
+        "icon": "firefox-browser.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/firefox-private-safe-browser/id989804926",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
-        "appName": "Firefox Focus browser",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-27",
+        "alternateNames": [
+            "Firefox Beta for Testers",
+            "Firefox Fast & Private Browser",
+            "Firefox Nightly for Developers",
+            "Firefox: Private, Safe Browser",
+            "Firefox Focus browser"
+        ]
     },
     {
         "appName": "Firefox Lockwise",
@@ -1688,16 +1716,19 @@
     },
     {
         "appName": "Google Chrome",
-        "icon": "",
+        "icon": "google-chrome.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-27",
         "alternateNames": [
             "Chrome",
-            "chromeOfflinePages"
+            "chromeOfflinePages",
+            "Chrome Beta",
+            "Chrome Canary (Unstable)",
+            "Chrome Dev"
         ]
     },
     {
@@ -2735,16 +2766,18 @@
     },
     {
         "appName": "Mercury Browser",
-        "icon": "",
+        "icon": "mercury-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mercurybrowserjv&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-27",
         "alternateNames": [
             "Mercury Web Browser",
-            "Mercury Pro Web Browser"
+            "Mercury Pro Web Browser",
+            "com.bsn.mercury",
+            "com.bsn.mercurypro"
         ]
     },
     {
@@ -4619,7 +4652,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "VK Calls"
+            "VK Calls",
+            "com.dchistyakov.vkmessenger.ui"
         ]
     },
     {
