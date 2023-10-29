@@ -399,7 +399,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "ASICS Runkeeper - Run Tracker"
+            "ASICS Runkeeper - Run Tracker",
+            "RunKeeper"
         ]
     },
     {
@@ -762,7 +763,7 @@
     },
     {
         "appName": "Burner",
-        "icon": "",
+        "icon": "burner.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -771,7 +772,10 @@
         "dateUpdated": "",
         "alternateNames": [
             "Android Burner Conversations",
-            "Android Burner Numbers"
+            "Android Burner Numbers",
+            "Burner Contacts",
+            "Burner Messages",
+            "Burner Numbers"
         ]
     },
     {
@@ -3713,7 +3717,11 @@
             "Safari Browser",
             "Safari (iOS)",
             "safariHistor",
-            "safariBookmarks"
+            "safariBookmarks",
+            "safariFavicons",
+            "safariRecentWebSearches",
+            "safariTabs",
+            "safariWebsearch"
         ]
     },
     {
@@ -4434,7 +4442,7 @@
     },
     {
         "appName": "Touch",
-        "icon": "",
+        "icon": "touch.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -5060,7 +5068,8 @@
         "dateUpdated": "",
         "alternateNames": [
             "Yahoo!Mail",
-            "Yahoo Mail Ã¢ÂÂ Organized Email"
+            "Yahoo Mail Ã¢ÂÂ Organized Email",
+            "Yahoo Mail"
         ]
     },
     {
@@ -5127,8 +5136,7 @@
         "dateUpdated": "",
         "alternateNames": [
             "Yandex.Mail",
-            "Yandex Mail - Email App",
-            "Yahoo Mail"
+            "Yandex Mail - Email App"
         ]
     },
     {
