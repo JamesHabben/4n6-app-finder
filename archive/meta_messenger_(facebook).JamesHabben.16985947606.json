@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Meta Messenger (Facebook)",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/4",
+            "value": "Facebook Messenger Calls"
+        }
+    ]
+}
