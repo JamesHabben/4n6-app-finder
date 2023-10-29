@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Yandex Maps & Navigator",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/4",
+            "value": "Yandex Maps"
+        }
+    ]
+}
