@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Snapchat",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Snapchat Chat Messages"
+        }
+    ]
+}
