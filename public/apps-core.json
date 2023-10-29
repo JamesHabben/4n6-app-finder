@@ -771,7 +771,10 @@
         "dateUpdated": "",
         "alternateNames": [
             "Android Burner Conversations",
-            "Android Burner Numbers"
+            "Android Burner Numbers",
+            "Burner Numbers",
+            "Burner Messages",
+            "Burner Contacts"
         ]
     },
     {
@@ -872,7 +875,7 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "CheckMyTrip ÃÂ¢ÃÂÃÂ Travel Itinerary"
+            "CheckMyTrip ÃÂÃÂ¢ÃÂÃÂÃÂÃÂ Travel Itinerary"
         ]
     },
     {
@@ -1039,7 +1042,9 @@
             "discordAcct",
             "discordJson",
             "Discord - Chat, Talk & Hangout",
-            "Discord: Talk, Chat & Hang Out"
+            "Discord: Talk, Chat & Hang Out",
+            "Discord Messages",
+            "Discord Logged-in Account"
         ]
     },
     {
@@ -1130,7 +1135,7 @@
         "dateUpdated": "",
         "alternateNames": [
             "DU Browser Mini(Small&Fast)",
-            "DU BrowserâBrowse fast & fun"
+            "DU BrowserÃ¢ÂÂBrowse fast & fun"
         ]
     },
     {
@@ -1513,6 +1518,19 @@
         ]
     },
     {
+        "appName": "Foursquare Swarm",
+        "icon": "foursquare-swarm.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.foursquare.robin&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "2023-10-28",
+        "alternateNames": [
+            "Swarm"
+        ]
+    },
+    {
         "appName": "Freeflight 6",
         "icon": "",
         "websiteUrl": "",
@@ -1642,7 +1660,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Glide Users",
+            "Glide Messages"
+        ]
     },
     {
         "appName": "Google",
@@ -1713,7 +1734,13 @@
             "chromeOfflinePages",
             "Chrome Beta",
             "Chrome Canary (Unstable)",
-            "Chrome Dev"
+            "Chrome Dev",
+            "chromeTopSites",
+            "chromeNetworkActionPredictor",
+            "chromeMediaHistor",
+            "chromeLoginData",
+            "chromeCookies",
+            "chromeLoginData"
         ]
     },
     {
@@ -1760,7 +1787,11 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Google Duo Groups",
+            "Google Duo Group Calls",
+            "Google Duo Activity"
+        ]
     },
     {
         "appName": "Google Earth",
@@ -1783,6 +1814,22 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Google Hangouts",
+        "icon": "google-hangouts.png",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Hangouts",
+            "Google Hangouts Voice Calls",
+            "Google Hangouts Cached Images",
+            "Android Google Hangouts Messages"
+        ]
     },
     {
         "appName": "Google Home",
@@ -1840,7 +1887,23 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Google Meet Meeting History"
+        ]
+    },
+    {
+        "appName": "Google Messages",
+        "icon": "google-messages.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Messages by Google",
+            "Messenger By Google"
+        ]
     },
     {
         "appName": "Google Pay",
@@ -1873,7 +1936,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Gtalk Messages",
+            "Gtalk Contacts"
+        ]
     },
     {
         "appName": "Google Tasks",
@@ -1952,7 +2018,12 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "GroupMe Messages",
+            "GroupMe Groups",
+            "GroupMe Contacts",
+            "GroupMe Accounts"
+        ]
     },
     {
         "appName": "Growlr",
@@ -1964,19 +2035,6 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
-    },
-    {
-        "appName": "Google Hangouts",
-        "icon": "google-hangouts.png",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Hangouts"
-        ]
     },
     {
         "appName": "Here Maps",
@@ -2092,7 +2150,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Houseparty Users",
+            "Houseparty Messages"
+        ]
     },
     {
         "appName": "HTC Mail",
@@ -2194,7 +2255,7 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "ICQ – Video Calls & Chat App",
+            "ICQ â Video Calls & Chat App",
             "ICQ Video Calls & Chat Rooms"
         ]
     },
@@ -2248,7 +2309,9 @@
             "Imo beta",
             "IMO Messenger",
             "imo beta -video calls and chat",
-            "imo-International Calls & Chat"
+            "imo-International Calls & Chat",
+            "imo Messages",
+            "imo Contacts"
         ]
     },
     {
@@ -2415,7 +2478,13 @@
         "dateUpdated": "2023-10-28",
         "alternateNames": [
             "KakaoTalk",
-            "KakaoTalk : Messenger"
+            "KakaoTalk : Messenger",
+            "KakaoTalk Messages",
+            "KakaoTalk Friends",
+            "KakaoTalk Detected Wifi",
+            "KakaoTalk Chat Rooms",
+            "KakaoTalk Calls",
+            "KakaoTalk Browsing History"
         ]
     },
     {
@@ -2499,7 +2568,7 @@
             "kikPendingUploads",
             "kikUsersgroups",
             "kikGroupadmins",
-            "Kik — Messaging & Chat App",
+            "Kik â Messaging & Chat App",
             "Kik Messaging & Chat App"
         ]
     },
@@ -2688,7 +2757,7 @@
             "Mail.Ru Agent",
             "Cloud Mail.Ru",
             "Mail.ru - Email App",
-            "Mail.Ru for UA – Email for Hot"
+            "Mail.Ru for UA â Email for Hot"
         ]
     },
     {
@@ -2824,20 +2893,6 @@
         ]
     },
     {
-        "appName": "Google Messages",
-        "icon": "google-messages.webp",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Messages by Google",
-            "Messenger By Google"
-        ]
-    },
-    {
         "appName": "Meta Messenger (Facebook)",
         "icon": "meta-messenger.webp",
         "websiteUrl": "",
@@ -2850,7 +2905,12 @@
             "Facebook Messenger",
             "Facebook Messenger Lite",
             "Cloud Facebook Messenger Messages",
-            "FacebookMessenger"
+            "FacebookMessenger",
+            "Facebook Messenger Users Contacted",
+            "Facebook Messenger Messages",
+            "Facebook Messenger Groups",
+            "Facebook Messenger Calls",
+            "Android Facebook Messenger Attachments"
         ]
     },
     {
@@ -2925,6 +2985,21 @@
         "alternateNames": [
             "OneDrive",
             "OneDrive (web)"
+        ]
+    },
+    {
+        "appName": "Microsoft OneNote",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "com.microsoft.onenoteiPad",
+            "Microsoft OneNote: Save Notes",
+            "OneNote"
         ]
     },
     {
@@ -3257,21 +3332,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Microsoft OneNote",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "com.microsoft.onenoteiPad",
-            "Microsoft OneNote: Save Notes",
-            "OneNote"
-        ]
-    },
-    {
         "appName": "Ookla Speedtest",
         "icon": "",
         "websiteUrl": "",
@@ -3602,7 +3662,7 @@
             "QQ Browser",
             "QQ HD",
             "QQ International - Chat & Call",
-            "QQ轻聊版"
+            "QQè½»èç"
         ]
     },
     {
@@ -3824,7 +3884,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-28",
-        "alternateNames": []
+        "alternateNames": [
+            "Scruff"
+        ]
     },
     {
         "appName": "Session",
@@ -3870,7 +3932,8 @@
         "dateUpdated": "2023-10-24",
         "alternateNames": [
             "Signal Private Messenger / TextSecure",
-            "Signal Private Messenger"
+            "Signal Private Messenger",
+            "Signal Conversations - Android"
         ]
     },
     {
@@ -3948,7 +4011,8 @@
             "Slack (desktop)",
             "Slack (store)",
             "Slack (web)",
-            "slack"
+            "slack",
+            "Slack Channel Messages"
         ]
     },
     {
@@ -3984,7 +4048,8 @@
         "dateUpdated": "2023-10-24",
         "alternateNames": [
             "SnapChat",
-            "Snapchat Warrant Return"
+            "Snapchat Warrant Return",
+            "Snapchat Chat Messages"
         ]
     },
     {
@@ -4098,19 +4163,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Foursquare Swarm",
-        "icon": "foursquare-swarm.webp",
-        "websiteUrl": "",
-        "appleStoreUrl": "https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082",
-        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.foursquare.robin&hl=en",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
-        "alternateNames": [
-            "Swarm"
-        ]
-    },
-    {
         "appName": "T-Mobile Digits",
         "icon": "tmobile-digits.webp",
         "websiteUrl": "",
@@ -4142,7 +4194,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
         "alternateNames": [
-            "TamTam"
+            "TamTam",
+            "TamTam Messenger Channels - Android"
         ]
     },
     {
@@ -4217,7 +4270,8 @@
             "Telegram Web",
             "Telegram (store)",
             "Telegram Messages",
-            "Telegram X"
+            "Telegram X",
+            "Telegram Chats - Android"
         ]
     },
     {
@@ -4278,7 +4332,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "com.gemsoftware.textme"
+            "com.gemsoftware.textme",
+            "TextMe Calls"
         ]
     },
     {
@@ -4308,7 +4363,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-28",
         "alternateNames": [
-            "com.gogii.textplus"
+            "com.gogii.textplus",
+            "TextPlus Activity"
         ]
     },
     {
@@ -4364,7 +4420,9 @@
         "notes": "",
         "dateAdded": "2023-10-15",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Android TigerText Messages"
+        ]
     },
     {
         "appName": "Tiki",
@@ -4441,7 +4499,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Touch Experiences"
+        ]
     },
     {
         "appName": "Transaero",
@@ -4634,7 +4694,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-28",
-        "alternateNames": []
+        "alternateNames": [
+            "Verizon Messages Messages"
+        ]
     },
     {
         "appName": "Viber",
@@ -4648,7 +4710,8 @@
         "alternateNames": [
             "Viber Artifacts",
             "Viber - Safe Chats And Calls",
-            "Viber Messenger: Chats & Calls"
+            "Viber Messenger: Chats & Calls",
+            "Viber Messages"
         ]
     },
     {
@@ -4857,7 +4920,10 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "WeChat Messages",
+            "WeChat Friends"
+        ]
     },
     {
         "appName": "Weibo",
@@ -4927,7 +4993,10 @@
         "alternateNames": [
             "WickrMe",
             "Wickr",
-            "wickr"
+            "wickr",
+            "Wickr Me Users",
+            "Wickr Me Messages",
+            "Wickr Me Conversations"
         ]
     },
     {
@@ -5060,7 +5129,7 @@
         "dateUpdated": "",
         "alternateNames": [
             "Yahoo!Mail",
-            "Yahoo Mail Ã¢ÂÂ Organized Email"
+            "Yahoo Mail ÃÂ¢ÃÂÃÂ Organized Email"
         ]
     },
     {
@@ -5144,7 +5213,8 @@
             "Yandex.Maps",
             "Yandex.Navigator",
             "Yandex Maps and Navigator",
-            "Yandex Navigator"
+            "Yandex Navigator",
+            "Yandex Maps"
         ]
     },
     {
@@ -5157,8 +5227,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Yandex DiskÃ¢ÂÂfile cloud storage",
-            "Yandex DiskÃ¢ÂÂfile cloud storage"
+            "Yandex DiskÃÂ¢ÃÂÃÂfile cloud storage",
+            "Yandex DiskÃÂ¢ÃÂÃÂfile cloud storage"
         ]
     },
     {
@@ -5231,7 +5301,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Zalo Contacts"
+        ]
     },
     {
         "appName": "Zangi Messenger",
