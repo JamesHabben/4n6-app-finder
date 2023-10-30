@@ -95,7 +95,9 @@ function GitHubFunctionsContent () {
         try {
             const service = githubService(authState.token, authState.username);
             
-            const appsCoreContent = await service.getFileContent(service.dataBranch, 'public/apps-core.json');
+            //const appsCoreContent = await service.getFileContent(service.dataBranch, 'public/apps-core.json');
+            const appsCoreContent = await service.getRawFileContent(service.owner, '4n6-app-finder', service.dataBranch, 'public/apps-core.json');
+            console.log("get from gh ", appsCoreContent)
             let appsUpdate = JSON.parse(appsCoreContent);
             setTerminalOutput(prevOutput => [...prevOutput, `Fetched apps-core.json with ${Object.keys(appsUpdate).length} records.`]);
             
