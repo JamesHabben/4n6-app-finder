@@ -1,4 +1,5 @@
 import { Octokit } from '@octokit/rest';
+import { Base64 } from 'js-base64';
 
 const owner = 'JamesHabben';
 const repo = '4n6-app-finder';
@@ -61,6 +62,36 @@ export const githubService = (token, username) => {
         }
     };
 
+    function decodeBase64(data) {
+        try {
+            // Decode base64 string to bytes
+            let bytes = Uint8Array.from(atob(data), c => c.charCodeAt(0));
+    
+            // Convert bytes to text with proper UTF-8 encoding
+            let text = new TextDecoder().decode(bytes);
+    
+            return text;
+        } catch (e) {
+            console.error('Failed to decode base64 string:', e);
+            return null;
+        }
+    }
+
+    function base64Decode(str) {
+        try {
+            // Decode base64 string
+            let base64 = atob(str);
+    
+            // Convert base64 to text with proper UTF-8 encoding
+            let text = decodeURIComponent(escape(base64));
+    
+            return text;
+        } catch (e) {
+            console.error('Failed to decode base64 string:', e);
+            return null;
+        }
+    }
+
     const getFileContent = async (branch, filePath) => {
         try {
             const { data: tree } = await octokit.git.getTree({
@@ -80,13 +111,33 @@ export const githubService = (token, username) => {
                 repo,
                 file_sha: fileBlob.sha
             });
-    
-            return atob(blob.content);  // decode from base64
+            console.log("blob data ", blob)
+            
+            const text = Base64.decode(blob.content);
+            return text;
+            //return decodeBase64(blob.content);  // decode from base64
         } catch (error) {
             console.error('Error getting file content:', error.message);
             throw error;
         }
     };
+
+    async function getRawFileContent(user, repo, branch, filename) {
+        const url = `https://raw.githubusercontent.com/${user}/${repo}/${branch}/${filename}`;
+        const response = await fetch(url, {
+            headers: {
+                'Accept': 'application/vnd.github.v3.raw',
+                'Accept-Charset': 'utf-8'
+            }
+        });
+        if (!response.ok) {
+            throw new Error(`Failed to fetch ${url}: ${response.statusText}`);
+        }
+        //console.log(response.body)
+        const content = await response.text();
+        return content;
+    }
+    
 
     const moveFile = async (branch, oldPath, newPath) => {
         try {
@@ -464,6 +515,7 @@ export const githubService = (token, username) => {
         compareBranches,
         catchUpBranch,
         getFileContent,
+        getRawFileContent,
         moveFile,
     }
 }
