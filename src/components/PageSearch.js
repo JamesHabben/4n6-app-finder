@@ -1,17 +1,18 @@
-import React, { useState, useEffect, useMemo, useRef  } from 'react';
+import React, { useState, useEffect, useMemo, useRef, useContext  } from 'react';
 import { Input, Card, Row, Col, Modal, AutoComplete  } from 'antd';
 import { CloseCircleOutlined } from '@ant-design/icons';
 
-import { useDataFetching } from 'services/useDataFetching';
+//import { useDataFetching } from 'services/useDataFetching';
+import { DataContext } from 'services/DataContext';
 import AppDetails from 'components/AppDetails';
 import WhatsNewTile from 'components/searchCompnents/WhatsNewTile';
-import RecentAppsTile from 'components/searchCompnents/RecentAppsTile';
+import RecentAppsCard from 'components/searchCompnents/RecentAppsCard';
 import AppTile from 'components/searchCompnents/AppTile';
 import 'App.css'
 
 function PageSearch() {
   const [searchTerm, setSearchTerm] = useState('');
-  const { apps, tools } = useDataFetching();
+  const { apps, tools } = useContext(DataContext);
   const [selectedApp, setSelectedApp] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [highlightedIndex, setHighlightedIndex] = useState(0);
@@ -175,7 +176,7 @@ function PageSearch() {
         {!searchTerm && (
           <>
             <WhatsNewTile />
-            <RecentAppsTile apps={apps} tools={tools} onAppClick={handleAppClick} />
+            <RecentAppsCard apps={apps} tools={tools} onAppClick={handleAppClick} />
           </>
         )}
       </div>

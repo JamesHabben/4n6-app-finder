@@ -5,6 +5,7 @@ import PageSearch from 'components/PageSearch';
 import PageStats from 'components/PageStats';
 import PageAdmin from 'components/PageAdmin';
 import VersionInfo from 'components/VersionInfo';
+import { DataProvider } from 'services/DataContext';
 import { AuthProvider } from './AuthContext';
 
 import './App.css';
@@ -40,13 +41,15 @@ function App() {
   return (
     <Router>
       <AuthProvider>
-        <AppContent />
-        <div 
-          className="scrollTop" 
-          onClick={scrollTop} 
-          style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
-            <span>^</span>  {/* You can replace this with an icon */}
-        </div>
+        <DataProvider>
+          <AppContent />
+          <div 
+            className="scrollTop" 
+            onClick={scrollTop} 
+            style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+              <span>^</span>  {/* You can replace this with an icon */}
+          </div>
+        </DataProvider>
       </AuthProvider>
     </Router>
   );

@@ -1,7 +1,8 @@
-import { useDataFetching } from "services/useDataFetching";
+import React, {  useContext  } from 'react';
+import { DataContext } from 'services/DataContext';
 
 function ToolsListContent() {
-    const { tools } = useDataFetching();
+    const { tools } = useContext(DataContext);
   
     return (
       <div>

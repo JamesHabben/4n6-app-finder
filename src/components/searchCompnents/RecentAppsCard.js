@@ -3,7 +3,7 @@ import { Card, Row, Col } from 'antd';
 
 import AppTile from 'components/searchCompnents/AppTile';
 
-function RecentAppsTile({ apps, tools, onAppClick }) {
+function RecentAppsCard({ apps, tools, onAppClick }) {
   const sortedApps = useMemo(() => {
     return [...apps].sort((a, b) => {
       const dateA = new Date(a.dateAdded);
@@ -30,4 +30,4 @@ function RecentAppsTile({ apps, tools, onAppClick }) {
   );
 }
 
-export default RecentAppsTile;
+export default RecentAppsCard;

@@ -4,12 +4,12 @@ import { Button, Modal, Input } from 'antd';
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
 
 
-import { useDataFetching } from "services/useDataFetching";
+import { DataContext } from 'services/DataContext';
 import { AuthContext } from "AuthContext";
 import { appsService } from "services/appsService";
 
 function ToolsArtifactsListContent() {
-    const { apps, tools } = useDataFetching();
+    const { apps, tools } = useContext(DataContext);
     const [selectedTool, setSelectedTool] = useState(null);
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
     const [displayedArtifactList, setDisplayedArtifactList] = useState([]);

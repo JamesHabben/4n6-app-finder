@@ -1,6 +1,11 @@
-import { useEffect, useState } from 'react';
+// services/DataContext.js
+import React, { createContext, useState, useEffect, useCallback } from 'react';
 
-export function useDataFetchingzz() { 
+export const DataContext = createContext();
+
+
+
+export function DataProvider({ children }) {
   const [apps, setApps] = useState([]);
   const [tools, setTools] = useState([]);
   const [isLoadingTools, setIsLoadingTools] = useState(true);
@@ -25,15 +30,19 @@ export function useDataFetchingzz() {
                   app => app.appName === appName ||
                     (app.alternateNames || []).includes(appName)
                 );
-                artifact.isMapped = !!app;
+                artifact.isMapped = app ? 'true' : 'false';
                 if (app) {
                   // Update mappedTools for the app
                   app.mappedTools = app.mappedTools || [];
-                  app.mappedTools.push({
+                  const toolData = {
                     shortName: tool.toolShortName,
                     longName: tool.toolLongName,
                     icon: tool.icon
-                  });
+                  };
+                  if (!app.mappedTools.some(existingTool => existingTool.shortName === toolData.shortName)) {
+                    app.mappedTools.push(toolData);
+                  }
+                  app.mappedTools.sort((a, b) => a.shortName.localeCompare(b.shortName));
 
                   // Update mappedApps for the tool
                   tool.mappedApps = tool.mappedApps || [];
@@ -53,5 +62,29 @@ export function useDataFetchingzz() {
       });
   }, []);
 
-  return { apps, tools, isLoadingTools };
+  const getMappedArtifacts = useCallback((appName) => {
+    if (!tools.length) {
+      console.warn("Tools data is not yet loaded.");
+      return [];
+    }
+    const toolArtifacts = tools.flatMap(tool =>
+      tool.artifactList.filter(toolApp =>
+        appName === toolApp[tool.appNameKey] ||
+        (apps.find(app => app.appName === appName)?.alternateNames || []).includes(toolApp[tool.appNameKey])
+      )
+      .map(toolApp => ({ ...toolApp, 
+            toolShortName: tool.toolShortName, 
+            toolLongName: tool.toolLongName, 
+            toolIcon: tool.icon, 
+            toolWebsite: tool.website 
+        }))
+    );
+    return toolArtifacts;
+  }, [tools, apps]);
+
+  return (
+    <DataContext.Provider value={{ apps, tools, isLoadingTools, getMappedArtifacts }}>
+      {children}
+    </DataContext.Provider>
+  );
 }

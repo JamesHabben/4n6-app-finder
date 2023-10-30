@@ -1,12 +1,8 @@
 import React, { useState, useContext, useEffect  } from 'react';
-import { useDataFetching } from 'services/useDataFetching';
 import { AuthContext  } from 'AuthContext';
+import { DataContext } from 'services/DataContext';
 //import { AuthLogin } from './AuthLogin';
 import AuthLoginButton from 'AuthLoginButton';
-//import { Button, Modal, Divider, Input } from 'antd';
-//import './App.css'
-//import { githubService } from 'services/githubService';
-//import { appsService } from 'services/appsService';
 import AppsListContent from 'components/adminComponents/AppsListContent'
 import ToolsListContent from 'components/adminComponents/ToolsListContent'
 import ToolsArtifactsListContent from 'components/adminComponents/ToolsArtifactsListContent';
@@ -16,7 +12,7 @@ import GitHubFunctionsContent from 'components/adminComponents/GitHubFunctionsCo
   
 
 function PageAdmin() {
-  const { apps, tools } = useDataFetching();
+  //const { apps, tools } = useContext(DataContext);
   const [selectedItem, setSelectedItem] = useState(null);
   const { authState} = useContext(AuthContext);
 
