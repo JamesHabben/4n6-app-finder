@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Weibo (微博)",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Sina Weibo Private Messages"
+        }
+    ]
+}
