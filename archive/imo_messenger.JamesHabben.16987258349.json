@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Imo Messenger",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "imoHD_Chat"
+        }
+    ]
+}
