@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Google Maps",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/3",
+            "value": "Google Maps Tiles"
+        }
+    ]
+}
