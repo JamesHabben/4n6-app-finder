@@ -191,6 +191,23 @@
         ]
     },
     {
+        "appName": "Amazon Alexa",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Amazon Alexa Audio Activity"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "Amazon Kindle",
         "icon": "amazon-kindle.webp",
         "websiteUrl": "",
@@ -307,10 +324,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-15",
-        "dateUpdated": "2023-10-25",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "AIM Messages",
-            "AIM Buddies"
+            "AIM Buddies",
+            "AIM",
+            "AIM Chat Messages"
         ]
     },
     {
@@ -750,6 +769,19 @@
             "com.boatbrowser.tablet",
             "com.boatbrowser.free",
             "com.boatgo.browser"
+        ]
+    },
+    {
+        "appName": "Bolt (formerly Taxify)",
+        "icon": "bolt.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=ee.mtakso.client&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-14",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Taxify"
         ]
     },
     {
@@ -1477,7 +1509,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.katana",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Facebook Lite",
             "Android Facebook Pictures",
@@ -1486,7 +1518,10 @@
             "Facebook Contacts",
             "Facebook Events",
             "Facebook Posts",
-            "Facebook User-Friends"
+            "Facebook User-Friends",
+            "Facebook Email",
+            "Facebook Email Snippets",
+            "Facebook Chat"
         ]
     },
     {
@@ -1568,7 +1603,8 @@
             "Firefox Cookies",
             "Firefox Add-ons",
             "Android Firefox Web History",
-            "Android Firefox Bookmarks"
+            "Android Firefox Bookmarks",
+            "Firefox Cache Records"
         ]
     },
     {
@@ -2070,7 +2106,8 @@
         "alternateNames": [
             "Google Maps Saved Locations",
             "Google Maps Directions",
-            "Android Google Maps"
+            "Android Google Maps",
+            "Google Maps Tiles"
         ]
     },
     {
@@ -2181,8 +2218,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google+ Chat"
+        ]
     },
     {
         "appName": "GPS Camera 55",
@@ -2574,7 +2613,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instagram.android",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Instagram (web)",
             "instagramThreads",
@@ -2584,7 +2623,9 @@
             "Instagram Direct Messages",
             "Instagram Group Members",
             "Instagram Media",
-            "Instagram Profiles"
+            "Instagram Profiles",
+            "Instagram Posts",
+            "Instagram Pictures"
         ]
     },
     {
@@ -2606,9 +2647,19 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-31",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "Iron Browser Autofill"
+            "Iron Browser Autofill",
+            "Iron Browser Web Visits",
+            "Iron Browser Web History",
+            "Iron Browser Top Sites",
+            "Iron Browser Tab History",
+            "Iron Browser Logins",
+            "Iron Browser Keyword Search Terms",
+            "Iron Browser FavIcons",
+            "Iron Browser Downloads",
+            "Iron Browser Cookies",
+            "Iron Browser Bookmarks"
         ]
     },
     {
@@ -2665,6 +2716,23 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Jott",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Jott Groups"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "JusTalk",
@@ -2821,6 +2889,23 @@
         "alternateNames": []
     },
     {
+        "appName": "Kiwi Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Kiwi Browser Autofill"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "KnowledgeC",
         "icon": "",
         "websiteUrl": "",
@@ -2924,7 +3009,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Linkedin",
             "LinkedIn Job Search",
@@ -2933,7 +3018,8 @@
             "LinkedIn Connections",
             "LinkedIn Messages",
             "LinkedIn Profile",
-            "LinkedIn Searches"
+            "LinkedIn Searches",
+            "LinkedIn Emails"
         ]
     },
     {
@@ -2957,6 +3043,23 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Lunascape",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Lunascape Autofill"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "Lyft",
@@ -3206,8 +3309,11 @@
         "googlePlayUrl": "https://play.google.com/store/search?q=bing&c=apps&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-30",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Bing Toolbar - Search History",
+            "Bing Toolbar - Map History"
+        ]
     },
     {
         "appName": "Microsoft Edge",
@@ -3224,7 +3330,9 @@
             "Edge Chromium Web Visits",
             "Edge Chromium Web History",
             "Edge Chromium Tab History",
-            "Edge Chromium FavIcons"
+            "Edge Chromium FavIcons",
+            "Edge Chromium Keyword Search Terms",
+            "Edge Chromium Bookmarks"
         ]
     },
     {
@@ -3275,13 +3383,14 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-30",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Outlook",
             "Outlook Accounts",
             "Outlook Appointments",
             "Outlook Contacts",
-            "Outlook Emails"
+            "Outlook Emails",
+            "Outlook Messages"
         ]
     },
     {
@@ -3431,8 +3540,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "MySpace Inbox Messages",
+            "MySpace Chat - User Info",
+            "MySpace Chat - Messages"
+        ]
     },
     {
         "appName": "Navitel Navigator",
@@ -3905,9 +4018,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "Private Photo Vault Pro"
+            "Private Photo Vault Pro",
+            "Private Photo Vault Thumbnails - Android",
+            "Private Photo Vault Media",
+            "Private Photo Vault Albums"
         ]
     },
     {
@@ -3944,8 +4060,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Puffin Browser History",
+            "Puffin Browser Bookmarks"
+        ]
     },
     {
         "appName": "PureVPN",
@@ -3992,7 +4111,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mobileqq&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "QQ International",
             "QQ Browser",
@@ -4001,7 +4120,8 @@
             "QQ轻聊版",
             "QQ File Transfers",
             "QQ Local Users",
-            "QQ Messages"
+            "QQ Messages",
+            "QQ Chat"
         ]
     },
     {
@@ -4184,7 +4304,32 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "Samsung Browser Cache Records"
+            "Samsung Browser Cache Records",
+            "Samsung Browser Web Visits",
+            "Samsung Browser Web History",
+            "Samsung Browser Top Sites",
+            "Samsung Browser Tabs",
+            "Samsung Browser Tab History",
+            "Samsung Browser Shortcuts",
+            "Samsung Browser Saved Pages",
+            "Samsung Browser Saved Credit Cards",
+            "Samsung Browser Media History",
+            "Samsung Browser Logins",
+            "Samsung Browser Last Tabs",
+            "Samsung Browser Last Session",
+            "Samsung Browser Keyword Search Terms",
+            "Samsung Browser History Index",
+            "Samsung Browser FavIcons",
+            "Samsung Browser Downloads",
+            "Samsung Browser Current Tabs",
+            "Samsung Browser Current Session",
+            "Samsung Browser Cookies",
+            "Samsung Browser Cached Thumbnails",
+            "Samsung Browser Bookmarks",
+            "Samsung Browser Autofill",
+            "Samsung Browser Autofill Profiles",
+            "Samsung Browser Archived Web History",
+            "Samsung Browser Archived Keyword Search Terms"
         ]
     },
     {
@@ -4197,6 +4342,21 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Samsung Messages",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "Samsung Notes",
@@ -4443,7 +4603,13 @@
             "Snapchat Stories - Android",
             "Snapchat Received Videos",
             "Android Snapchat Event Logs",
-            "Android Snapchat Accounts Information"
+            "Android Snapchat Accounts Information",
+            "Android Snapchat Stories",
+            "Android Snapchat Sent Snaps",
+            "Android Snapchat Received Snaps",
+            "Android Snapchat Received Images",
+            "Android Snapchat Photo Transfers",
+            "Android Snapchat Friends"
         ]
     },
     {
@@ -4630,19 +4796,6 @@
         "alternateNames": []
     },
     {
-        "appName": "Bolt (formerly Taxify)",
-        "icon": "bolt.webp",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "https://play.google.com/store/apps/details?id=ee.mtakso.client&hl=en",
-        "notes": "",
-        "dateAdded": "2023-10-14",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Taxify"
-        ]
-    },
-    {
         "appName": "TeamViewer",
         "icon": "",
         "websiteUrl": "",
@@ -4663,7 +4816,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Telegram (desktop)",
             "Telegram for macOS (desktop)",
@@ -4676,7 +4829,11 @@
             "Telegram Chats - Android",
             "Telegram Contacts - Android",
             "Telegram Messages - Android",
-            "Telegram Users - Android"
+            "Telegram Users - Android",
+            "Android Telegram Users",
+            "Android Telegram Messages",
+            "Android Telegram Contacts",
+            "Android Telegram Chats"
         ]
     },
     {
@@ -4845,13 +5002,14 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "TikTok Lite",
             "tikTok",
             "TikTok Contacts",
             "TikTok Media",
-            "TikTok Messages"
+            "TikTok Messages",
+            "TikTok Videos"
         ]
     },
     {
@@ -5261,10 +5419,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "VLC Media Player (desktop)",
-            "VLC Media Player (store)"
+            "VLC Media Player (store)",
+            "VLC Recently Played Files"
         ]
     },
     {
@@ -5377,7 +5536,14 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "Weibo"
+            "Weibo",
+            "Sina Weibo Search History",
+            "Sina Weibo Private Messages",
+            "Sina Weibo Posts",
+            "Sina Weibo Microblogs",
+            "Sina Weibo Carved Searches",
+            "Sina Weibo Private Messages",
+            "Sina Weibo Posts"
         ]
     },
     {
@@ -5388,7 +5554,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.whatsapp",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "WhatsApp (desktop)",
             "WhatsApp (store)",
@@ -5411,7 +5577,8 @@
             "GBWhatsApp Messenger",
             "OBWhatsApp Messenger",
             "WhatsApp for KaiOS",
-            "Whatsapp"
+            "Whatsapp",
+            "WhatsApp Messages - Windows"
         ]
     },
     {
@@ -5624,13 +5791,23 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Yandex.Browser",
             "Yandex.Browser (iPad)",
             "Yandex.Browser Alpha",
             "Yandex Browser (beta)",
-            "Yandex Browser with Protect"
+            "Yandex Browser with Protect",
+            "Yandex Cookies",
+            "Yandex Downloads",
+            "Yandex FavIcons",
+            "Yandex Keyword Search Terms",
+            "Yandex Logins",
+            "Yandex Shortcuts",
+            "Yandex Sync Data",
+            "Yandex Top Sites",
+            "Yandex Web History",
+            "Yandex Web Visits"
         ]
     },
     {
