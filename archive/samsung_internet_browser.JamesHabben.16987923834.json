@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Samsung Internet Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Samsung Browser Downloads"
+        }
+    ]
+}
