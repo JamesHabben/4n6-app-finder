@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Microsoft Edge",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Edge Chromium Web History"
+        }
+    ]
+}
