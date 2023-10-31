@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Telegram",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/12",
+            "value": "Android Telegram Contacts"
+        }
+    ]
+}
