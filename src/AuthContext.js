@@ -6,9 +6,9 @@ export const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
     const [authState, setAuthState] = useState(null);
 
-    useEffect(() => {
-        console.log('auth state (useEffect):', authState);
-    }, [authState]); 
+    // useEffect(() => {
+    //     console.log('auth state (useEffect):', authState);
+    // }, [authState]); 
 
     const initiateOAuth = () => {
         const redirectUri = encodeURIComponent(
@@ -29,7 +29,7 @@ export const AuthProvider = ({ children }) => {
       
     const login = async (token) => {
         // Fetch user data
-        console.log("token: " + token)
+        //console.log("token: " + token)
         const response = await fetch('https://api.github.com/user', {
         headers: { Authorization: `Bearer ${token}` },
         });
@@ -45,7 +45,7 @@ export const AuthProvider = ({ children }) => {
             avatarUrl: userData.avatar_url,
             level: userLevel
         });
-        console.log("auth state (login): " + authState)
+        //console.log("auth state (login): " + authState)
     };
 
   const logout = () => {
