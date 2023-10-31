@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Facebook",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "Facebook Email Snippets"
+        }
+    ]
+}
