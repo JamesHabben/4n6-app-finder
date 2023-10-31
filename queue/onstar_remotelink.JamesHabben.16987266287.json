@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "OnStar RemoteLink",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/6",
+            "value": "OnStar RemoteLink Accounts"
+        }
+    ]
+}
