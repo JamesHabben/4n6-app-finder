@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "QQ",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "QQ Chat"
+        }
+    ]
+}
