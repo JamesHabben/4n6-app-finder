@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "VLC Media Player",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "VLC Recently Played Files"
+        }
+    ]
+}
