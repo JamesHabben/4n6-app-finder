@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "VK Messenger",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "VK Users"
+        }
+    ]
+}
