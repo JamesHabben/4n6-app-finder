@@ -1178,14 +1178,15 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.discord",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "discordAcct",
             "discordJson",
             "Discord - Chat, Talk & Hangout",
             "Discord: Talk, Chat & Hang Out",
             "Discord Messages",
-            "Discord Logged-in Account"
+            "Discord Logged-in Account",
+            "discordManifest"
         ]
     },
     {
@@ -1275,8 +1276,13 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "DuckDuckGo Whitelisted Websites",
+            "DuckDuckGo Current Tabs",
+            "DuckDuckGo Bookmarks",
+            "DuckDuckGo Cookies"
+        ]
     },
     {
         "appName": "easyJet",
@@ -1547,13 +1553,20 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-27",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Firefox Beta for Testers",
             "Firefox Fast & Private Browser",
             "Firefox Nightly for Developers",
             "Firefox: Private, Safe Browser",
-            "Firefox Focus browser"
+            "Firefox Focus browser",
+            "Firefox Web Visits",
+            "Firefox Web History",
+            "Firefox FormHistory",
+            "Firefox Cookies",
+            "Firefox Add-ons",
+            "Android Firefox Web History",
+            "Android Firefox Bookmarks"
         ]
     },
     {
@@ -1855,8 +1868,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google Calendar Events",
+            "Google Calendar Calendars"
+        ]
     },
     {
         "appName": "Google Chat",
@@ -1866,8 +1882,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "googleChat"
+        ]
     },
     {
         "appName": "Google Chrome",
@@ -1877,7 +1895,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-27",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Chrome",
             "chromeOfflinePages",
@@ -1907,7 +1925,8 @@
             "Chrome Tab History",
             "Chrome Top Sites",
             "Chrome Web History",
-            "Chrome Web Visits"
+            "Chrome Web Visits",
+            "chromeBookmarks"
         ]
     },
     {
@@ -1953,11 +1972,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Google Duo Groups",
             "Google Duo Group Calls",
-            "Google Duo Activity"
+            "Google Duo Activity",
+            "googleDuo"
         ]
     },
     {
@@ -2017,8 +2037,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google Keep Notes"
+        ]
     },
     {
         "appName": "Google Mail",
@@ -2042,8 +2064,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google Maps Saved Locations",
+            "Google Maps Directions",
+            "Android Google Maps"
+        ]
     },
     {
         "appName": "Google Meet",
@@ -2175,9 +2201,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grindrapp.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "Grindr - Gay chat"
+            "Grindr - Gay chat",
+            "Grindr Messages",
+            "Grindr Buddies"
         ]
     },
     {
@@ -2204,8 +2232,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "GROWLr Notes",
+            "GROWLr Chat Messages"
+        ]
     },
     {
         "appName": "Here Maps",
@@ -2473,7 +2504,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.imo.android.imous&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Imo",
             "imo",
@@ -2482,7 +2513,8 @@
             "imo beta -video calls and chat",
             "imo-International Calls & Chat",
             "imo Messages",
-            "imo Contacts"
+            "imo Contacts",
+            "imoHD_Chat"
         ]
     },
     {
@@ -2552,6 +2584,19 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Iron Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Iron Browser Autofill"
+        ]
     },
     {
         "appName": "iScanner",
@@ -2736,7 +2781,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=kik.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Android Kik Messenger Contacts",
             "Android Kik Messenger Attachments",
@@ -2747,7 +2792,8 @@
             "kikUsersgroups",
             "kikGroupadmins",
             "Kik — Messaging & Chat App",
-            "Kik Messaging & Chat App"
+            "Kik Messaging & Chat App",
+            "kikLocaladmin"
         ]
     },
     {
@@ -3035,10 +3081,12 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.wildec.meet24&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Meet24 - Flirt, Chat, Singles",
-            "Meet24 - Love, Chat, Singles"
+            "Meet24 - Love, Chat, Singles",
+            "Android Meet24 Cookies",
+            "Android Meet24 Cache Records"
         ]
     },
     {
@@ -3128,8 +3176,14 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Mi Browser History",
+            "Mi Browser Downloads",
+            "Mi Browser Cookies",
+            "Mi Browser Bookmarks",
+            "Mi Browser Autofill"
+        ]
     },
     {
         "appName": "Microsoft Bing",
@@ -3150,10 +3204,14 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Microsoft Edge/IE",
-            "Microsoft Edge: Browse with AI"
+            "Microsoft Edge: Browse with AI",
+            "Edge Chromium Web Visits",
+            "Edge Chromium Web History",
+            "Edge Chromium Tab History",
+            "Edge Chromium FavIcons"
         ]
     },
     {
@@ -3221,8 +3279,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-30",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Remote Desktop Protocol",
+            "Remote Desktop Protocol Bitmap Cache"
+        ]
     },
     {
         "appName": "Microsoft Teams",
@@ -3537,14 +3598,16 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-30",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "OnStar RemoteLink Recent Location Searches",
             "OnStar RemoteLink Remote Commands",
             "OnStar RemoteLink Saved Places Of Interest",
             "OnStar RemoteLink Saved Wireless Carrier",
             "OnStar RemoteLink Vehicle Diagnostics",
-            "OnStar RemoteLink Vehicle Info"
+            "OnStar RemoteLink Vehicle Info",
+            "OnStar RemoteLink Hotspot Info",
+            "OnStar RemoteLink Accounts"
         ]
     },
     {
@@ -3599,7 +3662,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.browser&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Opera Mini",
             "Opera mini",
@@ -3607,7 +3670,16 @@
             "Opera browser beta with AI",
             "Opera browser with AI",
             "Opera Mini browser beta",
-            "Opera Mini: Fast Web Browser"
+            "Opera Mini: Fast Web Browser",
+            "Opera Web Visits",
+            "Opera Web History",
+            "Opera Top Sites",
+            "Opera Keyword Search Terms",
+            "Opera FavIcons",
+            "Opera Downloads",
+            "Opera Cookies",
+            "Opera Bookmarks",
+            "Opera Autofill"
         ]
     },
     {
@@ -3618,8 +3690,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.parlor&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Parler Users - Android",
+            "Parler Activity - Android"
+        ]
     },
     {
         "appName": "Paypal",
@@ -3841,9 +3916,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "protonMail"
+            "protonMail",
+            "ProtonMail Emails",
+            "ProtonMail Contacts"
         ]
     },
     {
@@ -4021,7 +4098,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Safari Browser",
             "Safari (iOS)",
@@ -4030,7 +4107,8 @@
             "safariFavicons",
             "safariRecentWebSearches",
             "safariTabs",
-            "safariWebsearch"
+            "safariWebsearch",
+            "biomeSafari"
         ]
     },
     {
@@ -4063,8 +4141,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Samsung Email Logs"
+        ]
     },
     {
         "appName": "Samsung Health",
@@ -4089,8 +4169,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Samsung Browser Cache Records"
+        ]
     },
     {
         "appName": "Samsung Memo",
@@ -4284,7 +4366,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Slack&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Slack (desktop)",
             "Slack (store)",
@@ -4295,7 +4377,8 @@
             "Slack Channels",
             "Slack Direct Messages",
             "Slack Files",
-            "Slack Users"
+            "Slack Users",
+            "Slack Workspaces"
         ]
     },
     {
@@ -4328,7 +4411,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.snapchat.android",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "SnapChat",
             "Snapchat Warrant Return",
@@ -4344,7 +4427,10 @@
             "Snapchat Received Images - Android",
             "Snapchat Received Snaps - Android",
             "Snapchat Sent Snaps - Android",
-            "Snapchat Stories - Android"
+            "Snapchat Stories - Android",
+            "Snapchat Received Videos",
+            "Android Snapchat Event Logs",
+            "Android Snapchat Accounts Information"
         ]
     },
     {
@@ -4549,8 +4635,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "TeamViewer Activity"
+        ]
     },
     {
         "appName": "Telegram",
@@ -5137,10 +5225,12 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.vk.im&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "VK Calls",
-            "com.dchistyakov.vkmessenger.ui"
+            "com.dchistyakov.vkmessenger.ui",
+            "VK Users",
+            "VK Messages"
         ]
     },
     {
@@ -5242,6 +5332,19 @@
         "alternateNames": []
     },
     {
+        "appName": "Web.de",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "WeChat",
         "icon": "wechat.webp",
         "websiteUrl": "",
@@ -5308,8 +5411,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=sh.whisper",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Whisper Messages",
+            "Android Whisper Posts"
+        ]
     },
     {
         "appName": "Wickr Me",
@@ -5491,8 +5597,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Yandex Bookmarks",
+            "Yandex Autofill"
+        ]
     },
     {
         "appName": "Yandex Browser",
@@ -5627,6 +5736,19 @@
             "Youtube",
             "YouTube: Watch, Listen, Stream"
         ]
+    },
+    {
+        "appName": "Yubo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "Zalo",
