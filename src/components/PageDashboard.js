@@ -2,6 +2,8 @@ import React, { useContext } from 'react';
 import { DataContext } from 'services/DataContext';
 import ListCard from 'components/dashboardComponents/ListCard';
 import ListBarCard from 'components/dashboardComponents/ListBarCard';
+import ToolProgressCard from 'components/dashboardComponents/ToolProgressCard'
+import ProgressBarCard from 'components/dashboardComponents/ToolProgressCard';
 
 
 function getTopAppsByMappedTools(apps) {
@@ -32,11 +34,6 @@ function getToolsByAppCount(tools) {
 function PageDashboard() {
   const { apps, tools } = useContext(DataContext);
   
-  //const top10ByMappedTools = getTop10ByMappedTools(apps);
-  //const top10ByArtifactCount = getTop10ByArtifactCount(apps);
-  //const latest10ByDateAdded = getLatest10ByDateAdded(apps);
-  //const latest10ByDateUpdated = getLatest10ByDateUpdated(apps);
-
   return (
     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: '1rem', textAlign: 'left' }}>
       <h1>App Analysis</h1>
@@ -67,6 +64,10 @@ function PageDashboard() {
         />
 
       </div>
+      <h1>Tool & Artifact Mapping</h1>
+      <ProgressBarCard 
+        tools={tools}
+      />
     </div>
   );
 }

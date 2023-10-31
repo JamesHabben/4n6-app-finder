@@ -19,24 +19,28 @@ function AppsListContent() {
               {app.appName}
             </h2>
             <table className="property-table">
-              <tbody>
-                {Object.keys(app).map((key) => {
-                  if (key === 'icon' || key === 'id') {
-                    return null; // Skip rendering
-                  }
-                  return (
-                    <tr key={key} className="property-row">
-                      <td className="property-name">
-                        <strong>{key}:</strong>
-                      </td>
-                      <td className="property-value">
-                        {app[key]}
-                      </td>
-                    </tr>
-                  );
-                })}
-              </tbody>
+                <tbody>
+                    {Object.keys(app).map((key) => {
+                        if (key === 'icon' || key === 'id') {
+                            return null; // Skip rendering
+                        }
+                        return (
+                            <tr key={key} className="property-row">
+                                <td className="property-name">
+                                    <strong>{key}:</strong>
+                                </td>
+                                <td className="property-value">
+                                    {key === 'mappedTools' 
+                                        ? app[key].map(tool => tool.shortName).join(', ')
+                                        : app[key]
+                                    }
+                                </td>
+                            </tr>
+                        );
+                    })}
+                </tbody>
             </table>
+
           </div>
         ))}
       </div>

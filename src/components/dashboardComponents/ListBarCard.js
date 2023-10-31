@@ -14,7 +14,7 @@ function ListBarCard({ items, nameKey, dataKey, title, displayFunction }) {
     <Card title={title} style={{ margin: '1rem 0' }}>
       <BarChart
         width={400}
-        height={400}
+        height={450}
         layout="vertical"
         data={data}
         margin={{
@@ -25,7 +25,7 @@ function ListBarCard({ items, nameKey, dataKey, title, displayFunction }) {
         <XAxis type="number" domain={[0, 'dataMax + 1']} />
         <YAxis dataKey="name" type="category" width={200} />
         <Tooltip />
-        <Bar dataKey={dataKey} fill="#8884d8" />
+        <Bar dataKey={dataKey} fill="#007BFF" />
       </BarChart>
     </Card>
   );

@@ -49,7 +49,9 @@ export function DataProvider({ children }) {
 
                   // Update mappedApps for the tool
                   tool.mappedApps = tool.mappedApps || [];
-                  tool.mappedApps.push(app);
+                  if (!tool.mappedApps.some(existingApp => existingApp.appName === app.appName)) {
+                    tool.mappedApps.push(app);
+                  }
                 }
               });
               return { ...tool, artifactList };

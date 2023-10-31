@@ -20,23 +20,29 @@ function ToolsListContent() {
             </h2>
             <table className="property-table">
               <tbody>
-                {Object.keys(tool).map((key) => {
-                  if (key === 'artifactList' || key === 'icon') {
-                    return null; // Skip rendering
-                  }
-                  return (
-                    <tr key={key} className="property-row">
-                      <td className="property-name">
-                        <strong>{key}:</strong>
-                      </td>
-                      <td className="property-value">
-                        {/^https?:\/\//.test(tool[key]) ? <a href={tool[key]} target="_blank" rel="noopener noreferrer">{tool[key]}</a> : tool[key]}
-                      </td>
-                    </tr>
-                  );
-                })}
+                  {Object.keys(tool).map((key) => {
+                      if (key === 'icon') {
+                          return null; // Skip rendering the icon
+                      }
+                      return (
+                          <tr key={key} className="property-row">
+                              <td className="property-name">
+                                  <strong>{key}:</strong>
+                              </td>
+                              <td className="property-value">
+                                  {key === 'artifactList' || key === 'mappedApps'
+                                      ? tool[key].length // Display the count for 'artifactList' or 'mappedApps'
+                                      : /^https?:\/\//.test(tool[key])
+                                          ? <a href={tool[key]} target="_blank" rel="noopener noreferrer">{tool[key]}</a>
+                                          : tool[key]
+                                  }
+                              </td>
+                          </tr>
+                      );
+                  })}
               </tbody>
-            </table>
+          </table>
+
           </div>
         ))}
       </div>
