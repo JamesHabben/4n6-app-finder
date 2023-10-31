@@ -35,14 +35,14 @@ function PageAdmin() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-        <h1 className='pageTitle'>Admin Page</h1>
+        <h1 className='pageTitle'>Admin</h1>
         <div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '30px', marginBottom: '10px' }}>
             <AuthLoginButton/>
         </div>
         <div style={{ display: 'flex', border: '1px solid #ccc', textAlign: 'left', flex: 1 }}>
             {/* Left column for items */}
             <div style={{ flex: '0 0 15%', padding: '1rem', borderRight: '1px solid #ccc' }}>
-                <h2>Items</h2>
+                <h2>Pages</h2>
                 <ul>
                     {filteredItems.map((item) => (
                         <li

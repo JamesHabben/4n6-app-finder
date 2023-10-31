@@ -18,6 +18,8 @@ export function DataProvider({ children }) {
       console.log('fetched files')
     ])
       .then(([appsData, toolsData]) => {
+        appsData.forEach(app => app.artifactCount = 0);
+        
         // Fetch artifact data for each tool
         const artifactPromises = toolsData.map(tool =>
           fetch(`/${tool.artifactListFile}`)
@@ -32,6 +34,7 @@ export function DataProvider({ children }) {
                 );
                 artifact.isMapped = app ? 'true' : 'false';
                 if (app) {
+                  app.artifactCount += 1;
                   // Update mappedTools for the app
                   app.mappedTools = app.mappedTools || [];
                   const toolData = {
@@ -52,6 +55,7 @@ export function DataProvider({ children }) {
               return { ...tool, artifactList };
             })
         );
+        console.log(apps)
 
         // Set state once all data has been fetched and processed
         Promise.all(artifactPromises).then(artifactToolsData => {
