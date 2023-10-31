@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Snapchat",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/18",
+            "value": "Android Snapchat Received Snaps"
+        }
+    ]
+}
