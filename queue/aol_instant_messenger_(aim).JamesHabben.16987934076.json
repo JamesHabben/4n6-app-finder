@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "AOL Instant Messenger (AIM)",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "AIM Chat Messages"
+        }
+    ]
+}
