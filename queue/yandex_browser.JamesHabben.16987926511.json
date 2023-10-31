@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Yandex Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/5",
+            "value": "Yandex Shortcuts"
+        }
+    ]
+}
