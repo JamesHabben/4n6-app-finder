@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Outlet, useLocation } from 'react-router-dom';
 import PageSearch from './components/PageSearch';
-import PageStats from './components/PageStats';
+import PageDashboard from './components/PageDashboard';
 import PageAdmin from './components/PageAdmin';
 import AuthCallbackHandler from './AuthCallbackHandler';
 
@@ -14,7 +14,7 @@ const AppRoutes = () => {
   return(
     <Routes>
       <Route path="/" element={code ? <AuthCallbackHandler /> : <PageSearch />} />
-      <Route path="/statistics" element={<PageStats />} />
+      <Route path="/dashboard" element={<PageDashboard />} />
       <Route path="/admin" element={<PageAdmin />} />
       {/*<Route path="/auth/callback" element={<AuthCallbackHandler />} />*/}
     </Routes>

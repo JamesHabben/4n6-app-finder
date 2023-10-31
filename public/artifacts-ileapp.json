@@ -1,15 +1,23 @@
 [
     {
+        "filename": "ATXDatastore",
+        "name": "ATXDatastore",
+        "Platform": "iOS"
+    },
+    {
         "filename": "AWESearch",
-        "name": "AWESearch"
+        "name": "AWESearch",
+        "Platform": "iOS"
     },
     {
         "filename": "AllTrails",
-        "name": "AllTrails"
+        "name": "AllTrails",
+        "Platform": "iOS"
     },
     {
         "filename": "AshHistor",
-        "name": "AshHistor"
+        "name": "AshHistor",
+        "Platform": "iOS"
     },
     {
         "filename": "ControlCenter",
@@ -24,35 +32,59 @@
         "paths": [
             "*/mobile/Library/ControlCenter/ModuleConfiguration.plist"
         ],
-        "function": "get_ControlCenter"
+        "function": "get_ControlCenter",
+        "Platform": "iOS"
+    },
+    {
+        "filename": "DataUsage",
+        "name": "Data Usage",
+        "description": "Parses application network data usage",
+        "author": "@KevinPagano3",
+        "version": "0.0.1",
+        "date": "2023-10-10",
+        "requirements": "none",
+        "category": "Data Usage",
+        "notes": "",
+        "paths": [
+            "*/wireless/Library/Databases/DataUsage.sqlite*"
+        ],
+        "function": "get_DataUsage",
+        "Platform": "iOS"
     },
     {
         "filename": "FacebookMessenger",
-        "name": "FacebookMessenger"
+        "name": "FacebookMessenger",
+        "Platform": "iOS"
     },
     {
         "filename": "FitnessWorkoutsLocationData",
-        "name": "FitnessWorkoutsLocationData"
+        "name": "FitnessWorkoutsLocationData",
+        "Platform": "iOS"
     },
     {
         "filename": "Gmail",
-        "name": "Gmail"
+        "name": "Gmail",
+        "Platform": "iOS"
     },
     {
         "filename": "Health",
-        "name": "Health"
+        "name": "Health",
+        "Platform": "iOS"
     },
     {
         "filename": "NotificationParams.txt",
-        "name": "NotificationParams.txt"
+        "name": "NotificationParams.txt",
+        "Platform": "iOS"
     },
     {
         "filename": "SMSmissingROWIDs",
-        "name": "SMSmissingROWIDs"
+        "name": "SMSmissingROWIDs",
+        "Platform": "iOS"
     },
     {
         "filename": "accs",
-        "name": "accs"
+        "name": "accs",
+        "Platform": "iOS"
     },
     {
         "filename": "adId",
@@ -61,7 +93,8 @@
             "*/containers/Shared/SystemGroup/*/Library/Caches/com.apple.lsdidentifiers.plist"
         ],
         "function": "get_adId",
-        "name": "adId"
+        "name": "adId",
+        "Platform": "iOS"
     },
     {
         "filename": "addressBook",
@@ -76,227 +109,283 @@
         "paths": [
             "**/AddressBook.sqlitedb*"
         ],
-        "function": "get_addressBook"
+        "function": "get_addressBook",
+        "Platform": "iOS"
     },
     {
         "filename": "airdropId",
-        "name": "airdropId"
+        "name": "airdropId",
+        "Platform": "iOS"
     },
     {
         "filename": "airtags",
-        "name": "airtags"
+        "name": "airtags",
+        "Platform": "iOS"
     },
     {
         "filename": "alarms",
-        "name": "alarms"
+        "name": "alarms",
+        "Platform": "iOS"
     },
     {
         "filename": "appConduit",
-        "name": "appConduit"
+        "name": "appConduit",
+        "Platform": "iOS"
     },
     {
         "filename": "appGrouplisting",
-        "name": "appGrouplisting"
+        "name": "appGrouplisting",
+        "Platform": "iOS"
     },
     {
         "filename": "appItunesmeta",
-        "name": "appItunesmeta"
+        "name": "appItunesmeta",
+        "Platform": "iOS"
     },
     {
         "filename": "appSnapshots",
-        "name": "appSnapshots"
+        "name": "appSnapshots",
+        "Platform": "iOS"
     },
     {
         "filename": "appleMapsApplication",
-        "name": "appleMapsApplication"
+        "name": "appleMapsApplication",
+        "Platform": "iOS"
     },
     {
         "filename": "appleMapsGrou",
-        "name": "appleMapsGrou"
+        "name": "appleMapsGrou",
+        "Platform": "iOS"
     },
     {
         "filename": "appleMapsSearchHistor",
-        "name": "appleMapsSearchHistor"
+        "name": "appleMapsSearchHistor",
+        "Platform": "iOS"
     },
     {
         "filename": "applePodcasts",
-        "name": "applePodcasts"
+        "name": "applePodcasts",
+        "Platform": "iOS"
     },
     {
         "filename": "appleWalletCards",
-        "name": "appleWalletCards"
+        "name": "appleWalletCards",
+        "Platform": "iOS"
     },
     {
         "filename": "appleWalletPasses",
-        "name": "appleWalletPasses"
+        "name": "appleWalletPasses",
+        "Platform": "iOS"
     },
     {
         "filename": "appleWalletTransactions",
-        "name": "appleWalletTransactions"
+        "name": "appleWalletTransactions",
+        "Platform": "iOS"
     },
     {
         "filename": "appleWifiPlist",
-        "name": "appleWifiPlist"
+        "name": "appleWifiPlist",
+        "Platform": "iOS"
     },
     {
         "filename": "applelocationd",
-        "name": "applelocationd"
+        "name": "applelocationd",
+        "Platform": "iOS"
     },
     {
         "filename": "applicationstate",
-        "name": "applicationstate"
+        "name": "applicationstate",
+        "Platform": "iOS"
     },
     {
         "filename": "artGlobals",
-        "name": "artGlobals"
+        "name": "artGlobals",
+        "Platform": "iOS"
     },
     {
         "filename": "backupSettings",
-        "name": "backupSettings"
+        "name": "backupSettings",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeAppinstall",
-        "name": "biomeAppinstall"
+        "name": "biomeAppinstall",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeBacklight",
-        "name": "biomeBacklight"
+        "name": "biomeBacklight",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeBattperc",
-        "name": "biomeBattperc"
+        "name": "biomeBattperc",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeBluetooth",
-        "name": "biomeBluetooth"
+        "name": "biomeBluetooth",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeCarplayisconnected",
-        "name": "biomeCarplayisconnected"
+        "name": "biomeCarplayisconnected",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeDevplugin",
-        "name": "biomeDevplugin"
+        "name": "biomeDevplugin",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeHardware",
-        "name": "biomeHardware"
+        "name": "biomeHardware",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeInfocus",
-        "name": "biomeInfocus"
+        "name": "biomeInfocus",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeIntents",
-        "name": "biomeIntents"
+        "name": "biomeIntents",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeLocationactivit",
-        "name": "biomeLocationactivit"
+        "name": "biomeLocationactivit",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeNotes",
-        "name": "biomeNotes"
+        "name": "biomeNotes",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeNotificationsPub",
-        "name": "biomeNotificationsPub"
+        "name": "biomeNotificationsPub",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeNowplaying",
-        "name": "biomeNowplaying"
+        "name": "biomeNowplaying",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeSafari",
-        "name": "biomeSafari"
+        "name": "biomeSafari",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeSync",
-        "name": "biomeSync"
+        "name": "biomeSync",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeTextinputses",
-        "name": "biomeTextinputses"
+        "name": "biomeTextinputses",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeUseractmeta",
-        "name": "biomeUseractmeta"
+        "name": "biomeUseractmeta",
+        "Platform": "iOS"
     },
     {
         "filename": "biomeWifi",
-        "name": "biomeWifi"
+        "name": "biomeWifi",
+        "Platform": "iOS"
     },
     {
         "filename": "bluetooth",
-        "name": "bluetooth"
+        "name": "bluetooth",
+        "Platform": "iOS"
     },
     {
         "filename": "bumble",
-        "name": "bumble"
+        "name": "bumble",
+        "Platform": "iOS"
     },
     {
         "filename": "cacheRoutesGma",
-        "name": "cacheRoutesGma"
+        "name": "cacheRoutesGma",
+        "Platform": "iOS"
     },
     {
         "filename": "calendarAll",
-        "name": "calendarAll"
+        "name": "calendarAll",
+        "Platform": "iOS"
     },
     {
         "filename": "callHistor",
-        "name": "callHistor"
+        "name": "callHistor",
+        "Platform": "iOS"
     },
     {
         "filename": "carCD",
-        "name": "carCD"
+        "name": "carCD",
+        "Platform": "iOS"
     },
     {
         "filename": "cashA",
-        "name": "cashA"
+        "name": "cashA",
+        "Platform": "iOS"
     },
     {
         "filename": "celWireless",
-        "name": "celWireless"
+        "name": "celWireless",
+        "Platform": "iOS"
     },
     {
         "filename": "chrome",
-        "name": "chrome"
+        "name": "chrome",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeAutofill",
-        "name": "chromeAutofill"
+        "name": "chromeAutofill",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeBookmarks",
-        "name": "chromeBookmarks"
+        "name": "chromeBookmarks",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeCookies",
-        "name": "chromeCookies"
+        "name": "chromeCookies",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeLoginData",
-        "name": "chromeLoginData"
+        "name": "chromeLoginData",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeMediaHistor",
-        "name": "chromeMediaHistor"
+        "name": "chromeMediaHistor",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeNetworkActionPredictor",
-        "name": "chromeNetworkActionPredictor"
+        "name": "chromeNetworkActionPredictor",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeOfflinePages",
-        "name": "chromeOfflinePages"
+        "name": "chromeOfflinePages",
+        "Platform": "iOS"
     },
     {
         "filename": "chromeTopSites",
-        "name": "chromeTopSites"
+        "name": "chromeTopSites",
+        "Platform": "iOS"
     },
     {
         "filename": "cloudkitParticipants",
-        "name": "cloudkitParticipants"
+        "name": "cloudkitParticipants",
+        "Platform": "iOS"
     },
     {
         "filename": "cloudkitSharing",
@@ -311,363 +400,480 @@
         "paths": [
             "*NoteStore.sqlite*"
         ],
-        "function": "get_cloudkitSharing"
+        "function": "get_cloudkitSharing",
+        "Platform": "iOS"
     },
     {
         "filename": "conDev",
-        "name": "conDev"
+        "name": "conDev",
+        "Platform": "iOS"
     },
     {
         "filename": "confaccts",
-        "name": "confaccts"
+        "name": "confaccts",
+        "Platform": "iOS"
     },
     {
         "filename": "coreAccessoriesAcc",
-        "name": "coreAccessoriesAcc"
+        "name": "coreAccessoriesAcc",
+        "Platform": "iOS"
     },
     {
         "filename": "coreAccessoriesUserEvent",
-        "name": "coreAccessoriesUserEvent"
+        "name": "coreAccessoriesUserEvent",
+        "Platform": "iOS"
     },
     {
         "filename": "deviceActivator",
-        "name": "deviceActivator"
+        "name": "deviceActivator",
+        "Platform": "iOS"
     },
     {
         "filename": "deviceDatam",
-        "name": "deviceDatam"
+        "name": "deviceDatam",
+        "Platform": "iOS"
     },
     {
         "filename": "deviceName",
-        "name": "deviceName"
+        "name": "deviceName",
+        "Platform": "iOS"
     },
     {
         "filename": "dhcph",
-        "name": "dhcph"
+        "name": "dhcph",
+        "Platform": "iOS"
     },
     {
         "filename": "dhcpl",
-        "name": "dhcpl"
+        "name": "dhcpl",
+        "Platform": "iOS"
     },
     {
         "filename": "discordAcct",
-        "name": "discordAcct"
+        "name": "discordAcct",
+        "Platform": "iOS"
     },
     {
         "filename": "discordJson",
-        "name": "discordJson"
+        "name": "discordJson",
+        "Platform": "iOS"
     },
     {
         "filename": "discordManifest",
-        "name": "discordManifest"
+        "name": "discordManifest",
+        "Platform": "iOS"
     },
     {
         "filename": "dmss",
-        "name": "dmss"
+        "name": "dmss",
+        "Platform": "iOS"
     },
     {
         "filename": "draftmessage",
-        "name": "draftmessage"
+        "name": "draftmessage",
+        "Platform": "iOS"
     },
     {
         "filename": "duetLocations",
-        "name": "duetLocations"
+        "name": "duetLocations",
+        "Platform": "iOS"
     },
     {
         "filename": "filesAppsclient",
-        "name": "filesAppsclient"
+        "name": "filesAppsclient",
+        "Platform": "iOS"
     },
     {
         "filename": "filesAppsdb",
-        "name": "filesAppsdb"
+        "name": "filesAppsdb",
+        "Platform": "iOS"
     },
     {
         "filename": "filesAppsm",
-        "name": "filesAppsm"
+        "name": "filesAppsm",
+        "Platform": "iOS"
     },
     {
         "filename": "findM",
-        "name": "findM"
+        "name": "findM",
+        "Platform": "iOS"
     },
     {
         "filename": "fsCachedData",
-        "name": "fsCachedData"
+        "name": "fsCachedData",
+        "Platform": "iOS"
     },
     {
         "filename": "geodApplications",
-        "name": "geodApplications"
+        "name": "geodApplications",
+        "Platform": "iOS"
     },
     {
         "filename": "geodMapTiles",
-        "name": "geodMapTiles"
+        "name": "geodMapTiles",
+        "Platform": "iOS"
     },
     {
         "filename": "geodPDPlaceCache",
-        "name": "geodPDPlaceCache"
+        "name": "geodPDPlaceCache",
+        "Platform": "iOS"
     },
     {
         "filename": "googleChat",
-        "name": "googleChat"
+        "name": "googleChat",
+        "Platform": "iOS"
     },
     {
         "filename": "googleDuo",
-        "name": "googleDuo"
+        "name": "googleDuo",
+        "Platform": "iOS"
     },
     {
         "filename": "hikvision",
-        "name": "hikvision"
+        "name": "hikvision",
+        "Platform": "iOS"
     },
     {
         "filename": "iCloudWifi",
-        "name": "iCloudWifi"
+        "name": "iCloudWifi",
+        "Platform": "iOS"
+    },
+    {
+        "filename": "iTunesBackupInfo",
+        "name": "iTunes Backup Information",
+        "description": "Extract information from the Info.plist file of an iTunes backup",
+        "author": "@AlexisBrignoni - @johannplw",
+        "version": "0.1",
+        "date": "2023-10-11",
+        "requirements": "none",
+        "category": "Device Info",
+        "notes": "",
+        "paths": [
+            "*Info.plist"
+        ],
+        "function": "get_iTunesBackupInfo",
+        "Platform": "iOS"
     },
     {
         "filename": "icloudMeta",
-        "name": "icloudMeta"
+        "name": "icloudMeta",
+        "Platform": "iOS"
     },
     {
         "filename": "icloudPhotoMeta",
-        "name": "icloudPhotoMeta"
+        "name": "icloudPhotoMeta",
+        "Platform": "iOS"
     },
     {
         "filename": "icloudSharedalbums",
-        "name": "icloudSharedalbums"
+        "name": "icloudSharedalbums",
+        "Platform": "iOS"
     },
     {
         "filename": "iconsScreen",
-        "name": "iconsScreen"
+        "name": "iconsScreen",
+        "Platform": "iOS"
     },
     {
         "filename": "imeiImsi",
-        "name": "imeiImsi"
+        "name": "imeiImsi",
+        "Platform": "iOS"
     },
     {
         "filename": "imoHD_Chat",
-        "name": "imoHD_Chat"
+        "name": "imoHD_Chat",
+        "Platform": "iOS"
     },
     {
         "filename": "instagramThreads",
-        "name": "instagramThreads"
+        "name": "instagramThreads",
+        "Platform": "iOS"
     },
     {
         "filename": "interactionCcontacts",
-        "name": "interactionCcontacts"
+        "name": "interactionCcontacts",
+        "Platform": "iOS"
     },
     {
         "filename": "keyboardAppUsage",
-        "name": "keyboardAppUsage"
+        "name": "keyboardAppUsage",
+        "Platform": "iOS"
     },
     {
         "filename": "keyboardLexicon",
-        "name": "keyboardLexicon"
+        "name": "keyboardLexicon",
+        "Platform": "iOS"
     },
     {
         "filename": "kijijiConversations",
-        "name": "kijijiConversations"
+        "name": "kijijiConversations",
+        "Platform": "iOS"
     },
     {
         "filename": "kikBplistmeta",
-        "name": "kikBplistmeta"
+        "name": "kikBplistmeta",
+        "Platform": "iOS"
     },
     {
         "filename": "kikGroupadmins",
-        "name": "kikGroupadmins"
+        "name": "kikGroupadmins",
+        "Platform": "iOS"
     },
     {
         "filename": "kikLocaladmin",
-        "name": "kikLocaladmin"
+        "name": "kikLocaladmin",
+        "Platform": "iOS"
     },
     {
         "filename": "kikMessages",
-        "name": "kikMessages"
+        "name": "kikMessages",
+        "Platform": "iOS"
     },
     {
         "filename": "kikPendingUploads",
-        "name": "kikPendingUploads"
+        "name": "kikPendingUploads",
+        "Platform": "iOS"
     },
     {
         "filename": "kikUsersgroups",
-        "name": "kikUsersgroups"
+        "name": "kikUsersgroups",
+        "Platform": "iOS"
     },
     {
         "filename": "lastBuild",
-        "name": "lastBuild"
+        "name": "iOS Information",
+        "description": "Extract iOS information from the LastBuildInfo.plist file",
+        "author": "@AlexisBrignoni - @ydkhatri",
+        "version": "0.2",
+        "date": "2020-09-22",
+        "requirements": "none",
+        "category": "IOS Build",
+        "notes": "",
+        "paths": [
+            "*LastBuildInfo.plist"
+        ],
+        "function": "get_lastBuild",
+        "Platform": "iOS"
     },
     {
         "filename": "locServicesconfig",
-        "name": "locServicesconfig"
+        "name": "locServicesconfig",
+        "Platform": "iOS"
     },
     {
         "filename": "mailprotect",
-        "name": "mailprotect"
+        "name": "mailprotect",
+        "Platform": "iOS"
     },
     {
         "filename": "mapsSync",
-        "name": "mapsSync"
+        "name": "mapsSync",
+        "Platform": "iOS"
     },
     {
         "filename": "mediaLibrar",
-        "name": "mediaLibrar"
+        "name": "mediaLibrar",
+        "Platform": "iOS"
     },
     {
         "filename": "medicalID",
-        "name": "medicalID"
+        "name": "medicalID",
+        "Platform": "iOS"
     },
     {
         "filename": "messageRetention",
-        "name": "messageRetention"
+        "name": "messageRetention",
+        "Platform": "iOS"
     },
     {
         "filename": "metamask",
-        "name": "metamask"
+        "name": "metamask",
+        "Platform": "iOS"
     },
     {
         "filename": "mobileActivationLogs",
-        "name": "mobileActivationLogs"
+        "name": "mobileActivationLogs",
+        "Platform": "iOS"
     },
     {
         "filename": "mobileBacku",
-        "name": "mobileBacku"
+        "name": "mobileBacku",
+        "Platform": "iOS"
     },
     {
         "filename": "mobileContainerManager",
-        "name": "mobileContainerManager"
+        "name": "mobileContainerManager",
+        "Platform": "iOS"
     },
     {
         "filename": "mobileInstall",
-        "name": "mobileInstall"
+        "name": "mobileInstall",
+        "Platform": "iOS"
     },
     {
         "filename": "netusage",
-        "name": "netusage"
+        "name": "netusage",
+        "Platform": "iOS"
     },
     {
         "filename": "notes",
-        "name": "notes"
+        "name": "notes",
+        "Platform": "iOS"
     },
     {
         "filename": "notificationsDuet",
-        "name": "notificationsDuet"
+        "name": "notificationsDuet",
+        "Platform": "iOS"
     },
     {
         "filename": "notificationsXI",
-        "name": "notificationsXI"
+        "name": "notificationsXI",
+        "Platform": "iOS"
     },
     {
         "filename": "notificationsXII",
-        "name": "notificationsXII"
+        "name": "notificationsXII",
+        "Platform": "iOS"
     },
     {
         "filename": "obliterated",
-        "name": "obliterated"
+        "name": "obliterated",
+        "Platform": "iOS"
     },
     {
         "filename": "offlinePages",
-        "name": "offlinePages"
+        "name": "offlinePages",
+        "Platform": "iOS"
     },
     {
         "filename": "ooklaSpeedtestData",
-        "name": "ooklaSpeedtestData"
+        "name": "ooklaSpeedtestData",
+        "Platform": "iOS"
     },
     {
         "filename": "photosDbexif",
-        "name": "photosDbexif"
+        "name": "photosDbexif",
+        "Platform": "iOS"
     },
     {
         "filename": "photosMetadata",
-        "name": "photosMetadata"
+        "name": "photosMetadata",
+        "Platform": "iOS"
     },
     {
         "filename": "photosMigration",
-        "name": "photosMigration"
+        "name": "photosMigration",
+        "Platform": "iOS"
     },
     {
         "filename": "preferencesPlist",
-        "name": "preferencesPlist"
+        "name": "preferencesPlist",
+        "Platform": "iOS"
     },
     {
         "filename": "protonMail",
-        "name": "protonMail"
+        "name": "protonMail",
+        "Platform": "iOS"
     },
     {
         "filename": "queryPredictions",
-        "name": "queryPredictions"
+        "name": "queryPredictions",
+        "Platform": "iOS"
     },
     {
         "filename": "quickLook",
-        "name": "quickLook"
+        "name": "quickLook",
+        "Platform": "iOS"
     },
     {
         "filename": "recentApphistor",
-        "name": "recentApphistor"
+        "name": "recentApphistor",
+        "Platform": "iOS"
     },
     {
         "filename": "reminders",
-        "name": "reminders"
+        "name": "reminders",
+        "Platform": "iOS"
     },
     {
         "filename": "restoreLog",
-        "name": "restoreLog"
+        "name": "restoreLog",
+        "Platform": "iOS"
     },
     {
         "filename": "safariBookmarks",
-        "name": "safariBookmarks"
+        "name": "safariBookmarks",
+        "Platform": "iOS"
     },
     {
         "filename": "safariFavicons",
-        "name": "safariFavicons"
+        "name": "safariFavicons",
+        "Platform": "iOS"
     },
     {
         "filename": "safariHistor",
-        "name": "safariHistor"
+        "name": "safariHistor",
+        "Platform": "iOS"
     },
     {
         "filename": "safariRecentWebSearches",
-        "name": "safariRecentWebSearches"
+        "name": "safariRecentWebSearches",
+        "Platform": "iOS"
     },
     {
         "filename": "safariTabs",
-        "name": "safariTabs"
+        "name": "safariTabs",
+        "Platform": "iOS"
     },
     {
         "filename": "safariWebsearch",
-        "name": "safariWebsearch"
+        "name": "safariWebsearch",
+        "Platform": "iOS"
     },
     {
         "filename": "script.txt",
-        "name": "script.txt"
+        "name": "script.txt",
+        "Platform": "iOS"
     },
     {
         "filename": "secretCalculator",
-        "name": "secretCalculator"
+        "name": "secretCalculator",
+        "Platform": "iOS"
     },
     {
         "filename": "serialNumber",
-        "name": "serialNumber"
+        "name": "serialNumber",
+        "Platform": "iOS"
     },
     {
         "filename": "simInfo",
-        "name": "simInfo"
+        "name": "simInfo",
+        "Platform": "iOS"
     },
     {
         "filename": "slack",
-        "name": "slack"
+        "name": "slack",
+        "Platform": "iOS"
     },
     {
         "filename": "sms",
-        "name": "sms"
+        "name": "sms",
+        "Platform": "iOS"
     },
     {
         "filename": "tcc",
-        "name": "tcc"
+        "name": "tcc",
+        "Platform": "iOS"
     },
     {
         "filename": "teams",
-        "name": "teams"
+        "name": "teams",
+        "Platform": "iOS"
     },
     {
         "filename": "teamsSegment",
-        "name": "teamsSegment"
+        "name": "teamsSegment",
+        "Platform": "iOS"
     },
     {
         "filename": "telegramMesssages",
@@ -683,55 +889,68 @@
             "*/telegram-data/account-*/postbox/db/db_sqlite",
             "*/telegram-data/account-*/postbox/media/**"
         ],
-        "function": "get_telegramMessages"
+        "function": "get_telegramMessages",
+        "Platform": "iOS"
     },
     {
         "filename": "textinputTyping",
-        "name": "textinputTyping"
+        "name": "textinputTyping",
+        "Platform": "iOS"
     },
     {
         "filename": "tikTok",
-        "name": "tikTok"
+        "name": "tikTok",
+        "Platform": "iOS"
     },
     {
         "filename": "tileA",
-        "name": "tileA"
+        "name": "tileA",
+        "Platform": "iOS"
     },
     {
         "filename": "tileAppDb",
-        "name": "tileAppDb"
+        "name": "tileAppDb",
+        "Platform": "iOS"
     },
     {
         "filename": "tileAppDisc",
-        "name": "tileAppDisc"
+        "name": "tileAppDisc",
+        "Platform": "iOS"
     },
     {
         "filename": "tileAppNetDb",
-        "name": "tileAppNetDb"
+        "name": "tileAppNetDb",
+        "Platform": "iOS"
     },
     {
         "filename": "timezoneInfo",
-        "name": "timezoneInfo"
+        "name": "timezoneInfo",
+        "Platform": "iOS"
     },
     {
         "filename": "timezoneset",
-        "name": "timezoneset"
+        "name": "timezoneset",
+        "Platform": "iOS"
     },
     {
         "filename": "torrentData",
-        "name": "torrentData"
+        "name": "torrentData",
+        "Platform": "iOS"
     },
     {
         "filename": "torrentResumeinfo",
-        "name": "torrentResumeinfo"
+        "name": "torrentResumeinfo",
+        "Platform": "iOS"
     },
     {
         "filename": "torrentinfo",
-        "name": "torrentinfo"
+        "name": "torrentinfo",
+        "Platform": "iOS"
     },
     {
         "filename": "venmo",
-        "name": "venmo"
+        "name": "venmo",
+        "Platform": "iOS"
     },
     {
         "filename": "viber",
@@ -749,39 +968,48 @@
             "**/Containers/Data/Application/*/Documents/Attachments/*.*",
             "**/com.viber/ViberIcons/*.*"
         ],
-        "function": "get_viber"
+        "function": "get_viber",
+        "Platform": "iOS"
     },
     {
         "filename": "vipps",
-        "name": "vipps"
+        "name": "vipps",
+        "Platform": "iOS"
     },
     {
         "filename": "vippsContacts",
-        "name": "vippsContacts"
+        "name": "vippsContacts",
+        "Platform": "iOS"
     },
     {
         "filename": "voiceRecordings",
-        "name": "voiceRecordings"
+        "name": "voiceRecordings",
+        "Platform": "iOS"
     },
     {
         "filename": "voiceTriggers",
-        "name": "voiceTriggers"
+        "name": "voiceTriggers",
+        "Platform": "iOS"
     },
     {
         "filename": "voicemail",
-        "name": "voicemail"
+        "name": "voicemail",
+        "Platform": "iOS"
     },
     {
         "filename": "walStrings",
-        "name": "walStrings"
+        "name": "walStrings",
+        "Platform": "iOS"
     },
     {
         "filename": "weatherAppLocations",
-        "name": "weatherAppLocations"
+        "name": "weatherAppLocations",
+        "Platform": "iOS"
     },
     {
         "filename": "webClips",
-        "name": "webClips"
+        "name": "webClips",
+        "Platform": "iOS"
     },
     {
         "filename": "whatsappContacts",
@@ -796,7 +1024,8 @@
         "paths": [
             "*/var/mobile/Containers/Shared/AppGroup/*/ContactsV2.sqlite*"
         ],
-        "function": "get_whatsappContacts"
+        "function": "get_whatsappContacts",
+        "Platform": "iOS"
     },
     {
         "filename": "whatsappMessages",
@@ -812,18 +1041,22 @@
             "*/var/mobile/Containers/Shared/AppGroup/*/ChatStorage.sqlite*",
             "*/var/mobile/Containers/Shared/AppGroup/*/Message/Media/*/*/*/*.*"
         ],
-        "function": "get_whatsappMessages"
+        "function": "get_whatsappMessages",
+        "Platform": "iOS"
     },
     {
         "filename": "wiLoc",
-        "name": "wiLoc"
+        "name": "wiLoc",
+        "Platform": "iOS"
     },
     {
         "filename": "wifiIdent",
-        "name": "wifiIdent"
+        "name": "wifiIdent",
+        "Platform": "iOS"
     },
     {
         "filename": "wifiNetworkStoreModel",
-        "name": "wifiNetworkStoreModel"
+        "name": "wifiNetworkStoreModel",
+        "Platform": "iOS"
     }
 ]

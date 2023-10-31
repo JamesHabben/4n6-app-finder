@@ -17,6 +17,7 @@
     "react-scripts": "5.0.1",
     "react-virtualized": "^9.22.5",
     "react-window": "^1.8.9",
+    "recharts": "^2.9.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

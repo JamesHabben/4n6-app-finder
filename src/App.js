@@ -2,9 +2,10 @@ import React, { useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
 import AppRoutes from './Routes';
 import PageSearch from 'components/PageSearch';
-import PageStats from 'components/PageStats';
+import PageDashboard from 'components/PageDashboard';
 import PageAdmin from 'components/PageAdmin';
 import VersionInfo from 'components/VersionInfo';
+import { DataProvider } from 'services/DataContext';
 import { AuthProvider } from './AuthContext';
 
 import './App.css';
@@ -40,13 +41,15 @@ function App() {
   return (
     <Router>
       <AuthProvider>
-        <AppContent />
-        <div 
-          className="scrollTop" 
-          onClick={scrollTop} 
-          style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
-            <span>^</span>  {/* You can replace this with an icon */}
-        </div>
+        <DataProvider>
+          <AppContent />
+          <div 
+            className="scrollTop" 
+            onClick={scrollTop} 
+            style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+              <span>^</span>  {/* You can replace this with an icon */}
+          </div>
+        </DataProvider>
       </AuthProvider>
     </Router>
   );
@@ -68,8 +71,8 @@ function AppContent() {
           <li className={activeTab === "/" ? "active" : ""}>
             <Link to="/">Search</Link>
           </li>
-          <li className={activeTab === "/statistics" ? "active" : ""}>
-            <Link to="/statistics">Statistics</Link>
+          <li className={activeTab === "/dashboard" ? "active" : ""}>
+            <Link to="/dashboard">Dashboard</Link>
           </li>
           <li className={activeTab === "/admin" ? "active" : ""}>
             <Link to="/admin">Admin</Link>

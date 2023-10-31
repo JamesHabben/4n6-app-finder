@@ -11,6 +11,50 @@
         "alternateNames": []
     },
     {
+        "appName": "1Weather Forecasts & Radar",
+        "icon": "1weather.jpg",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.handmark.expressweather&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "3D Flip Clock & Weather",
+        "icon": "3d-flip-clock.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.droid27.d3flipclockweather&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "3D Sense Clock & Weather",
+        "icon": "3d-sense-clock.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.droid27.d3senseclockweather&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "AccuWeather: Weather Radar",
+        "icon": "accuweather.png",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.accuweather.android&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "Addison Lee London Minicabs",
         "icon": "addison-lee-london.webp",
         "websiteUrl": "",
@@ -48,6 +92,19 @@
         "alternateNames": []
     },
     {
+        "appName": "Adobe Acrobat Reader",
+        "icon": "adobe-acrobat-reader.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.adobe.reader&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Adobe Acrobat Reader: Edit PDF"
+        ]
+    },
+    {
         "appName": "Aeroflot",
         "icon": "aeroflot.webp",
         "websiteUrl": "",
@@ -68,6 +125,19 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Agoda Hotels & Flights",
+        "icon": "agoda.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.agoda.mobile.consumer&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Agoda: Book Hotels and Flights"
+        ]
     },
     {
         "appName": "Airbnb",
@@ -119,6 +189,17 @@
         ]
     },
     {
+        "appName": "Amazon Kindle",
+        "icon": "amazon-kindle.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.kindle&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "Amazon Photos",
         "icon": "amazon-photos.jpg",
         "websiteUrl": "",
@@ -126,6 +207,17 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.clouddrive.photos",
         "notes": "",
         "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "Amazon Prime Video",
+        "icon": "amazon-prime-video.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
         "dateUpdated": "",
         "alternateNames": []
     },
@@ -140,7 +232,8 @@
         "dateUpdated": "2023-10-24",
         "alternateNames": [
             "Amazon shopping",
-            "Amazon browser"
+            "Amazon browser",
+            "Amazon"
         ]
     },
     {
