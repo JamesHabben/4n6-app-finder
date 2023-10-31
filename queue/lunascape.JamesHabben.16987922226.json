@@ -1,0 +1,26 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Lunascape",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2023-10-31",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "Lunascape Autofill"
+                ],
+                "artifactCount": "",
+                "mappedTools": []
+            }
+        }
+    ]
+}
