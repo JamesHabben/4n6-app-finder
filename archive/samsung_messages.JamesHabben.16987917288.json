@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Samsung Messages",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2023-10-31",
+                "dateUpdated": "",
+                "alternateNames": [],
+                "artifactCount": "",
+                "mappedTools": []
+            }
+        }
+    ]
+}
