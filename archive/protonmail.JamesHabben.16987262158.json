@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "ProtonMail",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "ProtonMail Contacts"
+        }
+    ]
+}
