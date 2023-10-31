@@ -19,6 +19,8 @@ export const appsService = () => {
                 // Apply the patch to the specific app
                 //const patchedApp = jsonpatch.applyPatch(appsArray[appIndex], patch).newDocument;
                 const appClone = JSON.parse(JSON.stringify(appsArray[appIndex]));
+                const currentDate = new Date().toISOString().split('T')[0];
+                appClone.dateUpdated = currentDate;
                 console.log("app ", appClone)
                 jsonpatch.applyPatch(appClone, patch)
                 const updatedAppsArray = [...appsArray];
@@ -224,7 +226,7 @@ export const appsService = () => {
             }
         });
 
-        console.log(newRecord)
+        //console.log(newRecord)
         return newRecord;
     }
     

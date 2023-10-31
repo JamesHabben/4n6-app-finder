@@ -34,7 +34,7 @@ const AuthCallbackHandler = () => {
               return response.json();
             })
             .then(data => {
-                console.log('Response data:', data);
+                //console.log('Response data:', data);
                 const token = data.accessToken;
                 login(token); 
                 navigate('/admin');
