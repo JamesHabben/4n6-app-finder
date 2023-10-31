@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "LinkedIn",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "LinkedIn Emails"
+        }
+    ]
+}
