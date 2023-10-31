@@ -5,6 +5,8 @@
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.onepassword.android",
+        "activeOnAppleStore": "true",
+        "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-25",
@@ -249,13 +251,13 @@
     },
     {
         "appName": "Aniways Messenger",
-        "icon": "",
+        "icon": "aniways-messenger.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
@@ -517,10 +519,12 @@
     },
     {
         "appName": "Atomic Web Browser",
-        "icon": "",
+        "icon": "atomic-browser.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "false",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -566,10 +570,12 @@
     },
     {
         "appName": "Backup and Sync from Google",
-        "icon": "",
+        "icon": "google-backup-sync.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "false",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -733,6 +739,8 @@
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "false",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -759,13 +767,13 @@
     },
     {
         "appName": "BOTIM",
-        "icon": "",
+        "icon": "botim.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=im.thebot.messenger&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
@@ -783,13 +791,13 @@
     },
     {
         "appName": "Brave Browser",
-        "icon": "",
+        "icon": "brave-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.breadwallet",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.brave.browser&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Brave",
             "Brave browser",
@@ -807,13 +815,13 @@
     },
     {
         "appName": "BRD - bitcoin wallet",
-        "icon": "",
+        "icon": "brd-wallet.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.breadwallet",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "breadwallet - bitcoin wallet",
             "BRD Bitcoin Wallet Bitcoin BTC",
@@ -823,24 +831,24 @@
     },
     {
         "appName": "Briar",
-        "icon": "",
+        "icon": "briar.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.briarproject.briar.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
         "appName": "Brosix",
-        "icon": "",
+        "icon": "brosix.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.brosix.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
@@ -858,13 +866,15 @@
     },
     {
         "appName": "Bump",
-        "icon": "",
+        "icon": "bump-social.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "false",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
@@ -972,7 +982,7 @@
         "icon": "chatous.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.chatous.chatous&hl=en",
         "notes": "",
         "dateAdded": "2023-10-30",
         "dateUpdated": "",
@@ -1005,13 +1015,13 @@
     },
     {
         "appName": "CheckMyTrip",
-        "icon": "",
+        "icon": "checkmytrip.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amadeus.cmt.client.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "CheckMyTrip – Travel Itinerary"
         ]
@@ -1029,13 +1039,13 @@
     },
     {
         "appName": "Clubhouse",
-        "icon": "",
+        "icon": "clubhouse.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.clubhouse.app&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Clubhouse "
         ]
@@ -1178,14 +1188,15 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.discord",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "discordAcct",
             "discordJson",
             "Discord - Chat, Talk & Hangout",
             "Discord: Talk, Chat & Hang Out",
             "Discord Messages",
-            "Discord Logged-in Account"
+            "Discord Logged-in Account",
+            "discordManifest"
         ]
     },
     {
@@ -1269,14 +1280,19 @@
     },
     {
         "appName": "DuckDuckGo",
-        "icon": "",
+        "icon": "duckduckgo.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "DuckDuckGo Whitelisted Websites",
+            "DuckDuckGo Current Tabs",
+            "DuckDuckGo Bookmarks",
+            "DuckDuckGo Cookies"
+        ]
     },
     {
         "appName": "easyJet",
@@ -1316,13 +1332,13 @@
     },
     {
         "appName": "Ebuddy",
-        "icon": "",
+        "icon": "ebuddy.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "eBuddy XMS"
         ]
@@ -1507,26 +1523,18 @@
         "alternateNames": []
     },
     {
-        "appName": "Find My",
-        "icon": "",
+        "appName": "Find My (Friends)",
+        "icon": "find-my",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
-        "appName": "Find My Friends",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Find My",
+            "Find My Friends"
+        ]
     },
     {
         "appName": "Firechat",
@@ -1547,13 +1555,20 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.mozilla.firefox&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-27",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Firefox Beta for Testers",
             "Firefox Fast & Private Browser",
             "Firefox Nightly for Developers",
             "Firefox: Private, Safe Browser",
-            "Firefox Focus browser"
+            "Firefox Focus browser",
+            "Firefox Web Visits",
+            "Firefox Web History",
+            "Firefox FormHistory",
+            "Firefox Cookies",
+            "Firefox Add-ons",
+            "Android Firefox Web History",
+            "Android Firefox Bookmarks"
         ]
     },
     {
@@ -1855,8 +1870,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google Calendar Events",
+            "Google Calendar Calendars"
+        ]
     },
     {
         "appName": "Google Chat",
@@ -1866,8 +1884,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "googleChat"
+        ]
     },
     {
         "appName": "Google Chrome",
@@ -1877,7 +1897,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-27",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Chrome",
             "chromeOfflinePages",
@@ -1907,7 +1927,8 @@
             "Chrome Tab History",
             "Chrome Top Sites",
             "Chrome Web History",
-            "Chrome Web Visits"
+            "Chrome Web Visits",
+            "chromeBookmarks"
         ]
     },
     {
@@ -1953,11 +1974,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Google Duo Groups",
             "Google Duo Group Calls",
-            "Google Duo Activity"
+            "Google Duo Activity",
+            "googleDuo"
         ]
     },
     {
@@ -2017,8 +2039,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google Keep Notes"
+        ]
     },
     {
         "appName": "Google Mail",
@@ -2042,8 +2066,12 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Google Maps Saved Locations",
+            "Google Maps Directions",
+            "Android Google Maps"
+        ]
     },
     {
         "appName": "Google Meet",
@@ -2175,9 +2203,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grindrapp.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "Grindr - Gay chat"
+            "Grindr - Gay chat",
+            "Grindr Messages",
+            "Grindr Buddies"
         ]
     },
     {
@@ -2204,8 +2234,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "GROWLr Notes",
+            "GROWLr Chat Messages"
+        ]
     },
     {
         "appName": "Here Maps",
@@ -2284,6 +2317,17 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "Hike News & Content",
+        "icon": "hike-news.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bsb.hike&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
         "dateUpdated": "",
         "alternateNames": []
     },
@@ -2432,13 +2476,13 @@
     },
     {
         "appName": "IM+",
-        "icon": "",
+        "icon": "im-plus.webp",
         "websiteUrl": "",
-        "appleStoreUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/im-pro-social-aggregator/id725440655",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
@@ -2473,7 +2517,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.imo.android.imous&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Imo",
             "imo",
@@ -2482,7 +2526,8 @@
             "imo beta -video calls and chat",
             "imo-International Calls & Chat",
             "imo Messages",
-            "imo Contacts"
+            "imo Contacts",
+            "imoHD_Chat"
         ]
     },
     {
@@ -2552,6 +2597,19 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Iron Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Iron Browser Autofill"
+        ]
     },
     {
         "appName": "iScanner",
@@ -2736,7 +2794,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=kik.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Android Kik Messenger Contacts",
             "Android Kik Messenger Attachments",
@@ -2747,7 +2805,8 @@
             "kikUsersgroups",
             "kikGroupadmins",
             "Kik — Messaging & Chat App",
-            "Kik Messaging & Chat App"
+            "Kik Messaging & Chat App",
+            "kikLocaladmin"
         ]
     },
     {
@@ -2901,10 +2960,10 @@
     },
     {
         "appName": "Lyft",
-        "icon": "",
+        "icon": "lyft.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.lyft.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -3035,10 +3094,12 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.wildec.meet24&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Meet24 - Flirt, Chat, Singles",
-            "Meet24 - Love, Chat, Singles"
+            "Meet24 - Love, Chat, Singles",
+            "Android Meet24 Cookies",
+            "Android Meet24 Cache Records"
         ]
     },
     {
@@ -3128,8 +3189,14 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Mi Browser History",
+            "Mi Browser Downloads",
+            "Mi Browser Cookies",
+            "Mi Browser Bookmarks",
+            "Mi Browser Autofill"
+        ]
     },
     {
         "appName": "Microsoft Bing",
@@ -3150,10 +3217,14 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Microsoft Edge/IE",
-            "Microsoft Edge: Browse with AI"
+            "Microsoft Edge: Browse with AI",
+            "Edge Chromium Web Visits",
+            "Edge Chromium Web History",
+            "Edge Chromium Tab History",
+            "Edge Chromium FavIcons"
         ]
     },
     {
@@ -3221,8 +3292,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.rdc.androidx&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-30",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Remote Desktop Protocol",
+            "Remote Desktop Protocol Bitmap Cache"
+        ]
     },
     {
         "appName": "Microsoft Teams",
@@ -3537,22 +3611,24 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-30",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "OnStar RemoteLink Recent Location Searches",
             "OnStar RemoteLink Remote Commands",
             "OnStar RemoteLink Saved Places Of Interest",
             "OnStar RemoteLink Saved Wireless Carrier",
             "OnStar RemoteLink Vehicle Diagnostics",
-            "OnStar RemoteLink Vehicle Info"
+            "OnStar RemoteLink Vehicle Info",
+            "OnStar RemoteLink Hotspot Info",
+            "OnStar RemoteLink Accounts"
         ]
     },
     {
         "appName": "Ookla Speedtest",
-        "icon": "",
+        "icon": "ookla-speed.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.zwanoo.android.speedtest&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -3564,13 +3640,13 @@
     },
     {
         "appName": "ooVoo",
-        "icon": "",
+        "icon": "oovoo.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.oovoo&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "ooVoo Video Calls, Messaging &",
             "ooVoo Chat History",
@@ -3599,7 +3675,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.browser&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Opera Mini",
             "Opera mini",
@@ -3607,7 +3683,16 @@
             "Opera browser beta with AI",
             "Opera browser with AI",
             "Opera Mini browser beta",
-            "Opera Mini: Fast Web Browser"
+            "Opera Mini: Fast Web Browser",
+            "Opera Web Visits",
+            "Opera Web History",
+            "Opera Top Sites",
+            "Opera Keyword Search Terms",
+            "Opera FavIcons",
+            "Opera Downloads",
+            "Opera Cookies",
+            "Opera Bookmarks",
+            "Opera Autofill"
         ]
     },
     {
@@ -3618,8 +3703,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.parlor&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Parler Users - Android",
+            "Parler Activity - Android"
+        ]
     },
     {
         "appName": "Paypal",
@@ -3841,9 +3929,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
-            "protonMail"
+            "protonMail",
+            "ProtonMail Emails",
+            "ProtonMail Contacts"
         ]
     },
     {
@@ -3953,10 +4043,10 @@
     },
     {
         "appName": "Remember The Milk",
-        "icon": "",
+        "icon": "remember-milk.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.rememberthemilk.MobileRTM&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -4021,7 +4111,7 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Safari Browser",
             "Safari (iOS)",
@@ -4030,7 +4120,8 @@
             "safariFavicons",
             "safariRecentWebSearches",
             "safariTabs",
-            "safariWebsearch"
+            "safariWebsearch",
+            "biomeSafari"
         ]
     },
     {
@@ -4063,8 +4154,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Samsung Email Logs"
+        ]
     },
     {
         "appName": "Samsung Health",
@@ -4089,8 +4182,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Samsung Browser Cache Records"
+        ]
     },
     {
         "appName": "Samsung Memo",
@@ -4284,7 +4379,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Slack&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Slack (desktop)",
             "Slack (store)",
@@ -4295,7 +4390,8 @@
             "Slack Channels",
             "Slack Direct Messages",
             "Slack Files",
-            "Slack Users"
+            "Slack Users",
+            "Slack Workspaces"
         ]
     },
     {
@@ -4328,7 +4424,7 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.snapchat.android",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "SnapChat",
             "Snapchat Warrant Return",
@@ -4344,7 +4440,10 @@
             "Snapchat Received Images - Android",
             "Snapchat Received Snaps - Android",
             "Snapchat Sent Snaps - Android",
-            "Snapchat Stories - Android"
+            "Snapchat Stories - Android",
+            "Snapchat Received Videos",
+            "Android Snapchat Event Logs",
+            "Android Snapchat Accounts Information"
         ]
     },
     {
@@ -4531,15 +4630,17 @@
         "alternateNames": []
     },
     {
-        "appName": "Taxify",
-        "icon": "",
+        "appName": "Bolt (formerly Taxify)",
+        "icon": "bolt.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=ee.mtakso.client&hl=en",
         "notes": "",
         "dateAdded": "2023-10-14",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Taxify"
+        ]
     },
     {
         "appName": "TeamViewer",
@@ -4549,8 +4650,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "TeamViewer Activity"
+        ]
     },
     {
         "appName": "Telegram",
@@ -4601,7 +4704,7 @@
         ]
     },
     {
-        "appName": "Text Me",
+        "appName": "Text Me: Second Number",
         "icon": "text-me-second.webp",
         "websiteUrl": "",
         "appleStoreUrl": "https://apps.apple.com/us/app/text-me-phone-call-texting/id514485964",
@@ -4610,7 +4713,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-28",
         "alternateNames": [
-            "Text Me!"
+            "Text Me!",
+            "Text Me"
         ]
     },
     {
@@ -4625,7 +4729,7 @@
         "alternateNames": []
     },
     {
-        "appName": "TextMe",
+        "appName": "TextMe (gemsoftware)",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -4636,7 +4740,8 @@
         "alternateNames": [
             "com.gemsoftware.textme",
             "TextMe Calls",
-            "TextMe Messages"
+            "TextMe Messages",
+            "TextMe"
         ]
     },
     {
@@ -4713,21 +4818,11 @@
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tigertext&hl=en",
-        "notes": "",
+        "notes": "App formally called TigerText rebranded as TigerConnect",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
-        "appName": "TigerText",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-15",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
+            "TigerText",
             "Android TigerText Messages"
         ]
     },
@@ -4811,6 +4906,8 @@
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "false",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -4856,24 +4953,24 @@
     },
     {
         "appName": "TrueCaller",
-        "icon": "",
+        "icon": "truecaller.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.truecaller&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": []
     },
     {
         "appName": "Tumblr",
-        "icon": "",
+        "icon": "tumblr.jpg",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tumblr&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "Tumblr Blogs",
             "Tumblr Chat Messages",
@@ -5137,10 +5234,12 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.vk.im&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-10-31",
         "alternateNames": [
             "VK Calls",
-            "com.dchistyakov.vkmessenger.ui"
+            "com.dchistyakov.vkmessenger.ui",
+            "VK Users",
+            "VK Messages"
         ]
     },
     {
@@ -5242,6 +5341,19 @@
         "alternateNames": []
     },
     {
+        "appName": "Web.de",
+        "icon": "web-de.webp",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.web.mobile.android.mail&hl=en",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "WeChat",
         "icon": "wechat.webp",
         "websiteUrl": "",
@@ -5256,15 +5368,17 @@
         ]
     },
     {
-        "appName": "Weibo",
-        "icon": "",
+        "appName": "Weibo (微博)",
+        "icon": "weibo.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sina.weibo&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Weibo"
+        ]
     },
     {
         "appName": "WhatsApp Messenger",
@@ -5308,8 +5422,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=sh.whisper",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Whisper Messages",
+            "Android Whisper Posts"
+        ]
     },
     {
         "appName": "Wickr Me",
@@ -5396,11 +5513,13 @@
     },
     {
         "appName": "Xabber",
-        "icon": "",
-        "websiteUrl": "",
+        "icon": "xabber.png",
+        "websiteUrl": "https://www.xabber.com/",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
-        "notes": "",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "false",
+        "notes": "Open source app",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
@@ -5491,8 +5610,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Yandex Bookmarks",
+            "Yandex Autofill"
+        ]
     },
     {
         "appName": "Yandex Browser",
@@ -5627,6 +5749,19 @@
             "Youtube",
             "YouTube: Watch, Listen, Stream"
         ]
+    },
+    {
+        "appName": "Yubo",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "Zalo",
