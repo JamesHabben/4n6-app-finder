@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Firefox",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/5",
+            "value": "Firefox Cookies"
+        }
+    ]
+}
