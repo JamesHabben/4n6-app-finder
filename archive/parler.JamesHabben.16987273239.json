@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Parler",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "Parler Users - Android"
+        }
+    ]
+}
