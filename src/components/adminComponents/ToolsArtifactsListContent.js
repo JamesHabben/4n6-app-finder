@@ -1,5 +1,5 @@
 import { useState, useContext, useEffect } from "react";
-import { Button, Modal, Input } from 'antd';
+import { Button, Modal, Input, Typography } from 'antd';
 //import { VariableSizeList as List } from 'react-window';
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
 
@@ -248,7 +248,11 @@ function ToolsArtifactsListContent() {
                   //height: (cache.getHeight(index, 0) || style.height) + overlapAdjustment,
             }} 
             className={` ${shouldHighlight(app) ? 'highlight' : ''}`}>
-              <h3>{getAppByNameKey(app)}</h3>
+              <Typography.Title 
+                level={3}
+                copyable>
+                {getAppByNameKey(app)}
+              </Typography.Title>
                 {shouldHighlight(app) && authState && (
                         <Button type="primary" style={{ marginBottom: '10px'  }} onClick={() => showModal(app)}>
                           Suggest an Edit
@@ -261,7 +265,7 @@ function ToolsArtifactsListContent() {
                         <td className="property-name">
                         <strong>{key}:</strong>
                         </td>
-                        <td style={{ backgroundColor:'white' }}>
+                        <td style={{ backgroundColor:'white', paddingLeft:'.5rem' }}>
                         {app[key]}
                         </td>
                     </tr>
@@ -298,7 +302,7 @@ function ToolsArtifactsListContent() {
                 <AutoSizer>
                   {({ height, width }) => {
                     //console.log("start list", selectedTool); 
-                    console.log("AutoSizer dimensions:", height, width);
+                    //console.log("AutoSizer dimensions:", height, width);
                     return (
                       <List
                         width={width}
