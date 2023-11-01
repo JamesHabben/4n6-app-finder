@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Opera",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/16",
+            "value": "com.opera.Coast"
+        }
+    ]
+}
