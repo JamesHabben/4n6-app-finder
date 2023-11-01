@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Dropbox",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/5",
+            "value": "com.dropbox.carousel"
+        }
+    ]
+}
