@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Tinder",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/4",
+            "value": "Tinder: Dating, Chat & Friends"
+        }
+    ]
+}
