@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "DuckDuckGo",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/4",
+            "value": "DuckDuckGo Private Browser"
+        }
+    ]
+}
