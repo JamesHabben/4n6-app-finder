@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Steam",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "Steam Mobile"
+        }
+    ]
+}
