@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "HipChat",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "com.hipchat.ios"
+        }
+    ]
+}
