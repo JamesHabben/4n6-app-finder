@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Waze",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/4",
+            "value": "com.waze.iphone"
+        }
+    ]
+}
