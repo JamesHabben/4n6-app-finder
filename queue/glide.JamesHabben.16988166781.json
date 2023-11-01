@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Glide",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Glide - Video Chat Messenger"
+        }
+    ]
+}
