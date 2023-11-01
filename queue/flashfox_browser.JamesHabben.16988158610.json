@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "FlashFox Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "FlashFox Pro - Flash Browser"
+        }
+    ]
+}
