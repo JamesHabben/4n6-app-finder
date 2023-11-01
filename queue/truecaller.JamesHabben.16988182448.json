@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "TrueCaller",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "Truecaller: Caller ID & Block"
+        }
+    ]
+}
