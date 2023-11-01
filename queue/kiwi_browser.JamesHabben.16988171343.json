@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Kiwi Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Kiwi Browser - Fast & Quiet"
+        }
+    ]
+}
