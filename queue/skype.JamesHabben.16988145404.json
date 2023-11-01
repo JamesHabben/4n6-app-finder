@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Skype",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/15",
+            "value": "com.skype.skype"
+        }
+    ]
+}
