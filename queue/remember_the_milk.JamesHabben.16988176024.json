@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Remember The Milk",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "Remember The Milk: To-Do List"
+        }
+    ]
+}
