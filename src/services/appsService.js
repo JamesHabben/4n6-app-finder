@@ -2,6 +2,8 @@ import { githubService } from 'services/githubService';
 import { AuthState  } from 'AuthContext';
 import jsonpatch from 'fast-json-patch';
 
+const excludeNewRecordProperties = ["artifactCount","mappedTools"]
+
 export const appsService = () => {
     const applyPatch = (appsArray, patchFile) => {
         console.log(patchFile)
@@ -202,8 +204,8 @@ export const appsService = () => {
     const validateRecord = (record, templateRecord) => {
         //console.log("new", record)
         //console.log("template", templateRecord)
-        const recordKeys = Object.keys(record).sort();
-        const templateKeys = Object.keys(templateRecord).sort();
+        const recordKeys = Object.keys(record).filter(key => !excludeNewRecordProperties.includes(key)).sort();
+        const templateKeys = Object.keys(templateRecord).filter(key => !excludeNewRecordProperties.includes(key)).sort();
         return JSON.stringify(recordKeys) === JSON.stringify(templateKeys);
     }
 
@@ -217,7 +219,7 @@ export const appsService = () => {
         const templateRecord = apps[0];
         const newRecord = {};
         const keys = Object.keys(templateRecord);
-        const excludedKeys = new Set(["artifactCount", "mappedTools"]);
+        const excludedKeys = new Set(excludeNewRecordProperties);
         const filteredKeys = keys.filter(key => !excludedKeys.has(key));
 
         filteredKeys.forEach(key => {

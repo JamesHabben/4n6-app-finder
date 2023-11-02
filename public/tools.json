@@ -30,8 +30,8 @@
         "toolVersion": "7.5",
         "toolReleaseDate": "2023-09-06",
         "icon": "tool-logo-magnet.png",
-        "artifactListFile": "artifacts-magnet.json",
-        "appNameKey": "Application",
+        "artifactListFile": "artifacts-magnet-20231102.json",
+        "appNameKey": "Artifact",
         "documentationLocation": "",
         "extractionNotes": ""
     },
