@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Mail.Ru",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "Mail.ru Chat Non-Carved"
+        }
+    ]
+}
