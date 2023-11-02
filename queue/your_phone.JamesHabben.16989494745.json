@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Your Phone",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "Your Phone SMS-MMS"
+        }
+    ]
+}
