@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Apple Messages",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/3",
+            "value": "iMessage Messages"
+        }
+    ]
+}
