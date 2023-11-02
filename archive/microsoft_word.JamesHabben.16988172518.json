@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Microsoft Word",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2023-11-01",
+                "dateUpdated": "",
+                "alternateNames": [],
+                "artifactCount": "",
+                "mappedTools": []
+            }
+        }
+    ]
+}
