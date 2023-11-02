@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Private Photo Vault",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/6",
+            "value": "Private Photo Vault - Keepsafe"
+        }
+    ]
+}
