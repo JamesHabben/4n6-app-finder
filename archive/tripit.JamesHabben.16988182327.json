@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "TripIt",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "TripIt: Travel Planner"
+        }
+    ]
+}
