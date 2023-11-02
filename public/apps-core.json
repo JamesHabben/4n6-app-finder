@@ -298,6 +298,22 @@
         "alternateNames": []
     },
     {
+        "appName": "Android Calls",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Android Call Logs",
+            "Android Call Logs (UFED Agent)"
+        ]
+    },
+    {
         "appName": "Android Contacts",
         "icon": "",
         "websiteUrl": "",
@@ -308,7 +324,9 @@
         "notes": "",
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Android Contacts (UFED Agent)"
+        ]
     },
     {
         "appName": "Android Messages",
@@ -321,7 +339,15 @@
         "notes": "",
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Android MMS (UFED Agent)",
+            "Android MMS",
+            "Android SMS (UFED Agent)",
+            "Android SMS-MMS (Content Provider)",
+            "Android SMS-MMS (Google Play Services)",
+            "Android SMS-MMS",
+            "Android SMS"
+        ]
     },
     {
         "appName": "Aniways Messenger",
@@ -1515,6 +1541,29 @@
         ]
     },
     {
+        "appName": "Ecosia Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-31",
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Ecosia Autofill",
+            "Ecosia Web Visits",
+            "Ecosia Web History",
+            "Ecosia Top Sites",
+            "Ecosia Tab History",
+            "Ecosia Logins",
+            "Ecosia Keyword Search Terms",
+            "Ecosia FavIcons",
+            "Ecosia Downloads",
+            "Ecosia Cookies",
+            "Ecosia Bookmarks"
+        ]
+    },
+    {
         "appName": "Element",
         "icon": "",
         "websiteUrl": "",
@@ -2249,7 +2298,7 @@
         ]
     },
     {
-        "appName": "Google Mail",
+        "appName": "Google Mail (Gmail)",
         "icon": "google-mail.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -2259,7 +2308,10 @@
         "dateUpdated": "",
         "alternateNames": [
             "Gmail",
-            "Gmail/Inbox"
+            "Gmail/Inbox",
+            "Google Mail",
+            "Android Gmail Conversations",
+            "Gmail Emails"
         ]
     },
     {
@@ -3803,6 +3855,23 @@
         "dateAdded": "2023-11-01",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Mint Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "2023-10-31",
+        "alternateNames": [
+            "Mint Browser History",
+            "Mint Browser Downloads",
+            "Mint Browser Cookies",
+            "Mint Browser Bookmarks",
+            "Mint Browser Autofill"
+        ]
     },
     {
         "appName": "Mobile Spy",
