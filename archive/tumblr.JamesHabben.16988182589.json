@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Tumblr",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/3",
+            "value": "Tumblr—Fandom, Art, Chaos"
+        }
+    ]
+}
