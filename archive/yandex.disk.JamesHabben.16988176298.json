@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Yandex.Disk",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "ru.yandex.disk"
+        }
+    ]
+}
