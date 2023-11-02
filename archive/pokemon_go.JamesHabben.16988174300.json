@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Pokemon Go",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Pokémon GO"
+        }
+    ]
+}
