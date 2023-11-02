@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "TamTam Messenger",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "TamTam Messenger Messages - iOS"
+        }
+    ]
+}
