@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Uber",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/6",
+            "value": "Uber - Request a ride"
+        }
+    ]
+}
