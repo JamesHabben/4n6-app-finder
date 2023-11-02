@@ -6,7 +6,7 @@
         "toolVersion": "16.0.0.114",
         "toolReleaseDate": "2023-09-01",
         "icon": "tool-logo-oxygen.png",
-        "artifactListFile": "artifacts-oxygen.json",
+        "artifactListFile": "artifacts-oxygen-20231102.json",
         "appNameKey": "Application",
         "documentationLocation": "In the app, click the upper right menu drop down and look for 'Supported Applications' in the tiles.",
         "extractionNotes": "App support data is in app only, but fairly clean in a table format making it easy to understand."

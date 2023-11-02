@@ -298,6 +298,24 @@
         "alternateNames": []
     },
     {
+        "appName": "Android Browser",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Android Browser Bookmarks",
+            "Android Browser Search Terms",
+            "Android Browser Web History",
+            "com.android.browser"
+        ]
+    },
+    {
         "appName": "Android Calls",
         "icon": "",
         "websiteUrl": "",
@@ -310,7 +328,26 @@
         "dateUpdated": "",
         "alternateNames": [
             "Android Call Logs",
-            "Android Call Logs (UFED Agent)"
+            "Android Call Logs (UFED Agent)",
+            "com.android.providers.blockednumber",
+            "com.android.providers.telephony"
+        ]
+    },
+    {
+        "appName": "Android Calendar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Calendar Events (UFED Agent)",
+            "Calendar Events",
+            "com.android.providers.calendar"
         ]
     },
     {
@@ -325,7 +362,8 @@
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
         "alternateNames": [
-            "Android Contacts (UFED Agent)"
+            "Android Contacts (UFED Agent)",
+            "com.android.providers.contacts"
         ]
     },
     {
@@ -487,7 +525,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": [
-            "Email-iCloud (iOS)"
+            "Email-iCloud (iOS)",
+            "Mail"
         ]
     },
     {
@@ -677,7 +716,9 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Automatic Call Recorder Pro"
+        ]
     },
     {
         "appName": "AWS Wickr",
@@ -1475,7 +1516,9 @@
         "notes": "",
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "com.duolingo.DuolingoMobile"
+        ]
     },
     {
         "appName": "Dust - Private Messenger",
@@ -1488,7 +1531,9 @@
         "notes": "",
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Dust - a safer place to text"
+        ]
     },
     {
         "appName": "easyJet",
@@ -2311,7 +2356,8 @@
             "Gmail/Inbox",
             "Google Mail",
             "Android Gmail Conversations",
-            "Gmail Emails"
+            "Gmail Emails",
+            "Gmail - Email by Google"
         ]
     },
     {
@@ -2470,7 +2516,8 @@
         "dateUpdated": "2023-11-02",
         "alternateNames": [
             "Google+ Chat",
-            "com.google.GooglePlus"
+            "com.google.GooglePlus",
+            "com.htc.sense.socialnetwork.googleplus"
         ]
     },
     {
@@ -3471,7 +3518,8 @@
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
         "alternateNames": [
-            "com.mapmyfitnessplus.android2"
+            "com.mapmyfitnessplus.android2",
+            "Map My Fitness by Under Armour"
         ]
     },
     {
@@ -3486,7 +3534,8 @@
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
         "alternateNames": [
-            "com.mapmyrideplus.android2"
+            "com.mapmyrideplus.android2",
+            "Map My Ride by Under Armour"
         ]
     },
     {
@@ -3501,7 +3550,8 @@
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
         "alternateNames": [
-            "com.mapmyrideplus.android2"
+            "com.mapmyrideplus.android2",
+            "Map My Run by Under Armour"
         ]
     },
     {
@@ -3516,7 +3566,8 @@
         "dateAdded": "2023-11-02",
         "dateUpdated": "",
         "alternateNames": [
-            "com.mapmyrideplus.android2"
+            "com.mapmyrideplus.android2",
+            "Map My Walk by Under Armour"
         ]
     },
     {
@@ -6344,7 +6395,8 @@
             "X",
             "Twitter Direct Messages",
             "Twitter Tweets",
-            "Twitter Users"
+            "Twitter Users",
+            "com.htc.sense.socialnetwork.twitter"
         ]
     },
     {
