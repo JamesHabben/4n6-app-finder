@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Signal",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/9",
+            "value": "Signal Messages - iOS"
+        }
+    ]
+}
