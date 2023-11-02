@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Snapchat",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/24",
+            "value": "Snapchat Stories - iOS"
+        }
+    ]
+}
