@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Yahoo! Messenger",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Yahoo! Messenger Chat"
+        }
+    ]
+}
