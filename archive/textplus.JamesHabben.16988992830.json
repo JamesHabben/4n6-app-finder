@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "TextPlus",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/6",
+            "value": "textPlus: Text Message + Call"
+        }
+    ]
+}
