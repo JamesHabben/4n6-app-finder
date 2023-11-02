@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Dolphin Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/11",
+            "value": "RAPS.appstore.com.dolphin.browser.iphone"
+        }
+    ]
+}
