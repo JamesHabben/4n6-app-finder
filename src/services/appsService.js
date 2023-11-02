@@ -217,8 +217,10 @@ export const appsService = () => {
         const templateRecord = apps[0];
         const newRecord = {};
         const keys = Object.keys(templateRecord);
+        const excludedKeys = new Set(["artifactCount", "mappedTools"]);
+        const filteredKeys = keys.filter(key => !excludedKeys.has(key));
 
-        keys.forEach(key => {
+        filteredKeys.forEach(key => {
             if (Array.isArray(templateRecord[key])) {
                 newRecord[key] = [];
             } else {
