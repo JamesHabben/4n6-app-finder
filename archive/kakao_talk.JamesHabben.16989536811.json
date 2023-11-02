@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Kakao Talk",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/8",
+            "value": "KakaoTalk Pictures"
+        }
+    ]
+}
