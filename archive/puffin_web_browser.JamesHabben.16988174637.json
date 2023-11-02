@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Puffin Web Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "Puffin Academy"
+        }
+    ]
+}
