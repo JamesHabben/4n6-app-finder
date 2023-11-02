@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "ICQ",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "ICQ 10 Messages"
+        }
+    ]
+}
