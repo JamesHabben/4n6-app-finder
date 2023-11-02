@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "ooVoo",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/4",
+            "value": "com.oovoo.iphone.free"
+        }
+    ]
+}
