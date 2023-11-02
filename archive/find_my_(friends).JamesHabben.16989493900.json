@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Find My (Friends)",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/3",
+            "value": "Find My Locations"
+        }
+    ]
+}
