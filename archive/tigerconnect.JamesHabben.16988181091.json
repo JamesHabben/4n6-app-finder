@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "TigerConnect",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "TigerConnect - Clinical Soluti"
+        }
+    ]
+}
