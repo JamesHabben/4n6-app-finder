@@ -373,9 +373,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
-            "Calendar"
+            "Calendar",
+            "calendarAll"
         ]
     },
     {
@@ -442,6 +443,8 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
         "alternateNames": [
+            "sms",
+            "messageRetention",
             "Messenger"
         ]
     },
@@ -480,8 +483,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "photosMigration",
+            "photosMetadata"
+        ]
     },
     {
         "appName": "Apple Reminders",
@@ -2073,7 +2079,9 @@
             "Chrome Web History",
             "Chrome Web Visits",
             "chromeBookmarks",
-            "Google Chrome: Fast & Secure"
+            "Google Chrome: Fast & Secure",
+            "chromeAutofill",
+            "chrome"
         ]
     },
     {
