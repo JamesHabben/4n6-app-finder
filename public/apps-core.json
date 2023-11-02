@@ -184,8 +184,10 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-11-01",
-        "dateUpdated": "",
-        "alternateNames": [],
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "Alipay - Simplify Your Life"
+        ],
         "artifactCount": "",
         "mappedTools": []
     },
@@ -226,9 +228,14 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-10-31",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
-            "Amazon Alexa Audio Activity"
+            "Amazon Alexa Audio Activity",
+            "Amazon Alexa Web Resource",
+            "Amazon Alexa User",
+            "Amazon Alexa Tasks",
+            "Amazon Alexa Device Information",
+            "Amazon Alexa Cached Audio"
         ],
         "artifactCount": "",
         "mappedTools": []
@@ -433,8 +440,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "Messenger"
+        ]
     },
     {
         "appName": "Apple Notes",
@@ -482,9 +491,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
-            "reminders"
+            "reminders",
+            "Reminder"
         ]
     },
     {
@@ -510,9 +520,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-22",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
-            "weatherAppLocations"
+            "weatherAppLocations",
+            "Weather"
         ]
     },
     {
@@ -1376,6 +1387,36 @@
             "DuckDuckGo Cookies",
             "DuckDuckGo Private Browser"
         ]
+    },
+    {
+        "appName": "Duolingo: Language Lessons",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
+        "appName": "Dust - Private Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "easyJet",
@@ -2242,6 +2283,36 @@
         ]
     },
     {
+        "appName": "Google Sheets",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
+        "appName": "Google Slides",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "Google Talk",
         "icon": "google-talk.png",
         "websiteUrl": "",
@@ -2359,6 +2430,21 @@
         ]
     },
     {
+        "appName": "happn - Dating App",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "Here Maps",
         "icon": "here-maps.webp",
         "websiteUrl": "",
@@ -2391,8 +2477,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "com.smartanuj.hideitpro"
+        ]
     },
     {
         "appName": "Hide My Email",
@@ -2474,6 +2562,21 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "Hotels.com: Travel Booking",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "HouseParty",
@@ -2812,9 +2915,10 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-10-31",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
-            "Jott Groups"
+            "Jott Groups",
+            "Jott Messages"
         ],
         "artifactCount": "",
         "mappedTools": []
@@ -3013,6 +3117,21 @@
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
         "alternateNames": []
+    },
+    {
+        "appName": "LastPass Password Manager",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "letgo",
@@ -3227,6 +3346,40 @@
         "alternateNames": [
             "Mandarin"
         ]
+    },
+    {
+        "appName": "Map My Fitness by Under Armor",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "com.mapmyfitnessplus.android2"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
+        "appName": "Map My Ride by Under Armor",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "com.mapmyrideplus.android2"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "Marco Polo",
@@ -4185,7 +4338,8 @@
             "Private Photo Vault Media",
             "Private Photo Vault Albums",
             "com.enchantedcloud.photovaultpro",
-            "com.enchantedcloud.photovault"
+            "com.enchantedcloud.photovault",
+            "Private Photo Vault - Keepsafe"
         ]
     },
     {
@@ -4527,8 +4681,10 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-10-31",
-        "dateUpdated": "",
-        "alternateNames": [],
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "Samsung Text Message Logs"
+        ],
         "artifactCount": "",
         "mappedTools": []
     },
@@ -4613,6 +4769,21 @@
         "alternateNames": []
     },
     {
+        "appName": "Shazam: Music Discovery",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "Signal",
         "icon": "signal.webp",
         "websiteUrl": "",
@@ -4645,6 +4816,23 @@
         "alternateNames": [
             "Silent Phone - Secure Calling"
         ]
+    },
+    {
+        "appName": "SIM Card",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "SIM Card ICCID"
+        ],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "Skout",
@@ -5066,10 +5254,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.textmeinc.textme&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
             "Text Me!",
-            "Text Me"
+            "Text Me",
+            "Text Me: Second Phone Number"
         ]
     },
     {
@@ -5127,14 +5316,15 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gogii.textplus&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-28",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
             "com.gogii.textplus",
             "TextPlus Activity",
             "TextPlus Calls",
             "TextPlus Logged In Account",
             "TextPlus Messages",
-            "TextPlus Users"
+            "TextPlus Users",
+            "textPlus: Text Message + Call"
         ]
     },
     {
@@ -5349,7 +5539,8 @@
             "Truecaller: Caller ID & Block",
             "com.truesoftware.TrueCallerOther",
             "com.truecaller.phoneapp",
-            "com.truecaller.messenger"
+            "com.truecaller.messenger",
+            "Truecaller"
         ]
     },
     {
@@ -5368,6 +5559,21 @@
             "Tumblr—Fandom, Art, Chaos",
             "com.tumblra"
         ]
+    },
+    {
+        "appName": "TunnelBear VPN",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "TweetDeck",
@@ -5446,6 +5652,21 @@
             "Uber Trips",
             "Uber - Request a ride"
         ]
+    },
+    {
+        "appName": "Uber Eats: Food Delivery",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
     },
     {
         "appName": "UC Browser",
@@ -5653,8 +5874,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "Vkontakte"
+        ]
     },
     {
         "appName": "VLC Media Player",
@@ -5909,6 +6132,21 @@
         ]
     },
     {
+        "appName": "Wunderlist: To-Do List & Tasks",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [],
+        "artifactCount": "",
+        "mappedTools": []
+    },
+    {
         "appName": "X / Twitter",
         "icon": "x-twitter.webp",
         "websiteUrl": "",
@@ -5992,14 +6230,15 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.mail&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-30",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
             "Yahoo!Mail",
             "Yahoo Mail - Organized Email",
             "Yahoo Mail",
             "Android Yahoo Mail Attachments",
             "Android Yahoo Mail Emails",
-            "Android Yahoo Mail User Accounts"
+            "Android Yahoo Mail User Accounts",
+            "Yahoo Mail – Organized Email"
         ]
     },
     {
@@ -6024,10 +6263,11 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-10-31",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
             "Yandex Bookmarks",
-            "Yandex Autofill"
+            "Yandex Autofill",
+            "Yandex Start"
         ]
     },
     {
@@ -6185,8 +6425,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-31",
-        "dateUpdated": "",
-        "alternateNames": [],
+        "dateUpdated": "2023-11-02",
+        "alternateNames": [
+            "Yubo : Make new friends"
+        ],
         "artifactCount": "",
         "mappedTools": []
     },
@@ -6289,9 +6531,10 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zoho.people&hl=en",
         "notes": "",
         "dateAdded": "2023-10-25",
-        "dateUpdated": "2023-10-25",
+        "dateUpdated": "2023-11-02",
         "alternateNames": [
-            "Zoho People - HR Management"
+            "Zoho People - HR Management",
+            "Zoho People - HR management"
         ]
     },
     {
