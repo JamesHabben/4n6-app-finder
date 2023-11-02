@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "TextNow",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/5",
+            "value": "TextNow: Call + Text Unlimited"
+        }
+    ]
+}
