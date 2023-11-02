@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Alipay",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "https://apps.apple.com/us/app/alipay-simplify-your-life/id333206289",
+                "googlePlayUrl": "",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2023-11-01",
+                "dateUpdated": "",
+                "alternateNames": [],
+                "artifactCount": "",
+                "mappedTools": []
+            }
+        }
+    ]
+}
