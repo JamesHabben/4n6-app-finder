@@ -1,4 +1,5 @@
 import { useState, useContext, useEffect } from "react";
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Button, Modal, Input, Typography } from 'antd';
 //import { VariableSizeList as List } from 'react-window';
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
@@ -28,6 +29,8 @@ function ToolsArtifactsListContent() {
     const [isPerformingUpdate, setIsPerformingUpdate] = useState(false);
     const [isTermModalVisible, setIsTermModalVisible] = useState(false);
     const [canCloseTermModal, SetCanCloseTermModal] = useState(false);
+    const navigate = useNavigate();
+    const location = useLocation();
 
     
     useEffect(() => {
@@ -41,17 +44,39 @@ function ToolsArtifactsListContent() {
     }, [selectedArtifact]);
 
     useEffect(() => {
+      const params = new URLSearchParams(location.search);
+      const urlTool = decodeURIComponent(params.get('tool'));
+      const urlUnmappedOnly = decodeURIComponent(params.get('unmappedOnly'));
+    
+      // Validate the URL tool against the list of available tools
+      const toolFromUrl = tools.find(t => t.toolShortName === urlTool);
+    
       if (selectedTool) {
-        //console.log("list ", selectedTool.artifactList)
+        // Construct the base URL
+        let newUrl = `?tool=${encodeURIComponent(selectedTool.toolShortName)}`;
+    
         if (showOnlyHighlighted) {
-            const filteredList = selectedTool.artifactList.filter(artifact => shouldHighlight(artifact));
-            setDisplayedArtifactList(filteredList);
+          newUrl += '&unmappedOnly=1';
+          const filteredList = selectedTool.artifactList.filter(artifact => shouldHighlight(artifact));
+          setDisplayedArtifactList(filteredList);
         } else {
-            setDisplayedArtifactList(selectedTool.artifactList);
+          setDisplayedArtifactList(selectedTool.artifactList);
         }
-      }
-    }, [showOnlyHighlighted, selectedTool]);
-  
+    
+        // Update the URL, if necessary
+        if (location.search !== newUrl) {
+          navigate(newUrl);
+        }
+      } else if (toolFromUrl) {
+        // URL has a valid tool
+        setSelectedTool(toolFromUrl);
+        setShowOnlyHighlighted(urlUnmappedOnly === '1');
+      } //else 
+      // if (urlTool && !toolFromUrl) {
+      //   navigate(navigate.path)
+      // }
+    }, [showOnlyHighlighted, selectedTool, tools, location.search, navigate]);
+
     useEffect(() => {
       if (apps) {
           //console.log("apps", apps)

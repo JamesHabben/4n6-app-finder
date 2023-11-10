@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useMemo, useRef, useContext, useCallback  } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { Input, Card, Row, Col, Modal, AutoComplete,    } from 'antd';
 import { CloseCircleOutlined, LoadingOutlined } from '@ant-design/icons';
 import { debounce } from 'lodash';
@@ -19,10 +20,35 @@ function PageSearch() {
   const [highlightedIndex, setHighlightedIndex] = useState(0);
   const [suggestions, setSuggestions] = useState([]);
   const inputRef = useRef(null);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const searchQuery = params.get('search');
+    const appName = params.get('app');
+  
+    if (searchQuery) {
+      const safeSearchQuery = decodeURIComponent(searchQuery).replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      if (safeSearchQuery !== searchTerm) {
+        setSearchTerm(safeSearchQuery);
+        debouncedFilterAppsRef.current(searchTerm);
+      }
+    }
+  
+    if (appName) {
+      const app = apps.find(a => a.name === decodeURIComponent(appName));
+      if (app) {
+        setSelectedApp(app);
+        setIsModalVisible(true);
+      }
+    }
+  }, [location, apps]);
 
   const handleAppClick = (app) => {
     setSelectedApp(app);
     setIsModalVisible(true);
+    navigate(`/?app=${encodeURIComponent(app.appName)}`);
   };
 
   const handleKeyDown = (e) => {
@@ -108,30 +134,33 @@ function PageSearch() {
     debouncedFilterAppsRef.current = debounce((search) => {
       const { operator, property, value } = parseSearchTerms(search);
   
-    const filtered = apps.filter(app => {
-      // Initial filter based on '-no:' operator
-      let matchesOperator = true;
-      if (operator === '-no:' && property) {
-        matchesOperator = !app[property];  // Check if the property value is falsy
-      }
-  
-      // Further filter the reduced set based on the search term
-      if (matchesOperator && value) {
-        const lowerValue = value.toLowerCase();
-        return (
-          app.appName.toLowerCase().includes(lowerValue) ||
-          (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
-        );
-      }
-      
-      return matchesOperator;  // If there's no value, return the result of the operator check
-    });
+      const filtered = apps.filter(app => {
+        // Initial filter based on '-no:' operator
+        let matchesOperator = true;
+        if (operator === '-no:' && property) {
+          matchesOperator = !app[property];  // Check if the property value is falsy
+        }
     
-    setFilteredApps(filtered);
-    setIsFiltering(false); // Set filtering to false once done
-    window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
-    }, 300);
-  }, [apps]);
+        // Further filter the reduced set based on the search term
+        if (matchesOperator && value) {
+          const lowerValue = value.toLowerCase();
+          return (
+            app.appName.toLowerCase().includes(lowerValue) ||
+            (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
+          );
+        }
+        
+        return matchesOperator;  // If there's no value, return the result of the operator check
+      });
+      
+      setFilteredApps(filtered);
+      setIsFiltering(false); // Set filtering to false once done
+      //if (search != searchTerm && search != '') {
+        navigate(`/?search=${encodeURIComponent(search)}`);
+      //}
+      window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
+    }, 500);
+  }, [ apps]);
 
   // const filteredApps = useMemo(() => {
   const filteredAppsold = () => {
@@ -163,6 +192,7 @@ function PageSearch() {
   
   const clearSearch = () => {
     setSearchTerm('');
+    navigate(`/`);
   };
   
   const suffix = (
@@ -183,6 +213,15 @@ function PageSearch() {
     }
   }, [searchTerm, debouncedFilterAppsRef]);
 
+  const closeAppModal = () => {
+    setIsModalVisible(false);
+  
+    if (searchTerm) {
+      navigate(`/?search=${encodeURIComponent(searchTerm)}`);
+    } else {
+      navigate('/');
+    }
+  };
   
   return (
     <div style={{ padding: '5vh 1rem' }}>
@@ -219,8 +258,9 @@ function PageSearch() {
             `${filteredApps.length} matching apps`
           ) : (
             <span>
-              {`${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
-              <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>!
+              {`${apps.length} apps and `}
+              <a href="/admin/tools">{`${tools.length} forensic tools`}</a> in the database. You can <a 
+               href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>!
             </span>
           )}
         </div>
@@ -242,7 +282,7 @@ function PageSearch() {
       <Modal
         title="App Details"
         open={isModalVisible}
-        onCancel={() => setIsModalVisible(false)}
+        onCancel={() => closeAppModal()}
         footer={null}
         width={"80%"}
       >

@@ -84,7 +84,7 @@ function AppDetails({ app, tools }) {
             {}
             <div className='appIcon'>
                 <img className='appIcon'
-                    src={app.icon ? `/app-icons/${app.icon}` : '/logo192.png'}
+                    src={app.icon ? `/app-icons/${app.icon}` : '/images/logo192.png'}
                     alt={`${app.appName} App Icon`}
                     style={{ maxWidth: '200px', maxHeight: '200px' }}
                 />
@@ -111,7 +111,7 @@ function AppDetails({ app, tools }) {
                 <div key={index} className="tool-card" ref={setToolRef(toolApp.toolShortName)} >
                     
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start'  }}>
-                        <img src={toolApp.toolIcon} width={50} height={50}  style={{ marginRight: '10px' }} ></img>
+                        <img src={`/images/${toolApp.toolIcon}`} width={50} height={50}  style={{ marginRight: '10px' }} ></img>
                         <h3 style={{ marginRight: '10px' }}>{toolApp.toolLongName} </h3>
                         (<a href={toolApp.website}>{toolApp.toolWebsite}</a>)
                     </div>

@@ -45,7 +45,7 @@ function App() {
     }
 
     if (heapId) {
-      console.log('Heap ID:', heapId);
+      //console.log('Heap ID:', heapId);
       loadHeap(heapId);
     }
   }, []);
@@ -94,7 +94,7 @@ function AppContent() {
       
       <div className="app-container">
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0rem' }}>
-          <img src="/4af-logo.png" alt="Logo" width={'200px'} height={'200px'} 
+          <img src="/images/4af-logo.png" alt="Logo" width={'200px'} height={'200px'} 
             style={{ position: 'absolute', left: '0px', top: '0px', zIndex:'-1' }} />
           <h1>4n6 App Finder</h1>
         </header>
@@ -105,7 +105,7 @@ function AppContent() {
           <li className={activeTab === "/dashboard" ? "active" : ""}>
             <Link to="/dashboard">Dashboard</Link>
           </li>
-          <li className={activeTab === "/admin" ? "active" : ""}>
+          <li className={activeTab.startsWith("/admin") ? "active" : ""}>
             <Link to="/admin">Admin</Link>
           </li>
         </ul>
