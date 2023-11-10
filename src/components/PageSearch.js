@@ -258,8 +258,9 @@ function PageSearch() {
             `${filteredApps.length} matching apps`
           ) : (
             <span>
-              {`${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
-              <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>!
+              {`${apps.length} apps and `}
+              <a href="/admin/tools">{`${tools.length} forensic tools`}</a> in the database. You can <a 
+               href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>!
             </span>
           )}
         </div>
