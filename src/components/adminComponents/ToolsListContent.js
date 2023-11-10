@@ -10,10 +10,10 @@ function ToolsListContent() {
           <div key={tool.toolShortName} className="tool-card">
             <h2>
               <img
-                src={tool.icon || 'logo192.png'} 
+                src={`/images/${tool.icon || 'logo192.png'}`}
                 alt={`${tool.toolLongName} Icon`}
-                width="50"
-                height="50"
+                width="100"
+                height="100"
                 style={{ marginRight: '10px' }}
               />
               {tool.toolLongName}

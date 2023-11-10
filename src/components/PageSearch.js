@@ -29,13 +29,14 @@ function PageSearch() {
     const appName = params.get('app');
   
     if (searchQuery) {
-      // Defang the input to prevent code injection
       const safeSearchQuery = decodeURIComponent(searchQuery).replace(/</g, "&lt;").replace(/>/g, "&gt;");
-      setSearchTerm(safeSearchQuery);
+      if (safeSearchQuery !== searchTerm) {
+        setSearchTerm(safeSearchQuery);
+        debouncedFilterAppsRef.current(searchTerm);
+      }
     }
   
     if (appName) {
-      // Find the app by name and open modal if it exists
       const app = apps.find(a => a.name === decodeURIComponent(appName));
       if (app) {
         setSelectedApp(app);
@@ -154,10 +155,12 @@ function PageSearch() {
       
       setFilteredApps(filtered);
       setIsFiltering(false); // Set filtering to false once done
-      navigate(`/?search=${encodeURIComponent(search)}`);
+      //if (search != searchTerm && search != '') {
+        navigate(`/?search=${encodeURIComponent(search)}`);
+      //}
       window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
-    }, 300);
-  }, [apps]);
+    }, 500);
+  }, [ apps]);
 
   // const filteredApps = useMemo(() => {
   const filteredAppsold = () => {

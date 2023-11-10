@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect  } from 'react';
+import { Link, Outlet } from 'react-router-dom';
 import { AuthContext  } from 'AuthContext';
 import { DataContext } from 'services/DataContext';
 //import { AuthLogin } from './AuthLogin';
@@ -17,10 +18,10 @@ function PageAdmin() {
   const { authState} = useContext(AuthContext);
 
   const items = [
-    { id: 1, name: 'Tools List', contentComponent: ToolsListContent },
-    { id: 2, name: 'Core Apps List', contentComponent: AppsListContent },
-    { id: 3, name: 'Tools Artifacts List', contentComponent: ToolsArtifactsListContent },
-    { id: 4, name: '[Priv] GitHub Functions', contentComponent: GitHubFunctionsContent, needPriv: true },
+    { path: 'tools', name: 'Tools List' },
+    { path: 'apps', name: 'Core Apps List' },
+    { path: 'artifacts', name: 'Tools Artifacts List' },
+    { path: 'github', name: '[Priv] GitHub Functions', needPriv: true },
   ];
 
   const filteredItems = items.filter(item => {
@@ -45,15 +46,8 @@ function PageAdmin() {
                 <h2>Pages</h2>
                 <ul>
                     {filteredItems.map((item) => (
-                        <li
-                            key={item.id}
-                            style={{
-                                cursor: 'pointer',
-                                textDecoration: selectedItem === item ? 'underline' : 'none',
-                            }}
-                            onClick={() => onItemClick(item)}
-                        >
-                            {item.name}
+                        <li key={item.path}>
+                            <Link to={`/admin/${item.path}`}>{item.name}</Link>
                         </li>
                     ))}
                 </ul>
@@ -61,16 +55,7 @@ function PageAdmin() {
 
             {/* Right column for content */}
             <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '1rem' }}>
-                {selectedItem ? (
-                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column' }}> {/* Set flex: 1 here */}
-                        <h2>{selectedItem.name}</h2>
-                        {selectedItem.contentComponent && (
-                            <selectedItem.contentComponent />
-                        )}
-                    </div>
-                ) : (
-                    <p>Select an item to view its content.</p>
-                )}
+                <Outlet />
             </div>
         </div>
     </div>
