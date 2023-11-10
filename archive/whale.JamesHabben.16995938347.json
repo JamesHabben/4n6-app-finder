@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Whale",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2023-11-10",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "Whale Web Visits"
+                ]
+            }
+        }
+    ]
+}
