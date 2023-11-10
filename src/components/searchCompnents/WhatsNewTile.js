@@ -20,6 +20,7 @@ function WhatsNewTile() {
   }, []);
 
   const showModal = () => {
+    window.heap.track('Whats New More', { })
     setIsModalVisible(true);
   };
 

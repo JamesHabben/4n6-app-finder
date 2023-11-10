@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useMemo, useRef, useContext  } from 'react';
-import { Input, Card, Row, Col, Modal, AutoComplete  } from 'antd';
-import { CloseCircleOutlined } from '@ant-design/icons';
+import React, { useState, useEffect, useMemo, useRef, useContext, useCallback  } from 'react';
+import { Input, Card, Row, Col, Modal, AutoComplete,    } from 'antd';
+import { CloseCircleOutlined, LoadingOutlined } from '@ant-design/icons';
+import { debounce } from 'lodash';
 
 //import { useDataFetching } from 'services/useDataFetching';
 import { DataContext } from 'services/DataContext';
@@ -63,9 +64,6 @@ function PageSearch() {
     }
   }
 
-  useEffect(() => {
-    setSuggestionValues();
-  }, [searchTerm, apps]);
     
   function parseSearchTerms(term) {
     const result = {
@@ -102,9 +100,42 @@ function PageSearch() {
     return result;
   }
   
+  const [filteredApps, setFilteredApps] = useState([]);
+  const [isFiltering, setIsFiltering] = useState(false); // New state to track if we are currently filtering
+  const debouncedFilterAppsRef = useRef();
 
-  const filteredApps = useMemo(() => {
-    if (!searchTerm) return [];
+  useEffect(() => {
+    debouncedFilterAppsRef.current = debounce((search) => {
+      const { operator, property, value } = parseSearchTerms(search);
+  
+    const filtered = apps.filter(app => {
+      // Initial filter based on '-no:' operator
+      let matchesOperator = true;
+      if (operator === '-no:' && property) {
+        matchesOperator = !app[property];  // Check if the property value is falsy
+      }
+  
+      // Further filter the reduced set based on the search term
+      if (matchesOperator && value) {
+        const lowerValue = value.toLowerCase();
+        return (
+          app.appName.toLowerCase().includes(lowerValue) ||
+          (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
+        );
+      }
+      
+      return matchesOperator;  // If there's no value, return the result of the operator check
+    });
+    
+    setFilteredApps(filtered);
+    setIsFiltering(false); // Set filtering to false once done
+    window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
+    }, 300);
+  }, [apps]);
+
+  // const filteredApps = useMemo(() => {
+  const filteredAppsold = () => {
+      if (!searchTerm) return [];
   
     const { operator, property, value } = parseSearchTerms(searchTerm);
   
@@ -126,7 +157,7 @@ function PageSearch() {
   
       return matchesOperator;  // If there's no value, return the result of the operator check
     });
-  }, [searchTerm, apps]);
+  }; // () [searchTerm, apps];
   
     
   
@@ -140,6 +171,18 @@ function PageSearch() {
       onClick={clearSearch}
     />
   );
+
+  useEffect(() => {
+    setSuggestionValues();
+    if (searchTerm) {
+      setIsFiltering(true);
+      debouncedFilterAppsRef.current(searchTerm);
+    } else {
+      setIsFiltering(false);
+      setFilteredApps([]);
+    }
+  }, [searchTerm, debouncedFilterAppsRef]);
+
   
   return (
     <div style={{ padding: '5vh 1rem' }}>
@@ -168,10 +211,18 @@ function PageSearch() {
           />
         </AutoComplete>
         <div className='searchCount'>
-          {searchTerm
-            ? `${filteredApps.length} matching apps`
-            : `${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
-            {!searchTerm && <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>}!
+          {isFiltering ? (
+            <span>
+              <LoadingOutlined /> Searching...
+            </span>
+          ) : searchTerm ? (
+            `${filteredApps.length} matching apps`
+          ) : (
+            <span>
+              {`${apps.length} apps and ${tools.length} forensic tools in the database. You can `}
+              <a href="https://github.com/JamesHabben/4n6-app-finder" target="_blank" rel="noopener noreferrer">contribute</a>!
+            </span>
+          )}
         </div>
         {!searchTerm && (
           <>
