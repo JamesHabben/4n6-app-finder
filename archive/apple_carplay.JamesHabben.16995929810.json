@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Apple CarPlay",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "biomeCarplayisconnected"
+        }
+    ]
+}
