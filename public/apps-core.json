@@ -316,6 +316,23 @@
         ]
     },
     {
+        "appName": "Android Calendar",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-02",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Calendar Events (UFED Agent)",
+            "Calendar Events",
+            "com.android.providers.calendar"
+        ]
+    },
+    {
         "appName": "Android Calls",
         "icon": "",
         "websiteUrl": "",
@@ -331,23 +348,6 @@
             "Android Call Logs (UFED Agent)",
             "com.android.providers.blockednumber",
             "com.android.providers.telephony"
-        ]
-    },
-    {
-        "appName": "Android Calendar",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "activeOnAppleStore": "",
-        "activeOnPlayStore": "",
-        "notes": "",
-        "dateAdded": "2023-11-02",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Calendar Events (UFED Agent)",
-            "Calendar Events",
-            "com.android.providers.calendar"
         ]
     },
     {
@@ -477,9 +477,10 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
-            "CarPlay Connected Cars"
+            "CarPlay Connected Cars",
+            "biomeCarplayisconnected"
         ]
     },
     {
@@ -537,9 +538,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-11-02",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
-            "Maps"
+            "Maps",
+            "appleMapsApplication"
         ]
     },
     {
@@ -580,9 +582,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
-            "Calls"
+            "Calls",
+            "callHistor"
         ]
     },
     {
@@ -3516,10 +3519,11 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
             "com.mapmyfitnessplus.android2",
-            "Map My Fitness by Under Armour"
+            "Map My Fitness by Under Armour",
+            "Q5AWL8WCY6.iMapMyFitnessPlus"
         ]
     },
     {
@@ -3532,10 +3536,11 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
             "com.mapmyrideplus.android2",
-            "Map My Ride by Under Armour"
+            "Map My Ride by Under Armour",
+            "Q5AWL8WCY6.iMapMyRidePlus"
         ]
     },
     {
@@ -3548,10 +3553,11 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
             "com.mapmyrideplus.android2",
-            "Map My Run by Under Armour"
+            "Map My Run by Under Armour",
+            "Q5AWL8WCY6.iMapMyRunPlus"
         ]
     },
     {
@@ -3564,10 +3570,12 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
             "com.mapmyrideplus.android2",
-            "Map My Walk by Under Armour"
+            "Map My Walk by Under Armour",
+            "Walk with Map My Walk",
+            "Q5AWL8WCY6.iMapMyWalk"
         ]
     },
     {
@@ -5149,6 +5157,21 @@
         ]
     },
     {
+        "appName": "Sleipnir",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-10",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Sleipnir Web History"
+        ]
+    },
+    {
         "appName": "Smart Voice Recorder",
         "icon": "",
         "websiteUrl": "",
@@ -5803,8 +5826,10 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-10",
+        "alternateNames": [
+            "TunnelBear: Secure VPN & Wifi"
+        ]
     },
     {
         "appName": "TweetDeck",
@@ -6249,6 +6274,21 @@
         ]
     },
     {
+        "appName": "Whale",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-10",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Whale Web Visits"
+        ]
+    },
+    {
         "appName": "WhatsApp Messenger",
         "icon": "whatsapp.webp",
         "websiteUrl": "",
@@ -6674,9 +6714,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-31",
-        "dateUpdated": "2023-11-02",
+        "dateUpdated": "2023-11-10",
         "alternateNames": [
-            "Yubo : Make new friends"
+            "Yubo : Make new friends",
+            "Yubo: Make new friends"
         ]
     },
     {
