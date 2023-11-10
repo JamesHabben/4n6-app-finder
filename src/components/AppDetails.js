@@ -67,7 +67,7 @@ function AppDetails({ app, tools }) {
             return value.map((tool, index) => (
                 <img
                 key={index}
-                src={tool.icon}
+                src={`/images/${tool.icon}`}
                 alt={`${tool.shortName} icon`}
                 title={`${tool.longName} icon`}
                 style={{ width: '50px', height: '50px', marginRight: '10px', cursor: 'pointer' }}
