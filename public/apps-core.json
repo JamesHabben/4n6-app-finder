@@ -287,7 +287,7 @@
         ]
     },
     {
-        "appName": "American Airlines",
+        "appName": "American Airlines (AA)",
         "icon": "american-airlines.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
@@ -295,11 +295,13 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-24",
-        "alternateNames": []
+        "alternateNames": [
+            "American Airlines"
+        ]
     },
     {
         "appName": "Android Browser",
-        "icon": "",
+        "icon": "android-browser.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -317,7 +319,7 @@
     },
     {
         "appName": "Android Calendar",
-        "icon": "",
+        "icon": "android-calendar.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -334,7 +336,7 @@
     },
     {
         "appName": "Android Calls",
-        "icon": "",
+        "icon": "android-calls.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -352,7 +354,7 @@
     },
     {
         "appName": "Android Contacts",
-        "icon": "",
+        "icon": "android-contacts.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -368,7 +370,7 @@
     },
     {
         "appName": "Android Messages",
-        "icon": "",
+        "icon": "android-messages.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -469,7 +471,7 @@
     },
     {
         "appName": "Apple CarPlay",
-        "icon": "",
+        "icon": "apple-carplay.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -1298,7 +1300,7 @@
     },
     {
         "appName": "Confide",
-        "icon": "",
+        "icon": "confide.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -1982,26 +1984,18 @@
         ]
     },
     {
-        "appName": "Freeflight 6",
+        "appName": "Parrot Freeflight",
         "icon": "",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.parrot.freeflight3",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
-        "alternateNames": []
-    },
-    {
-        "appName": "FreeFlight Pro",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "Freeflight 6",
+            "FreeFlight Pro"
+        ]
     },
     {
         "appName": "Frim",
@@ -2049,10 +2043,10 @@
     },
     {
         "appName": "Garmin Connect",
-        "icon": "",
+        "icon": "garmin-connect.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
@@ -2663,17 +2657,7 @@
         "dateUpdated": "",
         "alternateNames": []
     },
-    {
-        "appName": "hike messenger",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
-    },
+
     {
         "appName": "Hike News & Content",
         "icon": "hike-news.webp",
@@ -2683,7 +2667,9 @@
         "notes": "",
         "dateAdded": "2023-10-31",
         "dateUpdated": "",
-        "alternateNames": []
+        "alternateNames": [
+            "hike messenger"
+        ]
     },
     {
         "appName": "HipChat",
@@ -3232,12 +3218,12 @@
     },
     {
         "appName": "Kiwi Browser",
-        "icon": "",
+        "icon": "kiwi-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kiwibrowser.browser",
         "activeOnAppleStore": "",
-        "activeOnPlayStore": "",
+        "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-10-31",
         "dateUpdated": "2023-11-02",
@@ -3268,9 +3254,9 @@
     },
     {
         "appName": "KYMS - Keep your media safe",
-        "icon": "",
+        "icon": "kyms.jpg",
         "websiteUrl": "",
-        "appleStoreUrl": "",
+        "appleStoreUrl": "https://apps.apple.com/us/app/secret-photos-kyms/id462182115",
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
@@ -3724,10 +3710,10 @@
     },
     {
         "appName": "Mi Browser",
-        "icon": "",
+        "icon": "mi-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mi.globalbrowser",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-31",
@@ -4501,10 +4487,10 @@
     },
     {
         "appName": "Pokemon Go",
-        "icon": "",
+        "icon": "pokemon-go.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
@@ -4595,10 +4581,10 @@
     },
     {
         "appName": "Puffin Web Browser",
-        "icon": "",
+        "icon": "puffin-browser.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cloudmosa.puffinFree",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
@@ -4808,7 +4794,7 @@
     },
     {
         "appName": "Samsung Customization Service",
-        "icon": "",
+        "icon": "samsung-customization.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -4819,10 +4805,10 @@
     },
     {
         "appName": "Samsung Email",
-        "icon": "",
+        "icon": "samsung-email.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.samsung.android.email.provider",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-31",
@@ -4847,7 +4833,7 @@
     },
     {
         "appName": "Samsung Internet Browser",
-        "icon": "",
+        "icon": "samsung-internet-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -4886,7 +4872,7 @@
     },
     {
         "appName": "Samsung Memo",
-        "icon": "",
+        "icon": "samsung-memo.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -4899,7 +4885,7 @@
     },
     {
         "appName": "Samsung Messages",
-        "icon": "",
+        "icon": "samsung-messages.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -4914,10 +4900,10 @@
     },
     {
         "appName": "Samsung Notes",
-        "icon": "",
+        "icon": "samsung-notes.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details/Samsung_Notes?id=com.samsung.android.app.notes",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "",
@@ -5058,10 +5044,10 @@
     },
     {
         "appName": "Skout",
-        "icon": "",
+        "icon": "skout.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.skout.android",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
@@ -5139,6 +5125,8 @@
         "websiteUrl": "",
         "appleStoreUrl": "https://apps.apple.com/us/app/slack/id618783545",
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Slack&hl=en",
+        "activeOnAppleStore": "true",
+        "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-31",
@@ -5158,12 +5146,12 @@
     },
     {
         "appName": "Sleipnir",
-        "icon": "",
+        "icon": "sleipnir-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
-        "activeOnAppleStore": "",
-        "activeOnPlayStore": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=jp.co.fenrir.android.sleipnir&hl=en",
+        "activeOnAppleStore": "false",
+        "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-10",
         "dateUpdated": "",
@@ -5433,10 +5421,10 @@
     },
     {
         "appName": "TeamViewer",
-        "icon": "",
+        "icon": "teamviewer.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.teamviewer.teamviewer.market.mobile",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-31",
@@ -5607,10 +5595,10 @@
     },
     {
         "appName": "Threema",
-        "icon": "",
+        "icon": "threema.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.threema.app",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
@@ -5743,12 +5731,12 @@
     },
     {
         "appName": "Trillian",
-        "icon": "",
+        "icon": "trillian.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ceruleanstudios.trillian.android&hl=en",
         "activeOnAppleStore": "",
-        "activeOnPlayStore": "",
+        "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-01",
         "dateUpdated": "",
@@ -5818,7 +5806,7 @@
     },
     {
         "appName": "TunnelBear VPN",
-        "icon": "",
+        "icon": "tunnelbear.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
@@ -5879,10 +5867,12 @@
     },
     {
         "appName": "Twitterrific",
-        "icon": "",
+        "icon": "twitterrific.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
         "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "false",
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-11-02",
@@ -6275,10 +6265,10 @@
     },
     {
         "appName": "Whale",
-        "icon": "",
+        "icon": "whale-browser.webp",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.naver.whale",
         "activeOnAppleStore": "",
         "activeOnPlayStore": "",
         "notes": "",
@@ -6708,10 +6698,10 @@
     },
     {
         "appName": "Yubo",
-        "icon": "",
+        "icon": "yubo.png",
         "websiteUrl": "",
         "appleStoreUrl": "",
-        "googlePlayUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.yellw.yellowapp&hl=en_US",
         "notes": "",
         "dateAdded": "2023-10-31",
         "dateUpdated": "2023-11-10",

@@ -31,19 +31,29 @@ function PageSearch() {
     if (searchQuery) {
       const safeSearchQuery = decodeURIComponent(searchQuery).replace(/</g, "&lt;").replace(/>/g, "&gt;");
       if (safeSearchQuery !== searchTerm) {
+        //console.log('setting search')
         setSearchTerm(safeSearchQuery);
-        debouncedFilterAppsRef.current(searchTerm);
+        //debouncedFilterAppsRef.current(safeSearchQuery);
       }
+      //debouncedFilterAppsRef.current(safeSearchQuery);
     }
   
     if (appName) {
-      const app = apps.find(a => a.name === decodeURIComponent(appName));
+      console.log(decodeURIComponent(appName))
+      const app = apps.find(a => a.appName.toLowerCase() === decodeURIComponent(appName).toLowerCase());
+      console.log(app)
       if (app) {
         setSelectedApp(app);
         setIsModalVisible(true);
       }
     }
   }, [location, apps]);
+
+  useEffect(() => {
+    if (searchTerm) {
+      debouncedFilterAppsRef.current(searchTerm);
+    }
+  }, [searchTerm, apps]);
 
   const handleAppClick = (app) => {
     setSelectedApp(app);
@@ -127,40 +137,48 @@ function PageSearch() {
   }
   
   const [filteredApps, setFilteredApps] = useState([]);
-  const [isFiltering, setIsFiltering] = useState(false); // New state to track if we are currently filtering
+  const [isFiltering, setIsFiltering] = useState(false);
   const debouncedFilterAppsRef = useRef();
 
-  useEffect(() => {
-    debouncedFilterAppsRef.current = debounce((search) => {
-      const { operator, property, value } = parseSearchTerms(search);
+
+  debouncedFilterAppsRef.current = debounce((search) => {
+    const { operator, property, value } = parseSearchTerms(search);
+
+    const filtered = apps.filter(app => {
+      // Initial filter based on '-no:' operator
+      let matchesOperator = true;
+      if (operator === '-no:' && property) {
+        matchesOperator = !app[property];  // Check if the property value is falsy
+      }
   
-      const filtered = apps.filter(app => {
-        // Initial filter based on '-no:' operator
-        let matchesOperator = true;
-        if (operator === '-no:' && property) {
-          matchesOperator = !app[property];  // Check if the property value is falsy
-        }
-    
-        // Further filter the reduced set based on the search term
-        if (matchesOperator && value) {
-          const lowerValue = value.toLowerCase();
-          return (
-            app.appName.toLowerCase().includes(lowerValue) ||
-            (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
-          );
-        }
-        
-        return matchesOperator;  // If there's no value, return the result of the operator check
-      });
+      // Further filter the reduced set based on the search term
+      if (matchesOperator && value) {
+        const lowerValue = value.toLowerCase();
+        return (
+          app.appName.toLowerCase().includes(lowerValue) ||
+          (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
+        );
+      }
       
-      setFilteredApps(filtered);
-      setIsFiltering(false); // Set filtering to false once done
-      //if (search != searchTerm && search != '') {
-        navigate(`/?search=${encodeURIComponent(search)}`);
-      //}
-      window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
-    }, 500);
-  }, [ apps]);
+      return matchesOperator;  // If there's no value, return the result of the operator check
+    });
+    
+    setFilteredApps(filtered);
+    setIsFiltering(false); // Set filtering to false once done
+    //if (search != searchTerm && search != '') {
+      //navigate(`/?search=${encodeURIComponent(search)}`);
+    //}
+    window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
+  }, 500, [apps]);
+
+  // useEffect(() => {
+
+  //   return () => {
+  //     if (debouncedFilterAppsRef.current) {
+  //       debouncedFilterAppsRef.current.cancel();
+  //     }
+  //   };
+  // }, [location, apps]);
 
   // const filteredApps = useMemo(() => {
   const filteredAppsold = () => {
@@ -206,12 +224,13 @@ function PageSearch() {
     setSuggestionValues();
     if (searchTerm) {
       setIsFiltering(true);
-      debouncedFilterAppsRef.current(searchTerm);
+      navigate(`/?search=${encodeURIComponent(searchTerm)}`);
+      //debouncedFilterAppsRef.current(searchTerm);
     } else {
       setIsFiltering(false);
       setFilteredApps([]);
     }
-  }, [searchTerm, debouncedFilterAppsRef]);
+  }, [searchTerm]); //, debouncedFilterAppsRef]);
 
   const closeAppModal = () => {
     setIsModalVisible(false);
