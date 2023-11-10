@@ -16,8 +16,11 @@ function AppDetails({ app, tools }) {
     const [artifacts, setArtifacts] = useState([]);
     const toolRefs = ({});
 
+    
+
     useEffect(() => {
         //console.log("Tools in AppDetails:", tools);
+        window.heap.track('App View', { appName: app.appName })
 
         if (tools && apps && tools.length > 0) {
             //console.log("Fetching artifacts for app:", app.appName, "with tools:", tools);
@@ -43,6 +46,7 @@ function AppDetails({ app, tools }) {
 
     const handleIconClick = (toolShortName) => {
         //console.log(toolRefs)
+        window.heap.track('App Tool Jump', { toolName: toolShortName })
         const ref = toolRefs.current[toolShortName];
         if (ref && ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });
@@ -77,6 +81,7 @@ function AppDetails({ app, tools }) {
 
     return (
         <div className='AppDetails'>
+            {}
             <div className='appIcon'>
                 <img className='appIcon'
                     src={app.icon ? `/app-icons/${app.icon}` : '/logo192.png'}

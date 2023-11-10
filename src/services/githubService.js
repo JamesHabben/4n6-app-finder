@@ -336,7 +336,7 @@ export const githubService = (token, username) => {
                     });
                     terminal(prevOutput => [...prevOutput, `Blob created: ${blobSha}`]);
 
-                    terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA from events...']);
+                    // terminal(prevOutput => [...prevOutput, 'Fetching latest commit SHA from events...']);
                     // const { data: { object: { sha: latestCommitSha } } } = await octokit.git.getRef({
                     //     owner: username,
                     //     repo: repo,
@@ -366,16 +366,16 @@ export const githubService = (token, username) => {
                         latestCommitSha = latestCommitCache.sha;  // Use cached SHA if it's within the last minute
                         terminal(prevOutput => [...prevOutput, `Using session last commit SHA: ${latestCommitSha}`]);
                     } else {
-                        try {
-                            const response = await octokit.activity.listRepoEvents({
-                                owner: username,
-                                repo: repo,
-                                per_page: 1
-                            });
-                            latestCommitSha = response.data[0]?.payload?.head;  // Assuming the latest event is a push event
-                        } catch (error) {
-                            terminal(prevOutput => [...prevOutput, `Error fetching latest commit SHA from Events API: ${error.message}`]);
-                        }
+                        // try {
+                        //     const response = await octokit.activity.listRepoEvents({
+                        //         owner: username,
+                        //         repo: repo,
+                        //         per_page: 1
+                        //     });
+                        //     latestCommitSha = response.data[0]?.payload?.head;  // Assuming the latest event is a push event
+                        // } catch (error) {
+                        //     terminal(prevOutput => [...prevOutput, `Error fetching latest commit SHA from Events API: ${error.message}`]);
+                        // }
                     
 
                         if (!latestCommitSha) {
