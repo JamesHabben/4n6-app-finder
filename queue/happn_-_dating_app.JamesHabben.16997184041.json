@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "happn - Dating App",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/0",
+            "value": "happn — Dating app"
+        }
+    ]
+}
