@@ -1,0 +1,22 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Todoist: to-do list & planner",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.todoist&hl=en",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "true",
+                "notes": "",
+                "dateAdded": "2023-11-11",
+                "dateUpdated": "",
+                "alternateNames": []
+            }
+        }
+    ]
+}
