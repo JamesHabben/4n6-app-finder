@@ -1,0 +1,22 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "WhatsChat Messenger",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.interconmedia.whatschat&hl=en",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "true",
+                "notes": "",
+                "dateAdded": "2023-11-11",
+                "dateUpdated": "",
+                "alternateNames": []
+            }
+        }
+    ]
+}
