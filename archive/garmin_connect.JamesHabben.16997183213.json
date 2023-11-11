@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Garmin Connect",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Garmin Connect‪™‬"
+        }
+    ]
+}
