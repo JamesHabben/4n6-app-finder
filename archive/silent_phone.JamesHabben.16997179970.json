@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Silent Phone",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "com.silentcircle.SilentPhone"
+        }
+    ]
+}
