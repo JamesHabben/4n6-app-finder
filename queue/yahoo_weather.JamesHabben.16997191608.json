@@ -1,0 +1,22 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Yahoo Weather",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.weather",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "true",
+                "notes": "",
+                "dateAdded": "2023-11-11",
+                "dateUpdated": "",
+                "alternateNames": []
+            }
+        }
+    ]
+}
