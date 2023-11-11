@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Map My Fitness by Under Armor",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/3",
+            "value": "Map My Fitness Workout Trainer"
+        }
+    ]
+}
