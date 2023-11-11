@@ -378,7 +378,7 @@
         "activeOnPlayStore": "",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
             "Android MMS (UFED Agent)",
             "Android MMS",
@@ -386,7 +386,8 @@
             "Android SMS-MMS (Content Provider)",
             "Android SMS-MMS (Google Play Services)",
             "Android SMS-MMS",
-            "Android SMS"
+            "Android SMS",
+            "Messages"
         ]
     },
     {
@@ -454,6 +455,19 @@
             "AIM",
             "AIM Chat Messages"
         ]
+    },
+    {
+        "appName": "Apple Books",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
     },
     {
         "appName": "Apple Calendar",
@@ -805,10 +819,24 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.baidu.BaiduMap&hl=en",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
-            "Baidu Maps"
+            "Baidu Maps",
+            "百度地图"
         ]
+    },
+    {
+        "appName": "Bazoš",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.ackee.bazos&hl=en",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
     },
     {
         "appName": "Beekeeper",
@@ -998,6 +1026,19 @@
         "alternateNames": [
             "Box: The Content Cloud"
         ]
+    },
+    {
+        "appName": "Boxer - Workspace ONE",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.boxer.email",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
     },
     {
         "appName": "Brave Browser",
@@ -1268,8 +1309,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-11",
+        "alternateNames": [
+            "CM Browser - Ad Blocker , Fast Download , Privacy"
+        ]
     },
     {
         "appName": "Coffee Meets Bagel",
@@ -1490,6 +1533,19 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "Dubsmash",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dubsmash.quotes&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
         "dateUpdated": "",
         "alternateNames": []
     },
@@ -1880,6 +1936,19 @@
         ]
     },
     {
+        "appName": "Fitify: Fitness & Home Workout",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "FlashFox Browser",
         "icon": "",
         "websiteUrl": "",
@@ -1984,20 +2053,6 @@
         ]
     },
     {
-        "appName": "Parrot Freeflight",
-        "icon": "",
-        "websiteUrl": "",
-        "appleStoreUrl": "",
-        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.parrot.freeflight3",
-        "notes": "",
-        "dateAdded": "2023-10-11",
-        "dateUpdated": "",
-        "alternateNames": [
-            "Freeflight 6",
-            "FreeFlight Pro"
-        ]
-    },
-    {
         "appName": "Frim",
         "icon": "",
         "websiteUrl": "",
@@ -2049,9 +2104,10 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-11-02",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
-            "Garmin Connect™"
+            "Garmin Connect™",
+            "Garmin Connect‪™‬"
         ]
     },
     {
@@ -2084,6 +2140,19 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "Gett- Corporate Ground Travel",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gettaxi.android&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
         "dateUpdated": "",
         "alternateNames": []
     },
@@ -2583,8 +2652,10 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "",
-        "alternateNames": []
+        "dateUpdated": "2023-11-11",
+        "alternateNames": [
+            "happn — Dating app"
+        ]
     },
     {
         "appName": "Here Maps",
@@ -2657,7 +2728,6 @@
         "dateUpdated": "",
         "alternateNames": []
     },
-
     {
         "appName": "Hike News & Content",
         "icon": "hike-news.webp",
@@ -3119,6 +3189,19 @@
         ]
     },
     {
+        "appName": "Kaktus",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zentity.tmcz.kaktus&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "Kate Mobile",
         "icon": "",
         "websiteUrl": "",
@@ -3505,11 +3588,12 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "2023-11-10",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
             "com.mapmyfitnessplus.android2",
             "Map My Fitness by Under Armour",
-            "Q5AWL8WCY6.iMapMyFitnessPlus"
+            "Q5AWL8WCY6.iMapMyFitnessPlus",
+            "Map My Fitness Workout Trainer"
         ]
     },
     {
@@ -3522,11 +3606,12 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "2023-11-10",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
             "com.mapmyrideplus.android2",
             "Map My Ride by Under Armour",
-            "Q5AWL8WCY6.iMapMyRidePlus"
+            "Q5AWL8WCY6.iMapMyRidePlus",
+            "Map My Ride GPS Cycling Riding"
         ]
     },
     {
@@ -3539,11 +3624,12 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "2023-11-10",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
             "com.mapmyrideplus.android2",
             "Map My Run by Under Armour",
-            "Q5AWL8WCY6.iMapMyRunPlus"
+            "Q5AWL8WCY6.iMapMyRunPlus",
+            "com.mapmyrunplus.android2"
         ]
     },
     {
@@ -3556,12 +3642,19 @@
         "activeOnPlayStore": "true",
         "notes": "",
         "dateAdded": "2023-11-02",
-        "dateUpdated": "2023-11-10",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
             "com.mapmyrideplus.android2",
             "Map My Walk by Under Armour",
             "Walk with Map My Walk",
-            "Q5AWL8WCY6.iMapMyWalk"
+            "Q5AWL8WCY6.iMapMyWalk",
+            "Q5AWL8WCY6.iMapMyHikePlus",
+            "Map My Hike GPS Hiking",
+            "Map My Hike by Under Armour",
+            "com.mapmywalkplus.android2",
+            "com.mapmyhikeplus.android2",
+            "com.mapmyfitness.MapMyDogWalk",
+            "com.mapmydogwalk.android2"
         ]
     },
     {
@@ -4044,6 +4137,32 @@
         "alternateNames": []
     },
     {
+        "appName": "Navmii GPS USA (Navfree)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.navfree.android.OSM.USA&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "Navmii GPS World (Navfree)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.navfree.android.OSM.ALL&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "Next Browser",
         "icon": "",
         "websiteUrl": "",
@@ -4051,6 +4170,19 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
+        "appName": "Nextplus: Phone # Text + Call",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.nextplus.smsfreetext.phonecalls&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
         "dateUpdated": "",
         "alternateNames": []
     },
@@ -4330,6 +4462,20 @@
         ]
     },
     {
+        "appName": "Parrot Freeflight",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.parrot.freeflight3",
+        "notes": "",
+        "dateAdded": "2023-10-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "Freeflight 6",
+            "FreeFlight Pro"
+        ]
+    },
+    {
         "appName": "Paypal",
         "icon": "paypal.webp",
         "websiteUrl": "",
@@ -4461,6 +4607,21 @@
         ]
     },
     {
+        "appName": "PlayStation App (Messages)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.scee.psxandroid&hl=en_US",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "PlayStation Messages - Check your online friends"
+        ]
+    },
+    {
         "appName": "Plenty of Fish",
         "icon": "plenty-of-fish.webp",
         "websiteUrl": "",
@@ -4493,10 +4654,11 @@
         "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nianticlabs.pokemongo",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-11-02",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
             "Pokemon GO",
-            "Pokémon GO"
+            "Pokémon GO",
+            "com.nianticlabs.pokemongo"
         ]
     },
     {
@@ -4910,6 +5072,19 @@
         "alternateNames": []
     },
     {
+        "appName": "SayHi Chat Meet Dating People",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.unearby.sayhi",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "Sberbank online",
         "icon": "",
         "websiteUrl": "",
@@ -5022,9 +5197,10 @@
         "googlePlayUrl": "",
         "notes": "",
         "dateAdded": "2023-10-11",
-        "dateUpdated": "2023-11-02",
+        "dateUpdated": "2023-11-11",
         "alternateNames": [
-            "Silent Phone - Secure Calling"
+            "Silent Phone - Secure Calling",
+            "com.silentcircle.SilentPhone"
         ]
     },
     {
@@ -5409,6 +5585,21 @@
         "alternateNames": []
     },
     {
+        "appName": "Taobao (淘宝)",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.taobao.taobao",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": [
+            "淘宝"
+        ]
+    },
+    {
         "appName": "Tappsk",
         "icon": "",
         "websiteUrl": "",
@@ -5669,6 +5860,19 @@
             "Tinder: Dating, Chat & Friends",
             "Tinder Dating app. Meet People"
         ]
+    },
+    {
+        "appName": "Todoist: to-do list & planner",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.todoist&hl=en",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
     },
     {
         "appName": "TomTom Go GPS",
@@ -6319,6 +6523,19 @@
         ]
     },
     {
+        "appName": "WhatsChat Messenger",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.interconmedia.whatschat&hl=en",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
+        "alternateNames": []
+    },
+    {
         "appName": "Whisper",
         "icon": "whisper.webp",
         "websiteUrl": "",
@@ -6475,6 +6692,19 @@
         "notes": "",
         "dateAdded": "2023-10-11",
         "dateUpdated": "2023-10-30",
+        "alternateNames": []
+    },
+    {
+        "appName": "Yahoo Weather",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.weather",
+        "activeOnAppleStore": "",
+        "activeOnPlayStore": "true",
+        "notes": "",
+        "dateAdded": "2023-11-11",
+        "dateUpdated": "",
         "alternateNames": []
     },
     {
