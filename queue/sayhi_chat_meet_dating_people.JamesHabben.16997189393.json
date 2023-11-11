@@ -1,0 +1,22 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "SayHi Chat Meet Dating People",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.unearby.sayhi",
+                "activeOnAppleStore": "",
+                "activeOnPlayStore": "true",
+                "notes": "",
+                "dateAdded": "2023-11-11",
+                "dateUpdated": "",
+                "alternateNames": []
+            }
+        }
+    ]
+}
