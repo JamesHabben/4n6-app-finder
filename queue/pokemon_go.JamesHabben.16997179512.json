@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Pokemon Go",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/2",
+            "value": "com.nianticlabs.pokemongo"
+        }
+    ]
+}
