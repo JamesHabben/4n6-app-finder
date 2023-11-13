@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "X / Twitter",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/6",
+            "value": "X (Twitter)"
+        }
+    ]
+}
