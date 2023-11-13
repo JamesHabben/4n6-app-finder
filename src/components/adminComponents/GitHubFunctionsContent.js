@@ -99,7 +99,7 @@ function GitHubFunctionsContent () {
             const appsCoreContent = await service.getRawFileContent(service.owner, '4n6-app-finder', service.dataBranch, 'public/apps-core.json');
             console.log("get from gh ", appsCoreContent)
             let appsUpdate = JSON.parse(appsCoreContent);
-            setTerminalOutput(prevOutput => [...prevOutput, `Fetched apps-core.json with ${Object.keys(appsUpdate).length} records.`]);
+            setTerminalOutput(prevOutput => [...prevOutput, `Fetched apps-core.json with ${Object.keys(appsUpdate.appsList).length} records.`]);
             
             for (let file of queueFilesList) {
                 const patchContent = await service.getFileContent(service.patchBranch, file.path);
@@ -110,31 +110,31 @@ function GitHubFunctionsContent () {
                 setTerminalOutput(prevOutput => [...prevOutput, `Applying ${action} ${file.path} patch...`]);
             
                 if (action === 'edit') {
-                    const appIndex = appsUpdate.findIndex(app => app.appName.toLowerCase() === appName.toLowerCase());
+                    const appIndex = appsUpdate.appsList.findIndex(app => app.appName.toLowerCase() === appName.toLowerCase());
                     if (appIndex === -1) {
                         setTerminalOutput(prevOutput => [...prevOutput, `! No matching record found for appName: ${appName}. Skipping patch.`]);
                         continue;  // Skip to the next iteration of the loop
                     }
-                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
+                    appsUpdate.appsList = appsService().applyPatch(appsUpdate.appsList, patchFile);
                 } else if (action === 'new') {
-                    appsUpdate = appsService().applyPatch(appsUpdate, patchFile);
+                    appsUpdate.appsList = appsService().applyPatch(appsUpdate.appsList, patchFile);
                 } else {
                     setTerminalOutput(prevOutput => [...prevOutput, `! Unknown action: ${action}. Skipping patch.`]);
                     continue;  // Skip to the next iteration of the loop
                 }
             }
             //console.log("new apps", appsUpdate)
-            setTerminalOutput(prevOutput => [...prevOutput, `Applied patches. AppsUpdate now has ${appsUpdate.length} records.`]);  // Use appsUpdate.length instead of Object.keys(appsUpdate).length
+            setTerminalOutput(prevOutput => [...prevOutput, `Applied patches. AppsUpdate now has ${appsUpdate.appsList.length} records.`]);  // Use appsUpdate.length instead of Object.keys(appsUpdate).length
                         
-            appsUpdate.sort((a, b) => {
+            appsUpdate.appsList.sort((a, b) => {
                 const nameA = a.appName.toUpperCase();
                 const nameB = b.appName.toUpperCase();
                 if (nameA < nameB) return -1;
                 if (nameA > nameB) return 1;
                 return 0;
             });
-            //console.log(appsUpdate)
-            //return;
+            // console.log(appsUpdate)
+            // return;
             
             // Commit to dataBranch and create a pull request to the defaultBranch
             setTerminalOutput(prevOutput => [...prevOutput, `Committing apps-core.json on ${service.dataBranch} branch`]);
@@ -150,7 +150,7 @@ function GitHubFunctionsContent () {
                 setTerminalOutput(prevOutput => [...prevOutput, `Moving ${file.path} to archive...`]);
                 await service.moveFile(service.patchBranch, file.path, file.path.replace('queue', 'archive'));
             }
-            setTerminalOutput(prevOutput => [...prevOutput, 'Moved processed files to archive folder.']);
+            setTerminalOutput(prevOutput => [...prevOutput, 'Done moving processed files to archive folder.']);
     
         } catch (error) {
             console.error('Error performing update:', error.message);

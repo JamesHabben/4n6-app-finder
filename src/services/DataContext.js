@@ -7,18 +7,25 @@ export const DataContext = createContext();
 
 export function DataProvider({ children }) {
   const [apps, setApps] = useState([]);
+  const [appTemplate, setAppTemplate] = useState(null);
   const [tools, setTools] = useState([]);
   const [isLoadingTools, setIsLoadingTools] = useState(true);
 
+  
   useEffect(() => {
     // Fetch apps and tools data
+    //console.log('use effect started')
     Promise.all([
       fetch('/apps-core.json').then(response => response.json()),
       fetch('/tools.json').then(response => response.json()),
       console.log('fetched files')
     ])
       .then(([appsData, toolsData]) => {
-        appsData.forEach(app => app.artifactCount = 0);
+        const { template, appsList: appsList } = appsData;
+        setAppTemplate(template);
+        console.log(template)
+
+        appsList.forEach(app => app.artifactCount = 0);
         
         // Fetch artifact data for each tool
         const artifactPromises = toolsData.map(tool =>
@@ -28,7 +35,7 @@ export function DataProvider({ children }) {
               // Check if each artifact maps to an app
               artifactList.forEach(artifact => {
                 const appName = artifact[tool.appNameKey];
-                const app = appsData.find(
+                const app = appsList.find(
                   app => app.appName === appName ||
                     (app.alternateNames || []).includes(appName)
                 );
@@ -57,16 +64,17 @@ export function DataProvider({ children }) {
               return { ...tool, artifactList };
             })
         );
-        console.log(apps)
+        console.log(appsData)
 
         // Set state once all data has been fetched and processed
         Promise.all(artifactPromises).then(artifactToolsData => {
-          setApps(appsData.sort((a, b) => a.appName.localeCompare(b.appName)));
+          appsList.sort((a, b) => a.appName.localeCompare(b.appName))
+          setApps(appsList);
           setTools(artifactToolsData.sort((a, b) => a.toolLongName.localeCompare(b.toolLongName)));
           setIsLoadingTools(false);
         });
       });
-  }, []);
+  }, [ ]);
 
   const getMappedArtifacts = useCallback((appName) => {
     if (!tools.length) {
@@ -89,7 +97,7 @@ export function DataProvider({ children }) {
   }, [tools, apps]);
 
   return (
-    <DataContext.Provider value={{ apps, tools, isLoadingTools, getMappedArtifacts }}>
+    <DataContext.Provider value={{ apps, tools, isLoadingTools, getMappedArtifacts, appTemplate }}>
       {children}
     </DataContext.Provider>
   );

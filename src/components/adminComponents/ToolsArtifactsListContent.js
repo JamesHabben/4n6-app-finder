@@ -10,7 +10,7 @@ import { AuthContext } from "AuthContext";
 import { appsService } from "services/appsService";
 
 function ToolsArtifactsListContent() {
-    const { apps, tools } = useContext(DataContext);
+    const { apps, tools, appTemplate } = useContext(DataContext);
     const [selectedTool, setSelectedTool] = useState(null);
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
     const [displayedArtifactList, setDisplayedArtifactList] = useState([]);
@@ -96,9 +96,9 @@ function ToolsArtifactsListContent() {
   
     const fetchNewRecord = async () => {
       //console.log('Fetching new record...');
-      const record = await appsService().getNewRecord(apps);
+      //const record = await appsService().getNewRecord(apps);
       //console.log('Fetched record:', record);
-      setNewRecord(record);
+      setNewRecord(appTemplate);
     };
     
   
@@ -188,8 +188,9 @@ function ToolsArtifactsListContent() {
                     setIsEditModalVisible(false);  
                     SetCanCloseTermModal(false);
                     setIsTermModalVisible(true);
+                    //console.log('before handle create ', newRecord)
                     const message = await appsService().handleCreate(apps, newRecord, getAppByNameKey(selectedArtifact), 
-                      authState, setTerminalOutput);
+                      authState, setTerminalOutput, appTemplate);
                     SetCanCloseTermModal(true);
                     //alert(message);
                   }

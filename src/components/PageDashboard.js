@@ -7,7 +7,8 @@ import ProgressBarCard from 'components/dashboardComponents/ToolProgressCard';
 
 
 function getTopAppsByMappedTools(apps) {
-    const appsWithTools = apps.filter(app => app.mappedTools && app.mappedTools.length > 0);
+  //console.log(apps)  
+  const appsWithTools = apps.filter(app => app.mappedTools && app.mappedTools.length > 0);
     const sortedApps = appsWithTools.sort((a, b) => b.mappedTools.length - a.mappedTools.length);
     return sortedApps.slice(0, 15);
 };
@@ -33,6 +34,8 @@ function getToolsByAppCount(tools) {
 
 function PageDashboard() {
   const { apps, tools } = useContext(DataContext);
+
+  //console.log('dashboard apps ', apps)
   
   return (
     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: '1rem', textAlign: 'left' }}>
