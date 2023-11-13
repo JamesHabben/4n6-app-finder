@@ -6194,19 +6194,6 @@
             ]
         },
         {
-            "appName": "VeraCrypt",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "isActiveOnAppleStore": "",
-            "googlePlayUrl": "",
-            "isActiveOnPlayStore": "",
-            "notes": "",
-            "dateAdded": "2023-11-13",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Verizon Messages",
             "icon": "verizon-messages.webp",
             "websiteUrl": "",

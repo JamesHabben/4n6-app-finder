@@ -1,10 +1,17 @@
-import { githubService } from 'services/githubService';
-import { AuthState  } from 'AuthContext';
+import { useContext } from 'react';
 import jsonpatch from 'fast-json-patch';
 
+import { githubService } from 'services/githubService';
+import { AuthState  } from 'AuthContext';
+import { DataContext } from 'services/DataContext';
+
+
 const excludeNewRecordProperties = ["artifactCount","mappedTools"]
+//const { appTemplate } = useContext(DataContext);
 
 export const appsService = () => {
+    //const { getAppTemplate } = useContext(DataContext);
+    
     const applyPatch = (appsArray, patchFile) => {
         console.log(patchFile)
         const { action, appName, patch } = patchFile;  // Destructure the action and patch properties from the patchFile
@@ -86,17 +93,18 @@ export const appsService = () => {
         }
     }
 
-    const handleCreate = async (apps, newRecord, artifactName, authState, terminal) => {
+    const handleCreate = async (apps, newRecord, artifactName, authState, terminal, recordTemplate) => {
         const currentDate = new Date().toISOString().split('T')[0];
         newRecord.dateAdded = currentDate;
 
         terminal(prevOutput => [...prevOutput, `Preparing patch file`]);
 
-        const templateRecord = apps[0];
-        if (!validateRecord(newRecord, templateRecord)) {
+        //const templateRecord = apps[0];
+        if (!validateRecord(newRecord, recordTemplate)) {
             alert('The record format is incorrect.');
             return;
         }
+        console.log('validated ')
 
         if (newRecord.appName !== artifactName && !newRecord.alternateNames.includes(artifactName)) {
             newRecord.alternateNames.push(artifactName);
@@ -202,44 +210,44 @@ export const appsService = () => {
     }
     
     const validateRecord = (record, templateRecord) => {
-        //console.log("new", record)
-        //console.log("template", templateRecord)
-        const recordKeys = Object.keys(record).filter(key => !excludeNewRecordProperties.includes(key)).sort();
-        const templateKeys = Object.keys(templateRecord).filter(key => !excludeNewRecordProperties.includes(key)).sort();
-        return JSON.stringify(recordKeys) === JSON.stringify(templateKeys);
-    }
+        const recordKeys = Object.keys(record).sort();
+        const templateKeys = Object.keys(templateRecord).sort();
+        const dynamicKeys = recordKeys.filter(key => !templateKeys.includes(key));
+        const filteredRecordKeys = recordKeys.filter(key => !dynamicKeys.includes(key));
+        return JSON.stringify(filteredRecordKeys) === JSON.stringify(templateKeys);
+    };
 
-    const getNewRecord = async (apps) => {
-        //console.log("creating new record")
-        if (!apps || apps.length === 0) {
-            console.log('Apps is null or undefined in getNewRecord');
-            return;
-        }
-        //console.log(apps)
-        const templateRecord = apps[0];
-        const newRecord = {};
-        const keys = Object.keys(templateRecord);
-        const excludedKeys = new Set(excludeNewRecordProperties);
-        const filteredKeys = keys.filter(key => !excludedKeys.has(key));
+    // const getNewRecord = async () => {
+    //     //console.log("creating new record")
+    //     if (!appTemplate) {
+    //         console.error('App template is null or undefined in getNewRecord');
+    //         return;
+    //     }
+    //     //console.log(apps)
+    //     //const templateRecord = apps[0];
+    //     const newRecord = {};
+    //     const keys = Object.keys(appTemplate);
+    //     //const excludedKeys = new Set(excludeNewRecordProperties);
+    //     //const filteredKeys = keys.filter(key => !excludedKeys.has(key));
 
-        filteredKeys.forEach(key => {
-            if (Array.isArray(templateRecord[key])) {
-                newRecord[key] = [];
-            } else {
-                newRecord[key] = "";
-            }
-        });
+    //     keys.forEach(key => {
+    //         if (Array.isArray(appTemplate[key])) {
+    //             newRecord[key] = [];
+    //         } else {
+    //             newRecord[key] = "";
+    //         }
+    //     });
 
-        //console.log(newRecord)
-        return newRecord;
-    }
+    //     //console.log(newRecord)
+    //     return newRecord;
+    // }
     
     const isDupeName = (apps, newAppName) => {
         return apps.some(app => app.appName.toLowerCase() === newAppName.toLowerCase());
     }
 
     return {
-        getNewRecord,
+        //getNewRecord,
         applyPatch,
         isDupeName,
         handleAdd,
