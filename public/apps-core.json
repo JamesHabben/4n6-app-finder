@@ -1,16 +1,16 @@
 {
     "template": {
-      "appName": "",
-      "icon": "",
-      "websiteUrl": "",
-      "appleStoreUrl": "",
-      "isActiveOnAppleStore": "",
-      "googlePlayUrl": "",
-      "isActiveOnPlayStore": "",
-      "notes": "",
-      "dateAdded": "",
-      "dateUpdated": "",
-      "alternateNames": []
+        "appName": "",
+        "icon": "",
+        "websiteUrl": "",
+        "appleStoreUrl": "",
+        "isActiveOnAppleStore": "",
+        "googlePlayUrl": "",
+        "isActiveOnPlayStore": "",
+        "notes": "",
+        "dateAdded": "",
+        "dateUpdated": "",
+        "alternateNames": []
     },
     "appsList": [
         {
@@ -6194,6 +6194,19 @@
             ]
         },
         {
+            "appName": "VeraCrypt",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "",
+            "isActiveOnPlayStore": "",
+            "notes": "",
+            "dateAdded": "2023-11-13",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
             "appName": "Verizon Messages",
             "icon": "verizon-messages.webp",
             "websiteUrl": "",
@@ -6650,14 +6663,15 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=en",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
+            "dateUpdated": "2023-11-13",
             "alternateNames": [
                 "Twitter",
                 "X",
                 "Twitter Direct Messages",
                 "Twitter Tweets",
                 "Twitter Users",
-                "com.htc.sense.socialnetwork.twitter"
+                "com.htc.sense.socialnetwork.twitter",
+                "X (Twitter)"
             ]
         },
         {
