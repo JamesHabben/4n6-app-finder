@@ -472,7 +472,7 @@
         },
         {
             "appName": "Apple Books",
-            "icon": "",
+            "icon": "apple-books.png",
             "websiteUrl": "",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
@@ -841,7 +841,7 @@
         },
         {
             "appName": "Bazoš",
-            "icon": "",
+            "icon": "bazos.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.ackee.bazos&hl=en",
@@ -850,7 +850,9 @@
             "notes": "",
             "dateAdded": "2023-11-11",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [
+                "bazos"
+            ]
         },
         {
             "appName": "Beekeeper",
@@ -1552,7 +1554,7 @@
         },
         {
             "appName": "Dubsmash",
-            "icon": "",
+            "icon": "dubsmash.png",
             "websiteUrl": "",
             "appleStoreUrl": "",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dubsmash.quotes&hl=en_US",
