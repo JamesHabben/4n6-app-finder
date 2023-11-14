@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Beam",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "isActiveOnAppleStore": "",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet&hl=en_US",
+                "isActiveOnPlayStore": "true",
+                "notes": "",
+                "dateAdded": "2023-11-14",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "Beam Transactions"
+                ]
+            }
+        }
+    ]
+}
