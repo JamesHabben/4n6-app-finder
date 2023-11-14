@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "UC Browser",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/5",
+            "value": "UC Browser Cookies"
+        }
+    ]
+}
