@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "Sleipnir",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "Sleipnir Search Terms"
+        }
+    ]
+}
