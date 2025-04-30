@@ -1,0 +1,18 @@
+[
+  {
+    "App Name": "Chromium Based Browser",
+    "Platform": "Windows, Linux, macOS, iOS, Android, ChromeOS",
+    "Supported Artifacts": [
+      "URLs (History)",
+      "Download History",
+      "Cache Records",
+      "Bookmarks",
+      "Autofill Records",
+      "Saved Passwords",
+      "Preferences",
+      "Browser Extensions",
+      "HTTP Cookies",
+      "Local Storage (HTML5 Cookies)"
+    ]
+  }
+] 

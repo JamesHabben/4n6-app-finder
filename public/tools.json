@@ -58,5 +58,17 @@
         "appNameKey": "Application",
         "documentationLocation": "website at https://apps.mobiledit.com/",
         "extractionNotes": ""
+    },
+    {
+        "toolShortName": "Hindsight",
+        "toolLongName": "Hindsight Mobile Forensics",
+        "website": "https://www.absoluteds.com/products/hindsight-mobile-forensics/",
+        "toolVersion": "",
+        "toolReleaseDate": "2023-11-01",
+        "icon": "tool-logo-hindsight.png",
+        "artifactListFile": "artifacts-hindsight.json",
+        "appNameKey": "App Name",
+        "documentationLocation": "website at https://www.hindsightforensic.com/",
+        "extractionNotes": ""
     }
 ]

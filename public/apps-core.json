@@ -1077,7 +1077,8 @@
                 "Brave Tab History - Android",
                 "Brave Top Sites",
                 "Brave Web History",
-                "Brave Web Visits"
+                "Brave Web Visits",
+                "Chromium Based Browser"
             ]
         },
         {
@@ -1302,7 +1303,9 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [
+                "Chromium Based Browser"
+            ]
         },
         {
             "appName": "Clubhouse",
@@ -2301,7 +2304,8 @@
                 "chromeBookmarks",
                 "Google Chrome: Fast & Secure",
                 "chromeAutofill",
-                "chrome"
+                "chrome",
+                "Chromium Based Browser"
             ]
         },
         {
@@ -3865,7 +3869,8 @@
                 "Edge Chromium Tab History",
                 "Edge Chromium FavIcons",
                 "Edge Chromium Keyword Search Terms",
-                "Edge Chromium Bookmarks"
+                "Edge Chromium Bookmarks",
+                "Chromium Based Browser"
             ]
         },
         {
@@ -4460,7 +4465,8 @@
                 "com.opera.OperaMini",
                 "com.opera.mini.native.beta",
                 "com.opera.mini.native",
-                "com.opera.Coast"
+                "com.opera.Coast",
+                "Chromium Based Browser"
             ]
         },
         {
@@ -6291,7 +6297,8 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
             "alternateNames": [
-                "Vivaldi"
+                "Vivaldi",
+                "Chromium Based Browser"
             ]
         },
         {
@@ -6813,7 +6820,8 @@
                 "Yandex Sync Data",
                 "Yandex Top Sites",
                 "Yandex Web History",
-                "Yandex Web Visits"
+                "Yandex Web Visits",
+                "Chromium Based Browser"
             ]
         },
         {
