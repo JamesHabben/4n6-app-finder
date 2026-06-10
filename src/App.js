@@ -7,6 +7,7 @@ import PageAdmin from 'components/PageAdmin';
 import VersionInfo from 'components/VersionInfo';
 import { DataProvider } from 'services/DataContext';
 import { AuthProvider } from './AuthContext';
+import { Analytics } from '@vercel/analytics/react';
 
 import './App.css';
 
@@ -80,6 +81,7 @@ function App() {
             style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
               <span>^</span>  {/* You can replace this with an icon */}
           </div>
+          <Analytics />
         </DataProvider>
       </AuthProvider>
     </Router>
