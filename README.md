@@ -10,6 +10,23 @@ Check out the live build at https://4n6appfinder.habben.net
 
 This project was not meant to be run by anyone on local computers and is designed to run from a live web server. Simply click the link above to get going.
 
+## Vercel Deployment
+
+The production site is built as a Create React App project and uses a Vercel
+Function for the GitHub OAuth code exchange. Configure these environment
+variables in Vercel:
+
+- `REACT_APP_GITHUB_CLIENT_ID`: GitHub App client ID exposed to the browser.
+- `GITHUB_CLIENT_ID`: The same GitHub App client ID used by the server function.
+- `GITHUB_CLIENT_SECRET`: GitHub App client secret, available only to the server.
+
+The GitHub App callback URL must be:
+
+`https://4n6appfinder.habben.net/auth/callback`
+
+For local OAuth testing, use a separate development GitHub App and run the app
+through a local environment that supports the Vercel `/api` function.
+
 ## Contributing
 
 We welcome contributions to make this project more comprehensive and accurate. Here are ways you can help:

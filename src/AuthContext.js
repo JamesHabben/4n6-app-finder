@@ -1,7 +1,8 @@
-import React, { createContext, useState, useEffect  } from 'react';
+import React, { createContext, useCallback, useState } from 'react';
 import { githubService } from 'services/githubService';
 
 export const AuthContext = createContext();
+const oauthStateKey = 'github-oauth-state';
 
 export const AuthProvider = ({ children }) => {
     const [authState, setAuthState] = useState(null);
@@ -11,23 +12,27 @@ export const AuthProvider = ({ children }) => {
     // }, [authState]); 
 
     const initiateOAuth = () => {
-        const redirectUri = encodeURIComponent(
-            process.env.NODE_ENV === 'development'
-                ? 'http://localhost:3000/auth/callback'
-                : 'https://4n6appfinder.habben.net/auth/callback'
-        );
-    
-        let authUrl = '';
-        if (process.env.NODE_ENV === 'development') {
-            authUrl = `https://github.com/login/oauth/authorize?client_id=Iv1.d6703f6d45b020d7&scope=user&response_type=code`;
-        } else {
-            authUrl = `https://github.com/login/oauth/authorize?client_id=Iv1.0b83354237060759&scope=user&response_type=code`;
+        const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+        if (!clientId) {
+            console.error('GitHub OAuth client ID is not configured.');
+            return;
         }
-    
-        window.location.href = authUrl;  // This will redirect the user to GitHub's OAuth authorization page
+
+        const redirectUri = `${window.location.origin}/auth/callback`;
+        const state = crypto.randomUUID();
+        sessionStorage.setItem(oauthStateKey, state);
+
+        const authUrl = new URL('https://github.com/login/oauth/authorize');
+        authUrl.search = new URLSearchParams({
+            client_id: clientId,
+            redirect_uri: redirectUri,
+            state,
+        }).toString();
+
+        window.location.href = authUrl.toString();
     };
       
-    const login = async (token) => {
+    const login = useCallback(async (token) => {
         // Fetch user data
         //console.log("token: " + token)
         const response = await fetch('https://api.github.com/user', {
@@ -46,14 +51,14 @@ export const AuthProvider = ({ children }) => {
             level: userLevel
         });
         //console.log("auth state (login): " + authState)
-    };
+    }, []);
 
   const logout = () => {
     setAuthState(null);
   };
 
   return (
-    <AuthContext.Provider value={{ authState, initiateOAuth, login, logout }}>
+    <AuthContext.Provider value={{ authState, initiateOAuth, login, logout, oauthStateKey }}>
       {children}
     </AuthContext.Provider>
   );
