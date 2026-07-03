@@ -2,6 +2,7 @@ import React, { useEffect, useState, useContext, useRef } from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink, Link, useParams } from 'react-router-dom';
 //import { useDataFetching, fetchArtifacts } from '../services/useDataFetching';
 import { DataContext } from 'services/DataContext';
+import { trackEvent } from 'services/analytics';
 
 
 
@@ -20,7 +21,7 @@ function AppDetails({ app, tools }) {
 
     useEffect(() => {
         //console.log("Tools in AppDetails:", tools);
-        window.heap.track('App View', { appName: app.appName })
+        trackEvent('App View', { appName: app.appName })
 
         if (tools && apps && tools.length > 0) {
             //console.log("Fetching artifacts for app:", app.appName, "with tools:", tools);
@@ -46,7 +47,7 @@ function AppDetails({ app, tools }) {
 
     const handleIconClick = (toolShortName) => {
         //console.log(toolRefs)
-        window.heap.track('App Tool Jump', { toolName: toolShortName })
+        trackEvent('App Tool Jump', { toolName: toolShortName })
         const ref = toolRefs.current[toolShortName];
         if (ref && ref.current) {
             ref.current.scrollIntoView({ behavior: 'smooth' });

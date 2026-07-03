@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Card, Modal } from 'antd';
+import { trackEvent } from 'services/analytics';
 //import './WhatsNewTile.css';  // Import the CSS file
 
 function WhatsNewTile() {
@@ -20,7 +21,7 @@ function WhatsNewTile() {
   }, []);
 
   const showModal = () => {
-    window.heap.track('Whats New More', { })
+    trackEvent('Whats New More', { })
     setIsModalVisible(true);
   };
 

@@ -64,7 +64,7 @@ export function DataProvider({ children }) {
               return { ...tool, artifactList };
             })
         );
-        console.log(appsData)
+        //console.log(appsData)
 
         // Set state once all data has been fetched and processed
         Promise.all(artifactPromises).then(artifactToolsData => {

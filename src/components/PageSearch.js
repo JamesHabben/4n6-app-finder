@@ -6,6 +6,7 @@ import { debounce } from 'lodash';
 
 //import { useDataFetching } from 'services/useDataFetching';
 import { DataContext } from 'services/DataContext';
+import { trackEvent } from 'services/analytics';
 import AppDetails from 'components/AppDetails';
 import WhatsNewTile from 'components/searchCompnents/WhatsNewTile';
 import RecentAppsCard from 'components/searchCompnents/RecentAppsCard';
@@ -168,7 +169,7 @@ function PageSearch() {
     //if (search != searchTerm && search != '') {
       //navigate(`/?search=${encodeURIComponent(search)}`);
     //}
-    window.heap.track('Search', { searchTerm: value }); // Track the search term with Heap here
+    trackEvent('Search', { searchTerm: value }); // Track the search term with Heap here
   }, 500, [apps]);
 
   // useEffect(() => {

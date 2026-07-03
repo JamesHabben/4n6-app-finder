@@ -2,6 +2,7 @@ import React, { useMemo, useCallback } from 'react';
 import { Card, Row, Col } from 'antd';
 
 import AppTile from 'components/searchCompnents/AppTile';
+import { trackEvent } from 'services/analytics';
 
 function RecentAppsCard({ apps, tools, onAppClick }) {
   const sortedApps = useMemo(() => {
@@ -17,7 +18,7 @@ function RecentAppsCard({ apps, tools, onAppClick }) {
   }, [sortedApps]);
 
   const handleTileClick = useCallback((app) => {
-    window.heap.track('Recent App Clicked', { appName: app.name });
+    trackEvent('Recent App Clicked', { appName: app.appName });
 
     if (onAppClick) {
       onAppClick(app);
