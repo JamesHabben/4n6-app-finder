@@ -1,9 +1,6 @@
-import { useContext } from 'react';
 import jsonpatch from 'fast-json-patch';
 
 import { githubService } from 'services/githubService';
-import { AuthState  } from 'AuthContext';
-import { DataContext } from 'services/DataContext';
 
 
 const excludeNewRecordProperties = ["artifactCount","mappedTools"]

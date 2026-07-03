@@ -11,8 +11,6 @@ import { Analytics } from '@vercel/analytics/react';
 
 import './App.css';
 
-/* global heap */
-
 function App() {
   const [showScroll, setShowScroll] = useState(false);
   
@@ -37,11 +35,9 @@ function App() {
   };
 
   useEffect(() => {
-    const heapId = process.env.NODE_ENV === 'development' 
-      ? process.env.REACT_APP_HEAP_ID 
-      : process.env.REACT_APP_HEAP_ID;
+    const heapId = import.meta.env.VITE_HEAP_ID;
     
-    if (document.title && process.env.NODE_ENV === 'development') {
+    if (document.title && import.meta.env.DEV) {
       document.title += ' (Dev Mode)';
     }
 
@@ -51,8 +47,6 @@ function App() {
     }
   }, []);
   
-  const [activeTab, setActiveTab] = React.useState(window.location.pathname);
-
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400){
       setShowScroll(true);
