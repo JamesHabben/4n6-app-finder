@@ -1,4 +1,4 @@
-// services/DataContext.js
+// services/DataContext.jsx
 import React, { createContext, useState, useEffect, useCallback } from 'react';
 
 export const DataContext = createContext();

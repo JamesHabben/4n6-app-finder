@@ -1,4 +1,4 @@
-// AuthLoginButton.js
+// AuthLoginButton.jsx
 import React, { useContext } from 'react';
 import { AuthContext } from './AuthContext';
 import { Button, Avatar } from 'antd';

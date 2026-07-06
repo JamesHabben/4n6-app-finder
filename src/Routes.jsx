@@ -1,4 +1,4 @@
-// Routes.js
+// Routes.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import PageSearch from 'components/PageSearch';

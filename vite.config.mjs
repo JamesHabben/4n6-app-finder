@@ -8,25 +8,13 @@ const fromRoot = (...segments) => path.resolve(rootDir, ...segments);
 
 export default defineConfig({
   plugins: [react()],
-  esbuild: {
-    loader: 'jsx',
-    include: /src[\\/].*\.js$/,
-    exclude: [],
-  },
-  optimizeDeps: {
-    esbuildOptions: {
-      loader: {
-        '.js': 'jsx',
-      },
-    },
-  },
   resolve: {
     alias: {
       components: fromRoot('src/components'),
       services: fromRoot('src/services'),
-      AuthContext: fromRoot('src/AuthContext.js'),
+      AuthContext: fromRoot('src/AuthContext.jsx'),
       AuthCallbackHandler: fromRoot('src/AuthCallbackHandler.js'),
-      AuthLoginButton: fromRoot('src/AuthLoginButton.js'),
+      AuthLoginButton: fromRoot('src/AuthLoginButton.jsx'),
       'App.css': fromRoot('src/App.css'),
       'react-virtualized': fromRoot('node_modules/react-virtualized/dist/commonjs'),
     },
