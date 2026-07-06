@@ -1,4 +1,4 @@
-// VersionInfo.js
+// VersionInfo.jsx
 import React, { useState, useEffect } from 'react';
 
 function VersionInfo() {

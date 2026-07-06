@@ -1,3 +1,6 @@
+## 2026-07-06
+- Moved hosting and updated core to smoother CI/CD
+- Updated to Vite
 ## Build 2023-10-31
 - Charts on the Dashboard page
 - Lots of app icons updated
