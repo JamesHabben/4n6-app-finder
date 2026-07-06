@@ -12,7 +12,7 @@ export const AuthProvider = ({ children }) => {
     // }, [authState]); 
 
     const initiateOAuth = () => {
-        const clientId = process.env.REACT_APP_GITHUB_CLIENT_ID;
+        const clientId = import.meta.env.VITE_GITHUB_CLIENT_ID;
         if (!clientId) {
             console.error('GitHub OAuth client ID is not configured.');
             return;

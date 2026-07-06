@@ -4,9 +4,6 @@
   "private": true,
   "dependencies": {
     "@octokit/rest": "^20.0.2",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "@vercel/analytics": "^2.0.1",
     "antd": "^5.9.4",
     "fast-json-patch": "^3.1.1",
@@ -16,35 +13,24 @@
     "react-dom": "^18.2.0",
     "react-markdown": "^9.0.0",
     "react-router-dom": "^6.16.0",
-    "react-scripts": "5.0.1",
     "react-virtualized": "^9.22.5",
     "react-window": "^1.8.9",
-    "recharts": "^2.9.1",
-    "web-vitals": "^2.1.4"
+    "recharts": "^2.9.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "vite",
+    "dev": "vite",
     "prebuild": "node version.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ]
 }
