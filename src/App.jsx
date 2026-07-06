@@ -1,5 +1,6 @@
 import React, { useEffect, useState} from 'react';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AppRoutes from './Routes';
 import PageSearch from 'components/PageSearch';
 import PageDashboard from 'components/PageDashboard';
@@ -10,6 +11,15 @@ import { AuthProvider } from './AuthContext';
 import { Analytics } from '@vercel/analytics/react';
 
 import './App.css';
+
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      staleTime: Infinity,
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
@@ -65,20 +75,22 @@ function App() {
   });
 
   return (
-    <Router>
-      <AuthProvider>
-        <DataProvider>
-          <AppContent />
-          <div 
-            className="scrollTop" 
-            onClick={scrollTop} 
-            style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
-              <span>^</span>  {/* You can replace this with an icon */}
-          </div>
-          <Analytics />
-        </DataProvider>
-      </AuthProvider>
-    </Router>
+    <QueryClientProvider client={queryClient}>
+      <Router>
+        <AuthProvider>
+          <DataProvider>
+            <AppContent />
+            <div 
+              className="scrollTop" 
+              onClick={scrollTop} 
+              style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+                <span>^</span>  {/* You can replace this with an icon */}
+            </div>
+            <Analytics />
+          </DataProvider>
+        </AuthProvider>
+      </Router>
+    </QueryClientProvider>
   );
 }
 
