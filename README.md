@@ -12,9 +12,8 @@ This project was not meant to be run by anyone on local computers and is designe
 
 ## Vercel Deployment
 
-The production site is built as a Create React App project and uses a Vercel
-Function for the GitHub OAuth code exchange. Configure these environment
-variables in Vercel:
+The production site is built with Vite and uses a Vercel Function for the
+GitHub OAuth code exchange. Configure these environment variables in Vercel:
 
 - `VITE_GITHUB_CLIENT_ID`: GitHub App client ID exposed to the browser.
 - `GITHUB_CLIENT_ID`: The same GitHub App client ID used by the server function.
