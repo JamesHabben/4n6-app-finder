@@ -41,7 +41,7 @@
         "website": "https://leapps.org",
         "toolVersion": "",
         "toolReleaseDate": "2026-07-09",
-        "icon": "tool-logo-ileapp.jpg",
+        "icon": "tool-logo-leapp.jpg",
         "artifactListFile": "artifacts-leapp.json",
         "appNameKey": "name",
         "documentationLocation": "Local sibling repos: iLEAPP and ALEAPP scripts/artifacts/*.py (__artifacts_v2__).",
