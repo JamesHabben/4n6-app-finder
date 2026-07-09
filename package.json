@@ -31,10 +31,5 @@
     "prebuild": "node version.js",
     "build": "vite build",
     "preview": "vite preview"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not op_mini all"
-  ]
+  }
 }

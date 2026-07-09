@@ -36,16 +36,16 @@
         "extractionNotes": ""
     },
     {
-        "toolShortName": "iLEAPP",
-        "toolLongName": "iLEAPP iOS Parser",
-        "website": "https://github.com/abrignoni/iLEAPP",
+        "toolShortName": "LEAPPs",
+        "toolLongName": "LEAPPs (iLEAPP / ALEAPP)",
+        "website": "https://leapps.org",
         "toolVersion": "",
-        "toolReleaseDate": "2023-10-09",
-        "icon": "tool-logo-ileapp.jpg",
-        "artifactListFile": "artifacts-ileapp.json",
+        "toolReleaseDate": "2026-07-09",
+        "icon": "tool-logo-leapp.jpg",
+        "artifactListFile": "artifacts-leapp.json",
         "appNameKey": "name",
-        "documentationLocation": "",
-        "extractionNotes": ""
+        "documentationLocation": "Local sibling repos: iLEAPP and ALEAPP scripts/artifacts/*.py (__artifacts_v2__).",
+        "extractionNotes": "Merged from local iLEAPP (iOS) and ALEAPP (Android) via capture-leapp-artifacts-list-local.py. Catalog fields only (name, description, category, notes, author, paths, dates) plus Platform/sourceTool. Drops LEAPP UI config such as data_views. Files that build __artifacts_v2__ with helpers (e.g. ALEAPP fitbit.py) are skipped by static parse."
     },
     {
         "toolShortName": "MOBILEdit",
