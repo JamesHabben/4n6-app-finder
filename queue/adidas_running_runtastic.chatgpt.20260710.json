@@ -1,0 +1,31 @@
+{
+    "action": "edit",
+    "appName": "Adidas Running / Runtastic",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/category",
+            "value": "Health & Fitness"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "Adidas Running - Activities"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "AdidasGoals"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "AdidasUser"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "com.runtastic.android"
+        }
+    ]
+}
