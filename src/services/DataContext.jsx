@@ -46,6 +46,7 @@ async function loadAppData() {
 
   appsList.forEach(app => {
     app.artifactCount = 0;
+    app.mappedCategories = [];
   });
 
   const artifactToolsData = await Promise.all(
@@ -60,6 +61,12 @@ async function loadAppData() {
           if (app) {
             app.artifactCount += 1;
             app.mappedTools = app.mappedTools || [];
+
+            const category = artifact.category || artifact.Category;
+            if (category && !app.mappedCategories.includes(category)) {
+              app.mappedCategories.push(category);
+              app.mappedCategories.sort((a, b) => a.localeCompare(b));
+            }
 
             const toolData = {
               shortName: tool.toolShortName,
@@ -129,11 +136,11 @@ export function DataProvider({ children }) {
       tool.artifactList.filter(toolApp =>
         matchingNames.has(toolApp[tool.appNameKey])
       )
-      .map(toolApp => ({ ...toolApp, 
-            toolShortName: tool.toolShortName, 
-            toolLongName: tool.toolLongName, 
-            toolIcon: tool.icon, 
-            toolWebsite: tool.website 
+      .map(toolApp => ({ ...toolApp,
+            toolShortName: tool.toolShortName,
+            toolLongName: tool.toolLongName,
+            toolIcon: tool.icon,
+            toolWebsite: tool.website
         }))
     );
     return toolArtifacts;
