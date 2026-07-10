@@ -7,12 +7,24 @@ const { Text } = Typography;
 function OneHitWondersCard({ oneHitCount, totalApps }) {
   const navigate = useNavigate();
   const percent = totalApps > 0 ? Number(((oneHitCount / totalApps) * 100).toFixed(1)) : 0;
+  const openOneHitWonders = () => navigate('/dashboard/one-hit-wonders');
+
+  const handleKeyDown = event => {
+    if (event.key === 'Enter' || event.key === ' ') {
+      event.preventDefault();
+      openOneHitWonders();
+    }
+  };
 
   return (
     <Card
       title="One-Hit Wonders"
       hoverable
-      onClick={() => navigate('/dashboard/one-hit-wonders')}
+      onClick={openOneHitWonders}
+      onKeyDown={handleKeyDown}
+      role="link"
+      tabIndex={0}
+      aria-label={`View ${oneHitCount} one-hit wonder apps out of ${totalApps} total apps`}
       style={{ margin: '1rem 0', width: 432, cursor: 'pointer' }}
       bodyStyle={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}
     >
