@@ -1,10 +1,7 @@
 import React, { useEffect, useState} from 'react';
-import { BrowserRouter as Router, Route, Routes, Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AppRoutes from './Routes';
-import PageSearch from 'components/PageSearch';
-import PageDashboard from 'components/PageDashboard';
-import PageAdmin from 'components/PageAdmin';
 import VersionInfo from 'components/VersionInfo';
 import { DataProvider } from 'services/DataContext';
 import { AuthProvider } from './AuthContext';
@@ -52,7 +49,6 @@ function App() {
     }
 
     if (heapId) {
-      //console.log('Heap ID:', heapId);
       loadHeap(heapId);
     }
   }, []);
@@ -84,7 +80,7 @@ function App() {
               className="scrollTop" 
               onClick={scrollTop} 
               style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
-                <span>^</span>  {/* You can replace this with an icon */}
+                <span>^</span>
             </div>
             <Analytics />
           </DataProvider>
@@ -99,7 +95,6 @@ function AppContent() {
   const activeTab = location.pathname;
 
   return (
-      
       <div className="app-container">
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0rem' }}>
           <img src="/images/4af-logo.png" alt="Logo" width={'200px'} height={'200px'} 
@@ -110,7 +105,7 @@ function AppContent() {
           <li className={activeTab === "/" ? "active" : ""}>
             <Link to="/">Search</Link>
           </li>
-          <li className={activeTab === "/dashboard" ? "active" : ""}>
+          <li className={activeTab.startsWith("/dashboard") ? "active" : ""}>
             <Link to="/dashboard">Dashboard</Link>
           </li>
           <li className={activeTab.startsWith("/admin") ? "active" : ""}>
@@ -119,7 +114,6 @@ function AppContent() {
         </ul>
         <VersionInfo />
         <AppRoutes />
-
       </div>
   );
 }
