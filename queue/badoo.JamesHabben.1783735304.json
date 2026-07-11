@@ -1,0 +1,21 @@
+{
+    "action": "edit",
+    "appName": "Badoo: Dating. Chat. Friends",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/category",
+            "value": "Dating"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "BadooConnections"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "com.badoo.mobile"
+        }
+    ]
+}
