@@ -1033,6 +1033,23 @@
             ]
         },
         {
+            "appName": "BitLord",
+            "icon": "bitlord.webp",
+            "websiteUrl": "https://www.bitlord.com",
+            "category": "File Sharing",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.houseoflife.bitlord",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "LEAPP labels BitLord's libretorrent.db as Libretorrent / LibretorrentFR.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Libretorrent",
+                "LibretorrentFR"
+            ]
+        },
+        {
             "appName": "BitPay",
             "icon": "bitpay.webp",
             "websiteUrl": "",
@@ -1725,6 +1742,52 @@
             ]
         },
         {
+            "appName": "Dahua DMSS",
+            "icon": "dahua-dmss.webp",
+            "websiteUrl": "https://www.dahuasecurity.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/dmss/id1493268178",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mm.android.DMSS",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Dahua Technology mobile app (DMSS). LEAPP labels CCTV/IoT features separately; same app.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Dahua CCTV - Channels",
+                "Dahua CCTV - Info",
+                "Dahua CCTV - User Created Media",
+                "Dahua IoT - Notifications",
+                "Dahua IoT - Registered Cloud Devices",
+                "Dahua IoT - Registered Sensors",
+                "Dahua Technology (DMSS) - Channels",
+                "Dahua Technology (DMSS) - Devices",
+                "Dahua Technology (DMSS) - Info",
+                "Dahua Technology (DMSS) - Media",
+                "Dahua Technology (DMSS) - Notifications",
+                "Dahua Technology (DMSS) - PIN",
+                "Dahua Technology (DMSS) - Sensors"
+            ]
+        },
+        {
+            "appName": "DeepSeek",
+            "icon": "deepseek.webp",
+            "websiteUrl": "https://www.deepseek.com/",
+            "category": "AI & Assistants",
+            "appleStoreUrl": "https://apps.apple.com/us/app/deepseek-ai-assistant/id6737597349",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.deepseek.chat",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Deepseek Chat Info",
+                "Deepseek Chat Messages",
+                "Deepseek User Info"
+            ]
+        },
+        {
             "appName": "Default Web Browser",
             "icon": "",
             "websiteUrl": "",
@@ -1762,27 +1825,28 @@
         },
         {
             "appName": "Discord",
-            "icon": "discord.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "discord.webp",
+            "websiteUrl": "https://discord.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.discord",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "discordAcct",
-                "discordJson",
-                "Discord - Chat, Talk & Hangout",
-                "Discord: Talk, Chat & Hang Out",
-                "Discord Messages",
-                "Discord Logged-in Account",
-                "discordManifest",
-                "Discord User",
                 "Discord - Account",
+                "Discord - Chat, Talk & Hangout",
                 "Discord - Chats",
                 "Discord Cache",
-                "Discord Chats (KV Storage)"
-            ]
+                "Discord Chats (KV Storage)",
+                "Discord Logged-in Account",
+                "Discord Messages",
+                "Discord User",
+                "Discord: Talk, Chat & Hang Out",
+                "discordChats"
+            ],
+            "category": "Communication",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "DJI GO",
@@ -2175,6 +2239,24 @@
             ]
         },
         {
+            "appName": "FairEmail",
+            "icon": "fairemail.webp",
+            "websiteUrl": "https://email.faircode.eu/",
+            "category": "Email",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=eu.faircode.email",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "FairEmail - Accounts",
+                "FairEmail - Contacts",
+                "FairEmail - Messages"
+            ]
+        },
+        {
             "appName": "Files by Google",
             "icon": "",
             "websiteUrl": "",
@@ -2490,16 +2572,48 @@
         {
             "appName": "Garmin Connect",
             "icon": "garmin-connect.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://connect.garmin.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/garmin-connect/id583446403",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-11",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
+                "Garmin - API Activities",
+                "Garmin - Cache DB Activities",
+                "Garmin - Devices",
+                "Garmin - Facebook Account",
+                "Garmin - GCM Cache Activities",
+                "Garmin - Notification Details",
+                "Garmin - Notifications",
+                "Garmin - Persistent",
+                "Garmin - Polyline Activities",
+                "Garmin - Sleep Activities",
+                "Garmin - Sync",
+                "Garmin - User Preferences",
+                "Garmin - Weather",
+                "GarminActAPI",
+                "GarminActivities",
+                "GarminCharts",
+                "GarminDailies",
+                "GarminDailiesAPI",
+                "GarminGcmJsonActivities",
+                "GarminHRAPI",
+                "GarminJson",
+                "GarminLog",
+                "GarminResponse",
+                "GarminSPO2",
+                "GarminSleep",
+                "GarminSleepAPI",
+                "GarminStepsAPI",
+                "GarminStressAPI",
+                "GarminWeight",
                 "Garmin Connect™",
                 "Garmin Connect‪™‬"
-            ]
+            ],
+            "category": "Health & Fitness",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Gate Guru",
@@ -2522,6 +2636,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Gboard",
+            "icon": "gboard.webp",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/gboard-the-google-keyboard/id1091700242",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Gboard - Clipboard",
+                "Gboard - Keystroke Cache",
+                "Gboard - Sessions",
+                "Gboard - the Google Keyboard"
+            ]
         },
         {
             "appName": "Getcontact",
@@ -2818,49 +2951,57 @@
         {
             "appName": "Google Mail (Gmail)",
             "icon": "google-mail.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "websiteUrl": "https://mail.google.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/gmail-email-by-google/id422689480",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Gmail",
-                "Gmail/Inbox",
-                "Google Mail",
+                "Android Gmail",
                 "Android Gmail Conversations",
-                "Gmail Emails",
-                "Gmail - Email by Google",
+                "Gmail",
                 "Gmail - App Emails",
                 "Gmail - Download Requests",
+                "Gmail - Email by Google",
                 "Gmail - IMAP Accounts",
                 "Gmail - IMAP Mailbox Emails",
                 "Gmail - Label Details",
-                "Gmail - Offline Search"
-            ]
+                "Gmail - Offline Search",
+                "Gmail Email Fragments",
+                "Gmail Emails",
+                "Gmail/Inbox",
+                "Google Mail"
+            ],
+            "category": "Email",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Google Maps",
-            "icon": "google-maps.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "google-maps.webp",
+            "websiteUrl": "https://maps.google.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-maps/id585027354",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.maps",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Google Maps Saved Locations",
-                "Google Maps Directions",
                 "Android Google Maps",
-                "Google Maps Tiles",
-                "com.google.android.maps.mytracks",
                 "Google Maps Cache Routes",
+                "Google Maps Directions",
                 "Google Maps Label Places",
                 "Google Maps Last Trip",
+                "Google Maps Saved Locations",
                 "Google Maps Searches",
+                "Google Maps Tiles",
                 "Google Maps Voice Guidance",
-                "Google Maps Voice Guidance (Temp)"
-            ]
+                "Google Maps Voice Guidance (Temp)",
+                "com.google.android.maps.mytracks"
+            ],
+            "category": "Maps & Navigation",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Google Meet",
@@ -2939,6 +3080,39 @@
                 "Google Photos - Local Trash",
                 "Google Photos - Remote Media",
                 "Google Photos - Shared Media"
+            ]
+        },
+        {
+            "appName": "Google Play Books & Audiobooks",
+            "icon": "google-play-books.webp",
+            "websiteUrl": "https://play.google.com/books",
+            "category": "Books",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-play-books-audiobooks/id400989007",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.books",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
+            "appName": "Google Play Store",
+            "icon": "google-play-store.webp",
+            "websiteUrl": "https://play.google.com/store",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.android.vending",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "App Updates (Frosting.db)",
+                "Google Play Searches",
+                "InstalledappsLibrary",
+                "InstalledappsVending"
             ]
         },
         {
@@ -3067,6 +3241,23 @@
             ]
         },
         {
+            "appName": "Grok",
+            "icon": "grok.webp",
+            "websiteUrl": "https://grok.com/",
+            "category": "AI & Assistants",
+            "appleStoreUrl": "https://apps.apple.com/us/app/grok-ai/id6670324846",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ai.x.grok",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Grok - User Account",
+                "Grok - Videos"
+            ]
+        },
+        {
             "appName": "GroupMe",
             "icon": "groupme.webp",
             "websiteUrl": "",
@@ -3183,6 +3374,39 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "HideX",
+            "icon": "hidex.webp",
+            "websiteUrl": "https://flatfishsafe.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Calculator-disguise photo/app vault (com.flatfish.cal.privacy). Play Store listing not currently available.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
+            "appName": "Hik-Connect",
+            "icon": "hik-connect.webp",
+            "websiteUrl": "https://www.hikvision.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/hik-connect-for-end-user/id1087803190",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.connect.enduser",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hikvision end-user CCTV app. LEAPP labels artifacts as Hikvision - CCTV *.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Hikvision - CCTV Activity",
+                "Hikvision - CCTV Channels",
+                "Hikvision - CCTV Info",
+                "Hikvision - User Created Media"
+            ]
         },
         {
             "appName": "Hike News & Content",
@@ -3738,6 +3962,25 @@
             ]
         },
         {
+            "appName": "Kijiji",
+            "icon": "kijiji.webp",
+            "websiteUrl": "https://www.kijiji.ca",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/ca/app/kijiji-buy-sell-find-deals/id318979520",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebay.kijiji.ca",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Kijiji Conversations",
+                "kijijiConversations",
+                "kijijiLocalUserInfo",
+                "kijijiRecentSearches"
+            ]
+        },
+        {
             "appName": "Kik Messenger",
             "icon": "kik.webp",
             "websiteUrl": "",
@@ -3804,6 +4047,30 @@
             ]
         },
         {
+            "appName": "Kleinanzeigen",
+            "icon": "kleinanzeigen.webp",
+            "websiteUrl": "https://www.kleinanzeigen.de",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/de/app/kleinanzeigen-dein-marktplatz/id382596778",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebay.kleinanzeigen",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Kleinanzeigen.de - Last Search",
+                "Kleinanzeigen.de - Message Cache",
+                "Kleinanzeigen.de - Search History",
+                "Kleinanzeigen.de - User Account",
+                "kleinanzeigen.de - Messagebox",
+                "kleinanzeigen.de - Messages",
+                "kleinanzeigen.de - Non resettable Recent Searches Cache",
+                "kleinanzeigen.de - Recent Searches Cache",
+                "kleinanzeigen.de App - Account Details"
+            ]
+        },
+        {
             "appName": "KnowledgeC",
             "icon": "",
             "websiteUrl": "",
@@ -3813,6 +4080,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Knuddels",
+            "icon": "knuddels.webp",
+            "websiteUrl": "https://www.knuddels.de",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/de/app/knuddels-chat-freunde-finden/id369409839",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.knuddels.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Knuddels - Account & App Usage",
+                "Knuddels - Chat Messages",
+                "Knuddels - Known Users"
+            ]
         },
         {
             "appName": "KYMS - Keep your media safe",
@@ -4143,28 +4428,24 @@
             ]
         },
         {
-            "appName": "Map My Walk by Under Armor",
+            "appName": "Map My Walk",
             "icon": "map-my-walk.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.mapmywalk.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/map-my-walk-walking-tracker/id307861492",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mapmywalk.android2&hl=en",
-            "activeOnAppleStore": "",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Formerly owned by Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024.",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "2023-11-11",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "com.mapmyrideplus.android2",
+                "Map My Walk - Activities",
+                "MapUsers",
                 "Map My Walk by Under Armour",
                 "Walk with Map My Walk",
                 "Q5AWL8WCY6.iMapMyWalk",
-                "Q5AWL8WCY6.iMapMyHikePlus",
-                "Map My Hike GPS Hiking",
-                "Map My Hike by Under Armour",
-                "com.mapmywalkplus.android2",
-                "com.mapmyhikeplus.android2",
-                "com.mapmyfitness.MapMyDogWalk",
-                "com.mapmydogwalk.android2"
+                "com.mapmywalkplus.android2"
             ]
         },
         {
@@ -4254,19 +4535,25 @@
             ]
         },
         {
-            "appName": "Mega",
-            "icon": "mega.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mega.privacy.android.app&hl=en",
+            "appName": "MEGA",
+            "icon": "mega.webp",
+            "websiteUrl": "https://mega.io",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mega-encrypted-cloud-storage/id706857885",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mega.privacy.android.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
+                "Mega",
+                "mega",
+                "mega_transfers",
                 "MEGA Accounts",
                 "MEGA Chat",
                 "MEGA Contacts",
-                "mega_transfers"
+                "Cloud Mega Files"
             ]
         },
         {
@@ -7296,6 +7583,31 @@
                 "Wire Secure Messenger Account",
                 "Wire Secure Messenger Messages",
                 "Wire User Profile"
+            ]
+        },
+        {
+            "appName": "Withings Health Mate",
+            "icon": "withings-health-mate.webp",
+            "websiteUrl": "https://www.withings.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/withings/id542701020",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.withings.wiscale2",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Withings health app (formerly/also Health Mate). LEAPP artifact names use Health Mate.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Health Mate - Accounts",
+                "Health Mate - Contacts",
+                "Health Mate - Daily Summary",
+                "Health Mate - Devices",
+                "Health Mate - Locations",
+                "Health Mate - Measurements",
+                "Health Mate - Messages",
+                "Health Mate - Sleep Tracking",
+                "Health Mate - Tracked Activities",
+                "Health Mate - Trackings"
             ]
         },
         {
