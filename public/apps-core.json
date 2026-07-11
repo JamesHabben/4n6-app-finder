@@ -92,7 +92,7 @@
             "googlePlayUrl": "",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "Runtastic",
                 "adidas Running: Walk & Run App",
@@ -104,8 +104,13 @@
                 "com.runtastic.iphone.roadbike.pro",
                 "com.runtastic.iphone.roadbike.lite",
                 "com.runtastic.iphone.mountainbike.pro",
-                "com.runtastic.iphone.mountainbike.lite"
-            ]
+                "com.runtastic.iphone.mountainbike.lite",
+                "Adidas Running - Activities",
+                "AdidasGoals",
+                "AdidasUser",
+                "com.runtastic.android"
+            ],
+            "category": "Health & Fitness"
         },
         {
             "appName": "Adium",
@@ -179,6 +184,24 @@
             "dateUpdated": "2026-07-09",
             "alternateNames": [
                 "Airbnb - Messages"
+            ]
+        },
+        {
+            "appName": "AirGuard",
+            "icon": "airguard.png",
+            "websiteUrl": "https://github.com/seemoo-lab/AirGuard",
+            "appleStoreUrl": "https://apps.apple.com/app/id1659427454",
+            "isActiveOnAppleStore": "true",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.seemoo.at_tracking_detection.release",
+            "isActiveOnPlayStore": "true",
+            "category": "Security & Privacy",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "AirGuard AirTag Scans",
+                "AirGuard AirTag Tracker",
+                "de.seemoo.at_tracking_detection.release"
             ]
         },
         {
@@ -316,6 +339,23 @@
             "dateUpdated": "2023-10-24",
             "alternateNames": [
                 "American Airlines"
+            ]
+        },
+        {
+            "appName": "Android Auto",
+            "icon": "android-auto.png",
+            "websiteUrl": "https://www.android.com/auto/",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "false",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead",
+            "isActiveOnPlayStore": "true",
+            "category": "Automotive",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Android Auto - Connected Cars",
+                "com.google.android.projection.gearhead"
             ]
         },
         {
@@ -886,6 +926,21 @@
             ]
         },
         {
+            "appName": "Beam",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet&hl=en_US",
+            "isActiveOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2023-11-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Beam Transactions"
+            ]
+        },
+        {
             "appName": "Beekeeper",
             "icon": "beekeeper.webp",
             "websiteUrl": "",
@@ -1436,6 +1491,21 @@
             ]
         },
         {
+            "appName": "Coinomi: Crypto Bitcoin Wallet",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.coinomi.wallet&hl=en_US",
+            "isActiveOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2023-11-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Coinomi Transactions"
+            ]
+        },
+        {
             "appName": "Confide",
             "icon": "confide.webp",
             "websiteUrl": "",
@@ -1866,6 +1936,21 @@
                 "Evernote Notes",
                 "Evernote Work Chat",
                 "Evernote - Notes Organizer"
+            ]
+        },
+        {
+            "appName": "Exodus: Crypto Bitcoin Wallet",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=exodusmovement.exodus&hl=en_US",
+            "isActiveOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2023-11-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Exodus Transactions"
             ]
         },
         {
@@ -2654,6 +2739,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Google Phone",
+            "icon": "google-phone.png",
+            "websiteUrl": "https://play.google.com/store/apps/details?id=com.google.android.dialer",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "false",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.dialer",
+            "isActiveOnPlayStore": "true",
+            "category": "Communication",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Android Call Transcriptions",
+                "Phone by Google",
+                "Google Dialer",
+                "com.google.android.dialer"
+            ]
         },
         {
             "appName": "Google photos",
@@ -5520,9 +5624,15 @@
             "activeOnPlayStore": "",
             "notes": "",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "SIM Card ICCID"
+                "SIM Card ICCID",
+                "Android Sim Card Information",
+                "SIM Card SMS Messages",
+                "SIM Card Service Providers",
+                "SIM Card Phone Numbers",
+                "SIM Card IMSI",
+                "Android Sim Card Information"
             ]
         },
         {
@@ -5650,9 +5760,13 @@
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Sleipnir Web History"
+                "Sleipnir Web History",
+                "Sleipnir Search Terms",
+                "Sleipnir Cookies",
+                "Sleipnir Bookmarks",
+                "Sleipnir Autofill"
             ]
         },
         {
@@ -6269,6 +6383,24 @@
             ]
         },
         {
+            "appName": "Tracker Detect",
+            "icon": "tracker-detect.png",
+            "websiteUrl": "https://support.apple.com/HT212227",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "false",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.apple.trackerdetect",
+            "isActiveOnPlayStore": "true",
+            "category": "Security & Privacy",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "atrackerdetect",
+                "Apple Tracker Detect",
+                "com.apple.trackerdetect"
+            ]
+        },
+        {
             "appName": "Transaero",
             "icon": "",
             "websiteUrl": "",
@@ -6480,13 +6612,17 @@
             "googlePlayUrl": "",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "UC Browser Lite",
                 "UC Mini-Download Video Status",
                 "UC Browser-Safe, Fast, Private",
                 "UC Browser Mini for Android Go",
-                "com.uc.browser.hd"
+                "com.uc.browser.hd",
+                "UC Browser History",
+                "UC Browser Downloads",
+                "UC Browser Cookies",
+                "UC Browser Bookmarks"
             ]
         },
         {
@@ -6854,9 +6990,19 @@
             "activeOnPlayStore": "",
             "notes": "",
             "dateAdded": "2023-11-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Whale Web Visits"
+                "Whale Web Visits",
+                "Whale Web History",
+                "Whale Top Sites",
+                "Whale Tab History",
+                "Whale Logins",
+                "Whale Keyword Search Terms",
+                "Whale FavIcons",
+                "Whale Downloads",
+                "Whale Cookies",
+                "Whale Bookmarks",
+                "Whale Autofill"
             ]
         },
         {
