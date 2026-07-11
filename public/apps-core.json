@@ -823,6 +823,25 @@
             ]
         },
         {
+            "appName": "AVG AntiVirus & Security",
+            "icon": "",
+            "websiteUrl": "https://www.avg.com/en-us/antivirus-for-android",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "false",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.antivirus",
+            "isActiveOnPlayStore": "true",
+            "category": "Security & Privacy",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "AVG - Encryption Details",
+                "AVG - Media Files",
+                "AVG AntiVirus",
+                "com.antivirus"
+            ]
+        },
+        {
             "appName": "AWS Wickr",
             "icon": "aws-wickr.webp",
             "websiteUrl": "",
@@ -868,13 +887,16 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.badoo.mobile&pli=1",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "Badoo",
                 "Badoo: Dating. Chat. Meet.",
                 "Badoo - Messages",
-                "Badoo - Users"
-            ]
+                "Badoo - Users",
+                "BadooConnections",
+                "com.badoo.mobile"
+            ],
+            "category": "Dating"
         },
         {
             "appName": "Baidu Browser (百度)",
@@ -1027,6 +1049,25 @@
             ]
         },
         {
+            "appName": "BitTorrent",
+            "icon": "",
+            "websiteUrl": "https://www.bittorrent.com/products/android/",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "false",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bittorrent.client",
+            "isActiveOnPlayStore": "true",
+            "category": "File Sharing",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "BitTorrent Prefs",
+                "bittorrentDlhist",
+                "BitTorrent Torrent Downloads",
+                "com.bittorrent.client"
+            ]
+        },
+        {
             "appName": "BlaBlaCar",
             "icon": "blablacar.webp",
             "websiteUrl": "",
@@ -1070,6 +1111,27 @@
             "dateUpdated": "",
             "alternateNames": [
                 "Blendr - Chat, Flirt & Meet"
+            ]
+        },
+        {
+            "appName": "Bluesky",
+            "icon": "",
+            "websiteUrl": "https://bsky.app/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bluesky-social/id6444370199",
+            "isActiveOnAppleStore": "true",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
+            "isActiveOnPlayStore": "true",
+            "category": "Social Networking",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Bluesky - Actors",
+                "Bluesky - Messages",
+                "Bluesky - Posts",
+                "Bluesky - Searches",
+                "Bluesky Social",
+                "xyz.blueskyweb.app"
             ]
         },
         {
@@ -1241,15 +1303,17 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bumble.app",
             "notes": "",
             "dateAdded": "2023-10-21",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "bumble",
                 "Bumble - Account Details",
                 "Bumble - Chat Messages",
                 "Bumble - Matches",
                 "Bumble - Messages",
-                "Bumble - User Settings"
-            ]
+                "Bumble - User Settings",
+                "com.bumble.app"
+            ],
+            "category": "Dating"
         },
         {
             "appName": "Bump",
@@ -1272,7 +1336,7 @@
             "googlePlayUrl": "",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-10",
             "alternateNames": [
                 "Android Burner Conversations",
                 "Android Burner Numbers",
@@ -1292,8 +1356,10 @@
                 "Burner Cache Accounts",
                 "Burner Cache Contacts",
                 "Burner Cache Messages",
-                "Burner Cache Numbers"
-            ]
+                "Burner Cache Numbers",
+                "com.adhoclabs.burner"
+            ],
+            "category": "Communication"
         },
         {
             "appName": "C-Mail",
@@ -1365,6 +1431,21 @@
             "alternateNames": []
         },
         {
+            "appName": "ChatGPT",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "",
+            "isActiveOnPlayStore": "",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "ChatGPT - Account Status"
+            ]
+        },
+        {
             "appName": "ChatON",
             "icon": "",
             "websiteUrl": "",
@@ -1425,6 +1506,34 @@
             ]
         },
         {
+            "appName": "Chess With Friends",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "",
+            "isActiveOnPlayStore": "",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
+            "appName": "Chess.com",
+            "icon": "",
+            "websiteUrl": "",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "",
+            "googlePlayUrl": "",
+            "isActiveOnPlayStore": "",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Chess.com Account"
+            ]
+        },
+        {
             "appName": "Chromium",
             "icon": "",
             "websiteUrl": "",
@@ -1435,6 +1544,25 @@
             "dateUpdated": "",
             "alternateNames": [
                 "Chromium Based Browser"
+            ]
+        },
+        {
+            "appName": "Citymapper",
+            "icon": "",
+            "websiteUrl": "https://citymapper.com/",
+            "appleStoreUrl": "",
+            "isActiveOnAppleStore": "true",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.citymapper.app.release",
+            "isActiveOnPlayStore": "true",
+            "category": "Transportation",
+            "notes": "",
+            "dateAdded": "2026-07-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Citymapper - App Preferences",
+                "Citymapper - Location History",
+                "Citymapper - Saved Trips",
+                "com.citymapper.app.release"
             ]
         },
         {
@@ -2560,9 +2688,10 @@
             "googlePlayUrl": "",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Google Drive for desktop"
+                "Google Drive for desktop",
+                "Cello - Google Drive"
             ]
         },
         {
@@ -4133,6 +4262,7 @@
             "appleStoreUrl": "https://apps.apple.com/us/app/messenger/id454638411",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
             "notes": "",
+            "category": "Communication",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
@@ -4157,7 +4287,10 @@
                 "Facebook Messenger - Contacts (threads_db2)",
                 "Facebook Messenger - Conversation Groups",
                 "Facebook Messenger - Secret Conversations",
-                "Facebook Messenger - User ID"
+                "Facebook Messenger - User ID",
+                "Meta Messenger (Facebook)",
+                "com.facebook.Messenger",
+                "com.facebook.orca"
             ]
         },
         {
