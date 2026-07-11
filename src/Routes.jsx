@@ -3,6 +3,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import PageSearch from 'components/PageSearch';
 import PageDashboard from 'components/PageDashboard';
+import PageOneHitWonders from 'components/PageOneHitWonders';
 import PageAdmin from 'components/PageAdmin';
 import ToolsListContent from 'components/adminComponents/ToolsListContent';
 import AppsListContent from 'components/adminComponents/AppsListContent';
@@ -16,6 +17,7 @@ const AppRoutes = () => {
       <Route path="/" element={<PageSearch />} />
       <Route path="/auth/callback" element={<AuthCallbackHandler />} />
       <Route path="/dashboard" element={<PageDashboard />} />
+      <Route path="/dashboard/one-hit-wonders" element={<PageOneHitWonders />} />
       <Route path="/admin" element={<PageAdmin />} >
         <Route path="tools" element={<ToolsListContent />} />
         <Route path="apps" element={<AppsListContent />} />
