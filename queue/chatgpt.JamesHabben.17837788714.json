@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "ChatGPT",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "isActiveOnAppleStore": "",
+                "googlePlayUrl": "",
+                "isActiveOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2026-07-11",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "ChatGPT - Account Status"
+                ]
+            }
+        }
+    ]
+}
