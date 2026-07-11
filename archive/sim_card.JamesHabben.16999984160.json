@@ -1,0 +1,11 @@
+{
+    "action": "edit",
+    "appName": "SIM Card",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/alternateNames/1",
+            "value": "SIM Card IMSI"
+        }
+    ]
+}
