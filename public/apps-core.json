@@ -1566,21 +1566,6 @@
             ]
         },
         {
-            "appName": "Citymapper",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "isActiveOnAppleStore": "",
-            "googlePlayUrl": "",
-            "isActiveOnPlayStore": "",
-            "notes": "",
-            "dateAdded": "2026-07-11",
-            "dateUpdated": "",
-            "alternateNames": [
-                "Citymapper - App Preferences"
-            ]
-        },
-        {
             "appName": "Clubhouse",
             "icon": "clubhouse.webp",
             "websiteUrl": "",
