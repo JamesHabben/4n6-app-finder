@@ -766,18 +766,22 @@
         },
         {
             "appName": "ASICS RunKeeper",
-            "icon": "asics-runkeeper.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "asics-runkeeper.webp",
+            "websiteUrl": "https://runkeeper.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/asics-runkeeper-run-tracker/id300235330",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fitnesskeeper.runkeeper.pro",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "ASICS Runkeeper - Run Tracker",
                 "RunKeeper",
                 "RunKeeperPro",
-                "Runkeeper - Activities"
+                "Runkeeper - Activities",
+                "RunkeeperUser"
             ]
         },
         {
@@ -4628,6 +4632,23 @@
             ]
         },
         {
+            "appName": "MeWe",
+            "icon": "mewe.webp",
+            "websiteUrl": "https://mewe.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mewe-the-safe-network/id918464474",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mewe",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "MeWe - Chat",
+                "MeWe - SGSession"
+            ]
+        },
+        {
             "appName": "Mi Browser",
             "icon": "mi-browser.webp",
             "websiteUrl": "",
@@ -4642,6 +4663,23 @@
                 "Mi Browser Cookies",
                 "Mi Browser Bookmarks",
                 "Mi Browser Autofill"
+            ]
+        },
+        {
+            "appName": "Microsoft Authenticator",
+            "icon": "microsoft-authenticator.webp",
+            "websiteUrl": "https://www.microsoft.com/en-us/security/mobile-authenticator-app",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-authenticator/id983156458",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.azure.authenticator",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Microsoft Authenticator - Accounts",
+                "com.microsoft.msa.authenticator"
             ]
         },
         {
@@ -4943,6 +4981,33 @@
             "alternateNames": []
         },
         {
+            "appName": "My Files",
+            "icon": "my-files.webp",
+            "websiteUrl": "https://www.samsung.com/us/support/owners/app/my-files",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Samsung file manager (com.sec.android.app.myfiles).",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Samsung My Files",
+                "My Files - Download History",
+                "My Files - Download History (FileInfo)",
+                "My Files - Download History (Legacy)",
+                "My Files - Google Drive",
+                "My Files - Recent Files",
+                "My Files - Recent Files (FileInfo)",
+                "My Files - Recent Files (MyFiles DB)",
+                "My Files Cache",
+                "My Files Operation History",
+                "My Files Trash",
+                "smyfilesStored"
+            ]
+        },
+        {
             "appName": "My Tracks",
             "icon": "",
             "websiteUrl": "",
@@ -5032,17 +5097,24 @@
         {
             "appName": "Nike Run Club",
             "icon": "nike-run-club.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.nike.com/nrc-app",
+            "category": "Health & Fitness",
             "appleStoreUrl": "https://apps.apple.com/us/app/nike-run-club-running-coach/id387771637",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nike.plusgps&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nike.plusgps",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-28",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "Nike+ Run Club",
-                "com.nike.nikeplus-gps",
                 "Nike+ Running",
-                "Nike Run Club - Running Coach"
+                "Nike Run Club - Running Coach",
+                "com.nike.nikeplus-gps",
+                "Nike - Activities",
+                "Nike - Activity Moments",
+                "Nike - Activity Route",
+                "NikeNotifications"
             ]
         },
         {
@@ -5298,6 +5370,48 @@
             ]
         },
         {
+            "appName": "Ornet Browser",
+            "icon": "ornet-browser.webp",
+            "websiteUrl": "",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tor-browser-ornet-onion-vpn/id1177964608",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ornet.torbrowser",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Play Store title: Dark Web Browser : OrNET.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Ornet Browser - Bookmarks",
+                "Ornet Browser - Cookies",
+                "Ornet Browser - Downloads",
+                "Ornet Browser - Favorited Sites",
+                "Ornet Browser - Frequents",
+                "Ornet Browser - Open Tabs",
+                "Ornet Browser - Search History",
+                "Ornet Browser - Tab Thumbnails",
+                "Ornet Browser - Usage Info",
+                "Ornet Browser - Web Browser History"
+            ]
+        },
+        {
+            "appName": "OruxMaps",
+            "icon": "oruxmaps.webp",
+            "websiteUrl": "https://www.oruxmaps.com",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/oruxmaps/id6746377543",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.orux.oruxmapsDonate",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Free Play package com.orux.oruxmaps removed; Donate listing still active.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Oruxmaps - POI",
+                "Oruxmaps - Tracks"
+            ]
+        },
+        {
             "appName": "Parler",
             "icon": "parler.webp",
             "websiteUrl": "",
@@ -5440,6 +5554,24 @@
             "alternateNames": []
         },
         {
+            "appName": "PikPak",
+            "icon": "pikpak.webp",
+            "websiteUrl": "https://mypikpak.com",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/pikpak-cloud-storage-saver/id1616861537",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pikcloud.pikpak",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "PikPak Cloud List",
+                "PikPak Downloads",
+                "PikPak Play"
+            ]
+        },
+        {
             "appName": "Pinterest",
             "icon": "pinterest.webp",
             "websiteUrl": "",
@@ -5455,6 +5587,20 @@
                 "Pinterest Messages",
                 "Pinterest Pins"
             ]
+        },
+        {
+            "appName": "Playground Vault",
+            "icon": "playground-vault.webp",
+            "websiteUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Vault for Apps Lock & File Encryption (playground.develop.applocker). Play Store listing not currently available.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": []
         },
         {
             "appName": "PlayStation App (Messages)",
@@ -5493,6 +5639,20 @@
             "googlePlayUrl": "",
             "notes": "",
             "dateAdded": "2023-10-11",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
+            "appName": "Podcast Addict",
+            "icon": "podcast-addict.webp",
+            "websiteUrl": "",
+            "category": "Music & Audio",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bambuna.podcastaddict",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
         },
@@ -5577,6 +5737,41 @@
             "alternateNames": []
         },
         {
+            "appName": "Proton Drive",
+            "icon": "proton-drive.webp",
+            "websiteUrl": "https://proton.me/drive",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/proton-drive-cloud-storage/id1509667851",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.proton.android.drive",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Proton Drive - File Info",
+                "Proton Drive - User Account"
+            ]
+        },
+        {
+            "appName": "Proton VPN",
+            "icon": "proton-vpn.webp",
+            "websiteUrl": "https://protonvpn.com",
+            "category": "VPN",
+            "appleStoreUrl": "https://apps.apple.com/us/app/proton-vpn-fast-secure/id1437005085",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.protonvpn.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "ProtonVPN - Connection History",
+                "ProtonVPN - Device Info",
+                "ProtonVPN - User Info"
+            ]
+        },
+        {
             "appName": "ProtonMail",
             "icon": "proton-mail.webp",
             "websiteUrl": "",
@@ -5611,6 +5806,23 @@
                 "Puffin Cloud Browser",
                 "Puffin Browser Pro",
                 "Puffin Academy"
+            ]
+        },
+        {
+            "appName": "PUMATRAC",
+            "icon": "pumatrac.webp",
+            "websiteUrl": "https://www.puma.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/pumatrac-run-train-fitness/id698298978",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pumapumatrac",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "PUMA running/training app (PumaTrac). LEAPP labels artifacts as Puma / Puma-Trac.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Puma - Activities",
+                "PumaUsers"
             ]
         },
         {
@@ -5697,6 +5909,24 @@
             ]
         },
         {
+            "appName": "RandoChat",
+            "icon": "randochat.webp",
+            "websiteUrl": "",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/randochat-app/id1475271888",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.random.chat.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "RandoChat Accounts",
+                "RandoChat Contacts",
+                "RandoChat Messages"
+            ]
+        },
+        {
             "appName": "Reddit",
             "icon": "reddit.webp",
             "websiteUrl": "",
@@ -5710,6 +5940,23 @@
                 "Reddit Posts",
                 "Reddit Recently Visited Subreddits",
                 "Reddit Chats"
+            ]
+        },
+        {
+            "appName": "REMA 1000 Scan Selv",
+            "icon": "rema-1000-scan-selv.webp",
+            "websiteUrl": "https://www.rema1000.dk",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/dk/app/rema-1000-scan-selv/id1562076454",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=dk.rema1000.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Danish REMA 1000 self-scan app. Separate from the main REMA 1000 app.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Rema1000 Receipts, prettified",
+                "Rema1000 Receipts, raw"
             ]
         },
         {
@@ -5751,16 +5998,23 @@
         },
         {
             "appName": "ROMEO - Gay Chat & Dating",
-            "icon": "romeo.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.planetromeo.android.app&hl=en",
+            "icon": "romeo.webp",
+            "websiteUrl": "https://www.planetromeo.com",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/romeo-gay-dating-chat/id404386888",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.planetromeo.android.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "ROMEO - Gay Dating",
-                "ROMEO - Gay Dating & Chat"
+                "ROMEO - Gay Dating & Chat",
+                "com.planetromeo.mobile",
+                "Romeo Dating App Accounts",
+                "Romeo Dating App Contacts",
+                "Romeo Dating App Messages"
             ]
         },
         {
@@ -5855,6 +6109,24 @@
             ]
         },
         {
+            "appName": "Samsung Honeyboard",
+            "icon": "samsung-honeyboard.webp",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Samsung Keyboard (Honeyboard). Preinstalled on Galaxy devices.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Samsung Honeyboard - Clipboard History",
+                "Samsung Honeyboard - Clipboard Screenshot",
+                "Samsung Keyboard Clipboard History"
+            ]
+        },
+        {
             "appName": "Samsung Internet Browser",
             "icon": "samsung-internet-browser.webp",
             "websiteUrl": "",
@@ -5933,6 +6205,41 @@
             "alternateNames": []
         },
         {
+            "appName": "Samsung Secure Folder (Knox)",
+            "icon": "samsung-secure-folder.webp",
+            "websiteUrl": "https://www.samsung.com/us/support/owners/app/secure-folder",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Knox-backed private space (com.samsung.knox.securefolder). LEAPP also labels one artifact \"Samsung Knox History Log\".",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Samsung Knox History Log",
+                "Samsung Secure Folder - History Log"
+            ]
+        },
+        {
+            "appName": "Samsung Weather",
+            "icon": "samsung-weather.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Galaxy Weather app (com.sec.android.daemonapp). LEAPP labels DB as Weather Clock.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Samsung Weather Clock - Daily",
+                "Samsung Weather Clock - Hourly",
+                "Samsung Weather Clock - Info"
+            ]
+        },
+        {
             "appName": "SayHi Chat Meet Dating People",
             "icon": "",
             "websiteUrl": "",
@@ -5944,6 +6251,27 @@
             "dateAdded": "2023-11-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "SBB Mobile",
+            "icon": "sbb-mobile.webp",
+            "websiteUrl": "https://www.sbb.ch",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/ch/app/sbb-mobile/id294855237",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.sbb.mobile.android.b2c",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "SBB Mobile - EasyRide Trips",
+                "SBB Mobile - Purchased Tickets",
+                "SBB Mobile - Search History",
+                "SBB Mobile - Searched places",
+                "SBB Mobile - Ticket Purchased recently",
+                "SBB Mobile - Travel Cards"
+            ]
         },
         {
             "appName": "Sberbank online",
@@ -5994,14 +6322,19 @@
         },
         {
             "appName": "SHAREit",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "shareit.webp",
+            "websiteUrl": "https://www.ushareit.com",
+            "category": "File Sharing",
+            "appleStoreUrl": "https://apps.apple.com/us/app/shareit-transfer-share-files/id725215120",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lenovo.anyshare.gps",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-11",
+            "alternateNames": [
+                "shareit"
+            ]
         },
         {
             "appName": "Shazam",
@@ -6026,6 +6359,22 @@
             "dateAdded": "2023-11-02",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Sideline",
+            "icon": "sideline.webp",
+            "websiteUrl": "https://www.sideline.com",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/sideline-private-2nd-number/id1012032539",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sideline.phone.number",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Private second phone number (Pinger). LEAPP artifact name: Sideline Chats and Calls.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Sideline Chats and Calls"
+            ]
         },
         {
             "appName": "Signal",
@@ -6229,6 +6578,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "SmartThings",
+            "icon": "smartthings.webp",
+            "websiteUrl": "https://www.samsung.com/us/smartthings/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/smartthings/id1222822904",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.samsung.android.oneconnect",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "samsungSmartThings"
+            ]
         },
         {
             "appName": "SMS Center",
@@ -7559,14 +7924,19 @@
         },
         {
             "appName": "WinRAR",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "winrar.webp",
+            "websiteUrl": "https://www.rarlab.com",
+            "category": "Productivity",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.rarlab.rar",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Android store title is RAR (RARLAB); desktop product is WinRAR.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-11",
+            "alternateNames": [
+                "rarlabPreferences"
+            ]
         },
         {
             "appName": "Wire",
