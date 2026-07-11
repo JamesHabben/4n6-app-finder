@@ -28,6 +28,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
+    "dev:vercel": "npx vercel dev --listen 5173",
     "prebuild": "node version.js",
     "build": "vite build",
     "preview": "vite preview"

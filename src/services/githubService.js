@@ -464,9 +464,45 @@ export const githubService = (token, username) => {
         }
     }
 
+    const listOpenPullRequests = async () => {
+        try {
+            const { data } = await octokit.pulls.list({
+                owner,
+                repo,
+                state: 'open',
+                per_page: 100,
+            });
+            return data;
+        } catch (error) {
+            console.error('Error listing pull requests:', error);
+            throw error;
+        }
+    };
+
+    const getDataPullRequest = async () => {
+        try {
+            const { data: prList } = await octokit.pulls.list({
+                owner,
+                repo,
+                state: 'open',
+                head: `${owner}:${dataBranch}`,
+                base: defaultBranch,
+            });
+            return prList[0] || null;
+        } catch (error) {
+            console.error('Error checking data pull request:', error);
+            throw error;
+        }
+    };
+
     const createDataPullRequest = async (title, body) => {
         try {
-            await octokit.pulls.create({
+            const existing = await getDataPullRequest();
+            if (existing) {
+                return existing;
+            }
+
+            const { data } = await octokit.pulls.create({
                 owner: owner,
                 repo: repo,
                 title: title,
@@ -474,11 +510,105 @@ export const githubService = (token, username) => {
                 head: dataBranch,
                 base: defaultBranch,
             });
+            return data;
         } catch (error) {
             console.error('Error creating pull request:', error);
+            throw error;
         }
-    }
+    };
 
+    const extractPreviewUrlFromText = (text) => {
+        if (!text) return null;
+        // Prefer hostnames ending in .vercel.app (skip vercel.live feedback links)
+        const match = text.match(/https:\/\/[^\/\s)"']+\.vercel\.app(?:\/[^\s)"']*)?/);
+        return match ? match[0].replace(/[.,;]+$/, '') : null;
+    };
+
+    const getPreviewUrlFromComments = async (prNumber) => {
+        try {
+            const { data: comments } = await octokit.issues.listComments({
+                owner,
+                repo,
+                issue_number: prNumber,
+                per_page: 100,
+            });
+            const vercelComment = comments.find((comment) => {
+                const login = comment.user?.login || '';
+                return login === 'vercel[bot]' || login === 'vercel';
+            });
+            return extractPreviewUrlFromText(vercelComment?.body);
+        } catch (error) {
+            console.error('Error reading PR comments for preview URL:', error.message);
+            return null;
+        }
+    };
+
+    const getPreviewUrl = async (prNumber) => {
+        if (!prNumber) return null;
+        const fromComments = await getPreviewUrlFromComments(prNumber);
+        if (fromComments) return fromComments;
+        return getPreviewUrlFromDeployments(dataBranch);
+    };
+
+    const getPreviewUrlFromDeployments = async (ref = dataBranch) => {
+        try {
+            const { data: deployments } = await octokit.repos.listDeployments({
+                owner,
+                repo,
+                ref,
+                per_page: 5,
+            });
+
+            for (const deployment of deployments) {
+                const { data: statuses } = await octokit.repos.listDeploymentStatuses({
+                    owner,
+                    repo,
+                    deployment_id: deployment.id,
+                    per_page: 5,
+                });
+                const success = statuses.find(
+                    (status) => status.state === 'success' && status.environment_url
+                );
+                if (success?.environment_url) {
+                    return success.environment_url;
+                }
+            }
+            return null;
+        } catch (error) {
+            console.error('Error reading deployments for preview URL:', error.message);
+            return null;
+        }
+    };
+
+    const waitForPreviewUrl = async (prNumber, options = {}) => {
+        const {
+            maxAttempts = 12,
+            delayMs = 5000,
+            onAttempt,
+        } = options;
+
+        for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+            if (onAttempt) {
+                onAttempt(attempt, maxAttempts);
+            }
+
+            const fromComments = await getPreviewUrlFromComments(prNumber);
+            if (fromComments) {
+                return fromComments;
+            }
+
+            const fromDeployments = await getPreviewUrlFromDeployments(dataBranch);
+            if (fromDeployments) {
+                return fromDeployments;
+            }
+
+            if (attempt < maxAttempts) {
+                await new Promise((resolve) => setTimeout(resolve, delayMs));
+            }
+        }
+
+        return null;
+    };
 
     const checkExistingPR = async (branchName) => {
         try {
@@ -507,7 +637,9 @@ export const githubService = (token, username) => {
             return false;
         }
     }
-    
+
+    const getRepoWebUrl = (path = '') =>
+        `https://github.com/${owner}/${repo}${path}`;
     
 
     return {
@@ -515,10 +647,15 @@ export const githubService = (token, username) => {
         dataBranch,
         defaultBranch,
         owner,
+        repo,
         createBranch,
         commitChanges,
         createPullRequest,
         createDataPullRequest,
+        listOpenPullRequests,
+        getDataPullRequest,
+        getPreviewUrl,
+        waitForPreviewUrl,
         checkExistingPR,
         checkRepoExists,
         checkBranchExists,
@@ -531,5 +668,6 @@ export const githubService = (token, username) => {
         getFileContent,
         getRawFileContent,
         moveFile,
+        getRepoWebUrl,
     }
 }

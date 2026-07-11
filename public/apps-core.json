@@ -3,6 +3,7 @@
         "appName": "",
         "icon": "",
         "websiteUrl": "",
+        "category": "",
         "appleStoreUrl": "",
         "isActiveOnAppleStore": "",
         "googlePlayUrl": "",
@@ -188,21 +189,20 @@
         },
         {
             "appName": "AirGuard",
-            "icon": "airguard.png",
+            "icon": "airguard.webp",
             "websiteUrl": "https://github.com/seemoo-lab/AirGuard",
-            "appleStoreUrl": "https://apps.apple.com/app/id1659427454",
-            "isActiveOnAppleStore": "true",
+            "appleStoreUrl": "https://apps.apple.com/us/app/airguard-tracking-protection/id1659427454",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.seemoo.at_tracking_detection.release",
-            "isActiveOnPlayStore": "true",
             "category": "Security & Privacy",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "AirGuard AirTag Scans",
-                "AirGuard AirTag Tracker",
-                "de.seemoo.at_tracking_detection.release"
-            ]
+                "AirGuard AirTag Tracker"
+            ],
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "AliExpress",
@@ -343,20 +343,19 @@
         },
         {
             "appName": "Android Auto",
-            "icon": "android-auto.png",
+            "icon": "android-auto.webp",
             "websiteUrl": "https://www.android.com/auto/",
             "appleStoreUrl": "",
-            "isActiveOnAppleStore": "false",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead",
-            "isActiveOnPlayStore": "true",
             "category": "Automotive",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Android Auto - Connected Cars",
-                "com.google.android.projection.gearhead"
-            ]
+                "Android Auto - Connected Cars"
+            ],
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Android Browser",
@@ -824,22 +823,20 @@
         },
         {
             "appName": "AVG AntiVirus & Security",
-            "icon": "",
+            "icon": "avg-antivirus-security.webp",
             "websiteUrl": "https://www.avg.com/en-us/antivirus-for-android",
             "appleStoreUrl": "",
-            "isActiveOnAppleStore": "false",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.antivirus",
-            "isActiveOnPlayStore": "true",
             "category": "Security & Privacy",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "AVG - Encryption Details",
-                "AVG - Media Files",
-                "AVG AntiVirus",
-                "com.antivirus"
-            ]
+                "AVG - Media Files"
+            ],
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "AWS Wickr",
@@ -1420,6 +1417,22 @@
             "alternateNames": []
         },
         {
+            "appName": "Cash App",
+            "icon": "cash-app.webp",
+            "websiteUrl": "https://cash.app/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/cash-app/id711923939",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.squareup.cash",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Cash App (B)"
+            ]
+        },
+        {
             "appName": "Catch",
             "icon": "",
             "websiteUrl": "",
@@ -1432,18 +1445,31 @@
         },
         {
             "appName": "ChatGPT",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "isActiveOnAppleStore": "",
-            "googlePlayUrl": "",
-            "isActiveOnPlayStore": "",
+            "icon": "chatgpt.webp",
+            "websiteUrl": "https://chatgpt.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/chatgpt/id6448311069",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.openai.chatgpt",
             "notes": "",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "ChatGPT - Account Status"
-            ]
+                "ChatGPT - Account Status",
+                "ChatGPT - Account User State",
+                "ChatGPT - Conversations",
+                "ChatGPT - Conversations Metadata",
+                "ChatGPT - Custom Instructions",
+                "ChatGPT - Draft Conversations",
+                "ChatGPT - Media Uploads",
+                "ChatGPT - Messages (Legacy)",
+                "ChatGPT - Preferences",
+                "ChatGPT - User",
+                "ChatGPT - User Analytics",
+                "ChatGPT - User Settings",
+                "ChatGPT - Voice Prompts"
+            ],
+            "category": "AI & Assistants",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "ChatON",
@@ -1507,31 +1533,37 @@
         },
         {
             "appName": "Chess With Friends",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "chess-with-friends.webp",
+            "websiteUrl": "https://www.zynga.com/",
             "appleStoreUrl": "",
-            "isActiveOnAppleStore": "",
             "googlePlayUrl": "",
-            "isActiveOnPlayStore": "",
-            "notes": "",
+            "notes": "Zynga Chess With Friends (com.zynga.chess.googleplay). Servers shut down Nov 2023; removed from stores. Unrelated apps still use similar names.",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-11",
+            "alternateNames": [],
+            "category": "Games",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false"
         },
         {
             "appName": "Chess.com",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "isActiveOnAppleStore": "",
-            "googlePlayUrl": "",
-            "isActiveOnPlayStore": "",
+            "icon": "chess-com.webp",
+            "websiteUrl": "https://www.chess.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/chess-play-learn-online/id329218549",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.chess",
             "notes": "",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Chess.com Account"
-            ]
+                "Chess.com Account",
+                "Chess.com Games",
+                "ChessComFriends",
+                "ChessComMessages",
+                "Chess - Play & Learn"
+            ],
+            "category": "Games",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Chromium",
@@ -2871,22 +2903,20 @@
         },
         {
             "appName": "Google Phone",
-            "icon": "google-phone.png",
+            "icon": "google-phone.webp",
             "websiteUrl": "https://play.google.com/store/apps/details?id=com.google.android.dialer",
             "appleStoreUrl": "",
-            "isActiveOnAppleStore": "false",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.dialer",
-            "isActiveOnPlayStore": "true",
             "category": "Communication",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "Android Call Transcriptions",
-                "Phone by Google",
-                "Google Dialer",
-                "com.google.android.dialer"
-            ]
+                "Phone by Google"
+            ],
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Google photos",
@@ -6517,21 +6547,19 @@
         },
         {
             "appName": "Tracker Detect",
-            "icon": "tracker-detect.png",
+            "icon": "tracker-detect.webp",
             "websiteUrl": "https://support.apple.com/HT212227",
             "appleStoreUrl": "",
-            "isActiveOnAppleStore": "false",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.apple.trackerdetect",
-            "isActiveOnPlayStore": "true",
             "category": "Security & Privacy",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "atrackerdetect",
-                "Apple Tracker Detect",
-                "com.apple.trackerdetect"
-            ]
+                "atrackerdetect"
+            ],
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true"
         },
         {
             "appName": "Transaero",

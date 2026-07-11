@@ -1,18 +1,10 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
-  "git": {
-    "deploymentEnabled": {
-      "datacontributions": false
-    }
-  },
-  "routes": [
+  "rewrites": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/.*",
-      "dest": "/index.html"
+      "source": "/((?!api/|@)(?!.*\\..*).*)",
+      "destination": "/index.html"
     }
   ]
 }
