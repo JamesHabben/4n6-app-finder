@@ -1,6 +1,11 @@
 {
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
+  "git": {
+    "deploymentEnabled": {
+      "datacontributions": false
+    }
+  },
   "routes": [
     {
       "handle": "filesystem"
