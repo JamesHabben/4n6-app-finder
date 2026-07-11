@@ -1,0 +1,28 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "AVG AntiVirus & Security",
+                "icon": "",
+                "websiteUrl": "https://www.avg.com/en-us/antivirus-for-android",
+                "appleStoreUrl": "",
+                "isActiveOnAppleStore": "false",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.antivirus",
+                "isActiveOnPlayStore": "true",
+                "category": "Security & Privacy",
+                "notes": "",
+                "dateAdded": "2026-07-10",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "AVG - Encryption Details",
+                    "AVG - Media Files",
+                    "AVG AntiVirus",
+                    "com.antivirus"
+                ]
+            }
+        }
+    ]
+}
