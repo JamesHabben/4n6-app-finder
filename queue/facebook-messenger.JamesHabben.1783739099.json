@@ -1,12 +1,1 @@
-{
-    "action": "new",
-    "patch": [
-        {
-            "op": "add",
-            "path": "/-",
-            "value": {
-                "appName": "Facebook Messenger",
-                "icon": "",
-                "websiteUrl": "https://www.messenger.com/",
-                "appleStoreUrl": "",
-                "isActiveOnAppleStore": "true",
+{"action":"new","patch":[{"op":"add","path":"/-","value":{"appName":"Facebook Messenger","icon":"","websiteUrl":"https://www.messenger.com/","appleStoreUrl":"","isActiveOnAppleStore":"true","googlePlayUrl":"https://play.google.com/store/apps/details?id=com.facebook.orca","isActiveOnPlayStore":"true","category":"Messaging","notes":"","dateAdded":"2026-07-10","dateUpdated":"","alternateNames":["Facebook Messenger","
