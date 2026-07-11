@@ -1,0 +1,16 @@
+{
+    "action": "edit",
+    "appName": "Bumble",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/category",
+            "value": "Dating"
+        },
+        {
+            "op": "add",
+            "path": "/alternateNames/-",
+            "value": "com.bumble.app"
+        }
+    ]
+}
