@@ -1,0 +1,24 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Chess.com",
+                "icon": "",
+                "websiteUrl": "",
+                "appleStoreUrl": "",
+                "isActiveOnAppleStore": "",
+                "googlePlayUrl": "",
+                "isActiveOnPlayStore": "",
+                "notes": "",
+                "dateAdded": "2026-07-11",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "Chess.com Account"
+                ]
+            }
+        }
+    ]
+}
