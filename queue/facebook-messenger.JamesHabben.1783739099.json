@@ -8,4 +8,41 @@
                 "appName": "Facebook Messenger",
                 "icon": "",
                 "websiteUrl": "https://www.messenger.com/",
-                "appleStoreUrl": "",
+                "appleStoreUrl": "https://apps.apple.com/us/app/messenger/id454638411",
+                "isActiveOnAppleStore": "true",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.orca",
+                "isActiveOnPlayStore": "true",
+                "category": "Social Networking",
+                "notes": "",
+                "dateAdded": "2026-07-10",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "Android Facebook Messenger Attachments",
+                    "Cloud Facebook Messenger Messages",
+                    "Facebook Messenger - Calls",
+                    "Facebook Messenger - Calls (msys_database)",
+                    "Facebook Messenger - Calls (threads_db2)",
+                    "Facebook Messenger - Chats",
+                    "Facebook Messenger - Chats (msys_database)",
+                    "Facebook Messenger - Chats (threads_db2)",
+                    "Facebook Messenger - Client Messages",
+                    "Facebook Messenger - Contacts",
+                    "Facebook Messenger - Contacts (msys_database)",
+                    "Facebook Messenger - Contacts (threads_db2)",
+                    "Facebook Messenger - Conversation Groups",
+                    "Facebook Messenger - Secret Conversations",
+                    "Facebook Messenger - User ID",
+                    "Facebook Messenger Calls",
+                    "Facebook Messenger Groups",
+                    "Facebook Messenger Lite",
+                    "Facebook Messenger Messages",
+                    "Facebook Messenger Users Contacted",
+                    "FacebookMessenger",
+                    "Meta Messenger (Facebook)",
+                    "com.facebook.Messenger",
+                    "com.facebook.orca"
+                ]
+            }
+        }
+    ]
+}
