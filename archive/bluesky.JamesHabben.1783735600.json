@@ -1,0 +1,30 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "Bluesky",
+                "icon": "",
+                "websiteUrl": "https://bsky.app/",
+                "appleStoreUrl": "https://apps.apple.com/us/app/bluesky-social/id6444370199",
+                "isActiveOnAppleStore": "true",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
+                "isActiveOnPlayStore": "true",
+                "category": "Social Networking",
+                "notes": "",
+                "dateAdded": "2026-07-10",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "Bluesky - Actors",
+                    "Bluesky - Messages",
+                    "Bluesky - Posts",
+                    "Bluesky - Searches",
+                    "Bluesky Social",
+                    "xyz.blueskyweb.app"
+                ]
+            }
+        }
+    ]
+}
