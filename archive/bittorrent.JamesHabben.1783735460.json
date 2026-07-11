@@ -1,0 +1,28 @@
+{
+    "action": "new",
+    "patch": [
+        {
+            "op": "add",
+            "path": "/-",
+            "value": {
+                "appName": "BitTorrent",
+                "icon": "",
+                "websiteUrl": "https://www.bittorrent.com/products/android/",
+                "appleStoreUrl": "",
+                "isActiveOnAppleStore": "false",
+                "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bittorrent.client",
+                "isActiveOnPlayStore": "true",
+                "category": "File Sharing",
+                "notes": "",
+                "dateAdded": "2026-07-10",
+                "dateUpdated": "",
+                "alternateNames": [
+                    "BitTorrent Prefs",
+                    "bittorrentDlhist",
+                    "BitTorrent Torrent Downloads",
+                    "com.bittorrent.client"
+                ]
+            }
+        }
+    ]
+}
