@@ -7487,6 +7487,25 @@
             ]
         },
         {
+            "appName": "Tile",
+            "icon": "tile.webp",
+            "websiteUrl": "https://www.tile.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tile-find-lost-keys-phone/id664939913",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.thetileapp.tile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Bluetooth item tracker (com.thetileapp.tile). Store title: Tile - Find lost keys & phone.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Tile App Account Information",
+                "Tile App DB Info & Geolocation",
+                "Tile App Discovered Tiles",
+                "Tile App Geolocation Logs"
+            ]
+        },
+        {
             "appName": "Tinder",
             "icon": "tinder.webp",
             "websiteUrl": "https://tinder.com/",
@@ -7741,6 +7760,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Twint",
+            "icon": "twint.webp",
+            "websiteUrl": "https://www.twint.ch/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/prepaid-twint-other-banks/id1001116392",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.twint.payment",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Swiss TWINT prepaid app (ch.twint.wallet / ch.twint.payment). LEAPP module targets prepaid Twint.sqlite; bank-branded TWINT apps (UBS, ZKB, etc.) are separate.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Twint - Transactions"
+            ]
         },
         {
             "appName": "Twist",
@@ -8181,6 +8216,22 @@
             "dateAdded": "2023-10-31",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "WebKit",
+            "icon": "webkit.webp",
+            "websiteUrl": "https://webkit.org/",
+            "category": "Browser",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "iOS WebKit Network Cache used by in-app WKWebView browsers (not Safari UI). Distinct from Safari listing.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "WebKit Cache Records"
+            ]
         },
         {
             "appName": "WeChat",
