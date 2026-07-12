@@ -396,18 +396,21 @@
             "appName": "Android Calls",
             "icon": "android-calls.png",
             "websiteUrl": "",
+            "category": "Communication",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Android Call Logs",
                 "Android Call Logs (UFED Agent)",
                 "com.android.providers.blockednumber",
-                "com.android.providers.telephony"
+                "com.android.providers.telephony",
+                "Call Logs",
+                "Call logs "
             ]
         },
         {
@@ -517,59 +520,132 @@
         {
             "appName": "Apple Books",
             "icon": "apple-books.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.apple.com/apple-books/",
+            "category": "Books",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-books/id364709193",
             "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-12",
+            "alternateNames": [
+                "iBooks"
+            ]
         },
         {
             "appName": "Apple Calendar",
             "icon": "apple-calendar.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/calendar/id1108185179",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Calendar",
-                "calendarAll"
+                "calendarAll",
+                "Calendar Birthdays",
+                "Calendar List",
+                "Calendar Events"
             ]
         },
         {
             "appName": "Apple CarPlay",
             "icon": "apple-carplay.png",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.apple.com/ios/carplay/",
+            "category": "Automotive",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "2023-11-10",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "CarPlay Connected Cars",
-                "biomeCarplayisconnected"
+                "CarPlay Recently Used Applications",
+                "Biome - Carplay",
+                "CarPlay Recent App History"
+            ]
+        },
+        {
+            "appName": "Apple Clock",
+            "icon": "apple-clock.webp",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/clock/id1584215688",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "iOS Clock app (alarms / world clock).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Alarms",
+                "WorldClock"
             ]
         },
         {
             "appName": "Apple Contacts",
             "icon": "apple-contacts.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/contacts/id1069512615",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
+                "Address Book",
+                "Apple Contacts - iOS",
                 "Apple Contacts - macOS",
                 "Apple Contacts Groups",
-                "Address Book Contacts"
+                "Blocked contacts"
+            ]
+        },
+        {
+            "appName": "Apple Files",
+            "icon": "apple-files.webp",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/files/id1232058109",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "iOS/iPadOS Files app (com.apple.DocumentsApp).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Files App - Favourite files",
+                "Files App - Files stored in iCloud Drive",
+                "Files App - iCloud Application List",
+                "Files App - iCloud Sync Device Names",
+                "Files App - Operating System Updates",
+                "Files App - Shared files stored in iCloud Drive",
+                "Files App - Tagged files"
+            ]
+        },
+        {
+            "appName": "Apple Fitness",
+            "icon": "apple-fitness.webp",
+            "websiteUrl": "https://www.apple.com/apple-fitness-plus/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-fitness/id1208224953",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Apple Fitness / Fitness+ app (com.apple.Fitness). Workout GPS LEAPP modules live in Health DB but are labeled Fitness.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Fitness Workouts Location Data",
+                "Fitness Workouts Location Data Analysis"
             ]
         },
         {
@@ -605,17 +681,41 @@
             ]
         },
         {
+            "appName": "Apple Keychain",
+            "icon": "apple-keychain.webp",
+            "websiteUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/passwords/id6473799789",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "iOS/macOS Keychain credential store. User-facing app is Passwords (com.apple.Passwords).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Apple Keychain Generic Passwords",
+                "Apple Keychain Internet Passwords",
+                "Apple Keychain Saved Credit Cards",
+                "Keychain Web Passwords",
+                "Keychain Wifi Credentials"
+            ]
+        },
+        {
             "appName": "Apple Mail",
             "icon": "apple-mail.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mail/id1108187098",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Email-iCloud (iOS)",
-                "Mail"
+                "Mail",
+                "Apple Email"
             ]
         },
         {
@@ -642,89 +742,136 @@
             "appName": "Apple Messages",
             "icon": "apple-messages.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/messages/id1146560473",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "sms",
-                "messageRetention",
-                "Messenger",
-                "iMessage Messages"
+                "Draft Native Messages",
+                "iMessage Archived Chats",
+                "iMessage Archived Messages",
+                "iMessage Chats",
+                "iMessage Messages",
+                "iOS iMessage-SMS-MMS",
+                "iOS iMessage-SMS-MMS - App Intents",
+                "iOS Message Retention",
+                "SMS",
+                "SMS - Missing ROWIDs"
             ]
         },
         {
             "appName": "Apple Notes",
             "icon": "apple-notes.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/notes/id1110145109",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "Notes (iOS)",
-                "notes"
+                "Apple Notes - Voice",
+                "Biome - Notes",
+                "Notes",
+                "Notes (iOS)"
             ]
         },
         {
             "appName": "Apple Phone",
             "icon": "apple-phone.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/phone/id1146562108",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-10",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
+                "Call History",
+                "Call History - Group Call",
+                "Call History Transactions",
                 "Calls",
-                "callHistor"
+                "iOS Call Logs",
+                "Voicemail"
             ]
         },
         {
             "appName": "Apple Photos",
             "icon": "apple-photos.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/photos/id1584215428",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "photosMigration",
-                "photosMetadata"
+                "photosMetadata",
+                "Photos.sqlite EXIF Analysis",
+                "Photos.sqlite Metadata"
+            ]
+        },
+        {
+            "appName": "Apple Podcasts",
+            "icon": "apple-podcasts.webp",
+            "websiteUrl": "https://www.apple.com/apple-podcasts/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-podcasts/id525463029",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Apple Podcasts Episodes",
+                "Apple Podcasts Shows"
             ]
         },
         {
             "appName": "Apple Reminders",
             "icon": "apple-reminders.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/reminders/id1108187841",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "reminders",
-                "Reminder"
+                "Reminder",
+                "Reminders"
             ]
         },
         {
             "appName": "Apple Wallet",
             "icon": "apple-wallet.png",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-wallet/id1160481993",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "appleWalletPasses",
-                "appleWalletCards",
-                "appleWalletTransactions",
                 "Apple Wallet Cards",
-                "Apple Wallet Transactions"
+                "Apple Wallet Transactions",
+                "Nano Passes"
             ]
         },
         {
@@ -1406,14 +1553,19 @@
         },
         {
             "appName": "Calculator#",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "calculator-hash.webp",
+            "websiteUrl": "https://www.newsoftwares.net/ns-vault/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/calculator-hide-photos-videos/id1165276801",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.newsoftwares.hidepicturesvideos",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-12",
+            "alternateNames": [
+                "Calculator Vault Application"
+            ]
         },
         {
             "appName": "Calculator+",
@@ -3369,17 +3521,6 @@
             "alternateNames": []
         },
         {
-            "appName": "Hide Pictures in Vaulty",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "HideX",
             "icon": "hidex.webp",
             "websiteUrl": "https://flatfishsafe.com/",
@@ -3438,6 +3579,31 @@
                 "HipChat - beta version",
                 "HipChat - Chat Built for Teams",
                 "com.hipchat.ios"
+            ]
+        },
+        {
+            "appName": "Home Depot",
+            "icon": "home-depot.webp",
+            "websiteUrl": "https://www.homedepot.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/the-home-depot/id342527639",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.thehomedepot",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Store title: The Home Depot (com.thehomedepot / com.thehomedepot.homedepot).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Home Depot - Account",
+                "Home Depot - Last Known Location",
+                "Home Depot - Local Store",
+                "Home Depot - Other Preferences",
+                "Home Depot - Product Image Cache",
+                "Home Depot - Products Viewed",
+                "Home Depot - Saved Searches",
+                "Home Depot - Search History",
+                "Home Depot - Search URL Cache",
+                "Home Depot - Shopping Lists"
             ]
         },
         {
@@ -3526,17 +3692,6 @@
         },
         {
             "appName": "Huawei Notes",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
-            "appName": "iBooks",
             "icon": "",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -3699,12 +3854,15 @@
         {
             "appName": "Instagram",
             "icon": "instagram.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.instagram.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/instagram/id389801252",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instagram.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Instagram (web)",
                 "Android Instagram Following",
@@ -3715,7 +3873,9 @@
                 "Instagram Media",
                 "Instagram Profiles",
                 "Instagram Posts",
-                "Instagram Pictures"
+                "Instagram Pictures",
+                "Instagram Threads",
+                "Instagram Threads Calls"
             ]
         },
         {
@@ -3762,6 +3922,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "iSH (bash history)",
+            "icon": "ish.webp",
+            "websiteUrl": "https://ish.app/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ish-shell/id1436902243",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Alpine Linux userspace for iOS. LEAPP labels shell history as Alpine Linux Bash History (.ash_history).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Alpine Linux Bash History"
+            ]
         },
         {
             "appName": "Jaxx Blockchain Wallet",
@@ -4632,6 +4808,23 @@
             ]
         },
         {
+            "appName": "MeteoSwiss",
+            "icon": "meteoswiss.webp",
+            "websiteUrl": "https://www.meteoswiss.admin.ch/",
+            "category": "Weather",
+            "appleStoreUrl": "https://apps.apple.com/us/app/meteoswiss/id589772015",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.admin.meteoswiss",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Swissmeteo - App opening with geolocation",
+                "Swissmeteo - Interaction with places"
+            ]
+        },
+        {
             "appName": "MeWe",
             "icon": "mewe.webp",
             "websiteUrl": "https://mewe.com",
@@ -4949,14 +5142,20 @@
         },
         {
             "appName": "Mozilla Thunderbird",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "thunderbird.webp",
+            "websiteUrl": "https://www.thunderbird.net/",
+            "category": "Email",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.thunderbird.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-12",
+            "alternateNames": [
+                "Thunderbird - Accounts",
+                "Thunderbird - Messages"
+            ]
         },
         {
             "appName": "MX TakaTak",
@@ -5017,6 +5216,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "myAudi",
+            "icon": "myaudi.webp",
+            "websiteUrl": "https://www.audiusa.com/en/about-myaudi/",
+            "category": "Automotive",
+            "appleStoreUrl": "https://apps.apple.com/us/app/myaudi/id440464115",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.myaudi.mobile.assistant",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "iOS package de.audi.myaudimobileassistant; Android Play id differs (de.myaudi.mobile.assistant).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Audi Trip Data"
+            ]
         },
         {
             "appName": "MySpace",
@@ -5177,17 +5392,6 @@
             "alternateNames": []
         },
         {
-            "appName": "Notes",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Notion",
             "icon": "notion.webp",
             "websiteUrl": "",
@@ -5304,6 +5508,20 @@
             ]
         },
         {
+            "appName": "Oops: Make New Friends",
+            "icon": "oops-make-new-friends.webp",
+            "websiteUrl": "http://oops.chat/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/oops-short-video-dating/id1529121470",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.evovision.oops",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "EVO-Vision Oops (com.evovision.oops). Store title has also appeared as Oops: Short Video Dating; Apple US listing currently unavailable.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
             "appName": "ooVoo",
             "icon": "oovoo.webp",
             "websiteUrl": "",
@@ -5412,6 +5630,28 @@
             ]
         },
         {
+            "appName": "Oura",
+            "icon": "oura.webp",
+            "websiteUrl": "https://ouraring.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/oura/id1043837948",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ouraring.oura",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Oura Ring companion app (com.ouraring.oura).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Oura - Account, Identity & Profile",
+                "Oura - Analytics Event Plan",
+                "Oura - Analytics Integrations",
+                "Oura - App Activity Timeline",
+                "Oura - Daytime Heart Rate",
+                "Oura - Find My Ring Last Known Location",
+                "Oura - Ring Status & Battery"
+            ]
+        },
+        {
             "appName": "Parler",
             "icon": "parler.webp",
             "websiteUrl": "",
@@ -5437,6 +5677,23 @@
             "alternateNames": [
                 "Freeflight 6",
                 "FreeFlight Pro"
+            ]
+        },
+        {
+            "appName": "PayByPhone",
+            "icon": "paybyphone.webp",
+            "websiteUrl": "https://www.paybyphone.com/",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/paybyphone-parking/id448474183",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.paybyphone",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Parking payment app (com.verrus.paybyphone / com.paybyphone).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "PayByPhone - Parking Sessions",
+                "PayByPhone - Users and Vehicules Info"
             ]
         },
         {
@@ -5669,6 +5926,24 @@
                 "Pokemon GO",
                 "Pokémon GO",
                 "com.nianticlabs.pokemongo"
+            ]
+        },
+        {
+            "appName": "Potato Chat",
+            "icon": "potato-chat.webp",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/potato-chat/id1204726898",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Telegram-fork messenger (org.potatochat.PotatoEnterprise / org.potato.messenger). Apple US listing removed; Android typically sideloaded, not on Play.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Potato Chat - Chats",
+                "Potato Chat - Group Chats",
+                "Potato Chat - Known Users"
             ]
         },
         {
@@ -6081,6 +6356,22 @@
             "alternateNames": []
         },
         {
+            "appName": "Samsung Digital Wellbeing",
+            "icon": "samsung-digital-wellbeing.webp",
+            "websiteUrl": "https://www.samsung.com/us/support/answer/ANS10001357/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Galaxy Digital Wellbeing (com.samsung.android.forest). Distinct from Google Digital Wellbeing.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "swellbeing"
+            ]
+        },
+        {
             "appName": "Samsung Email",
             "icon": "samsung-email.webp",
             "websiteUrl": "",
@@ -6308,6 +6599,20 @@
                 "Scruff",
                 "SCRUFF - Gay Dating & Chat"
             ]
+        },
+        {
+            "appName": "Secret Calculator Photo Album",
+            "icon": "secret-calculator-photo-album.webp",
+            "websiteUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/lock-master-photo-album/id1100606616",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Calculator-style vault (xyz.hypertornado.calculator). Current App Store title: Lock Master Photo Album. Distinct from Calculator# / HideX.",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": []
         },
         {
             "appName": "Session",
@@ -6569,6 +6874,24 @@
             ]
         },
         {
+            "appName": "Slopes",
+            "icon": "slopes.webp",
+            "websiteUrl": "https://getslopes.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/slopes-ski-snowboard/id643351983",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.consumedbycode.slopes",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Slopes - Actions",
+                "Slopes - Lift Details",
+                "Slopes - Resort Details"
+            ]
+        },
+        {
             "appName": "Smart Voice Recorder",
             "icon": "",
             "websiteUrl": "",
@@ -6710,6 +7033,27 @@
             "alternateNames": []
         },
         {
+            "appName": "Splitwise",
+            "icon": "splitwise.webp",
+            "websiteUrl": "https://www.splitwise.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/splitwise/id458023433",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Splitwise.SplitwiseMobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Shared expense splitting (com.Splitwise.SplitwiseMobile).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Splitwise - Expense Balances",
+                "Splitwise - Expenses",
+                "Splitwise - Groups",
+                "Splitwise - Notifications",
+                "Splitwise - Total Balances",
+                "Splitwise - Users"
+            ]
+        },
+        {
             "appName": "Springpad",
             "icon": "",
             "websiteUrl": "",
@@ -6819,14 +7163,18 @@
         },
         {
             "appName": "Tango",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "tango.webp",
+            "websiteUrl": "https://www.tango.me/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tango-live-stream-go-live/id372513032",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sgiggle.production",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
+                "tangomessage",
                 "tango-Live Stream & Video Chat",
                 "Tango- Live Stream, Video Chat"
             ]
@@ -6913,6 +7261,29 @@
                 "Telegram Messages - iOS",
                 "Telegram Chats - iOS",
                 "Telegram Channel Chats - iOS"
+            ]
+        },
+        {
+            "appName": "TeleGuard",
+            "icon": "teleguard.webp",
+            "websiteUrl": "https://teleguard.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/teleguard/id1505636751",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.swisscows.messenger.teleguardapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Teleguard - Channels",
+                "Teleguard - Contacts",
+                "Teleguard - Messages",
+                "Teleguard - Posts",
+                "Teleguard Channels",
+                "Teleguard Contacts",
+                "Teleguard Messages",
+                "Teleguard Posts"
             ]
         },
         {
@@ -7036,18 +7407,19 @@
             "alternateNames": []
         },
         {
-            "appName": "Threads",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "Instagram Threads is a social media platform that allows you to create and share threads of content with your followers.",
+            "appName": "Threads (Instagram)",
+            "icon": "threads.webp",
+            "websiteUrl": "https://www.threads.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/threads/id6446901002",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instagram.barcelona",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Meta Threads app (com.instagram.barcelona). Store title: Threads. LEAPP “Instagram Threads” / “Instagram Threads Calls” are Instagram DMs/calls, not this app.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "instagramThreads",
-                "Threads (instagram)",
-                "Instagram Threads"
+                "Threads"
             ]
         },
         {
@@ -7117,33 +7489,46 @@
         {
             "appName": "Tinder",
             "icon": "tinder.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://tinder.com/",
+            "category": "Dating",
             "appleStoreUrl": "https://apps.apple.com/us/app/tinder-dating-chat-friends/id547702041",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tinder&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tinder",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Android Tinder Accounts",
                 "Android Tinder Matches",
                 "Android Tinder Messages",
                 "Android Tinder Photos",
+                "iOS Tinder Accounts",
+                "iOS Tinder Matches",
+                "iOS Tinder Messages",
+                "iOS Tinder Photos",
                 "Tinder: Dating, Chat & Friends",
                 "Tinder Dating app. Meet People"
             ]
         },
         {
-            "appName": "Todoist: to-do list & planner",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.todoist&hl=en",
-            "activeOnAppleStore": "",
+            "appName": "Todoist",
+            "icon": "todoist.webp",
+            "websiteUrl": "https://www.todoist.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/todoist-to-do-list-calendar/id572688855",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.todoist",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-12",
+            "alternateNames": [
+                "Todoist - Items",
+                "Todoist - Notes",
+                "Todoist - Projects",
+                "Todoist: to-do list & planner"
+            ]
         },
         {
             "appName": "TomTom Go GPS",
@@ -7166,17 +7551,21 @@
         },
         {
             "appName": "Tor Browser",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "tor-browser.webp",
+            "websiteUrl": "https://www.torproject.org/",
+            "category": "Browser",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.torproject.torbrowser",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Tor Browser - Bookmarks",
                 "Tor Browser - Usage Info",
-                "Tor Browser Tab Thumnails"
+                "Tor Browser Tab Thumnails",
+                "TOR Thumbnails"
             ]
         },
         {
@@ -7312,6 +7701,23 @@
             "dateUpdated": "2023-11-10",
             "alternateNames": [
                 "TunnelBear: Secure VPN & Wifi"
+            ]
+        },
+        {
+            "appName": "Tusky",
+            "icon": "tusky.webp",
+            "websiteUrl": "https://tusky.app/",
+            "category": "Social Networking",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.keylesspalace.tusky",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Tusky - Account Details",
+                "Tusky - Timeline"
             ]
         },
         {
@@ -7470,6 +7876,26 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Vaulty",
+            "icon": "vaulty.webp",
+            "websiteUrl": "https://vaultyapp.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.theronrogers.vaultyfree",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-07-12",
+            "alternateNames": [
+                "vaulty_files",
+                "vaulty_info",
+                "Hide Pictures in Vaulty",
+                "Vaulty : Hide Pictures Videos",
+                "Vaulty Stocks"
+            ]
         },
         {
             "appName": "Venmo",
@@ -7651,32 +8077,29 @@
         },
         {
             "appName": "VLC Media Player",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "vlc.webp",
+            "websiteUrl": "https://www.videolan.org/vlc/",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/vlc-media-player/id650377962",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.videolan.vlc",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "VLC Media Player (desktop)",
                 "VLC Media Player (store)",
-                "VLC Recently Played Files"
+                "VLC Recently Played Files",
+                "VLC",
+                "VLC Media Lib (ADB)",
+                "VLC Thumbnail Data",
+                "VLC Thumbnails",
+                "VLC Thumbnails (ADB)"
             ]
         },
         {
             "appName": "Voice Memos",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
-            "appName": "Voicemail",
             "icon": "",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -7981,6 +8404,22 @@
             ]
         },
         {
+            "appName": "Words With Friends",
+            "icon": "words-with-friends.webp",
+            "websiteUrl": "https://www.zynga.com/games/words-with-friends/",
+            "category": "Games",
+            "appleStoreUrl": "https://apps.apple.com/us/app/classic-words-with-friends/id321916506",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zynga.words",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "LEAPP parses Classic package com.zynga.words (not newer WWF variants).",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "WordsWithFriends"
+            ]
+        },
+        {
             "appName": "Workplace chat by Facebook/Meta",
             "icon": "workplace-meta.webp",
             "websiteUrl": "",
@@ -8011,12 +8450,15 @@
         {
             "appName": "X / Twitter",
             "icon": "x-twitter.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://x.com/",
+            "category": "Social Networking",
             "appleStoreUrl": "https://apps.apple.com/us/app/x/id333903271",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.twitter.android&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.twitter.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-13",
+            "dateUpdated": "2026-07-12",
             "alternateNames": [
                 "Twitter",
                 "X",
@@ -8024,7 +8466,9 @@
                 "Twitter Tweets",
                 "Twitter Users",
                 "com.htc.sense.socialnetwork.twitter",
-                "X (Twitter)"
+                "X (Twitter)",
+                "twitter",
+                "FCM - Twitter DMs"
             ]
         },
         {
@@ -8040,6 +8484,23 @@
             "dateUpdated": "",
             "alternateNames": [
                 "Xabber Beta"
+            ]
+        },
+        {
+            "appName": "Xender",
+            "icon": "xender.webp",
+            "websiteUrl": "https://www.xender.com/",
+            "category": "File Sharing",
+            "appleStoreUrl": "https://apps.apple.com/us/app/xender-transfer-share-files/id898129576",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cn.xender",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Xender - Contacts",
+                "Xender - Messages"
             ]
         },
         {
@@ -8356,6 +8817,20 @@
                 "Zangi Messenger - Contacts",
                 "Zangi Messenger - Messages"
             ]
+        },
+        {
+            "appName": "Zapya",
+            "icon": "zapya.webp",
+            "websiteUrl": "https://www.zapya.com/",
+            "category": "File Sharing",
+            "appleStoreUrl": "https://apps.apple.com/us/app/zapya-file-sharing/id576309271",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dewmobile.kuaiya.play",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-07-12",
+            "dateUpdated": "",
+            "alternateNames": []
         },
         {
             "appName": "Zello",
