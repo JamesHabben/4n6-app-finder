@@ -1,7 +1,7 @@
-import React, { useContext, useMemo, useState } from 'react';
+import React, { useCallback, useContext, useMemo, useState } from 'react';
 import { Button, Input, Table, Typography } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { DataContext } from 'services/DataContext';
 
 const { Paragraph, Title } = Typography;
@@ -10,18 +10,45 @@ function PageOneHitWonders() {
   const { apps } = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
+  const [searchParams, setSearchParams] = useSearchParams();
 
-  const oneHitWonders = useMemo(() => (
+  const selectedTools = useMemo(
+    () => searchParams.getAll('tool').filter(Boolean),
+    [searchParams],
+  );
+
+  const oneHitRows = useMemo(() => (
     apps
       .filter(app => app.mappedTools?.length === 1)
       .map(app => ({
         ...app,
         category: app.category || app.mappedCategories?.[0] || '—',
         toolName: app.mappedTools[0].longName,
+        toolShortName: app.mappedTools[0].shortName,
       }))
-      .filter(app => app.appName.toLowerCase().includes(searchTerm.toLowerCase()))
       .sort((a, b) => a.appName.localeCompare(b.appName))
-  ), [apps, searchTerm]);
+  ), [apps]);
+
+  const toolFilters = useMemo(() => {
+    const tools = new Map();
+    oneHitRows.forEach(app => {
+      tools.set(app.toolShortName, app.toolName);
+    });
+    return [...tools.entries()]
+      .sort((a, b) => a[1].localeCompare(b[1]))
+      .map(([shortName, longName]) => ({ text: longName, value: shortName }));
+  }, [oneHitRows]);
+
+  const oneHitWonders = useMemo(() => (
+    oneHitRows.filter(app => app.appName.toLowerCase().includes(searchTerm.toLowerCase()))
+  ), [oneHitRows, searchTerm]);
+
+  const handleTableChange = useCallback((_pagination, filters) => {
+    const nextTools = (filters.toolName || []).filter(Boolean);
+    const nextParams = new URLSearchParams();
+    nextTools.forEach(tool => nextParams.append('tool', tool));
+    setSearchParams(nextParams, { replace: true });
+  }, [setSearchParams]);
 
   const columns = [
     {
@@ -42,6 +69,10 @@ function PageOneHitWonders() {
       dataIndex: 'toolName',
       key: 'toolName',
       sorter: (a, b) => a.toolName.localeCompare(b.toolName),
+      filters: toolFilters,
+      filteredValue: selectedTools.length ? selectedTools : null,
+      filterMultiple: true,
+      onFilter: (value, record) => record.toolShortName === value,
     },
   ];
 
@@ -71,6 +102,7 @@ function PageOneHitWonders() {
           rowKey="appName"
           columns={columns}
           dataSource={oneHitWonders}
+          onChange={handleTableChange}
           pagination={{ pageSize: 25, showSizeChanger: true }}
         />
       </div>
