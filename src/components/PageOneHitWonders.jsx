@@ -1,13 +1,23 @@
 import React, { useCallback, useContext, useMemo, useState } from 'react';
-import { Button, Input, Table, Typography } from 'antd';
+import { Button, Input, Modal, Table, Typography } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { DataContext } from 'services/DataContext';
+import AppDetails from 'components/AppDetails';
 
 const { Paragraph, Title } = Typography;
 
+function buildSearchParams({ tools = [], appName }) {
+  const nextParams = new URLSearchParams();
+  tools.forEach(tool => nextParams.append('tool', tool));
+  if (appName) {
+    nextParams.set('app', appName);
+  }
+  return nextParams;
+}
+
 function PageOneHitWonders() {
-  const { apps } = useContext(DataContext);
+  const { apps, tools } = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -16,6 +26,15 @@ function PageOneHitWonders() {
     () => searchParams.getAll('tool').filter(Boolean),
     [searchParams],
   );
+
+  const selectedAppName = searchParams.get('app');
+
+  const selectedApp = useMemo(() => {
+    if (!selectedAppName) return null;
+    return apps.find(
+      app => app.appName.toLowerCase() === decodeURIComponent(selectedAppName).toLowerCase(),
+    ) || null;
+  }, [apps, selectedAppName]);
 
   const oneHitRows = useMemo(() => (
     apps
@@ -30,11 +49,11 @@ function PageOneHitWonders() {
   ), [apps]);
 
   const toolFilters = useMemo(() => {
-    const tools = new Map();
+    const toolMap = new Map();
     oneHitRows.forEach(app => {
-      tools.set(app.toolShortName, app.toolName);
+      toolMap.set(app.toolShortName, app.toolName);
     });
-    return [...tools.entries()]
+    return [...toolMap.entries()]
       .sort((a, b) => a[1].localeCompare(b[1]))
       .map(([shortName, longName]) => ({ text: longName, value: shortName }));
   }, [oneHitRows]);
@@ -45,10 +64,24 @@ function PageOneHitWonders() {
 
   const handleTableChange = useCallback((_pagination, filters) => {
     const nextTools = (filters.toolName || []).filter(Boolean);
-    const nextParams = new URLSearchParams();
-    nextTools.forEach(tool => nextParams.append('tool', tool));
-    setSearchParams(nextParams, { replace: true });
-  }, [setSearchParams]);
+    setSearchParams(
+      buildSearchParams({ tools: nextTools, appName: selectedAppName || undefined }),
+      { replace: true },
+    );
+  }, [selectedAppName, setSearchParams]);
+
+  const closeAppModal = useCallback(() => {
+    setSearchParams(
+      buildSearchParams({ tools: selectedTools }),
+      { replace: true },
+    );
+  }, [selectedTools, setSearchParams]);
+
+  const getAppHref = useCallback((appName) => {
+    const params = buildSearchParams({ tools: selectedTools, appName });
+    const query = params.toString();
+    return query ? `?${query}` : '?';
+  }, [selectedTools]);
 
   const columns = [
     {
@@ -56,7 +89,7 @@ function PageOneHitWonders() {
       dataIndex: 'appName',
       key: 'appName',
       sorter: (a, b) => a.appName.localeCompare(b.appName),
-      render: appName => <Link to={`/?app=${encodeURIComponent(appName)}`}>{appName}</Link>,
+      render: appName => <Link to={getAppHref(appName)}>{appName}</Link>,
     },
     {
       title: 'Category',
@@ -105,6 +138,15 @@ function PageOneHitWonders() {
           onChange={handleTableChange}
           pagination={{ pageSize: 25, showSizeChanger: true }}
         />
+        <Modal
+          title="App Details"
+          open={Boolean(selectedApp)}
+          onCancel={closeAppModal}
+          footer={null}
+          width="80%"
+        >
+          {selectedApp && <AppDetails app={selectedApp} tools={tools} />}
+        </Modal>
       </div>
     </div>
   );
