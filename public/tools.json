@@ -15,13 +15,13 @@
         "toolShortName": "Cellebrite",
         "toolLongName": "Cellebrite Physical Analyzer",
         "website": "https://cellebrite.com/en/physical-analyzer/",
-        "toolVersion": "7.62",
-        "toolReleaseDate": "2023-05-01",
+        "toolVersion": "DE 19.7",
+        "toolReleaseDate": "2026-06-01",
         "icon": "tool-logo-cellebrite-pa.png",
         "artifactListFile": "artifacts-cellebrite.json",
         "appNameKey": "App Name",
-        "documentationLocation": "",
-        "extractionNotes": ""
+        "documentationLocation": "Cellebrite portal Technical Data Sheet: SupportedApps HTML (DE release matrix).",
+        "extractionNotes": "Parsed from DE SupportedApps HTML via capture-cellebrite-artifacts-list.py. Device platforms only (Android/iOS); Cloud and Warrant skipped. Native OS rows are expanded to Android/Apple {artifact} names. Supported versions is semicolon-joined; artifacts is the deduped union of artifact icons across versions."
     },
     {
         "toolShortName": "Magnet",
