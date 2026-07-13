@@ -37,6 +37,20 @@
   text-align: left;
 }
 
+.admin-page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 11rem);
+  max-height: calc(100vh - 11rem);
+  min-height: 0;
+  overflow: hidden;
+  text-align: left;
+}
+
+.admin-page .pageTitle {
+  flex-shrink: 0;
+}
+
 .app-container {
   text-align: right;
 }
@@ -147,6 +161,90 @@
 /* Style for highlighted elements */
 .highlight {
   background-color: lightcoral; /* Set the background color to light red */
+}
+
+.artifact-toolbar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.artifacts-page {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.artifacts-page .tool-buttons {
+  flex-shrink: 0;
+  margin-bottom: 10px;
+}
+
+.artifacts-page-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.artifacts-page-body h2 {
+  flex-shrink: 0;
+  margin-top: 0;
+}
+
+.artifacts-list-viewport {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.artifact-tile {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0 0 6px;
+  max-width: 90%;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.artifact-tile-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+}
+
+.artifact-tile-chevron {
+  flex-shrink: 0;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.artifact-tile-chevron.expanded {
+  transform: rotate(90deg);
+}
+
+.artifact-tile-badge {
+  flex-shrink: 0;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  opacity: 0.85;
+}
+
+.artifact-tile-body {
+  padding: 0 14px 14px;
+  cursor: default;
 }
 
 

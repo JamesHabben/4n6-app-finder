@@ -76,6 +76,18 @@ function AppDetails({ app, tools }) {
                 />
             ));
         }
+
+        if (typeof value === 'boolean') {
+            return value ? 'true' : 'false';
+        }
+
+        if (value != null && typeof value === 'object') {
+            return (
+                <pre style={{ margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+                    {JSON.stringify(value, null, 2)}
+                </pre>
+            );
+        }
       
         return value;
     }
@@ -125,7 +137,7 @@ function AppDetails({ app, tools }) {
                                             <strong>{key}:</strong>
                                         </td>
                                         <td className="property-value">
-                                            {toolApp[key]}
+                                            {renderPropertyValue(key, toolApp[key])}
                                         </td>
                                     </tr>
                                 )

@@ -35,14 +35,14 @@ function PageAdmin() {
 
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
+    <div className="admin-page">
         <h1 className='pageTitle'>Admin</h1>
-        <div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '30px', marginBottom: '10px' }}>
+        <div style={{ display: 'flex', justifyContent: 'flex-end', marginRight: '30px', marginBottom: '10px', flexShrink: 0 }}>
             <AuthLoginButton/>
         </div>
-        <div style={{ display: 'flex', border: '1px solid #ccc', textAlign: 'left', flex: 1 }}>
+        <div style={{ display: 'flex', border: '1px solid #ccc', textAlign: 'left', flex: 1, minHeight: 0, overflow: 'hidden' }}>
             {/* Left column for items */}
-            <div style={{ flex: '0 0 15%', padding: '1rem', borderRight: '1px solid #ccc' }}>
+            <div style={{ flex: '0 0 15%', padding: '1rem', borderRight: '1px solid #ccc', overflow: 'auto' }}>
                 <h2>Pages</h2>
                 <ul>
                     {filteredItems.map((item) => (
@@ -54,7 +54,7 @@ function PageAdmin() {
             </div>
 
             {/* Right column for content */}
-            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, padding: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', padding: '1rem' }}>
                 <Outlet />
             </div>
         </div>

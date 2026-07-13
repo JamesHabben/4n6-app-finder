@@ -1,9 +1,7 @@
-import { useState, useContext, useEffect } from "react";
+import { useState, useContext, useEffect, useRef } from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button, Modal, Input, Typography } from 'antd';
-//import { VariableSizeList as List } from 'react-window';
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
-
 
 import { DataContext } from 'services/DataContext';
 import { AuthContext } from "AuthContext";
@@ -14,6 +12,7 @@ function ToolsArtifactsListContent() {
     const [selectedTool, setSelectedTool] = useState(null);
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
     const [displayedArtifactList, setDisplayedArtifactList] = useState([]);
+    const [expandedArtifacts, setExpandedArtifacts] = useState(() => new Set());
     const { authState } = useContext(AuthContext);
     const [isEditModalVisible, setIsEditModalVisible] = useState(false);
     const [selectedArtifact, setSelectedArtifact] = useState(null);
@@ -26,15 +25,26 @@ function ToolsArtifactsListContent() {
     const [newRecord, setNewRecord] = useState(null);
     const [newAlternateName, setNewAlternateName] = useState('');
     const [terminalOutput, setTerminalOutput] = useState([]);
-    const [isPerformingUpdate, setIsPerformingUpdate] = useState(false);
     const [isTermModalVisible, setIsTermModalVisible] = useState(false);
     const [canCloseTermModal, SetCanCloseTermModal] = useState(false);
     const navigate = useNavigate();
     const location = useLocation();
+    const listRef = useRef(null);
+    const cacheRef = useRef(
+      new CellMeasurerCache({
+        fixedWidth: true,
+        defaultHeight: 56,
+      })
+    );
 
-    
+    const recomputeHeights = () => {
+      cacheRef.current.clearAll();
+      if (listRef.current) {
+        listRef.current.recomputeRowHeights();
+      }
+    };
+
     useEffect(() => {
-      // Reset the states when selectedArtifact changes
       setSearchInput('');
       setFilteredApps([]);
       setSelectedApp(null);
@@ -47,43 +57,39 @@ function ToolsArtifactsListContent() {
       const params = new URLSearchParams(location.search);
       const urlTool = decodeURIComponent(params.get('tool'));
       const urlUnmappedOnly = decodeURIComponent(params.get('unmappedOnly'));
-    
-      // Validate the URL tool against the list of available tools
+
       const toolFromUrl = tools.find(t => t.toolShortName === urlTool);
-    
+
       if (selectedTool) {
-        // Construct the base URL
         let newUrl = `?tool=${encodeURIComponent(selectedTool.toolShortName)}`;
-    
+
         if (showOnlyHighlighted) {
           newUrl += '&unmappedOnly=1';
-          const filteredList = selectedTool.artifactList.filter(artifact => shouldHighlight(artifact));
+          const filteredList = selectedTool.artifactList.filter(artifact => isUnmapped(artifact, selectedTool));
           setDisplayedArtifactList(filteredList);
         } else {
           setDisplayedArtifactList(selectedTool.artifactList);
         }
-    
-        // Update the URL, if necessary
+
         if (location.search !== newUrl) {
           navigate(newUrl);
         }
       } else if (toolFromUrl) {
-        // URL has a valid tool
         setSelectedTool(toolFromUrl);
         setShowOnlyHighlighted(urlUnmappedOnly === '1');
-      } //else 
-      // if (urlTool && !toolFromUrl) {
-      //   navigate(navigate.path)
-      // }
-    }, [showOnlyHighlighted, selectedTool, tools, location.search, navigate]);
+      }
+    }, [showOnlyHighlighted, selectedTool, tools, location.search, navigate, apps]);
+
+    useEffect(() => {
+      recomputeHeights();
+    }, [displayedArtifactList, expandedArtifacts]);
 
     useEffect(() => {
       if (apps) {
-          //console.log("apps", apps)
           fetchNewRecord();
       }
     }, [apps])
-  
+
     useEffect(() => {
       if (radioSelection === 'create') {
           setNewRecord(prevNewRecord => ({
@@ -92,26 +98,22 @@ function ToolsArtifactsListContent() {
           }));
       }
     }, [newAppName, radioSelection]);
-  
-  
+
+
     const fetchNewRecord = async () => {
-      //console.log('Fetching new record...');
-      //const record = await appsService().getNewRecord(apps);
-      //console.log('Fetched record:', record);
       setNewRecord(appTemplate);
     };
-    
-  
+
+
     useEffect(() => {
-      // Detect and alert if new app name is a dupe
       if (newAppName && radioSelection === 'create') {
         const dupeFound = appsService().isDupeName(apps, newAppName);
         setIsDupe(dupeFound);
       } else {
-        setIsDupe(false); 
+        setIsDupe(false);
       }
     }, [newAppName, radioSelection, apps]);
-  
+
     const addAlternateName = () => {
       if (newRecord.alternateNames.includes(newAlternateName)) {
         alert('This name already exists in the alternate names list');
@@ -121,10 +123,10 @@ function ToolsArtifactsListContent() {
           ...prevRecord,
           alternateNames: [...prevRecord.alternateNames, newAlternateName],
       }));
-      setNewAlternateName('');  // Clear the input box
+      setNewAlternateName('');
     };
-  
-  
+
+
     const handleArrayChange = (e, index) => {
       const newArray = [...newRecord.alternateNames];
       newArray[index] = e.target.value;
@@ -133,7 +135,7 @@ function ToolsArtifactsListContent() {
         alternateNames: newArray,
       });
     };
-  
+
     const handleArrayRemove = (index) => {
       const updatedAlternateNames = newRecord.alternateNames.filter((_, idx) => idx !== index);
       setNewRecord(prevRecord => ({
@@ -141,40 +143,37 @@ function ToolsArtifactsListContent() {
         alternateNames: updatedAlternateNames,
       }));
     };
-    
-    
+
+
     const handlePropertyChange = (e, property) => {
       setNewRecord({
         ...newRecord,
         [property]: e.target.value,
       });
     };
-     
+
     const handleSearchInputChange = (event) => {
       const searchValue = event.target.value.toLowerCase();
       setSearchInput(searchValue);
       const filtered = apps.filter(app =>
         app.appName.toLowerCase().includes(searchValue)
       );
-      setFilteredApps(filtered.sort()); 
+      setFilteredApps(filtered.sort());
     };
-  
+
     const showModal = (artifact) => {
       setSelectedArtifact(artifact)
       setIsEditModalVisible(true);
-      //if (newAppName == '') setNewAppName(getAppByNameKey(selectedArtifact))
-      //console.log(artifact)
-      //console.log(selectedTool)
     };
-  
-    const handleOk = async () => {  // Make this method async
+
+    const handleOk = async () => {
       try {
           if (radioSelection === 'add') {
               if (selectedApp && selectedApp.appName) {
-                setIsEditModalVisible(false);  
+                setIsEditModalVisible(false);
                 SetCanCloseTermModal(false);
                 setIsTermModalVisible(true);
-                const message = await appsService().handleAdd(apps, selectedApp.appName, getAppByNameKey(selectedArtifact), 
+                await appsService().handleAdd(apps, selectedApp.appName, getAppByNameKey(selectedArtifact, selectedTool),
                   authState, setTerminalOutput);
                 SetCanCloseTermModal(true);
               } else {
@@ -185,14 +184,12 @@ function ToolsArtifactsListContent() {
                   if (appsService().isDupeName(apps, newAppName)) {
                       alert('The app name you entered already exists. Please use the "Add to Selected App" option or enter a different name.');
                   } else {
-                    setIsEditModalVisible(false);  
+                    setIsEditModalVisible(false);
                     SetCanCloseTermModal(false);
                     setIsTermModalVisible(true);
-                    //console.log('before handle create ', newRecord)
-                    const message = await appsService().handleCreate(apps, newRecord, getAppByNameKey(selectedArtifact), 
+                    await appsService().handleCreate(apps, newRecord, getAppByNameKey(selectedArtifact, selectedTool),
                       authState, setTerminalOutput, appTemplate);
                     SetCanCloseTermModal(true);
-                    //alert(message);
                   }
               } else {
                   alert('Please enter a name for the new app.');
@@ -201,149 +198,198 @@ function ToolsArtifactsListContent() {
               alert('Please select an action (add or create) and fill in the required fields.');
           }
       } catch (error) {
-          // Catch any errors thrown by handleAdd or handleCreate
           alert(error.message);
       }
     };
-        
-  
+
+
     const handleCancel = () => {
       setIsEditModalVisible(false);
     };
-  
+
     const handleToolClick = (tool) => {
+      setExpandedArtifacts(new Set());
       setSelectedTool(tool);
     };
-  
-    const getAppByNameKey = (app) => {
-      //console.log("app value: ", app)
-      if (selectedTool && selectedTool.appNameKey) {
-        const propertyName = selectedTool.appNameKey;
-        return app[propertyName];
+
+    const getAppByNameKey = (artifact, tool = selectedTool) => {
+      if (tool && tool.appNameKey) {
+        return artifact[tool.appNameKey];
       }
       return null;
     };
-  
-  
-    const shouldHighlight = (app) => {
-      const appName = getAppByNameKey(app);
+
+    const formatArtifactValue = (value) => {
+      if (value == null) return '';
+      if (typeof value === 'boolean') return value ? 'true' : 'false';
+      if (typeof value === 'object') {
+        return (
+          <pre style={{ margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+            {JSON.stringify(value, null, 2)}
+          </pre>
+        );
+      }
+      return value;
+    };
+
+    const isUnmapped = (artifact, tool = selectedTool) => {
+      const appName = getAppByNameKey(artifact, tool);
       return !apps.some((appInList) => {
-        // Check if the appName matches or if it's included in alternateNames
-        return appInList.appName === appName || 
+        return appInList.appName === appName ||
           (appInList.alternateNames && appInList.alternateNames.includes(appName));
       });
     };
 
-    const getItemSize = (index) => {
-      // Assume each property takes up 30px of height for simplicity.
-      // You might need a more accurate way to calculate the height.
-      const numOfProperties = Object.keys(selectedTool.artifactList[index]).length;
-      return 30 * numOfProperties + 100;
+    const getMappedCount = (tool) => {
+      if (!tool?.artifactList || !apps) return 0;
+      return tool.artifactList.filter(artifact => !isUnmapped(artifact, tool)).length;
     };
 
-    const cache = new CellMeasurerCache({
-      fixedWidth: true,
-      defaultHeight: 100, 
-    });
+    const isExpanded = (artifact) => expandedArtifacts.has(artifact);
 
-    const overlapAdjustment = 50;
+    const toggleExpanded = (artifact) => {
+      setExpandedArtifacts(prev => {
+        const next = new Set(prev);
+        if (next.has(artifact)) {
+          next.delete(artifact);
+        } else {
+          next.add(artifact);
+        }
+        return next;
+      });
+    };
+
+    const expandAll = () => {
+      setExpandedArtifacts(new Set(displayedArtifactList));
+    };
+
+    const collapseAll = () => {
+      setExpandedArtifacts(new Set());
+    };
 
     function rowRenderer({ index, key, parent, style }) {
-      const app = displayedArtifactList[index];
-      //console.log("in renderer artifacts: ", selectedTool.artifactList)
+      const artifact = displayedArtifactList[index];
+      const unmapped = isUnmapped(artifact);
+      const expanded = isExpanded(artifact);
+      const name = getAppByNameKey(artifact);
+
       return (
         <CellMeasurer
-          cache={cache}
+          cache={cacheRef.current}
           columnIndex={0}
           key={key}
           parent={parent}
           rowIndex={index}
         >
-          {({ measure }) => (
-            <div onLoad={() => {
-              measure();
-              cache.set(index, 0, cache.getHeight(index, 0) + overlapAdjustment);
-            }} 
-            style={{...style, border: '1px solid #ccc',
-                  borderRadius: '8px',
-                  marginBottom: '5px',
-                  padding: '15px',
-                  maxWidth: '90%',
-                  //overflowX: 'auto',
-                  boxSizing: "border-box"
-                  //height: (cache.getHeight(index, 0) || style.height) + overlapAdjustment,
-            }} 
-            className={` ${shouldHighlight(app) ? 'highlight' : ''}`}>
-              <Typography.Title 
-                level={3}
-                copyable>
-                {getAppByNameKey(app)}
-              </Typography.Title>
-                {shouldHighlight(app) && authState && (
-                        <Button type="primary" style={{ marginBottom: '10px'  }} onClick={() => showModal(app)}>
-                          Suggest an Edit
-                        </Button>
-                      )}
-                <table className="property-table">
-                <tbody>
-                    {Object.keys(app).map((key) => (
-                    <tr key={key} className="property-row">
-                        <td className="property-name">
-                        <strong>{key}:</strong>
-                        </td>
-                        <td style={{ backgroundColor:'white', paddingLeft:'.5rem' }}>
-                        {app[key]}
-                        </td>
-                    </tr>
-                    ))}
-                </tbody>
-                </table>
+          {({ measure, registerChild }) => (
+            <div
+              ref={registerChild}
+              style={style}
+              onLoad={measure}
+            >
+              <div
+                className={`artifact-tile ${unmapped ? 'highlight' : ''}`}
+                onClick={() => toggleExpanded(artifact)}
+              >
+                <div className="artifact-tile-header">
+                  <span className={`artifact-tile-chevron ${expanded ? 'expanded' : ''}`} aria-hidden>
+                    ▸
+                  </span>
+                  <Typography.Title
+                    level={5}
+                    copyable={{ tooltips: false }}
+                    style={{ margin: 0, flex: 1 }}
+                  >
+                    {name}
+                  </Typography.Title>
+                  {unmapped && (
+                    <span className="artifact-tile-badge">unmapped</span>
+                  )}
+                </div>
+                {expanded && (
+                  <div
+                    className="artifact-tile-body"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    {unmapped && authState && (
+                      <Button
+                        type="primary"
+                        style={{ marginBottom: '10px' }}
+                        onClick={() => showModal(artifact)}
+                      >
+                        Suggest an Edit
+                      </Button>
+                    )}
+                    <table className="property-table">
+                      <tbody>
+                        {Object.keys(artifact).map((propKey) => (
+                          <tr key={propKey} className="property-row">
+                            <td className="property-name">
+                              <strong>{propKey}:</strong>
+                            </td>
+                            <td style={{ backgroundColor: 'white', paddingLeft: '.5rem' }}>
+                              {formatArtifactValue(artifact[propKey])}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
+              </div>
             </div>
           )}
         </CellMeasurer>
       );
     }
-    
-      
+
+
     return (
-      <div style={{ display: 'flex', flexDirection: 'column', height: '100vh'}}>
+      <div className="artifacts-page">
         <div className="tool-buttons">
-          {tools.map((tool) => (
-            <Button
-              key={tool.toolShortName}
-              className={`${selectedTool === tool ? 'selected' : ''}`}
-              onClick={() => handleToolClick(tool)}
-            >
-              {tool.toolShortName} ({tool.artifactList.length})
-            </Button>
-          ))}
-        </div>
-          {selectedTool && (<>
-              <h2>{selectedTool.toolLongName} - Artifact List</h2>
-              <Button style={{ marginBottom: '10px' }} 
-                onClick={() => setShowOnlyHighlighted(!showOnlyHighlighted)}>
-                  {showOnlyHighlighted ? "Show All Artifacts" : "Show Unmapped Artifacts Only"}
+          {tools.map((tool) => {
+            const total = tool.artifactList?.length || 0;
+            const mapped = getMappedCount(tool);
+            return (
+              <Button
+                key={tool.toolShortName}
+                className={`${selectedTool === tool ? 'selected' : ''}`}
+                onClick={() => handleToolClick(tool)}
+              >
+                {tool.toolShortName} — {total} total · {mapped} mapped
               </Button>
-            
+            );
+          })}
+        </div>
+          {selectedTool && (
+              <div className="artifacts-page-body">
+              <h2>{selectedTool.toolLongName} - Artifact List</h2>
+              <div className="artifact-toolbar">
+                <Button onClick={() => setShowOnlyHighlighted(!showOnlyHighlighted)}>
+                  {showOnlyHighlighted ? "Show All Artifacts" : "Show Unmapped Artifacts Only"}
+                </Button>
+                <Button onClick={expandAll}>Expand All</Button>
+                <Button onClick={collapseAll}>Collapse All</Button>
+              </div>
+
+                <div className="artifacts-list-viewport">
                 <AutoSizer>
-                  {({ height, width }) => {
-                    //console.log("start list", selectedTool); 
-                    //console.log("AutoSizer dimensions:", height, width);
-                    return (
+                  {({ height, width }) => (
                       <List
+                        ref={listRef}
                         width={width}
                         height={height}
-                        deferredMeasurementCache={cache}
-                        rowHeight={cache.rowHeight}//.bind(cache)}
+                        deferredMeasurementCache={cacheRef.current}
+                        rowHeight={cacheRef.current.rowHeight}
                         rowRenderer={rowRenderer}
                         rowCount={displayedArtifactList.length}
-                        overscanRowCount={5}
-                        //onRowsRendered={() => console.log('Rows rendered')}
+                        overscanRowCount={8}
                       />
-                    );
-                  }}
+                  )}
                 </AutoSizer>
-              </>)}
+                </div>
+              </div>
+              )}
         <Modal
             title="Suggest an Edit"
             open={isEditModalVisible}
@@ -362,7 +408,7 @@ function ToolsArtifactsListContent() {
                                       <strong>{key}:</strong>
                                   </td>
                                   <td className={`property-value `}>
-                                      {selectedArtifact[key]}
+                                      {formatArtifactValue(selectedArtifact[key])}
                                   </td>
                               </tr>
                           ))}
@@ -388,7 +434,6 @@ function ToolsArtifactsListContent() {
                                       cursor: 'pointer'
                                   }}
                                   onClick={() => {
-                                    console.log('search result item clicked with app:', app);
                                     setSelectedApp(app);
                                     setRadioSelection('add');
                                   }}
@@ -427,7 +472,7 @@ function ToolsArtifactsListContent() {
                       <Input
                         type="text"
                         value={
-                            radioSelection === 'add' 
+                            radioSelection === 'add'
                                 ? (selectedApp ? selectedApp.appName : '')
                                 : (radioSelection === 'create' ? newAppName : '')
                         }
@@ -484,7 +529,7 @@ function ToolsArtifactsListContent() {
           width='80%'
           onCancel={() => {
             if (canCloseTermModal) {
-              setTerminalOutput(''); 
+              setTerminalOutput('');
               setIsTermModalVisible(false)
             } else {
               return false
@@ -493,8 +538,8 @@ function ToolsArtifactsListContent() {
             <Button
               key="submit"
               type="primary"
-              onClick={() => {setTerminalOutput(''); setIsTermModalVisible(false)}}  // This will close the modal when clicked
-              disabled={!canCloseTermModal}  // Disable the button based on some condition
+              onClick={() => {setTerminalOutput(''); setIsTermModalVisible(false)}}
+              disabled={!canCloseTermModal}
             >
               Close
             </Button>,

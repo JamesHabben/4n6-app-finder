@@ -1,20 +1,23 @@
 import React, { useMemo, useCallback } from 'react';
-import { Card, Row, Col } from 'antd';
+import { Row, Col } from 'antd';
 
 import AppTile from 'components/searchCompnents/AppTile';
 import { trackEvent } from 'services/analytics';
 
+function latestActivityDate(app) {
+  const added = app.dateAdded ? new Date(app.dateAdded) : null;
+  const updated = app.dateUpdated ? new Date(app.dateUpdated) : null;
+  if (added && updated) return added > updated ? added : updated;
+  return updated || added || new Date(0);
+}
+
 function RecentAppsCard({ apps, tools, onAppClick }) {
   const sortedApps = useMemo(() => {
-    return [...apps].sort((a, b) => {
-      const dateA = new Date(a.dateAdded);
-      const dateB = new Date(b.dateAdded);
-      return dateB - dateA;  // Sort in descending order
-    });
+    return [...apps].sort((a, b) => latestActivityDate(b) - latestActivityDate(a));
   }, [apps]);
 
   const recentApps = useMemo(() => {
-    return sortedApps.slice(0, 6);  // Get the six most recent apps
+    return sortedApps.slice(0, 18);  // three rows of six on xl
   }, [sortedApps]);
 
   const handleTileClick = useCallback((app) => {
