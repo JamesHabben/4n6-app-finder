@@ -17,14 +17,15 @@
         {
             "appName": "1Password",
             "icon": "1password.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://1password.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/1password-password-manager/id1511601750",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.onepassword.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
+            "dateUpdated": "2026-07-13",
             "alternateNames": []
         },
         {
@@ -64,6 +65,26 @@
             ]
         },
         {
+            "appName": "Aloha Browser",
+            "icon": "aloha-browser.webp",
+            "websiteUrl": "https://alohabrowser.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/aloha-browser-private-vpn/id1105317682",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.aloha.browser&hl=en",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2023-10-30",
+            "dateUpdated": "2026-07-13",
+            "alternateNames": [
+                "Aloha Browser Autofill",
+                "Aloha Browser Bookmarks",
+                "Aloha Browser Downloads",
+                "Aloha Browser History",
+                "Chromium Based Browser"
+            ]
+        },
+        {
             "appName": "AOL Instant Messenger (AIM)",
             "icon": "aol-instant-messenger.png",
             "websiteUrl": "",
@@ -77,6 +98,24 @@
                 "AIM Buddies",
                 "AIM",
                 "AIM Chat Messages"
+            ]
+        },
+        {
+            "appName": "Apple Voice Memos",
+            "icon": "apple-voice-memos.webp",
+            "websiteUrl": "https://support.apple.com/guide/iphone/record-a-voice-memo-iph4d2a18ebe/ios",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/voice-memos/id1069512134",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-07-14",
+            "alternateNames": [
+                "Apple Recordings",
+                "Voice Memos",
+                "Voice Recordings"
             ]
         },
         {
@@ -101,13 +140,16 @@
         },
         {
             "appName": "ASKfm",
-            "icon": "askfm.png",
-            "websiteUrl": "",
+            "icon": "askfm.webp",
+            "websiteUrl": "https://ask.fm/",
+            "category": "Social Networking",
             "appleStoreUrl": "",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.askfm&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Anonymous Q&A social app (com.askfm). Platform discontinued December 1, 2024; store listings removed.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
                 "ASKfm: Ask & Chat Anonymously"
             ]
@@ -124,7 +166,8 @@
             "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "AVG - Encryption Details",
-                "AVG - Media Files"
+                "AVG - Media Files",
+                "AntiVirus Security (AVG)"
             ],
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true"
@@ -295,14 +338,15 @@
         {
             "appName": "Alipay",
             "icon": "ali-pay.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.alipay.com/",
+            "category": "Finance",
             "appleStoreUrl": "https://apps.apple.com/us/app/alipay-simplify-your-life/id333206289",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.eg.android.AlipayGphone&hl=en",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-01",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
                 "Alipay - Simplify Your Life"
             ]
@@ -316,7 +360,7 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Alibaba/Taobao instant messenger (\u963f\u91cc\u65fa\u65fa). Standalone app largely discontinued (was com.alibaba.mobileim); messaging often lives in Qianniu/Taobao now. Kept for Cellebrite artifact joins.",
+            "notes": "Alibaba/Taobao instant messenger (阿里旺旺). Standalone app largely discontinued (was com.alibaba.mobileim); messaging often lives in Qianniu/Taobao now. Kept for Cellebrite artifact joins.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": [
@@ -338,39 +382,24 @@
             ]
         },
         {
-            "appName": "Aloha Browser + VPN",
-            "icon": "aloha-browser.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.aloha.browser&hl=en",
-            "notes": "",
-            "dateAdded": "2023-10-30",
-            "dateUpdated": "",
-            "alternateNames": [
-                "Aloha Browser Autofill",
-                "Aloha Browser Bookmarks",
-                "Aloha Browser Downloads",
-                "Aloha Browser History"
-            ]
-        },
-        {
             "appName": "Amazon Alexa",
             "icon": "amazon-alexa.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.amazon.com/alexa",
+            "category": "AI & Assistants",
+            "appleStoreUrl": "https://apps.apple.com/us/app/amazon-alexa/id944011620",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.dee.app&hl=en",
-            "activeOnAppleStore": "",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
                 "Amazon Alexa Audio Activity",
-                "Amazon Alexa Web Resource",
-                "Amazon Alexa User",
-                "Amazon Alexa Tasks",
+                "Amazon Alexa Cached Audio",
                 "Amazon Alexa Device Information",
-                "Amazon Alexa Cached Audio"
+                "Amazon Alexa Tasks",
+                "Amazon Alexa User",
+                "Amazon Alexa Web Resource"
             ]
         },
         {
@@ -523,28 +552,6 @@
             "alternateNames": [
                 "Android Contacts (UFED Agent)",
                 "com.android.providers.contacts"
-            ]
-        },
-        {
-            "appName": "Android Messages",
-            "icon": "android-messages.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
-            "dateAdded": "2023-11-02",
-            "dateUpdated": "2023-11-11",
-            "alternateNames": [
-                "Android MMS (UFED Agent)",
-                "Android MMS",
-                "Android SMS (UFED Agent)",
-                "Android SMS-MMS (Content Provider)",
-                "Android SMS-MMS (Google Play Services)",
-                "Android SMS-MMS",
-                "Android SMS",
-                "Messages"
             ]
         },
         {
@@ -811,22 +818,32 @@
         },
         {
             "appName": "Apple Maps",
-            "icon": "apple-maps.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "apple-maps.webp",
+            "websiteUrl": "https://maps.apple.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-maps/id915056765",
             "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
-                "Maps",
-                "appleMapsApplication",
+                "Apple Locations",
+                "Apple Locations (Partial)",
+                "Apple Maps Favorites",
                 "Apple Maps Group",
                 "Apple Maps Last Activity Camera",
+                "Apple Maps Searches",
                 "Apple Maps Significant Locations",
                 "Apple Maps Significant Locations Visits",
                 "Apple Maps Trips",
-                "Maps Sync"
+                "Get Apple Maps seach history",
+                "Get Apple Maps search history",
+                "LSC - com.apple.routined.plist",
+                "Maps",
+                "Maps Sync",
+                "appleMapsApplication"
             ]
         },
         {
@@ -884,20 +901,23 @@
             "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-12",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
+                "Apple Call History",
                 "Call History",
                 "Call History - Group Call",
                 "Call History Transactions",
+                "Call Logs - iVe",
                 "Calls",
                 "iOS Call Logs",
-                "Voicemail"
+                "Voicemail",
+                "interactionC Call History - Group Call"
             ]
         },
         {
             "appName": "Apple Photos",
             "icon": "apple-photos.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.apple.com/ios/photos/",
             "category": "Photo & Video",
             "appleStoreUrl": "https://apps.apple.com/us/app/photos/id1584215428",
             "googlePlayUrl": "",
@@ -905,12 +925,15 @@
             "activeOnPlayStore": "false",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-12",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
-                "photosMigration",
-                "photosMetadata",
+                "Photos Albums",
+                "Photos Media Information",
                 "Photos.sqlite EXIF Analysis",
-                "Photos.sqlite Metadata"
+                "Photos.sqlite Metadata",
+                "iCloud Photos Metadata",
+                "photosMetadata",
+                "photosMigration"
             ]
         },
         {
@@ -1093,7 +1116,7 @@
             "category": "Dating"
         },
         {
-            "appName": "Baidu Browser (\u767e\u5ea6)",
+            "appName": "Baidu Browser (百度)",
             "icon": "baidu.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -1106,14 +1129,14 @@
                 "Baidu Browser HD",
                 "Baidu Browser Mini",
                 "DU browser",
-                "DU Browser\u2014Browse fast & fun",
+                "DU Browser—Browse fast & fun",
                 "DU Browser Mini(Small&Fast)",
                 "Baidu Searches",
                 "Baidu Web Visits"
             ]
         },
         {
-            "appName": "Baidu Maps (\u767e\u5ea6\u5730\u56fe)",
+            "appName": "Baidu Maps (百度地图)",
             "icon": "baidu-maps.png",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -1123,7 +1146,7 @@
             "dateUpdated": "2023-11-11",
             "alternateNames": [
                 "Baidu Maps",
-                "\u767e\u5ea6\u5730\u56fe"
+                "百度地图"
             ]
         },
         {
@@ -1135,7 +1158,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.toshi",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Coinbase Wallet rebranded to Base App (org.toshi). Distinct from Coinbase exchange (com.coinbase.android). Cellebrite uses spelling \u201cFormally\u201d.",
+            "notes": "Coinbase Wallet rebranded to Base App (org.toshi). Distinct from Coinbase exchange (com.coinbase.android). Cellebrite uses spelling “Formally”.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": [
@@ -1143,7 +1166,7 @@
             ]
         },
         {
-            "appName": "Bazo\u0161",
+            "appName": "Bazoš",
             "icon": "bazos.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -1182,15 +1205,16 @@
         },
         {
             "appName": "Beam",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "isActiveOnAppleStore": "",
+            "icon": "beam.webp",
+            "websiteUrl": "https://beam.mw/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/beam-privacy-wallet/id1459842353",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mw.beam.beamwallet.mainnet&hl=en_US",
-            "isActiveOnPlayStore": "true",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Beam Privacy Wallet (confidential cryptocurrency). Google Play listing for com.mw.beam.beamwallet.mainnet appears removed as of 2026-07-13.",
             "dateAdded": "2023-11-14",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-13",
             "alternateNames": [
                 "Beam Transactions"
             ]
@@ -1435,7 +1459,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ee.mtakso.client&hl=en",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Ride-hailing app (ee.mtakso.client). Magnet \u201cBolt Browser\u201d artifacts are a different product.",
+            "notes": "Ride-hailing app (ee.mtakso.client). Magnet “Bolt Browser” artifacts are a different product.",
             "dateAdded": "2023-10-14",
             "dateUpdated": "2026-07-12",
             "alternateNames": [
@@ -1716,7 +1740,7 @@
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": [
-                "Careem \u2013 rides, food & more"
+                "Careem – rides, food & more"
             ]
         },
         {
@@ -1831,7 +1855,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
             "alternateNames": [
-                "CheckMyTrip \u2013 Travel Itinerary"
+                "CheckMyTrip – Travel Itinerary"
             ]
         },
         {
@@ -1967,6 +1991,20 @@
             "notes": "Encrypted messenger (cm.confide.android). Store listings currently unavailable.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
+            "alternateNames": []
+        },
+        {
+            "appName": "Conversations",
+            "icon": "conversations.webp",
+            "websiteUrl": "https://conversations.im/",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=eu.siacs.conversations",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Open-source Android XMPP client (eu.siacs.conversations). Distinct from generic “conversations” artifact names on other messengers.",
+            "dateAdded": "2026-07-13",
+            "dateUpdated": "",
             "alternateNames": []
         },
         {
@@ -2527,13 +2565,16 @@
         },
         {
             "appName": "Files by Google",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "files-by-google.webp",
+            "websiteUrl": "https://files.google.com/",
+            "category": "Productivity",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-14",
             "alternateNames": [
                 "Files By Google - Files Master",
                 "Files By Google - Search History"
@@ -2900,8 +2941,8 @@
                 "GarminStepsAPI",
                 "GarminStressAPI",
                 "GarminWeight",
-                "Garmin Connect\u2122",
-                "Garmin Connect\u202a\u2122\u202c"
+                "Garmin Connect™",
+                "Garmin Connect‪™‬"
             ],
             "category": "Health & Fitness",
             "activeOnAppleStore": "true",
@@ -3328,16 +3369,28 @@
         {
             "appName": "Google Messages",
             "icon": "google-messages.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://messages.google.com/",
+            "category": "Communication",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.messaging",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Formerly Android Messages / Messages by Google. Magnet Android SMS/MMS keys include system mmssms.db recovery often used with this app.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-07-14",
             "alternateNames": [
+                "Android MMS",
+                "Android MMS (UFED Agent)",
+                "Android Messages",
+                "Android SMS",
+                "Android SMS (UFED Agent)",
+                "Android SMS-MMS",
+                "Android SMS-MMS (Content Provider)",
+                "Android SMS-MMS (Google Play Services)",
+                "GoogleMessages",
+                "Messages",
                 "Messages by Google",
-                "Messenger By Google",
-                "GoogleMessages"
+                "Messenger By Google"
             ]
         },
         {
@@ -3838,7 +3891,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": [
-                "ICQ \u2013 Video Calls & Chat App",
+                "ICQ – Video Calls & Chat App",
                 "ICQ Video Calls & Chat Rooms",
                 "ICQ Messages",
                 "ICQ 10 Messages"
@@ -4243,7 +4296,7 @@
                 "kikPendingUploads",
                 "kikUsersgroups",
                 "kikGroupadmins",
-                "Kik \u2014 Messaging & Chat App",
+                "Kik — Messaging & Chat App",
                 "Kik Messaging & Chat App",
                 "kikLocaladmin",
                 "Kik Attachments Bplist Metadata",
@@ -4370,17 +4423,20 @@
             ]
         },
         {
-            "appName": "LastPass Password Manager",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
+            "appName": "LastPass",
+            "icon": "lastpass.webp",
+            "websiteUrl": "https://www.lastpass.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/lastpass-password-manager/id324613447",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lastpass.lpandroid",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-13",
+            "alternateNames": [
+                "LastPass Password Manager"
+            ]
         },
         {
             "appName": "Life360",
@@ -4606,7 +4662,7 @@
                 "Mail.Ru Agent",
                 "Cloud Mail.Ru",
                 "Mail.ru - Email App",
-                "Mail.Ru for UA \u2013 Email for Hot",
+                "Mail.Ru for UA – Email for Hot",
                 "Mail.Ru Agent Contacts",
                 "Mail.Ru Agent Messages",
                 "Mail.Ru Agent User Accounts",
@@ -4661,7 +4717,7 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Dog Walk appears discontinued \u2014 not on Apple App Store or Google Play as of 2026-07-13.",
+            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Dog Walk appears discontinued — not on Apple App Store or Google Play as of 2026-07-13.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": [
@@ -4697,7 +4753,7 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Hike appears discontinued \u2014 not on Apple App Store or Google Play as of 2026-07-13 (mapmyhike.com redirects to Map My Run).",
+            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Hike appears discontinued — not on Apple App Store or Google Play as of 2026-07-13 (mapmyhike.com redirects to Map My Run).",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": [
@@ -4893,7 +4949,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mts.meowchat",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Live video chat (com.mts.meowchat). Distinct from pet-translator apps also named MeowChat. MOBILEdit title appears truncated (\u201c\u2026 & M\u201d).",
+            "notes": "Live video chat (com.mts.meowchat). Distinct from pet-translator apps also named MeowChat. MOBILEdit title appears truncated (“… & M”).",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": [
@@ -5772,6 +5828,31 @@
             ]
         },
         {
+            "appName": "Pebble Smartwatch",
+            "icon": "pebble.webp",
+            "websiteUrl": "",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Pebble Technology smartwatch companion (Magnet artifacts). Acquired by Fitbit; original store apps delisted. Distinct from climbing apps and the later Core Devices “Pebble Core” revival.",
+            "dateAdded": "2023-10-30",
+            "dateUpdated": "2026-07-14",
+            "alternateNames": [
+                "Pebble Activity Information",
+                "Pebble Applications",
+                "Pebble Calendar Events",
+                "Pebble Contacts",
+                "Pebble Detected Android Applications",
+                "Pebble Device Information",
+                "Pebble Notifications",
+                "Pebble Physical Characteristics",
+                "Pebble Steps",
+                "Pebble Weather Locations"
+            ]
+        },
+        {
             "appName": "PUMATRAC",
             "icon": "pumatrac.webp",
             "websiteUrl": "https://www.puma.com",
@@ -5844,28 +5925,6 @@
             "dateUpdated": "2023-10-28",
             "alternateNames": [
                 "PayPal - Send, Shop, Manage"
-            ]
-        },
-        {
-            "appName": "Pebble",
-            "icon": "pebble.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pebbleclimbing.pebble&hl=en",
-            "notes": "",
-            "dateAdded": "2023-10-30",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Pebble Activity Information",
-                "Pebble Applications",
-                "Pebble Calendar Events",
-                "Pebble Contacts",
-                "Pebble Detected Android Applications",
-                "Pebble Device Information",
-                "Pebble Notifications",
-                "Pebble Physical Characteristics",
-                "Pebble Weather Locations",
-                "Pebble Steps"
             ]
         },
         {
@@ -6065,7 +6124,7 @@
             "dateUpdated": "2023-11-11",
             "alternateNames": [
                 "Pokemon GO",
-                "Pok\u00e9mon GO",
+                "Pokémon GO",
                 "com.nianticlabs.pokemongo"
             ]
         },
@@ -6276,7 +6335,7 @@
                 "QQ Browser",
                 "QQ HD",
                 "QQ International - Chat & Call",
-                "QQ\u8f7b\u804a\u7248",
+                "QQ轻聊版",
                 "QQ File Transfers",
                 "QQ Local Users",
                 "QQ Messages",
@@ -6293,7 +6352,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.androidqqmail",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Tencent QQ\u90ae\u7bb1 (com.tencent.qqmail / com.tencent.androidqqmail). Distinct from QQ messenger.",
+            "notes": "Tencent QQ邮箱 (com.tencent.qqmail / com.tencent.androidqqmail). Distinct from QQ messenger.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
@@ -6357,7 +6416,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": [
-                "Rail Russia \u2013 train tickets"
+                "Rail Russia – train tickets"
             ]
         },
         {
@@ -6919,7 +6978,7 @@
             "dateUpdated": "2026-07-09",
             "alternateNames": [
                 "SKOUT - Meet, Chat, Go Live",
-                "Skout \u2014 Meet New People",
+                "Skout — Meet New People",
                 "Skout Messages",
                 "Skout Users"
             ]
@@ -6995,7 +7054,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
             "alternateNames": [
-                "Skyscanner \u2013 travel deals",
+                "Skyscanner – travel deals",
                 "Skyscanner Flights Hotels Cars"
             ]
         },
@@ -7072,13 +7131,16 @@
         },
         {
             "appName": "Smart Voice Recorder",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "smart-voice-recorder.webp",
+            "websiteUrl": "https://help.smartmob.dev",
+            "category": "Music & Audio",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.andrwq.recorder",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Android SmartMob recorder (com.andrwq.recorder). Distinct from Apple Voice Memos and iOS “Smart Voice Recorder - Offline”.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-07-14",
             "alternateNames": []
         },
         {
@@ -7359,7 +7421,7 @@
             ]
         },
         {
-            "appName": "Taobao (\u6dd8\u5b9d)",
+            "appName": "Taobao (淘宝)",
             "icon": "",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -7370,7 +7432,7 @@
             "dateAdded": "2023-11-11",
             "dateUpdated": "",
             "alternateNames": [
-                "\u6dd8\u5b9d"
+                "淘宝"
             ]
         },
         {
@@ -7584,7 +7646,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instagram.barcelona",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Meta Threads app (com.instagram.barcelona). Store title: Threads. LEAPP \u201cInstagram Threads\u201d / \u201cInstagram Threads Calls\u201d are Instagram DMs/calls, not this app.",
+            "notes": "Meta Threads app (com.instagram.barcelona). Store title: Threads. LEAPP “Instagram Threads” / “Instagram Threads Calls” are Instagram DMs/calls, not this app.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
             "alternateNames": [
@@ -7890,7 +7952,7 @@
                 "Tumblr Blogs",
                 "Tumblr Chat Messages",
                 "Tumblr Tags",
-                "Tumblr\u2014Fandom, Art, Chaos",
+                "Tumblr—Fandom, Art, Chaos",
                 "com.tumblra"
             ]
         },
@@ -8005,23 +8067,27 @@
         },
         {
             "appName": "UC Browser",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
+            "icon": "uc-browser.webp",
+            "websiteUrl": "https://www.ucweb.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/uc-browser/id1048518592",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.UCMobile.intl",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
+            "dateUpdated": "2026-07-14",
             "alternateNames": [
-                "UC Browser Lite",
-                "UC Mini-Download Video Status",
-                "UC Browser-Safe, Fast, Private",
-                "UC Browser Mini for Android Go",
-                "com.uc.browser.hd",
-                "UC Browser History",
-                "UC Browser Downloads",
+                "Chromium Based Browser",
+                "UC Browser Bookmarks",
                 "UC Browser Cookies",
-                "UC Browser Bookmarks"
+                "UC Browser Downloads",
+                "UC Browser History",
+                "UC Browser Lite",
+                "UC Browser Mini for Android Go",
+                "UC Browser-Safe, Fast, Private",
+                "UC Mini-Download Video Status",
+                "com.uc.browser.hd"
             ]
         },
         {
@@ -8332,17 +8398,6 @@
             ]
         },
         {
-            "appName": "Voice Memos",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Voxer",
             "icon": "voxer.webp",
             "websiteUrl": "",
@@ -8435,7 +8490,7 @@
             ]
         },
         {
-            "appName": "Weibo (\u5fae\u535a)",
+            "appName": "Weibo (微博)",
             "icon": "weibo.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -8692,17 +8747,20 @@
             ]
         },
         {
-            "appName": "Wunderlist: To-Do List & Tasks",
-            "icon": "",
+            "appName": "Wunderlist",
+            "icon": "wunderlist.webp",
             "websiteUrl": "",
+            "category": "Productivity",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Discontinued May 2020 after Microsoft acquisition; users migrated to Microsoft To Do. Kept for MOBILEdit artifact joins.",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-07-14",
+            "alternateNames": [
+                "Wunderlist: To-Do List & Tasks"
+            ]
         },
         {
             "appName": "X / Twitter",
@@ -8834,7 +8892,7 @@
                 "Android Yahoo Mail Attachments",
                 "Android Yahoo Mail Emails",
                 "Android Yahoo Mail User Accounts",
-                "Yahoo Mail \u2013 Organized Email"
+                "Yahoo Mail – Organized Email"
             ]
         },
         {
@@ -8953,8 +9011,8 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": [
-                "Yandex Disk\u2014file cloud storage",
-                "Yandex Disk\u2014file cloud storage",
+                "Yandex Disk—file cloud storage",
+                "Yandex Disk—file cloud storage",
                 "ru.yandex.disk"
             ]
         },
@@ -9242,7 +9300,7 @@
             "dateAdded": "2023-11-02",
             "dateUpdated": "2023-11-11",
             "alternateNames": [
-                "happn \u2014 Dating app"
+                "happn — Dating app"
             ]
         },
         {
