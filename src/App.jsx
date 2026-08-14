@@ -92,7 +92,7 @@ function AppContent() {
   const activeTab = location.pathname;
 
   return (
-      <div className="app-container">
+      <div className={activeTab.startsWith('/admin') ? 'app-container admin-layout' : 'app-container'}>
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0rem' }}>
           <img src="/images/4af-logo.png" alt="Logo" width={'200px'} height={'200px'}
             style={{ position: 'absolute', left: '0px', top: '0px', zIndex:'-1' }} />

@@ -25,7 +25,7 @@ function PageAdmin() {
                 </ul>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minWidth: 0, minHeight: 0, overflow: 'hidden', padding: '1rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', flex: 1, minWidth: 0, minHeight: 0, overflow: 'auto', padding: '1rem' }}>
                 <Outlet />
             </div>
         </div>

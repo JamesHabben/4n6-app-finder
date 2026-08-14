@@ -40,8 +40,7 @@
 .admin-page {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 11rem);
-  max-height: calc(100vh - 11rem);
+  flex: 1;
   min-height: 0;
   overflow: hidden;
   text-align: left;
@@ -53,6 +52,22 @@
 
 .app-container {
   text-align: right;
+}
+
+.app-container.admin-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.app-container.admin-layout > :not(.admin-page):not(header) {
+  align-self: flex-end;
+}
+
+.app-container.admin-layout .admin-page {
+  align-self: stretch;
+  width: 100%;
 }
 
 .nav {
