@@ -34,7 +34,7 @@ function WhatsNewTile() {
       
       <Card bodyStyle={{ padding: '10px', textAlign: 'left' }} className="whats-new-card" onClick={showModal}>
         <h1>What's New</h1>
-        <ReactMarkdown className="whats-new-content">{previewContent}</ReactMarkdown>
+        <ReactMarkdown className="whats-new-content" disallowedElements={['script', 'iframe', 'object', 'embed', 'link']} unwrapDisallowed={true}>{previewContent}</ReactMarkdown>
         <a onClick={showModal} style={{ cursor: 'pointer' }}>Show More</a>
       </Card>
       <Modal
@@ -44,7 +44,7 @@ function WhatsNewTile() {
         footer={null}
         width={"80%"}
       >
-        <ReactMarkdown className="whats-new-content">{markdown}</ReactMarkdown>
+        <ReactMarkdown className="whats-new-content" disallowedElements={['script', 'iframe', 'object', 'embed', 'link']} unwrapDisallowed={true}>{markdown}</ReactMarkdown>
       </Modal>
     </div>
   );
