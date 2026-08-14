@@ -11,7 +11,7 @@ function latestActivityDate(app) {
   return updated || added || new Date(0);
 }
 
-function RecentAppsCard({ apps, tools, onAppClick }) {
+function RecentAppsCard({ apps, onAppClick }) {
   const sortedApps = useMemo(() => {
     return [...apps].sort((a, b) => latestActivityDate(b) - latestActivityDate(a));
   }, [apps]);
@@ -34,7 +34,7 @@ function RecentAppsCard({ apps, tools, onAppClick }) {
       <Row gutter={[16, 16]} justify={'center'}>
         {recentApps.map((app, index) => (
           <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
-            <AppTile app={app} tools={tools} onClick={() => handleTileClick(app)} />
+            <AppTile app={app} onClick={() => handleTileClick(app)} />
           </Col>
         ))}
       </Row>

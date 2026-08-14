@@ -1,28 +1,27 @@
-// services/DataContext.jsx
 import React, { createContext, useCallback } from 'react';
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
 
 export const DataContext = createContext();
 
-function createAppLookup(appsList) {
-  const appLookup = new Map();
-  const appByName = new Map();
+const INTERNAL_APP_KEYS = new Set(['searchHaystack', 'mappedArtifactNames']);
+const INTERNAL_TOOL_KEYS = new Set(['artifactMap']);
 
-  appsList.forEach(app => {
-    appByName.set(app.appName, app);
+export function isDisplayableAppKey(key) {
+  return !INTERNAL_APP_KEYS.has(key);
+}
 
-    if (!appLookup.has(app.appName)) {
-      appLookup.set(app.appName, app);
-    }
+export function isDisplayableToolKey(key) {
+  return !INTERNAL_TOOL_KEYS.has(key);
+}
 
-    (app.alternateNames || []).forEach(alternateName => {
-      if (!appLookup.has(alternateName)) {
-        appLookup.set(alternateName, app);
-      }
-    });
-  });
-
-  return { appLookup, appByName };
+export function mappedAppsFor(mappedValue) {
+  if (Array.isArray(mappedValue)) {
+    return mappedValue.filter(Boolean);
+  }
+  if (typeof mappedValue === 'string' && mappedValue) {
+    return [mappedValue];
+  }
+  return [];
 }
 
 async function fetchJson(path) {
@@ -35,76 +34,95 @@ async function fetchJson(path) {
   return response.json();
 }
 
+function buildSearchHaystack(app) {
+  const parts = [app.appName, ...(app.alternateNames || []), ...(app.mappedArtifactNames || [])];
+  return parts.join('\n').toLowerCase();
+}
+
 async function loadAppData() {
   const [appsData, toolsData] = await Promise.all([
     fetchJson('/apps-core.json'),
     fetchJson('/tools.json'),
   ]);
 
-  const { template, appsList } = appsData;
-  const { appLookup, appByName } = createAppLookup(appsList);
+  const { template, appsList: rawAppsList } = appsData;
 
-  appsList.forEach(app => {
-    app.artifactCount = 0;
-    app.mappedCategories = [];
-  });
+  const appsList = rawAppsList.map(app => ({
+    ...app,
+    alternateNames: [...(app.alternateNames || [])],
+    mappedTools: [],
+    mappedArtifactNames: [],
+    artifactCount: 0,
+  }));
 
-  const artifactToolsData = await Promise.all(
-    toolsData.map(tool =>
-      fetchJson(`/${tool.artifactListFile}`).then(artifactList => {
-        artifactList.forEach(artifact => {
-          const appName = artifact[tool.appNameKey];
-          const app = appLookup.get(appName);
+  const appByName = new Map(appsList.map(app => [app.appName, app]));
 
-          artifact.isMapped = app ? 'true' : 'false';
+  const toolsWithMaps = await Promise.all(
+    toolsData.map(async (tool) => {
+      const artifactMap = await fetchJson(`/${tool.mapFile}`);
+      const toolMeta = {
+        shortName: tool.toolShortName,
+        longName: tool.toolLongName,
+        icon: tool.icon,
+      };
 
-          if (app) {
-            app.artifactCount += 1;
-            app.mappedTools = app.mappedTools || [];
+      Object.entries(artifactMap).forEach(([artifactName, mappedValue]) => {
+        mappedAppsFor(mappedValue).forEach(mappedAppName => {
+          const app = appByName.get(mappedAppName);
+          if (!app) {
+            return;
+          }
 
-            const category = artifact.category || artifact.Category;
-            if (category && !app.mappedCategories.includes(category)) {
-              app.mappedCategories.push(category);
-              app.mappedCategories.sort((a, b) => a.localeCompare(b));
-            }
+          if (!app.mappedTools.some(existing => existing.shortName === toolMeta.shortName)) {
+            app.mappedTools.push(toolMeta);
+          }
 
-            const toolData = {
-              shortName: tool.toolShortName,
-              longName: tool.toolLongName,
-              icon: tool.icon
-            };
+          app.artifactCount += 1;
 
-            if (!app.mappedTools.some(existingTool => existingTool.shortName === toolData.shortName)) {
-              app.mappedTools.push(toolData);
-            }
-
-            app.mappedTools.sort((a, b) => a.shortName.localeCompare(b.shortName));
-            tool.mappedApps = tool.mappedApps || [];
-
-            if (!tool.mappedApps.some(existingApp => existingApp.appName === app.appName)) {
-              tool.mappedApps.push(app);
-            }
+          if (
+            artifactName !== app.appName &&
+            !app.alternateNames.includes(artifactName) &&
+            !app.mappedArtifactNames.includes(artifactName)
+          ) {
+            app.mappedArtifactNames.push(artifactName);
           }
         });
+      });
 
-        return { ...tool, artifactList };
-      })
-    )
+      const mappedAppNames = [...new Set(
+        Object.values(artifactMap).flatMap(mappedAppsFor)
+      )]
+        .filter(name => appByName.has(name))
+        .sort((a, b) => a.localeCompare(b));
+
+      return {
+        ...tool,
+        artifactMap,
+        mappedApps: mappedAppNames,
+        mappedNameCount: Object.keys(artifactMap).length,
+      };
+    })
   );
 
+  appsList.forEach(app => {
+    app.mappedTools.sort((a, b) => a.shortName.localeCompare(b.shortName));
+    app.mappedArtifactNames.sort((a, b) => a.localeCompare(b));
+    app.searchHaystack = buildSearchHaystack(app);
+  });
+
   appsList.sort((a, b) => a.appName.localeCompare(b.appName));
-  artifactToolsData.sort((a, b) => a.toolLongName.localeCompare(b.toolLongName));
+  toolsWithMaps.sort((a, b) => a.toolLongName.localeCompare(b.toolLongName));
 
   return {
     apps: appsList,
-    tools: artifactToolsData,
+    tools: toolsWithMaps,
     appTemplate: template,
-    appLookup,
     appByName,
   };
 }
 
 export function DataProvider({ children }) {
+  const queryClient = useQueryClient();
   const {
     data,
     error: dataError,
@@ -121,37 +139,60 @@ export function DataProvider({ children }) {
   const appTemplate = data?.appTemplate ?? null;
   const isLoadingTools = isPending;
 
-  const getMappedArtifacts = useCallback((appName) => {
-    if (!tools.length) {
-      console.warn("Tools data is not yet loaded.");
+  const loadToolArtifacts = useCallback(async (tool) => {
+    if (!tool?.artifactListFile) {
       return [];
     }
-    const app = appByName?.get(appName);
-    const matchingNames = new Set([
-      appName,
-      ...(app?.alternateNames || []),
-    ]);
 
-    const toolArtifacts = tools.flatMap(tool =>
-      tool.artifactList.filter(toolApp =>
-        matchingNames.has(toolApp[tool.appNameKey])
-      )
-      .map(toolApp => ({ ...toolApp,
+    return queryClient.fetchQuery({
+      queryKey: ['tool-artifacts', tool.toolShortName],
+      queryFn: () => fetchJson(`/${tool.artifactListFile}`),
+      staleTime: Infinity,
+    });
+  }, [queryClient]);
+
+  const getMappedArtifacts = useCallback(async (appName) => {
+    if (!tools.length) {
+      return [];
+    }
+
+    const toolArtifacts = await Promise.all(
+      tools.map(async (tool) => {
+        const mappedNames = new Set(
+          Object.entries(tool.artifactMap || {})
+            .filter(([, mappedValue]) => mappedAppsFor(mappedValue).includes(appName))
+            .map(([artifactName]) => artifactName)
+        );
+
+        if (mappedNames.size === 0) {
+          return [];
+        }
+
+        const artifactList = await loadToolArtifacts(tool);
+        return artifactList
+          .filter(artifact => mappedNames.has(artifact[tool.appNameKey]))
+          .map(artifact => ({
+            ...artifact,
             toolShortName: tool.toolShortName,
             toolLongName: tool.toolLongName,
             toolIcon: tool.icon,
-            toolWebsite: tool.website
-        }))
+            toolWebsite: tool.website,
+            isMapped: 'true',
+          }));
+      })
     );
-    return toolArtifacts;
-  }, [tools, appByName]);
+
+    return toolArtifacts.flat();
+  }, [tools, loadToolArtifacts]);
 
   const value = {
     apps,
     tools,
     isLoadingTools,
     getMappedArtifacts,
+    loadToolArtifacts,
     appTemplate,
+    appByName,
     isDataError: isError,
     dataError,
   };
@@ -161,4 +202,13 @@ export function DataProvider({ children }) {
       {children}
     </DataContext.Provider>
   );
+}
+
+export function useToolArtifacts(tool) {
+  return useQuery({
+    queryKey: ['tool-artifacts', tool?.toolShortName],
+    queryFn: () => fetchJson(`/${tool.artifactListFile}`),
+    enabled: Boolean(tool?.artifactListFile),
+    staleTime: Infinity,
+  });
 }

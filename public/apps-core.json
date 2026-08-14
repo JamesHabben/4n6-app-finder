@@ -59,10 +59,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Sense V2 Flip Clock & Weather",
-                "Sense Flip Clock & Weather"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Aloha Browser",
@@ -76,13 +73,7 @@
             "notes": "",
             "dateAdded": "2023-10-30",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Aloha Browser Autofill",
-                "Aloha Browser Bookmarks",
-                "Aloha Browser Downloads",
-                "Aloha Browser History",
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AOL Instant Messenger (AIM)",
@@ -93,12 +84,7 @@
             "notes": "",
             "dateAdded": "2023-10-15",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "AIM Messages",
-                "AIM Buddies",
-                "AIM",
-                "AIM Chat Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Voice Memos",
@@ -112,11 +98,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-14",
-            "alternateNames": [
-                "Apple Recordings",
-                "Voice Memos",
-                "Voice Recordings"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "ASICS RunKeeper",
@@ -130,13 +112,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "ASICS Runkeeper - Run Tracker",
-                "RunKeeper",
-                "RunKeeperPro",
-                "Runkeeper - Activities",
-                "RunkeeperUser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "ASKfm",
@@ -150,9 +126,7 @@
             "notes": "Anonymous Q&A social app (com.askfm). Platform discontinued December 1, 2024; store listings removed.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "ASKfm: Ask & Chat Anonymously"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AVG AntiVirus & Security",
@@ -164,11 +138,7 @@
             "notes": "",
             "dateAdded": "2026-07-10",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "AVG - Encryption Details",
-                "AVG - Media Files",
-                "AntiVirus Security (AVG)"
-            ],
+            "alternateNames": [],
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true"
         },
@@ -215,20 +185,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Runtastic",
-                "adidas Running: Walk & Run App",
-                "adidas Running: Run Tracker",
-                "Runtastic Road Bike Trails & GPS Bike Tracker",
-                "Runtastic Road Bike PRO",
-                "Runtastic Mountain Bike PRO",
-                "Runtastic Mountain Bike GPS Tracker",
-                "com.runtastic.iphone.roadbike.pro",
-                "com.runtastic.iphone.roadbike.lite",
-                "com.runtastic.iphone.mountainbike.pro",
-                "com.runtastic.iphone.mountainbike.lite",
-                "Adidas Running - Activities",
-                "AdidasGoals",
-                "AdidasUser",
                 "com.runtastic.android"
             ],
             "category": "Health & Fitness"
@@ -253,9 +209,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "",
-            "alternateNames": [
-                "Adobe Acrobat Reader: Edit PDF"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Aeroflot",
@@ -290,9 +244,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "",
-            "alternateNames": [
-                "Agoda: Book Hotels and Flights"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AirGuard",
@@ -304,10 +256,7 @@
             "notes": "",
             "dateAdded": "2026-07-10",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "AirGuard AirTag Scans",
-                "AirGuard AirTag Tracker"
-            ],
+            "alternateNames": [],
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
         },
@@ -320,9 +269,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Airbnb - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AliExpress",
@@ -347,9 +294,7 @@
             "notes": "",
             "dateAdded": "2023-11-01",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Alipay - Simplify Your Life"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Aliwangwang",
@@ -360,12 +305,10 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Alibaba/Taobao instant messenger (阿里旺旺). Standalone app largely discontinued (was com.alibaba.mobileim); messaging often lives in Qianniu/Taobao now. Kept for Cellebrite artifact joins.",
+            "notes": "Alibaba/Taobao instant messenger (\u963f\u91cc\u65fa\u65fa). Standalone app largely discontinued (was com.alibaba.mobileim); messaging often lives in Qianniu/Taobao now. Kept for Cellebrite artifact joins.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Aliwangwang (copy)"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AllTrails",
@@ -376,10 +319,7 @@
             "notes": "",
             "dateAdded": "2023-10-22",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "AllTrails - Trail Details",
-                "AllTrails - User Info"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Amazon Alexa",
@@ -393,14 +333,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Amazon Alexa Audio Activity",
-                "Amazon Alexa Cached Audio",
-                "Amazon Alexa Device Information",
-                "Amazon Alexa Tasks",
-                "Amazon Alexa User",
-                "Amazon Alexa Web Resource"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Amazon Kindle",
@@ -447,11 +380,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Amazon shopping",
-                "Amazon browser",
-                "Amazon"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "American Airlines (AA)",
@@ -462,9 +391,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "American Airlines"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Android Auto",
@@ -476,9 +403,7 @@
             "notes": "",
             "dateAdded": "2026-07-10",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Android Auto - Connected Cars"
-            ],
+            "alternateNames": [],
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true"
         },
@@ -493,12 +418,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "",
-            "alternateNames": [
-                "Android Browser Bookmarks",
-                "Android Browser Search Terms",
-                "Android Browser Web History",
-                "com.android.browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Android Calendar",
@@ -511,11 +431,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "",
-            "alternateNames": [
-                "Calendar Events (UFED Agent)",
-                "Calendar Events",
-                "com.android.providers.calendar"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Android Calls",
@@ -529,14 +445,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Android Call Logs",
-                "Android Call Logs (UFED Agent)",
-                "com.android.providers.blockednumber",
-                "com.android.providers.telephony",
-                "Call Logs",
-                "Call logs "
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Android Contacts",
@@ -549,10 +458,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "",
-            "alternateNames": [
-                "Android Contacts (UFED Agent)",
-                "com.android.providers.contacts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Aniways Messenger",
@@ -585,11 +491,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Any.Do",
-                "Any.do - To do list & Calendar",
-                "Any.do: To do list & Planner"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AnyDesk",
@@ -600,9 +502,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "AnyDesk Remote Desktop"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "AppLock",
@@ -627,9 +527,7 @@
             "notes": "",
             "dateAdded": "2023-11-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "iBooks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Calendar",
@@ -644,11 +542,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "Calendar",
-                "calendarAll",
-                "Calendar Birthdays",
-                "Calendar List",
-                "Calendar Events"
+                "calendarAll"
             ]
         },
         {
@@ -663,12 +557,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "CarPlay Connected Cars",
-                "CarPlay Recently Used Applications",
-                "Biome - Carplay",
-                "CarPlay Recent App History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Clock",
@@ -682,10 +571,7 @@
             "notes": "iOS Clock app (alarms / world clock).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Alarms",
-                "WorldClock"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Contacts",
@@ -699,13 +585,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Address Book",
-                "Apple Contacts - iOS",
-                "Apple Contacts - macOS",
-                "Apple Contacts Groups",
-                "Blocked contacts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Files",
@@ -719,15 +599,7 @@
             "notes": "iOS/iPadOS Files app (com.apple.DocumentsApp).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Files App - Favourite files",
-                "Files App - Files stored in iCloud Drive",
-                "Files App - iCloud Application List",
-                "Files App - iCloud Sync Device Names",
-                "Files App - Operating System Updates",
-                "Files App - Shared files stored in iCloud Drive",
-                "Files App - Tagged files"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Fitness",
@@ -741,10 +613,7 @@
             "notes": "Apple Fitness / Fitness+ app (com.apple.Fitness). Workout GPS LEAPP modules live in Health DB but are labeled Fitness.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Fitness Workouts Location Data",
-                "Fitness Workouts Location Data Analysis"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Health",
@@ -755,28 +624,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Health",
-                "Apple Health Workout",
-                "Apple Health Steps",
-                "Apple Health Heart Rate",
-                "Apple Health Floors",
-                "Apple Health Distance",
-                "Health - Achievements",
-                "Health - Device - Watch Worn Data",
-                "Health - Headphone Audio Levels",
-                "Health - Heart Rate",
-                "Health - Provenances",
-                "Health - Resting Heart Rate",
-                "Health - Sleep - All Watch Sleep Data",
-                "Health - Sleep - Watch By Sleep Period",
-                "Health - Source Devices",
-                "Health - Steps",
-                "Health - User Entered Data - Height",
-                "Health - User Entered Data - Weight",
-                "Health - Workouts",
-                "Health - Wrist Temperature"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Keychain",
@@ -790,13 +638,7 @@
             "notes": "iOS/macOS Keychain credential store. User-facing app is Passwords (com.apple.Passwords).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Apple Keychain Generic Passwords",
-                "Apple Keychain Internet Passwords",
-                "Apple Keychain Saved Credit Cards",
-                "Keychain Web Passwords",
-                "Keychain Wifi Credentials"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Mail",
@@ -810,11 +652,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Email-iCloud (iOS)",
-                "Mail",
-                "Apple Email"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Maps",
@@ -829,20 +667,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
             "alternateNames": [
-                "Apple Locations",
-                "Apple Locations (Partial)",
-                "Apple Maps Favorites",
-                "Apple Maps Group",
-                "Apple Maps Last Activity Camera",
-                "Apple Maps Searches",
-                "Apple Maps Significant Locations",
-                "Apple Maps Significant Locations Visits",
-                "Apple Maps Trips",
-                "Get Apple Maps seach history",
                 "Get Apple Maps search history",
-                "LSC - com.apple.routined.plist",
-                "Maps",
-                "Maps Sync",
                 "appleMapsApplication"
             ]
         },
@@ -858,18 +683,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Draft Native Messages",
-                "iMessage Archived Chats",
-                "iMessage Archived Messages",
-                "iMessage Chats",
-                "iMessage Messages",
-                "iOS iMessage-SMS-MMS",
-                "iOS iMessage-SMS-MMS - App Intents",
-                "iOS Message Retention",
-                "SMS",
-                "SMS - Missing ROWIDs"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Notes",
@@ -884,9 +698,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "Apple Notes - Voice",
-                "Biome - Notes",
-                "Notes",
                 "Notes (iOS)"
             ]
         },
@@ -903,15 +714,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
             "alternateNames": [
-                "Apple Call History",
-                "Call History",
-                "Call History - Group Call",
-                "Call History Transactions",
-                "Call Logs - iVe",
-                "Calls",
-                "iOS Call Logs",
-                "Voicemail",
-                "interactionC Call History - Group Call"
+                "Calls"
             ]
         },
         {
@@ -927,11 +730,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
             "alternateNames": [
-                "Photos Albums",
-                "Photos Media Information",
-                "Photos.sqlite EXIF Analysis",
-                "Photos.sqlite Metadata",
-                "iCloud Photos Metadata",
                 "photosMetadata",
                 "photosMigration"
             ]
@@ -948,10 +746,7 @@
             "notes": "",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Apple Podcasts Episodes",
-                "Apple Podcasts Shows"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Reminders",
@@ -966,8 +761,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
             "alternateNames": [
-                "Reminder",
-                "Reminders"
+                "Reminder"
             ]
         },
         {
@@ -982,11 +776,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Apple Wallet Cards",
-                "Apple Wallet Transactions",
-                "Nano Passes"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Apple Weather",
@@ -998,9 +788,7 @@
             "dateAdded": "2023-10-22",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "weatherAppLocations",
-                "Weather",
-                "Weather App - Locations"
+                "weatherAppLocations"
             ]
         },
         {
@@ -1025,9 +813,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Atomic Web Browser Lite"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Automatic Call Recorder",
@@ -1038,9 +824,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Automatic Call Recorder Pro"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Azar",
@@ -1051,10 +835,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "Azar - video chat & livestream",
-                "Azar - Video Chat"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "BOTIM",
@@ -1076,12 +857,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "breadwallet - bitcoin wallet",
-                "BRD Bitcoin Wallet Bitcoin BTC",
-                "BRD Events",
-                "BRD Transactions"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Backup and Sync from Google",
@@ -1106,17 +882,12 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
             "alternateNames": [
-                "Badoo",
-                "Badoo: Dating. Chat. Meet.",
-                "Badoo - Messages",
-                "Badoo - Users",
-                "BadooConnections",
                 "com.badoo.mobile"
             ],
             "category": "Dating"
         },
         {
-            "appName": "Baidu Browser (百度)",
+            "appName": "Baidu Browser (\u767e\u5ea6)",
             "icon": "baidu.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -1124,19 +895,10 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Baidu Browser",
-                "Baidu Browser HD",
-                "Baidu Browser Mini",
-                "DU browser",
-                "DU Browser—Browse fast & fun",
-                "DU Browser Mini(Small&Fast)",
-                "Baidu Searches",
-                "Baidu Web Visits"
-            ]
+            "alternateNames": []
         },
         {
-            "appName": "Baidu Maps (百度地图)",
+            "appName": "Baidu Maps (\u767e\u5ea6\u5730\u56fe)",
             "icon": "baidu-maps.png",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -1144,10 +906,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-11",
-            "alternateNames": [
-                "Baidu Maps",
-                "百度地图"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Base (formerly Coinbase Wallet)",
@@ -1158,15 +917,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.toshi",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Coinbase Wallet rebranded to Base App (org.toshi). Distinct from Coinbase exchange (com.coinbase.android). Cellebrite uses spelling “Formally”.",
+            "notes": "Coinbase Wallet rebranded to Base App (org.toshi). Distinct from Coinbase exchange (com.coinbase.android). Cellebrite uses spelling \u201cFormally\u201d.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Base (Formally Coinbase Wallet)"
-            ]
+            "alternateNames": []
         },
         {
-            "appName": "Bazoš",
+            "appName": "Bazo\u0161",
             "icon": "bazos.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -1189,19 +946,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "BeReal Accounts",
-                "BeReal Blocked Users",
-                "BeReal Chat List",
-                "BeReal Comments",
-                "BeReal Contacts",
-                "BeReal Friends",
-                "BeReal Messages",
-                "BeReal Persons",
-                "BeReal Pinned Memories",
-                "BeReal Posts",
-                "BeReal RealMojis"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Beam",
@@ -1215,9 +960,7 @@
             "notes": "Beam Privacy Wallet (confidential cryptocurrency). Google Play listing for com.mw.beam.beamwallet.mainnet appears removed as of 2026-07-13.",
             "dateAdded": "2023-11-14",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Beam Transactions"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Beekeeper",
@@ -1242,10 +985,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "BiP - Messenger, Video Call",
-                "BiP Messenger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "BigoLive",
@@ -1256,9 +996,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "Bigo Live"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Biome",
@@ -1272,32 +1010,7 @@
             "notes": "iOS Biome / intelligence streams (device & app activity). Not a launcher app; kept for tool artifact joins. CarPlay/Notes-specific streams also remain on those apps.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Biome - Airplane Mode DKEvent",
-                "Biome - App Install",
-                "Biome - App Web Usage",
-                "Biome - Backlight",
-                "Biome - Battery Percentage",
-                "Biome - Bluetooth",
-                "Biome - Carplay",
-                "Biome - Device Plugged In",
-                "Biome - Device Syncs",
-                "Biome - Hardware Reliability",
-                "Biome - In Focus",
-                "Biome - In Focus DKEvent",
-                "Biome - Intents",
-                "Biome - Keybag",
-                "Biome - Location Activity",
-                "Biome - Notes",
-                "Biome - Notification Usage",
-                "Biome - Notifications",
-                "Biome - Now Playing",
-                "Biome - Safari",
-                "Biome - Text Input Session",
-                "Biome - User Activity Metadata",
-                "Biome - WiFi DKEvent",
-                "Biome - WiFi Devices"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Bird",
@@ -1308,9 +1021,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "Bird "
-            ]
+            "alternateNames": []
         },
         {
             "appName": "BitLord",
@@ -1324,10 +1035,7 @@
             "notes": "LEAPP labels BitLord's libretorrent.db as Libretorrent / LibretorrentFR.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Libretorrent",
-                "LibretorrentFR"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "BitPay",
@@ -1341,9 +1049,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Bit Pay"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "BitTorrent",
@@ -1358,8 +1064,6 @@
             "dateAdded": "2026-07-10",
             "dateUpdated": "",
             "alternateNames": [
-                "BitTorrent Prefs",
-                "bittorrentDlhist",
                 "BitTorrent Torrent Downloads",
                 "com.bittorrent.client"
             ]
@@ -1384,16 +1088,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "BlackBerry Messenger Contacts",
-                "BlackBerry Messenger File Transfers",
-                "BlackBerry Messenger Invitations",
-                "BlackBerry Messenger Locations",
-                "BlackBerry Messenger Messages",
-                "BlackBerry Messenger Profile",
-                "BBM - Free Calls & Messages",
-                "BBM"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Blendr",
@@ -1406,9 +1101,7 @@
             "notes": "",
             "dateAdded": "2023-11-01",
             "dateUpdated": "",
-            "alternateNames": [
-                "Blendr - Chat, Flirt & Meet"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Bluesky",
@@ -1423,10 +1116,6 @@
             "dateAdded": "2026-07-10",
             "dateUpdated": "",
             "alternateNames": [
-                "Bluesky - Actors",
-                "Bluesky - Messages",
-                "Bluesky - Posts",
-                "Bluesky - Searches",
                 "Bluesky Social",
                 "xyz.blueskyweb.app"
             ]
@@ -1442,13 +1131,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Boat Browser for Tablets",
-                "Boat Browser Mini",
-                "com.boatbrowser.tablet",
-                "com.boatbrowser.free",
-                "com.boatgo.browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Bolt (formerly Taxify)",
@@ -1459,12 +1142,10 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ee.mtakso.client&hl=en",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Ride-hailing app (ee.mtakso.client). Magnet “Bolt Browser” artifacts are a different product.",
+            "notes": "Ride-hailing app (ee.mtakso.client). Magnet \u201cBolt Browser\u201d artifacts are a different product.",
             "dateAdded": "2023-10-14",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Taxify"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Bolt Browser",
@@ -1478,10 +1159,7 @@
             "notes": "Bolt Browser and Documents (com.danyil.boltbrowser). Unrelated to Bolt rideshare.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Bolt Browser Bookmarks",
-                "Bolt Browser History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Booking.com",
@@ -1492,20 +1170,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Booking.com: Hotels & Travel",
-                "Booking - Account",
-                "Booking - Booked",
-                "Booking - Flights Searched",
-                "Booking - Notifications",
-                "Booking - Payment Methods",
-                "Booking - Recently Booked",
-                "Booking - Recently Searched",
-                "Booking - Stored Destinations",
-                "Booking - Travel Companions",
-                "Booking - Viewed",
-                "Booking - Wish Lists"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Box",
@@ -1516,14 +1181,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Box: The Content Cloud",
-                "Box - Account",
-                "Box - All Files",
-                "Box - Comments and Annotations",
-                "Box - Previews",
-                "Box - Recents"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Boxer - Workspace ONE",
@@ -1547,21 +1205,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Brave",
-                "Brave browser",
-                "Brave Autofill",
-                "Brave Bookmarks",
-                "Brave Cookies",
-                "Brave Downloads",
-                "Brave FavIcons",
-                "Brave Keyword Search Terms",
-                "Brave Tab History - Android",
-                "Brave Top Sites",
-                "Brave Web History",
-                "Brave Web Visits",
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Briar",
@@ -1596,11 +1240,6 @@
             "dateUpdated": "2026-07-11",
             "alternateNames": [
                 "bumble",
-                "Bumble - Account Details",
-                "Bumble - Chat Messages",
-                "Bumble - Matches",
-                "Bumble - Messages",
-                "Bumble - User Settings",
                 "com.bumble.app"
             ],
             "category": "Dating"
@@ -1628,25 +1267,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-10",
             "alternateNames": [
-                "Android Burner Conversations",
-                "Android Burner Numbers",
-                "Burner Contacts",
-                "Burner Messages",
-                "Burner Numbers",
-                "Burner Numbers",
-                "Burner Messages",
-                "Burner Contacts",
-                "Burner - Communications",
-                "Burner - Contacts",
-                "Burner - Messages",
-                "Burner - Numbers",
-                "Burner - Subscription",
-                "Burner - User",
-                "Burner Accounts",
-                "Burner Cache Accounts",
-                "Burner Cache Contacts",
-                "Burner Cache Messages",
-                "Burner Cache Numbers",
                 "com.adhoclabs.burner"
             ],
             "category": "Communication"
@@ -1671,9 +1291,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-11",
-            "alternateNames": [
-                "CM Browser - Ad Blocker , Fast Download , Privacy"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Cake Live Stream",
@@ -1684,10 +1302,7 @@
             "notes": "",
             "dateAdded": "2023-10-30",
             "dateUpdated": "",
-            "alternateNames": [
-                "Cake Local User Account",
-                "Cake Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Calculator#",
@@ -1701,9 +1316,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Calculator Vault Application"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Calculator+",
@@ -1739,9 +1352,7 @@
             "notes": "",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Careem – rides, food & more"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Cash App",
@@ -1755,9 +1366,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Cash App (B)"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Catch",
@@ -1779,21 +1388,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "ChatGPT - Account Status",
-                "ChatGPT - Account User State",
-                "ChatGPT - Conversations",
-                "ChatGPT - Conversations Metadata",
-                "ChatGPT - Custom Instructions",
-                "ChatGPT - Draft Conversations",
-                "ChatGPT - Media Uploads",
-                "ChatGPT - Messages (Legacy)",
-                "ChatGPT - Preferences",
-                "ChatGPT - User",
-                "ChatGPT - User Analytics",
-                "ChatGPT - User Settings",
-                "ChatGPT - Voice Prompts"
-            ],
+            "alternateNames": [],
             "category": "AI & Assistants",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -1829,10 +1424,7 @@
             "notes": "",
             "dateAdded": "2023-10-30",
             "dateUpdated": "",
-            "alternateNames": [
-                "Chatous Chat Messages",
-                "Chatous Chat Partners"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Chatwork",
@@ -1854,9 +1446,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "CheckMyTrip – Travel Itinerary"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Chess With Friends",
@@ -1881,13 +1471,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Chess.com Account",
-                "Chess.com Games",
-                "ChessComFriends",
-                "ChessComMessages",
-                "Chess - Play & Learn"
-            ],
+            "alternateNames": [],
             "category": "Games",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -1901,9 +1485,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Citymapper",
@@ -1918,9 +1500,6 @@
             "dateAdded": "2026-07-10",
             "dateUpdated": "",
             "alternateNames": [
-                "Citymapper - App Preferences",
-                "Citymapper - Location History",
-                "Citymapper - Saved Trips",
                 "com.citymapper.app.release"
             ]
         },
@@ -1933,9 +1512,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Clubhouse "
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Coffee Meets Bagel",
@@ -1957,12 +1534,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Coinbase: Buy Bitcoin & Ether",
-                "Coinbase Purchases",
-                "Coinbase Transactions",
-                "Coinbase Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Coinomi: Crypto Bitcoin Wallet",
@@ -1975,9 +1547,7 @@
             "notes": "",
             "dateAdded": "2023-11-14",
             "dateUpdated": "",
-            "alternateNames": [
-                "Coinomi Transactions"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Confide",
@@ -2002,7 +1572,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=eu.siacs.conversations",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Open-source Android XMPP client (eu.siacs.conversations). Distinct from generic “conversations” artifact names on other messengers.",
+            "notes": "Open-source Android XMPP client (eu.siacs.conversations). Distinct from generic \u201cconversations\u201d artifact names on other messengers.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
@@ -2016,9 +1586,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "CoverMe - Second Phone Number"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Craigslist",
@@ -2040,9 +1608,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Cyberghost VPN"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "DJI GO",
@@ -2054,11 +1620,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": [
-                "DJI GO 4",
-                "DJI Go 4",
-                "DJI Fly",
-                "DJI GO 4--For drones since P4",
-                "DJI GO--For products before P4"
+                "DJI Go 4"
             ]
         },
         {
@@ -2073,21 +1635,7 @@
             "notes": "Dahua Technology mobile app (DMSS). LEAPP labels CCTV/IoT features separately; same app.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Dahua CCTV - Channels",
-                "Dahua CCTV - Info",
-                "Dahua CCTV - User Created Media",
-                "Dahua IoT - Notifications",
-                "Dahua IoT - Registered Cloud Devices",
-                "Dahua IoT - Registered Sensors",
-                "Dahua Technology (DMSS) - Channels",
-                "Dahua Technology (DMSS) - Devices",
-                "Dahua Technology (DMSS) - Info",
-                "Dahua Technology (DMSS) - Media",
-                "Dahua Technology (DMSS) - Notifications",
-                "Dahua Technology (DMSS) - PIN",
-                "Dahua Technology (DMSS) - Sensors"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "DeepSeek",
@@ -2101,12 +1649,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Deepseek Chat Info",
-                "Deepseek Chat Messages",
-                "Deepseek User Info",
-                "Deepseek"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Default Web Browser",
@@ -2128,10 +1671,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Digital Wellbeing - Events",
-                "Digital Wellbeing - URL Events"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "DingTalk",
@@ -2153,18 +1693,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Discord - Account",
-                "Discord - Chat, Talk & Hangout",
-                "Discord - Chats",
-                "Discord Cache",
-                "Discord Chats (KV Storage)",
-                "Discord Logged-in Account",
-                "Discord Messages",
-                "Discord User",
-                "Discord: Talk, Chat & Hang Out",
-                "discordChats"
-            ],
+            "alternateNames": [],
             "category": "Communication",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -2189,21 +1718,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Dolphin Browser",
-                "Dolphin Browser Classic",
-                "Dolphin Browser Express",
-                "Dolphin Browser Mini",
-                "Dolphin Web Browser",
-                "Dolphin Browser: Fast, Private",
-                "Dolphin Web Browser for iPad",
-                "Dolphin Web Browser for iPhone",
-                "Dolphin Web Browser for iPhone (Chinese version)",
-                "Dolphin Browser Bookmarks",
-                "Dolphin Browser History",
-                "RAPS.appstore.com.dolphin.browser.iphone.ios12",
-                "RAPS.appstore.com.dolphin.browser.iphone"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Dropbox",
@@ -2214,15 +1729,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "DropBox",
-                "Android Dropbox",
-                "Android Dropbox Account Info",
-                "Dropbox: Cloud Files Storage",
-                "Dropbox: Secure Cloud Storage",
-                "com.getdropbox.Carousel",
-                "com.dropbox.carousel"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "DrugVokrug",
@@ -2260,22 +1767,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "DuckDuckGo - Bookmarks",
-                "DuckDuckGo - Cookies",
-                "DuckDuckGo - Downloads",
-                "DuckDuckGo - Duck AI",
-                "DuckDuckGo - Favorited Sites",
-                "DuckDuckGo - FireProof Sites",
-                "DuckDuckGo - Open Tabs",
-                "DuckDuckGo - Tab Thumbnails",
-                "DuckDuckGo - Web Browser History",
-                "DuckDuckGo Bookmarks",
-                "DuckDuckGo Cookies",
-                "DuckDuckGo Current Tabs",
-                "DuckDuckGo Private Browser",
-                "DuckDuckGo Whitelisted Websites"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Duolingo: Language Lessons",
@@ -2288,9 +1780,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "",
-            "alternateNames": [
-                "com.duolingo.DuolingoMobile"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Dust - Private Messenger",
@@ -2303,9 +1793,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "",
-            "alternateNames": [
-                "Dust - a safer place to text"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ebay",
@@ -2316,10 +1804,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "eBay Selling & Shopping Online",
-                "eBay: Online Shopping Deals"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ebuddy",
@@ -2330,10 +1815,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "eBuddy XMS",
-                "com.ebuddy.xms"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ecosia Browser",
@@ -2344,19 +1826,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Ecosia Autofill",
-                "Ecosia Web Visits",
-                "Ecosia Web History",
-                "Ecosia Top Sites",
-                "Ecosia Tab History",
-                "Ecosia Logins",
-                "Ecosia Keyword Search Terms",
-                "Ecosia FavIcons",
-                "Ecosia Downloads",
-                "Ecosia Cookies",
-                "Ecosia Bookmarks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Element",
@@ -2422,12 +1892,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-27",
-            "alternateNames": [
-                "Endomondo Pro",
-                "com.endomondo.Endomondo",
-                "com.endomondo.android",
-                "Endomondo - Running & Walking"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Evernote",
@@ -2438,14 +1903,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Evernote - Note Organizer",
-                "Evernote Accounts",
-                "Evernote Contacts",
-                "Evernote Notes",
-                "Evernote Work Chat",
-                "Evernote - Notes Organizer"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Exodus: Crypto Bitcoin Wallet",
@@ -2458,9 +1916,7 @@
             "notes": "",
             "dateAdded": "2023-11-14",
             "dateUpdated": "",
-            "alternateNames": [
-                "Exodus Transactions"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Expedia",
@@ -2471,9 +1927,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Expedia: Hotels, Flights & Car"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Express VPN",
@@ -2495,10 +1949,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "FaceApp: Face Editor",
-                "io.faceapp.ios"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Facebook",
@@ -2509,19 +1960,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Facebook Lite",
-                "Android Facebook Pictures",
-                "Android Facebook Messages",
-                "Facebook Comments",
-                "Facebook Contacts",
-                "Facebook Events",
-                "Facebook Posts",
-                "Facebook User-Friends",
-                "Facebook Email",
-                "Facebook Email Snippets",
-                "Facebook Chat"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "FairEmail",
@@ -2535,11 +1974,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "FairEmail - Accounts",
-                "FairEmail - Contacts",
-                "FairEmail - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "FileSafe",
@@ -2575,10 +2010,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-14",
-            "alternateNames": [
-                "Files By Google - Files Master",
-                "Files By Google - Search History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Find My (Friends)",
@@ -2589,20 +2021,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Find My",
-                "Find My Friends",
-                "Find My iPhone",
-                "Find My Locations",
-                "Find My Items",
-                "Find My Devices",
-                "Find My - Devices",
-                "Find My iPhone Settings",
-                "Find My Items Info",
-                "FindMy Items Crowdsourced Locations",
-                "FindMy Items Locations",
-                "FindMy Items Safe Locations"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "FireChat",
@@ -2616,9 +2035,7 @@
             "notes": "Open Garden FireChat mesh/offline messenger (com.opengarden.firechat). Discontinued / removed from stores. Kept for Oxygen/Cellebrite artifact joins.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Firechat"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Firefox",
@@ -2632,38 +2049,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Android Firefox Bookmarks",
-                "Android Firefox Web History",
-                "Firefox - Bookmarks",
-                "Firefox - Cookies",
-                "Firefox - Downloads",
-                "Firefox - Form History",
-                "Firefox - Permissions",
-                "Firefox - Recently Closed Tabs",
-                "Firefox - Search Terms",
-                "Firefox - Top Sites",
-                "Firefox - Web History",
-                "Firefox - Web Visits",
-                "Firefox Add-ons",
-                "Firefox Beta for Testers",
-                "Firefox Bookmarks",
-                "Firefox Browser Cache",
-                "Firefox Cache Records",
-                "Firefox Cookies",
-                "Firefox Downloads",
-                "Firefox Fast & Private Browser",
-                "Firefox FavIcons",
-                "Firefox FormHistory",
-                "Firefox Input History",
-                "Firefox Logins",
-                "Firefox Nightly for Developers",
-                "Firefox Private Browsing History",
-                "Firefox SessionStore Artifacts",
-                "Firefox Web History",
-                "Firefox Web Visits",
-                "Firefox: Private, Safe Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Firefox Focus",
@@ -2677,10 +2063,7 @@
             "notes": "Privacy-focused companion to Firefox; not the main Firefox browser (org.mozilla.firefox).",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "FireFox Focus",
-                "Firefox Focus browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Firefox Lockwise",
@@ -2705,14 +2088,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Fitbit Floors",
-                "Fitbit Heart Rate",
-                "Fitbit Profiles",
-                "Fitbit Sleep",
-                "Fitbit Steps",
-                "Fitbit Activity Log"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Fitify: Fitness & Home Workout",
@@ -2736,10 +2112,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "FlashFox Pro - Flash Browser",
-                "FlashFox - Flash Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "FlexiSPY Lite",
@@ -2772,10 +2145,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Flipboard: The Social Magazine",
-                "Flipboard: The Social Magazine"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Flock",
@@ -2808,14 +2178,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "com.naveenium.foursquare",
-                "Foursquare Check-ins",
-                "Foursquare Locations",
-                "Foursquare Searches",
-                "Foursquare City Guide",
-                "Foursquare City Guide"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Foursquare Swarm",
@@ -2826,26 +2189,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Swarm",
-                "Foursquare Swarm: Check In",
-                "Foursquare Swarm - Account",
-                "Foursquare Swarm - Activity Feed & Bulletins",
-                "Foursquare Swarm - Address Book",
-                "Foursquare Swarm - Check-ins",
-                "Foursquare Swarm - Comments",
-                "Foursquare Swarm - Contacts",
-                "Foursquare Swarm - Events",
-                "Foursquare Swarm - Friend Requests",
-                "Foursquare Swarm - Location History",
-                "Foursquare Swarm - Logs",
-                "Foursquare Swarm - Photos",
-                "Foursquare Swarm - Plans",
-                "Foursquare Swarm - Saved Lists",
-                "Foursquare Swarm - Stickers",
-                "Foursquare Swarm - Tips",
-                "Foursquare Swarm - Venues History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Frim",
@@ -2911,39 +2255,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Garmin - API Activities",
-                "Garmin - Cache DB Activities",
-                "Garmin - Devices",
-                "Garmin - Facebook Account",
-                "Garmin - GCM Cache Activities",
-                "Garmin - Notification Details",
-                "Garmin - Notifications",
-                "Garmin - Persistent",
-                "Garmin - Polyline Activities",
-                "Garmin - Sleep Activities",
-                "Garmin - Sync",
-                "Garmin - User Preferences",
-                "Garmin - Weather",
-                "GarminActAPI",
-                "GarminActivities",
-                "GarminCharts",
-                "GarminDailies",
-                "GarminDailiesAPI",
-                "GarminGcmJsonActivities",
-                "GarminHRAPI",
-                "GarminJson",
-                "GarminLog",
-                "GarminResponse",
-                "GarminSPO2",
-                "GarminSleep",
-                "GarminSleepAPI",
-                "GarminStepsAPI",
-                "GarminStressAPI",
-                "GarminWeight",
-                "Garmin Connect™",
-                "Garmin Connect‪™‬"
-            ],
+            "alternateNames": [],
             "category": "Health & Fitness",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -2982,12 +2294,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Gboard - Clipboard",
-                "Gboard - Keystroke Cache",
-                "Gboard - Sessions",
-                "Gboard - the Google Keyboard"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "GetTaxi",
@@ -3033,11 +2340,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Glide Users",
-                "Glide Messages",
-                "Glide - Video Chat Messenger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Gmail Go",
@@ -3051,10 +2354,7 @@
             "notes": "Android Go / lightweight Gmail (com.google.android.gm.lite). Distinct from Google Mail (Gmail) / com.google.android.gm.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "GMail Go",
-                "Gmail Go"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google",
@@ -3098,11 +2398,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Google Calendar Events",
-                "Google Calendar Calendars",
-                "com.google.calendar"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Chat",
@@ -3114,11 +2410,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "googleChat",
-                "Google Chat - Drafts",
-                "Google Chat - Groups",
-                "Google Chat - Messages",
-                "Google Chat - Users"
+                "googleChat"
             ]
         },
         {
@@ -3133,41 +2425,14 @@
             "alternateNames": [
                 "Chrome",
                 "chromeOfflinePages",
-                "Chrome Beta",
-                "Chrome Canary (Unstable)",
-                "Chrome Dev",
                 "chromeTopSites",
                 "chromeNetworkActionPredictor",
                 "chromeMediaHistor",
                 "chromeLoginData",
                 "chromeCookies",
-                "chromeLoginData",
-                "Chrome Archived Keyword Search Terms",
-                "Chrome Archived Web History",
-                "Chrome Autofill Profiles",
-                "Chrome Autofill",
-                "Chrome Bookmarks",
-                "Chrome Cache Records",
-                "Chrome Cookies",
-                "Chrome Downloads",
-                "Chrome FavIcons",
-                "Chrome Keyword Search Terms",
-                "Chrome Logins",
-                "Chrome Saved Credit Cards",
-                "Chrome Sync Accounts",
-                "Chrome Sync Data",
-                "Chrome Tab History",
-                "Chrome Top Sites",
-                "Chrome Web History",
-                "Chrome Web Visits",
                 "chromeBookmarks",
-                "Google Chrome: Fast & Secure",
                 "chromeAutofill",
-                "chrome",
-                "Chromium Based Browser",
-                "Chrome Autofill - Entries",
-                "Chrome Autofill - Profiles",
-                "Chrome Browser Cache"
+                "chrome"
             ]
         },
         {
@@ -3190,10 +2455,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Google Docs: Sync, Edit, Share",
-                "com.google.android.apps.docs"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Drive",
@@ -3204,10 +2466,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Google Drive for desktop",
-                "Cello - Google Drive"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Duo",
@@ -3219,14 +2478,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Google Duo Groups",
-                "Google Duo Group Calls",
-                "Google Duo Activity",
-                "googleDuo",
-                "Google Duo - Call History",
-                "Google Duo - Clips",
-                "Google Duo - Contacts",
-                "Google Duo - Notes"
+                "googleDuo"
             ]
         },
         {
@@ -3249,10 +2501,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Google Fit: Activity Tracking",
-                "Google Fit (GMS) - Activity Sessions"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Hangouts",
@@ -3263,12 +2512,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Hangouts",
-                "Google Hangouts Voice Calls",
-                "Google Hangouts Cached Images",
-                "Android Google Hangouts Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Home",
@@ -3290,13 +2534,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Google Keep Notes",
-                "Google Keep - Notes and lists",
-                "Google Keep - Notes and Lists",
-                "Google Keep - Notes",
-                "Google Keep - Notes Sharing"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Mail (Gmail)",
@@ -3307,22 +2545,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Android Gmail",
-                "Android Gmail Conversations",
-                "Gmail",
-                "Gmail - App Emails",
-                "Gmail - Download Requests",
-                "Gmail - Email by Google",
-                "Gmail - IMAP Accounts",
-                "Gmail - IMAP Mailbox Emails",
-                "Gmail - Label Details",
-                "Gmail - Offline Search",
-                "Gmail Email Fragments",
-                "Gmail Emails",
-                "Gmail/Inbox",
-                "Google Mail"
-            ],
+            "alternateNames": [],
             "category": "Email",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -3336,19 +2559,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Android Google Maps",
-                "Google Maps Cache Routes",
-                "Google Maps Directions",
-                "Google Maps Label Places",
-                "Google Maps Last Trip",
-                "Google Maps Saved Locations",
-                "Google Maps Searches",
-                "Google Maps Tiles",
-                "Google Maps Voice Guidance",
-                "Google Maps Voice Guidance (Temp)",
-                "com.google.android.maps.mytracks"
-            ],
+            "alternateNames": [],
             "category": "Maps & Navigation",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -3362,9 +2573,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Google Meet Meeting History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Messages",
@@ -3378,20 +2587,7 @@
             "notes": "Formerly Android Messages / Messages by Google. Magnet Android SMS/MMS keys include system mmssms.db recovery often used with this app.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-14",
-            "alternateNames": [
-                "Android MMS",
-                "Android MMS (UFED Agent)",
-                "Android Messages",
-                "Android SMS",
-                "Android SMS (UFED Agent)",
-                "Android SMS-MMS",
-                "Android SMS-MMS (Content Provider)",
-                "Android SMS-MMS (Google Play Services)",
-                "GoogleMessages",
-                "Messages",
-                "Messages by Google",
-                "Messenger By Google"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Pay",
@@ -3414,10 +2610,7 @@
             "notes": "",
             "dateAdded": "2026-07-10",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Android Call Transcriptions",
-                "Phone by Google"
-            ],
+            "alternateNames": [],
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true"
         },
@@ -3447,12 +2640,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "App Updates (Frosting.db)",
-                "Google Play Searches",
-                "InstalledappsLibrary",
-                "InstalledappsVending"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Sheets",
@@ -3489,10 +2677,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Gtalk Messages",
-                "Gtalk Contacts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Tasks",
@@ -3503,9 +2688,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "GoogleTasks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Translate",
@@ -3516,11 +2699,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Google Translate Favorite Translations",
-                "Google Translate History",
-                "Google Translate Text-To-Speech"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google Voice",
@@ -3531,12 +2710,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Google Voice - Calls",
-                "Google Voice - Messages",
-                "Google Voice - User Accounts",
-                "Google Voice - Voicemails"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google photos",
@@ -3547,19 +2721,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Google Photos Albums",
-                "Google Photos Comments",
-                "Google Photos Media",
-                "Google Photos",
-                "com.google.android.apps.photos",
-                "Google Photos - Backed Up Folders",
-                "Google Photos - Cache",
-                "Google Photos - Local Media",
-                "Google Photos - Local Trash",
-                "Google Photos - Remote Media",
-                "Google Photos - Shared Media"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Google+",
@@ -3570,11 +2732,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Google+ Chat",
-                "com.google.GooglePlus",
-                "com.htc.sense.socialnetwork.googleplus"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Grindr",
@@ -3585,11 +2743,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Grindr - Gay chat",
-                "Grindr Messages",
-                "Grindr Buddies"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Grok",
@@ -3603,10 +2757,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Grok - User Account",
-                "Grok - Videos"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "GroupMe",
@@ -3617,14 +2768,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "GroupMe Messages",
-                "GroupMe Groups",
-                "GroupMe Contacts",
-                "GroupMe Accounts",
-                "GroupMe - Chat Information",
-                "GroupMe - Group Information"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Growlr",
@@ -3635,10 +2779,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "GROWLr Notes",
-                "GROWLr Chat Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "HTC Mail",
@@ -3660,10 +2801,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "HERE Maps",
-                "HERE WeGo: Maps & Navigation"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "HeyTell",
@@ -3707,9 +2845,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "com.smartanuj.hideitpro"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "HideX",
@@ -3737,12 +2873,7 @@
             "notes": "Hikvision end-user CCTV app. LEAPP labels artifacts as Hikvision - CCTV *.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Hikvision - CCTV Activity",
-                "Hikvision - CCTV Channels",
-                "Hikvision - CCTV Info",
-                "Hikvision - User Created Media"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Hike News & Content",
@@ -3753,9 +2884,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "",
-            "alternateNames": [
-                "hike messenger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "HipChat",
@@ -3766,11 +2895,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "HipChat - beta version",
-                "HipChat - Chat Built for Teams",
-                "com.hipchat.ios"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Home Depot",
@@ -3784,18 +2909,7 @@
             "notes": "Store title: The Home Depot (com.thehomedepot / com.thehomedepot.homedepot).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Home Depot - Account",
-                "Home Depot - Last Known Location",
-                "Home Depot - Local Store",
-                "Home Depot - Other Preferences",
-                "Home Depot - Product Image Cache",
-                "Home Depot - Products Viewed",
-                "Home Depot - Saved Searches",
-                "Home Depot - Search History",
-                "Home Depot - Search URL Cache",
-                "Home Depot - Shopping Lists"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Hot or Not",
@@ -3830,10 +2944,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Houseparty Users",
-                "Houseparty Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Huawei Browser",
@@ -3866,9 +2977,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "com.huawei.hidisk"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Huawei Notes",
@@ -3890,12 +2999,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "ICQ – Video Calls & Chat App",
-                "ICQ Video Calls & Chat Rooms",
-                "ICQ Messages",
-                "ICQ 10 Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "IM+",
@@ -3940,20 +3044,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Imo",
-                "imo",
-                "Imo beta",
-                "IMO Messenger",
-                "imo beta -video calls and chat",
-                "imo-International Calls & Chat",
-                "imo Messages",
-                "imo Contacts",
-                "imoHD_Chat",
-                "imoimiphone",
-                "IMO - Account ID",
-                "IMO - Messages",
-                "IMO HD Chat - Contacts",
-                "IMO HD Chat - Messages"
+                "imoHD_Chat"
             ]
         },
         {
@@ -3965,10 +3056,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "Inbox.eu - business email",
-                "inbox.eu.MailApp"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Inbox.lt",
@@ -3979,9 +3067,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "inbox.lt"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Inbox.lv",
@@ -3992,9 +3078,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "inbox.lv"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Instagram",
@@ -4008,20 +3092,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Instagram (web)",
-                "Android Instagram Following",
-                "Android Instagram Posts",
-                "Android Instagram Users",
-                "Instagram Direct Messages",
-                "Instagram Group Members",
-                "Instagram Media",
-                "Instagram Profiles",
-                "Instagram Posts",
-                "Instagram Pictures",
-                "Instagram Threads",
-                "Instagram Threads Calls"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Iron Browser",
@@ -4032,19 +3103,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Iron Browser Autofill",
-                "Iron Browser Web Visits",
-                "Iron Browser Web History",
-                "Iron Browser Top Sites",
-                "Iron Browser Tab History",
-                "Iron Browser Logins",
-                "Iron Browser Keyword Search Terms",
-                "Iron Browser FavIcons",
-                "Iron Browser Downloads",
-                "Iron Browser Cookies",
-                "Iron Browser Bookmarks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Jaxx Blockchain Wallet",
@@ -4101,10 +3160,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Jott Groups",
-                "Jott Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "JusTalk",
@@ -4126,11 +3182,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "K-9 Mail",
-                "K-9 Mail - Accounts",
-                "K-9 Mail - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "KAYAK",
@@ -4141,9 +3193,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "KAYAK: Flights, Hotels & Cars"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "KYMS - Keep your media safe",
@@ -4165,9 +3215,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "KakaoStory"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Kakao Talk",
@@ -4178,22 +3226,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "KakaoTalk",
-                "KakaoTalk : Messenger",
-                "KakaoTalk Messages",
-                "KakaoTalk Friends",
-                "KakaoTalk Detected Wifi",
-                "KakaoTalk Chat Rooms",
-                "KakaoTalk Calls",
-                "KakaoTalk Browsing History",
-                "KakaoTalk Shared Pictures - Windows",
-                "KakaoTalk Pictures",
-                "KakaoTalk Messages - Windows",
-                "KakaoTalk Contacts - Windows",
-                "KakaoTalk Chat Rooms - Windows",
-                "KakaoTalk Messages - iOS"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Kaktus",
@@ -4217,10 +3250,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Kate Mobile Lite",
-                "Kate Mobile for VK"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Keek",
@@ -4255,9 +3285,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "Keeper"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Kijiji",
@@ -4271,12 +3299,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Kijiji Conversations",
-                "kijijiConversations",
-                "kijijiLocalUserInfo",
-                "kijijiRecentSearches"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Kik Messenger",
@@ -4288,24 +3311,12 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Android Kik Messenger Contacts",
-                "Android Kik Messenger Attachments",
                 "kikMessages",
-                "Android Kik Messenger Messages",
                 "kikBplistmeta",
                 "kikPendingUploads",
                 "kikUsersgroups",
                 "kikGroupadmins",
-                "Kik — Messaging & Chat App",
-                "Kik Messaging & Chat App",
-                "kikLocaladmin",
-                "Kik Attachments Bplist Metadata",
-                "Kik Group Administrators",
-                "Kik Local Account",
-                "Kik Messages",
-                "Kik Pending Uploads",
-                "Kik Users",
-                "Kik Users in Groups"
+                "kikLocaladmin"
             ]
         },
         {
@@ -4330,19 +3341,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Kiwi Browser Autofill",
-                "Kiwi Browser - Fast & Quiet",
-                "Kiwi Browser Web Visits",
-                "Kiwi Browser Web History",
-                "Kiwi Browser Top Sites",
-                "Kiwi Browser Tab History",
-                "Kiwi Browser Keyword Search Terms",
-                "Kiwi Browser FavIcons",
-                "Kiwi Browser Downloads",
-                "Kiwi Browser Cookies",
-                "Kiwi Browser Bookmarks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Kleinanzeigen",
@@ -4356,17 +3355,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Kleinanzeigen.de - Last Search",
-                "Kleinanzeigen.de - Message Cache",
-                "Kleinanzeigen.de - Search History",
-                "Kleinanzeigen.de - User Account",
-                "kleinanzeigen.de - Messagebox",
-                "kleinanzeigen.de - Messages",
-                "kleinanzeigen.de - Non resettable Recent Searches Cache",
-                "kleinanzeigen.de - Recent Searches Cache",
-                "kleinanzeigen.de App - Account Details"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "KnowledgeC",
@@ -4380,29 +3369,7 @@
             "notes": "iOS/macOS CoreDuet KnowledgeC system database (usage, device state). Not a launcher app; kept for tool artifact joins.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "knowledgeC - App Usage",
-                "knowledgeC - App Usage End",
-                "knowledgeC - Battery Percentage",
-                "knowledgeC - Device Lock Status",
-                "knowledgeC - Device Plugin Status",
-                "knowledgeC - Device Screen Status",
-                "knowledgeC - Do Not Disturb",
-                "knowledgeC - Media Playing",
-                "KnowledgeC Activity Level",
-                "KnowledgeC Application Activities",
-                "KnowledgeC Application Focus",
-                "KnowledgeC Application Install States",
-                "KnowledgeC Application Usage",
-                "KnowledgeC Application Web Usage",
-                "KnowledgeC Device Lock States",
-                "KnowledgeC Device Orientation States",
-                "KnowledgeC Device Plugged-in States",
-                "KnowledgeC Media History",
-                "KnowledgeC Notification Usage",
-                "KnowledgeC Safari History",
-                "KnowledgeC Screen Backlight States"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Knuddels",
@@ -4416,11 +3383,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Knuddels - Account & App Usage",
-                "Knuddels - Chat Messages",
-                "Knuddels - Known Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "LastPass",
@@ -4434,9 +3397,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "LastPass Password Manager"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Life360",
@@ -4447,35 +3408,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Life360: Find Friends & Family",
-                "Life360: Live Location Sharing",
-                "Life360 Circle Members",
-                "Life360 Local User Account",
-                "Life360 Messages",
-                "Life360 Places",
-                "Life360 Trip Locations",
-                "Life360 - Chat Messages",
-                "Life360 - Device Battery",
-                "Life360 - Locations",
-                "Life360 - Members",
-                "Life360 - Places",
-                "Life360 Battery Level",
-                "Life360 CircleSettings",
-                "Life360 Drive Events (DriveBladeDB)",
-                "Life360 Drive Events (EventStore)",
-                "Life360 Drive Waypoints",
-                "Life360 Driver Behavior - Trip Events",
-                "Life360 Driver Behavior - Trip Waypoints",
-                "Life360 Drives",
-                "Life360 Locations",
-                "Life360 Members and Circles",
-                "Life360 No Show Alerts",
-                "Life360 PetProfile",
-                "Life360 Place Alerts",
-                "Life360 User",
-                "Life360 Waypoints"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Likee",
@@ -4486,11 +3419,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "LIKEE - Messages",
-                "LIKEE - User Location",
-                "LIKEE - Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Lime",
@@ -4501,11 +3430,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Lime ",
-                "Lime - #RideGreen",
-                "com.limebike"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Line",
@@ -4516,18 +3441,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "LINE: Calls & Messages",
-                "LINE Chats",
-                "LINE Contacts",
-                "LINE Messages",
-                "LINE Pictures",
-                "LINE Local Users",
-                "Line - Call Logs",
-                "Line - Contacts",
-                "Line - Messages",
-                "Line Artifacts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "LinkedIn",
@@ -4539,18 +3453,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Linkedin",
-                "LinkedIn Job Search",
-                "LinkedIn: Jobs & Business News",
-                "LinkedIn: Network & Job Finder",
-                "LinkedIn Connections",
-                "LinkedIn Messages",
-                "LinkedIn Profile",
-                "LinkedIn Searches",
-                "LinkedIn Emails",
-                "LinkedIn - Account",
-                "LinkedIn - Conversations",
-                "LinkedIn - Messages"
+                "Linkedin"
             ]
         },
         {
@@ -4586,12 +3489,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Lunascape Autofill",
-                "Lunascape History",
-                "Lunascape Cookies",
-                "Lunascape Bookmarks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Lyft",
@@ -4616,15 +3514,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Mega",
-                "mega",
-                "mega_transfers",
-                "MEGA Accounts",
-                "MEGA Chat",
-                "MEGA Contacts",
-                "Cloud Mega Files"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "MX TakaTak",
@@ -4657,19 +3547,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Mail.Ru - Email App",
-                "Mail.Ru Agent",
-                "Cloud Mail.Ru",
-                "Mail.ru - Email App",
-                "Mail.Ru for UA – Email for Hot",
-                "Mail.Ru Agent Contacts",
-                "Mail.Ru Agent Messages",
-                "Mail.Ru Agent User Accounts",
-                "Mail.ru Chat Non-Carved",
-                "Mail.ru Contacts",
-                "Mail.ru"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Mail.ee",
@@ -4680,9 +3558,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "mail.ee"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Mamba",
@@ -4704,9 +3580,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "Mandarin"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Map My Dog Walk",
@@ -4717,13 +3591,10 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Dog Walk appears discontinued — not on Apple App Store or Google Play as of 2026-07-13.",
+            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Dog Walk appears discontinued \u2014 not on Apple App Store or Google Play as of 2026-07-13.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "com.mapmydogwalk.android2",
-                "com.mapmyfitness.MapMyDogWalk"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Map My Fitness",
@@ -4737,12 +3608,7 @@
             "notes": "Formerly owned by Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024.",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Map My Fitness Workout Trainer",
-                "Map My Fitness by Under Armour",
-                "Q5AWL8WCY6.iMapMyFitnessPlus",
-                "com.mapmyfitnessplus.android2"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Map My Hike",
@@ -4753,15 +3619,10 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Hike appears discontinued — not on Apple App Store or Google Play as of 2026-07-13 (mapmyhike.com redirects to Map My Run).",
+            "notes": "Formerly Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024. Map My Hike appears discontinued \u2014 not on Apple App Store or Google Play as of 2026-07-13 (mapmyhike.com redirects to Map My Run).",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Map My Hike GPS Hiking",
-                "Map My Hike by Under Armour",
-                "Q5AWL8WCY6.iMapMyHikePlus",
-                "com.mapmyhikeplus.android2"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Map My Ride",
@@ -4775,12 +3636,7 @@
             "notes": "Formerly owned by Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024.",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Map My Ride GPS Cycling Riding",
-                "Map My Ride by Under Armour",
-                "Q5AWL8WCY6.iMapMyRidePlus",
-                "com.mapmyrideplus.android2"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Map My Run",
@@ -4794,11 +3650,7 @@
             "notes": "Formerly owned by Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024.",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Map My Run by Under Armour",
-                "Q5AWL8WCY6.iMapMyRunPlus",
-                "com.mapmyrunplus.android2"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Map My Walk",
@@ -4812,14 +3664,7 @@
             "notes": "Formerly owned by Under Armour (MapMyFitness suite); sold to Outside Interactive in August 2024.",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Map My Walk - Activities",
-                "MapUsers",
-                "Map My Walk by Under Armour",
-                "Walk with Map My Walk",
-                "Q5AWL8WCY6.iMapMyWalk",
-                "com.mapmywalkplus.android2"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Mappy",
@@ -4833,9 +3678,7 @@
             "notes": "French maps/GPS app (com.mappy.Mappy / com.mappy.app). Apple listing is FR-store oriented; not on US App Store.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Mappy - GPS, trafic & prix"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Marco Polo",
@@ -4857,15 +3700,7 @@
             "notes": "",
             "dateAdded": "2023-10-28",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Mastodon for iPhone and iPad",
-                "Mastodon - Account Details",
-                "Mastodon - Account Searches",
-                "Mastodon - Hashtag Searches",
-                "Mastodon - Instance Details",
-                "Mastodon - Notifications",
-                "Mastodon - Timeline"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Maxthon Browser",
@@ -4876,10 +3711,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Maxthon browser",
-                "Maxthon Browser for Tablet"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "MeWe",
@@ -4893,10 +3725,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "MeWe - Chat",
-                "MeWe - SGSession"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Media",
@@ -4918,12 +3747,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Meet24 - Flirt, Chat, Singles",
-                "Meet24 - Love, Chat, Singles",
-                "Android Meet24 Cookies",
-                "Android Meet24 Cache Records"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "MeetMe",
@@ -4934,11 +3758,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "MeetMe - Meet, Chat & Go Live",
-                "MeetMe: Chat & Meet New People",
-                "MeetMe Chats"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "MeowChat",
@@ -4949,12 +3769,10 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mts.meowchat",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Live video chat (com.mts.meowchat). Distinct from pet-translator apps also named MeowChat. MOBILEdit title appears truncated (“… & M”).",
+            "notes": "Live video chat (com.mts.meowchat). Distinct from pet-translator apps also named MeowChat. MOBILEdit title appears truncated (\u201c\u2026 & M\u201d).",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "MeowChat : Live video chat & M"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Mercury Browser",
@@ -4965,12 +3783,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-27",
-            "alternateNames": [
-                "Mercury Web Browser",
-                "Mercury Pro Web Browser",
-                "com.bsn.mercury",
-                "com.bsn.mercurypro"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Meta Messenger (Facebook)",
@@ -4983,28 +3796,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Facebook Messenger",
-                "Facebook Messenger Lite",
-                "Cloud Facebook Messenger Messages",
                 "FacebookMessenger",
-                "Facebook Messenger Users Contacted",
-                "Facebook Messenger Messages",
-                "Facebook Messenger Groups",
-                "Facebook Messenger Calls",
-                "Android Facebook Messenger Attachments",
-                "Facebook Messenger - Calls",
-                "Facebook Messenger - Calls (msys_database)",
-                "Facebook Messenger - Calls (threads_db2)",
-                "Facebook Messenger - Chats",
-                "Facebook Messenger - Chats (msys_database)",
-                "Facebook Messenger - Chats (threads_db2)",
-                "Facebook Messenger - Client Messages",
-                "Facebook Messenger - Contacts",
-                "Facebook Messenger - Contacts (msys_database)",
-                "Facebook Messenger - Contacts (threads_db2)",
-                "Facebook Messenger - Conversation Groups",
-                "Facebook Messenger - Secret Conversations",
-                "Facebook Messenger - User ID",
                 "Meta Messenger (Facebook)",
                 "com.facebook.Messenger",
                 "com.facebook.orca"
@@ -5020,11 +3812,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "metamask",
-                "MetaMask - Browser",
-                "MetaMask - Contacts",
-                "MetaMask - Transactions",
-                "MetaMask - Wallets"
+                "metamask"
             ]
         },
         {
@@ -5039,10 +3827,7 @@
             "notes": "",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Swissmeteo - App opening with geolocation",
-                "Swissmeteo - Interaction with places"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Mi Browser",
@@ -5053,13 +3838,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Mi Browser History",
-                "Mi Browser Downloads",
-                "Mi Browser Cookies",
-                "Mi Browser Bookmarks",
-                "Mi Browser Autofill"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Authenticator",
@@ -5073,10 +3852,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Microsoft Authenticator - Accounts",
-                "com.microsoft.msa.authenticator"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Bing",
@@ -5087,10 +3863,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Bing Toolbar - Search History",
-                "Bing Toolbar - Map History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Edge",
@@ -5101,17 +3874,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Microsoft Edge/IE",
-                "Microsoft Edge: Browse with AI",
-                "Edge Chromium Web Visits",
-                "Edge Chromium Web History",
-                "Edge Chromium Tab History",
-                "Edge Chromium FavIcons",
-                "Edge Chromium Keyword Search Terms",
-                "Edge Chromium Bookmarks",
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Excel",
@@ -5146,11 +3909,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "OneDrive",
-                "OneDrive (web)",
-                "OneDrive Metadata"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft OneNote",
@@ -5161,11 +3920,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-30",
-            "alternateNames": [
-                "com.microsoft.onenoteiPad",
-                "Microsoft OneNote: Save Notes",
-                "OneNote"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Outlook",
@@ -5176,14 +3931,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Outlook",
-                "Outlook Accounts",
-                "Outlook Appointments",
-                "Outlook Contacts",
-                "Outlook Emails",
-                "Outlook Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft PowerPoint",
@@ -5207,10 +3955,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Remote Desktop Protocol",
-                "Remote Desktop Protocol Bitmap Cache"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Teams",
@@ -5222,27 +3967,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "teams",
-                "Microsoft Teams Topic Messages",
-                "Microsoft Teams Messages",
-                "Microsoft Teams Meeting Messages",
-                "Microsoft Teams Direct Messages",
-                "Microsoft Teams Activity",
-                "Microsoft Teams - Locations",
-                "Microsoft Teams - Motion",
-                "Microsoft Teams - Power Log",
-                "Microsoft Teams - State Change",
-                "Microsoft Teams - Timezone",
-                "Teams - Activity Feed",
-                "Teams - Call Log",
-                "Teams - File Info",
-                "Teams - Messages",
-                "Teams - Users",
-                "Teams Call Logs",
-                "Teams Contacts",
-                "Teams Messages",
-                "Teams Shared Locations",
-                "Teams User Information"
+                "teams"
             ]
         },
         {
@@ -5254,9 +3979,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-30",
-            "alternateNames": [
-                "Microsoft To Do: Lists & Tasks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Microsoft Word",
@@ -5281,10 +4004,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
             "alternateNames": [
-                "Mint Browser History",
-                "Mint Browser Downloads",
-                "Mint Browser Cookies",
-                "Mint Browser Bookmarks",
                 "Mint Browser Autofill"
             ]
         },
@@ -5358,10 +4077,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Thunderbird - Accounts",
-                "Thunderbird - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "My Ether Wallet",
@@ -5386,20 +4102,7 @@
             "notes": "Samsung file manager (com.sec.android.app.myfiles).",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Samsung My Files",
-                "My Files - Download History",
-                "My Files - Download History (FileInfo)",
-                "My Files - Download History (Legacy)",
-                "My Files - Google Drive",
-                "My Files - Recent Files",
-                "My Files - Recent Files (FileInfo)",
-                "My Files - Recent Files (MyFiles DB)",
-                "My Files Cache",
-                "My Files Operation History",
-                "My Files Trash",
-                "smyfilesStored"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "My Tracks",
@@ -5421,11 +4124,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "MySpace Inbox Messages",
-                "MySpace Chat - User Info",
-                "MySpace Chat - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "NQ Vault",
@@ -5436,10 +4135,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "NQ Vault Decrypted Media",
-                "NQ Vault Decrypted PINs"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Navitel Navigator",
@@ -5514,16 +4210,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Nike+ Run Club",
-                "Nike+ Running",
-                "Nike Run Club - Running Coach",
-                "com.nike.nikeplus-gps",
-                "Nike - Activities",
-                "Nike - Activity Moments",
-                "Nike - Activity Route",
-                "NikeNotifications"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ninesky Browser",
@@ -5558,9 +4245,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "NordVPN"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Notepad Vault-AppHider",
@@ -5604,9 +4289,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "OK"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Odnoklassniki",
@@ -5617,9 +4300,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Odnoklassniki: Social network"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "OkCupid",
@@ -5631,9 +4312,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
             "alternateNames": [
-                "OKCupid",
-                "OkCupid Dating: Date Singles",
-                "OkCupid: Date and Find Love"
+                "OKCupid"
             ]
         },
         {
@@ -5670,16 +4349,7 @@
             "notes": "",
             "dateAdded": "2023-10-30",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "OnStar RemoteLink Recent Location Searches",
-                "OnStar RemoteLink Remote Commands",
-                "OnStar RemoteLink Saved Places Of Interest",
-                "OnStar RemoteLink Saved Wireless Carrier",
-                "OnStar RemoteLink Vehicle Diagnostics",
-                "OnStar RemoteLink Vehicle Info",
-                "OnStar RemoteLink Hotspot Info",
-                "OnStar RemoteLink Accounts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ookla Speedtest",
@@ -5691,13 +4361,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Speedtest",
-                "com.ookla.speedtest",
-                "ooklaSpeedtestData",
-                "Speedtest by Ookla",
-                "Speedtest Reports - Location",
-                "Speedtest Reports - Wi-Fi data",
-                "Speedtest Test Results"
+                "ooklaSpeedtestData"
             ]
         },
         {
@@ -5723,10 +4387,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Opensignal - 5G, 4G Speed Test",
-                "com.opensignal.OpenSignalMaps"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Opera",
@@ -5737,31 +4398,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Opera Mini",
-                "Opera mini",
-                "Opera Mobile",
-                "Opera browser beta with AI",
-                "Opera browser with AI",
-                "Opera Mini browser beta",
-                "Opera Mini: Fast Web Browser",
-                "Opera Web Visits",
-                "Opera Web History",
-                "Opera Top Sites",
-                "Opera Keyword Search Terms",
-                "Opera FavIcons",
-                "Opera Downloads",
-                "Opera Cookies",
-                "Opera Bookmarks",
-                "Opera Autofill",
-                "com.opera.vpn",
-                "com.opera.OperaMini",
-                "com.opera.OperaMini",
-                "com.opera.mini.native.beta",
-                "com.opera.mini.native",
-                "com.opera.Coast",
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ornet Browser",
@@ -5775,18 +4412,7 @@
             "notes": "Play Store title: Dark Web Browser : OrNET.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Ornet Browser - Bookmarks",
-                "Ornet Browser - Cookies",
-                "Ornet Browser - Downloads",
-                "Ornet Browser - Favorited Sites",
-                "Ornet Browser - Frequents",
-                "Ornet Browser - Open Tabs",
-                "Ornet Browser - Search History",
-                "Ornet Browser - Tab Thumbnails",
-                "Ornet Browser - Usage Info",
-                "Ornet Browser - Web Browser History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "OruxMaps",
@@ -5800,10 +4426,7 @@
             "notes": "Free Play package com.orux.oruxmaps removed; Donate listing still active.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Oruxmaps - POI",
-                "Oruxmaps - Tracks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Oura",
@@ -5817,15 +4440,7 @@
             "notes": "Oura Ring companion app (com.ouraring.oura).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Oura - Account, Identity & Profile",
-                "Oura - Analytics Event Plan",
-                "Oura - Analytics Integrations",
-                "Oura - App Activity Timeline",
-                "Oura - Daytime Heart Rate",
-                "Oura - Find My Ring Last Known Location",
-                "Oura - Ring Status & Battery"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Pebble Smartwatch",
@@ -5836,21 +4451,10 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Pebble Technology smartwatch companion (Magnet artifacts). Acquired by Fitbit; original store apps delisted. Distinct from climbing apps and the later Core Devices “Pebble Core” revival.",
+            "notes": "Pebble Technology smartwatch companion (Magnet artifacts). Acquired by Fitbit; original store apps delisted. Distinct from climbing apps and the later Core Devices \u201cPebble Core\u201d revival.",
             "dateAdded": "2023-10-30",
             "dateUpdated": "2026-07-14",
-            "alternateNames": [
-                "Pebble Activity Information",
-                "Pebble Applications",
-                "Pebble Calendar Events",
-                "Pebble Contacts",
-                "Pebble Detected Android Applications",
-                "Pebble Device Information",
-                "Pebble Notifications",
-                "Pebble Physical Characteristics",
-                "Pebble Steps",
-                "Pebble Weather Locations"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "PUMATRAC",
@@ -5864,10 +4468,7 @@
             "notes": "PUMA running/training app (PumaTrac). LEAPP labels artifacts as Puma / Puma-Trac.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Puma - Activities",
-                "PumaUsers"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Parler",
@@ -5878,10 +4479,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Parler Users - Android",
-                "Parler Activity - Android"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Parrot Freeflight",
@@ -5892,10 +4490,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Freeflight 6",
-                "FreeFlight Pro"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "PayByPhone",
@@ -5909,10 +4504,7 @@
             "notes": "Parking payment app (com.verrus.paybyphone / com.paybyphone).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "PayByPhone - Parking Sessions",
-                "PayByPhone - Users and Vehicules Info"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Paypal",
@@ -5923,9 +4515,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "PayPal - Send, Shop, Manage"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Peeks Social",
@@ -5947,9 +4537,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Periscope - Live Video"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Personal Photo Vault",
@@ -6018,11 +4606,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "PikPak Cloud List",
-                "PikPak Downloads",
-                "PikPak Play"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Pinterest",
@@ -6033,13 +4617,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-30",
-            "alternateNames": [
-                "Pinterest Accounts",
-                "Pinterest Boards",
-                "Pinterest Following",
-                "Pinterest Messages",
-                "Pinterest Pins"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "PlayStation App (Messages)",
@@ -6052,9 +4630,7 @@
             "notes": "",
             "dateAdded": "2023-11-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "PlayStation Messages - Check your online friends"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Playground Vault",
@@ -6082,11 +4658,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "POF (Plenty of Fish)",
-                "Plenty of Fish Dating",
-                "Plenty of Fish Dating App"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Plus Messenger",
@@ -6122,11 +4694,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-11",
-            "alternateNames": [
-                "Pokemon GO",
-                "Pokémon GO",
-                "com.nianticlabs.pokemongo"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Potato Chat",
@@ -6140,12 +4708,7 @@
             "notes": "Telegram-fork messenger (org.potatochat.PotatoEnterprise / org.potato.messenger). Apple US listing removed; Android typically sideloaded, not on Play.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Potato Chat - Chats",
-                "Potato Chat - Group Chats",
-                "Potato Chat - Known Users",
-                "Potato chat"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Prey Anti-Theft",
@@ -6178,15 +4741,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Private Photo Vault Pro",
-                "Private Photo Vault Thumbnails - Android",
-                "Private Photo Vault Media",
-                "Private Photo Vault Albums",
-                "com.enchantedcloud.photovaultpro",
-                "com.enchantedcloud.photovault",
-                "Private Photo Vault"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Private Photo Vault (Keepsafe)",
@@ -6197,9 +4752,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Private Photo Vault - Keepsafe"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Privet Photo Vault",
@@ -6224,10 +4777,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Proton Drive - File Info",
-                "Proton Drive - User Account"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Proton VPN",
@@ -6241,11 +4791,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "ProtonVPN - Connection History",
-                "ProtonVPN - Device Info",
-                "ProtonVPN - User Info"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "ProtonMail",
@@ -6257,12 +4803,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "protonMail",
-                "ProtonMail Emails",
-                "ProtonMail Contacts",
-                "Proton Mail - Decrypted Emails",
-                "ProtonMail - Contacts",
-                "ProtonMail - Messages"
+                "protonMail"
             ]
         },
         {
@@ -6274,15 +4815,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Puffin Browser History",
-                "Puffin Browser Bookmarks",
-                "Puffin TV Browser",
-                "Puffin for Facebook",
-                "Puffin Cloud Browser",
-                "Puffin Browser Pro",
-                "Puffin Academy"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "PureVPN",
@@ -6304,9 +4837,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Qip"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "QIWI Wallet",
@@ -6317,9 +4848,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "Visa QIWI Wallet"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "QQ",
@@ -6330,18 +4859,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "QQ International",
-                "QQ Browser",
-                "QQ HD",
-                "QQ International - Chat & Call",
-                "QQ轻聊版",
-                "QQ File Transfers",
-                "QQ Local Users",
-                "QQ Messages",
-                "QQ Chat",
-                "QQ Messages Carved"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "QQ Mail",
@@ -6352,7 +4870,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.androidqqmail",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Tencent QQ邮箱 (com.tencent.qqmail / com.tencent.androidqqmail). Distinct from QQ messenger.",
+            "notes": "Tencent QQ\u90ae\u7bb1 (com.tencent.qqmail / com.tencent.androidqqmail). Distinct from QQ messenger.",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
@@ -6380,10 +4898,7 @@
             "notes": "Danish REMA 1000 self-scan app. Separate from the main REMA 1000 app.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Rema1000 Receipts, prettified",
-                "Rema1000 Receipts, raw"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "ROMEO - Gay Chat & Dating",
@@ -6397,14 +4912,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "ROMEO - Gay Dating",
-                "ROMEO - Gay Dating & Chat",
-                "com.planetromeo.mobile",
-                "Romeo Dating App Accounts",
-                "Romeo Dating App Contacts",
-                "Romeo Dating App Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Rail Russia",
@@ -6415,9 +4923,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Rail Russia – train tickets"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "RandoChat",
@@ -6431,11 +4937,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "RandoChat Accounts",
-                "RandoChat Contacts",
-                "RandoChat Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Reddit",
@@ -6446,12 +4948,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Reddit Accounts",
-                "Reddit Posts",
-                "Reddit Recently Visited Subreddits",
-                "Reddit Chats"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Remember The Milk",
@@ -6462,9 +4959,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Remember The Milk: To-Do List"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Revolut",
@@ -6478,9 +4973,7 @@
             "notes": "",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Revolut - Mobile Finance"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Ring",
@@ -6502,9 +4995,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Rocket.Chat"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Rus VPN",
@@ -6515,9 +5006,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "RusVPN"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SBB Mobile",
@@ -6531,14 +5020,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "SBB Mobile - EasyRide Trips",
-                "SBB Mobile - Purchased Tickets",
-                "SBB Mobile - Search History",
-                "SBB Mobile - Searched places",
-                "SBB Mobile - Ticket Purchased recently",
-                "SBB Mobile - Travel Cards"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SCRUFF",
@@ -6549,10 +5031,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Scruff",
-                "SCRUFF - Gay Dating & Chat"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SHAREit",
@@ -6566,9 +5045,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "shareit"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SIM Card",
@@ -6582,17 +5059,7 @@
             "notes": "Device/SIM hardware and telephony data (ICCID, IMSI, SIM SMS, etc.). Not a launcher app; kept for tool artifact joins.",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Android Sim Card Information",
-                "SIM - Unique Label Store",
-                "SIM - UUID",
-                "SIM Card Activity",
-                "SIM Card ICCID",
-                "SIM Card IMSI",
-                "SIM Card Phone Numbers",
-                "SIM Card Service Providers",
-                "SIM Card SMS Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SMS Center",
@@ -6615,7 +5082,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Safari Browser",
                 "Safari (iOS)",
                 "safariHistor",
                 "safariBookmarks",
@@ -6623,14 +5089,7 @@
                 "safariRecentWebSearches",
                 "safariTabs",
                 "safariWebsearch",
-                "biomeSafari",
-                "Safari Browser - Bookmarks",
-                "Safari Browser - Favicons",
-                "Safari Browser - History",
-                "Safari Browser - iCloud Tabs",
-                "Safari Browser - Recent Web Searches",
-                "Safari Browser - Search Terms",
-                "Safari Browser - Tabs (BrowserState)"
+                "biomeSafari"
             ]
         },
         {
@@ -6667,9 +5126,7 @@
             "notes": "Galaxy Digital Wellbeing (com.samsung.android.forest). Distinct from Google Digital Wellbeing.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "swellbeing"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Email",
@@ -6680,9 +5137,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Samsung Email Logs"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Health",
@@ -6693,11 +5148,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Samsung Health Steps (Device)",
-                "Samsung Health Steps (Wearable)",
-                "Samsung Health User Profiles"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Honeyboard",
@@ -6711,11 +5162,7 @@
             "notes": "Samsung Keyboard (Honeyboard). Preinstalled on Galaxy devices.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Samsung Honeyboard - Clipboard History",
-                "Samsung Honeyboard - Clipboard Screenshot",
-                "Samsung Keyboard Clipboard History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Internet Browser",
@@ -6726,35 +5173,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Samsung Browser Cache Records",
-                "Samsung Browser Web Visits",
-                "Samsung Browser Web History",
-                "Samsung Browser Top Sites",
-                "Samsung Browser Tabs",
-                "Samsung Browser Tab History",
-                "Samsung Browser Shortcuts",
-                "Samsung Browser Saved Pages",
-                "Samsung Browser Saved Credit Cards",
-                "Samsung Browser Media History",
-                "Samsung Browser Logins",
-                "Samsung Browser Last Tabs",
-                "Samsung Browser Last Session",
-                "Samsung Browser Keyword Search Terms",
-                "Samsung Browser History Index",
-                "Samsung Browser FavIcons",
-                "Samsung Browser Downloads",
-                "Samsung Browser Current Tabs",
-                "Samsung Browser Current Session",
-                "Samsung Browser Cookies",
-                "Samsung Browser Cached Thumbnails",
-                "Samsung Browser Bookmarks",
-                "Samsung Browser Autofill",
-                "Samsung Browser Autofill Profiles",
-                "Samsung Browser Archived Web History",
-                "Samsung Browser Archived Keyword Search Terms",
-                "Samsung Internet Browser Beta"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Memo",
@@ -6765,9 +5184,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "com.samsung.android.app.memo"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Messages",
@@ -6780,9 +5197,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Samsung Text Message Logs"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Notes",
@@ -6807,10 +5222,7 @@
             "notes": "Knox-backed private space (com.samsung.knox.securefolder). LEAPP also labels one artifact \"Samsung Knox History Log\".",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Samsung Knox History Log",
-                "Samsung Secure Folder - History Log"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Samsung Weather",
@@ -6824,11 +5236,7 @@
             "notes": "Galaxy Weather app (com.sec.android.daemonapp). LEAPP labels DB as Weather Clock.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Samsung Weather Clock - Daily",
-                "Samsung Weather Clock - Hourly",
-                "Samsung Weather Clock - Info"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SayHi Chat Meet Dating People",
@@ -6926,9 +5334,7 @@
             "notes": "Private second phone number (Pinger). LEAPP artifact name: Sideline Chats and Calls.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Sideline Chats and Calls"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Signal",
@@ -6940,17 +5346,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": [
-                "Signal Private Messenger / TextSecure",
-                "Signal Private Messenger",
-                "Signal Conversations - Android",
-                "Signal Group Members",
-                "Signal Groups",
-                "Signal Local User",
-                "Signal Messages - Android",
-                "Signal Stories",
-                "Signal Users",
-                "Signal Messages - Windows",
-                "Signal Messages - iOS"
+                "Signal Private Messenger / TextSecure"
             ]
         },
         {
@@ -6962,10 +5358,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-11",
-            "alternateNames": [
-                "Silent Phone - Secure Calling",
-                "com.silentcircle.SilentPhone"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Skout",
@@ -6976,12 +5369,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "SKOUT - Meet, Chat, Go Live",
-                "Skout — Meet New People",
-                "Skout Messages",
-                "Skout Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "SkyFire Browser",
@@ -6995,9 +5383,7 @@
             "notes": "Skyfire Labs mobile browser (com.skyfire.browser). Discontinued / removed from stores. Kept for Oxygen artifact joins.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Skyfire Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Skype",
@@ -7008,38 +5394,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Skype (deprecated)",
-                "Skype (desktop)",
-                "Skype (store)",
-                "Skype Lite",
-                "Skype Accounts",
-                "Skype Activity",
-                "Skype Calls",
-                "Skype Chat Messages",
-                "Skype Chatsync Messages",
-                "Skype Contacts",
-                "Skype Emotions",
-                "Skype File Transfers",
-                "Skype Group Chat",
-                "Skype IP Addresses",
-                "Skype Notifications",
-                "Skype Lite - Free Video Call & Chat",
-                "Skype Insider",
-                "Skype for iPad",
-                "Skype for Business for Android",
-                "com.skype.SkypeForiPad",
-                "com.skype.skype",
-                "com.skype.insiders",
-                "Skype Message History Exports",
-                "Skype Media Cache",
-                "Skype Chatsync Messages Carved",
-                "Skype Voicemails",
-                "Skype SMS",
-                "Skype - Call Logs",
-                "Skype - Contacts",
-                "Skype - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Skyscanner",
@@ -7053,10 +5408,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Skyscanner – travel deals",
-                "Skyscanner Flights Hotels Cars"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Slack",
@@ -7070,25 +5422,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Slack (desktop)",
-                "Slack (store)",
-                "Slack (web)",
-                "slack",
-                "Slack Channel Messages",
-                "Slack Accounts",
-                "Slack Channels",
-                "Slack Direct Messages",
-                "Slack Files",
-                "Slack Users",
-                "Slack Workspaces",
-                "Slack - Attachments",
-                "Slack - Channel Data",
-                "Slack - Channel Data (ModelDatabase)",
-                "Slack - Messages",
-                "Slack - Messages (ModelDatabase)",
-                "Slack - Team Data",
-                "Slack - User Data",
-                "Slack - User Data (ModelDatabase)"
+                "slack"
             ]
         },
         {
@@ -7103,13 +5437,7 @@
             "notes": "",
             "dateAdded": "2023-11-10",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Sleipnir Autofill",
-                "Sleipnir Bookmarks",
-                "Sleipnir Cookies",
-                "Sleipnir Search Terms",
-                "Sleipnir Web History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Slopes",
@@ -7123,11 +5451,7 @@
             "notes": "",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Slopes - Actions",
-                "Slopes - Lift Details",
-                "Slopes - Resort Details"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Smart Voice Recorder",
@@ -7138,7 +5462,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.andrwq.recorder",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Android SmartMob recorder (com.andrwq.recorder). Distinct from Apple Voice Memos and iOS “Smart Voice Recorder - Offline”.",
+            "notes": "Android SmartMob recorder (com.andrwq.recorder). Distinct from Apple Voice Memos and iOS \u201cSmart Voice Recorder - Offline\u201d.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-14",
             "alternateNames": []
@@ -7155,9 +5479,7 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "samsungSmartThings"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Snapchat",
@@ -7170,41 +5492,7 @@
             "dateUpdated": "2026-07-09",
             "alternateNames": [
                 "SnapChat",
-                "Snapchat Warrant Return",
-                "Snapchat Chat Messages",
-                "Snapchat Accounts Information - Android",
-                "Snapchat Cached Videos",
-                "Snapchat Contacts",
-                "Snapchat Event Logs - Android",
-                "Snapchat Friends - Android",
-                "Snapchat Group Members",
-                "Snapchat Memories",
-                "Snapchat Photo Transfers - Android",
-                "Snapchat Received Images - Android",
-                "Snapchat Received Snaps - Android",
-                "Snapchat Sent Snaps - Android",
-                "Snapchat Stories - Android",
-                "Snapchat Received Videos",
-                "Android Snapchat Event Logs",
-                "Android Snapchat Accounts Information",
-                "Android Snapchat Stories",
-                "Android Snapchat Sent Snaps",
-                "Android Snapchat Received Snaps",
-                "Android Snapchat Received Images",
-                "Android Snapchat Photo Transfers",
-                "Android Snapchat Friends",
-                "Snapchat Story Snaps - iOS",
-                "Snapchat Stories - iOS",
-                "Snapchat My Story - iOS",
-                "Snapchat Conversations - iOS",
-                "Snapchat - Feeds",
-                "Snapchat - Friends",
-                "Snapchat - Identity Persistent Store",
-                "Snapchat - Login Signup Store",
-                "Snapchat - Memories",
-                "Snapchat - MEO My Eyes Only",
-                "Snapchat - Messages",
-                "Snapchat - Snap Media"
+                "Snapchat Warrant Return"
             ]
         },
         {
@@ -7274,14 +5562,7 @@
             "notes": "Shared expense splitting (com.Splitwise.SplitwiseMobile).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Splitwise - Expense Balances",
-                "Splitwise - Expenses",
-                "Splitwise - Groups",
-                "Splitwise - Notifications",
-                "Splitwise - Total Balances",
-                "Splitwise - Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Springpad",
@@ -7303,9 +5584,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Steam Mobile"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Strava",
@@ -7316,11 +5595,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Strava: Run, Bike, Hike",
-                "com.strava.stravaride",
-                "Strava - Activities"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Sup Live Journal",
@@ -7375,21 +5650,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "TamTam",
-                "TamTam Messenger Channels - Android",
-                "TamTam Messenger Contacts",
-                "TamTam Messenger Conversations - Android",
-                "TamTam Messenger Groups - Android",
-                "TamTam Messenger Messages - Android",
-                "TamTam: Messenger, chat, calls",
-                "TamTam Messenger & Video Calls",
-                "TamTam Messenger Messages - iOS",
-                "TamTam Messenger Groups - iOS",
-                "TamTam Messenger Conversations - iOS",
-                "TamTam Messenger Contacts - iOS",
-                "TamTam Messenger Channels - iOS"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TanTan",
@@ -7414,14 +5675,10 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "tangomessage",
-                "tango-Live Stream & Video Chat",
-                "Tango- Live Stream, Video Chat"
-            ]
+            "alternateNames": []
         },
         {
-            "appName": "Taobao (淘宝)",
+            "appName": "Taobao (\u6dd8\u5b9d)",
             "icon": "",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -7431,9 +5688,7 @@
             "notes": "",
             "dateAdded": "2023-11-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "淘宝"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Tappsk",
@@ -7455,9 +5710,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "TeamViewer Activity"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TeleGuard",
@@ -7471,17 +5724,7 @@
             "notes": "",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Teleguard - Channels",
-                "Teleguard - Contacts",
-                "Teleguard - Messages",
-                "Teleguard - Posts",
-                "Teleguard Channels",
-                "Teleguard Contacts",
-                "Teleguard Messages",
-                "Teleguard Posts",
-                "Teleguard Secure Messenger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Telegram",
@@ -7492,30 +5735,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Telegram (desktop)",
-                "Telegram for macOS (desktop)",
-                "Telegram for macOS (store)",
-                "Telegram in Russian",
-                "Telegram Web",
-                "Telegram (store)",
-                "Telegram Messages",
-                "Telegram X",
-                "Telegram Chats - Android",
-                "Telegram Contacts - Android",
-                "Telegram Messages - Android",
-                "Telegram Users - Android",
-                "Android Telegram Users",
-                "Android Telegram Messages",
-                "Android Telegram Contacts",
-                "Android Telegram Chats",
-                "Telegram Messenger",
-                "Telegram Media - Windows",
-                "Telegram Users - iOS",
-                "Telegram Messages - iOS",
-                "Telegram Chats - iOS",
-                "Telegram Channel Chats - iOS"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Temp Mail",
@@ -7537,10 +5757,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Text Free",
-                "Text Free - Pinger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Text Me: Second Number",
@@ -7551,11 +5768,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Text Me!",
-                "Text Me",
-                "Text Me: Second Phone Number"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TextMe (gemsoftware)",
@@ -7566,12 +5779,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "com.gemsoftware.textme",
-                "TextMe Calls",
-                "TextMe Messages",
-                "TextMe"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TextNow",
@@ -7582,17 +5790,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Android TextNow Profile",
-                "Android TextNow Groups",
-                "Android TextNow Contacts",
-                "Android TextNow Chat",
-                "Android TextNow Calls",
-                "TextNow: Call + Text Unlimited",
-                "Text Now - Call Logs",
-                "Text Now - Contacts",
-                "Text Now - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TextPlus",
@@ -7603,15 +5801,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "com.gogii.textplus",
-                "TextPlus Activity",
-                "TextPlus Calls",
-                "TextPlus Logged In Account",
-                "TextPlus Messages",
-                "TextPlus Users",
-                "textPlus: Text Message + Call"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Textie",
@@ -7622,9 +5812,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Textie Messaging - Beautiful free text chat unlimited (SMS)"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Textra SMS",
@@ -7646,12 +5834,10 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instagram.barcelona",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Meta Threads app (com.instagram.barcelona). Store title: Threads. LEAPP “Instagram Threads” / “Instagram Threads Calls” are Instagram DMs/calls, not this app.",
+            "notes": "Meta Threads app (com.instagram.barcelona). Store title: Threads. LEAPP \u201cInstagram Threads\u201d / \u201cInstagram Threads Calls\u201d are Instagram DMs/calls, not this app.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Threads"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Threema",
@@ -7662,13 +5848,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Threema. The Secure Messenger",
-                "Threema Users",
-                "Threema Messages",
-                "Threema - Chats",
-                "Threema - Known Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TigerConnect",
@@ -7679,11 +5859,7 @@
             "notes": "App formally called TigerText rebranded as TigerConnect",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "TigerText",
-                "Android TigerText Messages",
-                "TigerConnect - Clinical Soluti"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TikTok",
@@ -7695,15 +5871,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "TikTok Lite",
-                "tikTok",
-                "TikTok Contacts",
-                "TikTok Media",
-                "TikTok Messages",
-                "TikTok Videos",
-                "TikTok - Contacts",
-                "TikTok - Messages",
-                "TikTok - Replied Messages"
+                "tikTok"
             ]
         },
         {
@@ -7729,12 +5897,7 @@
             "notes": "Bluetooth item tracker (com.thetileapp.tile). Store title: Tile - Find lost keys & phone.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Tile App Account Information",
-                "Tile App DB Info & Geolocation",
-                "Tile App Discovered Tiles",
-                "Tile App Geolocation Logs"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Tinder",
@@ -7748,18 +5911,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Android Tinder Accounts",
-                "Android Tinder Matches",
-                "Android Tinder Messages",
-                "Android Tinder Photos",
-                "iOS Tinder Accounts",
-                "iOS Tinder Matches",
-                "iOS Tinder Messages",
-                "iOS Tinder Photos",
-                "Tinder: Dating, Chat & Friends",
-                "Tinder Dating app. Meet People"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Todoist",
@@ -7773,12 +5925,7 @@
             "notes": "",
             "dateAdded": "2023-11-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Todoist - Items",
-                "Todoist - Notes",
-                "Todoist - Projects",
-                "Todoist: to-do list & planner"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TomTom Go GPS",
@@ -7790,12 +5937,6 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": [
-                "TomTom Australia",
-                "TomTom GPS Navigation Traffic",
-                "TomTom Russia",
-                "TomTom South East Asia",
-                "TomTom U.S.A.",
-                "TomTom Argentina and Uruguay",
                 "TomTom GPS"
             ]
         },
@@ -7811,12 +5952,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Tor Browser - Bookmarks",
-                "Tor Browser - Usage Info",
-                "Tor Browser Tab Thumnails",
-                "TOR Thumbnails"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Touch",
@@ -7829,12 +5965,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Touch Experiences",
-                "Touch Friends",
-                "Touch Local User",
-                "Touch Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Tracker Detect",
@@ -7846,9 +5977,7 @@
             "notes": "",
             "dateAdded": "2026-07-10",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "atrackerdetect"
-            ],
+            "alternateNames": [],
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true"
         },
@@ -7888,11 +6017,7 @@
             "notes": "International Trip.com app (com.ctrip.EBooking / ctrip.english). Formerly listed as Ctrip; Chinese Ctrip app may share Cellebrite keys.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": [
-                "Ctrip",
-                "Ctrip (Chinese)",
-                "Trip.com: Book Flights, Hotels"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TripAdvisor",
@@ -7903,10 +6028,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Tripadvisor: Plan & Book Trips",
-                "com.tripadvisor.LocalPicks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TripIt",
@@ -7917,10 +6039,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "TripIt: Travel Planner",
-                "com.tripit.tripitmobile"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TrueCaller",
@@ -7931,13 +6050,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Truecaller: Caller ID & Block",
-                "com.truesoftware.TrueCallerOther",
-                "com.truecaller.phoneapp",
-                "com.truecaller.messenger",
-                "Truecaller"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Tumblr",
@@ -7948,13 +6061,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Tumblr Blogs",
-                "Tumblr Chat Messages",
-                "Tumblr Tags",
-                "Tumblr—Fandom, Art, Chaos",
-                "com.tumblra"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TunnelBear VPN",
@@ -7967,9 +6074,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2023-11-10",
-            "alternateNames": [
-                "TunnelBear: Secure VPN & Wifi"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Tusky",
@@ -7983,10 +6088,7 @@
             "notes": "",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Tusky - Account Details",
-                "Tusky - Timeline"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "TweetDeck",
@@ -8022,9 +6124,7 @@
             "notes": "Swiss TWINT prepaid app (ch.twint.wallet / ch.twint.payment). LEAPP module targets prepaid Twint.sqlite; bank-branded TWINT apps (UBS, ZKB, etc.) are separate.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Twint - Transactions"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Twist",
@@ -8046,9 +6146,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Twitch: Live Game Streaming"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Twitterrific",
@@ -8061,9 +6159,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Twitterrific: Tweet Your Way"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "UC Browser",
@@ -8077,18 +6173,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-14",
-            "alternateNames": [
-                "Chromium Based Browser",
-                "UC Browser Bookmarks",
-                "UC Browser Cookies",
-                "UC Browser Downloads",
-                "UC Browser History",
-                "UC Browser Lite",
-                "UC Browser Mini for Android Go",
-                "UC Browser-Safe, Fast, Private",
-                "UC Mini-Download Video Status",
-                "com.uc.browser.hd"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "US Airways",
@@ -8110,25 +6195,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Uber Russia",
-                "Uber Accounts",
-                "Uber Cached Locations",
-                "Uber Payments",
-                "Uber Profiles",
-                "Uber Trips",
-                "Uber - Request a ride",
-                "Uber - Account",
-                "Uber - Cached Locations",
-                "Uber - Locations (LevelDB)",
-                "Uber - Metadata LevelDB",
-                "Uber - Nearby Vehicles",
-                "Uber - Payment Profiles",
-                "Uber - Places",
-                "Uber - Searched Rides",
-                "Uber - Unified Reporter Locations",
-                "Uber - User Address"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Uber Eats: Food Delivery",
@@ -8174,10 +6241,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "VIPole Secure Messenger",
-                "VIPole"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "VK",
@@ -8188,10 +6252,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "VK for iPad",
-                "VK: music, video, messenger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "VK Mail",
@@ -8213,12 +6274,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "VK Calls",
-                "com.dchistyakov.vkmessenger.ui",
-                "VK Users",
-                "VK Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "VKontakte",
@@ -8229,9 +6285,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Vkontakte"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "VLC Media Player",
@@ -8245,16 +6299,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "VLC Media Player (desktop)",
-                "VLC Media Player (store)",
-                "VLC Recently Played Files",
-                "VLC",
-                "VLC Media Lib (ADB)",
-                "VLC Thumbnail Data",
-                "VLC Thumbnails",
-                "VLC Thumbnails (ADB)"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "VSCO",
@@ -8279,13 +6324,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "vaulty_files",
-                "vaulty_info",
-                "Hide Pictures in Vaulty",
-                "Vaulty : Hide Pictures Videos",
-                "Vaulty Stocks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Venmo",
@@ -8297,9 +6336,7 @@
             "dateAdded": "2023-10-22",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "venmo",
-                "Venmo - Transactions",
-                "Venmo - Users"
+                "venmo"
             ]
         },
         {
@@ -8311,9 +6348,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "Verizon Messages Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Viber",
@@ -8325,22 +6360,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "Viber Artifacts",
-                "Viber - Safe Chats And Calls",
-                "Viber Messenger: Chats & Calls",
-                "Viber Messages",
-                "Windows Viber Messages",
-                "Windows Viber Group Members",
-                "Windows Viber Contacts",
-                "Windows Viber Chat Messages",
-                "Windows Viber Calls",
-                "Viber - Additional",
-                "Viber - Call Logs",
-                "Viber - Call Remnants",
-                "Viber - Chats",
-                "Viber - Contacts",
-                "Viber - Messages",
-                "Viber - Settings"
+                "Viber Artifacts"
             ]
         },
         {
@@ -8363,9 +6383,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "com.vine.iphone"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Vipps",
@@ -8378,9 +6396,7 @@
             "dateUpdated": "2026-07-09",
             "alternateNames": [
                 "vippsContacts",
-                "vipps",
-                "Vipps - Contacts",
-                "Vipps - Messages"
+                "vipps"
             ]
         },
         {
@@ -8392,10 +6408,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
-            "alternateNames": [
-                "Vivaldi",
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Voxer",
@@ -8406,10 +6419,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Voxer Walkie Talkie Messenger",
-                "com.rebelvox.voxer-lite"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Waze",
@@ -8420,22 +6430,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Waze Navigation & Live Traffic",
-                "Waze Events",
-                "Waze Favorites",
-                "Waze Places",
-                "com.waze.iphone",
-                "Waze - Account",
-                "Waze - Favorite Locations",
-                "Waze - Planned Events",
-                "Waze - Recent Locations",
-                "Waze - Search History",
-                "Waze - Session Info",
-                "Waze - Shared Locations",
-                "Waze - Text-To-Speech Navigation",
-                "Waze - Track GPS Quality"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "WeChat",
@@ -8446,10 +6441,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "WeChat Messages",
-                "WeChat Friends"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Web Browser (Litter Penguin)",
@@ -8485,12 +6477,10 @@
             "notes": "iOS WebKit Network Cache used by in-app WKWebView browsers (not Safari UI). Distinct from Safari listing.",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "WebKit Cache Records"
-            ]
+            "alternateNames": []
         },
         {
-            "appName": "Weibo (微博)",
+            "appName": "Weibo (\u5fae\u535a)",
             "icon": "weibo.webp",
             "websiteUrl": "",
             "appleStoreUrl": "",
@@ -8498,16 +6488,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Weibo",
-                "Sina Weibo Search History",
-                "Sina Weibo Private Messages",
-                "Sina Weibo Posts",
-                "Sina Weibo Microblogs",
-                "Sina Weibo Carved Searches",
-                "Sina Weibo Private Messages",
-                "Sina Weibo Posts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Whale",
@@ -8520,19 +6501,7 @@
             "notes": "",
             "dateAdded": "2023-11-10",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "Whale Web Visits",
-                "Whale Web History",
-                "Whale Top Sites",
-                "Whale Tab History",
-                "Whale Logins",
-                "Whale Keyword Search Terms",
-                "Whale FavIcons",
-                "Whale Downloads",
-                "Whale Cookies",
-                "Whale Bookmarks",
-                "Whale Autofill"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "WhatsApp Messenger",
@@ -8544,43 +6513,9 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": [
-                "WhatsApp (desktop)",
-                "WhatsApp (store)",
-                "WhatsApp Business backup",
-                "WhatsApp Business",
-                "WhatsApp Backup",
-                "WhatsApp (web)",
-                "WhatsApp Messenger backup",
                 "Whatsapp Contacts",
                 "Whatsapp Messages",
-                "Android WhatsApp Accounts Information",
-                "Android WhatsApp Chats",
-                "Android WhatsApp Contacts",
-                "Android WhatsApp Groups",
-                "Android WhatsApp Live Locations",
-                "Android WhatsApp Messages",
-                "Android WhatsApp Profile Pictures",
-                "Android WhatsApp User Profiles",
-                "FMWhatsApp Messenger",
-                "GBWhatsApp Messenger",
-                "OBWhatsApp Messenger",
-                "WhatsApp for KaiOS",
-                "Whatsapp",
-                "WhatsApp",
-                "WhatsApp Messages - Windows",
-                "iOS WhatsApp Messages",
-                "iOS WhatsApp Groups",
-                "iOS WhatsApp Contacts",
-                "iOS WhatsApp Chats",
-                "iOS WhatsApp Accounts Information",
-                "WhatsApp - Call History",
-                "WhatsApp - Call Logs",
-                "WhatsApp - Contacts",
-                "WhatsApp - Group Details",
-                "WhatsApp - Group Messages",
-                "WhatsApp - Messages",
-                "WhatsApp - One To One Messages",
-                "WhatsApp - User Profile"
+                "Whatsapp"
             ]
         },
         {
@@ -8605,10 +6540,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Whisper Messages",
-                "Android Whisper Posts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Wickr Me",
@@ -8620,12 +6552,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
             "alternateNames": [
-                "WickrMe",
-                "Wickr",
-                "wickr",
-                "Wickr Me Users",
-                "Wickr Me Messages",
-                "Wickr Me Conversations"
+                "wickr"
             ]
         },
         {
@@ -8651,9 +6578,7 @@
             "notes": "Android store title is RAR (RARLAB); desktop product is WinRAR.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
-            "alternateNames": [
-                "rarlabPreferences"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Wire",
@@ -8664,14 +6589,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Wire Contacts",
-                "Wire Messages",
-                "Wire Secure Messenger Account",
-                "Wire Secure Messenger Messages",
-                "Wire User Profile",
-                "Wire Messenger"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Wish",
@@ -8685,10 +6603,7 @@
             "notes": "",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "Wish: Shop And Save",
-                "Wish: Shop and Save"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Withings Health Mate",
@@ -8702,18 +6617,7 @@
             "notes": "Withings health app (formerly/also Health Mate). LEAPP artifact names use Health Mate.",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Health Mate - Accounts",
-                "Health Mate - Contacts",
-                "Health Mate - Daily Summary",
-                "Health Mate - Devices",
-                "Health Mate - Locations",
-                "Health Mate - Measurements",
-                "Health Mate - Messages",
-                "Health Mate - Sleep Tracking",
-                "Health Mate - Tracked Activities",
-                "Health Mate - Trackings"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Words With Friends",
@@ -8727,9 +6631,7 @@
             "notes": "LEAPP parses Classic package com.zynga.words (not newer WWF variants).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "WordsWithFriends"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Workplace chat by Facebook/Meta",
@@ -8740,11 +6642,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Workplace chat by Facebook",
-                "Workplace",
-                "Workplace from Meta"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Wunderlist",
@@ -8758,9 +6656,7 @@
             "notes": "Discontinued May 2020 after Microsoft acquisition; users migrated to Microsoft To Do. Kept for MOBILEdit artifact joins.",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-14",
-            "alternateNames": [
-                "Wunderlist: To-Do List & Tasks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "X / Twitter",
@@ -8774,18 +6670,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
-            "alternateNames": [
-                "Twitter",
-                "X",
-                "Twitter Direct Messages",
-                "Twitter Tweets",
-                "Twitter Users",
-                "com.htc.sense.socialnetwork.twitter",
-                "X (Twitter)",
-                "twitter",
-                "FCM - Twitter DMs",
-                "Twitter / X"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "XMS",
@@ -8809,9 +6694,7 @@
             "notes": "Open source app",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Xabber Beta"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Xender",
@@ -8825,10 +6708,7 @@
             "notes": "",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Xender - Contacts",
-                "Xender - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Xiaomi Notes",
@@ -8886,13 +6766,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": [
-                "Yahoo!Mail",
-                "Yahoo Mail - Organized Email",
-                "Yahoo Mail",
-                "Android Yahoo Mail Attachments",
-                "Android Yahoo Mail Emails",
-                "Android Yahoo Mail User Accounts",
-                "Yahoo Mail – Organized Email"
+                "Yahoo Mail - Organized Email"
             ]
         },
         {
@@ -8904,16 +6778,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Yahoo! messenger",
-                "YahooMessenger",
-                "Yahoo! Messenger Diagnostic Logs",
-                "Yahoo! Messenger Chat",
-                "Yahoo! Messenger - Non-encrypted Chat",
-                "Yahoo! Messenger - Group Chat",
-                "Yahoo! Messenger (Mac)",
-                "Yahoo! Diagnostic Chats"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yandex",
@@ -8924,11 +6789,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Yandex Bookmarks",
-                "Yandex Autofill",
-                "Yandex Start"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yandex Browser",
@@ -8939,24 +6800,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": [
-                "Yandex.Browser",
-                "Yandex.Browser (iPad)",
-                "Yandex.Browser Alpha",
-                "Yandex Browser (beta)",
-                "Yandex Browser with Protect",
-                "Yandex Cookies",
-                "Yandex Downloads",
-                "Yandex FavIcons",
-                "Yandex Keyword Search Terms",
-                "Yandex Logins",
-                "Yandex Shortcuts",
-                "Yandex Sync Data",
-                "Yandex Top Sites",
-                "Yandex Web History",
-                "Yandex Web Visits",
-                "Chromium Based Browser"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yandex Go",
@@ -8978,10 +6822,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Yandex.Mail",
-                "Yandex Mail - Email App"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yandex Maps & Navigator",
@@ -8992,14 +6833,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Yandex.Maps",
-                "Yandex.Navigator",
-                "Yandex Maps and Navigator",
-                "Yandex Navigator",
-                "Yandex Maps",
-                "ru.yandex.mobile.navigator"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yandex.Disk",
@@ -9010,11 +6844,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Yandex Disk—file cloud storage",
-                "Yandex Disk—file cloud storage",
-                "ru.yandex.disk"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yandex.Money",
@@ -9048,9 +6878,7 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": [
-                "Yelp iPhone",
-                "Yelp",
-                "com.yelp.yelpiphone"
+                "Yelp"
             ]
         },
         {
@@ -9062,10 +6890,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "Youtube",
-                "YouTube: Watch, Listen, Stream"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Your Phone",
@@ -9076,14 +6901,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Your Phone Contacts",
-                "Your Phone Companion Info",
-                "Your Phone SMS-MMS",
-                "Your Phone Pictures",
-                "Your Phone Devices",
-                "Your Phone Contacts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Yubo",
@@ -9094,10 +6912,7 @@
             "notes": "",
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-10",
-            "alternateNames": [
-                "Yubo : Make new friends",
-                "Yubo: Make new friends"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zalo",
@@ -9108,14 +6923,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Zalo Profiles",
-                "Zalo Contacts",
-                "Zalo Groups",
-                "Zalo Messages",
-                "Zalo - Chats",
-                "Zalo - Known Users"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zangi Messenger",
@@ -9126,13 +6934,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Zangi private messenger",
-                "Zangi Chats",
-                "Zangi Messenger - Accounts",
-                "Zangi Messenger - Contacts",
-                "Zangi Messenger - Messages"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zapya",
@@ -9157,12 +6959,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Zello PTT Walkie Talkie",
-                "Zello Messages",
-                "Zello Profiles",
-                "com.zello.client.main"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zenly",
@@ -9184,9 +6981,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "ZenMate VPN"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zepp Life",
@@ -9197,9 +6992,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "Zepp Life - Heart Rate"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zoho Mail",
@@ -9221,10 +7014,7 @@
             "notes": "",
             "dateAdded": "2023-10-25",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "Zoho People - HR Management",
-                "Zoho People - HR management"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zoho Projects",
@@ -9246,14 +7036,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-24",
-            "alternateNames": [
-                "Zoom - One Platform to Connect",
-                "Zoom Channels",
-                "Zoom Chat Messages",
-                "Zoom Contacts",
-                "Zoom Meeting Messages",
-                "Zoom User Accounts"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "Zynn",
@@ -9299,9 +7082,7 @@
             "notes": "",
             "dateAdded": "2023-11-02",
             "dateUpdated": "2023-11-11",
-            "alternateNames": [
-                "happn — Dating app"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "iCloud Drive",
@@ -9312,18 +7093,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
-            "alternateNames": [
-                "iCloud - File Metadata",
-                "iCloud Backup Files",
-                "iCloud Backup Snapshots",
-                "iCloud Photos Metadata",
-                "iCloud Quick Look",
-                "iCloud Shared Albums - Album Data",
-                "iCloud Shared Albums - Emails",
-                "iCloud Shared Albums - Owner Info",
-                "iCloud Shared Albums - Person Info",
-                "iCloud Wifi Networks"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "iCloud for Windows",
@@ -9345,9 +7115,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": [
-                "iMe Messenger & Crypto Wallet"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "iSH (bash history)",
@@ -9361,9 +7129,7 @@
             "notes": "Alpine Linux userspace for iOS. LEAPP labels shell history as Alpine Linux Bash History (.ash_history).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Alpine Linux Bash History"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "iScanner",
@@ -9385,9 +7151,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-28",
-            "alternateNames": [
-                "letgo: Sell and Buy Used Stuff"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "myAudi",
@@ -9401,9 +7165,7 @@
             "notes": "iOS package de.audi.myaudimobileassistant; Android Play id differs (de.myaudi.mobile.assistant).",
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
-            "alternateNames": [
-                "Audi Trip Data"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "ooVoo",
@@ -9414,13 +7176,7 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
-            "alternateNames": [
-                "ooVoo Video Calls, Messaging &",
-                "ooVoo Chat History",
-                "ooVoo Contact List",
-                "ooVoo Phone Book",
-                "com.oovoo.iphone.free"
-            ]
+            "alternateNames": []
         },
         {
             "appName": "what3words",
@@ -9434,9 +7190,7 @@
             "notes": "",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
-            "alternateNames": [
-                "What3words"
-            ]
+            "alternateNames": []
         }
     ]
 }

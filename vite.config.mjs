@@ -12,9 +12,6 @@ export default defineConfig({
     alias: {
       components: fromRoot('src/components'),
       services: fromRoot('src/services'),
-      AuthContext: fromRoot('src/AuthContext.jsx'),
-      AuthCallbackHandler: fromRoot('src/AuthCallbackHandler.js'),
-      AuthLoginButton: fromRoot('src/AuthLoginButton.jsx'),
       'App.css': fromRoot('src/App.css'),
       'react-virtualized': fromRoot('node_modules/react-virtualized/dist/commonjs'),
     },
@@ -30,10 +27,6 @@ export default defineConfig({
 
           if (id.includes('antd') || id.includes('@ant-design') || id.includes('@rc-component') || id.includes('rc-')) {
             return 'antd-vendor';
-          }
-
-          if (id.includes('@octokit') || id.includes('js-base64')) {
-            return 'github-vendor';
           }
 
           if (id.includes('recharts') || id.includes('d3-')) {

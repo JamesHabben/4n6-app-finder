@@ -7,6 +7,7 @@
         "toolReleaseDate": "2023-09-01",
         "icon": "tool-logo-oxygen.png",
         "artifactListFile": "artifacts-oxygen-20231102.json",
+        "mapFile": "maps/oxygen.json",
         "appNameKey": "Application",
         "documentationLocation": "In the app, click the upper right menu drop down and look for 'Supported Applications' in the tiles.",
         "extractionNotes": "App support data is in app only, but fairly clean in a table format making it easy to understand."
@@ -19,6 +20,7 @@
         "toolReleaseDate": "2026-06-01",
         "icon": "tool-logo-cellebrite-pa.png",
         "artifactListFile": "artifacts-cellebrite.json",
+        "mapFile": "maps/cellebrite.json",
         "appNameKey": "App Name",
         "documentationLocation": "Cellebrite portal Technical Data Sheet: SupportedApps HTML (DE release matrix).",
         "extractionNotes": "Parsed from DE SupportedApps HTML via capture-cellebrite-artifacts-list.py. Device platforms only (Android/iOS); Cloud and Warrant skipped. Native OS rows are expanded to Android/Apple {artifact} names. Supported versions is semicolon-joined; artifacts is the deduped union of artifact icons across versions."
@@ -31,6 +33,7 @@
         "toolReleaseDate": "2023-09-06",
         "icon": "tool-logo-magnet.png",
         "artifactListFile": "artifacts-magnet-20231102.json",
+        "mapFile": "maps/magnet.json",
         "appNameKey": "Artifact",
         "documentationLocation": "",
         "extractionNotes": ""
@@ -43,6 +46,7 @@
         "toolReleaseDate": "2026-07-09",
         "icon": "tool-logo-leapp.jpg",
         "artifactListFile": "artifacts-leapp.json",
+        "mapFile": "maps/leapps.json",
         "appNameKey": "name",
         "documentationLocation": "Local sibling repos: iLEAPP and ALEAPP scripts/artifacts/*.py (__artifacts_v2__).",
         "extractionNotes": "Merged from local iLEAPP (iOS) and ALEAPP (Android) via capture-leapp-artifacts-list-local.py. Catalog fields only (name, description, category, notes, author, paths, dates) plus Platform/sourceTool. Drops LEAPP UI config such as data_views. Files that build __artifacts_v2__ with helpers (e.g. ALEAPP fitbit.py) are skipped by static parse."
@@ -55,6 +59,7 @@
         "toolReleaseDate": "2023-10-24",
         "icon": "tool-logo-mobiledit.jpg",
         "artifactListFile": "artifacts-mobiledit-20231025.json",
+        "mapFile": "maps/mobiledit.json",
         "appNameKey": "Application",
         "documentationLocation": "website at https://apps.mobiledit.com/",
         "extractionNotes": ""
@@ -67,6 +72,7 @@
         "toolReleaseDate": "2023-11-01",
         "icon": "tool-logo-hindsight.png",
         "artifactListFile": "artifacts-hindsight.json",
+        "mapFile": "maps/hindsight.json",
         "appNameKey": "App Name",
         "documentationLocation": "website at https://www.hindsightforensic.com/",
         "extractionNotes": ""

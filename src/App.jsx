@@ -1,10 +1,9 @@
-import React, { useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AppRoutes from './Routes';
 import VersionInfo from 'components/VersionInfo';
 import { DataProvider } from 'services/DataContext';
-import { AuthProvider } from './AuthContext';
 import { Analytics } from '@vercel/analytics/react';
 
 import './App.css';
@@ -20,7 +19,7 @@ const queryClient = new QueryClient({
 
 function App() {
   const [showScroll, setShowScroll] = useState(false);
-  
+
   const loadHeap = (heapId) => {
     window.heap = window.heap || [];
     window.heap.load = function (e, t) {
@@ -41,9 +40,9 @@ function App() {
     window.heap.load(heapId);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     const heapId = import.meta.env.VITE_HEAP_ID;
-    
+
     if (document.title && import.meta.env.DEV) {
       document.title += ' (Dev Mode)';
     }
@@ -52,7 +51,7 @@ function App() {
       loadHeap(heapId);
     }
   }, []);
-  
+
   const checkScrollTop = () => {
     if (!showScroll && window.pageYOffset > 400){
       setShowScroll(true);
@@ -65,7 +64,7 @@ function App() {
     window.scrollTo({top: 0, behavior: 'smooth'});
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     window.addEventListener('scroll', checkScrollTop);
     return () => window.removeEventListener('scroll', checkScrollTop);
   });
@@ -73,18 +72,16 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <Router>
-        <AuthProvider>
-          <DataProvider>
-            <AppContent />
-            <div 
-              className="scrollTop" 
-              onClick={scrollTop} 
-              style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
-                <span>^</span>
-            </div>
-            <Analytics />
-          </DataProvider>
-        </AuthProvider>
+        <DataProvider>
+          <AppContent />
+          <div
+            className="scrollTop"
+            onClick={scrollTop}
+            style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+              <span>^</span>
+          </div>
+          <Analytics />
+        </DataProvider>
       </Router>
     </QueryClientProvider>
   );
@@ -97,7 +94,7 @@ function AppContent() {
   return (
       <div className="app-container">
         <header style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '0rem' }}>
-          <img src="/images/4af-logo.png" alt="Logo" width={'200px'} height={'200px'} 
+          <img src="/images/4af-logo.png" alt="Logo" width={'200px'} height={'200px'}
             style={{ position: 'absolute', left: '0px', top: '0px', zIndex:'-1' }} />
           <h1>4n6 App Finder</h1>
         </header>

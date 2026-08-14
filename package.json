@@ -3,12 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@octokit/rest": "^20.0.2",
     "@tanstack/react-query": "^5.101.2",
     "@vercel/analytics": "^2.0.1",
     "antd": "^5.9.4",
-    "fast-json-patch": "^3.1.1",
-    "js-base64": "^3.7.5",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -28,7 +25,6 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "dev:vercel": "npx vercel dev --listen 5173",
     "prebuild": "node version.js",
     "build": "vite build",
     "preview": "vite preview"

@@ -1,73 +1,68 @@
 import React, { useEffect, useState, useContext, useRef } from 'react';
-import { BrowserRouter as Router, Route, Routes, NavLink, Link, useParams } from 'react-router-dom';
-//import { useDataFetching, fetchArtifacts } from '../services/useDataFetching';
-import { DataContext } from 'services/DataContext';
+import { DataContext, isDisplayableAppKey } from 'services/DataContext';
 import { trackEvent } from 'services/analytics';
 
-
-
-
-//const toolRefs = {};
-
 function AppDetails({ app, tools }) {
-    const { apps, getMappedArtifacts, isLoadingTools  } = useContext(DataContext);
+    const { getMappedArtifacts } = useContext(DataContext);
     const [toolArtifacts, setToolArtifacts] = useState(null);
-    //const app = apps.find(app => app.appName === match.params.appName);
-    //const { fetchArtifacts } = useDataFetching();
-    const [artifacts, setArtifacts] = useState([]);
-    const toolRefs = ({});
-
-    
+    const [isLoadingArtifacts, setIsLoadingArtifacts] = useState(false);
+    const toolRefs = useRef({});
 
     useEffect(() => {
-        //console.log("Tools in AppDetails:", tools);
-        trackEvent('App View', { appName: app.appName })
+        trackEvent('App View', { appName: app.appName });
+        toolRefs.current = {};
+        setToolArtifacts(null);
 
-        if (tools && apps && tools.length > 0) {
-            //console.log("Fetching artifacts for app:", app.appName, "with tools:", tools);
+        if (!app?.appName || !tools?.length) {
+            setToolArtifacts([]);
+            return;
+        }
 
-            const toolArtifacts = getMappedArtifacts(app.appName);
-            setToolArtifacts(toolArtifacts);
-        }
-    }, [app.appName, tools, apps]);
+        let cancelled = false;
+        setIsLoadingArtifacts(true);
 
-    const setToolRef = (toolShortName) => {
-        if (!toolRefs.current) {
-            toolRefs.current = {};
+        getMappedArtifacts(app.appName)
+            .then(mapped => {
+                if (!cancelled) {
+                    setToolArtifacts(mapped);
+                }
+            })
+            .finally(() => {
+                if (!cancelled) {
+                    setIsLoadingArtifacts(false);
+                }
+            });
+
+        return () => {
+            cancelled = true;
+        };
+    }, [app.appName, tools, getMappedArtifacts]);
+
+    const setToolRef = (toolShortName) => (element) => {
+        if (element) {
+            toolRefs.current[toolShortName] = element;
         }
-        if (!toolRefs.current[toolShortName]) {
-            // Create a new ref for this tool if it doesn't already exist
-            toolRefs.current[toolShortName] = React.createRef();
-            //console.log(toolRefs.current[toolShortName])
-            return toolRefs.current[toolShortName];
-        }
-        //console.log(toolRefs.current[toolShortName])
-        return null; //toolRefs.current[toolShortName];
     };
 
     const handleIconClick = (toolShortName) => {
-        //console.log(toolRefs)
-        trackEvent('App Tool Jump', { toolName: toolShortName })
-        const ref = toolRefs.current[toolShortName];
-        if (ref && ref.current) {
-            ref.current.scrollIntoView({ behavior: 'smooth' });
-        } else {
-            console.error('Ref for', toolShortName, 'not found');
+        trackEvent('App Tool Jump', { toolName: toolShortName });
+        const node = toolRefs.current[toolShortName];
+        if (node) {
+            node.scrollIntoView({ behavior: 'smooth' });
         }
     };
-    
 
-    if (!app || !toolArtifacts) return null;
+    if (!app) return null;
 
     function renderPropertyValue(key, value) {
         if (key === 'alternateNames' && Array.isArray(value) && value.length > 0) {
             return value.join(', ');
         }
-        
+
         if (key === 'mappedTools' && Array.isArray(value)) {
-            return value.map((tool, index) => (
+            return value.map((tool) => (
                 <img
-                key={index}
+                key={tool.shortName}
                 src={`/images/${tool.icon}`}
                 alt={`${tool.shortName} icon`}
                 title={`${tool.longName} icon`}
@@ -88,13 +83,12 @@ function AppDetails({ app, tools }) {
                 </pre>
             );
         }
-      
+
         return value;
     }
 
     return (
         <div className='AppDetails'>
-            {}
             <div className='appIcon'>
                 <img className='appIcon'
                     src={app.icon ? `/app-icons/${app.icon}` : '/images/logo192.png'}
@@ -106,7 +100,7 @@ function AppDetails({ app, tools }) {
             <table className="property-table">
             <tbody>
                 {Object.keys(app).map(key => (
-                ((app[key] && !Array.isArray(app[key])) || (Array.isArray(app[key]) && app[key].length > 0)) && (
+                isDisplayableAppKey(key) && ((app[key] && !Array.isArray(app[key])) || (Array.isArray(app[key]) && app[key].length > 0)) && (
                     <tr key={key} className="property-row">
                     <td className="property-name">
                         <strong>{key}:</strong>
@@ -120,19 +114,20 @@ function AppDetails({ app, tools }) {
             </tbody>
             </table>
             <h2>Tool Artifacts</h2>
-            {toolArtifacts.map((toolApp, index) => (
+            {isLoadingArtifacts && <p>Loading artifacts…</p>}
+            {toolArtifacts && toolArtifacts.map((toolApp, index) => (
                 <div key={index} className="tool-card" ref={setToolRef(toolApp.toolShortName)} >
-                    
+
                     <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start'  }}>
-                        <img src={`/images/${toolApp.toolIcon}`} width={50} height={50}  style={{ marginRight: '10px' }} ></img>
+                        <img src={`/images/${toolApp.toolIcon}`} width={50} height={50}  style={{ marginRight: '10px' }} alt="" />
                         <h3 style={{ marginRight: '10px' }}>{toolApp.toolLongName} </h3>
-                        (<a href={toolApp.website}>{toolApp.toolWebsite}</a>)
+                        (<a href={toolApp.toolWebsite}>{toolApp.toolWebsite}</a>)
                     </div>
                     <table className="property-table">
                         <tbody>
-                            {Object.keys(toolApp).map((key, index) => (
+                            {Object.keys(toolApp).map((key) => (
                                 (key !== 'toolLongName' && key !== 'toolIcon' && key !== 'toolWebsite') && (
-                                    <tr key={index} className="property-row">
+                                    <tr key={key} className="property-row">
                                         <td className="property-name">
                                             <strong>{key}:</strong>
                                         </td>
@@ -147,6 +142,9 @@ function AppDetails({ app, tools }) {
 
                 </div>
             ))}
+            {!isLoadingArtifacts && toolArtifacts && toolArtifacts.length === 0 && (
+                <p>No mapped tool artifacts.</p>
+            )}
         </div>
     );
 }

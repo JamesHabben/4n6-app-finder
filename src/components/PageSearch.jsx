@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useMemo, useRef, useContext, useCallback  } from 'react';
+import React, { useState, useEffect, useRef, useContext, useCallback } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Input, Card, Row, Col, Modal, AutoComplete,    } from 'antd';
+import { Input, Row, Col, Modal, AutoComplete } from 'antd';
 import { CloseCircleOutlined, LoadingOutlined } from '@ant-design/icons';
 import { debounce } from 'lodash';
 
-//import { useDataFetching } from 'services/useDataFetching';
 import { DataContext } from 'services/DataContext';
 import { trackEvent } from 'services/analytics';
 import AppDetails from 'components/AppDetails';
@@ -50,12 +49,6 @@ function PageSearch() {
     }
   }, [location, apps]);
 
-  useEffect(() => {
-    if (searchTerm) {
-      debouncedFilterAppsRef.current(searchTerm);
-    }
-  }, [searchTerm, apps]);
-
   const handleAppClick = (app) => {
     setSelectedApp(app);
     setIsModalVisible(true);
@@ -93,7 +86,7 @@ function PageSearch() {
   const setSuggestionValues = () => {
     const { operator, property, value } = parseSearchTerms(searchTerm);
     if (operator == '-no:' && !value && searchTerm.indexOf(' ') < 0) {
-      setSuggestions(Object.keys(apps[0] || {}).map(key => ({ value: '-no:' + key })));
+      setSuggestions(Object.keys(apps[0] || {}).filter(key => key !== 'searchHaystack' && key !== 'mappedArtifactNames').map(key => ({ value: '-no:' + key })));
     } else if (operator && !value  && searchTerm.indexOf(' ') < 0) {
       setSuggestions([{ value: '-no:' }]);
     } else {
@@ -141,71 +134,38 @@ function PageSearch() {
   const [isFiltering, setIsFiltering] = useState(false);
   const debouncedFilterAppsRef = useRef();
 
-
-  debouncedFilterAppsRef.current = debounce((search) => {
+  const filterApps = useCallback((search) => {
     const { operator, property, value } = parseSearchTerms(search);
 
     const filtered = apps.filter(app => {
-      // Initial filter based on '-no:' operator
       let matchesOperator = true;
       if (operator === '-no:' && property) {
-        matchesOperator = !app[property];  // Check if the property value is falsy
+        matchesOperator = !app[property];
       }
-  
-      // Further filter the reduced set based on the search term
+
       if (matchesOperator && value) {
-        const lowerValue = value.toLowerCase();
-        return (
-          app.appName.toLowerCase().includes(lowerValue) ||
-          (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
-        );
+        return (app.searchHaystack || app.appName.toLowerCase()).includes(value.toLowerCase());
       }
-      
-      return matchesOperator;  // If there's no value, return the result of the operator check
+
+      return matchesOperator;
     });
-    
+
     setFilteredApps(filtered);
-    setIsFiltering(false); // Set filtering to false once done
-    //if (search != searchTerm && search != '') {
-      //navigate(`/?search=${encodeURIComponent(search)}`);
-    //}
-    trackEvent('Search', { searchTerm: value }); // Track the search term with Heap here
-  }, 500, [apps]);
+    setIsFiltering(false);
+    trackEvent('Search', { searchTerm: value });
+  }, [apps]);
 
-  // useEffect(() => {
+  useEffect(() => {
+    const debounced = debounce(filterApps, 500);
+    debouncedFilterAppsRef.current = debounced;
+    return () => debounced.cancel();
+  }, [filterApps]);
 
-  //   return () => {
-  //     if (debouncedFilterAppsRef.current) {
-  //       debouncedFilterAppsRef.current.cancel();
-  //     }
-  //   };
-  // }, [location, apps]);
-
-  // const filteredApps = useMemo(() => {
-  const filteredAppsold = () => {
-      if (!searchTerm) return [];
-  
-    const { operator, property, value } = parseSearchTerms(searchTerm);
-  
-    return apps.filter(app => {
-      // Initial filter based on '-no:' operator
-      let matchesOperator = true;
-      if (operator === '-no:' && property) {
-        matchesOperator = !app[property];  // Check if the property value is falsy
-      }
-  
-      // Further filter the reduced set based on the search term
-      if (matchesOperator && value) {
-        const lowerValue = value.toLowerCase();
-        return (
-          app.appName.toLowerCase().includes(lowerValue) ||
-          (app.alternateNames && app.alternateNames.some(name => name.toLowerCase().includes(lowerValue)))
-        );
-      }
-  
-      return matchesOperator;  // If there's no value, return the result of the operator check
-    });
-  }; // () [searchTerm, apps];
+  useEffect(() => {
+    if (searchTerm && debouncedFilterAppsRef.current) {
+      debouncedFilterAppsRef.current(searchTerm);
+    }
+  }, [searchTerm, filterApps]);
   
     
   
@@ -287,7 +247,7 @@ function PageSearch() {
         {!searchTerm && (
           <>
             <WhatsNewTile />
-            <RecentAppsCard apps={apps} tools={tools} onAppClick={handleAppClick} />
+            <RecentAppsCard apps={apps} onAppClick={handleAppClick} />
           </>
         )}
       </div>
@@ -295,7 +255,7 @@ function PageSearch() {
       <Row gutter={[16, 16]} justify={'center'}>
         {filteredApps.map((app, index) => (
           <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
-            <AppTile app={app} tools={tools} onClick={handleAppClick} />
+            <AppTile app={app} onClick={handleAppClick} />
           </Col>
         ))}
       </Row>

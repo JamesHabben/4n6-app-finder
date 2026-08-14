@@ -1,9 +1,9 @@
-import React, {  useContext  } from 'react';
-import { DataContext } from 'services/DataContext';
+import React, { useContext } from 'react';
+import { DataContext, isDisplayableToolKey } from 'services/DataContext';
 
 function ToolsListContent() {
     const { tools } = useContext(DataContext);
-  
+
     return (
       <div>
         {tools.map((tool) => (
@@ -21,8 +21,8 @@ function ToolsListContent() {
             <table className="property-table">
               <tbody>
                   {Object.keys(tool).map((key) => {
-                      if (key === 'icon') {
-                          return null; // Skip rendering the icon
+                      if (key === 'icon' || !isDisplayableToolKey(key)) {
+                          return null;
                       }
                       return (
                           <tr key={key} className="property-row">
@@ -30,11 +30,11 @@ function ToolsListContent() {
                                   <strong>{key}:</strong>
                               </td>
                               <td className="property-value">
-                                  {key === 'artifactList' || key === 'mappedApps'
-                                      ? tool[key].length // Display the count for 'artifactList' or 'mappedApps'
+                                  {key === 'mappedApps'
+                                      ? tool[key].length
                                       : /^https?:\/\//.test(tool[key])
                                           ? <a href={tool[key]} target="_blank" rel="noopener noreferrer">{tool[key]}</a>
-                                          : tool[key]
+                                          : String(tool[key] ?? '')
                                   }
                               </td>
                           </tr>

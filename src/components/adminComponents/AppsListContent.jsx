@@ -1,9 +1,9 @@
-import React, {  useContext  } from 'react';
-import { DataContext } from 'services/DataContext';
+import React, { useContext } from 'react';
+import { DataContext, isDisplayableAppKey } from 'services/DataContext';
 
 function AppsListContent() {
     const { apps } = useContext(DataContext);
-  
+
     return (
       <div>
         {apps.map((app) => (
@@ -21,8 +21,8 @@ function AppsListContent() {
             <table className="property-table">
                 <tbody>
                     {Object.keys(app).map((key) => {
-                        if (key === 'icon' || key === 'id') {
-                            return null; // Skip rendering
+                        if (key === 'icon' || key === 'id' || !isDisplayableAppKey(key)) {
+                            return null;
                         }
                         return (
                             <tr key={key} className="property-row">
@@ -30,9 +30,11 @@ function AppsListContent() {
                                     <strong>{key}:</strong>
                                 </td>
                                 <td className="property-value">
-                                    {key === 'mappedTools' 
-                                        ? app[key].map(tool => tool.shortName).join(', ')
-                                        : app[key]
+                                    {key === 'mappedTools'
+                                        ? (app[key] || []).map(tool => tool.shortName).join(', ')
+                                        : Array.isArray(app[key])
+                                            ? app[key].join(', ')
+                                            : app[key]
                                     }
                                 </td>
                             </tr>
@@ -46,5 +48,5 @@ function AppsListContent() {
       </div>
     );
   }
-  
+
   export default AppsListContent;
