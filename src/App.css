@@ -145,32 +145,35 @@
 /* Style for the property table */
 .property-table {
   width: 100%;
+  max-width: 100%;
+  table-layout: auto;
   border-collapse: collapse;
   border: 1px solid #ccc;
-  table-layout: auto; /* Set table layout to auto */
 }
 
 /* Style for property rows */
 .property-row {
-  border-bottom: 1px solid #ccc; /* Add a border to separate rows */
+  border-bottom: 1px solid #ccc;
 }
 
 /* Style for property names */
 .property-name {
   padding: 8px;
   font-weight: bold;
-  border-right: 1px solid #ccc; /* Add a right border to separate columns */
-  background-color: #f5f5f5; /* Shade the left column */
-  width: 1%; /* Set the width to 1% for the left column */
-  white-space: nowrap; /* Prevent text wrapping */
-  overflow: hidden; /* Hide overflow content */
-  text-overflow: ellipsis; /* Show ellipsis for long text */
+  border-right: 1px solid #ccc;
+  background-color: #f5f5f5;
+  width: 1%;
+  white-space: nowrap;
 }
 
 /* Style for property values */
 .property-value {
   padding: 8px;
   background-color: #ffffff;
+  width: 99%;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
 
 /* Style for highlighted elements */
