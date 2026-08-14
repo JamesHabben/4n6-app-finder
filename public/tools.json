@@ -9,6 +9,7 @@
         "artifactListFile": "artifacts-oxygen-20231102.json",
         "mapFile": "maps/oxygen.json",
         "appNameKey": "Application",
+        "platformKey": "Platform",
         "documentationLocation": "In the app, click the upper right menu drop down and look for 'Supported Applications' in the tiles.",
         "extractionNotes": "App support data is in app only, but fairly clean in a table format making it easy to understand."
     },
@@ -22,6 +23,7 @@
         "artifactListFile": "artifacts-cellebrite.json",
         "mapFile": "maps/cellebrite.json",
         "appNameKey": "App Name",
+        "platformKey": "Platform",
         "documentationLocation": "Cellebrite portal Technical Data Sheet: SupportedApps HTML (DE release matrix).",
         "extractionNotes": "Parsed from DE SupportedApps HTML via capture-cellebrite-artifacts-list.py. Device platforms only (Android/iOS); Cloud and Warrant skipped. Native OS rows are expanded to Android/Apple {artifact} names. Supported versions is semicolon-joined; artifacts is the deduped union of artifact icons across versions."
     },
@@ -35,6 +37,7 @@
         "artifactListFile": "artifacts-magnet-20231102.json",
         "mapFile": "maps/magnet.json",
         "appNameKey": "Artifact",
+        "platformKey": "Platform",
         "documentationLocation": "",
         "extractionNotes": ""
     },
@@ -48,6 +51,7 @@
         "artifactListFile": "artifacts-leapp.json",
         "mapFile": "maps/leapps.json",
         "appNameKey": "name",
+        "platformKey": "Platform",
         "documentationLocation": "Local sibling repos: iLEAPP and ALEAPP scripts/artifacts/*.py (__artifacts_v2__).",
         "extractionNotes": "Merged from local iLEAPP (iOS) and ALEAPP (Android) via capture-leapp-artifacts-list-local.py. Catalog fields only (name, description, category, notes, author, paths, dates) plus Platform/sourceTool. Drops LEAPP UI config such as data_views. Files that build __artifacts_v2__ with helpers (e.g. ALEAPP fitbit.py) are skipped by static parse."
     },
@@ -61,6 +65,7 @@
         "artifactListFile": "artifacts-mobiledit-20231025.json",
         "mapFile": "maps/mobiledit.json",
         "appNameKey": "Application",
+        "platformKey": "Platform",
         "documentationLocation": "website at https://apps.mobiledit.com/",
         "extractionNotes": ""
     },
@@ -74,6 +79,7 @@
         "artifactListFile": "artifacts-hindsight.json",
         "mapFile": "maps/hindsight.json",
         "appNameKey": "App Name",
+        "platformKey": "Platform",
         "documentationLocation": "website at https://www.hindsightforensic.com/",
         "extractionNotes": ""
     }

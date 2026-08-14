@@ -1,152 +1,300 @@
-import React, { useEffect, useState, useContext, useRef } from 'react';
-import { DataContext, isDisplayableAppKey } from 'services/DataContext';
+import React, { useEffect, useMemo, useState, useContext } from 'react';
+import { Collapse } from 'antd';
+import { DataContext } from 'services/DataContext';
 import { trackEvent } from 'services/analytics';
 
+const APP_HEADER_KEYS = new Set([
+  'appName',
+  'icon',
+  'category',
+  'websiteUrl',
+  'appleStoreUrl',
+  'googlePlayUrl',
+  'mappedTools',
+]);
+
+const ARTIFACT_HIDDEN_KEYS = new Set([
+  'toolShortName',
+  'toolLongName',
+  'toolIcon',
+  'toolWebsite',
+  'isMapped',
+]);
+
+function hasValue(value) {
+  if (value == null || value === '') {
+    return false;
+  }
+  if (Array.isArray(value)) {
+    return value.length > 0;
+  }
+  return true;
+}
+
+function formatValue(value) {
+  if (Array.isArray(value)) {
+    if (value.every(item => typeof item !== 'object')) {
+      return value.join(', ');
+    }
+    return (
+      <pre style={{ margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+        {JSON.stringify(value, null, 2)}
+      </pre>
+    );
+  }
+  if (typeof value === 'boolean') {
+    return value ? 'true' : 'false';
+  }
+  if (value != null && typeof value === 'object') {
+    return (
+      <pre style={{ margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
+        {JSON.stringify(value, null, 2)}
+      </pre>
+    );
+  }
+  return value;
+}
+
+function ExternalLink({ href, children }) {
+  if (!href) {
+    return null;
+  }
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      {children}
+    </a>
+  );
+}
+
+function PropertyTable({ record, hideKeys = [] }) {
+  const hidden = new Set(hideKeys);
+  const keys = Object.keys(record).filter(key => !hidden.has(key) && hasValue(record[key]));
+
+  if (keys.length === 0) {
+    return null;
+  }
+
+  return (
+    <table className="property-table">
+      <tbody>
+        {keys.map(key => (
+          <tr key={key} className="property-row">
+            <td className="property-name">
+              <strong>{key}:</strong>
+            </td>
+            <td className="property-value">{formatValue(record[key])}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+function ArtifactRow({ artifact, appNameKey, platformKey }) {
+  const nameKey = appNameKey || 'name';
+  const platKey = platformKey || 'Platform';
+  const name = artifact[nameKey];
+  const platform = artifact[platKey];
+  const hideKeys = [...ARTIFACT_HIDDEN_KEYS, nameKey, platKey];
+
+  return (
+    <Collapse
+      className="artifact-collapse"
+      ghost
+      items={[{
+        key: 'details',
+        label: (
+          <span className="artifact-expander-label">
+            <span className="artifact-row-name">{name}</span>
+            {hasValue(platform) ? <span className="platform-badge">{String(platform)}</span> : null}
+          </span>
+        ),
+        children: <PropertyTable record={artifact} hideKeys={hideKeys} />,
+      }]}
+    />
+  );
+}
+
+function groupArtifacts(artifacts, tools, mappedTools) {
+  const groups = new Map();
+
+  (artifacts || []).forEach(artifact => {
+    const key = artifact.toolShortName;
+    if (!groups.has(key)) {
+      const tool = tools.find(item => item.toolShortName === key);
+      groups.set(key, {
+        toolShortName: key,
+        toolLongName: artifact.toolLongName,
+        toolIcon: artifact.toolIcon,
+        toolWebsite: artifact.toolWebsite,
+        appNameKey: tool?.appNameKey,
+        platformKey: tool?.platformKey || 'Platform',
+        artifacts: [],
+      });
+    }
+    groups.get(key).artifacts.push(artifact);
+  });
+
+  const ordered = [];
+  const seen = new Set();
+
+  (mappedTools || []).forEach(tool => {
+    if (groups.has(tool.shortName)) {
+      ordered.push(groups.get(tool.shortName));
+      seen.add(tool.shortName);
+    }
+  });
+
+  groups.forEach((group, key) => {
+    if (!seen.has(key)) {
+      ordered.push(group);
+    }
+  });
+
+  return ordered;
+}
+
 function AppDetails({ app, tools }) {
-    const { getMappedArtifacts } = useContext(DataContext);
-    const [toolArtifacts, setToolArtifacts] = useState(null);
-    const [isLoadingArtifacts, setIsLoadingArtifacts] = useState(false);
-    const toolRefs = useRef({});
+  const { getMappedArtifacts } = useContext(DataContext);
+  const [toolArtifacts, setToolArtifacts] = useState(null);
+  const [isLoadingArtifacts, setIsLoadingArtifacts] = useState(false);
+  const [openTools, setOpenTools] = useState([]);
 
-    useEffect(() => {
-        trackEvent('App View', { appName: app.appName });
-        toolRefs.current = {};
-        setToolArtifacts(null);
+  useEffect(() => {
+    trackEvent('App View', { appName: app.appName });
+    setToolArtifacts(null);
+    setOpenTools([]);
 
-        if (!app?.appName || !tools?.length) {
-            setToolArtifacts([]);
-            return;
+    if (!app?.appName || !tools?.length) {
+      setToolArtifacts([]);
+      return;
+    }
+
+    let cancelled = false;
+    setIsLoadingArtifacts(true);
+
+    getMappedArtifacts(app.appName)
+      .then(mapped => {
+        if (!cancelled) {
+          setToolArtifacts(mapped);
+          setOpenTools([...new Set(mapped.map(item => item.toolShortName))]);
         }
-
-        let cancelled = false;
-        setIsLoadingArtifacts(true);
-
-        getMappedArtifacts(app.appName)
-            .then(mapped => {
-                if (!cancelled) {
-                    setToolArtifacts(mapped);
-                }
-            })
-            .finally(() => {
-                if (!cancelled) {
-                    setIsLoadingArtifacts(false);
-                }
-            });
-
-        return () => {
-            cancelled = true;
-        };
-    }, [app.appName, tools, getMappedArtifacts]);
-
-    const setToolRef = (toolShortName) => (element) => {
-        if (element) {
-            toolRefs.current[toolShortName] = element;
+      })
+      .finally(() => {
+        if (!cancelled) {
+          setIsLoadingArtifacts(false);
         }
+      });
+
+    return () => {
+      cancelled = true;
     };
+  }, [app.appName, tools, getMappedArtifacts]);
 
-    const handleIconClick = (toolShortName) => {
-        trackEvent('App Tool Jump', { toolName: toolShortName });
-        const node = toolRefs.current[toolShortName];
-        if (node) {
-            node.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+  const groups = useMemo(
+    () => groupArtifacts(toolArtifacts, tools, app.mappedTools),
+    [toolArtifacts, tools, app.mappedTools],
+  );
 
-    if (!app) return null;
+  const handleIconClick = (toolShortName) => {
+    trackEvent('App Tool Jump', { toolName: toolShortName });
+    setOpenTools(prev => (prev.includes(toolShortName) ? prev : [...prev, toolShortName]));
+    window.setTimeout(() => {
+      document.getElementById(`app-tool-${toolShortName}`)?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }, 50);
+  };
 
-    function renderPropertyValue(key, value) {
-        if (key === 'alternateNames' && Array.isArray(value) && value.length > 0) {
-            return value.join(', ');
-        }
+  const extraFields = Object.keys(app).filter(key => (
+    !APP_HEADER_KEYS.has(key)
+    && key !== 'searchHaystack'
+    && key !== 'mappedArtifactNames'
+    && hasValue(app[key])
+  ));
 
-        if (key === 'mappedTools' && Array.isArray(value)) {
-            return value.map((tool) => (
-                <img
+  if (!app) return null;
+
+  const collapseItems = groups.map(group => ({
+    key: group.toolShortName,
+    label: (
+      <span id={`app-tool-${group.toolShortName}`} className="app-tool-label">
+        <img src={`/images/${group.toolIcon}`} width={28} height={28} alt="" />
+        <span>{group.toolLongName}</span>
+        <span className="app-tool-count">{group.artifacts.length}</span>
+        {group.toolWebsite && (
+          <a
+            href={group.toolWebsite}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={event => event.stopPropagation()}
+          >
+            website
+          </a>
+        )}
+      </span>
+    ),
+    children: group.artifacts.map((artifact, index) => (
+      <ArtifactRow
+        key={`${group.toolShortName}-${index}`}
+        artifact={artifact}
+        appNameKey={group.appNameKey}
+        platformKey={group.platformKey}
+      />
+    )),
+  }));
+
+  return (
+    <div className="app-details">
+      <div className="app-details-header">
+        <img
+          src={app.icon ? `/app-icons/${app.icon}` : '/images/logo192.png'}
+          alt={`${app.appName} App Icon`}
+        />
+        <div className="app-details-summary">
+          <h1>{app.appName}</h1>
+          {app.category && <div className="app-details-category">{app.category}</div>}
+          <div className="app-details-links">
+            <ExternalLink href={app.websiteUrl}>Website</ExternalLink>
+            <ExternalLink href={app.appleStoreUrl}>App Store</ExternalLink>
+            <ExternalLink href={app.googlePlayUrl}>Play Store</ExternalLink>
+          </div>
+          <div className="app-details-tools">
+            {(app.mappedTools || []).map(tool => (
+              <img
                 key={tool.shortName}
                 src={`/images/${tool.icon}`}
                 alt={`${tool.shortName} icon`}
-                title={`${tool.longName} icon`}
-                style={{ width: '50px', height: '50px', marginRight: '10px', cursor: 'pointer' }}
+                title={tool.longName}
                 onClick={() => handleIconClick(tool.shortName)}
-                />
-            ));
-        }
-
-        if (typeof value === 'boolean') {
-            return value ? 'true' : 'false';
-        }
-
-        if (value != null && typeof value === 'object') {
-            return (
-                <pre style={{ margin: 0, whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
-                    {JSON.stringify(value, null, 2)}
-                </pre>
-            );
-        }
-
-        return value;
-    }
-
-    return (
-        <div className='AppDetails'>
-            <div className='appIcon'>
-                <img className='appIcon'
-                    src={app.icon ? `/app-icons/${app.icon}` : '/images/logo192.png'}
-                    alt={`${app.appName} App Icon`}
-                    style={{ maxWidth: '200px', maxHeight: '200px' }}
-                />
-            </div>
-            <h1>{app.appName}</h1>
-            <table className="property-table">
-            <tbody>
-                {Object.keys(app).map(key => (
-                isDisplayableAppKey(key) && ((app[key] && !Array.isArray(app[key])) || (Array.isArray(app[key]) && app[key].length > 0)) && (
-                    <tr key={key} className="property-row">
-                    <td className="property-name">
-                        <strong>{key}:</strong>
-                    </td>
-                    <td className="property-value">
-                        {renderPropertyValue(key, app[key])}
-                    </td>
-                    </tr>
-                )
-                ))}
-            </tbody>
-            </table>
-            <h2>Tool Artifacts</h2>
-            {isLoadingArtifacts && <p>Loading artifacts…</p>}
-            {toolArtifacts && toolArtifacts.map((toolApp, index) => (
-                <div key={index} className="tool-card" ref={setToolRef(toolApp.toolShortName)} >
-
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-start'  }}>
-                        <img src={`/images/${toolApp.toolIcon}`} width={50} height={50}  style={{ marginRight: '10px' }} alt="" />
-                        <h3 style={{ marginRight: '10px' }}>{toolApp.toolLongName} </h3>
-                        (<a href={toolApp.toolWebsite}>{toolApp.toolWebsite}</a>)
-                    </div>
-                    <table className="property-table">
-                        <tbody>
-                            {Object.keys(toolApp).map((key) => (
-                                (key !== 'toolLongName' && key !== 'toolIcon' && key !== 'toolWebsite') && (
-                                    <tr key={key} className="property-row">
-                                        <td className="property-name">
-                                            <strong>{key}:</strong>
-                                        </td>
-                                        <td className="property-value">
-                                            {renderPropertyValue(key, toolApp[key])}
-                                        </td>
-                                    </tr>
-                                )
-                            ))}
-                        </tbody>
-                    </table>
-
-                </div>
+              />
             ))}
-            {!isLoadingArtifacts && toolArtifacts && toolArtifacts.length === 0 && (
-                <p>No mapped tool artifacts.</p>
-            )}
+          </div>
         </div>
-    );
+      </div>
+
+      {extraFields.length > 0 && (
+        <details className="app-details-meta">
+          <summary>More app details</summary>
+          <PropertyTable record={app} hideKeys={[...APP_HEADER_KEYS, 'searchHaystack', 'mappedArtifactNames']} />
+        </details>
+      )}
+
+      <h2>Tool Artifacts</h2>
+      {isLoadingArtifacts && <p>Loading artifacts…</p>}
+      {!isLoadingArtifacts && groups.length === 0 && (
+        <p>No mapped tool artifacts.</p>
+      )}
+      {groups.length > 0 && (
+        <Collapse
+          activeKey={openTools}
+          onChange={keys => setOpenTools(Array.isArray(keys) ? keys : [keys])}
+          items={collapseItems}
+        />
+      )}
+    </div>
+  );
 }
 
 export default AppDetails;

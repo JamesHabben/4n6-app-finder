@@ -62,6 +62,7 @@ Each tool record in the `tools.json` file follows this structure:
 - `artifactListFile`: Filename of the JSON file containing the tool's artifact list. (JSON file placed in `public` folder named `artifacts-[name].json`)
 - `mapFile`: Filename of the JSON map joining artifact names to catalog apps. (JSON file placed in `public/maps/` named `{tool}.json`)
 - `appNameKey`: Key used in the artifact list JSON file to represent the tool's version of the app name.
+- `platformKey`: Key used in the artifact list JSON file for the vendor platform/OS string (currently `Platform` for every tool).
 - `documentationLocation`: Location where the tool's supported apps/artifacts documentation can be found.
 - `extractionNotes`: Any additional notes regarding the extraction of the artifact information from the tool.
 
