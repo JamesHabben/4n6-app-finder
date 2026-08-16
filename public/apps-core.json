@@ -938,6 +938,23 @@
             ]
         },
         {
+            "appName": "BBC News",
+            "icon": "bbc-news.webp",
+            "websiteUrl": "https://www.bbc.com/news",
+            "category": "News",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bbc-world-news-stories/id364147881",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=bbc.mobile.news.ww",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "",
+            "dateAdded": "2026-08-15",
+            "dateUpdated": "",
+            "alternateNames": [
+                "bbc.mobile.news.ww",
+                "uk.co.bbc.news"
+            ]
+        },
+        {
             "appName": "BeReal",
             "icon": "bereal.webp",
             "websiteUrl": "",
@@ -1105,16 +1122,16 @@
         },
         {
             "appName": "Bluesky",
-            "icon": "",
+            "icon": "bluesky.webp",
             "websiteUrl": "https://bsky.app/",
-            "appleStoreUrl": "https://apps.apple.com/us/app/bluesky-social/id6444370199",
-            "isActiveOnAppleStore": "true",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
-            "isActiveOnPlayStore": "true",
             "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bluesky-social/id6444370199",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-15",
             "alternateNames": [
                 "Bluesky Social",
                 "xyz.blueskyweb.app"
@@ -1185,16 +1202,20 @@
         },
         {
             "appName": "Boxer - Workspace ONE",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "boxer-workspace-one.webp",
+            "websiteUrl": "https://www.omnissa.com/products/workspace-one-productivity-apps/",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/boxer-workspace-one/id1087506559",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.boxer.email",
-            "activeOnAppleStore": "",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-16",
+            "alternateNames": [
+                "com.air-watch.boxer",
+                "com.boxer.email"
+            ]
         },
         {
             "appName": "Brave Browser",
@@ -1489,17 +1510,18 @@
         },
         {
             "appName": "Citymapper",
-            "icon": "",
+            "icon": "citymapper.webp",
             "websiteUrl": "https://citymapper.com/",
-            "appleStoreUrl": "",
-            "isActiveOnAppleStore": "true",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.citymapper.app.release",
-            "isActiveOnPlayStore": "true",
             "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/citymapper-all-live-transit/id469463298",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.citymapper.app.release",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-15",
             "alternateNames": [
+                "azdev.citymapper",
                 "com.citymapper.app.release"
             ]
         },
@@ -1697,6 +1719,22 @@
             "category": "Communication",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
+        },
+        {
+            "appName": "Do It Later",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "ASUS ZenUI task app (com.asus.task). Removed from Google Play in January 2024. Distinct from To Do List (SplenDO), Microsoft To Do, and Todoist.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.asus.task"
+            ]
         },
         {
             "appName": "Docomo Mail (SP Mode Mail)",
@@ -2092,16 +2130,20 @@
         },
         {
             "appName": "Fitify: Fitness & Home Workout",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp&hl=en_US",
-            "activeOnAppleStore": "",
+            "icon": "fitify.webp",
+            "websiteUrl": "https://gofitify.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/fitify-home-workout-ai-coach/id1463386686",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fitifyworkouts.bodyweight.workoutapp",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-16",
+            "alternateNames": [
+                "com.fitifyworkouts.bodyweight.workoutapp",
+                "com.fitifyworkouts.bodyweight.workouts"
+            ]
         },
         {
             "appName": "FlashFox Browser",
@@ -2190,6 +2232,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": []
+        },
+        {
+            "appName": "FreeTone",
+            "icon": "freetone.webp",
+            "websiteUrl": "https://www.free-tone.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/free-tone-calling-texting/id338088432",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.textmeinc.freetone",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "TextMe, Inc. US/Canada free calling app (iOS bundle com.gemsoftware.textme; Android com.textmeinc.freetone). Distinct from Text Me: Second Number and TextMe Up.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-08-16",
+            "alternateNames": [
+                "com.textmeinc.freetone",
+                "Free Tone - Calling & Texting"
+            ]
         },
         {
             "appName": "Frim",
@@ -2782,6 +2841,22 @@
             "alternateNames": []
         },
         {
+            "appName": "GTasks",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Third-party Google Tasks client (Android org.dayup.gtask / DayUp; iOS com.togood.gtasks). Both store listings are gone. Distinct from official Google Tasks.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.dayup.gtask"
+            ]
+        },
+        {
             "appName": "HTC Mail",
             "icon": "",
             "websiteUrl": "",
@@ -2912,6 +2987,22 @@
             "alternateNames": []
         },
         {
+            "appName": "HONOR Gallery",
+            "icon": "",
+            "websiteUrl": "https://www.honor.com/",
+            "category": "Photo & Video",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Preinstalled HONOR Gallery / Media Library (com.hihonor.medialibrary). ALEAPP parses gallery.db from that package. Not listed on Apple or Google Play.",
+            "dateAdded": "2026-08-15",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.hihonor.medialibrary"
+            ]
+        },
+        {
             "appName": "Hot or Not",
             "icon": "",
             "websiteUrl": "",
@@ -3011,6 +3102,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
             "alternateNames": []
+        },
+        {
+            "appName": "Inkpad Notepad",
+            "icon": "inkpad-notepad.webp",
+            "websiteUrl": "https://www.inkpad.me/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/inkpad-notepad-notes-to-do/id992332888",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.workpail.inkpad.notepad.notes",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Workpail notes and checklist app (Android com.workpail.inkpad.notepad.notes; iOS com.workpail.InkPad). Distinct from To Do List (SplenDO) and Apple Reminders.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.workpail.inkpad.notepad.notes",
+                "com.workpail.InkPad"
+            ]
         },
         {
             "appName": "IRL",
@@ -3499,6 +3607,20 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.lyft.android&hl=en",
             "notes": "",
             "dateAdded": "2023-10-11",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
+            "appName": "MediaTek Todos",
+            "icon": "",
+            "websiteUrl": "https://www.mediatek.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Preinstalled MediaTek todos (com.mediatek.todos). Not listed on Apple or Google Play. Distinct from To Do List (SplenDO) and Microsoft To Do.",
+            "dateAdded": "2026-08-16",
             "dateUpdated": "",
             "alternateNames": []
         },
@@ -4339,6 +4461,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Onion Browser",
+            "icon": "onion-browser.webp",
+            "websiteUrl": "https://onionbrowser.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/onion-browser/id519296448",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "iOS Tor browser (com.miketigas.OnionBrowser). Distinct from Tor Browser and Ornet Browser.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.miketigas.OnionBrowser"
+            ]
         },
         {
             "appName": "OnStar RemoteLink",
@@ -5240,16 +5378,20 @@
         },
         {
             "appName": "SayHi Chat Meet Dating People",
-            "icon": "",
+            "icon": "sayhi.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.unearby.sayhi",
-            "activeOnAppleStore": "",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/sayhi-chat-meet-new-people/id469609836",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.unearby.sayhi",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-16",
+            "alternateNames": [
+                "com.unearby.SayHi",
+                "com.unearby.sayhi"
+            ]
         },
         {
             "appName": "SberDisk",
@@ -5300,27 +5442,20 @@
         },
         {
             "appName": "Shazam",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "shazam.webp",
+            "websiteUrl": "https://www.shazam.com/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/shazam-find-music-concerts/id284993459",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.shazam.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Shazam Encore was the paid SKU; now one Shazam app (com.shazam.android / com.shazam.Shazam).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
-            "appName": "Shazam: Music Discovery",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
-            "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-16",
+            "alternateNames": [
+                "com.shazam.Shazam",
+                "com.shazam.android"
+            ]
         },
         {
             "appName": "Sideline",
@@ -5620,6 +5755,22 @@
             "alternateNames": []
         },
         {
+            "appName": "Surespot",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Encrypted messenger (com.twofours.surespot). Service shut down in 2022; no longer listed on Apple or Google Play.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.twofours.surespot"
+            ]
+        },
+        {
             "appName": "T-Mobile Digits",
             "icon": "tmobile-digits.webp",
             "websiteUrl": "",
@@ -5640,6 +5791,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Talkray",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Free calls/texts app by TiKL Inc. (com.talkray.client / com.talkray.ios). Removed from Google Play in 2019; not currently listed on Apple.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.talkray.client"
+            ]
         },
         {
             "appName": "TamTam Messenger",
@@ -5762,22 +5929,30 @@
         {
             "appName": "Text Me: Second Number",
             "icon": "text-me-second.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://go-text.me/",
+            "category": "Communication",
             "appleStoreUrl": "https://apps.apple.com/us/app/text-me-phone-call-texting/id514485964",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.textmeinc.textme&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.textmeinc.textme",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Flagship TextMe, Inc. second-number app (Android com.textmeinc.textme, iOS com.textmeinc.textme2). Distinct from TextMe Up and FreeTone.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-16",
+            "alternateNames": [
+                "com.textmeinc.textme"
+            ]
         },
         {
-            "appName": "TextMe (gemsoftware)",
-            "icon": "",
-            "websiteUrl": "",
+            "appName": "TextMe Up",
+            "icon": "textme-up.webp",
+            "websiteUrl": "https://www.textmeup.com/",
+            "category": "Communication",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.textmeinc.textme3",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "TextMe, Inc. multi-number calling/texting app (com.textmeinc.textme3). Distinct from Text Me: Second Number and FreeTone. iOS App Store listing is gone; Android remains on Play. Cellebrite still has historical iOS artifacts.",
+            "dateAdded": "2026-08-16",
             "dateUpdated": "",
             "alternateNames": []
         },
@@ -5911,6 +6086,37 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
+            "alternateNames": []
+        },
+        {
+            "appName": "To Do List",
+            "icon": "to-do-list.webp",
+            "websiteUrl": "https://splendapps.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.splendapps.splendo",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Splend Apps SplenDO (com.splendapps.splendo). Play title is To Do List. Android-only. Distinct from Microsoft To Do, Todoist, Google Tasks, and GTasks.",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.splendapps.splendo",
+                "SplenDO"
+            ]
+        },
+        {
+            "appName": "todo.snap",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "iOS Accounts artifact named todo.snap. No current App Store listing for that bundle. Distinct from To Do List (SplenDO) and from ToDo Snap (com.tientruong.todosnap).",
+            "dateAdded": "2026-08-16",
+            "dateUpdated": "",
             "alternateNames": []
         },
         {
