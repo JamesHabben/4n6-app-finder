@@ -364,11 +364,12 @@
             "appName": "Amazon Prime Video",
             "icon": "amazon-prime-video.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/amazon-prime-video/id545519333",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient&hl=en",
             "notes": "",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-17",
             "alternateNames": []
         },
         {
@@ -1180,14 +1181,20 @@
         },
         {
             "appName": "Booking.com",
-            "icon": "booking-com.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.booking",
-            "notes": "",
+            "icon": "booking-com.webp",
+            "websiteUrl": "https://www.booking.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/booking-com-hotels-travel/id367003839",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.booking",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hotels and travel app (Android com.booking, iOS com.booking.BookingApp).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.booking",
+                "com.booking.BookingApp"
+            ]
         },
         {
             "appName": "Box",
@@ -1302,6 +1309,39 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Calculator Lock",
+            "icon": "calculator-lock.webp",
+            "websiteUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.calculator.lock.hide.photo.video",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Android calculator-disguised vault (com.calculator.lock.hide.photo.video). Distinct from Calculator#, GalleryVault, and Hide it Pro.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.calculator.lock.hide.photo.video",
+                "Calculator - Hide Photo, Video"
+            ]
+        },
+        {
+            "appName": "Claude",
+            "icon": "claude.webp",
+            "websiteUrl": "https://claude.ai/",
+            "category": "AI & Assistants",
+            "appleStoreUrl": "https://apps.apple.com/us/app/claude-by-anthropic/id6473753684",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.anthropic.claude",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Anthropic Claude (com.anthropic.claude). Distinct from ChatGPT. Apple genre is Productivity; catalog uses AI & Assistants to match ChatGPT.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.anthropic.claude"
+            ]
         },
         {
             "appName": "CM Browser",
@@ -2356,17 +2396,6 @@
             "alternateNames": []
         },
         {
-            "appName": "GetTaxi",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Getcontact",
             "icon": "",
             "websiteUrl": "",
@@ -2378,17 +2407,21 @@
             "alternateNames": []
         },
         {
-            "appName": "Gett- Corporate Ground Travel",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gettaxi.android&hl=en_US",
-            "activeOnAppleStore": "",
+            "appName": "Gett Travel",
+            "icon": "gett-travel.webp",
+            "websiteUrl": "https://www.gett.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/gett-book-black-taxis/id449655162",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gettaxi.android",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
-            "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "notes": "Formerly GetTaxi (Android com.gettaxi.android, iOS gettaxi.co.uk). Play title is Gett- Corporate Ground Travel. Distinct from Uber/Lyft.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.gettaxi.android",
+                "gettaxi.co.uk"
+            ]
         },
         {
             "appName": "Glide",
@@ -3014,17 +3047,21 @@
             "alternateNames": []
         },
         {
-            "appName": "Hotels.com: Travel Booking",
+            "appName": "Hotels.com",
             "icon": "hotels-com.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.hcom.android&hl=en",
-            "activeOnAppleStore": "",
+            "websiteUrl": "https://www.hotels.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/hotels-com-book-hotel-deals/id284971959",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.hcom.android",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Expedia Group hotel booking (Android com.hcom.android, iOS com.hotels.HotelsNearMe). Distinct from Booking.com and Expedia.",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.hcom.android",
+                "com.hotels.HotelsNearMe"
+            ]
         },
         {
             "appName": "HouseParty",
@@ -3282,6 +3319,23 @@
             "alternateNames": []
         },
         {
+            "appName": "JusTalk Kids",
+            "icon": "justalk-kids.webp",
+            "websiteUrl": "https://kids.justalk.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/justalk-kids-safe-messenger/id1403744827",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.justalk.kids.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Kids messenger from JusTalk (Android com.justalk.kids.android, iOS com.justalk.kids.ios). Distinct from JusTalk.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.justalk.kids.android",
+                "com.justalk.kids.ios"
+            ]
+        },
+        {
             "appName": "K9-Mail",
             "icon": "k9-mail.webp",
             "websiteUrl": "",
@@ -3506,6 +3560,23 @@
             "dateAdded": "2023-11-02",
             "dateUpdated": "2026-07-13",
             "alternateNames": []
+        },
+        {
+            "appName": "Lidl Plus",
+            "icon": "lidl-plus.webp",
+            "websiteUrl": "https://www.lidl.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/lidl-plus/id1238611143",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lidl.eci.lidlplus",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Lidl loyalty app (iOS com.lidl.eci.lidl.plus, Android com.lidl.eci.lidlplus).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lidl.eci.lidl.plus",
+                "com.lidl.eci.lidlplus"
+            ]
         },
         {
             "appName": "Life360",
@@ -4247,6 +4318,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
             "alternateNames": []
+        },
+        {
+            "appName": "Netflix",
+            "icon": "netflix.webp",
+            "websiteUrl": "https://www.netflix.com/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/netflix/id363590051",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Streaming app (Android com.netflix.mediaclient, iOS com.netflix.Netflix). ALEAPP-only in the current tool dumps.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.netflix.mediaclient",
+                "com.netflix.Netflix"
+            ]
         },
         {
             "appName": "NQ Vault",
@@ -5023,6 +5111,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "rednote",
+            "icon": "rednote.webp",
+            "websiteUrl": "https://www.xiaohongshu.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/rednote/id741292507",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.xingin.xhs",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Xiaohongshu / Little Red Book, published as rednote (Android com.xingin.xhs, iOS com.xingin.discover).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Xiaohongshu",
+                "RED",
+                "com.xingin.xhs",
+                "com.xingin.discover"
+            ]
         },
         {
             "appName": "REMA 1000 Scan Selv",
@@ -5916,6 +6023,23 @@
             "alternateNames": []
         },
         {
+            "appName": "TeraBox",
+            "icon": "terabox.webp",
+            "websiteUrl": "https://www.terabox.com/",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/terabox-1tb-cloud-ai-space/id1509453185",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dubox.drive",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Formerly Dubox (com.dubox.drive). Distinct from Box. Apple genre is Productivity; catalog uses Cloud Storage to match MEGA/Dropbox.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Dubox",
+                "com.dubox.drive"
+            ]
+        },
+        {
             "appName": "Text Free - Free Text + Call",
             "icon": "",
             "websiteUrl": "",
@@ -6238,14 +6362,20 @@
         },
         {
             "appName": "TripIt",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "tripit.webp",
+            "websiteUrl": "https://www.tripit.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tripit-travel-planner/id311035142",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tripit",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Travel itinerary planner (Android com.tripit, iOS com.tripit.tripitmobile). Distinct from Trip.com and TripAdvisor.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.tripit",
+                "com.tripit.tripitmobile"
+            ]
         },
         {
             "appName": "TrueCaller",
@@ -6257,6 +6387,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": []
+        },
+        {
+            "appName": "Truth Social",
+            "icon": "truth-social.webp",
+            "websiteUrl": "https://truthsocial.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/truth-social/id1586018825",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.truthsocial.android.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "T Media Tech (iOS com.tmediatech.truthsocial, Android com.truthsocial.android.app). Distinct from Truth+.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.tmediatech.truthsocial",
+                "com.truthsocial.android.app"
+            ]
         },
         {
             "appName": "Tumblr",
@@ -6380,6 +6527,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-14",
             "alternateNames": []
+        },
+        {
+            "appName": "United Airlines",
+            "icon": "united-airlines.webp",
+            "websiteUrl": "https://www.united.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/united-airlines/id449945214",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.united.mobile.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "United app (iOS com.united.UnitedCustomerFacingIPhone, Android com.united.mobile.android).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.united.UnitedCustomerFacingIPhone",
+                "com.united.mobile.android"
+            ]
         },
         {
             "appName": "US Airways",
@@ -7091,11 +7255,12 @@
             "appName": "YouTube",
             "icon": "youtube.jpg",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/youtube/id544007664",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-17",
             "alternateNames": []
         },
         {
