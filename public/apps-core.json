@@ -101,6 +101,39 @@
             "alternateNames": []
         },
         {
+            "appName": "Aqua Mail",
+            "icon": "aqua-mail.webp",
+            "websiteUrl": "https://www.aqua-mail.com/",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/email-aqua-mail-secure-client/id1633468505",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.kman.AquaMail",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "IMAP/POP3 email client (Android org.kman.AquaMail, iOS org.kman.aquamail). Play title Email Aqua Mail - Fast, Secure; Apple title Email Aqua Mail Secure Client.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.kman.AquaMail",
+                "org.kman.aquamail"
+            ]
+        },
+        {
+            "appName": "ArmorText",
+            "icon": "armortext.webp",
+            "websiteUrl": "https://armortext.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/armortext-secure-messenger/id870900917",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.armortext.messenger",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Enterprise secure messaging (Gryphn Corp; Android/iOS co.armortext.messenger). Apple title ArmorText Secure Messenger.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "co.armortext.messenger"
+            ]
+        },
+        {
             "appName": "ASICS RunKeeper",
             "icon": "asics-runkeeper.webp",
             "websiteUrl": "https://runkeeper.com",
@@ -1328,6 +1361,23 @@
             ]
         },
         {
+            "appName": "Candy Crush Saga",
+            "icon": "candy-crush-saga.webp",
+            "websiteUrl": "https://www.king.com/game/candycrush",
+            "category": "Games",
+            "appleStoreUrl": "https://apps.apple.com/us/app/candy-crush-saga/id553834731",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.king.candycrushsaga",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "King match-3 game (Android com.king.candycrushsaga, iOS com.midasplayer.apps.candycrushsaga). Distinct from Candy Crush Soda/Jelly/Friends Saga.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.king.candycrushsaga",
+                "com.midasplayer.apps.candycrushsaga"
+            ]
+        },
+        {
             "appName": "Claude",
             "icon": "claude.webp",
             "websiteUrl": "https://claude.ai/",
@@ -1577,6 +1627,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Coco",
+            "icon": "coco.webp",
+            "websiteUrl": "https://www.icoco.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/coco-messenger/id449598981",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instanza.cocovoice",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Instanza CoCo Messenger (Android com.instanza.cocovoice, iOS com.instanza.CoCo). Removed from stores; last Play update ~2021. Distinct from Coco -Live Stream / Coconut.tv (com.live.juicy).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.instanza.cocovoice",
+                "com.instanza.CoCo"
+            ]
+        },
+        {
             "appName": "Coffee Meets Bagel",
             "icon": "coffee-meets-bagel.webp",
             "websiteUrl": "",
@@ -1624,6 +1691,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
             "alternateNames": []
+        },
+        {
+            "appName": "Connected2.me",
+            "icon": "connected2-me.webp",
+            "websiteUrl": "https://connected2.me/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/connected2-me/id832556482",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.connected2.ozzy.c2m",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Anonymous chat/social app (C2M; Android com.connected2.ozzy.c2m, iOS com.C2M.Connected2). ArtiFast artifacts are Android-only.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.connected2.ozzy.c2m",
+                "com.C2M.Connected2"
+            ]
         },
         {
             "appName": "Conversations",
@@ -1698,6 +1782,22 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Dailymotion",
+            "icon": "dailymotion.webp",
+            "websiteUrl": "https://www.dailymotion.com/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/dailymotion-social-videos/id336978041",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dailymotion.dailymotion",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Video platform (com.dailymotion.dailymotion on Android and iOS). Apple title Dailymotion: Social Videos. ArtiFast artifacts are Android-only.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dailymotion.dailymotion"
+            ]
         },
         {
             "appName": "DeepSeek",
@@ -1874,6 +1974,24 @@
             "alternateNames": []
         },
         {
+            "appName": "Eagle IM",
+            "icon": "eagle-im.webp",
+            "websiteUrl": "https://www.zangi.com/",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.beint.zangj",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Eagle Messenger by Beint/Secret Phone (Android com.beint.zangj). Store title Eagle Messenger Video,Audio,Calling; last Play update ~2018. Predecessor lineage to Zangi Messenger (com.beint.zangi). ArtiFast labels application Eagle IM; artifacts Android-only. Distinct from EagleMsgSpy surveillance malware.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.beint.zangj",
+                "Eagle Messenger",
+                "Eagle Messenger Video,Audio,Calling"
+            ]
+        },
+        {
             "appName": "Ebay",
             "icon": "ebay.webp",
             "websiteUrl": "",
@@ -1897,14 +2015,21 @@
         },
         {
             "appName": "Ecosia Browser",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "ecosia-browser.webp",
+            "websiteUrl": "https://www.ecosia.org/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ecosia-search-to-plant-trees/id670881887",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ecosia.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Privacy search/browser app (Android com.ecosia.android, iOS com.ecosia.ecosiaapp). Store title Ecosia: Search to plant trees. ArtiFast artifacts are Android-only web activity.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.ecosia.android",
+                "com.ecosia.ecosiaapp",
+                "Ecosia: Search to plant trees"
+            ]
         },
         {
             "appName": "Element",
@@ -1963,25 +2088,112 @@
         },
         {
             "appName": "Endomondo",
-            "icon": "endomondo.jpg",
+            "icon": "endomondo.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/endomondo/id333210180",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.endomondo.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Under Armour GPS fitness tracker (Android com.endomondo.android, iOS com.endomondo.Endomondo). Shut down and removed from stores Dec 31, 2020; UA directed users to Map My Run. Distinct from the unrelated 2024+ Endomondo home-workout apps.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-27",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.endomondo.android",
+                "com.endomondo.Endomondo",
+                "com.endomondo.android.pro",
+                "com.endomondo.EndomondoPro"
+            ]
+        },
+        {
+            "appName": "Etsy",
+            "icon": "etsy.webp",
+            "websiteUrl": "https://www.etsy.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/etsy-shop-from-real-people/id477128284",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.etsy.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Buyer marketplace app (Android com.etsy.android, iOS com.etsy.etsyforios). Store title Etsy: Shop from Real People. ArtiFast artifacts are Android-only. Distinct from Etsy Seller shop-management app.",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.etsy.android",
+                "com.etsy.etsyforios",
+                "Etsy: Shop from Real People"
+            ]
+        },
+        {
+            "appName": "Etsy Seller",
+            "icon": "etsy-seller.webp",
+            "websiteUrl": "https://www.etsy.com/sell",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/etsy-seller-manage-your-shop/id1534619962",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.etsy.butter.sell_on_etsy",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Seller shop-management app (Android com.etsy.butter.sell_on_etsy, iOS com.etsy.sellonetsy.butter). Store title Etsy Seller: Manage Your Shop. Distinct from buyer marketplace app Etsy (com.etsy.android / com.etsy.etsyforios).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.etsy.butter.sell_on_etsy",
+                "com.etsy.sellonetsy.butter",
+                "Etsy Seller: Manage Your Shop"
+            ]
+        },
+        {
+            "appName": "Eventbrite",
+            "icon": "eventbrite.webp",
+            "websiteUrl": "https://www.eventbrite.com/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/eventbrite/id487922291",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.eventbrite.attendee",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Event discovery and ticketing app (Android com.eventbrite.attendee, iOS com.eventbrite.attendee). Play title Eventbrite App. ArtiFast artifacts are Android-only. Distinct from Eventbrite Organizer (com.eventbrite.organizer / com.eventbrite.app1).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.eventbrite.attendee",
+                "Eventbrite App"
+            ]
+        },
+        {
+            "appName": "Eventbrite Organizer",
+            "icon": "eventbrite-organizer.webp",
+            "websiteUrl": "https://www.eventbrite.com/organizer/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/eventbrite-organizer/id368260521",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.eventbrite.organizer",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Event organizer/management app (Android com.eventbrite.organizer, iOS com.eventbrite.app1). Distinct from attendee ticketing app Eventbrite (com.eventbrite.attendee).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.eventbrite.organizer",
+                "com.eventbrite.app1"
+            ]
         },
         {
             "appName": "Evernote",
-            "icon": "evernote.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/evernote-notes-organizer/id281796108",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.evernote&hl=en",
-            "notes": "",
+            "icon": "evernote.webp",
+            "websiteUrl": "https://evernote.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/evernote-ai-notes-notebook/id281796108",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.evernote",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Notes and notebook app (Android com.evernote, iOS com.evernote.iPhone.Evernote). Play title Evernote - Note Organizer; Apple title Evernote: AI Notes & Notebook.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.evernote",
+                "com.evernote.iPhone.Evernote",
+                "Evernote - Note Organizer",
+                "Evernote - Notes Organizer",
+                "Evernote: AI Notes & Notebook"
+            ]
         },
         {
             "appName": "Exodus: Crypto Bitcoin Wallet",
@@ -2032,13 +2244,35 @@
         {
             "appName": "Facebook",
             "icon": "facebook.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.facebook.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/facebook/id284882215",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.katana",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Main Facebook app (Android com.facebook.katana, iOS com.facebook.Facebook). ArtiFast application Facebook artifacts are Android-only. Distinct from Facebook Lite and Facebook Messenger.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-17",
+            "alternateNames": [
+                "com.facebook.katana",
+                "com.facebook.Facebook"
+            ]
+        },
+        {
+            "appName": "Facebook Lite",
+            "icon": "facebook-lite.webp",
+            "websiteUrl": "https://www.facebook.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.lite",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Lightweight Facebook client (Android com.facebook.lite only; no iOS app). ArtiFast artifacts are Android-only. Distinct from main Facebook app (com.facebook.katana / com.facebook.Facebook).",
+            "dateAdded": "2026-08-17",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.facebook.lite"
+            ]
         },
         {
             "appName": "FairEmail",
@@ -3981,18 +4215,22 @@
         {
             "appName": "Meta Messenger (Facebook)",
             "icon": "meta-messenger.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.messenger.com/",
             "appleStoreUrl": "https://apps.apple.com/us/app/messenger/id454638411",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.facebook.orca&hl=en",
-            "notes": "",
+            "notes": "Meta messaging app (Android com.facebook.orca, iOS com.facebook.Messenger). Store title Messenger. ArtiFast application key Facebook Messenger.",
             "category": "Communication",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-17",
             "alternateNames": [
                 "FacebookMessenger",
                 "Meta Messenger (Facebook)",
                 "com.facebook.Messenger",
-                "com.facebook.orca"
+                "com.facebook.orca",
+                "Facebook Messenger",
+                "Messenger"
             ]
         },
         {
