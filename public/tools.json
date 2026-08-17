@@ -5,7 +5,7 @@
         "website": "https://oxygenforensics.com/en/products/oxygen-forensic-detective/",
         "toolVersion": "16.0.0.114",
         "toolReleaseDate": "2023-09-01",
-        "icon": "tool-logo-oxygen.png",
+        "icon": "tool-logo-oxygen.jpg",
         "artifactListFile": "artifacts-oxygen-20231102.json",
         "mapFile": "maps/oxygen.json",
         "appNameKey": "Application",
@@ -33,7 +33,7 @@
         "website": "https://www.magnetforensics.com/products/magnet-axiom/",
         "toolVersion": "7.5",
         "toolReleaseDate": "2023-09-06",
-        "icon": "tool-logo-magnet.png",
+        "icon": "tool-logo-magnet.jpg",
         "artifactListFile": "artifacts-magnet-20231102.json",
         "mapFile": "maps/magnet.json",
         "appNameKey": "Artifact",
@@ -82,5 +82,19 @@
         "platformKey": "Platform",
         "documentationLocation": "website at https://www.hindsightforensic.com/",
         "extractionNotes": ""
+    },
+    {
+        "toolShortName": "ArtiFast",
+        "toolLongName": "ArtiFast (Forensafe)",
+        "website": "https://www.forensafe.com/",
+        "toolVersion": "8.3.0",
+        "toolReleaseDate": "2026-04-01",
+        "icon": "tool-logo-artifast.jpg",
+        "artifactListFile": "artifacts-artifast.json",
+        "mapFile": "maps/artifast.json",
+        "appNameKey": "application",
+        "platformKey": "Platform",
+        "documentationLocation": "https://www.forensafe.com/artifact-reference.html",
+        "extractionNotes": "Fetched from data/artifacts_info.json via capture-artifast-artifacts-list.py. iOS and Android only. appNameKey is vendor application (product grouping), not artifact_name."
     }
 ]
