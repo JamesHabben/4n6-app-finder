@@ -24,6 +24,13 @@ export function mappedAppsFor(mappedValue) {
   return [];
 }
 
+export function isMappedValue(mappedValue) {
+  if (mappedValue === false) {
+    return true;
+  }
+  return mappedAppsFor(mappedValue).length > 0;
+}
+
 async function fetchJson(path) {
   const response = await fetch(path);
 

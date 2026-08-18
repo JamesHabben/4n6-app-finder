@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Progress } from 'antd';
 import { useQueries } from '@tanstack/react-query';
-import { mappedAppsFor } from 'services/DataContext';
+import { isMappedValue } from 'services/DataContext';
 
 async function fetchJson(path) {
   const response = await fetch(path);
@@ -27,7 +27,7 @@ const ProgressBarCard = ({ tools }) => {
         const artifactList = artifactQueries[index]?.data;
         const totalArtifacts = artifactList?.length;
         const mappedArtifacts = artifactList
-          ? artifactList.filter(artifact => mappedAppsFor(tool.artifactMap?.[artifact[tool.appNameKey]]).length > 0).length
+          ? artifactList.filter(artifact => isMappedValue(tool.artifactMap?.[artifact[tool.appNameKey]])).length
           : tool.mappedNameCount;
         const percentMapped = totalArtifacts
           ? ((mappedArtifacts / totalArtifacts) * 100).toFixed(2)

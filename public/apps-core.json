@@ -23,10 +23,16 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.onepassword.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Password manager by AgileBits (Android com.onepassword.android, iOS com.1password.1password). Store title 1Password: Password Manager. Predecessor iOS app 1Password 7 is com.agilebits.onepassword-ios (id568903335).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-13",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.onepassword.android",
+                "com.1password.1password",
+                "com.agilebits.onepassword-ios",
+                "1Password: Password Manager",
+                "1Password 7 • Password Manager"
+            ]
         },
         {
             "appName": "1Weather Forecasts & Radar",
@@ -164,15 +170,21 @@
         {
             "appName": "AVG AntiVirus & Security",
             "icon": "avg-antivirus-security.webp",
-            "websiteUrl": "https://www.avg.com/en-us/antivirus-for-android",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.avg.com/",
+            "appleStoreUrl": "https://apps.apple.com/us/app/avg-mobile-security/id1473934066",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.antivirus",
             "category": "Security & Privacy",
-            "notes": "",
+            "notes": "AVG antivirus/security (Android com.antivirus, iOS com.avg.ios.security). Play title AVG AntiVirus & Security; Apple title AVG Mobile Security. ArtiFast application key AVG; artifacts Android-only. LEAPP modules target the Android vault (com.antivirus).",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": [],
-            "activeOnAppleStore": "false",
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.antivirus",
+                "com.avg.ios.security",
+                "AVG",
+                "AVG Mobile Security",
+                "AntiVirus Security (AVG)"
+            ],
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
         },
         {
@@ -236,13 +248,22 @@
         {
             "appName": "Adobe Acrobat Reader",
             "icon": "adobe-acrobat-reader.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.adobe.com/acrobat.html",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.adobe.reader&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "PDF reader/editor (Android com.adobe.reader, iOS com.adobe.Adobe-Reader). Play title Adobe Acrobat Reader: Edit PDF; Apple title Acrobat Reader: PDF Editor. ArtiFast application key Adobe Acrobat; artifacts iOS-only. Distinct from Adobe Scan and Adobe Acrobat Sign.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.adobe.reader",
+                "com.adobe.Adobe-Reader",
+                "Adobe Acrobat",
+                "Acrobat Reader: PDF Editor",
+                "Adobe Acrobat Reader: Edit PDF"
+            ]
         },
         {
             "appName": "Aeroflot",
@@ -923,13 +944,23 @@
         {
             "appName": "Baidu Browser (\u767e\u5ea6)",
             "icon": "baidu.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.baidu.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/%E7%99%BE%E5%BA%A6%E6%B5%8F%E8%A7%88%E5%99%A8/id789634484",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.baidu.searchbox",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Baidu browser family (Android com.baidu.searchbox / com.baidu.browser.inter, iOS com.baidu.BDPhoneBrowser). Play listings removed; historical URL kept for searchbox. iOS title \u767e\u5ea6\u6d4f\u89c8\u5668. Oxygen also covers DU Browser / Browser HD / Mini. Distinct from Baidu Maps and from the main Baidu app (com.baidu.BaiduMobile). ArtiFast artifacts are Android-only.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.baidu.searchbox",
+                "com.baidu.browser.inter",
+                "com.baidu.BDPhoneBrowser",
+                "Baidu Browser",
+                "DU browser",
+                "\u767e\u5ea6\u6d4f\u89c8\u5668"
+            ]
         },
         {
             "appName": "Baidu Maps (\u767e\u5ea6\u5730\u56fe)",
@@ -1023,6 +1054,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
             "alternateNames": []
+        },
+        {
+            "appName": "BeeTalk",
+            "icon": "beetalk.webp",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/beetalk-video-the-moments/id615267996",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.beetalk",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Delisted nearby-friends messenger (Android com.beetalk, iOS com.garena.BeeTalk). Publisher BeeTalk Private Ltd / BT Mobile; Apple title BeeTalk - Video the Moments. Last Play version 3.0.12 (removed ~May 2019). Cellebrite App Name BeeTalk (legacy Android + iOS). Distinct from Bee Talk Lite (com.beeflirt.beetalk) and BeeTalk LIVE.",
+            "dateAdded": "2026-08-18",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.beetalk",
+                "com.garena.BeeTalk",
+                "Beetalk",
+                "BeeTalk - Video the Moments"
+            ]
         },
         {
             "appName": "BiP",
@@ -1260,13 +1310,22 @@
         {
             "appName": "Brave Browser",
             "icon": "brave-browser.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://brave.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/brave-browser-search-engine/id1052879175",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.brave.browser&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Privacy browser (Android com.brave.browser, iOS com.brave.ios.browser). Play title Brave Private Web Browser, VPN; Apple title Brave Browser & Search Engine. ArtiFast application key Brave.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.brave.browser",
+                "com.brave.ios.browser",
+                "Brave",
+                "Brave Private Web Browser, VPN",
+                "Brave Browser & Search Engine"
+            ]
         },
         {
             "appName": "Briar",
@@ -1333,6 +1392,24 @@
             "category": "Communication"
         },
         {
+            "appName": "BuzzFeed",
+            "icon": "buzzfeed.webp",
+            "websiteUrl": "https://www.buzzfeed.com/",
+            "category": "News",
+            "appleStoreUrl": "https://apps.apple.com/us/app/buzzfeed-quiz-trivia-news/id352969997",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.buzzfeed.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "News/quiz app (Android com.buzzfeed.android, iOS com.buzzfeed.buzzfeed). Play title BuzzFeed - Quizzes & News; Apple title BuzzFeed - Quiz, Trivia & News. ArtiFast application key Buzzfeed; artifacts Android-only. Distinct from Tasty and BuzzFeed Quiz Party.",
+            "dateAdded": "2026-08-18",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.buzzfeed.android",
+                "com.buzzfeed.buzzfeed",
+                "Buzzfeed"
+            ]
+        },
+        {
             "appName": "C-Mail",
             "icon": "",
             "websiteUrl": "",
@@ -1342,6 +1419,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Cake Browser",
+            "icon": "cake-browser.webp",
+            "websiteUrl": "",
+            "category": "Browser",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cake.browser",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Privacy/VPN web browser by Cake Technologies (Android com.cake.browser). Store title Cake Web Browser. Removed from Google Play; last updates ~2020. ArtiFast artifacts are Android-only. Distinct from Cake Live Stream (com.tangerine.live.cake).",
+            "dateAdded": "2026-08-18",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.cake.browser",
+                "Cake Web Browser"
+            ]
         },
         {
             "appName": "Calculator Lock",
@@ -2326,14 +2420,24 @@
         },
         {
             "appName": "Find My (Friends)",
-            "icon": "find-my.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "find-my.webp",
+            "websiteUrl": "https://www.apple.com/icloud/find-my/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/find-my/id1514844621",
             "googlePlayUrl": "",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Apple Find My (com.apple.findmy). Merged Find My Friends (com.apple.mobileme.fmf1) and Find My iPhone (com.apple.mobileme.fmip1). iOS/macOS only; not on Google Play. ArtiFast application key Find My.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.apple.findmy",
+                "com.apple.mobileme.fmf1",
+                "com.apple.mobileme.fmip1",
+                "Find My",
+                "Find My Friends",
+                "Find My iPhone"
+            ]
         },
         {
             "appName": "FireChat",
@@ -2585,10 +2689,15 @@
             "websiteUrl": "https://connect.garmin.com/",
             "appleStoreUrl": "https://apps.apple.com/us/app/garmin-connect/id583446403",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile",
-            "notes": "",
+            "notes": "Garmin wearable companion (Android com.garmin.android.apps.connectmobile, iOS com.garmin.connect.mobile). Store title Garmin Connect™. ArtiFast application key Garmin.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": [],
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.garmin.android.apps.connectmobile",
+                "com.garmin.connect.mobile",
+                "Garmin",
+                "Garmin Connect™"
+            ],
             "category": "Health & Fitness",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
@@ -2655,6 +2764,23 @@
             "alternateNames": [
                 "com.gettaxi.android",
                 "gettaxi.co.uk"
+            ]
+        },
+        {
+            "appName": "GETTR",
+            "icon": "gettr.webp",
+            "websiteUrl": "https://gettr.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/gettr-a-marketplace-of-ideas/id1571619156",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gettr.gettr",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Social network by GETTR USA, Inc. Same package com.gettr.gettr on Android and iOS. Apple title is GETTR - A Marketplace of Ideas. Distinct from Gett Travel and Getcontact. GTok is an in-app video feature, not a separate app.",
+            "dateAdded": "2026-08-18",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.gettr.gettr",
+                "GETTR - A Marketplace of Ideas"
             ]
         },
         {
@@ -3218,15 +3344,21 @@
             "alternateNames": []
         },
         {
-            "appName": "Hike News & Content",
-            "icon": "hike-news.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "appName": "Hike Messenger",
+            "icon": "hike-messenger.webp",
+            "websiteUrl": "https://hike.in/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/hike-messenger/id568038211",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bsb.hike&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Original Hike Messenger (Android/iOS com.bsb.hike, Hike Private Limited). Later Play title Hike News & Content (v5.15.x); messaging shut Jan 2021, company closed Sep 2025. Cellebrite hike messenger (legacy Android) and Hike messenger (iOS). Distinct from 2025 Hike Messenger Ltd listings (com.tring.messenger / com.hikeapp.messenger).",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.bsb.hike",
+                "Hike News & Content"
+            ]
         },
         {
             "appName": "HipChat",
@@ -3416,14 +3548,23 @@
         {
             "appName": "Imo Messenger",
             "icon": "imo-messenger.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://imo.im/",
+            "category": "Communication",
             "appleStoreUrl": "https://apps.apple.com/us/app/imo-video-calls-and-chat-hd/id1400579543",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.imo.android.imous&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "imo video/chat (Android com.imo.android.imous / com.imo.android.imoim, iOS co.babypenguin.imo). Store title imo video calls and chat HD. ArtiFast application key IMO.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-18",
             "alternateNames": [
-                "imoHD_Chat"
+                "imoHD_Chat",
+                "com.imo.android.imous",
+                "com.imo.android.imoim",
+                "co.babypenguin.imo",
+                "imoimiphone",
+                "IMO",
+                "imo video calls and chat HD"
             ]
         },
         {
@@ -3700,19 +3841,18 @@
         {
             "appName": "Kik Messenger",
             "icon": "kik.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.kik.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/kik-messaging-chat-app/id357218860",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=kik.android&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Username messenger (Android kik.android, iOS com.kik.chat). Play/Apple titles Kik — Messaging & Chat App / Kik Messaging & Chat App; publisher Ai Medialab Inc. ArtiFast application key Kik (Android + iOS). Distinct from Blue Kik (Cellebrite) and Kika Keyboard.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-18",
             "alternateNames": [
-                "kikMessages",
-                "kikBplistmeta",
-                "kikPendingUploads",
-                "kikUsersgroups",
-                "kikGroupadmins",
-                "kikLocaladmin"
+                "kik.android",
+                "com.kik.chat"
             ]
         },
         {
@@ -3729,15 +3869,18 @@
         {
             "appName": "Kiwi Browser",
             "icon": "kiwi-browser.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://kiwibrowser.com/",
+            "category": "Browser",
             "appleStoreUrl": "",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kiwibrowser.browser",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "true",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Chromium Android browser with Chrome extension support (com.kiwibrowser.browser). Play title Kiwi Browser - Fast & Quiet. Removed from Play and discontinued ~Jan 2025. ArtiFast application key Kiwi (Android-only). Distinct from Kiwi.com travel and from iOS Kiwi - Browser, Document, VPN (timon.kiwi.go).",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.kiwibrowser.browser"
+            ]
         },
         {
             "appName": "Kleinanzeigen",
@@ -4204,13 +4347,22 @@
         {
             "appName": "Mercury Browser",
             "icon": "mercury-browser.webp",
-            "websiteUrl": "",
+            "websiteUrl": "http://mercury-browser.com/",
+            "category": "Browser",
             "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mercurybrowserjv&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ilegendsoft.mercury",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Discontinued iLegendSoft browser. Android com.ilegendsoft.mercury (last Play ~3.2.3). iOS com.ilegendsoft.MBrowser / com.ilegendsoft.MBrowserPro and older com.bsn.mercury / com.bsn.mercurypro. Removed from App Store ~2017. Distinct from the desktop Firefox-fork Mercury Browser. Previous Play URL com.mercurybrowserjv was not this app.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-27",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.ilegendsoft.mercury",
+                "com.ilegendsoft.MBrowser",
+                "com.ilegendsoft.MBrowserPro",
+                "com.bsn.mercury",
+                "com.bsn.mercurypro"
+            ]
         },
         {
             "appName": "Meta Messenger (Facebook)",
@@ -5200,12 +5352,20 @@
             "appName": "Private Photo Vault (Enchanted Cloud)",
             "icon": "private-photo-vault-enchanted.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enchantedcloud.photovault&hl=en",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Enchanted Cloud / Legendary Software Labs vault (com.enchantedcloud.photovault on Android and iOS). Play title Private Photo Vault; Apple title Private Photo Vault - Pic Safe. ArtiFast application key Android Private Photo Vault. Distinct from Private Photo Vault (Keepsafe). Pro package com.enchantedcloud.photovaultpro is delisted on Play.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.enchantedcloud.photovault",
+                "com.enchantedcloud.photovaultpro",
+                "Private Photo Vault",
+                "Private Photo Vault - Pic Safe"
+            ]
         },
         {
             "appName": "Private Photo Vault (Keepsafe)",
@@ -5272,14 +5432,22 @@
         },
         {
             "appName": "Puffin Web Browser",
-            "icon": "puffin-browser.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "puffin-browser.webp",
+            "websiteUrl": "https://www.puffin.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/puffin-cloud-browser/id472937654",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cloudmosa.puffinFree",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "CloudMosa cloud browser (Android com.cloudmosa.puffinFree, iOS com.cloudmosa.PuffinFree). Play title Puffin Web Browser; Apple title Puffin Cloud Browser. ArtiFast application key Puffin Browser (Android-only). Distinct from Puffin Browser Pro (iOS com.cloudmosa.puffin) and Puffin Incognito Browser (com.cloudmosa.puffinIncognito). MOBILEdit also maps Puffin Academy, Pro, Cloud Browser, for Facebook, and TV Browser here.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.cloudmosa.puffinFree",
+                "com.cloudmosa.PuffinFree",
+                "Puffin Cloud Browser",
+                "Puffin Browser"
+            ]
         },
         {
             "appName": "PureVPN",
@@ -6045,6 +6213,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Spotify",
+            "icon": "spotify.webp",
+            "websiteUrl": "https://www.spotify.com/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/spotify-music-and-podcasts/id324684580",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.spotify.music",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Music and podcasts (Android com.spotify.music, iOS com.spotify.client). Store title Spotify: Music and Podcasts. ArtiFast application key Spotify (Android + iOS). Distinct from Spotify Kids and Spotify for Artists.",
+            "dateAdded": "2026-08-18",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.spotify.music",
+                "com.spotify.client"
+            ]
+        },
+        {
             "appName": "Springpad",
             "icon": "",
             "websiteUrl": "",
@@ -6113,6 +6298,23 @@
             "dateUpdated": "",
             "alternateNames": [
                 "com.twofours.surespot"
+            ]
+        },
+        {
+            "appName": "Sygic GPS Navigation & Maps",
+            "icon": "sygic-gps-navigation.webp",
+            "websiteUrl": "https://www.sygic.com/gps-navigation",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/sygic-gps-navigation-maps/id585193266",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sygic.aura",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Offline GPS by Sygic a. s. Android com.sygic.aura; iOS com.sygic.world. Distinct from Sygic Truck & RV (com.sygic.truck) and Sygic Travel.",
+            "dateAdded": "2026-08-18",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.sygic.aura",
+                "com.sygic.world"
             ]
         },
         {
@@ -6279,14 +6481,24 @@
         },
         {
             "appName": "Text Free - Free Text + Call",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "text-free.webp",
+            "websiteUrl": "https://textfree.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/text-free-second-phone-number/id399355755",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pinger.textfree",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Pinger TextFree second-number app (Android com.pinger.textfree and legacy com.pinger.ppa; iOS com.pinger.textfreeWithVoice and older com.pinger.textfreeVoiceWithVoicemail). Current Play/Apple title Text Free: Second Phone Number. Sibling Play listing Text Free: Calling & Texting (com.pinger.textfree.call) is also mapped here via Oxygen/MOBILEdit. Distinct from Sideline, Pinger: Call Plus Texting App (com.pinger.pingerphone2), Text Me: Second Number, TextNow, and textPlus.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.pinger.textfree",
+                "com.pinger.textfreeWithVoice",
+                "com.pinger.textfree.call",
+                "com.pinger.ppa",
+                "com.pinger.textfreeVoiceWithVoicemail",
+                "TextFree"
+            ]
         },
         {
             "appName": "Text Me: Second Number",
@@ -6297,11 +6509,12 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.textmeinc.textme",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Flagship TextMe, Inc. second-number app (Android com.textmeinc.textme, iOS com.textmeinc.textme2). Distinct from TextMe Up and FreeTone.",
+            "notes": "Flagship TextMe, Inc. second-number app (Android com.textmeinc.textme, iOS com.textmeinc.textme2). Store titles Text Me: Second Phone Number / Text Me - Phone Call + Texting. ArtiFast application key Text Me (Android TextMe * + iOS Text Me *; path TextMe2.sqlite). Distinct from TextMe Up, FreeTone, TextNow, textPlus, and Pinger Text Free.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-16",
+            "dateUpdated": "2026-08-18",
             "alternateNames": [
-                "com.textmeinc.textme"
+                "com.textmeinc.textme",
+                "com.textmeinc.textme2"
             ]
         },
         {
@@ -7114,15 +7327,18 @@
         {
             "appName": "WhatsApp Messenger",
             "icon": "whatsapp.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.whatsapp.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/whatsapp-messenger/id310633997",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.whatsapp",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Consumer WhatsApp (Android com.whatsapp, iOS net.whatsapp.WhatsApp). Store title WhatsApp Messenger. ArtiFast application key WhatsApp (Android + iOS; also includes WhatsApp Business artifact names). Distinct from WhatsApp Business (com.whatsapp.w4b / net.whatsapp.WhatsAppSMB), currently mapped to this listing in Cellebrite, MOBILEdit, and Oxygen.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-18",
             "alternateNames": [
-                "Whatsapp Contacts",
-                "Whatsapp Messages",
+                "com.whatsapp",
+                "net.whatsapp.WhatsApp",
                 "Whatsapp"
             ]
         },
@@ -7191,13 +7407,19 @@
         {
             "appName": "Wire",
             "icon": "wire.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://wire.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/wire-secure-messenger/id930944768",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.wire",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Encrypted messenger by Wire Swiss (Android com.wire, iOS com.wearezeta.zclient.ios). Play title Wire - Secure Messenger; Apple title Wire • Secure Messenger. ArtiFast application key Wire - Secure Messenger (Android + iOS). Cellebrite App Name Wire Messenger (iOS). Distinct from WireGuard.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-18",
+            "alternateNames": [
+                "com.wire",
+                "com.wearezeta.zclient.ios"
+            ]
         },
         {
             "appName": "Wish",

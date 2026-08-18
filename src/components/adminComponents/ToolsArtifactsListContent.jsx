@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import { Button, Typography } from 'antd';
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
 
-import { DataContext, mappedAppsFor, useToolArtifacts } from 'services/DataContext';
+import { DataContext, isMappedValue, mappedAppsFor, useToolArtifacts } from 'services/DataContext';
 
 function ToolsArtifactsListContent() {
     const { tools } = useContext(DataContext);
@@ -95,7 +95,7 @@ function ToolsArtifactsListContent() {
 
     const isUnmapped = (artifact, tool = selectedTool) => {
       const appName = getAppByNameKey(artifact, tool);
-      return mappedAppsFor(tool?.artifactMap?.[appName]).length === 0;
+      return !isMappedValue(tool?.artifactMap?.[appName]);
     };
 
     const getMappedCount = (list, tool) => {
@@ -130,7 +130,8 @@ function ToolsArtifactsListContent() {
       const unmapped = isUnmapped(artifact);
       const expanded = isExpanded(artifact);
       const name = getAppByNameKey(artifact);
-      const mappedApp = mappedAppsFor(selectedTool?.artifactMap?.[name]).join(', ');
+      const mappedValue = selectedTool?.artifactMap?.[name];
+      const mappedApp = mappedValue === false ? 'false' : mappedAppsFor(mappedValue).join(', ');
 
       return (
         <CellMeasurer

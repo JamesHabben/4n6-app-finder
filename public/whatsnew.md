@@ -1,3 +1,6 @@
+## 2026-08-17
+- Added Artifast tool
+- One-hit Wonders charts to show apps being parsed by only 1 tool
 ## 2026-07-06
 - Moved hosting and updated core to smoother CI/CD
 - Updated to Vite
