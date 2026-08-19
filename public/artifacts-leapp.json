@@ -101,6 +101,156 @@
         "last_update_date": "2023-03-24"
     },
     {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Account",
+        "description": "Parses the signed in Adobe account recorded by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from the app's shared preferences. FoundationMigrated.xml holds the account identity as plain text values. AccessTokenExpiration is a Unix millisecond value stored as a string. Account type, service level and the entitlement and subscription flags from the services account preferences are reported as stored. An entitlement flag records what the account was provisioned for and does not establish that the service was used. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/shared_prefs/FoundationMigrated.xml",
+            "*/com.adobe.reader/shared_prefs/Foundation.xml",
+            "*/com.adobe.reader/shared_prefs/com.adobe.reader.account_type.xml",
+            "*/com.adobe.reader/shared_prefs/com.adobe.libs.services.auth.SVServicesAccount.cloud.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_ai_conversations",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - AI Assistant Conversations",
+        "description": "Parses the AI Assistant conversation records held by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from DCMConversation in DCMQnAConversationDb, with the linked documents resolved through DCMConversationAssetCrossRef into DCMAsset. The three timestamp columns are Unix milliseconds, which their own column names state and the decoded values agree with. The conversation name is the label the app stored for the conversation. This database records conversation identity, the documents attached to a conversation and asset change events; every event row in the tested sample was of type ASSET_CHANGE_EVENT and none carried question or answer text, so no message content is reported here and the event count column counts those change events. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/DCMQnAConversationDb*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_comments",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Comment Notifications",
+        "description": "Parses the commenting notifications recorded by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from ARBellNotificationEntity. Each row carries a JSON payload that parsed on every row of the tested sample. timeStamp is Unix milliseconds. The payload declares comment and comment_html members, and both were empty strings on every row of the tested sample, so the Comment Text column is blank there: these rows record that a comment was added or deleted, not the text of the comment. The annotation type comes from the payload's selector.subtype member and held highlight, underline and shape values. Type, sub type and read state are reported as stored. The payload references the document rendition as an https URL only, and no reproducible link to cached bytes for these documents was found in the extraction, so no media is checked in for this artifact. Author Name and Author User ID are the values the notification payload carries for the account that acted. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/Notification.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_document_cloud",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Document Cloud",
+        "description": "Parses the Document Cloud file, transfer, open document and share in progress records held by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Four tables from three databases are reported and the Record Type column names the table each row came from: ARFileInfo and ARCloudTransfer from ARDatabase, OpenDocTable from the multi document database and ARShareInProgressFileInfo from the share database. The transfer dates are Unix milliseconds. Transfer type is stored as a literal name; transfer status, document source and the upload and comment status integers have no mapping recoverable from the extraction and are reported as stored. Each database is read with the write ahead log applied and again with immutable=1, and rows whose primary key appears only in the pre checkpoint read are reported with Record Source naming that read; the open document and share in progress tables were empty in the committed read of the tested sample and their rows came from that comparison. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/ARDatabase*",
+            "*/com.adobe.reader/databases/com.adobe.reader.multidoc.ARMultiDocDatabase*",
+            "*/com.adobe.reader/databases/com.adobe.reader.share.ARShareDatabase*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_thumbnails",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Document Thumbnails",
+        "description": "Parses the cached page thumbnails held by the Acrobat Reader Android app and checks the images into the report.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from ARThumbnailTable. The thumbnail column holds a base64 encoded image, PNG on every decoded row of the tested sample, and the decoded bytes are checked in so the image renders in the report. The image is the thumbnail the app cached and is not necessarily the current content of the file. uniqueID is the key the app stores: it was a file system path on most rows of the tested sample and a cloud asset identifier on the rest, and it is reported as stored. Where that key matches a path in ARRecentFileEntity the open count and last open time from that row are reported alongside, which is a join on a recorded key rather than a correlation. Rows whose key matches no such path are still reported, with those columns empty. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/com.adobe.reader.filebrowser.ARThumbnailDatabase*",
+            "*/com.adobe.reader/databases/com.adobe.reader.ARRecentDatabase*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_documents",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Documents",
+        "description": "Parses the document list and per document view state recorded by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from ARRecentsFileTable, joined to ARRecentsSharedTable on the row id the schema declares as the foreign key. last_access is an ISO 8601 string and appeared in three spellings in the tested sample, with and without a trailing Z and with or without a fractional second, so it is parsed tolerantly. The shared dates are also ISO 8601 and carried one, two or three fractional digits. doc_source, viewMode and cloudSource are integers with no mapping recoverable from the extraction, so they are reported as stored; doc_source held 0 and 8 and viewMode held 0 and 1 in the tested sample. Participant Count is the length of the mParticipantList JSON array, which was an empty array on every shared row of the tested sample, so no participant identities were available from this table. The pre checkpoint read is compared against the committed read and rows found only in the former are reported with Record Source naming that read. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/com.adobe.reader.filebrowser.ARRecentsFileManager.ARRecentsFileDatabase*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_recent_files",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Recent Files",
+        "description": "Parses the per path open history recorded by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from ARRecentFileEntity in com.adobe.reader.ARRecentDatabase, which keys one row per file path. lastOpenTime is Unix milliseconds: read as seconds the column lands beyond the year 57000, and read as milliseconds it lands in the same 2024 to 2026 range as the other stores in the sample. fileOpenCount is the counter the app keeps for that path and is reported as stored. The database is read twice, once with the write ahead log applied and once with immutable=1 to ignore it, and rows whose primary key appears only in the pre checkpoint read are reported with Record Source naming that read. A row missing from the committed read may have been removed by the app or rewritten; the reason is not recorded. A path listed here does not establish that the file is still present on the device. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/com.adobe.reader.ARRecentDatabase*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_shared_documents",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Shared Documents",
+        "description": "Parses the shared document, review and send and track records held by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from the app's services database, named database. Five tables are reported and the Record Type column names the table each row came from. modifiedDateAtDownload and updatedModifiedDate are Unix milliseconds and both use -1 as an absent value, which is reported as an empty cell rather than converted; 21 and 2 of the 48 rows of that table held -1 in the tested sample. lastViewedPageNumber uses -1 the same way. Review type, asset type and the favourite, shared, rooted and progress state flags are reported as stored. The parcel records hold serialized JSON members for the resource, the parcel and the privileges, which are not expanded here. Participant Count is the length of the serialized participants member, which was NULL on every parcel row of the tested sample, so that column is empty there. The parcel table is also read with immutable=1 and rows whose primary key appears only in that pre checkpoint read are reported with Record Source naming it. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/database*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "adobeReader",
+        "artifactKey": "adobe_reader_tool_usage",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Adobe Acrobat Reader - Tool Usage",
+        "description": "Parses the in app tool invocations recorded by the Acrobat Reader Android app.",
+        "category": "Adobe Acrobat Reader",
+        "notes": "Read from tool_usage in nba_database. timestampInMs is Unix milliseconds. toolId and eventType are stored as literal names rather than codes and are reported as stored. docId is populated on some rows only and is the identifier the app associated with the invocation. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.adobe.reader/databases/nba_database*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
         "filename": "airGuard",
         "artifactKey": "get_airGuard_scans",
         "sourceTool": "ALEAPP",
@@ -1031,6 +1181,202 @@
         ],
         "creation_date": "2021-06-23",
         "last_update_date": "2021-06-23"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_account_profile",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Account Profile",
+        "description": "Parses the account profile cached by the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the records table of account_data_cache, a normalised GraphQL cache holding the personalProfile record and, on the app versions that write them, the genius and wallet records. Gender and genius level are reported as stored. dateOfBirth is passed through as stored because it was null on both tested profiles, so no format could be established for it. The travelDocuments and coTravellers members are lists and their counts are reported; both were empty on the tested profiles. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/databases/account_data_cache*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_app_state",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - App State",
+        "description": "Parses install, session and attribution state of the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from com.booking_preferences.xml and startup_data.xml. first_use and the deep link attribution expiry are Unix milliseconds. The used key is a counter rather than a time and is reported as stored. The client IP address and client user agent are the values the app recorded for itself, so they describe what the service was told and are reported as stored. PRICE_ALERT_SCREEN_LAST_SEEN is an ISO 8601 string and held the same value on all four tested samples, which is a date preceding the app versions they carry, so it is reported as stored rather than read as a time the screen was opened. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/shared_prefs/com.booking_preferences.xml",
+            "*/com.booking/shared_prefs/startup_data.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_cached_profile",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Cached Profile Response",
+        "description": "Parses cached account profile responses from the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the app's OkHttp response cache, where each entry is a pair of files sharing a name: the .0 file holds the request URL and the response headers and the .1 file holds the body. Bodies for this endpoint were gzip compressed on the tested samples and are decompressed before parsing. The request time comes from the OkHttp-Sent-Millis header OkHttp writes into the cached entry, in Unix milliseconds. The response carries a cc_details list for stored payment cards; it was empty on both tested samples, so no card data is reported from them. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/cache/okhttp/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_cached_requests",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Cached Requests",
+        "description": "Inventories the cached HTTP responses held by the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "One row for each entry in the app's two OkHttp response caches, okhttp and saba-http-cache. The request and response times come from the OkHttp-Sent-Millis and OkHttp-Received-Millis headers OkHttp writes into the cached entry, in Unix milliseconds, and the served date is the response's own date header reported as stored. The device identifier, app version and language are read from the request URL's own parameters. This artifact reports the entries and their metadata; the bodies of the profile, autocomplete, destination and universal link endpoints are parsed by the other artifacts in this module. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/cache/okhttp/*",
+            "*/com.booking/cache/saba-http-cache/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_deep_links",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Deep Links",
+        "description": "Parses deep links stored and resolved by the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Two sources are reported and the Record Type column says which each row came from. Resolved links come from cached mobile.decodeUniversalLink responses in the app's OkHttp response cache, where the url request parameter holds the link submitted and the body holds what it resolved to; those rows carry the request time from the OkHttp-Sent-Millis header in Unix milliseconds. Stored links come from original_link_storage.xml, whose keys are named for the screen each link was kept against and which records no timestamp. Link actions and destination types are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/cache/okhttp/*",
+            "*/com.booking/shared_prefs/original_link_storage.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_destination_info",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Destination Info",
+        "description": "Parses cached destination lookups from the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the app's OkHttp response cache. The type_and_id parameter of the cached mobile.getDestinationInfo request URL names the destination looked up and the response body holds its record. The request time comes from the OkHttp-Sent-Millis header in Unix milliseconds. Coordinates are the latitude and longitude members of the returned destination record, so a row records a place the app looked up and not a place the device was. Destination type is reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/cache/okhttp/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_destination_searches",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Destination Searches",
+        "description": "Parses cached destination autocomplete responses from the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the app's OkHttp response cache. The text parameter of the cached mobile.autocomplete request URL holds the characters the request was made for, and the response body holds the destinations returned for it, one row each. The request time comes from the OkHttp-Sent-Millis header in Unix milliseconds. Coordinates are the latitude and longitude members of each returned destination, so a row records a destination offered against those characters and not a place the device was. Destination type is reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/cache/okhttp/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_notifications",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Notifications",
+        "description": "Parses notifications stored by the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the notification table of notifications.db. time_epoch is Unix seconds; the value in the tested samples resolved to a date within the app's installed life on that image, which a millisecond reading would not. The viewed, clicked and deleted columns are reported as stored, as are their sync counterparts and the action identifier. args_json is the notification's own payload and is reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/databases/notifications.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_profile_preferences",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Profile Preferences",
+        "description": "Parses the account profile written to the Booking.com Android preferences.",
+        "category": "Booking.com",
+        "notes": "Read from the mybooking.xml and remote_profile.xml preference files, which carry the same pref3 prefixed profile keys. On the tested samples remote_profile.xml held a subset of the keys in mybooking.xml, and the Source File column says which file each row came from. Title, gender, smoking preference and travel purpose are reported as stored. The google state value is the app's own JSON record of a linked Google account and its identifier member is reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/shared_prefs/mybooking.xml",
+            "*/com.booking/shared_prefs/remote_profile.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_reservation_rooms",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Reservation Rooms",
+        "description": "Parses the rooms of each cached Booking.com Android reservation.",
+        "category": "Booking.com",
+        "notes": "Read from the roomReservations records of post_booking_reservation_cache and joined to the booking number held in the parent record's key. An app version seen in the tested samples caches the same booking once per authentication key it was fetched with, so one room was held in two records that were identical once the key inside their references was set aside; rows are reported once per booking number and roomReservationId pair so a room is not counted twice. Room type identifiers, smoking preference, cancellation type and cancellation bucket are reported as stored. The refundable member of the cancellation info record is reported as stored; it held 0 on every room in the tested samples and no source was found defining its other values. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/databases/post_booking_reservation_cache*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_reservations",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Reservations",
+        "description": "Parses accommodation reservations cached by the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the records table of post_booking_reservation_cache, which holds a normalised GraphQL cache. Each row is one cache record; the key names the field path and the value is its JSON, with nested objects held as ApolloCacheReference strings that the parser follows. Two query shapes were seen across the tested samples. The postBookingReservationQuery shape carries the booking number and PIN code inside its own key, and the accommodationDetailsQueries shape carries them as record fields. Rows from both shapes are merged on the booking number and the Query Shapes column says which contributed. reservationCheckinDate.rawDate and reservationCheckoutDate.rawDate are Unix seconds; each of the twelve values in the tested samples fell on midnight in the timezone the same record stores as hotelTimezone, so the calendar date at the property is carried in its own column and the datetime columns hold the UTC reading of the stored value. The accommodationDetails shape instead stores ISO 8601 strings carrying an offset, and those are converted from that offset. Status, travel purpose and accommodation type values are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/databases/post_booking_reservation_cache*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "booking",
+        "artifactKey": "booking_search_query",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Booking - Search Query",
+        "description": "Parses the stored search query of the Booking.com Android app.",
+        "category": "Booking.com",
+        "notes": "Read from the specific_query and general_query keys of com.booking_preferences.xml, each holding one JSON search query. The two keys held identical values on all four tested samples and both are reported, with the Query Key column saying which. Arrival and departure dates are stored as plain date strings and are reported as stored, since the file records no timezone for them. The location member carries the destination the search was made against; its type and source members are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.booking/shared_prefs/com.booking_preferences.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "chromeBookmarks",
@@ -3288,6 +3634,23 @@
         "last_update_date": "2025-11-16"
     },
     {
+        "filename": "FCMQueuedMessagesGroupMe",
+        "artifactKey": "get_fcm_groupme",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "FCM - GroupMe Notifications",
+        "description": "GroupMe (com.groupme.android) push records from the Firebase Cloud Messaging queued-messages store, fcm_queued_messages.ldb. Reports the notification text and the fields of the push payload, including the message text, its sender, the conversation it belongs to and any attachment it carries.",
+        "category": "Firebase Cloud Messaging",
+        "notes": "Records are attributed to GroupMe by field 5 of the value protobuf's embedded message, which holds the package name. The record key names no application: on both tested images every key begins with the numeric prefix '0:'. The timestamp in the key is microseconds since the Unix epoch and is reported first; Push Timestamp is the payload's own push_timestamp value and Message Created is the created_at of the message the payload carries.\nEach GroupMe entry on both tested images is a value record with a later deletion marker for the same key, so they are reported because the reader takes records from the table files directly rather than resolving the store to its committed state.\nEvent, and the payload keys reported as stored, are undocumented here. The payload keys observed on pixel7a_a14 are alert, subject, event, user_id, push_timestamp, google.c.a.m_l, google.c.a.e, google.c.sender.id and, on one record, title and reaction. The older records on pixel3_a12 carry no push_timestamp, so that column is empty there. For favorite events the payload nests the message that was reacted to under 'direct_message' or 'line', so the message columns describe that message and not the person who reacted, whose identifier is the payload's own user_id.\nMessage Sender ID is the payload's sender_id, falling back to the message's own user_id where the payload carries no sender_id. Both are present on 15 of the 18 records on pixel7a_a14 and agree on all 15; the 5 records on pixel3_a12 carry only user_id.\nOne record on pixel7a_a14 carries an empty alert. Its payload is a direct message with empty text and a location attachment, whose coordinates and place name are reported in the Attachments column, and it is reported rather than dropped. No empty alert was observed on pixel3_a12.\nMedia is linked by deriving the GroupMe image cache key from the attachment URL: the cache is a libcore DiskLruCache whose key is the Java String.hashCode of the URL and whose file is that key followed by the value index. On pixel7a_a14 all 24 cache entries are accounted for by that derivation and 13 of them are attributable to image URLs held independently in groupme.db, including both URLs the push records reference; the one picture message on pixel3_a12 linked the same way. The app also caches '.large' and '.preview' renditions under the hash of the suffixed URL; those are used only when the unsuffixed URL is not cached, and the rendition used is named in the Attachments column. The separate groupme_gif_cache uses a different naming scheme and is not linked.\nAn extraction can carry the queued-messages store under several storage paths. pixel3_a12 holds it at data/data, data/user/0 and data_mirror/data_ce, and the module reports 5 rows there rather than the 15 the three copies would otherwise produce.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/fcm_queued_messages.ldb/*",
+            "*/com.groupme.android/cache/groupme_image_cache/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
         "filename": "FCMQueuedMessagesJungrammer",
         "artifactKey": "get_fcm_jungrammer",
         "sourceTool": "ALEAPP",
@@ -5285,12 +5648,13 @@
         "name": "GroupMe - Chat Information",
         "description": "GroupMe chat information",
         "category": "GroupMe",
+        "notes": "Message Deletion Time and Message Deletion Actor (as stored) are the messages table's deleted_at and deletion_actor columns. deleted_at is 0 where no deletion timestamp is stored, reported here as an empty cell rather than an epoch date. The database's own search_messages_view selects only rows where deleted_at = 0. The value domain of deletion_actor is not documented, so it is reported as stored; 'sender' is the only value seen in the tested images, and the app binary references the literals 'sender' and 'admin' in the method that handles these two columns (com.groupme.android.message.MessageUtils.getAffectedItems, base.apk of com.groupme.android vc 240460204). On the one deleted row in the tested images the stored message_text reads the literal 'This message was deleted'. Message Hidden (as stored) is the stored integer rather than Yes/No, because the column takes values beyond 0 and 1: the only non-zero value seen is 2, on a system row reading 'A message was deleted.' The app's own migration adds deleted_at and deletion_actor to an existing messages table, so a store written before that release lacks them; absent columns are read as NULL, which was exercised on a constructed copy with the two columns dropped and not on any tested image.",
         "author": "Josh Hickman (josh@thebinaryhick.blog)",
         "paths": [
             "*/com.groupme.android/databases/groupme.db*"
         ],
         "creation_date": "2021-02-01",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "groupMe",
@@ -5300,13 +5664,13 @@
         "name": "GroupMe - Group Information",
         "description": "GroupMe group information",
         "category": "GroupMe",
-        "notes": "Message Count (stored) and Attachment Count (stored) are the counter values held in the groups table; they are not counts of the messages and attachments recovered by this artifact.",
+        "notes": "Message Count (stored) and Attachment Count (stored) are the counter values held in the groups table; they are not counts of the messages and attachments recovered by this artifact. Group Creator and Creator Role are read from the creator's own membership row for that group; the members table holds one row per group and user.",
         "author": "Josh Hickman (josh@thebinaryhick.blog)",
         "paths": [
             "*/com.groupme.android/databases/groupme.db*"
         ],
         "creation_date": "2021-02-01",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "WithingsHealthMate",
@@ -8142,6 +8506,71 @@
         "last_update_date": "2026-08-01"
     },
     {
+        "filename": "outlook",
+        "artifactKey": "outlook_accounts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Outlook - Accounts",
+        "description": "Parses the signed in account recorded by the OneAuth component of the Microsoft Outlook Android app.",
+        "category": "Outlook",
+        "notes": "Each entry in the OneAuth accounts preferences file holds a JSON value carrying the account identifiers and, on some entries, an additional_properties member holding the claims of a token the component had cached. Issued At, Not Before and Expires come from the iat, nbf and exp claims and are Unix seconds: the values are ten digits and resolve inside the range covered by the app's own logs, where a millisecond reading would place them in 1970. On the sample carrying claims, Issued At falls five minutes before the officeConfigLastFetchedTime value reported by the settings artifact, which was read independently. The aio claim is opaque token material and is not written to the report. Account type, age group, sovereignty and association status are reported as stored. Reading a claim here is not evidence the token was accepted by any service. This file records the credential broker's view of the signed in account and is separate from the Outlook account store in acompliAcct.db. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.microsoft.office.outlook/shared_prefs/com.microsoft.oneauth.accounts.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "outlook",
+        "artifactKey": "outlook_app_versions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Outlook - App Version History",
+        "description": "Parses the version and storage boot lines the Microsoft Outlook Android app writes to its appUpdates log.",
+        "category": "Outlook",
+        "notes": "The appUpdates log is tab delimited and carries a level, an ISO 8601 timestamp with a UTC offset, a correlation identifier, a thread, a component and a message. Three message forms were seen across the tested samples: one naming the app version and version code the app was initialising, one reporting the storage boot and whether storage migrated, and one marking a migration start. The version and version code are taken from the first form and the migration flag from the second; other message forms are reported with their text as stored and no version parsed. The correlation identifier matched the pref_install_id value in the app's own preferences on each tested sample, so it is reported as the install identifier. Timestamps are converted from the offset the line carries. A line here records what the app logged when it initialised, not an interaction. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.microsoft.office.outlook/app_logs/appUpdates.log*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "outlook",
+        "artifactKey": "outlook_installation",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Outlook - Installation",
+        "description": "Parses the install identifier and the version names and codes the Microsoft Outlook Android app records in its preferences.",
+        "category": "Outlook",
+        "notes": "The versions preferences file holds an initial, a previous and a last run version name and version code. The install identifier comes from the pref_install_id value in the acompli preferences file and matched the correlation identifier carried by the app's own log lines on each tested sample. Neither file carries a timestamp, so the row is reported without one; the version history artifact carries the timestamped lines. Values are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.microsoft.office.outlook/shared_prefs/versions.xml",
+            "*/com.microsoft.office.outlook/shared_prefs/acompli_prefs.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "outlook",
+        "artifactKey": "outlook_settings",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Outlook - Settings",
+        "description": "Parses the settings the Microsoft Outlook Android app records in its own preferences file.",
+        "category": "Outlook",
+        "notes": "Each preference is reported as a row carrying its key, the type the file declares for it and its value as stored. The tested samples ranged from 7 to 85 keys and the sets differ between them, so no key is required to be present. Two keys hold epoch values and they do not share a unit: officeConfigLastFetchedTime is thirteen digits and is Unix milliseconds, and wearUpsellLastCheck is ten digits and is Unix seconds. Both were established from the values themselves, each resolving inside the range covered by the app's own logs on the sample carrying it while the other unit did not, and the milliseconds reading agrees to within five minutes with a token claim read independently by the accounts artifact. A Resolved Timestamp is emitted for those two keys only; any other key is reported with its value as stored and no conversion. Keys under the NetworkOverrides and DynamicConfigSettings branches are configuration the app received rather than choices made on the device. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.microsoft.office.outlook/shared_prefs/com.microsoft.office.outlook_preferences.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
         "filename": "permissions",
         "artifactKey": "get_permissions_packages",
         "sourceTool": "ALEAPP",
@@ -8296,6 +8725,141 @@
         "last_update_date": "2023-03-24"
     },
     {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Account",
+        "description": "Parses the signed in account record stored by the Pinterest Android app.",
+        "category": "Pinterest",
+        "notes": "Read from the PREF_MY_USER value of the app's own preferences file, which holds the account record as JSON. Account Created and Last Pin Saved are stored as formatted text carrying no time zone, so they are reported as stored rather than converted. Birthday is a Unix second value; on the tested sample it landed at midday UTC, so only its date part is meaningful. A birth date before 1970 is stored as a negative value, and this column is always seconds, so it is converted in this module rather than inferred from its magnitude. Gender, email status and the account type are reported as stored. The counts are the values the record carries, not a count of anything parsed from this extraction. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/shared_prefs/pinterest.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_app_state",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - App State",
+        "description": "Parses selected application state preferences of the Pinterest Android app.",
+        "category": "Pinterest",
+        "notes": "A selected set of preference keys is reported, one row per key, with the value as stored. A key is converted to a timestamp only when its own name states that it holds a time and its value is a thirteen digit integer, which is the shape every converted value had on the tested sample; every other value is left as text. The install referrer and the requested runtime permissions are the values the app recorded, not an observation of what was granted. What the app does with each preference is not established here, so no meaning is asserted beyond the key name the app itself uses. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/shared_prefs/pinterest.xml",
+            "*/com.pinterest/shared_prefs/pinterest.persist.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_cached_images",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Cached Images",
+        "description": "Parses and renders the image caches of the Pinterest Android app.",
+        "category": "Pinterest",
+        "notes": "Covers both DiskLruCache stores the app keeps for images, the one under image_manager_disk_cache and the one in the cache directory itself. No reproducible link from a cached image back to a pin, a board or a URL was found. What was checked: the DiskLruCache journal records only the entry key and the entry length and carries no URL; the entry key is a SHA-256 over the image library's own key object rather than over the URL, and SHA-256, SHA-1, MD5 and UTF-16 spellings of the four profile image URLs the account record does hold matched none of the 6300 entry names on the tested sample; and the MD5 of every cached file matched none of the MD5 values embedded in those URLs, the cached bytes being re-encoded variants rather than the original. The entry key is reported as stored and the file name is that key followed by .0. Types are taken from the leading bytes of each file, not from the name, which carries no extension. Raster images are checked in and rendered. A cached SVG is reported with its type and not rendered, because an SVG can carry script and these are bytes from a remote host. Journal entries whose file is absent are reported with an empty media cell, and files present with no journal entry are reported too. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/cache/image_manager_disk_cache/*",
+            "*/com.pinterest/cache/*.0",
+            "*/com.pinterest/cache/journal"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_cached_list_pages",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Cached List Pages",
+        "description": "Parses cached feed and profile list pages of the Pinterest Android app.",
+        "category": "Pinterest",
+        "notes": "Each file in the app's paged list cache begins with the four bytes 23 06 14 20, then a little endian eight byte length and that many bytes of cache key, then a second length prefixed string, then eight bytes, then a little endian eight byte value, then length prefixed UTF-16 little endian strings. The cache key is ASCII and names the list it belongs to; where it carries a nineteen digit run of digits that value is reported as the account id, because it matched the signed in account id recorded in the app's preferences on the tested sample. The eight byte value decoded to a Unix millisecond time in the range of the app's own recorded activity on all three tested files, so it is converted, but what event it marks is not established and it is labelled only as the timestamp the record carries. The trailing strings are reported as stored under Referenced Identifiers; on the tested sample they were nineteen digit ids in one file and eight character tokens in another, and no source was found that names what either points at. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/cache/paged_list_cache/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_cached_videos",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Cached Videos",
+        "description": "Parses and renders the video caches of the Pinterest Android app.",
+        "category": "Pinterest",
+        "notes": "Two stores are reported and the Source Store column says which each row came from. In the response cache the entry file name is the MD5 of the request URL, confirmed by recomputing it for all 13 entries on the tested sample, the first line of the .0 file is that URL and the .1 file is the response body, which was a complete MP4 in every case, so those are checked in and rendered. Requested and Received come from the OkHttp-Sent-Millis and OkHttp-Received-Millis headers the cache writes into that entry, in Unix milliseconds on the device clock; the server's own date header is reported separately as stored. In the player cache the index table maps a cache id to the full media URL and the file metadata table names each cached fragment with its length and last touch time in Unix milliseconds, and fragment file names begin with that cache id, which resolved for all 266 keys and all 1616 fragment rows of the populated index on the tested sample. Those fragments are partial CMAF byte ranges rather than playable files, so they are reported with their count and cached size and an empty media cell rather than rendered. The tested sample also carried a second index whose fragment directory was absent, so its rows report a URL with nothing on disk. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/databases/exoplayer_internal.db*",
+            "*/com.pinterest/cache/video/response_cache/*",
+            "*/com.pinterest/cache/video/media_cache/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_idea_pin_drafts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Idea Pin Drafts",
+        "description": "Parses unpublished idea pin drafts from the Pinterest Android app database.",
+        "category": "Pinterest",
+        "notes": "Read from the idea_pin_drafts table of the app's Room database. The file name carries a variable suffix, so the path pattern is a prefix match, which also picks up the write-ahead log and shared memory sidecars; the tested sample carried the unsuffixed spelling. The database is read twice, immutable=1 to ignore the write-ahead log and mode=ro to apply it, and the two reads are compared on the primary key. Rows returned only by the first read are reported with a Source View of Pre-checkpoint. On the tested sample the two reads agreed exactly on every table and the table held no rows, so this artifact is code present and unexercised against populated data. Columns are selected only where the table declares them, so a differing schema version still parses. The metadata, page data and extracted image metadata columns hold payloads whose structure is not established here, so their presence and length are reported rather than a decode. Timestamps are Unix milliseconds. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/databases/pinterest-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_search_typeahead_cache",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Search Typeahead Cache",
+        "description": "Parses the search typeahead suggestion cache of the Pinterest Android app.",
+        "category": "Pinterest",
+        "notes": "This store holds suggestions the app downloaded, not terms the user searched for. On the tested sample the app's own preferences recorded the partition URL it was fetched from on a Pinterest content delivery host, a cache version naming a country and gender segment and a dated build, and a single fetch time; the table held 25802 rows, all distinct, on a contiguous run of autoincrement ids with no gaps, which is one bulk insert. The suggestion text is therefore not reported, because a list of server supplied terms presented next to a Pinterest account reads as a search history and is not one. The row count and the cache identifiers are reported instead, and the suggestions remain in the evidence file, where a keyword search of this database will surface them; a hit on one of those strings is not evidence that the account holder entered it. Score also decreases monotonically with the row id across every row, so the table was written once in server rank order, which typed history is not. No store holding terms entered by the user was found in the tested sample. The fetch time is stored as formatted text carrying its own UTC offset and is reported as stored. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/databases/search-typeahead*",
+            "*/com.pinterest/shared_prefs/pinterest.persist.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "pinterest",
+        "artifactKey": "pinterest_stored_accounts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Pinterest - Stored Accounts",
+        "description": "Parses the accounts held by the Pinterest Android app account switcher.",
+        "category": "Pinterest",
+        "notes": "Each preference entry in the account switcher store is named for an account id and holds that account's own record as JSON. The store carries an access token and two further tokens per account. These are live account credentials and are reported as stored. The tested sample held one account, so the multiple account path is code present and unexercised. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.pinterest/shared_prefs/PREF_MY_USER_USER_ACCOUNTS*",
+            "*/com.pinterest/shared_prefs/PREF_ACCUNT_SWITCHER_GROUP_ID.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
         "filename": "pkgPredictions",
         "artifactKey": "get_pkgPredictions",
         "sourceTool": "ALEAPP",
@@ -8356,6 +8920,205 @@
         ],
         "creation_date": "2021-10-12",
         "last_update_date": "2025-08-09"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_account_store",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Account Store",
+        "description": "Parses the Amazon account store of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "map_data_storage.db is the Amazon account store, holding the accounts, userdata, tokens and device_data tables. Every row is reported with its own timestamp in Unix milliseconds. On the tested sample that held a registered account, every value across those four tables began with the literal characters AES-GCM followed by base64, the display name included, so values are reported as stored and no decryption is attempted here. On the tested sample with no registered account the only values present were three device_data entries and none of them carried that prefix, so the wrapping should not be assumed. The key names are plaintext either way and name what each value holds. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/databases/map_data_storage.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_app_events",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - App Events",
+        "description": "Parses the client event log of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Read from the events table of the app's event database. Timestamp is Unix milliseconds. Type, Name, Priority and Processed are reported as stored. Event Type and Event Subtype are read from the row's own JSON body where it holds them. The body itself is not reported: it is large and holds device and session detail rather than a further activity record. On the tested samples the ASIN column named more titles than the playback history table did. The database is read twice, immutable=1 and mode=ro, and compared on row id, and rows present only in the first read are reported with a Source View of Pre-checkpoint. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/databases/event*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_app_settings",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - App Settings",
+        "description": "Parses the preference files of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Reports the app's own preference files together with the install referrer records in AppEventsJsonFile. Keys whose name ends in Millis, Time, TimeMs or Timestamp and whose value is a 13 digit number are rendered as Unix milliseconds in a separate column beside the stored value; keys ending in Epoch held a 10 digit value on the tested samples and are rendered as Unix seconds. Every other value is reported as stored. Rendering is decided per key rather than per file because the same file carried both units. The base64 serialised household blob is not repeated here; it is parsed by the Profiles and Household artifact. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/InternalPreferences.xml",
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/PersistentPreferences.xml",
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/IdentityPreferences.xml",
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/LocalizationPreferences.xml",
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/com.amazon.avod.thirdpartyclient_preferences.xml",
+            "*/com.amazon.avod.thirdpartyclient/files/AppEventsJsonFile"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_cached_titles",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Cached Title Data",
+        "description": "Inventories the per title streaming caches of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "The app keeps two caches whose directory names are title ids: files/streaming-plugins holds trickplay images, subtitles and X-Ray data, and files/global/global_video_cache holds streaming manifests and media fragments. One row is reported per title id with what each cache holds. On the tested samples these directories named far more titles than the playback history table did, and most of them held no files, so a row with no counted files means the directory carried the title id and nothing else. The media fragments are reported as an inventory and not checked in as media: on the tested sample none of them carried an initialisation segment and most carried a senc sample encryption box, so they are neither standalone nor playable as extracted. Directory entries are only reported for extraction types whose seeker returns them. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/streaming-plugins/*",
+            "*/com.amazon.avod.thirdpartyclient/files/global/global_video_cache/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_cached_images",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Cached Title Images",
+        "description": "Checks in the cached title images of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Images cached under files/streaming-plugins are checked in and rendered. The title id is the directory the app named after it, which is the recorded link between an image and a title; no correlation is used. For a trickplay frame the file name is the media offset in milliseconds. The trickplay index file that sits beside the frames is a BIF, and its header declares an image count and a frame separation; on all four tested titles the declared count equalled the number of frames on disk and the declared separation equalled the spacing of the file names, which is what establishes the offset unit. The app fetches the whole trickplay index for a title, so a frame at a given offset does not establish that the offset was played. X-Ray images carry no offset and their file names were not resolved to anything recorded elsewhere, so only the title id is reported for them. File type comes from the leading bytes rather than the extension. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/streaming-plugins/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_continue_watching",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Continue Watching",
+        "description": "Parses the saved Continue Watching collection of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "continueWatchingSaveFile holds a Java serialised com.amazon.avod.discovery.collections.CollectionModelV3. The stream carries its own class and field names, so the members read here are named by the file itself rather than inferred. Each tile is a TitleCardModel giving the title id, title, content type, season and episode numbers and mRemainingTimeInSeconds. The collection's own mIsWatchList flag is reported as stored, so a saved watchlist collection in the same format is reported alongside a Continue Watching one. On the one tested sample that carried this file the flag was false and the single tile named a title the playback history table did not hold. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/continueWatchingSaveFile"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_downloads",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Downloads",
+        "description": "Parses downloaded titles recorded by the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Read from the download table of the app's downloads database, joined to title, season, series and drm through the foreign keys those tables declare. No tested sample held a download row, so the epoch and unit of the time columns could not be established from data and every one of them, including expiry_ms and the drm expiry, is reported as stored rather than converted. Download state, download type, error code and media quality are reported as stored. Because no sample exercised it, the query was run against two databases built to the two download schemas the samples themselves carry, which differ by three columns, with rows authored for the purpose; both returned every value under its own column and the older schema's three absent columns came back empty rather than failing. That is a constructed check, not corpus validation, so treat the column mapping as unconfirmed against real download data. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/global/databases/downloads*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_playback_history",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Playback History",
+        "description": "Parses the playback history stored by the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Read from the playbackHistory table of the app's dbplaybackhistory database. lastAccessed is Unix milliseconds; watched_position, runtime and credits_start_time_millis are milliseconds of media time, not timestamps, and are reported as stored. On one tested sample a row's watched_position matched the timecode the bookmark database held for the same title exactly, which is what establishes that column as a media offset. contenttype and video_material_type are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/databases/dbplaybackhistory*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_resume_points",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Playback Resume Points",
+        "description": "Parses the playback resume points stored by the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Read from the bookmark_cache table of the app's bookmark database. last_update is Unix milliseconds and timecode is milliseconds of media time. The table declares UNIQUE (user_id, asin, timecode_type, profile_id) ON CONFLICT REPLACE, so each new position for a title replaces the previous row under a new row id. The database is read twice, immutable=1 to ignore the write-ahead log and mode=ro to apply it, and the two reads are compared on row id rather than on row count. On one tested sample both reads returned four rows while the row ids differed, and the row present only in the first read held an earlier position for a title the committed state also carries; those rows are reported with a Source View of Pre-checkpoint. timecode_type is undocumented and is reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/databases/bookmark*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_profiles",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Profiles and Household",
+        "description": "Parses the household profiles stored by the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "The aiv.UserManagerConfig:householdInfo key of InternalPreferences.xml holds a base64 Java serialised com.amazon.avod.identity.HouseholdInfo. The stream carries its own class descriptors, field names and enum constant names, so the profile age group, the account role and the profiles status are read as the literal names the file stores rather than mapped from an integer. Two tested samples serialised different class shapes and both are read from their own descriptors. The parsed profile ids were confirmed against two independent stores in the same extraction: every one also appeared in the map_data_storage token and userdata keys, and the current profile matched current_profile_id in IdentityPreferences.xml. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/InternalPreferences.xml",
+            "*/com.amazon.avod.thirdpartyclient/shared_prefs/IdentityPreferences.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_search_history",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Search History",
+        "description": "Parses the search queries stored by the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Read from the LocalSearchQuery table of search_query.db. queryTimeMillis is Unix milliseconds. The table's primary key is the query text together with the account and profile, so a repeated query carries only its most recent time. On the one tested sample holding this database the table existed only in the write-ahead log and the main file carried no schema at all, so the log has to travel with the database. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/databases/search_query.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "primeVideo",
+        "artifactKey": "prime_video_streaming_cache",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Prime Video - Streaming Cache",
+        "description": "Parses the cached playback content records of the Amazon Prime Video Android app.",
+        "category": "Prime Video",
+        "notes": "Read from the cached_content_table of the dbcachedcontent database, which records a playback request per title. accessed_time_seconds is Unix seconds. request_submission_time_ms is not: on the tested sample it held a value that decodes to 1970 as a millisecond epoch while the row's own accessed time was current, so it is reported as stored. Status, source, media quality, audio format, cache level, content type and entitlement type are reported as stored. The database is read twice, immutable=1 and mode=ro, and compared on row id; on one tested sample the file alone carried two rows the committed state no longer held, and those are reported with a Source View of Pre-checkpoint. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.amazon.avod.thirdpartyclient/files/global/databases/dbcachedcontent*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "ProtonDrive",
@@ -8993,6 +9756,152 @@
         ],
         "creation_date": "2021-01-25",
         "last_update_date": "2021-01-25"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_boarding_passes",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Boarding Passes",
+        "description": "Decrypts and parses boarding passes stored by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "The boardingpass table stores each pass as an encrypted blob. The key is the base64 value under encryptionKeyBase64 in the app's own shared preferences file, so both paths are needed. Decryption is AES-256 in CFB mode with a 128 bit segment and an all zero initialisation vector, established by trying candidate framings against the stored key until one produced valid JSON, then confirmed by that JSON agreeing with the booking's own record locator, route and times. Rows that do not decrypt are reported with their key and an empty payload rather than dropped; both tested passes decrypted, so that path was exercised on a constructed copy with the key removed rather than on a sample. Barcode Data is the string the app encodes into the scannable barcode, reported as stored. Times without a UTC suffix are local. The tested sample without boarding passes also had no key, so the key is not always present. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*",
+            "*/com.ryanair.cheapflights/shared_prefs/com.ryanair.cheapflights_preferences.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_bookings",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Bookings",
+        "description": "Parses bookings stored by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "Each booking row carries a booking_json payload holding the record locator, status, currency, balance due and the point of sale location code. Server and user modification times come from the booking_timestamps table in Unix milliseconds. Status and point of sale values are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_day_of_travel",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Day of Travel Content",
+        "description": "Parses the day of travel journey content cached by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "Rows come from the dot_booking_placeholder and dot_booking_product tables, which hold the text the app displays for a journey in the language it cached, including the purchased bags and equipment summary. Text is reported as stored and may contain markup written by the app. Placeholder and product identifiers are reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_flights",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Flights",
+        "description": "Parses the flights of each booking stored by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "The booking payload carries two sets of departure and arrival times. The depart and arrive members are UTC and match the flight table's departure_time_utc column exactly on the tested sample. The members under times carry a Z suffix as well, but hold a time two hours later on a sample whose route lay in a UTC+2 summer offset, and that same value is the one repeated in the boarding pass key, so they are reported as local and left as text rather than converted. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_passengers",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Passengers",
+        "description": "Parses the passengers of each booking stored by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "Passengers come from the booking payload. Passenger type and title are reported as stored. Check in status is taken from the payload's checkins list, matched to the passenger by passenger number. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_recent_locations",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Recent Locations",
+        "description": "Parses recently used stations and countries from the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "Covers the recent_stations and recent_countries tables, distinguished by the Record Type column. The country type integer is undocumented and is reported as stored. Both tables use Unix milliseconds. recent_stations held no rows in either tested sample. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_recent_searches",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Recent Searches",
+        "description": "Parses flight searches recorded by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "The database is read twice through SQLite, immutable=1 to ignore the write-ahead log and mode=ro to apply it, and the two are compared on the row id. Rows present only in the first read are reported with a Source View of Pre-checkpoint. On one tested sample the committed state returned no rows at all while the file alone returned four, so the log carried their removal. Why a row did not survive into the committed state is not established here: app removal, a server re-sync and a user deletion all produce the same result. The passenger count string is reported as stored. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_sessions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - Sessions",
+        "description": "Parses session and remember me token claims from the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "The remember me preference holds a JSON Web Token. Its issued at and expiry claims are reported as timestamps and the subject, token id and issuer as identifiers; the signed token string itself is not written to the report. The remaining single letter claims are reported as stored. The token is read, not validated, so no claim here is evidence the token was accepted by the service. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/shared_prefs/MyRyanair_RememberMeToken.xml",
+            "*/com.ryanair.cheapflights/shared_prefs/PreferencesBasketSessionKey.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "ryanair",
+        "artifactKey": "ryanair_user_profile",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Ryanair - User Profile",
+        "description": "Parses the myRyanair account profile stored by the Ryanair Android app.",
+        "category": "Ryanair",
+        "notes": "Read from the user_profile table of the app's Room database. Two schema versions were seen across the tested samples and the columns they do not share are selected only where the table declares them, so both parse. birth_date and member_since are Unix milliseconds. Field mapping was done against private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ryanair.cheapflights/databases/fr-local-db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "samsungBadgeProvider",
@@ -11434,6 +12343,104 @@
         "last_update_date": "2023-03-26"
     },
     {
+        "filename": "truecaller",
+        "artifactKey": "truecaller_call_cache",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Truecaller - Call Cache",
+        "description": "Parses the call lookup cache of the Truecaller Android app.",
+        "category": "Truecaller",
+        "notes": "Read from the call_cache table of calling-cache.db. The timestamp column is Unix milliseconds. The state column is reported as stored. The max age column is a cache lifetime rather than an event time. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.truecaller/databases/calling-cache.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "truecaller",
+        "artifactKey": "truecaller_call_history",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Truecaller - Call History",
+        "description": "Parses the call history recorded by the Truecaller Android app.",
+        "category": "Truecaller",
+        "notes": "Read from the history table of tc.db. The timestamp column is Unix milliseconds. The type, action and feature columns are integers with no mapping recoverable from the extraction, so they are reported as stored; type held 1, 2 and 3 in the tested sample and action held 0 and 4. The duration and ringing duration columns carry no unit in the schema and none was established here, so they are also reported as stored: duration ranged 0 to 3792 and ringing duration 0 to 584062 in the tested sample. cached_name is the name the app had cached for the number at the time, which is not necessarily a name from the phonebook. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.truecaller/databases/tc.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "truecaller",
+        "artifactKey": "truecaller_contacts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Truecaller - Contacts",
+        "description": "Parses the contacts cached by the Truecaller Android app.",
+        "category": "Truecaller",
+        "notes": "One row per raw_contact. Numbers come from the data table where data_type is 4 and the value is in data1: that pairing is data-proven rather than assumed, because contact_default_number equalled data1 on all 1093 such rows of the tested sample. The remaining data_type values are undocumented and are not interpreted here. contact_search_time is Unix milliseconds while insert_timestamp in the same row is Unix seconds; the two resolved to the same instant on the tested sample, which is what established each unit. Spam score, spam type, badges, source and gender are reported as stored. A cached contact is not evidence the user knows the person: the app caches results of its own lookups. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.truecaller/databases/tc.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "truecaller",
+        "artifactKey": "truecaller_im_users",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Truecaller - Messaging Users",
+        "description": "Parses the messaging user directory cached by the Truecaller Android app.",
+        "category": "Truecaller",
+        "notes": "Read from the msg_im_users table of tc.db. The date column is Unix milliseconds and registration_timestamp in the same row is Unix seconds; the two units were established from their values in the tested sample. The table records numbers the app resolved to a messaging peer. It is not a record of messages: the message tables in the same database held no rows in the tested sample, so no message artifact is offered here. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.truecaller/databases/tc.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "truecaller",
+        "artifactKey": "truecaller_settings",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Truecaller - Settings",
+        "description": "Parses the app and account settings of the Truecaller Android app.",
+        "category": "Truecaller",
+        "notes": "Every entry of the app's own preference files is reported as stored, with its declared preference type. Values are not interpreted and absence of a key is not evidence a feature was unused. Entries whose value is a Unix second or millisecond timestamp are additionally rendered in the Timestamp column, chosen by magnitude, and that column is empty for everything else. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.truecaller/shared_prefs/tc.settings.xml",
+            "*/com.truecaller/shared_prefs/core_settings.xml",
+            "*/com.truecaller/shared_prefs/tc_premium_state_settings.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "truecaller",
+        "artifactKey": "truecaller_sms_senders",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Truecaller - SMS Senders",
+        "description": "Parses the SMS sender information cached by the Truecaller Android app.",
+        "category": "Truecaller",
+        "notes": "Read from the sender_info table of insights.db, which records senders the app classified. The table carries no timestamp. Sender type, source type, smart features status and enabled grammars are reported as stored. The same database also holds a categorizer_probability table, which is model data rather than a record of the user's messages, and is not parsed. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.truecaller/databases/insights.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
         "filename": "deviceHealthServices_Battery",
         "artifactKey": "Turbo_Bluetooth",
         "sourceTool": "ALEAPP",
@@ -11522,6 +12529,162 @@
         ],
         "creation_date": "2023-04-26",
         "last_update_date": "2023-04-26"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Account",
+        "description": "Parses the rider account record cached by the Uber Android app.",
+        "category": "Uber",
+        "notes": "Read from the app's base key value store. Values are stored as JSON preceded by a single byte, which held 0x2d on every file in the tested sample; the parser reads from the first JSON token. The two timestamps are the lastModifiedTimeMs and originTimeMs members of the record's own meta object, in Unix milliseconds. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/base-key-value-store/realtime-demo_KEY_RIDER"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_settings",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - App Settings",
+        "description": "Parses assorted settings and consent records from the Uber Android app.",
+        "category": "Uber",
+        "notes": "Values are reported as stored. Absence of a key is not evidence a feature was unused or a setting was never changed. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/base-key-value-store/location_sharing_PERMISSION",
+            "*/com.ubercab/files/base-key-value-store/mode_activation_ACTIVATED_MODES",
+            "*/com.ubercab/files/base-key-value-store/consent-and-copy_USER_CONSENT",
+            "*/com.ubercab/files/base-key-value-store/push_registration_KEY_REGISTRATION_ID",
+            "*/com.ubercab/files/base-key-value-store/push_registration_KEY_REGISTERED_APP_VERSION",
+            "*/com.ubercab/files/base-key-value-store/last-selected-prod_pkg_KEY_LAST_SELECTED_VEHICLE_HASH",
+            "*/com.ubercab/files/simplestore/*/language_detected_store_key",
+            "*/com.ubercab/files/simplestore/*/user_uuid"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_cached_images",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Cached Images",
+        "description": "Recovers images from the Uber Android app image cache.",
+        "category": "Uber",
+        "notes": "Each cache entry is a pair of files sharing a base name: a .0 metadata file whose first two lines are Unix millisecond timestamps and which also carries the stored HTTP response headers, and a .1 file holding the bytes. The entry base name is a 64 character hex string reported as stored; it did not reproduce as MD5, SHA-1 or SHA-256 of the one image URL recoverable from the tested sample, and the cache carries no journal mapping entries to URLs, so no source URL is reported. Media type is taken from the bytes rather than from the stored content-type header. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/cache/image_cache/*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_city",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - City",
+        "description": "Parses the city record cached by the Uber Android app.",
+        "category": "Uber",
+        "notes": "The record describes the service area the app last loaded products for. Vehicle views are reported as a count and a comma separated list of the identifiers the record orders them by. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/base-key-value-store/realtime-demo_KEY_CITY"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_locations",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Locations",
+        "description": "Parses cached location records from the Uber Android app.",
+        "category": "Uber",
+        "notes": "Three record types are reported and the Record Type column says which store each row came from. CACHED_UBER_LOCATION is a protobuf carrying no schema; field 2>1 and field 2>2 are reported as latitude and longitude because they differ by less than 0.0001 degree from the coordinates stored as named JSON members in KEY_TARGET_LOCATION_SYNCED, and field 1>1 is reported as a Unix millisecond timestamp because it falls within one second of the lastModifiedTimeMs recorded by other stores in the same sample. No source was found for the record's remaining fields, so they are reported as stored under their field numbers. KEY_TARGET_LOCATION_SYNCED carries coordinates with no timestamp. The home screen layout record carries the coordinates its request was made from together with its own creation and expiration times. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/simplestore/*/CACHED_UBER_LOCATION",
+            "*/com.ubercab/files/base-key-value-store/realtime-demo_KEY_TARGET_LOCATION_SYNCED",
+            "*/com.ubercab/files/simplestore/home_screen_simple_store_scope/home_screen_layout_simple_store_key"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_payment_profiles",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Payment Profiles",
+        "description": "Parses the payment profiles cached by the Uber Android app.",
+        "category": "Uber",
+        "notes": "Status, token type, use case and authentication type are reported as stored. The supportedUseCases member is a list of opaque identifiers and is reported as a count only. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/base-key-value-store/payments_KEY_PROFILES"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_sessions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Sessions",
+        "description": "Parses session identifiers and token expiry times from the Uber Android app.",
+        "category": "Uber",
+        "notes": "Token and session values held in the shared preferences are reported by presence and expiry time; the token strings themselves are not written to the report. session_LAST_SESSION stores sessionStartTimeMs in Unix milliseconds. Its sessionBackgroundedTimeNanos member is reported as stored and not converted: in the tested sample it was exactly sessionStartTimeMs multiplied by one million, which one sample is not enough to establish as a wall clock value rather than an uptime value. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/base-key-value-store/session_LAST_SESSION",
+            "*/com.ubercab/files/base-key-value-store/realtime-demo_KEY_CLIENT_STATUS",
+            "*/com.ubercab/shared_prefs/oauth_tokens.xml",
+            "*/com.ubercab/shared_prefs/unified_session_swap_store.xml"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_shortcuts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Suggested Destinations",
+        "description": "Parses the shortcuts cache, which holds destinations offered to the rider.",
+        "category": "Uber",
+        "notes": "The cache is keyed by a cell identifier that is reported as stored. Each entry carries a timestamp in Unix milliseconds, the coordinates the entry was triggered from, and a list of destinations. Latitude and Longitude are the destination coordinates. Presence of a destination in this cache does not establish that the rider selected or travelled to it. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/files/base-key-value-store/ShortcutsCache_CACHED_SHORTCUTS_MAP_KEY"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "uber",
+        "artifactKey": "uber_telemetry",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Uber - Telemetry Messages",
+        "description": "Parses queued telemetry messages from the Uber Android message database.",
+        "category": "Uber",
+        "notes": "Rows are messages the app had queued for upload. Each content payload carries a contextual_data.prod_meta block describing the app, device, carrier, network, city and session at the time the message was sealed. createdAt and createdAtNtp are the table's own columns in Unix milliseconds; createdAtNtp was empty on every row of the tested sample. The message_type value is reported as stored. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.ubercab/databases/ur_message.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "ulrUserprefs",
@@ -17918,7 +19081,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Preferences/com.groupme.iphone-app.plist"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "groupMe",
@@ -17934,7 +19097,7 @@
             "*/mobile/Containers/Data/Application/*/Documents/GroupMe.sqlite*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "groupMe",
@@ -17950,7 +19113,7 @@
             "*/mobile/Containers/Data/Application/*/Documents/GroupMe.sqlite*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "groupMe",
@@ -17966,7 +19129,7 @@
             "*/mobile/Containers/Data/Application/*/Documents/GroupMe.sqlite*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "groupMe",
@@ -17976,6 +19139,7 @@
         "name": "GroupMe - Messages",
         "description": "Direct and group messages, attachments and shared locations from GroupMe",
         "category": "GroupMe",
+        "notes": "Deletion Status Recorded, System Deleted and Deletion Actor (as stored) come from ZGMMESSAGE.ZMESSAGEDELETIONSTATUS, an NSKeyedArchiver archive of a GMMessageDeletionStatus object whose keys are isSystemDeleted and deletionActor. In the tested images the column is populated only on rows whose stored message text is the deleted-message placeholder, and ZHIDDEN is 0 on every one of them, so the Hidden column does not identify these rows. The value domain of deletionActor is not documented, so it is reported as stored. The app binary types the property as a signed integer and declares the enum GroupMe.MessageDeletionStatus.DeletionActor with three cases and no payloads, but its case names are absent from the reflection metadata of the shipped binary, so the mapping is not recoverable from it (GroupMe.app/GroupMe, com.groupme.iphone-app 6.102.4). The separate three-case enum GroupMe.MessageDeletionMode (senderAndAdmin, admin, nobody) is the deletion permission setting and is not this column. Older stores lack the column and are read as NULL, observed on an iOS 14.3 image; on an iOS 15.3.1 image the archived object carries isSystemDeleted with no deletionActor key.",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/mobile/Containers/Data/Application/*/Library/Application Support/GroupMe.sqlite*",
@@ -17983,7 +19147,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Preferences/com.groupme.iphone-app.plist"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "health",
@@ -26817,7 +27981,7 @@
             "*/root/.bootstrapped"
         ],
         "creation_date": "2026-08-06",
-        "last_update_date": "2026-08-06"
+        "last_update_date": "2026-08-19"
     },
     {
         "filename": "wire",

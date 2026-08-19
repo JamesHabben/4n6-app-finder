@@ -251,18 +251,16 @@
             "websiteUrl": "https://www.adobe.com/acrobat.html",
             "category": "Productivity",
             "appleStoreUrl": "https://apps.apple.com/us/app/acrobat-reader-pdf-editor/id469337564",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.adobe.reader&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.adobe.reader",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "PDF reader/editor (Android com.adobe.reader, iOS com.adobe.Adobe-Reader). Play title Adobe Acrobat Reader: Edit PDF; Apple title Acrobat Reader: PDF Editor. ArtiFast application key Adobe Acrobat; artifacts iOS-only. Distinct from Adobe Scan and Adobe Acrobat Sign.",
+            "notes": "PDF reader/editor. Android com.adobe.reader; iOS com.adobe.Adobe-Reader. Apple title Acrobat Reader: PDF Editor. ArtiFast covers iOS; ALEAPP covers Android. Distinct from Adobe Scan and Adobe Acrobat Sign.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
                 "com.adobe.reader",
                 "com.adobe.Adobe-Reader",
-                "Adobe Acrobat",
-                "Acrobat Reader: PDF Editor",
-                "Adobe Acrobat Reader: Edit PDF"
+                "Acrobat Reader: PDF Editor"
             ]
         },
         {
@@ -367,13 +365,20 @@
         {
             "appName": "AllTrails",
             "icon": "alltrails.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.alltrails.com",
+            "category": "Health & Fitness",
             "appleStoreUrl": "https://apps.apple.com/us/app/alltrails-hike-bike-run/id405075943",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alltrails.alltrails&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alltrails.alltrails",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Trail maps and recorded hikes/runs by AllTrails, Inc. Android com.alltrails.alltrails; iOS com.alltrails.AllTrails. Store title AllTrails: Hike, Bike & Run.",
             "dateAdded": "2023-10-22",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.alltrails.alltrails",
+                "com.alltrails.AllTrails",
+                "AllTrails: Hike, Bike & Run"
+            ]
         },
         {
             "appName": "Amazon Alexa",
@@ -428,14 +433,36 @@
         },
         {
             "appName": "Amazon Shopping",
-            "icon": "amazon.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "amazon-shopping.webp",
+            "websiteUrl": "https://www.amazon.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/amazon-shopping/id297606951",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Retail shopping app by AMZN Mobile LLC. Android com.amazon.mShop.android.shopping; iOS com.amazon.Amazon. Distinct from Alexa, Kindle, Photos, Prime Video, Amazon Business, and Amazon Silk (com.amazon.cloud9).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.amazon.mShop.android.shopping",
+                "com.amazon.Amazon"
+            ]
+        },
+        {
+            "appName": "Amazon Silk",
+            "icon": "amazon-silk.webp",
+            "websiteUrl": "https://www.amazon.com/gp/help/customer/display.html?nodeId=200775270",
+            "category": "Browser",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Chromium-based browser for Fire tablets, Fire TV, and Echo Show (com.amazon.cloud9). Not listed on Apple or Google Play; preinstalled on Fire OS. Oxygen title Amazon browser. Distinct from Amazon Shopping and Amazon Kindle.",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.amazon.cloud9"
+            ]
         },
         {
             "appName": "American Airlines (AA)",
@@ -558,6 +585,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
             "alternateNames": []
+        },
+        {
+            "appName": "App Locker",
+            "icon": "app-locker.webp",
+            "websiteUrl": "https://github.com/kaku2015/PrivacySafeDocs",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.hld.anzenbokusufake",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Android calculator-disguise photo vault (com.hld.anzenbokusufake). Play title was Calculator - hide photos; vault in .privacy_safe. Disguise of Sgallery (com.hld.anzenbokusu); both delisted. Distinct from AppLock (com.domobile.applockwatcher), Playground Vault, Calculator Lock, and Calculator#.",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.hld.anzenbokusufake",
+                "com.hld.anzenbokusu",
+                "Calculator - hide photos",
+                "Sgallery"
+            ]
         },
         {
             "appName": "AppLock",
@@ -906,13 +952,21 @@
         {
             "appName": "BRD - bitcoin wallet",
             "icon": "brd-wallet.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.breadwallet",
-            "notes": "",
+            "websiteUrl": "https://brd.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/brd-bitcoin-wallet/id885251393",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.breadwallet",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Formerly breadwallet. Android com.breadwallet; iOS org.voisine.breadwallet. Acquired by Coinbase in 2021; wallet functionality sunset ~2022 (Apple listing still present with migrate-to-Coinbase Wallet notice). Play listing removed. Distinct from Coinbase.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.breadwallet",
+                "org.voisine.breadwallet",
+                "breadwallet",
+                "BRD Bitcoin Wallet"
+            ]
         },
         {
             "appName": "Backup and Sync from Google",
@@ -1022,13 +1076,21 @@
         {
             "appName": "BeReal",
             "icon": "bereal.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://bereal.com",
+            "category": "Social Networking",
             "appleStoreUrl": "https://apps.apple.com/us/app/bereal-your-friends-for-real/id1459645446",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bereal.ft&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bereal.ft",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Daily dual-camera social app. Android com.bereal.ft; iOS AlexisBarreyat.BeReal. Apple title BeReal: Photos & Friends Daily; Play title BeReal. Your friends for real.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.bereal.ft",
+                "AlexisBarreyat.BeReal",
+                "BeReal: Photos & Friends Daily",
+                "BeReal. Your friends for real."
+            ]
         },
         {
             "appName": "Beam",
@@ -1273,7 +1335,7 @@
             "activeOnPlayStore": "true",
             "notes": "Hotels and travel app (Android com.booking, iOS com.booking.BookingApp).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-17",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
                 "com.booking",
                 "com.booking.BookingApp"
@@ -1588,15 +1650,18 @@
             "appName": "ChatGPT",
             "icon": "chatgpt.webp",
             "websiteUrl": "https://chatgpt.com/",
+            "category": "AI & Assistants",
             "appleStoreUrl": "https://apps.apple.com/us/app/chatgpt/id6448311069",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.openai.chatgpt",
-            "notes": "",
-            "dateAdded": "2026-07-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": [],
-            "category": "AI & Assistants",
             "activeOnAppleStore": "true",
-            "activeOnPlayStore": "true"
+            "activeOnPlayStore": "true",
+            "notes": "OpenAI ChatGPT app. Android com.openai.chatgpt; iOS com.openai.chat. Distinct from Claude. LEAPP also recovers ChatGPT chats from browser cache (Mister Skinnylegs).",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.openai.chatgpt",
+                "com.openai.chat"
+            ]
         },
         {
             "appName": "ChatON",
@@ -1853,14 +1918,23 @@
         {
             "appName": "DJI GO",
             "icon": "dji-go.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.dji.com",
+            "category": "Entertainment",
             "appleStoreUrl": "https://apps.apple.com/us/app/dji-go/id943780750",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gofly.dji&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=dji.pilot",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "DJI flight apps clustered here: GO (pre-Phantom 4), GO 4 (Phantom 4/Mavic era), and Fly (current Mini/Air/Mavic). Android dji.pilot / dji.go.v4 / dji.go.v5; iOS com.dji.pilot / com.dji.go / com.dji.golite. Play listings removed; Android Fly is sideloaded from dji.com. LEAPP DAT GPS tracks can also come from DJI Pilot under the same FlightRecord path. Distinct from Litchi and DJI Mimo.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
-                "DJI Go 4"
+                "dji.pilot",
+                "com.dji.pilot",
+                "dji.go.v4",
+                "com.dji.go",
+                "dji.go.v5",
+                "com.dji.golite",
+                "DJI Go4"
             ]
         },
         {
@@ -1872,10 +1946,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mm.android.DMSS",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Dahua Technology mobile app (DMSS). LEAPP labels CCTV/IoT features separately; same app.",
+            "notes": "Dahua Technology CCTV/IoT app. Store title DMSS. Android com.mm.android.DMSS; iOS com.cesoftware.dmss. Publisher Hangzhou Dong Bin. LEAPP labels CCTV and IoT modules separately; same app. Distinct from Hik-Connect, DMSS HD, and DMSS VDP.",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.mm.android.DMSS",
+                "com.cesoftware.dmss",
+                "DMSS"
+            ]
         },
         {
             "appName": "Dailymotion",
@@ -1920,14 +1998,19 @@
         },
         {
             "appName": "Digital Wellbeing",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "digital-wellbeing.webp",
+            "websiteUrl": "https://support.google.com/android/answer/9346420",
+            "category": "Productivity",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Google Digital Wellbeing (com.google.android.apps.wellbeing). Android Settings/system app; also on Play. Distinct from Samsung Digital Wellbeing.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.google.android.apps.wellbeing"
+            ]
         },
         {
             "appName": "DingTalk",
@@ -1995,13 +2078,37 @@
         {
             "appName": "Dropbox",
             "icon": "dropbox.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.dropbox.com",
+            "category": "Cloud Storage",
             "appleStoreUrl": "https://apps.apple.com/us/app/dropbox-cloud-files-storage/id327630330",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dropbox.android&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dropbox.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Cloud storage. Android com.dropbox.android; iOS com.getdropbox.Dropbox. Apple title Dropbox: Cloud Storage Backup. Carousel (com.dropbox.carousel) is the old photos app, mapped here. Distinct from Dropbox Paper, Box, and TeraBox.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.dropbox.android",
+                "com.getdropbox.Dropbox",
+                "Dropbox: Cloud Storage Backup"
+            ]
+        },
+        {
+            "appName": "Dropbox Paper",
+            "icon": "dropbox-paper.webp",
+            "websiteUrl": "https://paper.dropbox.com",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/paper-by-dropbox/id1126623662",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dropbox.paper",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Collaborative docs by Dropbox, Inc. Native iOS/Android apps discontinued 2025-10-09; web remains. Android com.dropbox.paper; iOS com.getdropbox.paper. Apple title Paper by Dropbox. Distinct from the Dropbox storage app and from FiftyThree/Evernote Paper.",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dropbox.paper",
+                "com.getdropbox.paper"
+            ]
         },
         {
             "appName": "DrugVokrug",
@@ -2674,14 +2781,22 @@
         },
         {
             "appName": "GalleryVault",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "galleryvault.webp",
+            "websiteUrl": "https://thinkyeah.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/galleryvault-hide-photo-video/id899163792",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.thinkyeah.galleryvault",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "ThinkYeah hide-photos vault. Android com.thinkyeah.galleryvault; iOS com.thinkyeah.iGalleryVault. Apple title GalleryVault -Hide Photo Video; Play title Gallery Vault-Hide Photo Video. Apple genre Photo & Video. Distinct from App Locker, AppLock, Calculator Lock, Playground Vault, and Keepsafe.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.thinkyeah.galleryvault",
+                "com.thinkyeah.iGalleryVault",
+                "GalleryVault -Hide Photo Video",
+                "Gallery Vault-Hide Photo Video"
+            ]
         },
         {
             "appName": "Garmin Connect",
@@ -3485,6 +3600,20 @@
             "alternateNames": []
         },
         {
+            "appName": "Icing",
+            "icon": "icing.webp",
+            "websiteUrl": "https://developer.android.com/guide/topics/search/appsearch",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Google Play services on-device Icing/AppSearch index (com.google.android.gms icing_contacts.db). Not a launcher app; kept for tool artifact joins. Distinct from Google Contacts and from GMS SMS (icing_mmssms.db).",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": []
+        },
+        {
             "appName": "ICQ",
             "icon": "icq.webp",
             "websiteUrl": "",
@@ -3609,10 +3738,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.instagram.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Meta Instagram. Android com.instagram.android; iOS com.burbn.instagram. Apple genre Photo & Video. LEAPP Instagram Threads artifacts are in-app DMs/calls, not the Threads app. Distinct from Threads (Instagram).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-12",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.instagram.android",
+                "com.burbn.instagram"
+            ]
         },
         {
             "appName": "Iron Browser",
@@ -3684,14 +3816,20 @@
         },
         {
             "appName": "JusTalk",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "justalk.webp",
+            "websiteUrl": "https://justalk.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/justalk-video-chat-calls/id627958823",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.juphoon.justalk",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Ningbo Jus video chat and IM. Android com.juphoon.justalk; iOS com.juphoon.JusTalk. Apple genre Social Networking. Distinct from JusTalk Kids.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.juphoon.justalk",
+                "com.juphoon.JusTalk"
+            ]
         },
         {
             "appName": "JusTalk Kids",
@@ -4292,10 +4430,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mewe",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Sgrouples Inc. social network (formerly Sgrouples). Android and iOS both com.mewe. Apple genre Social Networking. Distinct from MeetMe.",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.mewe",
+                "Sgrouples"
+            ]
         },
         {
             "appName": "Media",
