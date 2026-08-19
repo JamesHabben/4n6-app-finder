@@ -12,7 +12,6 @@ function PageAdmin() {
 
   return (
     <div className="admin-page">
-        <h1 className='pageTitle'>Admin</h1>
         <div style={{ display: 'flex', border: '1px solid #ccc', textAlign: 'left', flex: 1, minHeight: 0, overflow: 'hidden' }}>
             <div style={{ flex: '0 0 15%', padding: '1rem', borderRight: '1px solid #ccc', overflow: 'auto' }}>
                 <h2>Pages</h2>
