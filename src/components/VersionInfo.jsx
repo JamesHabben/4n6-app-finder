@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 
 function VersionInfo() {
   const [buildDate, setBuildDate] = useState('');
-  const [dataDate, setDataDate] = useState('')
   const isDevMode = import.meta.env.DEV;
 
   useEffect(() => {
@@ -12,11 +11,6 @@ function VersionInfo() {
       .then(data => {
         setBuildDate(data.buildDate);
       });
-      fetch('/version-data.json')
-      .then(response => response.json())
-      .then(data => {
-        setDataDate(data.dataDate);
-      });
   }, []);
 
   return (
@@ -24,7 +18,6 @@ function VersionInfo() {
       {/*isDevMode ? `Development Mode | Build: ${buildDate}` : `Build: ${buildDate}`*/}
       {isDevMode && <div>Development Mode</div>}
       <div>Build: {buildDate}</div>
-      <div>Data: {dataDate}</div>
     </div>
   );
 }
