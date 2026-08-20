@@ -2674,6 +2674,24 @@
             "alternateNames": []
         },
         {
+            "appName": "Fake GPS",
+            "icon": "fake-gps.webp",
+            "websiteUrl": "",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lexa.fakegps",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Lexa Android mock-location app (com.lexa.fakegps; donate build com.lexa.fakegpsdonate). Play title Fake GPS location. No iOS app. ArtiFast application key Fake GPS (favorites and history). Distinct from GPS JoyStick, Fake GPS Location - Hola, and other Fake GPS Location Spoofer clones.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lexa.fakegps",
+                "com.lexa.fakegpsdonate",
+                "FakeGPS"
+            ]
+        },
+        {
             "appName": "FileSafe",
             "icon": "",
             "websiteUrl": "",
@@ -4915,6 +4933,25 @@
             "alternateNames": []
         },
         {
+            "appName": "MICO",
+            "icon": "mico.webp",
+            "websiteUrl": "https://www.micoworld.net/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mico-make-friends-go-live/id908023218",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mico",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MICO WORLD live-stream and chat app (Android com.mico, iOS com.meets.Meets). Store titles MICO: Go Live Streaming & Chat / MICO: Make Friends, Go Live. Apple genre Social Networking. ArtiFast application key MICO (Mico Chat artifacts). Not Microsoft Copilot Mico, and not Apple Mico - Widget & Live Wallpaper. Distinct from BigoLive, Azar, and Likee.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mico",
+                "com.meets.Meets",
+                "MICO: Go Live Streaming & Chat",
+                "MICO: Make Friends, Go Live"
+            ]
+        },
+        {
             "appName": "Microsoft Authenticator",
             "icon": "microsoft-authenticator.webp",
             "websiteUrl": "https://www.microsoft.com/en-us/security/mobile-authenticator-app",
@@ -5030,16 +5067,21 @@
         },
         {
             "appName": "Microsoft PowerPoint",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "icon": "ms-powerpoint.webp",
+            "websiteUrl": "https://www.microsoft.com/microsoft-365/powerpoint",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-powerpoint/id586449534",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.powerpoint",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft presentation app (Android com.microsoft.office.powerpoint, iOS com.microsoft.Office.Powerpoint). Store title Microsoft PowerPoint. Apple genre Productivity. ArtiFast application key PowerPoint. Distinct from Microsoft Word, Microsoft Excel, Microsoft OneNote, Google Slides, and Canva.",
             "dateAdded": "2023-11-01",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "com.microsoft.office.powerpoint",
+                "com.microsoft.Office.Powerpoint",
+                "Power Point"
+            ]
         },
         {
             "appName": "Microsoft Remote Desktop",
@@ -5173,6 +5215,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-12",
             "alternateNames": []
+        },
+        {
+            "appName": "Mr. Number",
+            "icon": "mr-number.webp",
+            "websiteUrl": "https://www.hiya.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mr-number-lookup-call-block/id1047334922",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mrnumber.blocker",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hiya, Inc. caller ID and spam blocker (Android com.mrnumber.blocker, iOS com.whitepages.mrnumber). Acquired by Whitepages 2013; Hiya spin-out 2016. Store titles Mr. Number: Spam Call Blocker / Mr. Number Lookup & Call Block. Apple genre Utilities. Cellebrite Mr. Number is Android legacy. Distinct from TrueCaller and from Hiya: Spam Blocker & Caller ID.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mrnumber.blocker",
+                "com.whitepages.mrnumber",
+                "Mr Number"
+            ]
         },
         {
             "appName": "My Ether Wallet",
@@ -5404,25 +5464,23 @@
         },
         {
             "appName": "OK: Social Network",
-            "icon": "ok-social.jpg",
-            "websiteUrl": "",
+            "icon": "ok-social.webp",
+            "websiteUrl": "https://ok.ru/",
+            "category": "Social Networking",
             "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.ok.android&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.ok.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "OK.ru / Odnoklassniki social network (Android ru.ok.android, iOS ru.odnoklassniki.iphone). Play title OK: Social Network. Apple listing not returned. ArtiFast/Oxygen application key OK. Distinct from VK, VKontakte, TamTam Messenger, and OkCupid.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-28",
-            "alternateNames": []
-        },
-        {
-            "appName": "Odnoklassniki",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "ru.ok.android",
+                "ru.odnoklassniki.iphone",
+                "Odnoklassniki",
+                "OK.ru",
+                "одноклассники"
+            ]
         },
         {
             "appName": "OkCupid",
@@ -5873,15 +5931,23 @@
             "alternateNames": []
         },
         {
-            "appName": "Price Negotiator",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "appName": "Priceline",
+            "icon": "priceline.webp",
+            "websiteUrl": "https://www.priceline.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/priceline-hotel-car-flight/id336381998",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.priceline.android.negotiator",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Priceline.com LLC / Booking Holdings hotels, flights, and cars (Android com.priceline.android.negotiator, iOS com.priceline.negotiator). Store titles Priceline: Hotel, Flight & Car / Priceline - Hotel, Car, Flight. Apple genre Travel. Oxygen Price Negotiator is this iOS bundle. Distinct from Booking.com, KAYAK, Agoda Hotels & Flights, Hotels.com, and Expedia.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "com.priceline.android.negotiator",
+                "com.priceline.negotiator",
+                "Priceline: Hotel, Flight & Car",
+                "Priceline - Hotel, Car, Flight"
+            ]
         },
         {
             "appName": "Private Photo Vault (Enchanted Cloud)",
@@ -6117,10 +6183,15 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.planetromeo.android.app",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "PlanetRomeo B.V. gay/bi/trans dating (Android com.planetromeo.android.app, iOS com.planetromeo.mobile). Formerly GayRomeo / PlanetRomeo. Store titles ROMEO - Gay Dating / ROMEO - Gay Dating & Chat. Apple genre Social Networking. ArtiFast application key Romeo. Distinct from Grindr, SCRUFF, and Growlr.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "com.planetromeo.android.app",
+                "PlanetRomeo",
+                "Planet Romeo",
+                "GayRomeo"
+            ]
         },
         {
             "appName": "Rail Russia",
@@ -6422,13 +6493,19 @@
         {
             "appName": "Samsung Internet Browser",
             "icon": "samsung-internet-browser.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.samsung.com/us/apps/samsung-browser/",
+            "category": "Browser",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Samsung Electronics Chromium browser (Android com.sec.android.app.sbrowser). Play title Samsung Browser; formerly Samsung Internet. No iOS app. ArtiFast application key Samsung Browser. MOBILEdit Samsung Internet Browser Beta maps here. Distinct from Google Chrome, Microsoft Edge, Kiwi Browser, Whale, Firefox, and Android Browser.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "com.sec.android.app.sbrowser",
+                "Samsung Internet"
+            ]
         },
         {
             "appName": "Samsung Memo",
@@ -6496,18 +6573,19 @@
         {
             "appName": "SayHi Chat Meet Dating People",
             "icon": "sayhi.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://v.sayhi.app",
             "category": "Dating",
             "appleStoreUrl": "https://apps.apple.com/us/app/sayhi-chat-meet-new-people/id469609836",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.unearby.sayhi",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "UNearby Limited nearby chat/dating (Android com.unearby.sayhi, iOS com.unearby.SayHi). Store titles SayHi Chat Meet Dating People / SayHi Chat - Meet New People. Apple genre Social Networking. Not Amazon SayHi Translate (sayhi.com) and not Apple SayHi: Chat Now. Distinct from Skout, MeetMe, Tinder, Azar, and Chatous.",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "2026-08-16",
+            "dateUpdated": "2026-08-20",
             "alternateNames": [
                 "com.unearby.SayHi",
-                "com.unearby.sayhi"
+                "com.unearby.sayhi",
+                "Say Hi"
             ]
         },
         {
@@ -6856,14 +6934,23 @@
         },
         {
             "appName": "SoundHound",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "soundhound.webp",
+            "websiteUrl": "https://www.soundhound.com/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/soundhound-music-discovery/id355554941",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.melodis.midomiMusicIdentifier.freemium",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "SoundHound, Inc. music identification (Android com.melodis.midomiMusicIdentifier.freemium, iOS com.melodis.soundhound.free). Formerly Midomi. Store title SoundHound - Music Discovery. Apple genre Music. Paid SKU SoundHound∞ is com.melodis.midomi. Distinct from Shazam, SoundCloud, Spotify, and SoundHound Chat AI.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "com.melodis.midomiMusicIdentifier.freemium",
+                "com.melodis.soundhound.free",
+                "com.melodis.midomi",
+                "Midomi",
+                "Sound Hound"
+            ]
         },
         {
             "appName": "Spark",
@@ -8375,12 +8462,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.mail",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Yahoo Inc. Android com.yahoo.mobile.client.android.mail; iOS com.yahoo.Aerogram. Store titles Yahoo Mail: Your Email & Inbox / Yahoo Mail: Email & Planner. Apple genre Productivity. Distinct from Yahoo!, Yahoo! Messenger, Yahoo Mail Go, Microsoft Outlook, and ProtonMail.",
+            "notes": "Yahoo Inc. Android com.yahoo.mobile.client.android.mail; iOS com.yahoo.Aerogram. Store titles Yahoo Mail: Your Email & Inbox / Yahoo Mail: Email & Planner. Apple genre Productivity. ArtiFast application key Yahoo Email. Distinct from Yahoo!, Yahoo! Messenger, Yahoo Mail Go, Microsoft Outlook, ProtonMail, GMX, Google Mail (Gmail), and Aqua Mail.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-08-20",
             "alternateNames": [
                 "com.yahoo.mobile.client.android.mail",
-                "com.yahoo.Aerogram"
+                "com.yahoo.Aerogram",
+                "Yahoo Mail: Your Email & Inbox",
+                "Yahoo Mail: Email & Planner"
             ]
         },
         {
@@ -8533,6 +8622,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-08-17",
             "alternateNames": []
+        },
+        {
+            "appName": "YouTube Music",
+            "icon": "youtube-music.webp",
+            "websiteUrl": "https://music.youtube.com/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/youtube-music/id1017492454",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC. Android com.google.android.apps.youtube.music; iOS com.google.ios.youtubemusic. Store title YouTube Music. Apple genre Music. Successor to Google Play Music (com.google.android.music, shut down 2020) but a different package. Distinct from YouTube, YouTube Kids, YouTube TV, YouTube Studio, Spotify, and Apple Music.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.google.android.apps.youtube.music",
+                "com.google.ios.youtubemusic"
+            ]
         },
         {
             "appName": "Your Phone",
