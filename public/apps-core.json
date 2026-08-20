@@ -422,14 +422,20 @@
         {
             "appName": "Amazon Prime Video",
             "icon": "amazon-prime-video.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.primevideo.com",
             "category": "Entertainment",
             "appleStoreUrl": "https://apps.apple.com/us/app/amazon-prime-video/id545519333",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Amazon streaming app (Play title Prime Video). Android com.amazon.avod.thirdpartyclient; iOS com.amazon.aiv.AIVApp. Apple genre Entertainment. Distinct from Amazon Shopping, Amazon Photos, and Amazon Silk.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2026-08-17",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.amazon.avod.thirdpartyclient",
+                "com.amazon.aiv.AIVApp",
+                "Prime Video"
+            ]
         },
         {
             "appName": "Amazon Shopping",
@@ -1777,13 +1783,19 @@
         {
             "appName": "Clubhouse",
             "icon": "clubhouse.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.clubhouse.app&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.clubhouse.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/clubhouse/id1503133294",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.clubhouse.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Alpha Exploration Co. Android com.clubhouse.app; iOS co.alphaexploration.clubhouse. Apple genre News. Distinct from Discord.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.clubhouse.app",
+                "co.alphaexploration.clubhouse"
+            ]
         },
         {
             "appName": "Coco",
@@ -2140,13 +2152,17 @@
             "websiteUrl": "https://duckduckgo.com/",
             "category": "Browser",
             "appleStoreUrl": "https://apps.apple.com/us/app/duckduckgo-optional-duck-ai/id663592361",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "DuckDuckGo, Inc. Android com.duckduckgo.mobile.android; iOS com.duckduckgo.mobile.ios. Store title DuckDuckGo, optional Duck.ai. Apple genre Utilities. MOBILEdit DuckDuckGo Private Browser maps here. Distinct from Chrome, Firefox, Brave, Safari, and Firefox Focus.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-13",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.duckduckgo.mobile.android",
+                "com.duckduckgo.mobile.ios",
+                "DDG"
+            ]
         },
         {
             "appName": "Duolingo: Language Lessons",
@@ -3026,14 +3042,19 @@
         },
         {
             "appName": "Google Drive",
-            "icon": "google-drive.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "google-drive.webp",
+            "websiteUrl": "https://drive.google.com",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-drive/id507874739",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.docs",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC. Android com.google.android.apps.docs; iOS com.google.Drive. Apple genre Productivity. Desktop client maps here. Distinct from Google Docs, Google Sheets, Google Slides, Google photos, Dropbox, Microsoft OneDrive, MEGA, Box, and iCloud Drive.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.google.Drive"
+            ]
         },
         {
             "appName": "Google Duo",
@@ -4649,13 +4670,21 @@
         {
             "appName": "Microsoft Outlook",
             "icon": "ms-outlook.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook&hl=en",
-            "notes": "",
+            "websiteUrl": "https://outlook.live.com",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-outlook/id951937596",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft email/calendar client (mobile was Acompli). Android com.microsoft.office.outlook; iOS com.microsoft.Office.Outlook. Apple genre Productivity. Hotmail became Outlook.com in 2012; Magnet Hotmail Webmail, Outlook Webmail, and Outlook Web App map here. Distinct from Microsoft To Do, Mail and Calendar, and myMail.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.microsoft.office.outlook",
+                "com.microsoft.Office.Outlook",
+                "Acompli",
+                "Hotmail"
+            ]
         },
         {
             "appName": "Microsoft PowerPoint",
@@ -5194,10 +5223,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ouraring.oura",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Oura Ring companion app (com.ouraring.oura).",
+            "notes": "Oura Health Oy. Oura Ring companion. Android and iOS com.ouraring.oura. Distinct from Fitbit, Garmin Connect, Samsung Health.",
             "dateAdded": "2026-07-12",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.ouraring.oura",
+                "Oura Ring"
+            ]
         },
         {
             "appName": "Pebble Smartwatch",
@@ -5561,13 +5593,18 @@
         {
             "appName": "ProtonMail",
             "icon": "proton-mail.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://proton.me/mail",
+            "category": "Email",
             "appleStoreUrl": "https://apps.apple.com/us/app/proton-mail-encrypted-email/id979659905",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.protonmail.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Proton AG. Android ch.protonmail.android; iOS ch.protonmail.protonmail (newer iOS mail cache uses group.me.proton.mail). Apple genre Productivity. Store title Proton Mail - Encrypted Email. Distinct from Proton Drive, Proton VPN, and Google Mail (Gmail).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
+                "ch.protonmail.android",
+                "ch.protonmail.protonmail",
                 "protonMail"
             ]
         },
@@ -5734,13 +5771,19 @@
         {
             "appName": "Reddit",
             "icon": "reddit.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.reddit.frontpage&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.reddit.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/reddit/id1064216828",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.reddit.frontpage",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Reddit, Inc. Android com.reddit.frontpage; iOS com.reddit.Reddit. Apple genre News. Distinct from Tumblr.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.reddit.frontpage",
+                "com.reddit.Reddit"
+            ]
         },
         {
             "appName": "Remember The Milk",
@@ -5799,6 +5842,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Ryanair",
+            "icon": "ryanair.webp",
+            "websiteUrl": "https://www.ryanair.com",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ryanair/id504270602",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ryanair.cheapflights",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Ryanair Ltd. booking and boarding app. Android and iOS both com.ryanair.cheapflights. Apple genre Travel. Distinct from United Airlines and American Airlines (AA).",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.ryanair.cheapflights",
+                "Ryan Air"
+            ]
         },
         {
             "appName": "SBB Mobile",
@@ -6128,14 +6188,19 @@
         {
             "appName": "Signal",
             "icon": "signal.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://signal.org/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/signal-private-messenger/id874139669",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Signal Messenger LLC private messenger (TextSecure and RedPhone merged). Android org.thoughtcrime.securesms; iOS org.whispersystems.signal. Apple genre Social Networking. Play/MOBILEdit title Signal Private Messenger. Distinct from OpenSignal, Session, and Silent Phone.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
-                "Signal Private Messenger / TextSecure"
+                "org.thoughtcrime.securesms",
+                "org.whispersystems.signal",
+                "TextSecure"
             ]
         },
         {
@@ -6177,13 +6242,38 @@
         {
             "appName": "Skype",
             "icon": "skype.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.skype.raider&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.skype.com",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/skype-for-iphone/id304878510",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.skype.raider",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Microsoft. Retired 2025-05-05; successor is Microsoft Teams Free. Android com.skype.raider; iOS com.skype.skype. Lite com.skype.m2. Apple genre Social Networking. Distinct from Microsoft Teams, Skype for Business, and GroupMe.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.skype.raider",
+                "com.skype.m2"
+            ]
+        },
+        {
+            "appName": "Skype for Business",
+            "icon": "skype-for-business.webp",
+            "websiteUrl": "https://www.microsoft.com/en-us/microsoft-365/skype-for-business",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/skype-for-business/id605841731",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.lync15",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft. Formerly Lync / Office Communicator. Android com.microsoft.office.lync15; iOS com.microsoft.lync2013.iphone. Apple genre Business. Skype for Business Online retired 2021-07-31; on-prem Server still supported. Distinct from Skype and Microsoft Teams.",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Lync",
+                "Office Communicator",
+                "com.microsoft.office.lync15",
+                "com.microsoft.lync2013.iphone"
+            ]
         },
         {
             "appName": "Skyscanner",
@@ -6202,16 +6292,18 @@
         {
             "appName": "Slack",
             "icon": "slack.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://slack.com",
+            "category": "Productivity",
             "appleStoreUrl": "https://apps.apple.com/us/app/slack/id618783545",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Slack&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Slack",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Salesforce Slack (formerly Tiny Speck). Android com.Slack; iOS com.tinyspeck.chatlyio. Apple genre Business. Oxygen Slack (desktop/store/web) map here. Distinct from Microsoft Teams, Discord, and Rocket Chat.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
-                "slack"
+                "com.Slack",
+                "com.tinyspeck.chatlyio"
             ]
         },
         {
@@ -6241,6 +6333,23 @@
             "dateAdded": "2026-07-12",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Smart Sidebar",
+            "icon": "smart-sidebar.webp",
+            "websiteUrl": "https://www.oppo.com/en/coloros/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Oppo ColorOS / OnePlus OxygenOS / Realme system sidebar and File Dock (com.coloros.smartsidebar). Not listed on Apple or Google Play; preinstalled. Distinct from third-party Play sidebar apps and from Samsung Edge panels.",
+            "dateAdded": "2026-08-19",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.coloros.smartsidebar",
+                "ColorOS Smart Sidebar"
+            ]
         },
         {
             "appName": "Smart Voice Recorder",
@@ -6273,15 +6382,20 @@
         {
             "appName": "Snapchat",
             "icon": "snapchat.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.snapchat.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/snapchat/id447188370",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.snapchat.android",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Snap Inc. Android com.snapchat.android; iOS com.toyopagroup.picaboo (originally Picaboo). Apple genre Photo & Video. Distinct from Zenly and from Bitmoji.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
-                "SnapChat",
-                "Snapchat Warrant Return"
+                "com.snapchat.android",
+                "com.toyopagroup.picaboo",
+                "Picaboo",
+                "SnapChat"
             ]
         },
         {
@@ -6584,13 +6698,19 @@
         {
             "appName": "Telegram",
             "icon": "telegram.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://telegram.org",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/telegram-messenger/id686449807",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Telegram FZ-LLC. Android org.telegram.messenger; iOS ph.telegra.Telegraph. Apple genre Social Networking; store title Telegram Messenger. Telegram X (org.thunderdog.challegram / org.telegram.TelegramHD) maps here. Distinct from Plus Messenger and TeleGuard.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "org.telegram.messenger",
+                "ph.telegra.Telegraph"
+            ]
         },
         {
             "appName": "Temp Mail",
@@ -6755,13 +6875,19 @@
         {
             "appName": "TikTok",
             "icon": "tiktok.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.tiktok.com",
+            "category": "Social Networking",
             "appleStoreUrl": "https://apps.apple.com/us/app/tiktok/id835599320",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "TikTok Ltd. Android and iOS both com.zhiliaoapp.musically (former musical.ly). Apple genre Entertainment / Photo & Video. TikTok Lite (com.zhiliaoapp.musically.go) maps here. Distinct from Douyin, CapCut, Lemon8, TikTok Studio, and Live.ly.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
+                "com.zhiliaoapp.musically",
+                "musical.ly",
+                "Musical.ly",
                 "tikTok"
             ]
         },
@@ -6799,10 +6925,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tinder",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Tinder LLC (Match Group). Android com.tinder; iOS com.cardify.tinder. Apple genre Lifestyle. Store title Tinder Dating App: Date & Chat. Distinct from Bumble, Grindr, OkCupid, and Plenty of Fish.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-12",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.tinder",
+                "com.cardify.tinder"
+            ]
         },
         {
             "appName": "To Do List",
@@ -6972,13 +7101,19 @@
         {
             "appName": "TrueCaller",
             "icon": "truecaller.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.truecaller&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.truecaller.com",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/truecaller-premium-caller-id/id448142450",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.truecaller",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "True Software Scandinavia AB. Android com.truecaller; iOS com.truesoftware.TrueCallerOther. Apple genre Utilities. Store title Truecaller: Premium Caller ID. Truecaller Messenger and the Android dialer (com.truecaller.phoneapp) map here.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.truecaller",
+                "True Caller"
+            ]
         },
         {
             "appName": "Truth Social",
@@ -7151,13 +7286,19 @@
         {
             "appName": "Uber",
             "icon": "uber.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.uber.com",
+            "category": "Transportation",
             "appleStoreUrl": "https://apps.apple.com/us/app/uber-request-a-ride/id368677368",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ubercab&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ubercab",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Uber Technologies. Rider app: Android com.ubercab; iOS com.ubercab.UberClient. Apple genre Travel. Store title Uber - Request a ride. Uber Russia (ru.yandex.uber) maps here. Distinct from Uber Eats, Uber Driver, Lyft, Gett Travel, Bolt, and Careem.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.ubercab",
+                "com.ubercab.UberClient"
+            ]
         },
         {
             "appName": "Uber Eats: Food Delivery",
@@ -7444,13 +7585,21 @@
         {
             "appName": "Weibo (\u5fae\u535a)",
             "icon": "weibo.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sina.weibo&hl=en",
-            "notes": "",
+            "websiteUrl": "https://weibo.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/id350962117",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sina.weibo",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "SINA Corporation. Android and iOS com.sina.weibo. International leftover packages com.sina.weibo4en and com.sina.weiboInter. Distinct from WeChat.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.sina.weibo",
+                "com.sina.weibo4en",
+                "com.sina.weiboInter",
+                "Sina Weibo"
+            ]
         },
         {
             "appName": "Whale",
@@ -7510,13 +7659,18 @@
         {
             "appName": "Wickr Me",
             "icon": "wickr-me.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://wickr.com",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/wickr-me-private-messenger/id528962154",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mywickr.wickr2",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Former consumer Wickr (Wickr LLC / Amazon). Shut down 2023-12-31. Android com.mywickr.wickr2; iOS com.mywickr.wickr. Apple genre Social Networking. Desktop WickrMe maps here. Distinct from AWS Wickr, Signal, Threema, and Wire.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
+            "dateUpdated": "2026-08-19",
             "alternateNames": [
+                "com.mywickr.wickr2",
+                "com.mywickr.wickr",
                 "wickr"
             ]
         },
@@ -7638,10 +7792,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.twitter.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "X Corp. (formerly Twitter). Android com.twitter.android; iOS com.atebits.Tweetie2 (originally Tweetie). Apple genre News. Store title X. Distinct from TweetDeck, Twitterrific, Threads (Instagram), Bluesky, and Truth Social.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-12",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.twitter.android",
+                "com.atebits.Tweetie2",
+                "Tweetie"
+            ]
         },
         {
             "appName": "XMS",
@@ -8159,10 +8317,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.what3words.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "what3words Ltd. Android com.what3words.android; iOS com.what3words.ios.what3words. Apple genre Navigation. Store title what3words: Navigation & Maps. Distinct from Google Maps, Apple Maps, and Waze.",
             "dateAdded": "2026-07-13",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-19",
+            "alternateNames": [
+                "com.what3words.android",
+                "com.what3words.ios.what3words",
+                "What 3 Words"
+            ]
         }
     ]
 }
