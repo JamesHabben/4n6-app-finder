@@ -1614,6 +1614,23 @@
             "alternateNames": []
         },
         {
+            "appName": "CapCut",
+            "icon": "capcut.webp",
+            "websiteUrl": "https://www.capcut.com",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/capcut-photo-video-editor/id1500855883",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "ByteDance. Android and iOS com.lemon.lvoverseas. Store title CapCut: Photo & Video Editor / CapCut - Video Editor. Distinct from TikTok, Douyin, Lemon8, TikTok Studio, and Jianying.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lemon.lvoverseas",
+                "Cap Cut"
+            ]
+        },
+        {
             "appName": "Careem",
             "icon": "careem.webp",
             "websiteUrl": "https://www.careem.com/",
@@ -2050,6 +2067,23 @@
             "activeOnPlayStore": "true"
         },
         {
+            "appName": "Disney+",
+            "icon": "disney-plus.webp",
+            "websiteUrl": "https://www.disneyplus.com",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/disney/id1446075923",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.disney.disneyplus",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Disney Electronic Content. Android and iOS com.disney.disneyplus. Distinct from Hulu, ESPN, Netflix, Prime Video, and My Disney Experience.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.disney.disneyplus",
+                "Disney Plus"
+            ]
+        },
+        {
             "appName": "Do It Later",
             "icon": "",
             "websiteUrl": "",
@@ -2211,13 +2245,20 @@
         {
             "appName": "Ebay",
             "icon": "ebay.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/ebay-selling-shopping-online/id282614216",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebay.mobile&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.ebay.com",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ebay-online-shopping-selling/id282614216",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebay.mobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "eBay Inc. Android com.ebay.mobile; iOS com.ebay.iphone. Store title eBay online shopping & selling. Distinct from Kijiji, Kleinanzeigen, Etsy, and eBay Motors.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-20",
+            "alternateNames": [
+                "com.ebay.mobile",
+                "com.ebay.iphone",
+                "eBay"
+            ]
         },
         {
             "appName": "Ebuddy",
@@ -2331,9 +2372,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.etsy.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Buyer marketplace app (Android com.etsy.android, iOS com.etsy.etsyforios). Store title Etsy: Shop from Real People. ArtiFast artifacts are Android-only. Distinct from Etsy Seller shop-management app.",
+            "notes": "Buyer marketplace app (Android com.etsy.android, iOS com.etsy.etsyforios). Store title Etsy: Shop from Real People. Apple genre Shopping. ArtiFast artifacts are Android-only. Distinct from Etsy Seller shop-management app.",
             "dateAdded": "2026-08-17",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-20",
             "alternateNames": [
                 "com.etsy.android",
                 "com.etsy.etsyforios",
@@ -3777,6 +3818,22 @@
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-10-31",
             "alternateNames": []
+        },
+        {
+            "appName": "Jianying (\u526a\u6620)",
+            "icon": "jianying.webp",
+            "websiteUrl": "https://www.capcut.cn",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/cn/app/id1458072671",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lemon.lv",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "ByteDance / Shenzhen Lianmeng. Android and iOS com.lemon.lv. Store title \u526a\u6620 - \u6296\u97f3\u5b98\u65b9AI\u521b\u4f5c\u795e\u5668. China App Store only; not on US store or Google Play. Distinct from CapCut, Douyin, TikTok, and \u526a\u6620\u4e13\u4e1a\u7248.",
+            "dateAdded": "2026-08-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lemon.lv"
+            ]
         },
         {
             "appName": "Jaxx Blockchain Wallet",

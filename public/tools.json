@@ -46,7 +46,7 @@
         "toolLongName": "LEAPPs (iLEAPP / ALEAPP)",
         "website": "https://leapps.org",
         "toolVersion": "",
-        "toolReleaseDate": "2026-08-19",
+        "toolReleaseDate": "2026-08-20",
         "icon": "tool-logo-leapp.jpg",
         "artifactListFile": "artifacts-leapp.json",
         "mapFile": "maps/leapps.json",
