@@ -57,7 +57,7 @@ function ToolsArtifactsListContent() {
         return expandedArtifacts.has(artifact) ? `${index}:open` : `${index}:closed`;
       },
       shouldAdjustScrollPositionOnItemSizeChange: () => false,
-      useFixedSize: false,
+      useFlushSync: false,
     });
 
     useEffect(() => {
