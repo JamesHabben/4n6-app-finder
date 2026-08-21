@@ -229,14 +229,15 @@
 .artifacts-list-viewport {
   flex: 1;
   min-height: 0;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
+  overflow-anchor: none;
 }
 
 .artifact-tile {
   border: 1px solid #ccc;
   border-radius: 8px;
-  margin: 0 0 6px;
+  margin: 0;
   max-width: 90%;
   box-sizing: border-box;
   cursor: pointer;

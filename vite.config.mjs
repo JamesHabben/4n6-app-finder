@@ -13,7 +13,6 @@ export default defineConfig({
       components: fromRoot('src/components'),
       services: fromRoot('src/services'),
       'App.css': fromRoot('src/App.css'),
-      'react-virtualized': fromRoot('node_modules/react-virtualized/dist/commonjs'),
     },
   },
   build: {
@@ -31,10 +30,6 @@ export default defineConfig({
 
           if (id.includes('recharts') || id.includes('d3-')) {
             return 'charts-vendor';
-          }
-
-          if (id.includes('react-virtualized')) {
-            return 'virtual-list-vendor';
           }
 
           return 'vendor';
