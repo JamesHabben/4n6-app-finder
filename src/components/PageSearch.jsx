@@ -1,8 +1,6 @@
-import React, { useState, useEffect, useRef, useContext, useCallback } from 'react';
+import React, { useState, useEffect, useContext, useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Input, Row, Col, Modal } from 'antd';
-import { LoadingOutlined } from '@ant-design/icons';
-import { debounce } from 'lodash';
 
 import { DataContext } from 'services/DataContext';
 import AppDetails from 'components/AppDetails';
@@ -46,31 +44,16 @@ function PageSearch() {
     navigate(`/?app=${encodeURIComponent(app.appName)}`);
   };
 
-  const [filteredApps, setFilteredApps] = useState([]);
-  const [isFiltering, setIsFiltering] = useState(false);
-  const debouncedFilterAppsRef = useRef();
+  const filteredApps = useMemo(() => {
+    const value = searchTerm.trim().toLowerCase();
+    if (!value) {
+      return [];
+    }
 
-  const filterApps = useCallback((search) => {
-    const value = search.trim().toLowerCase();
-    const filtered = apps.filter(app =>
+    return apps.filter(app =>
       (app.searchHaystack || app.appName.toLowerCase()).includes(value)
     );
-
-    setFilteredApps(filtered);
-    setIsFiltering(false);
-  }, [apps]);
-
-  useEffect(() => {
-    const debounced = debounce(filterApps, 0);
-    debouncedFilterAppsRef.current = debounced;
-    return () => debounced.cancel();
-  }, [filterApps]);
-
-  useEffect(() => {
-    if (searchTerm && debouncedFilterAppsRef.current) {
-      debouncedFilterAppsRef.current(searchTerm);
-    }
-  }, [searchTerm, filterApps]);
+  }, [apps, searchTerm]);
 
   const clearSearch = () => {
     setSearchTerm('');
@@ -79,11 +62,7 @@ function PageSearch() {
 
   useEffect(() => {
     if (searchTerm) {
-      setIsFiltering(true);
       navigate(`/?search=${encodeURIComponent(searchTerm)}`);
-    } else {
-      setIsFiltering(false);
-      setFilteredApps([]);
     }
   }, [searchTerm]);
 
@@ -113,11 +92,7 @@ function PageSearch() {
           }}
         />
         <div className='searchCount'>
-          {isFiltering ? (
-            <span>
-              <LoadingOutlined /> Searching...
-            </span>
-          ) : searchTerm ? (
+          {searchTerm ? (
             `${filteredApps.length} matching apps`
           ) : (
             <span>
