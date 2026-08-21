@@ -1,6 +1,7 @@
-import React, { useState, useEffect, useContext, useMemo } from 'react';
+import React, { useState, useEffect, useContext, useMemo, useDeferredValue, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Input, Row, Col, Modal } from 'antd';
+import { LoadingOutlined } from '@ant-design/icons';
 
 import { DataContext } from 'services/DataContext';
 import AppDetails from 'components/AppDetails';
@@ -9,8 +10,22 @@ import RecentAppsCard from 'components/searchCompnents/RecentAppsCard';
 import AppTile from 'components/searchCompnents/AppTile';
 import 'App.css'
 
+const SearchResults = memo(function SearchResults({ apps, onAppClick }) {
+  return (
+    <Row gutter={[16, 16]} justify={'center'}>
+      {apps.map((app, index) => (
+        <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
+          <AppTile app={app} onClick={onAppClick} />
+        </Col>
+      ))}
+    </Row>
+  );
+});
+
 function PageSearch() {
   const [searchTerm, setSearchTerm] = useState('');
+  const deferredSearchTerm = useDeferredValue(searchTerm);
+  const isSearchStale = searchTerm !== deferredSearchTerm;
   const { apps, tools } = useContext(DataContext);
   const [selectedApp, setSelectedApp] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -38,14 +53,14 @@ function PageSearch() {
     }
   }, [location, apps]);
 
-  const handleAppClick = (app) => {
+  const handleAppClick = useCallback((app) => {
     setSelectedApp(app);
     setIsModalVisible(true);
     navigate(`/?app=${encodeURIComponent(app.appName)}`);
-  };
+  }, [navigate]);
 
   const filteredApps = useMemo(() => {
-    const value = searchTerm.trim().toLowerCase();
+    const value = deferredSearchTerm.trim().toLowerCase();
     if (!value) {
       return [];
     }
@@ -53,7 +68,7 @@ function PageSearch() {
     return apps.filter(app =>
       (app.searchHaystack || app.appName.toLowerCase()).includes(value)
     );
-  }, [apps, searchTerm]);
+  }, [apps, deferredSearchTerm]);
 
   const clearSearch = () => {
     setSearchTerm('');
@@ -93,7 +108,13 @@ function PageSearch() {
         />
         <div className='searchCount'>
           {searchTerm ? (
-            `${filteredApps.length} matching apps`
+            isSearchStale ? (
+              <span>
+                <LoadingOutlined /> Searching...
+              </span>
+            ) : (
+              `${filteredApps.length} matching apps`
+            )
           ) : (
             <span>
               {`${apps.length} apps and `}
@@ -110,13 +131,9 @@ function PageSearch() {
         )}
       </div>
 
-      <Row gutter={[16, 16]} justify={'center'}>
-        {filteredApps.map((app, index) => (
-          <Col key={index} xs={24} sm={12} md={8} lg={6} xl={4}>
-            <AppTile app={app} onClick={handleAppClick} />
-          </Col>
-        ))}
-      </Row>
+      <div style={{ opacity: isSearchStale ? 0.6 : 1 }}>
+        <SearchResults apps={filteredApps} onAppClick={handleAppClick} />
+      </div>
       <Modal
         title="App Details"
         open={isModalVisible}
