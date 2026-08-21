@@ -333,9 +333,32 @@
   margin-bottom: 0.5rem;
 }
 
+.app-details-artifacts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 1rem 0 0.75rem;
+}
+
+.app-details-artifacts-header h2 {
+  margin: 0;
+}
+
+.app-details-artifacts-actions {
+  display: flex;
+  gap: 8px;
+}
+
 .app-tool-label {
   display: inline-flex;
   align-items: center;
+  gap: 8px;
+}
+
+.app-tool-artifact-actions {
+  display: inline-flex;
   gap: 8px;
 }
 
