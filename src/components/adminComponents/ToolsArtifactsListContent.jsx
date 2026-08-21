@@ -1,15 +1,28 @@
-import { useState, useContext, useEffect, useRef } from "react";
+import { useState, useContext, useEffect, useRef, useMemo } from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button, Typography } from 'antd';
 import { List, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
 
 import { DataContext, isMappedValue, mappedAppsFor, useToolArtifacts } from 'services/DataContext';
 
+const EMPTY_LIST = [];
+
+function getAppByNameKey(artifact, tool) {
+    if (tool?.appNameKey) {
+        return artifact[tool.appNameKey];
+    }
+    return null;
+}
+
+function isUnmapped(artifact, tool) {
+    const appName = getAppByNameKey(artifact, tool);
+    return !isMappedValue(tool?.artifactMap?.[appName]);
+}
+
 function ToolsArtifactsListContent() {
     const { tools } = useContext(DataContext);
     const [selectedTool, setSelectedTool] = useState(null);
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
-    const [displayedArtifactList, setDisplayedArtifactList] = useState([]);
     const [expandedArtifacts, setExpandedArtifacts] = useState(() => new Set());
     const navigate = useNavigate();
     const location = useLocation();
@@ -20,7 +33,18 @@ function ToolsArtifactsListContent() {
         defaultHeight: 56,
       })
     );
-    const { data: artifactList = [], isPending: isLoadingArtifacts } = useToolArtifacts(selectedTool);
+    const { data, isPending: isLoadingArtifacts } = useToolArtifacts(selectedTool);
+    const artifactList = data ?? EMPTY_LIST;
+
+    const displayedArtifactList = useMemo(() => {
+      if (!selectedTool) {
+        return EMPTY_LIST;
+      }
+      if (!showOnlyHighlighted) {
+        return artifactList;
+      }
+      return artifactList.filter(artifact => isUnmapped(artifact, selectedTool));
+    }, [artifactList, selectedTool, showOnlyHighlighted]);
 
     const recomputeHeights = () => {
       cacheRef.current.clearAll();
@@ -31,38 +55,27 @@ function ToolsArtifactsListContent() {
 
     useEffect(() => {
       const params = new URLSearchParams(location.search);
-      const urlTool = decodeURIComponent(params.get('tool') || '');
-      const urlUnmappedOnly = decodeURIComponent(params.get('unmappedOnly') || '');
-
-      const toolFromUrl = tools.find(t => t.toolShortName === urlTool);
+      const urlTool = params.get('tool') || '';
+      const urlUnmappedOnly = params.get('unmappedOnly') === '1';
 
       if (selectedTool) {
-        let newUrl = `?tool=${encodeURIComponent(selectedTool.toolShortName)}`;
-
-        if (showOnlyHighlighted) {
-          newUrl += '&unmappedOnly=1';
+        if (urlTool !== selectedTool.toolShortName || urlUnmappedOnly !== showOnlyHighlighted) {
+          const nextParams = new URLSearchParams();
+          nextParams.set('tool', selectedTool.toolShortName);
+          if (showOnlyHighlighted) {
+            nextParams.set('unmappedOnly', '1');
+          }
+          navigate({ search: nextParams.toString() }, { replace: true });
         }
-
-        if (location.search !== newUrl) {
-          navigate(newUrl);
-        }
-      } else if (toolFromUrl) {
-        setSelectedTool(toolFromUrl);
-        setShowOnlyHighlighted(urlUnmappedOnly === '1');
-      }
-    }, [showOnlyHighlighted, selectedTool, tools, location.search, navigate]);
-
-    useEffect(() => {
-      if (!selectedTool) {
-        setDisplayedArtifactList([]);
         return;
       }
 
-      const nextList = showOnlyHighlighted
-        ? artifactList.filter(artifact => isUnmapped(artifact, selectedTool))
-        : artifactList;
-      setDisplayedArtifactList(nextList);
-    }, [artifactList, selectedTool, showOnlyHighlighted]);
+      const toolFromUrl = tools.find(t => t.toolShortName === urlTool);
+      if (toolFromUrl) {
+        setSelectedTool(toolFromUrl);
+        setShowOnlyHighlighted(urlUnmappedOnly);
+      }
+    }, [showOnlyHighlighted, selectedTool, tools, location.search, navigate]);
 
     useEffect(() => {
       recomputeHeights();
@@ -71,13 +84,6 @@ function ToolsArtifactsListContent() {
     const handleToolClick = (tool) => {
       setExpandedArtifacts(new Set());
       setSelectedTool(tool);
-    };
-
-    const getAppByNameKey = (artifact, tool = selectedTool) => {
-      if (tool && tool.appNameKey) {
-        return artifact[tool.appNameKey];
-      }
-      return null;
     };
 
     const formatArtifactValue = (value) => {
@@ -91,11 +97,6 @@ function ToolsArtifactsListContent() {
         );
       }
       return value;
-    };
-
-    const isUnmapped = (artifact, tool = selectedTool) => {
-      const appName = getAppByNameKey(artifact, tool);
-      return !isMappedValue(tool?.artifactMap?.[appName]);
     };
 
     const getMappedCount = (list, tool) => {
@@ -127,9 +128,9 @@ function ToolsArtifactsListContent() {
 
     function rowRenderer({ index, key, parent, style }) {
       const artifact = displayedArtifactList[index];
-      const unmapped = isUnmapped(artifact);
+      const unmapped = isUnmapped(artifact, selectedTool);
       const expanded = isExpanded(artifact);
-      const name = getAppByNameKey(artifact);
+      const name = getAppByNameKey(artifact, selectedTool);
       const mappedValue = selectedTool?.artifactMap?.[name];
       const mappedApp = mappedValue === false ? 'false' : mappedAppsFor(mappedValue).join(', ');
 
