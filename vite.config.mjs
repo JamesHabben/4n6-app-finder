@@ -33,7 +33,7 @@ export default defineConfig({
             return 'charts-vendor';
           }
 
-          if (id.includes('react-virtualized') || id.includes('react-window')) {
+          if (id.includes('react-virtualized')) {
             return 'virtual-list-vendor';
           }
 
