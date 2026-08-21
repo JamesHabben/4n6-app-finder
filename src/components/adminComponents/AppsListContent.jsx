@@ -10,6 +10,7 @@ function AppsListContent() {
           <div key={app.appName} className="tool-card">
             <h2>
               <img
+                className="app-icon"
                 src={app.icon ? `/app-icons/${app.icon}` : '/images/logo192.png'}
                 alt={`${app.appName} Icon`}
                 width="50"

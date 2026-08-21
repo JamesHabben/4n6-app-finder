@@ -26,6 +26,17 @@
   margin-right: auto;
 }
 
+.app-icon {
+  border-radius: 33%;
+  object-fit: cover;
+}
+
+@supports (corner-shape: squircle) {
+  .app-icon {
+    corner-shape: squircle;
+  }
+}
+
 .pageTitle {
   margin-right: 30px;
 
@@ -294,10 +305,9 @@
   margin-bottom: 1rem;
 }
 
-.app-details-header img {
+.app-details-header .app-icon {
   width: 96px;
   height: 96px;
-  object-fit: contain;
   flex-shrink: 0;
 }
 

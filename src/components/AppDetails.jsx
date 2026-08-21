@@ -311,6 +311,7 @@ function AppDetails({ app, tools }) {
     <div className="app-details">
       <div className="app-details-header">
         <img
+          className="app-icon"
           src={app.icon ? `/app-icons/${app.icon}` : '/images/logo192.png'}
           alt={`${app.appName} App Icon`}
         />
