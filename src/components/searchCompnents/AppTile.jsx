@@ -3,7 +3,7 @@ import { Card } from 'antd';
 
 function AppTile({ app, onClick }) {
   return (
-    <Card bodyStyle={{ padding: '10px' }} onClick={() => onClick(app)}>
+    <Card styles={{ body: { padding: '10px' } }} onClick={() => onClick(app)}>
       <div style={{ textAlign: 'center' }}>
       <img
         className="app-icon"

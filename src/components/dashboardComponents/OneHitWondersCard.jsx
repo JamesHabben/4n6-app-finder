@@ -26,7 +26,7 @@ function OneHitWondersCard({ oneHitCount, totalApps }) {
       tabIndex={0}
       aria-label={`View ${oneHitCount} one-hit wonder apps out of ${totalApps} total apps`}
       style={{ margin: '1rem 0', width: 432, cursor: 'pointer' }}
-      bodyStyle={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' }}
+      styles={{ body: { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' } }}
     >
       <Progress
         type="circle"

@@ -20,35 +20,9 @@ const queryClient = new QueryClient({
 function App() {
   const [showScroll, setShowScroll] = useState(false);
 
-  const loadHeap = (heapId) => {
-    window.heap = window.heap || [];
-    window.heap.load = function (e, t) {
-      window.heap.appid = e;
-      window.heap.config = t = t || {};
-      const r = document.createElement("script");
-      r.type = "text/javascript";
-      r.async = true;
-      r.src = `https://cdn.heapanalytics.com/js/heap-${e}.js`;
-      const a = document.getElementsByTagName("script")[0];
-      a.parentNode.insertBefore(r, a);
-      for (const o of ["addEventProperties", "addUserProperties", "clearEventProperties", "identify", "resetIdentity", "removeEventProperty", "setEventProperties", "track", "unsetEventProperty"]) {
-        window.heap[o] = (...args) => {
-          window.heap.push([o].concat(args));
-        };
-      }
-    };
-    window.heap.load(heapId);
-  };
-
   React.useEffect(() => {
-    const heapId = import.meta.env.VITE_HEAP_ID;
-
     if (document.title && import.meta.env.DEV) {
       document.title += ' (Dev Mode)';
-    }
-
-    if (heapId) {
-      loadHeap(heapId);
     }
   }, []);
 

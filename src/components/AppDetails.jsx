@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useState, useContext } from 'react';
 import { Button, Collapse } from 'antd';
 import { DataContext } from 'services/DataContext';
-import { trackEvent } from 'services/analytics';
 
 const APP_HEADER_KEYS = new Set([
   'appName',
@@ -164,7 +163,6 @@ function AppDetails({ app, tools }) {
   const [openArtifacts, setOpenArtifacts] = useState({});
 
   useEffect(() => {
-    trackEvent('App View', { appName: app.appName });
     setToolArtifacts(null);
     setOpenTools([]);
     setOpenArtifacts({});
@@ -233,7 +231,6 @@ function AppDetails({ app, tools }) {
   };
 
   const handleIconClick = (toolShortName) => {
-    trackEvent('App Tool Jump', { toolName: toolShortName });
     setOpenTools(prev => (prev.includes(toolShortName) ? prev : [...prev, toolShortName]));
     window.setTimeout(() => {
       document.getElementById(`app-tool-${toolShortName}`)?.scrollIntoView({

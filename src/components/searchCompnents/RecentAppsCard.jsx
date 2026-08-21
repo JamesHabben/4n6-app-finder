@@ -2,7 +2,6 @@ import React, { useMemo, useCallback } from 'react';
 import { Row, Col } from 'antd';
 
 import AppTile from 'components/searchCompnents/AppTile';
-import { trackEvent } from 'services/analytics';
 
 function latestActivityDate(app) {
   const added = app.dateAdded ? new Date(app.dateAdded) : null;
@@ -21,8 +20,6 @@ function RecentAppsCard({ apps, onAppClick }) {
   }, [sortedApps]);
 
   const handleTileClick = useCallback((app) => {
-    trackEvent('Recent App Clicked', { appName: app.appName });
-
     if (onAppClick) {
       onAppClick(app);
     }

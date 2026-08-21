@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Card, Modal } from 'antd';
-import { trackEvent } from 'services/analytics';
-//import './WhatsNewTile.css';  // Import the CSS file
 
 function WhatsNewTile() {
   const [markdown, setMarkdown] = useState('');
@@ -21,7 +19,6 @@ function WhatsNewTile() {
   }, []);
 
   const showModal = () => {
-    trackEvent('Whats New More', { })
     setIsModalVisible(true);
   };
 
@@ -32,7 +29,7 @@ function WhatsNewTile() {
   return (
     <div style={{ marginBottom:'20px'}}>
       
-      <Card bodyStyle={{ padding: '10px', textAlign: 'left' }} className="whats-new-card" onClick={showModal}>
+      <Card styles={{ body: { padding: '10px', textAlign: 'left' } }} className="whats-new-card" onClick={showModal}>
         <h1>What's New</h1>
         <ReactMarkdown className="whats-new-content">{previewContent}</ReactMarkdown>
         <a onClick={showModal} style={{ cursor: 'pointer' }}>Show More</a>
