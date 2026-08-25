@@ -36,14 +36,21 @@
         },
         {
             "appName": "1Weather Forecasts & Radar",
-            "icon": "1weather.jpg",
-            "websiteUrl": "",
+            "icon": "1weather.webp",
+            "websiteUrl": "https://1weatherapp.com/",
+            "category": "Weather",
             "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.handmark.expressweather&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.handmark.expressweather",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "OneLouder Apps (formerly Handmark Express Weather). Android com.handmark.expressweather. Play title 1Weather Forecasts & Radar. No Apple App Store listing. Distinct from 3D Flip Clock & Weather, AccuWeather: Weather Radar, Apple Weather, Yahoo Weather, Weather Underground, and Weather #1 Interactive Widgets.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.handmark.expressweather",
+                "1Weather",
+                "Express Weather"
+            ]
         },
         {
             "appName": "3D Flip Clock & Weather",
@@ -228,14 +235,22 @@
         },
         {
             "appName": "AccuWeather: Weather Radar",
-            "icon": "accuweather.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.accuweather.android&hl=en",
-            "notes": "",
+            "icon": "accuweather.webp",
+            "websiteUrl": "https://www.accuweather.com/",
+            "category": "Weather",
+            "appleStoreUrl": "https://apps.apple.com/us/app/accuweather-weather-forecast/id300048137",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.accuweather.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "AccuWeather International, Inc. (Android com.accuweather.android, iOS com.yourcompany.TestWithCustomTabs). Play title AccuWeather: Weather Radar; Apple title AccuWeather: Weather Forecast. Distinct from Apple Weather, Yahoo Weather, Weather Underground, The Weather Channel, and Weather Up + AccuWeather Data.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.accuweather.android",
+                "com.yourcompany.TestWithCustomTabs",
+                "AccuWeather",
+                "AccuWeather: Weather Forecast"
+            ]
         },
         {
             "appName": "Addison Lee London Minicabs",
@@ -884,6 +899,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Apple Power Log",
+            "icon": "apple-power-log.webp",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "iOS PowerLog / PerfPowerTelemetry diagnostic databases (PLSQL, BGSQL, EPSQL). Not a store app; kept for tool artifact joins. All iLEAPP PowerLog and Power Telemetry artifacts map here. ArtiFast application key Powerlog. Distinct from Apple Unified Logs, Apple Sysdiagnose, Biome, KnowledgeC, and Microsoft Teams - Power Log.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Power Log",
+                "PerfPowerTelemetry"
+            ]
+        },
+        {
             "appName": "Apple Reminders",
             "icon": "apple-reminders.png",
             "websiteUrl": "",
@@ -915,15 +947,19 @@
         },
         {
             "appName": "Apple Weather",
-            "icon": "apple-weather.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "apple-weather.webp",
+            "websiteUrl": "https://support.apple.com/guide/iphone/check-the-weather-iph1a3d32da3/ios",
+            "category": "Weather",
+            "appleStoreUrl": "https://apps.apple.com/us/app/weather/id1069513131",
             "googlePlayUrl": "",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Apple Inc. built-in Weather (iOS com.apple.weather). Store title Weather. ArtiFast application key Weather is shared with Samsung Weather Clock. Distinct from Samsung Weather, Yahoo Weather, AccuWeather: Weather Radar, and Weather Underground.",
             "dateAdded": "2023-10-22",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-24",
             "alternateNames": [
-                "weatherAppLocations"
+                "com.apple.weather",
+                "iOS Weather"
             ]
         },
         {
@@ -1306,6 +1342,24 @@
             "dateAdded": "2023-11-01",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Blink",
+            "icon": "blink.webp",
+            "websiteUrl": "https://blinkforhome.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/blink-home-monitor/id1013961111",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.immediasemi.android.blink",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Amazon Blink Home Monitor (Immedia Semiconductor). Android com.immediasemi.android.blink; iOS com.immediasemi.ios.blink. Store title Blink Home Monitor. Distinct from Ring, Nest, Arlo, Blink Shell, Blink Charging, and Blinkit.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.immediasemi.android.blink",
+                "com.immediasemi.ios.blink",
+                "Blink Home Monitor"
+            ]
         },
         {
             "appName": "Bluesky",
@@ -1972,13 +2026,20 @@
         {
             "appName": "Coinbase",
             "icon": "coinbase.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.coinbase.android",
-            "notes": "",
+            "websiteUrl": "https://www.coinbase.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/coinbase-buy-crypto-stocks/id886427730",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.coinbase.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Coinbase, Inc. crypto exchange (Android com.coinbase.android, iOS com.vilcsak.bitcoin2). Store title Coinbase: Buy Crypto & Stocks. Distinct from Base (formerly Coinbase Wallet), BRD - bitcoin wallet, Binance, and Kraken.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.coinbase.android",
+                "com.vilcsak.bitcoin2",
+                "Coinbase: Buy Crypto & Stocks"
+            ]
         },
         {
             "appName": "Coinomi: Crypto Bitcoin Wallet",
@@ -2037,6 +2098,24 @@
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Copy",
+            "icon": "copy.webp",
+            "websiteUrl": "",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/copy-for-ios/id546789632",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.copy",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Barracuda Networks Copy.com cloud storage (Android com.copy). Apple title Copy for iOS. Service ended 1 May 2016; both store listings removed. Distinct from Dropbox, Box, MEGA, Microsoft OneDrive, CudaDrive, clipboard apps named Copy, and Copy My Data phone-transfer apps.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.copy",
+                "Copy.com",
+                "Copy for iOS"
+            ]
         },
         {
             "appName": "CoverMe",
@@ -2151,6 +2230,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "DHL",
+            "icon": "dhl.webp",
+            "websiteUrl": "https://www.dhl.com/",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/dhl-express-mobile-app/id1426463073",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dhl.exp.dhlmobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "DHL Express (Singapore) Pte. Ltd. shipment tracking (Android and iOS com.dhl.exp.dhlmobile). Store titles DHL Express Mobile / DHL Express Mobile App. Apple genre Business. Distinct from DHL Express Lockers, Mój DHL, MySupplyChain Track & Trace, and Deutsche Post / DHL Paket apps.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dhl.exp.dhlmobile",
+                "DHL Express Mobile",
+                "DHL Express Mobile App"
+            ]
         },
         {
             "appName": "Digital Wellbeing",
@@ -2389,14 +2486,41 @@
         },
         {
             "appName": "Ebuddy",
-            "icon": "ebuddy.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "ebuddy.webp",
+            "websiteUrl": "https://www.ebuddy.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ebuddy-messenger/id320087242",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebuddy.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "eBuddy B.V. multi-network IM client (Android com.ebuddy.android, iOS com.ebuddy.pushmessenger). Apple titles eBuddy Messenger and paid eBuddy Pro Messenger (id 336346413). Both store listings removed. Distinct from Ebuddy XMS, IM+, Fring, Nimbuzz, and the current App Store app Ebuddy: Gaming Social Platform.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.ebuddy.android",
+                "com.ebuddy.pushmessenger",
+                "eBuddy",
+                "eBuddy Messenger",
+                "eBuddy Pro Messenger"
+            ]
+        },
+        {
+            "appName": "Ebuddy XMS",
+            "icon": "ebuddy-xms.webp",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ebuddy-xms/id425154540",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ebuddy.android.xms",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "eBuddy B.V. proprietary messenger launched 2011 (Android com.ebuddy.android.xms, iOS com.ebuddy.xms). Apple title XMS - Unlimited messaging. Better. Free. Both store listings removed. Distinct from classic Ebuddy / eBuddy Messenger (com.ebuddy.android, com.ebuddy.pushmessenger), WhatsApp, Kik, and the current App Store app Ebuddy: Gaming Social Platform.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.ebuddy.android.xms",
+                "com.ebuddy.xms",
+                "XMS - Unlimited messaging. Better. Free."
+            ]
         },
         {
             "appName": "Ecosia Browser",
@@ -2809,14 +2933,20 @@
         },
         {
             "appName": "Fitbit",
-            "icon": "fitbit.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/search?q=fitbit&c=apps&hl=en",
-            "notes": "",
+            "icon": "fitbit.webp",
+            "websiteUrl": "https://www.fitbit.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-health-fitbit/id462638897",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fitbit.FitbitMobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC Fitbit wearable companion (Android and iOS com.fitbit.FitbitMobile). Store title Google Health (Fitbit) after the Google acquisition. Apple genre Health & Fitness. Distinct from Google Fit, Garmin Connect, Apple Health, Samsung Health, and Zepp Life.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.fitbit.FitbitMobile",
+                "Google Health (Fitbit)"
+            ]
         },
         {
             "appName": "Fitify: Fitness & Home Workout",
@@ -3586,13 +3716,21 @@
         {
             "appName": "Grindr",
             "icon": "grindr.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.grindr.com/",
+            "category": "Dating",
             "appleStoreUrl": "https://apps.apple.com/us/app/grindr-gay-dating-chat/id319881193",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grindrapp.android&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grindrapp.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Grindr LLC gay dating (Android com.grindrapp.android, iOS com.grindrguy.grindrx; former iOS com.grindrguy.grindr). Store title Grindr - Gay Dating & Chat. Apple genre Social Networking. Distinct from SCRUFF, Growlr, ROMEO - Gay Chat & Dating, and Jack’d.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.grindrapp.android",
+                "com.grindrguy.grindrx",
+                "com.grindrguy.grindr",
+                "Grindr - Gay Dating & Chat"
+            ]
         },
         {
             "appName": "Grok",
@@ -3912,6 +4050,26 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "HuffPost",
+            "icon": "huffpost.webp",
+            "websiteUrl": "https://www.huffpost.com/",
+            "category": "News",
+            "appleStoreUrl": "https://apps.apple.com/us/app/huffpost-news-politics/id306621789",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.huffingtonpost.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "The Huffington Post news (Android com.huffingtonpost.android, iOS com.huffingtonpost.HuffingtonPost). Store title HuffPost - News & Politics. Formerly The Huffington Post. Distinct from Le HuffPost, BuzzFeed, BBC News, and POLITICO.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.huffingtonpost.android",
+                "com.huffingtonpost.HuffingtonPost",
+                "Huffington Post",
+                "The Huffington Post",
+                "HuffPost - News & Politics"
+            ]
         },
         {
             "appName": "Icing",
@@ -5591,10 +5749,29 @@
             "websiteUrl": "",
             "appleStoreUrl": "https://apps.apple.com/us/app/opera-browser-with-vpn-and-ai/id1411869974",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.browser&hl=en",
-            "notes": "",
+            "notes": "Opera Norway AS full browser (Android com.opera.browser, iOS com.opera.OperaTouch). Distinct from Opera Mini, Opera GX, and Opera VPN.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-08-24",
             "alternateNames": []
+        },
+        {
+            "appName": "Opera Mini",
+            "icon": "opera-mini.webp",
+            "websiteUrl": "https://www.opera.com/mini",
+            "category": "Browser",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.mini.native",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Opera Norway AS compressed browser (Android com.opera.mini.native / legacy com.opera.mini.android; former iOS com.opera.OperaMini). Play title Opera Mini: Fast Web Browser. iOS listing removed. Distinct from Opera, Opera GX, Opera Mobile (full Android Opera), and Opera VPN.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.opera.mini.native",
+                "com.opera.mini.native.beta",
+                "com.opera.mini.android",
+                "com.opera.OperaMini"
+            ]
         },
         {
             "appName": "Ornet Browser",
@@ -5785,6 +5962,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "PicsArt",
+            "icon": "picsart.webp",
+            "websiteUrl": "https://picsart.com/",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/picsart-ai-photo-editor-video/id587366035",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.picsart.studio",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "PicsArt, Inc. photo and video editor (Android and iOS com.picsart.studio). Store title Picsart AI Photo Editor, Video. Distinct from Pinterest, VSCO, PicCollage: Magic Photo Editor, Photoshop Express Photo Editor, and Canva.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.picsart.studio",
+                "Picsart",
+                "Picsart AI Photo Editor, Video"
+            ]
         },
         {
             "appName": "Pidgin",
@@ -6699,6 +6894,24 @@
             "alternateNames": []
         },
         {
+            "appName": "SimpleX",
+            "icon": "simplex.webp",
+            "websiteUrl": "https://simplex.chat/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/simplex-chat-secure-messenger/id1605771084",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=chat.simplex.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "SimpleX Chat Ltd private messenger (Android and iOS chat.simplex.app). No user identifiers or phone number. Store titles SimpleX Chat / SimpleX Chat: secure messenger. Apple genre Social Networking. Distinct from Signal, Session, Threema, Briar, Element, Simplex ELD 2GO, and Simplex Health.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "chat.simplex.app",
+                "SimpleX Chat",
+                "SimpleX Chat: secure messenger"
+            ]
+        },
+        {
             "appName": "Skred",
             "icon": "skred.webp",
             "websiteUrl": "https://www.skred.app/",
@@ -7222,10 +7435,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.swisscows.messenger.teleguardapp",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Swisscows AG encrypted messenger (Android and iOS ch.swisscows.messenger.teleguardapp). No phone number required. Apple genre Social Networking. Distinct from Telegram, TeleGuard Business, Signal, Threema, and Session.",
             "dateAdded": "2026-07-12",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "ch.swisscows.messenger.teleguardapp",
+                "Teleguard"
+            ]
         },
         {
             "appName": "Telegram",
@@ -7651,6 +7867,24 @@
             ]
         },
         {
+            "appName": "Trust Wallet",
+            "icon": "trust-wallet.webp",
+            "websiteUrl": "https://trustwallet.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/trust-crypto-bitcoin-wallet/id1288339409",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.wallet.crypto.trustapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Binance-owned self-custody crypto wallet (Android com.wallet.crypto.trustapp, iOS com.sixdays.trust). Store title Trust: Crypto & Bitcoin Wallet. Distinct from Coinbase, Base (formerly Coinbase Wallet), BRD - bitcoin wallet, Exodus: Crypto Bitcoin Wallet, MetaMask, Phantom, SafePal, and Apple Wallet.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.wallet.crypto.trustapp",
+                "com.sixdays.trust",
+                "Trust: Crypto & Bitcoin Wallet"
+            ]
+        },
+        {
             "appName": "Truth Social",
             "icon": "truth-social.webp",
             "websiteUrl": "https://truthsocial.com/",
@@ -7870,6 +8104,26 @@
             "alternateNames": []
         },
         {
+            "appName": "Untappd",
+            "icon": "untappd.webp",
+            "websiteUrl": "https://untappd.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/untappd-find-drinks-you-love/id449141888",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.untappdllc.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Next Glass / Untappd, Inc. beer check-in and ratings (Android com.untappdllc.app, iOS com.untappdllc.com). Store titles Untappd: Find Beer You'll Love / Untappd: Find Drinks You Love. Apple genre Food & Drink. Distinct from Untappd for Business, Foursquare Swarm, Yelp: Food, Delivery & Reviews, and Vivino.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.untappdllc.app",
+                "com.untappdllc.com",
+                "Untapped",
+                "Untappd: Find Beer You'll Love",
+                "Untappd: Find Drinks You Love"
+            ]
+        },
+        {
             "appName": "Urban Spin",
             "icon": "",
             "websiteUrl": "",
@@ -7879,6 +8133,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "uTorrent",
+            "icon": "utorrent.webp",
+            "websiteUrl": "https://www.utorrent.com/",
+            "category": "File Sharing",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.utorrent.client",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Rainberry / BitTorrent Inc. Android torrent client (com.utorrent.client; paid SKU com.utorrent.client.pro). Play title µTorrent®- Torrent Downloader. No Apple App Store listing. Distinct from BitTorrent (com.bittorrent.client).",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.utorrent.client",
+                "com.utorrent.client.pro",
+                "µTorrent",
+                "µTorrent®- Torrent Downloader"
+            ]
         },
         {
             "appName": "Vinted",
@@ -8096,6 +8369,26 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-09",
             "alternateNames": []
+        },
+        {
+            "appName": "Weather Underground",
+            "icon": "weather-underground.webp",
+            "websiteUrl": "https://www.wunderground.com/",
+            "category": "Weather",
+            "appleStoreUrl": "https://apps.apple.com/us/app/weather-underground-local-map/id486154808",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.wunderground.android.weather",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Weather Underground, LLC (The Weather Company). Android com.wunderground.android.weather; iOS com.wunderground.weatherunderground. Store titles Weather Underground: Local Map / Weather data & microclimate :. Distinct from Apple Weather, The Weather Channel, AccuWeather: Weather Radar, and Yahoo Weather.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.wunderground.android.weather",
+                "com.wunderground.weatherunderground",
+                "Wunderground",
+                "Weather Underground: Local Map",
+                "Weather data & microclimate :"
+            ]
         },
         {
             "appName": "WeChat",
@@ -8370,17 +8663,6 @@
             ]
         },
         {
-            "appName": "XMS",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Xabber",
             "icon": "xabber.png",
             "websiteUrl": "https://www.xabber.com/",
@@ -8431,16 +8713,22 @@
         },
         {
             "appName": "Yahoo Weather",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "yahoo-weather.webp",
+            "websiteUrl": "https://www.yahoo.com/news/weather/",
+            "category": "Weather",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yahoo-weather-daily-forecasts/id628677149",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.weather",
-            "activeOnAppleStore": "",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Yahoo Inc. weather (Android com.yahoo.mobile.client.android.weather, iOS com.yahoo.weather). Store titles Yahoo Weather: Forecast & Maps / Yahoo Weather: Daily Forecasts. Distinct from Yahoo!, Yahoo! Mail, Yahoo! Messenger, Apple Weather, Weather Underground, AccuWeather: Weather Radar, and The Weather Channel.",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-24",
+            "alternateNames": [
+                "com.yahoo.mobile.client.android.weather",
+                "com.yahoo.weather",
+                "Yahoo Weather: Forecast & Maps",
+                "Yahoo Weather: Daily Forecasts"
+            ]
         },
         {
             "appName": "Yahoo!",
@@ -8609,6 +8897,41 @@
             "alternateNames": [
                 "com.yelp.android",
                 "Yelp: Food, Services & Reviews"
+            ]
+        },
+        {
+            "appName": "Yeti - Campus Stories",
+            "icon": "",
+            "websiteUrl": "https://theyetiapp.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yeti.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Factyle / Cinemagram Inc. anonymous campus photo-video feed (Android com.yeti.android). Later Apple title Yeti - share snaps and meet people around you. Store listings removed. Distinct from Yik Yak, Snapchat, Whisper, Wigo, Cinemagram, YETI coolers, Yeti Escape, and Yeti Capture Everything.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.yeti.android",
+                "Yeti - share snaps and meet people around you"
+            ]
+        },
+        {
+            "appName": "Yik Yak",
+            "icon": "yik-yak.webp",
+            "websiteUrl": "https://yikyak.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yik-yak/id1573043816",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yikyak2",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Anonymous location/campus feed. Original Android com.yik.yak (Play removed 2017); 2021 relaunch iOS com.yikyak.2, Android com.yikyak2 (Play removed Mar 2023). Sidechat acquired the brand in 2023. Distinct from Whisper, Jodel: Hyperlocal Community, Fizz, Nextdoor, and Yeti - Campus Stories.",
+            "dateAdded": "2026-08-24",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.yik.yak",
+                "com.yikyak.2",
+                "com.yikyak2"
             ]
         },
         {

@@ -2975,6 +2975,38 @@
         "last_update_date": "2026-05-24"
     },
     {
+        "filename": "dhl",
+        "artifactKey": "dhl_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "DHL - Account and Settings",
+        "description": "Parses the DHL Android app account identifier and the notification and language settings it stores.",
+        "category": "DHL",
+        "notes": "One row per stored user record. Account ID is the identifier the app keeps for the signed in user. Language and the notification flags are the settings the record carries, reported as stored. The record also has the app stores a large catalogue of countries, currencies and shipping package types in the same database; those are reference data the app ships with rather than anything the user produced, and are not reported. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.dhl.exp.dhlmobile/databases/dhledb.db*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "dhl",
+        "artifactKey": "dhl_tracked_shipments",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "DHL - Tracked Shipments",
+        "description": "Parses the shipments a user tracked in the DHL Android app, with the airway bill number and the time it was searched.",
+        "category": "DHL",
+        "notes": "One row per tracking search. Airway Bill is the shipment number the user entered or opened, and Search Date is when the app recorded the search. The row carries the account identifier that made the search; a search made before sign in carries a zero account, which is why one of the two rows on the tested device did. Search Date is stored as local text with no zone, so it is reported as stored rather than converted. A row records that the number was tracked, not that the account holder is the sender or recipient of that shipment. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/com.dhl.exp.dhlmobile/databases/dhledb.db*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
         "filename": "wellbeing",
         "artifactKey": "get_wellbeing_url",
         "sourceTool": "ALEAPP",
@@ -5453,14 +5485,15 @@
         "name": "Gmail - App Emails",
         "description": "Parses emails from Gmail",
         "category": "Email",
-        "notes": "Recipient, Reply To, Mailed By, Signed by and Subject Line are read from numbered fields of the zipped message protobuf. Protobuf field positions were established through testing; Mailed By and Signed by reflect stored header values and are not verified against Authentication-Results.",
+        "notes": "Recipient, Reply To, Mailed By, Signed by and Subject Line are read from numbered fields of the zipped message protobuf. Protobuf field positions were established through testing; Mailed By and Signed by reflect stored header values and are not verified against Authentication-Results. Message is the readable text extracted from the stored HTML body (tags, styling and repeated whitespace removed); Links lists the distinct link targets the same body carries, in document order, as stored. The unmodified body stays in the source database. The app keeps one bigTopDataDB.<id> store per signed-in account; every matched store is read, across every Android user of the device, with duplicate storage spellings (data/data, data/user/<n>, data_mirror) collapsed first and stores read in sorted path order. Account ID is the numeric store id as stored. The Account column is filled only when the Java String.hashCode of an address recorded in the same app instance's Gmail.xml equals the store id, which held for every store in the tested images; a store with no matching recorded address keeps a blank Account. A store that cannot be opened or queried is logged and skipped without dropping the other accounts' rows.",
         "author": "Alexis Brignoni, Patrick Dalla, @stark4n6",
         "paths": [
-            "*/data/com.google.android.gm/databases/bigTopDataDB.*",
-            "*/data/com.google.android.gm/files/downloads/*/attachments/*/*.*"
+            "*/com.google.android.gm/databases/bigTopDataDB.*",
+            "*/com.google.android.gm/files/downloads/*/attachments/*/*.*",
+            "*/com.google.android.gm/shared_prefs/Gmail.xml"
         ],
         "creation_date": "2023-01-04",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "gmailEmails",
@@ -5470,10 +5503,11 @@
         "name": "Gmail - Download Requests",
         "description": "Parses download requests from Gmail",
         "category": "Email",
+        "notes": "Every matched downloader.db is read, across every Android user of the device, with duplicate storage spellings collapsed first and stores read in sorted path order.",
         "author": "@stark4n6",
-        "paths": "*/data/com.google.android.gm/databases/downloader.db*",
+        "paths": "*/com.google.android.gm/databases/downloader.db*",
         "creation_date": "2023-01-04",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "gmailIMAPEmails",
@@ -5483,10 +5517,11 @@
         "name": "Gmail - IMAP Accounts",
         "description": "Parses IMAP Accounts in the Gmail App",
         "category": "Email",
+        "notes": "Every matched EmailProvider store is read, across every Android user of the device, with duplicate storage spellings collapsed first and stores read in sorted path order. No tested image held IMAP accounts, so row-producing behavior is verified against constructed known data, not a real image.",
         "author": "ogmini",
-        "paths": "*/data/com.google.android.gm/databases/EmailProvider.*",
+        "paths": "*/com.google.android.gm/databases/EmailProvider.*",
         "creation_date": "2025-10-11",
-        "last_update_date": "2025-10-11"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "gmailIMAPEmails",
@@ -5496,15 +5531,16 @@
         "name": "Gmail - IMAP Mailbox Emails",
         "description": "Parses emails from IMAP mailboxes in the Gmail App",
         "category": "Email",
+        "notes": "Every matched EmailProvider store is read, across every Android user of the device, with duplicate storage spellings collapsed first and stores read in sorted path order. The Account column is the emailAddress the store's own Account table records for the row. Body and attachment files are only paired with rows from the same app instance they belong to. Body(HTML) is the readable text extracted from the message's stored HTML body file; Links lists the distinct link targets that body carries, in document order, as stored, and the unmodified body file stays in the report's data folder. No tested image held IMAP data (every EmailProvider.db carried empty Account and Message tables), so row-producing behavior is verified against constructed known data, not a real image.",
         "author": "ogmini",
         "paths": [
-            "*/data/com.google.android.gm/databases/EmailProvider.*",
-            "*/data/com.google.android.gm/files/body/0/*/*.*",
-            "*/data/com.google.android.gm/databases/*.db_att/*",
-            "*/data/com.google.android.gm/cache/*.attachment"
+            "*/com.google.android.gm/databases/EmailProvider.*",
+            "*/com.google.android.gm/files/body/0/*/*.*",
+            "*/com.google.android.gm/databases/*.db_att/*",
+            "*/com.google.android.gm/cache/*.attachment"
         ],
         "creation_date": "2025-08-20",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "gmailEmails",
@@ -5514,13 +5550,14 @@
         "name": "Gmail - Label Details",
         "description": "Parses email label metadata from Gmail",
         "category": "Email",
+        "notes": "One row per label per account store. Every matched bigTopDataDB.<id> store is read, across every Android user of the device, with duplicate storage spellings collapsed first and stores read in sorted path order. Account ID is the numeric store id as stored; the Account column is resolved from the same app instance's Gmail.xml as described in Gmail - App Emails. Label values are reported as stored.",
         "author": "@stark4n6",
         "paths": [
-            "*/data/com.google.android.gm/databases/bigTopDataDB.*",
-            "*/data/com.google.android.gm/files/downloads/*/attachments/*/*.*"
+            "*/com.google.android.gm/databases/bigTopDataDB.*",
+            "*/com.google.android.gm/shared_prefs/Gmail.xml"
         ],
         "creation_date": "2023-01-04",
-        "last_update_date": "2025-07-31"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "gmail",
@@ -5530,12 +5567,13 @@
         "name": "GmailActive",
         "description": "gmailActive: Get gmail account information",
         "category": "Gmail",
+        "notes": "One row per Gmail.xml, so a device with several Android users reports each user's active account. Duplicate storage spellings of the same file (data/data, data/user/<n>, data_mirror) are collapsed before reading, and files are read in sorted path order so the output does not depend on the host platform's directory listing order.",
         "author": "Joshua James {joshua@dfirscience.org}",
         "paths": [
             "*/com.google.android.gm/shared_prefs/Gmail.xml"
         ],
         "creation_date": "2021-11-08",
-        "last_update_date": "2021-11-08"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "googleAccountHistory",
@@ -11938,6 +11976,92 @@
         "last_update_date": "2022-12-13"
     },
     {
+        "filename": "simplexChat",
+        "artifactKey": "simplex_contacts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SimpleX Chat - Contacts",
+        "description": "Parses the contacts held in the SimpleX Chat Android encrypted database, with the display name and the last chat time.",
+        "category": "SimpleX Chat",
+        "notes": "One row per contact. Read from the same encrypted database as the messages and subject to the same requirement that the extraction carries the key. Local Alias is a name the account holder set for the contact and is separate from the name the contact published, so both are reported. Full Name, Short Description and Incognito were empty on every row of the tested device, and Favourite, Deleted, Unread Chat and Status were uniform there, so none of those distinguished one contact from another on that sample. Incognito, Favourite and Deleted are the flags the record carries. Contact Link is the connection address the record holds, as stored. Field mapping was done against two private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/chat.simplex.app/files_chat.db",
+            "*/Secrets/secrets.json"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "simplexChat",
+        "artifactKey": "simplex_files",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SimpleX Chat - Files",
+        "description": "Parses the file transfers recorded in the SimpleX Chat Android encrypted database, and whether the stored file is present.",
+        "category": "SimpleX Chat",
+        "notes": "One row per file record. File Present states whether a file of that name is in the extraction beside the database; on the tested sample 15 of the 20 records had one. The stored files are themselves encrypted and this artifact does not decrypt them, so no media column is offered. What was established about that encryption is worth recording: each record carries a 32 byte key and a 24 byte nonce as raw values, and every stored file is exactly 16 bytes larger than the size the record states, which is consistent with a Poly1305 tag on an XSalsa20-Poly1305 box. Six combinations of keystream offset and tag position were tried against the sample and none produced a recognisable image or video header, so the On the tested device Stored Encrypted was Yes on every record, Key Length was 32 and Nonce Length 24 throughout, every record used the same transfer protocol and belonged to one contact, and Group ID was empty because no file arrived through a group. scheme is not established here and the key and nonce are reported as stored so the work can be picked up. Field mapping was done against two private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/chat.simplex.app/files_chat.db",
+            "*/chat.simplex.app/files/app_files/*",
+            "*/Secrets/secrets.json"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "simplexChat",
+        "artifactKey": "simplex_message_edits",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SimpleX Chat - Message Edits",
+        "description": "Parses the earlier versions of edited SimpleX Chat messages, which record what a message said before it was changed.",
+        "category": "SimpleX Chat",
+        "notes": "One row per stored version of a message. The app keeps the previous content of an edited message, so these rows are what a message said before it was changed and are reported alongside the message they belong Created and Updated were identical on every row of the tested device, so no stored version was itself revised after it was written. to. Version Time is when that version was current. Content is the stored structured content, as stored. Field mapping was done against two private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/chat.simplex.app/files_chat.db",
+            "*/Secrets/secrets.json"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "simplexChat",
+        "artifactKey": "simplex_messages",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SimpleX Chat - Messages",
+        "description": "Parses the messages held in the SimpleX Chat Android encrypted database, with the direction, the contact and the message text.",
+        "category": "SimpleX Chat",
+        "notes": "One row per chat item. The app keeps its database encrypted with SQLCipher, and this artifact reads it only when the extraction also carries the key: the passphrase is taken from the SimpleX entry of a Secrets/secrets.json produced during acquisition, and without that file nothing is reported. Decryption uses the SQLCipher 4 defaults, a 4096 byte page with 256,000 PBKDF2 iterations and HMAC-SHA512, and the reader verifies the HMAC of every page: on the tested sample all 531 pages verified, so the decryption is checked rather than assumed. Direction comes from the item's own sent flag, 1 for sent and 0 for received, which covered every row. Timestamps are stored as text with nanosecond precision and the fraction is trimmed to microseconds before parsing, because releases before 3.11 accept only three or six digits. Deleted and Edited are the flags the row carries, so a message the account holder Group ID, Disappearing TTL and Disappears At were empty on every row of the tested device, which says the account used no group chats and set no disappearing timers there rather than that the artifact cannot read them, and User Mention was uniformly zero. deleted is still reported and marked rather than dropped. Item Content is the record's own structured content, as stored, and is carried because a row with no text can still be a call, a file or a member event. Field mapping was done against two private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/chat.simplex.app/files_chat.db",
+            "*/Secrets/secrets.json"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "simplexChat",
+        "artifactKey": "simplex_reactions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SimpleX Chat - Reactions",
+        "description": "Parses the reactions recorded against SimpleX Chat messages, with the reaction and whether the account holder sent it.",
+        "category": "SimpleX Chat",
+        "notes": "One row per reaction. Sent is the flag the record carries and separates a On the tested device every reaction belonged to one contact, Group ID was empty because none came through a group, and Created and Updated were identical. reaction the account holder made from one made to their message. Reaction is the stored value, as stored, which the app writes as a structured value rather than a bare character. Field mapping was done against two private samples provided by Mattia; no sample data is recorded for them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/chat.simplex.app/files_chat.db",
+            "*/Secrets/secrets.json"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
         "filename": "skout",
         "artifactKey": "get_skout_messages",
         "sourceTool": "ALEAPP",
@@ -12950,6 +13074,55 @@
     },
     {
         "filename": "teleguard",
+        "artifactKey": "get_teleguard_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - Account",
+        "description": "Teleguard local account identity",
+        "category": "Teleguard",
+        "notes": "The local account is stored as the 'user' row of the service table, whose data column is JSON. Server ID is the account identifier that appears in the sender, receiver and chatId columns of the messages table. The same JSON carries an RSA key pair in PEM form on some app versions. The key material itself is not written to the report; the columns record whether each key was present and a SHA-256 fingerprint of the DER body, which is enough to correlate the account across extractions without copying a private key into report output. Fields absent from an app version's JSON are left blank rather than reported as empty values. Personal ID and Current Phone were empty on the tested extraction: TeleGuard issues the Server ID itself and requires no telephone number, and a personal ID is set by the account holder only if they choose one, so both columns being blank is a result about the account rather than a column that is never populated. The settings key holding the phone value was spelled '_currentPhone' on Android and 'currentPhone' on iOS in the tested extractions and both spellings are read.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "get_teleguard_app_settings",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - App Settings",
+        "description": "Teleguard app configuration values",
+        "category": "Teleguard",
+        "notes": "Last Cache Clearing is the flutter.lastCacheClearing value from the app's FlutterSharedPreferences file, stored as a Unix millisecond epoch. Database Version is the contents of the app_flutter/db.version file. The same preferences file also holds a bundled emoji catalogue that accounts for most of its size and is not user data; it is not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/shared_prefs/FlutterSharedPreferences.xml",
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/db.version"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "get_teleguard_calls",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - Calls",
+        "description": "Teleguard audio and video call events",
+        "category": "Teleguard",
+        "notes": "Call events are stored as rows of the messages table with type 'CALL', not in a separate call log. Each row carries a JSON metadata object with the keys isSuccessfull, subtext, membersText and callType; all call rows in the tested extractions carried all four. Direction is derived by comparing the row's sender with the local account's serverId from the service table, which agreed with the app's own English event label on every call row in the tested extractions. Duration and outcome are reported as stored: subtext is a localised display string giving either a spelled out minutes and seconds count or a word for why the call did not connect, not a numeric duration, and no numeric duration is stored for these rows. The messages table's userTime column is not reported here because it held exactly the same value as createDate on every call row of every tested extraction, unlike the text rows of the same table where the two differ. Connected and Chat ID each held one value across the tested Android extraction, which reflects a device whose calls all connected and were all with one contact rather than a column that cannot vary. The database also carries an empty sipcalls table with number, name, duration, date and cost columns; it held no rows in any tested extraction and is not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
         "artifactKey": "get_teleguard_channels",
         "sourceTool": "ALEAPP",
         "Platform": "Android",
@@ -12959,10 +13132,26 @@
         "notes": "The channels table is read with 'SELECT *' and the first twelve columns are labelled by position; the mapping was established against the app version this parser was written for and may not hold on other versions. Any further columns are not reported.",
         "author": "@abrignoni",
         "paths": [
-            "*/data/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
         ],
         "creation_date": "2024-01-09",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "get_teleguard_chat_events",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - Chat Events",
+        "description": "Teleguard invitation and group membership events",
+        "category": "Teleguard",
+        "notes": "Membership and invitation events are stored as rows of the messages table with type 'SERVICE'. The event text is the app's own localised display string and is reported as stored. These rows carry no sender in the tested extractions, so no direction is derived for them. The messages table's userTime column is not reported here because it was null on every service row of every tested extraction.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "teleguard",
@@ -12972,12 +13161,47 @@
         "name": "Teleguard - Contacts",
         "description": "Teleguard contacts with avatars",
         "category": "Teleguard",
+        "notes": "Personal ID is an optional identifier separate from the Server ID the app issues. The app's own binary labels it 'Personal TeleGuard ID', carries a 'Change personal ID' action and a buyPersonalId endpoint, and adds the column to this table in a migration, so a contact has one only where that feature was used. It was null on every contact row of every tested extraction, meaning none of those contacts had one recorded.",
         "author": "@abrignoni",
         "paths": [
-            "*/data/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
         ],
         "creation_date": "2024-01-09",
-        "last_update_date": "2024-01-09"
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "get_teleguard_drafts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - Drafts",
+        "description": "Teleguard unsent message drafts",
+        "category": "Teleguard",
+        "notes": "Drafts live in a second database, teleguard_temp.db, in the same directory as teleguard_database.db. The draft table is keyed on the recipient's serverId, which is resolved to a contact alias from the contacts table of the main database in the same app data directory. The Draft Text column was an empty string, not null, on every row of every tested extraction: the app keeps a draft row per conversation and clears the text when the message is sent, so a row records that a draft existed for that conversation and the tested devices held no recoverable draft text. The same database carries a messages_buffer table, which held no rows in any tested extraction and is not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_temp.db*",
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "get_teleguard_media_downloads",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - Media Downloads",
+        "description": "Teleguard media download tasks",
+        "category": "Teleguard",
+        "notes": "The app fetches message media through the flutter_downloader plugin, which records each attempt in databases/download_tasks.db. A row records that the app requested one media object and what became of that request; the status and progress values are the plugin's own and are reported as stored. The file name is the server file identifier, which is the key used in a message's metadata files object, so rows are joined back to the message that carried the media by that identifier. One media object can own more than one row, because a retry is recorded as its own task. The task's headers column holds a bearer token; the token is not written to the report and only the account identifier from its subject claim is reported. MIME Type, Saved Directory and Requesting Account each held one value across the tested extraction, which reflects one account fetching every item into one cache directory with the server declaring a generic type, not columns that cannot vary.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/databases/download_tasks.db*",
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "teleguard",
@@ -12987,13 +13211,14 @@
         "name": "Teleguard - Messages",
         "description": "Teleguard messenger messages",
         "category": "Teleguard",
+        "notes": "Is Edited? held 0 on every message row of every tested extraction, so no message in them had been edited. The column is reported so an edited message is visible on an extraction that has one. Call events and membership events are rows of this same table, of type CALL and SERVICE, and are also reported in full by Teleguard - Calls and Teleguard - Chat Events.",
         "author": "@abrignoni",
         "paths": [
-            "*/data/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*",
-            "*/data/ch.swisscows.messenger.teleguardapp/cache/**"
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*",
+            "*/ch.swisscows.messenger.teleguardapp/cache/**"
         ],
         "creation_date": "2024-01-09",
-        "last_update_date": "2026-07-03"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "teleguard",
@@ -13005,10 +13230,27 @@
         "category": "Teleguard",
         "author": "@abrignoni",
         "paths": [
-            "*/data/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/teleguard_database.db*"
         ],
         "creation_date": "2024-01-09",
-        "last_update_date": "2024-01-09"
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "get_teleguard_saved_images",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Teleguard - Saved Images",
+        "description": "Teleguard images written outside the message media cache",
+        "category": "Teleguard",
+        "notes": "Two locations, distinguished by the Location column. Files named avatar<epoch>.jpg in the app's app_flutter directory carry a Unix millisecond epoch in the file name, reported in the File Name Timestamp column; in the tested extraction that image was not byte identical to any avatar blob stored in the contacts table, and what the app writes it for is not established here. Files under the device's shared Pictures/TeleGuard directory are images present in shared storage rather than in the app's private data. Their names are RFC 4122 version 1 UUIDs, whose embedded timestamp is reported in the UUID Timestamp column; that timestamp is a property of the identifier, not a recorded file time. Message media held in the app's cache directory is reported by Teleguard - Messages, not here.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/ch.swisscows.messenger.teleguardapp/app_flutter/avatar*.jpg",
+            "*/data/media/*/Pictures/TeleGuard/*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "textnow",
@@ -15175,7 +15417,7 @@
             "*/mobile/Library/Preferences/com.apple.mobiletimerd.plist"
         ],
         "creation_date": "2021-01-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "allTrails",
@@ -15403,7 +15645,7 @@
             "*/mobile/Library/FrontBoard/applicationState.db*"
         ],
         "creation_date": "2020-07-23",
-        "last_update_date": "2026-08-06"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appStoreSearches",
@@ -15467,7 +15709,7 @@
             "*/mobile/Library/Application Support/com.apple.akd/devicelist.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleAccountDeviceList",
@@ -15483,7 +15725,7 @@
             "*/mobile/Library/Application Support/com.apple.akd/devicelist.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "apple_atx_images",
@@ -15499,7 +15741,7 @@
             "**/*.atx"
         ],
         "creation_date": "2026-06-25",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "mailprotect",
@@ -15515,7 +15757,7 @@
             "*/mobile/Library/Mail/* Index*"
         ],
         "creation_date": "2020-05-07",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "mailprotect",
@@ -15525,13 +15767,13 @@
         "name": "Apple Email - Message Headers",
         "description": "RFC 822 headers of Apple Mail messages, including CC and BCC, read from the .emlx files in MessageData",
         "category": "Apple Mail",
-        "notes": "In the examined corpora no CC/BCC recipients appeared in the Envelope Index recipients table. The CC/BCC columns are parsed per RFC 822 but no message in the available test corpora carries either header, so those two columns are unexercised.",
+        "notes": "In the examined corpora no CC/BCC recipients appeared in the Envelope Index recipients table. The CC/BCC columns are parsed per RFC 822 but no message in the available test corpora carries either header, so those two columns are unexercised. Date headers whose zone is '-0000' or an unrecognized name are read as UTC, per RFC 5322 sections 3.3 and 4.3 (Universal Time, sender's local zone unknown); 54 of the 2,010 messages in the tested corpus carry '-0000', none an unrecognized zone name, so the unrecognized-name path is unexercised.",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/mobile/Library/Mail/MessageData/*/*.emlx"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "appleIntelligenceReport",
@@ -15563,7 +15805,7 @@
             "*/Shared/AppGroup/*/Library/Preferences/group.com.apple.Maps.plist"
         ],
         "creation_date": "2020-08-03",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleMapsApplication",
@@ -15577,7 +15819,7 @@
         "author": "@AlexisBrignoni",
         "paths": "*/Data/Application/*/Library/Preferences/com.apple.Maps.plist",
         "creation_date": "2020-08-03",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleMapsTrips",
@@ -15593,7 +15835,7 @@
             "*/Library/Caches/com.apple.routined/Cloud-V2.sqlite*"
         ],
         "creation_date": "2026-03-04",
-        "last_update_date": "2026-08-08"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleMapsTrips",
@@ -15609,7 +15851,7 @@
             "*/Library/Caches/com.apple.routined/Cloud-V2.sqlite*"
         ],
         "creation_date": "2026-03-04",
-        "last_update_date": "2026-08-08"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleMapsTrips",
@@ -15626,7 +15868,7 @@
             "*/Library/Caches/com.apple.routined/Cloud-V2.sqlite*"
         ],
         "creation_date": "2026-03-04",
-        "last_update_date": "2026-08-08"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "applePodcasts",
@@ -15639,7 +15881,7 @@
         "author": "@stark4n6",
         "paths": "*/MTLibrary.sqlite*",
         "creation_date": "2021-07-21",
-        "last_update_date": "2025-10-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "applePodcasts",
@@ -15652,7 +15894,7 @@
         "author": "@stark4n6",
         "paths": "*/MTLibrary.sqlite*",
         "creation_date": "2021-07-21",
-        "last_update_date": "2025-10-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "recents",
@@ -15683,7 +15925,7 @@
             "*/nanopasses.sqlite3*"
         ],
         "creation_date": "2021-02-17",
-        "last_update_date": "2026-08-06"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleWalletPasses",
@@ -15696,7 +15938,7 @@
         "author": "@any333",
         "paths": "*/Cards/*.pkpass/pass.json",
         "creation_date": "2021-02-17",
-        "last_update_date": "2026-08-06"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleWalletCards",
@@ -15755,7 +15997,7 @@
         "author": "@mxkrt - @AlexisBrignoni",
         "paths": "*/mobile/Library/FrontBoard/applicationState.db*",
         "creation_date": "2025-08-04",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "applicationStateDB",
@@ -15769,7 +16011,7 @@
         "author": "@mxkrt - @AlexisBrignoni",
         "paths": "*/mobile/Library/FrontBoard/applicationState.db*",
         "creation_date": "2025-08-04",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "applicationStateDB",
@@ -15782,7 +16024,7 @@
         "author": "@AlexisBrignoni - @mxkrt",
         "paths": "*/mobile/Library/FrontBoard/applicationState.db*",
         "creation_date": "2025-08-27",
-        "last_update_date": "2025-10-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "userDefaults",
@@ -15799,7 +16041,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/*.plist"
         ],
         "creation_date": "2024-12-16",
-        "last_update_date": "2026-08-08"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "mobileInstall",
@@ -15849,7 +16091,7 @@
             "*/BundleMetadata.plist"
         ],
         "creation_date": "2020-10-04",
-        "last_update_date": "2025-12-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "mobileInstall",
@@ -15896,7 +16138,7 @@
             "*/Library/Caches/de.audi.myaudimobileassistant/fsCachedData/**"
         ],
         "creation_date": "2024-06-01",
-        "last_update_date": "2025-10-28"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chrome",
@@ -15963,7 +16205,7 @@
         "author": "@stark4n6",
         "paths": "*/Battery/BDC/BDC_SBC_*.csv",
         "creation_date": "2026-03-18",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -15977,7 +16219,7 @@
         "author": "@djangofaiola, Gear-I",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/disk-bereal-ProfileRepository/*",
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -15991,7 +16233,7 @@
         "author": "@djangofaiola, Gear-I",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/disk-bereal-BlockedUserManager/*",
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16008,7 +16250,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/bereal-chat.sqlite*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16027,7 +16269,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/disk-bereal-Production_postFeedItems/*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16041,7 +16283,7 @@
         "author": "@djangofaiola, Gear-I",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/disk-bereal-RelationshipsContactsManager-contact/*",
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16061,7 +16303,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Caches/disk-bereal-Production_FriendsStorage.followers/*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16078,7 +16320,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/bereal-chat.sqlite*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16092,7 +16334,7 @@
         "author": "@djangofaiola, Gear-I",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/PersonRepository/*",
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16109,7 +16351,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Caches/disk-bereal-PersonRepository-pinnedMemories-key/*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16128,7 +16370,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/disk-bereal-Production_postFeedItems/*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "BeReal",
@@ -16147,7 +16389,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/disk-bereal-Production_postFeedItems/*"
         ],
         "creation_date": "2024-12-20",
-        "last_update_date": "2026-07-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16163,7 +16405,7 @@
             "*/streams/*/Device.Wireless.AirplaneMode/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAirpMode",
@@ -16176,7 +16418,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/_DKEvent.System.AirplaneMode/local/*",
         "creation_date": "2020-04-30",
-        "last_update_date": "2025-10-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppActivity",
@@ -16192,7 +16434,7 @@
             "*/streams/*/App.Activity/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppinstall",
@@ -16208,7 +16450,7 @@
             "*/Biome/streams/restricted/App.Install/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppInstallation",
@@ -16224,7 +16466,7 @@
             "*/streams/*/App.Installation/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppIntentsTranscript",
@@ -16240,7 +16482,7 @@
             "*/streams/*/App.Intents.Transcript/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppLocationActivity",
@@ -16256,7 +16498,7 @@
             "*/streams/*/App.LocationActivity/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppRelevantShortcuts",
@@ -16272,7 +16514,7 @@
             "*/streams/*/App.RelevantShortcuts/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppWebUsage",
@@ -16300,7 +16542,7 @@
             "*/streams/*/AppleIntelligence.Reporting.AssetDeliveryLog.Availability/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppleIntelligence",
@@ -16316,7 +16558,7 @@
             "*/streams/*/AppleIntelligence.Availability/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppleIntelligence",
@@ -16332,7 +16574,7 @@
             "*/streams/*/AppleIntelligence.Reporting.AssetDeliveryLog.ModelCatalog/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppleIntelligence",
@@ -16348,7 +16590,7 @@
             "*/streams/*/AppleIntelligence.Reporting.SafetyOverrides/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppleIntelligence",
@@ -16363,7 +16605,7 @@
             "*/streams/*/AppleIntelligence.Reporting.AssetDeliveryLog.SoftwareUpdateController/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAppleIntelligence",
@@ -16378,7 +16620,7 @@
             "*/streams/*/AppleIntelligence.Reporting.AssetDeliveryLog.UnifiedAssetFramework/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -16393,7 +16635,7 @@
             "*/streams/*/_DKEvent.Audio.InputRoute/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -16408,7 +16650,7 @@
             "*/streams/*/_DKEvent.Audio.OutputRoute/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAudioMediaRoutes",
@@ -16424,7 +16666,7 @@
             "*/streams/*/Audio.Route/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAutonamingMessageIds",
@@ -16440,7 +16682,7 @@
             "*/streams/*/Autonaming.Messages.MessageIds/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeBacklight",
@@ -16456,7 +16698,7 @@
             "*/streams/*/Device.Display.Backlight/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16472,7 +16714,7 @@
             "*/streams/*/Device.Power.BatteryLevel/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeBattperc",
@@ -16487,7 +16729,7 @@
             "*/[Bb]iome/streams/restricted/_DKEvent.Device.BatteryPercentage/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16503,7 +16745,7 @@
             "*/streams/*/Device.Thermals.BatteryTemperature/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeBluetooth",
@@ -16517,7 +16759,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/Device.Wireless.Bluetooth/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeBootSession",
@@ -16533,7 +16775,7 @@
             "*/streams/*/Device.BootSession/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeCameraAutoFocusROI",
@@ -16549,7 +16791,7 @@
             "*/streams/*/CameraCapture.AutoFocusROI/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeCarplayisconnected",
@@ -16562,7 +16804,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/_DKEvent.Carplay.IsConnected/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2025-10-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16578,7 +16820,7 @@
             "*/streams/*/CarPlay.Connected/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16593,7 +16835,7 @@
             "*/streams/*/Device.Wireless.CellularDataEnabled/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeClockAlarm",
@@ -16609,7 +16851,7 @@
             "*/streams/*/Clock.Alarm/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -16625,7 +16867,7 @@
             "*/streams/*/_DKEvent.Clock.Alarm/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "cnaAutocompleteFeedback",
@@ -16641,7 +16883,7 @@
             "*/mobile/Library/CoreDuet/People/Feedback/CNA/local/*"
         ],
         "creation_date": "2026-07-30",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceMetadata",
@@ -16657,7 +16899,7 @@
             "*/streams/*/Device.Metadata/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDevplugin",
@@ -16673,7 +16915,7 @@
             "*/[Bb]iome/streams/restricted/_DKEvent.Device.IsPluggedIn/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSync",
@@ -16701,7 +16943,7 @@
             "*/streams/*/Device.TimeZone/local/*"
         ],
         "creation_date": "2026-07-09",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDiscoverabilitySignals",
@@ -16717,7 +16959,7 @@
             "*/streams/*/Discoverability.Signals/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -16733,7 +16975,7 @@
             "*/streams/*/_DKEvent.Display.Orientation/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -16748,7 +16990,7 @@
             "*/streams/*/_DKEvent.Settings.DoNotDisturb/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeEmergencyVoiceCall",
@@ -16764,7 +17006,7 @@
             "*/streams/*/CommCenter.Call.EmergencyVoiceCall/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeEmojiEngagement",
@@ -16780,7 +17022,7 @@
             "*/streams/*/Emoji.Engagement/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16796,7 +17038,7 @@
             "*/streams/*/Device.Power.EnergyMode/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeFrontBoardDisplayElement",
@@ -16812,7 +17054,7 @@
             "*/streams/*/FrontBoard.DisplayElement/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeHardware",
@@ -16825,7 +17067,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/OSAnalytics.Hardware.Reliability/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeInfocus",
@@ -16841,7 +17083,7 @@
             "*/[Bb]iome/streams/restricted/App.InFocus/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKInfocus",
@@ -16856,7 +17098,7 @@
             "*/[Bb]iome/streams/restricted/_DKEvent.App.InFocus/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeIntents",
@@ -16873,7 +17115,7 @@
             "*/streams/*/App.Intent/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16889,7 +17131,7 @@
             "*/streams/*/Device.Display.InterfaceOrientation/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKKeybag",
@@ -16902,7 +17144,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/_DKEvent.Keybag.IsLocked/local/*",
         "creation_date": "2025-04-29",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16918,7 +17160,7 @@
             "*/streams/*/Device.KeybagLocked/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeStreams",
@@ -16934,7 +17176,7 @@
             "*/[Bb]iome/streams/restricted/Keyboard.TokenFrequency/local/*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeLocationactivity",
@@ -16949,7 +17191,7 @@
             "*/[Bb]iome/streams/restricted/_DKEvent.App.LocationActivity/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeLocationVisit",
@@ -16965,7 +17207,7 @@
             "*/streams/*/Location.Visit/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -16980,7 +17222,7 @@
             "*/streams/*/Device.Power.LowPowerMode/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -16995,7 +17237,7 @@
             "*/streams/*/_DKEvent.Device.LowPowerMode/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeAudioMediaRoutes",
@@ -17010,7 +17252,7 @@
             "*/streams/*/Media.Route/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeStreams",
@@ -17026,7 +17268,7 @@
             "*/[Bb]iome/streams/restricted/Messages.Read/local/*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeNetworkingEdgeSelection",
@@ -17042,7 +17284,7 @@
             "*/streams/*/Device.Networking.EdgeSelection/local/*"
         ],
         "creation_date": "2026-07-28",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeNotes",
@@ -17055,7 +17297,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/NotesContent/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2025-10-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeNotificationUsage",
@@ -17081,7 +17323,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/public/Notification/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2025-10-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeNowplaying",
@@ -17097,7 +17339,7 @@
             "*/streams/*/Media.NowPlaying/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomePhotosSearchInsights",
@@ -17113,7 +17355,7 @@
             "*/streams/*/AeroML.Insights.PhotosSearchInsights/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -17129,7 +17371,7 @@
             "*/streams/*/Device.Power.PluggedIn/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-27"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeStreams",
@@ -17145,7 +17387,7 @@
             "*/[Bb]iome/streams/restricted/ProactiveHarvesting.Mail/local/*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeStreams",
@@ -17160,7 +17402,7 @@
             "*/[Bb]iome/streams/restricted/ProactiveHarvesting.Messages/local/*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSafari",
@@ -17175,7 +17417,7 @@
             "*/[Bb]iome/streams/restricted/_DKEvent.Safari.History/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSafariNavigations",
@@ -17191,7 +17433,7 @@
             "*/streams/*/Safari.Navigations/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSafariWebPagePerformance",
@@ -17207,7 +17449,7 @@
             "*/streams/*/Safari.WebPagePerformance/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -17223,7 +17465,7 @@
             "*/streams/*/_DKEvent.Device.IsLockedImputed/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -17239,7 +17481,7 @@
             "*/streams/*/Device.ScreenLocked/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeStreams",
@@ -17255,7 +17497,7 @@
             "*/[Bb]iome/streams/restricted/ScreenTime.AppUsage/local/*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeShareSheetConversation",
@@ -17271,7 +17513,7 @@
             "*/streams/*/MLSE.ShareSheet.ConversationUserInteraction/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeShareSheetFeedback",
@@ -17287,7 +17529,7 @@
             "*/streams/*/ShareSheet.Feedback/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDeviceStateStreams",
@@ -17303,7 +17545,7 @@
             "*/streams/*/Device.SilentMode/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSiriRemembersAssistantSuggestions",
@@ -17320,7 +17562,7 @@
             "*/streams/*/Siri.Remembers.AssistantSuggestions/remote/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSiriRemembersAudioHistory",
@@ -17337,7 +17579,7 @@
             "*/streams/*/Siri.Remembers.AudioHistory/remote/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSiriRemembersCallHistory",
@@ -17354,7 +17596,7 @@
             "*/streams/*/Siri.Remembers.CallHistory/remote/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSiriRemembersInteractionHistory",
@@ -17371,7 +17613,7 @@
             "*/streams/*/Siri.Remembers.InteractionHistory/remote/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSiriRemembersMessageHistory",
@@ -17388,7 +17630,7 @@
             "*/streams/*/Siri.Remembers.MessageHistory/remote/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSiriUI",
@@ -17404,7 +17646,7 @@
             "*/streams/*/Siri.UI/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDKEventStreams",
@@ -17420,7 +17662,7 @@
             "*/streams/*/_DKEvent.Siri.Ui/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeSystemSettingsSearchTerms",
@@ -17435,7 +17677,7 @@
             "*/streams/*/SystemSettings.SearchTerms/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeTextinputses",
@@ -17452,7 +17694,7 @@
             "*/Biome/streams/restricted/Text.InputSession/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeUseractmeta",
@@ -17468,7 +17710,7 @@
             "*/streams/*/UniversalRecents.UserActivity.Metadata/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-25"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeWalletTransaction",
@@ -17484,7 +17726,7 @@
             "*/streams/*/Wallet.Transaction/local/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeDevWifi",
@@ -17497,7 +17739,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/Device.Wireless.WiFi/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeWifi",
@@ -17510,7 +17752,7 @@
         "author": "@JohnHyla",
         "paths": "*/Biome/streams/restricted/_DKEvent.Wifi.Connection/local/*",
         "creation_date": "2024-10-17",
-        "last_update_date": "2025-10-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "biomeApplePaySecurity",
@@ -17670,7 +17912,7 @@
             "*/Biome/sets/Default/App.Shortcut.Entity/*/Database/Set.db*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeSetsStores",
@@ -17686,7 +17928,7 @@
             "*/Biome/sets/Default/App.Shortcut.Phrase/*/Database/Set.db*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeSetsStores",
@@ -17702,7 +17944,7 @@
             "*/Biome/sets/Default/Contacts.Contact/Database/Set.db*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeSetsStores",
@@ -17718,7 +17960,7 @@
             "*/Biome/sets/Default/FindMy.Device/Database/Set.db*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeSetsStores",
@@ -17734,7 +17976,7 @@
             "*/Biome/sets/Default/App.InstalledApp/Database/Set.db*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "biomeSetsStores",
@@ -17750,7 +17992,7 @@
             "*/Biome/sets/Default/Location.SignificantLocation/Database/Set.db*"
         ],
         "creation_date": "2026-07-11",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "torrentData",
@@ -17810,7 +18052,7 @@
             "*/mobile/Library/Preferences/com.apple.cmfsyncagent.plist"
         ],
         "creation_date": "2023-12-08",
-        "last_update_date": "2025-11-03"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keychain",
@@ -17840,7 +18082,7 @@
         "author": "@JohnHyla",
         "paths": "*/Library/Database/com.apple.MobileBluetooth.ledevices.other.db*",
         "creation_date": "2024-10-21",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "bluetoothPairedReg",
@@ -17853,7 +18095,7 @@
         "author": "@JohnHyla",
         "paths": "*/com.apple.MobileBluetooth.devices.plist",
         "creation_date": "2024-10-21",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "bluetoothPairedLE",
@@ -17866,7 +18108,7 @@
         "author": "@JohnHyla",
         "paths": "*/com.apple.MobileBluetooth.ledevices.paired.db*",
         "creation_date": "2024-10-21",
-        "last_update_date": "2026-07-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "booking",
@@ -18208,7 +18450,7 @@
         "author": "@djangofaiola",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/com.adhoclabs.burner/Cache.db*",
         "creation_date": "2024-03-05",
-        "last_update_date": "2025-05-02"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "burnerCache",
@@ -18222,7 +18464,7 @@
         "author": "@djangofaiola",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/com.adhoclabs.burner/Cache.db*",
         "creation_date": "2024-03-05",
-        "last_update_date": "2025-05-02"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "burnerCache",
@@ -18239,7 +18481,7 @@
             "*/Library/Caches/com.adhoclabs.burner/fsCachedData/*"
         ],
         "creation_date": "2024-03-05",
-        "last_update_date": "2025-05-13"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "burnerCache",
@@ -18253,7 +18495,7 @@
         "author": "@djangofaiola",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/com.adhoclabs.burner/Cache.db*",
         "creation_date": "2024-03-05",
-        "last_update_date": "2025-05-02"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "burner",
@@ -18367,7 +18609,7 @@
             "*/CacheDeletePurgeHistory.txt"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-07-26"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "nsVault",
@@ -18399,7 +18641,7 @@
             "*/Calendar.sqlitedb*"
         ],
         "creation_date": "2024-10-30",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "calendarAll",
@@ -18415,7 +18657,7 @@
             "*/Calendar.sqlitedb*"
         ],
         "creation_date": "2023-11-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "calendarAll",
@@ -18431,7 +18673,7 @@
             "*/Calendar.sqlitedb*"
         ],
         "creation_date": "2023-11-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "callHistory",
@@ -18475,7 +18717,7 @@
         "author": "@JohnHyla",
         "paths": "*/var/mobile/Library/CallHistoryTransactions/transactions.log*",
         "creation_date": "2024-12-11",
-        "last_update_date": "2025-11-12"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "recentApphistory",
@@ -18507,7 +18749,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/CCEntitySync-internal.cashappapi.com.sqlite*"
         ],
         "creation_date": "2021-10-06",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "cashAppB",
@@ -18521,7 +18763,7 @@
         "author": "Alexis Brignoni",
         "paths": "*/Environments/Production/Accounts/*/*-internal.cashappapi.com.sqlite*",
         "creation_date": "2025-08-24",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "celWireless",
@@ -18537,7 +18779,7 @@
             "*wireless/Library/Preferences/com.apple.commcenter.device_specific_nobackup.plist"
         ],
         "creation_date": "2024-10-22",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chatgpt",
@@ -18552,7 +18794,7 @@
             "**/Containers/Data/Application/*/Library/Application Support/conversations-*/*.json"
         ],
         "creation_date": "2024-07-14",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chatgpt",
@@ -18567,7 +18809,7 @@
             "**/Containers/Data/Application/*/Library/Application Support/conversations-*/*.json"
         ],
         "creation_date": "2024-07-14",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chatgpt",
@@ -18582,7 +18824,7 @@
             "**/Containers/Data/Application/*/Library/Application Support/drafts-*/*.json"
         ],
         "creation_date": "2024-07-14",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chatgpt",
@@ -18601,7 +18843,7 @@
             "**/Containers/Data/Application/*/Library/Preferences/com.openai.chat.StatsigService.plist"
         ],
         "creation_date": "2024-07-14",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chatgpt",
@@ -18617,7 +18859,7 @@
             "**/Containers/Data/Application/*/Library/Preferences/com.segment.storage.oai.plist"
         ],
         "creation_date": "2024-07-14",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chatgpt",
@@ -18636,7 +18878,7 @@
             "**/Containers/Data/Application/*/Library/Preferences/com.openai.chat.StatsigService.plist"
         ],
         "creation_date": "2024-07-14",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "iOSclaude",
@@ -18713,7 +18955,7 @@
             "*NoteStore.sqlite*"
         ],
         "creation_date": "2022-08-09",
-        "last_update_date": "2026-05-28"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "cloudkitSharing",
@@ -18728,7 +18970,7 @@
             "*NoteStore.sqlite*"
         ],
         "creation_date": "2022-08-09",
-        "last_update_date": "2026-07-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "clubhouse",
@@ -18793,6 +19035,38 @@
         "last_update_date": "2026-07-31"
     },
     {
+        "filename": "coinbase",
+        "artifactKey": "coinbase_account",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase - Account and Device",
+        "description": "Parses the Coinbase iOS account identifiers, login state and app settings from the app's MMKV store.",
+        "category": "Coinbase",
+        "notes": "One row per app data directory. The values are top level keys of the app's MMKV store. Wallet Link User ID is the identifier the app records for the account. Logged In is the flag the app keeps for whether it expects to be signed in, reported as stored. Push Token is the notification token registered for the device. App Version is the version the store recorded. The number of wallets is counted from the same GraphQL cache the wallets artifact reads, so the two agree by construction. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/mmkv/CB_RRN_MMKV_STORAGE"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "coinbase",
+        "artifactKey": "coinbase_wallets",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase - Wallets and Balances",
+        "description": "Parses the Coinbase iOS wallet accounts and their balances from the app's offline GraphQL cache.",
+        "category": "Coinbase",
+        "notes": "One row per wallet the account holds. Coinbase is a React Native app and keeps its state in an MMKV store, read here with the reader in scripts/mmkv_parser.py. Inside that store the @GraphqlOfflineCache.store value is a normalised Apollo cache: an account record links to its balances by reference, and each reference resolves to an amount record carrying a value and a currency. This artifact reports only the accounts whose balance reference resolves to such an amount, because the same cache holds hundreds of account records for currencies the user does not hold, which are the app's currency catalogue rather than the account's wallets; on the tested device 5 of 429 account records resolved to a balance. Total Balance and Available Balance are in the wallet's own currency and Native Balance is the same total in the account's display currency. Every balance was zero on the tested device, which records that the wallets existed and were empty rather than that the values could not be read. On the tested device every wallet was a primary account of type WALLET and none was marked sanctioned, so those three columns did not distinguish one wallet from another there. The account identifier is stored base64 encoded and is decoded here. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/mmkv/CB_RRN_MMKV_STORAGE"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
         "filename": "ConnectedDeviceInformation",
         "artifactKey": "connected_device_info_device_history",
         "sourceTool": "iLEAPP",
@@ -18848,7 +19122,7 @@
             "*/iTunes_Control/iTunes/iTunesPrefs"
         ],
         "creation_date": "2024-10-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netusage",
@@ -18877,7 +19151,7 @@
             "*/mobile/Library/ControlCenter/ModuleConfiguration.plist"
         ],
         "creation_date": "2024-10-18",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chrome",
@@ -18915,7 +19189,7 @@
             "*/SystemData/com.apple.SafariViewService/Library/Cookies/Cookies.binarycookies"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "coreAccessoriesAcc",
@@ -18959,7 +19233,7 @@
         "author": "@theAtropos4n6",
         "paths": "*/Library/Support/Devices.sqlite3*",
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dmss",
@@ -18972,7 +19246,7 @@
         "author": "@theAtropos4n6",
         "paths": "*/Library/Support/*/DMSSCloud.sqlite*",
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dmss",
@@ -18985,7 +19259,7 @@
         "author": "@theAtropos4n6",
         "paths": "*/Library/Support/Devices.sqlite3*",
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dmss",
@@ -19001,7 +19275,7 @@
             "*/Documents/Videos/*"
         ],
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dmss",
@@ -19014,7 +19288,7 @@
         "author": "@theAtropos4n6",
         "paths": "*/Library/Support/*/DMSSCloud.sqlite*",
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dmss",
@@ -19029,7 +19303,7 @@
             "*/Library/Support/configFile1"
         ],
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dmss",
@@ -19042,7 +19316,7 @@
         "author": "@theAtropos4n6",
         "paths": "*/Library/Support/*/DMSSCloud.sqlite*",
         "creation_date": "2023-11-21",
-        "last_update_date": "2025-11-25"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "DataUsage",
@@ -19123,7 +19397,7 @@
             "*/root/Library/Lockdown/data_ark.plist"
         ],
         "creation_date": "2023-10-02",
-        "last_update_date": "2026-07-13"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "AMDSQLiteDB",
@@ -19196,7 +19470,7 @@
         "author": "@abrignoni",
         "paths": "*/mobile/Containers/Data/Application/*/Documents/mmkv/mmkv.default",
         "creation_date": "2020-09-15",
-        "last_update_date": "2026-07-11"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "discordChats",
@@ -19215,7 +19489,7 @@
             "*/Library/Caches/com.hackemist.SDImageCache/default/*"
         ],
         "creation_date": "2025-06-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "discord_cache",
@@ -19231,7 +19505,7 @@
             "*/Library/Caches/com.hammerandchisel.discord/fsCachedData/*"
         ],
         "creation_date": "2026-05-29",
-        "last_update_date": "2026-07-11"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "discord_a",
@@ -19277,7 +19551,7 @@
         "author": "@abrignoni",
         "paths": "*/SMS/Drafts/*/composition.plist",
         "creation_date": "2022-10-18",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "dubox",
@@ -19723,6 +19997,102 @@
         "last_update_date": "2026-07-13"
     },
     {
+        "filename": "firefoxIOS",
+        "artifactKey": "firefox_ios_bookmarks",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Firefox - Bookmarks",
+        "description": "Parses the bookmarks saved in Firefox for iOS, with the address, the title and the time each was added.",
+        "category": "Firefox",
+        "notes": "One row per bookmark that names an address. The store also holds the folders that organise bookmarks, which carry no address and are not reported as bookmarks; the folder a bookmark sits in is reported beside it. Date Added and Last Modified are Unix milliseconds. On the tested device the store held the standard root folders and one saved page. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/profile.profile/places.db*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "firefoxIOS",
+        "artifactKey": "firefox_ios_history",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Firefox - Web History",
+        "description": "Parses the browsing history recorded by Firefox for iOS, with the time of each visit, the address and the page title.",
+        "category": "Firefox",
+        "notes": "One row per recorded visit. Firefox for iOS keeps its history in places.db, a store with the Mozilla schema but not the same timestamp unit as the desktop browser: the visit time is Unix milliseconds here, not the microseconds desktop Firefox uses, so it is read as milliseconds. A visit is joined to its page for the address and title. Visit Type is the value the row carries, reported as stored, and Local Visit Count and Remote Visit Count are the two counts the page record keeps, which separate visits made on this device from visits the account synced from elsewhere. On the tested device Is Local Visit was set on every visit and no page carried a description, so those two columns were uniform there. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/profile.profile/places.db*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "fitbitIOS",
+        "artifactKey": "fitbit_ios_daily_stats",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Fitbit - Daily Activity Stats",
+        "description": "Parses the per day activity totals the Fitbit iOS app stored, including steps, distance, floors and active minutes.",
+        "category": "Fitbit",
+        "notes": "One row per stored day. These are totals the service computed for the day rather than measurements the phone took, so they summarise the tracker's activity. Distance is reported as stored for the same reason as the sessions artifact: the database carries a unit system code that nothing in the extraction maps to a unit. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/fitbit.sqlite*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "fitbitIOS",
+        "artifactKey": "fitbit_ios_locations",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Fitbit - Exercise Locations",
+        "description": "Parses the GPS points the Fitbit iOS app recorded during exercise, with the coordinates, altitude, speed and accuracy of each.",
+        "category": "Fitbit",
+        "notes": "One row per recorded point. These points belong to exercise sessions the app logged, not to continuous background tracking, and each is joined to its session through the location group the record names, so a point carries the name and start time of the exercise it came from. The timestamp is stored as an eight byte value holding a big endian double of seconds since the 2001 Apple epoch, which is unusual enough to be worth stating: it is not a plain numeric column. That reading is corroborated independently, because the heart rate table in the same database stores its own times as ISO text written by a different code path and its dates coincide with the span these points cover. All 9,419 points on the tested device decoded to one five day window. Interpolated marks a point the app flagged as filled in rather than measured, and is reported as stored so a derived position is not read as an observed one. Horizontal and vertical accuracy are the values the record carries. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it. Every copy of the database in the extraction is read rather than the first one found, so a device holding more than one app data container reports all of them.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/fitbit.sqlite*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "fitbitIOS",
+        "artifactKey": "fitbit_ios_activities",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Fitbit - Exercise Sessions",
+        "description": "Parses the exercise sessions the Fitbit iOS app logged, with the start time, duration, distance and the tracker that recorded them.",
+        "category": "Fitbit",
+        "notes": "One row per logged session. Start Time uses the same eight byte big endian double of seconds since the 2001 Apple epoch as the location points. Duration values are seconds. Has GPS is the flag the record carries and tells an examiner whether to expect points in the locations artifact for that session. Source Name and Source Type name the tracker that produced the session rather than the phone. Distance and speed are reported as stored, because the record separately carries a unit system code and nothing in the extraction maps that code to a unit, so the figures are not converted or labelled with a unit here. A stored date far outside any plausible range is treated as the app's own absent marker and left empty rather than rendered as a first century date. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/fitbit.sqlite*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "fitbitIOS",
+        "artifactKey": "fitbit_ios_heart_rate",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Fitbit - Heart Rate",
+        "description": "Parses the heart rate samples the Fitbit iOS app stored, with the time and value of each.",
+        "category": "Fitbit",
+        "notes": "One row per sample. Unlike the location and session times in the same database, these are stored as ISO text and are reported as the time they state; the text carries no zone, so no conversion is applied. Resolution is the value the record carries and is reported as stored. A sample places the tracker on a wearer at that moment rather than placing the phone, and the two are not the same device. On the tested device the samples were dense, 56,282 of them, so the artifact is large by nature. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/fitbit.sqlite*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
         "filename": "FitnessWorkoutsLocationData",
         "artifactKey": "fitnessWorkoutsLocation",
         "sourceTool": "iLEAPP",
@@ -19736,7 +20106,7 @@
             "*Health/healthdb_secure.sqlite*"
         ],
         "creation_date": "2023-05-22",
-        "last_update_date": "2026-07-28"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "FitnessWorkoutsLocationData",
@@ -19752,7 +20122,7 @@
             "*Health/healthdb_secure.sqlite*"
         ],
         "creation_date": "2023-05-22",
-        "last_update_date": "2026-08-10"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "foursquareSwarm",
@@ -20037,7 +20407,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/*.plist"
         ],
         "creation_date": "2023-02-02",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "fileSystemEvents",
@@ -20269,7 +20639,7 @@
             "*/GeoHistory.mapsdata"
         ],
         "creation_date": "2021-01-29",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "gmail",
@@ -20279,12 +20649,13 @@
         "name": "Gmail - Label Details",
         "description": "Parses Gmail label details",
         "category": "Gmail",
+        "notes": "One row per label per account store. Every account directory under Library/Application Support/data/ held its own sqlitedb in the tested images; every matched store is read, in sorted path order, and the Account column reports the name of the account directory the row's store sits under (email-address-shaped in tested images). A store that cannot be opened or queried is logged and skipped without dropping the other accounts' rows. In the tested two-account image one account's label rows lived entirely in the WAL sidecar, so the sidecars must travel with the evidence. Label values are reported as stored.",
         "author": "@KevinPagano3",
         "paths": [
             "*/mobile/Containers/Data/Application/*/Library/Application Support/data/*/sqlitedb*"
         ],
         "creation_date": "2024-10-15",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "gmail",
@@ -20294,13 +20665,13 @@
         "name": "Gmail - Offline Search",
         "description": "Parses Gmail offline search content",
         "category": "Gmail",
-        "notes": "Column meanings for the offline_search_content FTS shadow table were inferred from observed content; the FTS virtual-table declaration in the database can corroborate the mapping.",
+        "notes": "Column meanings for the offline_search_content FTS shadow table were inferred from observed content; the FTS virtual-table declaration in the database can corroborate the mapping. An account directory under Library/Application Support/data/ can carry its own searchsqlitedb; every matched store is read, in sorted path order, and the Account column reports the name of the account directory the row's store sits under (email-address-shaped in tested images). Not every account directory holds one: in the tested two-account image only one account had an offline search store. A store that cannot be opened or queried is logged and skipped without dropping the other accounts' rows.",
         "author": "@KevinPagano3",
         "paths": [
             "*/mobile/Containers/Data/Application/*/Library/Application Support/data/*/searchsqlitedb*"
         ],
         "creation_date": "2024-10-15",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "googleCalendar",
@@ -20316,7 +20687,7 @@
             "*/Library/Application Support/CALFileStorage/cached.preferences.storage.*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20332,7 +20703,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20348,7 +20719,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20364,7 +20735,7 @@
             "*/Library/Preferences/com.google.calendar.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20380,7 +20751,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20397,7 +20768,7 @@
             "*/Library/Preferences/com.google.calendar.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20413,7 +20784,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20429,7 +20800,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20445,7 +20816,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20461,7 +20832,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20477,7 +20848,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleCalendar",
@@ -20493,7 +20864,7 @@
             "*/Library/Application Support/UnifiedSync/unifiedsync.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleChat",
@@ -20527,7 +20898,7 @@
             "*/Documents/*/localStore/documents/*/*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20543,7 +20914,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20561,7 +20932,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20578,7 +20949,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20597,7 +20968,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20614,7 +20985,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20631,7 +21002,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDocs",
@@ -20648,7 +21019,7 @@
             "*/Library/Preferences/com.google.Docs.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDrive",
@@ -20666,7 +21037,7 @@
             "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDrive",
@@ -20685,7 +21056,7 @@
             "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDrive",
@@ -20704,7 +21075,7 @@
             "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDrive",
@@ -20723,7 +21094,7 @@
             "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDrive",
@@ -20742,7 +21113,7 @@
             "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googleDuo",
@@ -20873,7 +21244,7 @@
             "*/Library/Application Support/CachedRoutes/*.plist"
         ],
         "creation_date": "2020-08-03",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "googlePhotos",
@@ -21236,6 +21607,71 @@
         ],
         "creation_date": "2026-07-25",
         "last_update_date": "2026-07-25"
+    },
+    {
+        "filename": "grindr",
+        "artifactKey": "grindr_account",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Grindr - Account and Settings",
+        "description": "Parses the Grindr iOS account identifier and the app's own session and device settings, including the consent list it records.",
+        "category": "Grindr",
+        "notes": "One row per account. The identifier is read from the name of the preference file the app writes per account and from the directory holding that account's database, which agreed on the tested device. Consents is the list the app records against the account, as stored. The remaining values are settings the app keeps for itself and are reported as stored. A second account directory named entirely with zeros is present on the tested device and holds no messages, conversations or profiles; it is reported when found because its presence is a fact about the device, and its empty counts say what it holds. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/DataContainer/Data/*/PersistenceStore.bin",
+            "*/Library/Application Support/Preferences/com.grindrguy.grindrx.*.plist"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "grindr",
+        "artifactKey": "grindr_profiles",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Grindr - Cached Profiles",
+        "description": "Parses the profiles of other people that the Grindr iOS app cached, including the attributes each profile recorded.",
+        "category": "Grindr",
+        "notes": "One row per cached profile. **These are profiles the app received, not profiles the account holder chose to look at.** The app's own session preferences keep a list it calls a cascade cache, which is the grid of nearby profiles the service delivers, and on the tested device the store held 2,178 profiles against 23 conversations, so the presence of a profile is not evidence of contact. Columns that do record an interaction are reported separately: Favourite was set on 1 profile and Last Viewed Me on 1,634. Last Chat Date is the value the profile record carries and was populated on 1,869 profiles, far more than the account had conversations with, so it is reported as stored and must not be read as a chat with this account. Distance is the value the record carries, populated on 382 profiles, and describes where the profile was relative to the device when the app received it. Ethnicity, Body Type, Relationship Status, Sexual Position, HIV Status and the tribe, meeting and looking-for sets are integer codes or code sets and are reported as stored: the extraction carries no app binary and nothing in it maps them to a meaning. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/DataContainer/Data/*/PersistenceStore.bin"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "grindr",
+        "artifactKey": "grindr_conversations",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Grindr - Conversations",
+        "description": "Parses the Grindr iOS conversation records, with the other party, the unread count and any unsent draft message.",
+        "category": "Grindr",
+        "notes": "One row per conversation record in the app's Realm database. This record holds no message text; the messages themselves are reported by the messages artifact and a conversation links to them. Messages Linked, Tap Messages Linked and Members Linked are the lengths of those link lists, which is what lets a conversation be sized without opening it. On the tested device they totalled 118 message links across 17 conversations and 9 tap links across 9, against 129 rows in the messages artifact, so the two do not reconcile exactly and a message can be present without a conversation linking it. Draft Message is text the account holder typed and did not send, and Name is a conversation name; both were empty on every row of the tested device and are carried because either one is significant wherever it is populated. Pinned, Muted and Unread Count are the values the record carries. Type is reported as stored. Some conversation records are created by the app's marketing framework rather than by a person: their identifiers carry that framework's name, and the Marketing column marks them so they are not read as conversations with another user. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/DataContainer/Data/*/PersistenceStore.bin"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "grindr",
+        "artifactKey": "grindr_messages",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Grindr - Messages",
+        "description": "Parses the chat messages the Grindr iOS app stored, with the direction of each, the other party and the message text.",
+        "category": "Grindr",
+        "notes": "One row per message. The app stores its data in a Realm database named PersistenceStore.bin, read here with the reader in scripts/realm_parser.py; the file carries Realm's own T-DB header rather than a realm extension, so it is matched by path rather than by name. An iOS data container is named with a UUID, so the declared path carries no app name and a store is accepted only when the Realm declares one of this app's own classes; a Realm that declares none is logged and skipped rather than reported, so another app using the same directory layout cannot be reported as this one. The account the store belongs to is the name of the directory holding it, which is how Account is filled and how Direction is decided: a message whose source is that account is outgoing and one whose target is that account is incoming. On the tested device those two accounted for every message, 60 outgoing and 69 incoming of 129, so no message was left undecided. Timestamps are rendered by the Realm reader from the stored date. Type, Subtype, State, Source Type and Found You Via are reported as stored, because the extraction carries no app binary and nothing in it maps those integers to a meaning. Media Hash is the reference the message carries and 23 of the 129 carried one, but the bytes are not in the extraction: the app's media table marked 3,704 of its 3,705 entries as not local, no file in the container is named after a hash, and that table also holds marketing image addresses, so no media column is offered and nothing is rendered. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
+        "paths": [
+            "*/Documents/DataContainer/Data/*/PersistenceStore.bin"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "groupMe",
@@ -21795,7 +22231,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/com.thehomedepot.homedepot.plist"
         ],
         "creation_date": "2026-06-26",
-        "last_update_date": "2026-06-26"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "home_depot",
@@ -22028,7 +22464,7 @@
             "*/mobile/Library/IdentityServices/idstatuscache.plist"
         ],
         "creation_date": "2024-07-16",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "cachev0",
@@ -22043,7 +22479,7 @@
             "*/cacheV0.db*"
         ],
         "creation_date": "2024-02-06",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "imeiImsi",
@@ -22167,7 +22603,7 @@
             "*/containers/Data/System/*/Documents/Persistence/storeSystem.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "storeSystem",
@@ -22183,7 +22619,7 @@
             "*/containers/Data/System/*/Documents/Persistence/storeSystem.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "storeSystem",
@@ -22199,7 +22635,7 @@
             "*/containers/Data/System/*/Documents/Persistence/storeSystem.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "interactionCcontacts",
@@ -22290,7 +22726,7 @@
             "**/SpringBoard/IconState.plist"
         ],
         "creation_date": "2026-06-24",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "springboard",
@@ -22306,7 +22742,7 @@
             "**/SpringBoard/IconState.plist"
         ],
         "creation_date": "2026-06-24",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "lastBuild",
@@ -22349,13 +22785,13 @@
         "name": "iOS Message Retention",
         "description": "Extract how long messages are kept on the device",
         "category": "Identifiers",
-        "notes": "iOS <=16 / iOS 17+ key naming per tested corpora. This directory can hold com.apple.MobileSMS.plist and com.apple.mobileSMS.plist as two different files; 6 of 20 tested images carry both, iOS 14.3 through 26.5.2. Every match is read and each row names the file it was read from. Where the report folder is on a case-insensitive volume the two copies collide under data/, so the preserved copy at a row's path can hold the other file's bytes; the value reported is read before the overwrite. That collision is in the file seeker, not here. On all 6 of those images the lowercase-spelled file held the same three IMDCKBackupController* keys and no retention key, so it is reported as 'No value'. Row counts here are from runs on macOS. Windows cannot tell the two spellings apart, so where both exist it reports whichever single file the extraction preserved. Reference: Apple Support, 'Delete messages and attachments', https://support.apple.com/guide/iphone/delete-messages-and-attachments-iph2c9c4bfcb/ios",
+        "notes": "iOS <=16 / iOS 17+ key naming per tested corpora. This directory can hold com.apple.MobileSMS.plist and com.apple.mobileSMS.plist as two different files; 6 of 20 tested images carry both, iOS 14.3 through 26.5.2. Every found file is read and each row's Setting names the source spelling it was read from. Where the report folder is on a case-insensitive volume, the file seeker preserves the second copy under a name tagged ~case- and the row's path points at the copy holding the bytes it reports; the run log records which source each tagged copy came from. On all 6 of those images the lowercase-spelled file held the same three IMDCKBackupController* keys and no retention key, so it is reported as 'No value'. Row counts are from runs on macOS. A directory input sitting on a case-insensitive volume holds only the single file that extraction kept, so both spellings can only arrive from archive or case-sensitive inputs. Reference: Apple Support, 'Delete messages and attachments', https://support.apple.com/guide/iphone/delete-messages-and-attachments-iph2c9c4bfcb/ios",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/mobile/Library/Preferences/com.apple.[Mm]obileSMS.plist"
         ],
         "creation_date": "2023-10-03",
-        "last_update_date": "2026-08-13"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "webClips",
@@ -22370,7 +22806,7 @@
             "*WebClips/*.webclip/*"
         ],
         "creation_date": "2020-04-20",
-        "last_update_date": "2026-07-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "iTunesBackupInfo",
@@ -22386,7 +22822,7 @@
             "info.plist"
         ],
         "creation_date": "2023-10-11",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "iTunesBackupInfo",
@@ -22417,7 +22853,7 @@
             "*/mobile/Library/Keyboard/app_usage_database.plist"
         ],
         "creation_date": "2023-05-24",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keyboard",
@@ -22433,7 +22869,7 @@
             "*/mobile/Library/Keyboard/AutocorrectionRejections.db*"
         ],
         "creation_date": "2026-08-13",
-        "last_update_date": "2026-08-13"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keyboard",
@@ -22448,7 +22884,7 @@
             "*/mobile/Library/Keyboard/*-dynamic.lm/dynamic-lexicon.dat"
         ],
         "creation_date": "2023-05-24",
-        "last_update_date": "2026-07-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keyboard",
@@ -22464,7 +22900,7 @@
             "*/mobile/Library/Keyboard/AutocorrectionRejections.db*"
         ],
         "creation_date": "2026-08-13",
-        "last_update_date": "2026-08-13"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keyboard",
@@ -22479,7 +22915,7 @@
             "*/mobile/Library/Keyboard/user_model_database.sqlite*"
         ],
         "creation_date": "2023-05-24",
-        "last_update_date": "2023-05-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keyboard",
@@ -22495,7 +22931,7 @@
             "*/mobile/Library/Keyboard/VulgarWordUsage.db*"
         ],
         "creation_date": "2026-07-28",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keychain",
@@ -22705,7 +23141,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Caches/conversation_cache"
         ],
         "creation_date": "2025-02-18",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "kleinanzeigen.de",
@@ -23171,7 +23607,7 @@
             "*/Library/Application Support/Messaging.sqlite*"
         ],
         "creation_date": "2024-01-15",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "life360",
@@ -23186,7 +23622,7 @@
             "*/com.life360.safetymap *.log"
         ],
         "creation_date": "2024-01-15",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "life360",
@@ -23201,7 +23637,7 @@
             "*/com.life360.safetymap *.log"
         ],
         "creation_date": "2024-01-15",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "life360",
@@ -23216,7 +23652,7 @@
             "*/Library/Application Support/Messaging.sqlite*"
         ],
         "creation_date": "2024-01-15",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "line",
@@ -23287,7 +23723,7 @@
             "*/mobile/Library/Preferences/com.apple.locationd.plist"
         ],
         "creation_date": "2023-10-03",
-        "last_update_date": "2025-10-08"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "locationdCacheEncryptedB",
@@ -23303,7 +23739,7 @@
             "*/root/Library/Caches/locationd/cache_encryptedB.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "locationdCacheEncryptedB",
@@ -23319,7 +23755,7 @@
             "*/root/Library/Caches/locationd/cache_encryptedB.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "locationdCacheEncryptedB",
@@ -23335,7 +23771,7 @@
             "*/root/Library/Caches/locationd/cache_encryptedB.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "locationdCacheEncryptedB",
@@ -23351,7 +23787,7 @@
             "*/root/Library/Caches/locationd/cache_encryptedB.db*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "lockdownEvents",
@@ -24496,7 +24932,7 @@
             "*/Library/Preferences/com.netflix.Netflix.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24513,7 +24949,7 @@
             "*/Library/gqlData/*gql*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24530,7 +24966,7 @@
             "*/Library/gqlData/*gql*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24546,7 +24982,7 @@
             "*/Library/gqlData/*gql*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24563,7 +24999,7 @@
             "*/Library/Preferences/__com.netflix.derivationkeyprovider.localPersistanceSuiteName.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24579,7 +25015,7 @@
             "*/Documents/sqlstore/store.sqlite3*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24595,7 +25031,7 @@
             "*/Library/gqlData/*gql*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24611,7 +25047,7 @@
             "*/Library/Preferences/com.netflix.Netflix.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24627,7 +25063,7 @@
             "*/Library/gqlData/*gql*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24644,7 +25080,7 @@
             "*/Library/Preferences/__com.netflix.derivationkeyprovider.localPersistanceSuiteName.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "netflix",
@@ -24660,7 +25096,7 @@
             "*/Library/gqlData/*gql*.db*"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chrome",
@@ -24824,7 +25260,7 @@
             "*/*.mht"
         ],
         "creation_date": "2026-06-24",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "oneDrive",
@@ -24840,7 +25276,7 @@
             "*/DatabaseQ[Tt]/QTMetadata.db*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "oneDrive",
@@ -24856,7 +25292,7 @@
             "*/DatabaseQ[Tt]/QTMetadata.db*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "oneDrive",
@@ -24873,7 +25309,7 @@
             "*/DatabaseQ[Tt]/QTMetadata.db*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "oneDrive",
@@ -24889,7 +25325,7 @@
             "*/DatabaseQ[Tt]/QTMetadata.db*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "oneDrive",
@@ -24905,7 +25341,7 @@
             "*/DatabaseQ[Tt]/QTMetadata.db*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "onionBrowser",
@@ -24922,7 +25358,7 @@
             "*/Documents/????????-????-????-????-????????????"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "onionBrowser",
@@ -24938,7 +25374,7 @@
             "*/Documents/hsts_cache.plist"
         ],
         "creation_date": "2026-08-15",
-        "last_update_date": "2026-08-15"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ooklaSpeedtestData",
@@ -25068,7 +25504,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-02",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25087,7 +25523,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-04",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25106,7 +25542,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-04",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25125,7 +25561,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-02",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25144,7 +25580,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-07-21",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25163,7 +25599,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-07-21",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25182,7 +25618,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-07-21",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25201,7 +25637,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-07-21",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25220,7 +25656,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-02",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25239,7 +25675,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-04",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25258,7 +25694,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-07-21",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25277,7 +25713,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-07-21",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "Oura",
@@ -25296,7 +25732,7 @@
             "*/Containers/Data/Application/*/Library/Preferences/????????-????-????-????-????????????.plist"
         ],
         "creation_date": "2026-06-02",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "keychain",
@@ -26578,7 +27014,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Preferences/pinterest.plist"
         ],
         "creation_date": "2026-08-19",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "pinterest",
@@ -26687,7 +27123,7 @@
             "**/output.layerStack/*.png"
         ],
         "creation_date": "2026-06-24",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "potatoChat",
@@ -27194,7 +27630,7 @@
             "*/mobile/Library/PrivacyAccounting/Biome/com.apple.privacy.accounting.stream*/local/*"
         ],
         "creation_date": "2026-07-31",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "privacyAccounting",
@@ -27210,7 +27646,7 @@
             "*/mobile/Library/PrivacyAccounting/Biome/com.apple.privacy.accounting.stream*/local/*"
         ],
         "creation_date": "2026-07-31",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-20"
     },
     {
         "filename": "protonMail",
@@ -27228,7 +27664,7 @@
             "*/Containers/Data/Application/*/tmp/attachments/*"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "protonMailInbox",
@@ -27342,7 +27778,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Application Support/RCTAsyncLocalStorage_V1/manifest.json"
         ],
         "creation_date": "2026-06-19",
-        "last_update_date": "2026-08-06"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "mobileInstallb",
@@ -27536,7 +27972,7 @@
             "**/Safari/CloudTabs.db*"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "safariRecentWebSearches",
@@ -27583,7 +28019,7 @@
             "**/Safari/BrowserState.db*"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "safariTabs",
@@ -27599,7 +28035,7 @@
             "**/Safari/SafariTabs.db*"
         ],
         "creation_date": "2026-07-28",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "chromeCreditCards",
@@ -28233,7 +28669,7 @@
             "**/SpringBoard/*Background*.heic"
         ],
         "creation_date": "2026-06-24",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "mobileInstall",
@@ -28265,7 +28701,7 @@
             "*/mobile/Library/Preferences/com.apple.mobiletimerd.plist"
         ],
         "creation_date": "2024-12-22",
-        "last_update_date": "2026-08-06"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "subscriberInfo",
@@ -28609,6 +29045,55 @@
     },
     {
         "filename": "teleguard",
+        "artifactKey": "teleguardAccount",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Teleguard Account",
+        "description": "TeleGuard local account identity",
+        "category": "Teleguard",
+        "notes": "The local account is stored as the 'user' row of the service table, whose data column is JSON. Server ID is the account identifier that appears in the sender, receiver and chatId columns of the messages table. The same JSON carries an RSA key pair in PEM form on some app versions, and carried none on the tested extraction, so Public Key Present and Private Key Present record No and Public Key SHA-256 and Private Key SHA-256 are blank there. Where a key is present the key material itself is not written to the report; the columns record whether each key was present and a SHA-256 fingerprint of the DER body, which is enough to correlate the account across extractions without copying a private key into report output. Personal ID and Current Phone were empty on the tested extraction: TeleGuard issues the Server ID itself and requires no telephone number, and a personal ID is set by the account holder only if they choose one, so both columns being blank is a result about the account rather than a column that is never populated. The settings key holding the phone value was spelled 'currentPhone' on iOS and '_currentPhone' on Android in the tested extractions and both spellings are read.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Shared/AppGroup/*/Library/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "teleguardAppSettings",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Teleguard App Settings",
+        "description": "TeleGuard notification and cache settings",
+        "category": "Teleguard",
+        "notes": "Hide Push Content, Hide Push Author, Channel Notifications Enabled and Unread Count are read from the app group's own preferences plist, group.ch.swisscows.messenger.teleguardapp.plist. The two hide settings govern what the app places in a notification and are reported as stored; they are a statement about the app's configuration, not about what any particular notification contained. Last Cache Clearing is the flutter.lastCacheClearing value from the app's own preferences plist in its data container, stored as a Unix millisecond epoch. That plist also holds a bundled emoji catalogue that accounts for most of its size and is not user data; it is not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Shared/AppGroup/*/Library/Preferences/group.ch.swisscows.messenger.teleguardapp.plist",
+            "*/Library/Preferences/ch.swisscows.messenger.teleguardapp.plist"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "teleguardCalls",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Teleguard Calls",
+        "description": "TeleGuard audio and video call events",
+        "category": "Teleguard",
+        "notes": "Call events are stored as rows of the messages table with type 'CALL', not in a separate call log. Each row carries a JSON metadata object with the keys isSuccessfull, subtext, membersText and callType; all call rows in the tested extraction carried all four. Direction is derived by comparing the row's sender with the local account's serverId from the service table, which agreed with the app's own English event label on every call row in the tested extraction. Duration and outcome are reported as stored: subtext is a localised display string giving either a spelled out minutes and seconds count or a word for why the call did not connect, not a numeric duration, and no numeric duration is stored for these rows. The messages table's userTime column is not reported here because it held exactly the same value as createDate on every call row, unlike the text rows of the same table where the two differ. The database also carries an empty sipcalls table with number, name, duration, date and cost columns; it held no rows in the tested extraction and is not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Shared/AppGroup/*/Library/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
         "artifactKey": "teleguardChannels",
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
@@ -28624,19 +29109,52 @@
     },
     {
         "filename": "teleguard",
+        "artifactKey": "teleguardChatEvents",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Teleguard Chat Events",
+        "description": "TeleGuard invitation and group membership events",
+        "category": "Teleguard",
+        "notes": "Membership and invitation events are stored as rows of the messages table with type 'SERVICE'. The event text is the app's own localised display string and is reported as stored. These rows carry no sender in the tested extraction, so no direction is derived for them. The messages table's userTime column is not reported here because it was null on every service row of the tested extraction.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Shared/AppGroup/*/Library/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
         "artifactKey": "teleguardContacts",
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Teleguard Contacts",
         "description": "TeleGuard contacts (with avatar thumbnails)",
         "category": "Teleguard",
-        "notes": "Timestamps are UTC (epoch milliseconds).",
+        "notes": "Timestamps are UTC (epoch milliseconds). Personal ID is an optional identifier separate from the Server ID the app issues. The app's own binary labels it 'Personal TeleGuard ID', carries a 'Change personal ID' action and a buyPersonalId endpoint, and adds the column to this table in a migration, so a contact has one only where that feature was used. It was null on every contact row of the tested extraction, meaning none of those contacts had one recorded.",
         "author": "@abrignoni",
         "paths": [
             "*/Shared/AppGroup/*/Library/teleguard_database.db*"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-06-24"
+        "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "teleguard",
+        "artifactKey": "teleguardDrafts",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Teleguard Drafts",
+        "description": "TeleGuard unsent message drafts",
+        "category": "Teleguard",
+        "notes": "Drafts live in a second database, teleguard_temp.db, in the same directory as teleguard_database.db. The draft table is keyed on the recipient's serverId, which is resolved to a contact alias from the contacts table of the main database in the same app group container. The Draft Text column was an empty string, not null, on every row of the tested extraction: the app keeps a draft row per conversation and clears the text when the message is sent, so a row records that a draft existed for that conversation and the tested device held no recoverable draft text. The same database carries a messages_buffer table, which held no rows in the tested extraction and is not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Shared/AppGroup/*/Library/teleguard_temp.db*",
+            "*/Shared/AppGroup/*/Library/teleguard_database.db*"
+        ],
+        "creation_date": "2026-08-21",
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "teleguard",
@@ -28646,14 +29164,14 @@
         "name": "Teleguard Messages",
         "description": "TeleGuard chat messages and shared media",
         "category": "Teleguard",
-        "notes": "Timestamps are UTC (epoch milliseconds).",
+        "notes": "Timestamps are UTC (epoch milliseconds). Is Edited? held 0 on every message row of the tested extraction, so no message in it had been edited; the column is reported so an edited message is visible on an extraction that has one. Media was empty on every row: each item is resolved by the server file id a message records in its metadata, and the tested extraction carried no files under the app's Library/Caches/images directory, so its media messages have no bytes to show and the run logs one unresolved lookup for each. Call events and membership events are rows of this same table, of type CALL and SERVICE, and are also reported in full by Teleguard Calls and Teleguard Chat Events.",
         "author": "@abrignoni",
         "paths": [
             "*/Shared/AppGroup/*/Library/teleguard_database.db*",
             "*/Library/Caches/images/*"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-07-03"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "teleguard",
@@ -28747,7 +29265,7 @@
             "*/Documents/search_history/history_words/AWESearchHistory*"
         ],
         "creation_date": "2023-02-25",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTok",
@@ -28763,7 +29281,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Preferences/com.zhiliaoapp.musically.plist"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTok",
@@ -28779,7 +29297,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Pitaya/FE/*/DB/feature_engineering.db*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTok",
@@ -28795,7 +29313,7 @@
             "*AwemeIM.db*"
         ],
         "creation_date": "2024-11-08",
-        "last_update_date": "2026-06-18"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTok",
@@ -28812,7 +29330,7 @@
             "*AwemeIM.db*"
         ],
         "creation_date": "2024-11-08",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTok",
@@ -28829,7 +29347,7 @@
             "*/mobile/Containers/Data/Application/*/Documents/kAWEPublishLocalVideoCacheFile.plist"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTokReplied",
@@ -28846,7 +29364,7 @@
             "*AwemeIM.db*"
         ],
         "creation_date": "2024-11-08",
-        "last_update_date": "2026-06-18"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tikTok",
@@ -28862,7 +29380,7 @@
             "*/mobile/Containers/Data/Application/*/Documents/WatchHistory/*_history_WCDB.sqlite*"
         ],
         "creation_date": "2026-08-16",
-        "last_update_date": "2026-08-16"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "tileAppNetDb",
@@ -28939,7 +29457,7 @@
             "*/mobile/Library/Preferences/com.apple.mobiletimerd.plist"
         ],
         "creation_date": "2024-12-22",
-        "last_update_date": "2025-10-22"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "timezoneInfo",
@@ -29164,7 +29682,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/TFSModelCache.*/*/database/modelCache.sqlite3*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "twitterX",
@@ -29179,7 +29697,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/TFSModelCache.*/*/database/modelCache.sqlite3*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "twitterX",
@@ -29194,7 +29712,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Caches/com.atebits.tweetie.direct-message.cache/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "twitterX",
@@ -29210,7 +29728,7 @@
             "*/mobile/Containers/Data/Application/*/Library/Caches/com.atebits.tweetie.direct-message.cache/*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "twitterX",
@@ -29225,7 +29743,7 @@
             "*/mobile/Containers/Shared/AppGroup/*/TFSModelCache.*/*/database/modelCache.sqlite3*"
         ],
         "creation_date": "2026-07-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29240,7 +29758,7 @@
             "*/Library/Application Support/PersistentStorage/BootstrapStore/RealtimeRider.StreamModelKey/client"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29256,7 +29774,7 @@
             "*/Documents/database.db*"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberLeveldb",
@@ -29272,7 +29790,7 @@
             "*/Data/Application/*/Library/Application Support/com.ubercab.UberClient/storagev2/*"
         ],
         "creation_date": "2024-04-08",
-        "last_update_date": "2025-11-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29287,7 +29805,7 @@
             "*/Library/Application Support/com.ubercab.UberClient/__METADATA/*.ldb"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2025-11-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29302,7 +29820,7 @@
             "*/Library/Application Support/PersistentStorage/BootstrapStore/RealtimeRider.StreamModelKey/eyeball"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2025-11-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29317,7 +29835,7 @@
             "*/Library/Application Support/PersistentStorage/Store/PaymentFoundation.PaymentStreamModelKey/profiles"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2025-11-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29332,7 +29850,7 @@
             "*/Documents/database.db*"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberPlaces",
@@ -29347,7 +29865,7 @@
             "*/Documents/database.db*"
         ],
         "creation_date": "2024-04-10",
-        "last_update_date": "2026-06-08"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "uberClient",
@@ -29362,7 +29880,7 @@
             "*/Library/Application Support/PersistentStorage/BootstrapStore/RealtimeRider.StreamModelKey/eyeball"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "uberClient",
@@ -29377,7 +29895,7 @@
             "*/Documents/ur_message.db*"
         ],
         "creation_date": "2024-05-30",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "united_airlines",
@@ -29573,7 +30091,7 @@
             "*FriendsFeed"
         ],
         "creation_date": "2021-09-25",
-        "last_update_date": "2025-11-28"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "venmo",
@@ -29590,7 +30108,7 @@
             "*FriendsFeed"
         ],
         "creation_date": "2021-09-25",
-        "last_update_date": "2025-11-28"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "viber",
@@ -29952,7 +30470,7 @@
             "*/Library/Caches/WebKit/NetworkCache/Version*/Records/*/Resource/*"
         ],
         "creation_date": "2024-10-24",
-        "last_update_date": "2026-08-04"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "what3words",
@@ -30146,7 +30664,7 @@
             "*/root/Library/Caches/com.apple.wifid/ThreeBars.sqlite*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "threeBars",
@@ -30162,7 +30680,7 @@
             "*/root/Library/Caches/com.apple.wifid/ThreeBars.sqlite*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-29"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "threeBars",
@@ -30178,7 +30696,7 @@
             "*/root/Library/Caches/com.apple.wifid/ThreeBars.sqlite*"
         ],
         "creation_date": "2026-07-29",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "wickr",
@@ -30339,7 +30857,7 @@
             "*/Library/Caches/com.apple.chrono/snapshot-cache/*/*/*.snapshot"
         ],
         "creation_date": "2026-06-18",
-        "last_update_date": "2026-06-18"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleWifiPlist",
@@ -30355,7 +30873,7 @@
             "*/com.apple.wifi.known-networks.plist"
         ],
         "creation_date": "2023-05-25",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleWifiPlist",
@@ -30373,7 +30891,7 @@
             "*/com.apple.wifi.known-networks.plist"
         ],
         "creation_date": "2024-10-21",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "appleWifiPlist",
@@ -30391,7 +30909,7 @@
             "*/com.apple.wifi.known-networks.plist"
         ],
         "creation_date": "2024-10-21",
-        "last_update_date": "2026-07-21"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "wifiNetworkStoreModel",
@@ -30422,7 +30940,7 @@
             "*/com.apple.wifi-private-mac-networks.plist"
         ],
         "creation_date": "2023-05-24",
-        "last_update_date": "2023-05-24"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "wipe_indicators",
@@ -30439,7 +30957,7 @@
             "*/root/.bootstrapped"
         ],
         "creation_date": "2026-08-06",
-        "last_update_date": "2026-08-19"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "wire",
@@ -30481,7 +30999,7 @@
             "*/mobile/Library/Preferences/com.apple.mobiletimer.plist"
         ],
         "creation_date": "2025-02-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ZaloChats",
@@ -30503,7 +31021,7 @@
             "*/mobile/Containers/Data/Application/*/tmp/[0-9]*[0-9]/[0-9]*[0-9]/*/*.*"
         ],
         "creation_date": "2026-06-01",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ZaloChats",
@@ -30516,7 +31034,7 @@
         "author": "C_Peter",
         "paths": "*/mobile/Containers/Data/Application/*/Documents/profile.sqlite*",
         "creation_date": "2026-06-01",
-        "last_update_date": "2026-08-03"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ZangiChats",
@@ -30529,7 +31047,7 @@
         "author": "Matt Beers",
         "paths": "*/mobile/Containers/Shared/AppGroup/*/zangidb.sqlite*",
         "creation_date": "2024-04-16",
-        "last_update_date": "2026-07-03"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ZangiMessenger",
@@ -30542,7 +31060,7 @@
         "author": "Marco Neumann {kalinko@be-binary.de}",
         "paths": "*/mobile/Containers/Shared/AppGroup/*/zangidb*.sqlite*",
         "creation_date": "2026-03-01",
-        "last_update_date": "2026-03-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ZangiMessenger",
@@ -30555,7 +31073,7 @@
         "author": "Marco Neumann {kalinko@be-binary.de}",
         "paths": "*/mobile/Containers/Shared/AppGroup/*/zangidb*.sqlite*",
         "creation_date": "2026-03-01",
-        "last_update_date": "2026-03-01"
+        "last_update_date": "2026-08-21"
     },
     {
         "filename": "ZangiMessenger",
@@ -30576,6 +31094,6 @@
             "*/mobile/Containers/Shared/AppGroup/*/animations/*"
         ],
         "creation_date": "2026-03-03",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-21"
     }
 ]
