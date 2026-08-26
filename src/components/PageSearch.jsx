@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useContext, useMemo, useDeferredValue, useCallback, memo } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { Input, Row, Col, Modal } from 'antd';
+import { Input, Row, Col } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
 
 import { DataContext } from 'services/DataContext';
-import AppDetails from 'components/AppDetails';
+import AppDetailsModal from 'components/AppDetailsModal';
 import WhatsNewTile from 'components/searchCompnents/WhatsNewTile';
 import RecentAppsCard from 'components/searchCompnents/RecentAppsCard';
 import AppTile from 'components/searchCompnents/AppTile';
@@ -134,15 +134,11 @@ function PageSearch() {
       <div style={{ opacity: isSearchStale ? 0.6 : 1 }}>
         <SearchResults apps={filteredApps} onAppClick={handleAppClick} />
       </div>
-      <Modal
-        title="App Details"
+      <AppDetailsModal
+        app={selectedApp}
         open={isModalVisible}
-        onCancel={() => closeAppModal()}
-        footer={null}
-        width={"80%"}
-      >
-        {selectedApp && <AppDetails app={selectedApp} tools={tools}/>}
-      </Modal>
+        onCancel={closeAppModal}
+      />
 
     </div>
   );

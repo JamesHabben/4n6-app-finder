@@ -1,9 +1,9 @@
 import React, { useCallback, useContext, useMemo, useState } from 'react';
-import { Button, Input, Modal, Table, Typography } from 'antd';
+import { Button, Input, Table, Typography } from 'antd';
 import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { DataContext } from 'services/DataContext';
-import AppDetails from 'components/AppDetails';
+import AppDetailsModal from 'components/AppDetailsModal';
 
 const { Paragraph, Title } = Typography;
 
@@ -17,7 +17,7 @@ function buildSearchParams({ tools = [], appName }) {
 }
 
 function PageOneHitWonders() {
-  const { apps, tools } = useContext(DataContext);
+  const { apps } = useContext(DataContext);
   const [searchTerm, setSearchTerm] = useState('');
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
@@ -138,15 +138,11 @@ function PageOneHitWonders() {
           onChange={handleTableChange}
           pagination={{ pageSize: 25, showSizeChanger: true }}
         />
-        <Modal
-          title="App Details"
+        <AppDetailsModal
+          app={selectedApp}
           open={Boolean(selectedApp)}
           onCancel={closeAppModal}
-          footer={null}
-          width="80%"
-        >
-          {selectedApp && <AppDetails app={selectedApp} tools={tools} />}
-        </Modal>
+        />
       </div>
     </div>
   );

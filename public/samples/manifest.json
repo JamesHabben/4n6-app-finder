@@ -1,0 +1,18 @@
+{
+  "evidenceLockerUrl": "https://theevidencelocker.github.io/",
+  "types": [
+    {
+      "id": "itunes-info-plist",
+      "label": "iTunes backup Info.plist",
+      "samples": [
+        {
+          "id": "josh-hickman-ios-15",
+          "year": 2023,
+          "author": "Josh Hickman",
+          "imageName": "iOS 15 Public Image",
+          "file": "josh-ios15/Info.plist"
+        }
+      ]
+    }
+  ]
+}

@@ -421,3 +421,312 @@
 .artifact-row-details {
   padding: 0 8px 10px 28px;
 }
+
+.blind-spots-page {
+  padding: 2rem 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+.blind-spots-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.blind-spots-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.blind-spots-toolbar .blind-spots-privacy {
+  margin-bottom: 0;
+}
+
+.blind-spots-privacy {
+  margin-bottom: 1rem;
+}
+
+.blind-spots-privacy-trigger {
+  padding-left: 0;
+}
+
+.blind-spots-privacy-steps {
+  padding-left: 1.25rem;
+}
+
+.blind-spots-privacy-steps li {
+  margin-bottom: 0.4rem;
+}
+
+.blind-spots-resume {
+  margin-bottom: 1rem;
+}
+
+.blind-spots-upload {
+  margin: 0 0 1.5rem;
+}
+
+.blind-spots-sample-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.blind-spots-sample-row + .blind-spots-sample-row {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #f0f0f0;
+}
+
+.blind-spots-location-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.blind-spots-location-list li {
+  margin-bottom: 0.2rem;
+}
+
+.blind-spots-device {
+  margin: 0 0 1.5rem;
+}
+
+.blind-spots-identifiers {
+  margin-top: 0.75rem;
+}
+
+.blind-spots-tabs {
+  margin-top: 0.25rem;
+}
+
+.blind-spots-apps {
+  margin-top: 0.5rem;
+}
+
+.blind-spots-app-link {
+  padding: 0;
+  height: auto;
+}
+
+.blind-spots-tool-icons img {
+  width: 24px;
+  height: 24px;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+
+.blind-spots-match-tooltip div + div {
+  margin-top: 0.25rem;
+}
+
+.blind-spots-stat-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 2rem;
+  margin-bottom: 1rem;
+}
+
+.blind-spots-coverage-bar {
+  display: flex;
+  height: 12px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #f0f0f0;
+  margin-bottom: 0.75rem;
+}
+
+.blind-spots-coverage-bar-supported {
+  background: #1677ff;
+}
+
+.blind-spots-coverage-bar-unparsed {
+  background: #faad14;
+}
+
+.blind-spots-coverage-bar-unknown {
+  background: #d9d9d9;
+}
+
+.blind-spots-coverage-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.blind-spots-legend-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  margin-right: 0.45rem;
+  vertical-align: middle;
+}
+
+.blind-spots-legend-swatch.supported {
+  background: #1677ff;
+}
+
+.blind-spots-legend-swatch.unparsed {
+  background: #faad14;
+}
+
+.blind-spots-legend-swatch.unknown {
+  background: #d9d9d9;
+}
+
+.blind-spots-tool-counts-note {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.blind-spots-tool-counts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blind-spots-tool-counts li {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0.15rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.blind-spots-tool-counts li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.blind-spots-tool-counts-name {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.blind-spots-tool-counts-name img {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.blind-spots-tool-counts .ant-progress {
+  margin-inline-end: 0;
+  margin-bottom: 0;
+  line-height: 1;
+}
+
+.blind-spots-tool-counts .ant-progress-text {
+  font-variant-numeric: tabular-nums;
+}
+
+.blind-spots-coverage-wrap {
+  max-height: 70vh;
+  overflow: auto;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+}
+
+.blind-spots-coverage {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.blind-spots-coverage th,
+.blind-spots-coverage td {
+  padding: 8px 10px;
+  border-bottom: 1px solid #f0f0f0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.blind-spots-coverage thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: #fff;
+}
+
+.blind-spots-coverage .coverage-app {
+  text-align: left;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: #fff;
+}
+
+.blind-spots-coverage thead th.coverage-app {
+  z-index: 3;
+}
+
+.blind-spots-coverage .coverage-count {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  position: sticky;
+  right: 0;
+  z-index: 1;
+  background: #fff;
+}
+
+.blind-spots-coverage thead th.coverage-count {
+  z-index: 3;
+}
+
+.blind-spots-coverage thead img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.coverage-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.coverage-dot.on {
+  background: #1677ff;
+}
+
+.coverage-dot.off {
+  background: #e8e8e8;
+}
+
+.blind-spots-chart {
+  width: 100%;
+  height: 240px;
+}
+
+.blind-spots-chart-categories {
+  width: 100%;
+}
+
+.blind-spots-one-hit-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blind-spots-one-hit-label img {
+  width: 20px;
+  height: 20px;
+}
+
+.blind-spots-one-hit-apps {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.blind-spots-one-hit-apps li + li {
+  margin-top: 0.15rem;
+}

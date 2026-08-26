@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@plist/common": "^1.1.0",
+    "@plist/plist": "^1.0.0",
     "@tanstack/react-query": "^5.101.2",
     "@tanstack/react-virtual": "^3.14.10",
     "@vercel/analytics": "^2.0.1",

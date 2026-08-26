@@ -1,3 +1,9 @@
+## 2026-08-26
+- Added the Blind Spots feature
+  - in browser client only parsing of itunes backup plist
+  - app inventory list showing mapped tools
+  - dashboard of insights about tool coverage on the parsed device
+  - sample plist files to parse
 ## 2026-08-17
 - Added Artifast tool
 - One-hit Wonders charts to show apps being parsed by only 1 tool

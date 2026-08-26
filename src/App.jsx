@@ -4,6 +4,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import AppRoutes from './Routes';
 import VersionInfo from 'components/VersionInfo';
 import { DataProvider } from 'services/DataContext';
+import { BlindSpotsProvider } from 'services/blindSpots/BlindSpotsContext';
 import { Analytics } from '@vercel/analytics/react';
 
 import './App.css';
@@ -47,14 +48,16 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Router>
         <DataProvider>
-          <AppContent />
-          <div
-            className="scrollTop"
-            onClick={scrollTop}
-            style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
-              <span>^</span>
-          </div>
-          <Analytics />
+          <BlindSpotsProvider>
+            <AppContent />
+            <div
+              className="scrollTop"
+              onClick={scrollTop}
+              style={{height: 40, display: showScroll ? 'flex' : 'none'}}>
+                <span>^</span>
+            </div>
+            <Analytics />
+          </BlindSpotsProvider>
         </DataProvider>
       </Router>
     </QueryClientProvider>
@@ -78,6 +81,9 @@ function AppContent() {
           </li>
           <li className={activeTab.startsWith("/dashboard") ? "active" : ""}>
             <Link to="/dashboard">Dashboard</Link>
+          </li>
+          <li className={activeTab.startsWith("/blind-spots") ? "active" : ""}>
+            <Link to="/blind-spots">Blind Spots</Link>
           </li>
           <li className={activeTab.startsWith("/admin") ? "active" : ""}>
             <Link to="/admin">Admin</Link>
