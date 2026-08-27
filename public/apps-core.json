@@ -357,25 +357,38 @@
         },
         {
             "appName": "Airbnb",
-            "icon": "airbnb.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "airbnb.webp",
+            "websiteUrl": "https://www.airbnb.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/airbnb/id401626263",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.airbnb.android",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Airbnb, Inc. stays and experiences (Android com.airbnb.android, iOS com.airbnb.app). Apple genre Travel. Distinct from Vrbo, Booking.com, Expedia, Hotels.com, and Agoda Hotels & Flights.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.airbnb.android",
+                "com.airbnb.app"
+            ]
         },
         {
             "appName": "AliExpress",
-            "icon": "aliexpress.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "aliexpress.webp",
+            "websiteUrl": "https://www.aliexpress.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/aliexpress-shopping-app/id436672029",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Alibaba consumer marketplace (Android com.alibaba.aliexpresshd, iOS com.alibaba.iAliexpress). Store title AliExpress - Shopping App. Apple genre Shopping. Distinct from Alipay, Alibaba.com B2B Trade App, Ebay, Wish, Amazon Shopping, Temu, and SHEIN.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.alibaba.aliexpresshd",
+                "com.alibaba.iAliexpress",
+                "AliExpress - Shopping App"
+            ]
         },
         {
             "appName": "Alipay",
@@ -471,14 +484,23 @@
         },
         {
             "appName": "Amazon Photos",
-            "icon": "amazon-photos.jpg",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "amazon-photos.webp",
+            "websiteUrl": "https://www.amazon.com/photos",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/amazon-photos-photo-video/id621574163",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.clouddrive.photos",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Amazon photo backup (Android com.amazon.clouddrive.photos, iOS com.amazon.CloudDrivePhotos). Formerly Amazon Cloud Drive / Prime Photos. Store title Amazon Photos: Photo & Video. Apple genre Photo & Video. Distinct from Google photos, Apple Photos, Amazon Shopping, and Amazon Prime Video.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.amazon.clouddrive.photos",
+                "com.amazon.CloudDrivePhotos",
+                "Amazon Cloud Drive",
+                "Prime Photos",
+                "Amazon Photos: Photo & Video"
+            ]
         },
         {
             "appName": "Amazon Prime Video",
@@ -645,25 +667,38 @@
         },
         {
             "appName": "AnyDesk",
-            "icon": "anydesk.jpg",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "anydesk.webp",
+            "websiteUrl": "https://anydesk.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/anydesk-remote-desktop/id1176131273",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "AnyDesk Software GmbH remote desktop (Android com.anydesk.anydeskandroid, iOS com.anydesk.AnyDesk). Store title AnyDesk Remote Desktop. Apple genre Utilities. Distinct from TeamViewer, RustDesk, and AnyViewer.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.anydesk.anydeskandroid",
+                "com.anydesk.AnyDesk"
+            ]
         },
         {
             "appName": "AppLock",
             "icon": "applock.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.domobile.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/applock-photo-lock/id1509154892",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.domobile.applockwatcher",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "DoMobile app/photo lock (Android com.domobile.applockwatcher, iOS com.domobile.applock). Play title AppLock; Apple title AppLock - photo lock. Apple genre Utilities. Cellebrite row is legacy. Distinct from Sgallery (ALEAPP App Locker), GalleryVault AppLock, HideX, Playground Vault, and other App Lock clones.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.domobile.applockwatcher",
+                "com.domobile.applock",
+                "AppLock - photo lock"
+            ]
         },
         {
             "appName": "Apple Books",
@@ -767,14 +802,19 @@
         },
         {
             "appName": "Apple Health",
-            "icon": "apple-health.jpg",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "apple-health.webp",
+            "websiteUrl": "https://www.apple.com/health/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-health/id1242545199",
             "googlePlayUrl": "",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Built-in iOS Health app (com.apple.Health). Apple genre Health & Fitness. Workout GPS LEAPP modules sit in the Health DB but are labeled Fitness and stay on Apple Fitness. Distinct from Apple Fitness, Google Fit, Fitbit, Samsung Health, and Withings Health Mate.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.apple.Health"
+            ]
         },
         {
             "appName": "Apple Keychain",
@@ -965,48 +1005,74 @@
         {
             "appName": "Around Me",
             "icon": "around-me.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tweakersoft.aroundme&hl=en",
-            "notes": "",
+            "websiteUrl": "http://www.aroundmeapp.com",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/aroundme/id290051590",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tweakersoft.aroundme",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Flying Code nearby-places finder (Android com.tweakersoft.aroundme, iOS com.tweakersoft.AroundMe). Store title AroundMe. Apple genre Lifestyle. Distinct from Around Me - Nearby Places (hanhphan.nearme), Yelp: Food, Delivery & Reviews, Foursquare, and Google Maps.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.tweakersoft.aroundme",
+                "com.tweakersoft.AroundMe",
+                "AroundMe"
+            ]
         },
         {
             "appName": "Atomic Web Browser",
-            "icon": "atomic-browser.jpg",
+            "icon": "atomic-web-browser.webp",
             "websiteUrl": "",
-            "appleStoreUrl": "",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/atomic-web-browser/id347929410",
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "",
+            "notes": "Richard Trautvetter iOS WebKit browser (com.trautvetter.atomicbrowser). Lite SKU com.trautvetter.atomicbrowserLite stays on this listing. Removed from the App Store; Oxygen row is iOS 7.0.1. Distinct from Safari, Firefox, and Opera Mini.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.trautvetter.atomicbrowser",
+                "com.trautvetter.atomicbrowserLite",
+                "Atomic Browser"
+            ]
         },
         {
             "appName": "Automatic Call Recorder",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "automatic-call-recorder.webp",
+            "websiteUrl": "https://www.appliqato.com/",
+            "category": "Communication",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.appstar.callrecorder",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Appliqato Software Android call recorder (com.appstar.callrecorder). Pro SKU com.appstar.callrecorderpro stays on this listing. Removed from Play over call-log permission policy; Oxygen row is 2.7.8, Cellebrite 6.03.5. Distinct from Cube ACR (com.nll.acr) and TrueCaller.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.appstar.callrecorder",
+                "com.appstar.callrecorderpro"
+            ]
         },
         {
             "appName": "Azar",
             "icon": "azar.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.azarlive.android&hl=en",
-            "notes": "",
+            "websiteUrl": "https://azarlive.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/azar-chat-meet-friends/id972558973",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.azarlive.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hyperconnect LLC random video chat (Android com.azarlive.android, iOS com.hpcnt.azar). Play title Azar: Video Chat, Meet Friends; Apple title Azar: Chat, Meet Friends. Apple genre Social Networking. Distinct from Tango, Tinder, and BOTIM.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.azarlive.android",
+                "com.hpcnt.azar",
+                "Azar: Chat, Meet Friends",
+                "Azar: Video Chat, Meet Friends"
+            ]
         },
         {
             "appName": "BOTIM",
@@ -1046,16 +1112,21 @@
         },
         {
             "appName": "Backup and Sync from Google",
-            "icon": "google-backup-sync.png",
+            "icon": "google-backup-sync.webp",
             "websiteUrl": "",
+            "category": "Cloud Storage",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "",
+            "notes": "Google LLC retired Windows/Mac desktop sync client (desktop.google.backup-and-sync). Replaced by Drive for desktop in 2021; that Oxygen row maps to Google Drive. Oxygen versions 3.50.3166. Distinct from Google Drive, Google photos, Dropbox, and Microsoft OneDrive.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "desktop.google.backup-and-sync",
+                "Backup and Sync",
+                "Google Backup and Sync"
+            ]
         },
         {
             "appName": "Badoo: Dating. Chat. Friends",
@@ -1095,14 +1166,20 @@
         },
         {
             "appName": "Baidu Maps (\u767e\u5ea6\u5730\u56fe)",
-            "icon": "baidu-maps.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.baidu.BaiduMap&hl=en",
-            "notes": "",
+            "icon": "baidu-maps.webp",
+            "websiteUrl": "https://map.baidu.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/%E7%99%BE%E5%BA%A6%E5%9C%B0%E5%9B%BE-%E8%B7%AF%E7%BA%BF%E8%A7%84%E5%88%92-%E5%87%BA%E8%A1%8C%E5%BF%85%E5%A4%87/id452186370",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.baidu.BaiduMap",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Baidu Netcom maps/navigation (Android com.baidu.BaiduMap, iOS com.baidu.map). Store title \u767e\u5ea6\u5730\u56fe. Apple genre Navigation. Cellebrite iOS row is legacy. Distinct from Baidu Browser (\u767e\u5ea6), Google Maps, Apple Maps, Yandex Maps, and HERE WeGo.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-11",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.baidu.BaiduMap",
+                "com.baidu.map"
+            ]
         },
         {
             "appName": "Base (formerly Coinbase Wallet)",
@@ -1121,15 +1198,18 @@
         {
             "appName": "Bazo\u0161",
             "icon": "bazos.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.ackee.bazos&hl=en",
-            "activeOnAppleStore": "",
+            "websiteUrl": "https://www.bazos.cz/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/cz/app/bazo%C5%A1/id1195042966",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.ackee.bazos",
+            "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Radim Smicka Czech/Slovak classifieds (Android cz.ackee.bazos, iOS cz.bazos). Store title Bazo\u0161. Apple genre Shopping. Distinct from Ebay and Craigslist.",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-27",
             "alternateNames": [
+                "cz.ackee.bazos",
+                "cz.bazos",
                 "bazos"
             ]
         },
@@ -1186,13 +1266,21 @@
         {
             "appName": "Beekeeper",
             "icon": "beekeeper.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://beekeeper.io",
+            "category": "Productivity",
             "appleStoreUrl": "https://apps.apple.com/us/app/beekeeper-digital-workplace/id963759556",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.beekeeper.beekeeper&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.beekeeper.beekeeper",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Beekeeper AG frontline workplace chat (Android ch.beekeeper.beekeeper, iOS ch.beekeeper.Beekeeper). Play title Beekeeper - Frontline Success; Apple title Beekeeper - Digital Workplace. Apple genre Business. Distinct from BeeTalk, Slack, Microsoft Teams, and Discord.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "ch.beekeeper.beekeeper",
+                "ch.beekeeper.Beekeeper",
+                "Beekeeper - Digital Workplace",
+                "Beekeeper - Frontline Success"
+            ]
         },
         {
             "appName": "BeeTalk",
@@ -1230,13 +1318,20 @@
         {
             "appName": "BigoLive",
             "icon": "bigo.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.bigo.tv",
+            "category": "Social Networking",
             "appleStoreUrl": "https://apps.apple.com/us/app/bigo-live-live-stream-go-live/id1077137248",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=sg.bigo.live&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=sg.bigo.live",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "BIGO TECHNOLOGY live-stream app (sg.bigo.live on Android and iOS). Play title Bigo Live - Live Streaming App; Apple title BIGO LIVE-Live Stream, Go Live. Apple genre Social Networking. Distinct from MICO, Likee, TikTok, Twitch, and Azar.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "sg.bigo.live",
+                "BIGO LIVE-Live Stream, Go Live",
+                "Bigo Live - Live Streaming App"
+            ]
         },
         {
             "appName": "Biome",
@@ -1255,13 +1350,20 @@
         {
             "appName": "Bird",
             "icon": "bird.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.bird.co",
+            "category": "Transportation",
             "appleStoreUrl": "https://apps.apple.com/us/app/bird-ride-electric/id1260842311",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.bird.android&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.bird.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Blue Jay Transit / Bird Ride e-scooter app (Android co.bird.android, iOS co.bird.Ride). Store title Bird — Ride Electric. Apple genre Travel. Oxygen key has a trailing space. Distinct from Lime, Uber, Lyft, and the former Bird email client.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "co.bird.android",
+                "co.bird.Ride",
+                "Bird — Ride Electric"
+            ]
         },
         {
             "appName": "BitLord",
@@ -1311,24 +1413,57 @@
         {
             "appName": "BlaBlaCar",
             "icon": "blablacar.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.blablacar.com",
+            "category": "Transportation",
             "appleStoreUrl": "https://apps.apple.com/us/app/blablacar-carpooling-and-bus/id341329033",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.comuto&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.comuto",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Comuto carpooling and bus (Android com.comuto, iOS com.comuto.comuto). Store title BlaBlaCar: Carpooling and Bus. Apple genre Travel. Distinct from Uber, Lyft, and Careem.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.comuto",
+                "com.comuto.comuto",
+                "BlaBlaCar: Carpooling and Bus"
+            ]
+        },
+        {
+            "appName": "BlackBerry Hub+ Inbox",
+            "icon": "blackberry-hub.webp",
+            "websiteUrl": "https://www.blackberry.com/",
+            "category": "Email",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.blackberry.hub",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "BlackBerry Limited Android unified inbox (com.blackberry.hub). Hub+ Services companion is com.blackberry.infrastructure and maps here. Related Hub+ Calendar/Contacts/Notes (com.blackberry.calendar / contacts / notes) stay unmapped. Distinct from Blackberry Messenger (BBM), BBM Enterprise, BlackBerry Work, Apple Mail, Google Mail (Gmail), and Microsoft Outlook.",
+            "dateAdded": "2026-08-27",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.blackberry.hub",
+                "com.blackberry.infrastructure",
+                "BlackBerry Hub",
+                "BlackBerry Hub+"
+            ]
         },
         {
             "appName": "Blackberry Messenger (BBM)",
             "icon": "bbm.webp",
             "websiteUrl": "",
+            "category": "Communication",
             "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bbm.enterprise",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bbm",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "BlackBerry consumer messenger (Android com.bbm, iOS com.blackberry.bbm1). Official spelling BlackBerry Messenger. Consumer BBM shut down in 2019; Cellebrite row is legacy. Distinct from BBM Enterprise (com.bbm.enterprise), Signal, and Viber.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-24",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.bbm",
+                "com.blackberry.bbm1",
+                "BlackBerry Messenger"
+            ]
         },
         {
             "appName": "Blendr",
@@ -3135,9 +3270,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.thinkyeah.galleryvault",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "ThinkYeah hide-photos vault. Android com.thinkyeah.galleryvault; iOS com.thinkyeah.iGalleryVault. Apple title GalleryVault -Hide Photo Video; Play title Gallery Vault-Hide Photo Video. Apple genre Photo & Video. Distinct from Sgallery, AppLock, Calculator Lock, Calculator Photo Vault (PV), Playground Vault, and Keepsafe.",
+            "notes": "ThinkYeah / Daowei Network Technology hide-photos vault (Android com.thinkyeah.galleryvault, iOS com.thinkyeah.iGalleryVault). Apple title GalleryVault -Hide Photo Video; Play title Gallery Vault-Hide Photo Video. Apple genre Photo & Video. Distinct from Sgallery, AppLock, Calculator Lock, Calculator Photo Vault (PV), Playground Vault, KeepSafe, and Private Photo Vault (Enchanted Cloud).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-20",
+            "dateUpdated": "2026-08-27",
             "alternateNames": [
                 "com.thinkyeah.galleryvault",
                 "com.thinkyeah.iGalleryVault",
@@ -4464,9 +4599,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kii.safe",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "KeepSafe Software vault (Android com.kii.safe, iOS com.keepsafe.KeepSafe). Apple title Secret Photo Vault: Keepsafe; Play title Private Photo Vault - Keepsafe. Apple genre Photo & Video. Magnet Secret Photo Vault artifacts map here. Distinct from Private Photo Vault (Enchanted Cloud), GalleryVault, Sgallery, Calculator Photo Vault (PV), and Secret Calculator Photo Album.",
+            "notes": "KeepSafe Software vault (Android com.kii.safe, iOS com.keepsafe.KeepSafe). Apple title Secret Photo Vault: Keepsafe; Play title Private Photo Vault - Keepsafe. Apple genre Photo & Video. Magnet Secret Photo Vault and iLEAPP KeepSafe artifacts map here. Distinct from Private Photo Vault (Enchanted Cloud), GalleryVault, Sgallery, Calculator Photo Vault (PV), and Secret Calculator Photo Album.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-26",
+            "dateUpdated": "2026-08-27",
             "alternateNames": [
                 "com.kii.safe",
                 "com.keepsafe.KeepSafe",
@@ -5781,13 +5916,21 @@
         {
             "appName": "Opera",
             "icon": "opera.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/opera-browser-with-vpn-and-ai/id1411869974",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.browser&hl=en",
-            "notes": "Opera Norway AS full browser (Android com.opera.browser, iOS com.opera.OperaTouch). Distinct from Opera Mini, Opera GX, and Opera VPN.",
+            "websiteUrl": "https://www.opera.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/opera-ai-browser-with-vpn/id1411869974",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.browser",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Opera Norway AS full browser (Android com.opera.browser, iOS com.opera.OperaTouch). Apple title Opera: AI browser with VPN; Play title Opera: Private Web Browser. Apple genre Utilities. Oxygen/Cellebrite Opera Mobile is this Android package. Distinct from Opera Mini, Opera GX, Opera VPN (com.opera.vpn), and Coast (com.opera.Coast).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-24",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.opera.browser",
+                "com.opera.OperaTouch",
+                "Opera: AI browser with VPN",
+                "Opera: Private Web Browser"
+            ]
         },
         {
             "appName": "Opera Mini",
@@ -5924,13 +6067,21 @@
         {
             "appName": "Paypal",
             "icon": "paypal.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.paypal.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/paypal-pay-send-save/id283646709",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.paypal.android.p2pmobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "PayPal, Inc. payments (Android com.paypal.android.p2pmobile, iOS com.yourcompany.PPClient). Store title PayPal - Pay, Send, Save. Apple genre Finance. Distinct from Venmo, Cash App, PayPal Business (com.paypal.merchant), and PayByPhone.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-28",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.paypal.android.p2pmobile",
+                "com.yourcompany.PPClient",
+                "PayPal",
+                "PayPal - Pay, Send, Save"
+            ]
         },
         {
             "appName": "Peeks Social",
@@ -6182,19 +6333,18 @@
         {
             "appName": "Private Photo Vault (Enchanted Cloud)",
             "icon": "private-photo-vault-enchanted.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://privatephotovault.com/",
             "category": "Security & Privacy",
             "appleStoreUrl": "https://apps.apple.com/us/app/private-photo-vault-pic-safe/id417571834",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enchantedcloud.photovault&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enchantedcloud.photovault",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Enchanted Cloud / Legendary Software Labs vault (com.enchantedcloud.photovault on Android and iOS). Play title Private Photo Vault; Apple title Private Photo Vault - Pic Safe. ArtiFast application key Android Private Photo Vault. Distinct from KeepSafe. Pro package com.enchantedcloud.photovaultpro is delisted on Play.",
+            "notes": "Legendary Software Labs vault, formerly Enchanted Cloud (com.enchantedcloud.photovault on Android and iOS). Play title Private Photo Vault; Apple title Private Photo Vault - Pic Safe. Apple genre Photo & Video. Pro package com.enchantedcloud.photovaultpro is delisted on Play. Distinct from KeepSafe, GalleryVault, Sgallery, Calculator Photo Vault (PV), and Secret Calculator Photo Album.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-08-27",
             "alternateNames": [
                 "com.enchantedcloud.photovault",
                 "com.enchantedcloud.photovaultpro",
-                "Private Photo Vault",
                 "Private Photo Vault - Pic Safe"
             ]
         },
@@ -7230,12 +7380,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.spotify.music",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Music and podcasts (Android com.spotify.music, iOS com.spotify.client). Store title Spotify: Music and Podcasts. ArtiFast application key Spotify (Android + iOS). Distinct from Spotify Kids and Spotify for Artists.",
+            "notes": "Spotify AB music and podcasts (Android com.spotify.music, iOS com.spotify.client). Store title Spotify: Music and Podcasts. Apple genre Music. Distinct from Spotify Kids, Spotify for Artists, YouTube Music, SoundCloud, Shazam, Apple Music, and stats.fm.",
             "dateAdded": "2026-08-18",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-27",
             "alternateNames": [
                 "com.spotify.music",
-                "com.spotify.client"
+                "com.spotify.client",
+                "Spotify: Music and Podcasts"
             ]
         },
         {
@@ -7285,13 +7436,19 @@
         {
             "appName": "Strava",
             "icon": "strava.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.strava.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/strava-run-bike-walk/id426826309",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.strava",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Strava Inc. run/ride tracker (Android com.strava, iOS com.strava.stravaride). Current store title Strava: Run, Bike, Walk; MOBILEdit still uses former title Strava: Run, Bike, Hike. Apple genre Health & Fitness. Distinct from Apple Health, AllTrails, Map My Run, Nike Run Club, and Garmin Connect.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-27",
+            "alternateNames": [
+                "com.strava",
+                "Strava: Run, Bike, Walk"
+            ]
         },
         {
             "appName": "Sup Live Journal",
@@ -7643,7 +7800,7 @@
             "activeOnPlayStore": "true",
             "notes": "Threema GmbH paid private messenger (Android ch.threema.app, iOS ch.threema.iapp). Store title Threema. The Secure Messenger. Apple genre Social Networking. Distinct from Threema Work (ch.threema.app.work / ch.threema.work.iapp), Threema OnPrem, Signal, Session, SimpleX, TeleGuard, and Wire.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-26",
+            "dateUpdated": "2026-08-27",
             "alternateNames": [
                 "ch.threema.app",
                 "ch.threema.iapp"

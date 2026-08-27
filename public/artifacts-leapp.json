@@ -4786,6 +4786,23 @@
     },
     {
         "filename": "galleryVault",
+        "artifactKey": "galleryvault_account_profile",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Account Profile",
+        "description": "Decrypts GalleryVault account profile information stored in AccountProfile.xml using the Android ID recorded in Kidd.xml.",
+        "category": "GalleryVault",
+        "notes": "GalleryVault encrypts account profile values using DES. The account profile is decrypted using key material derived from the Android ID recorded in Kidd.xml. The decrypted AccountInfo structure may contain an account authentication token.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/shared_prefs/AccountProfile.xml*",
+            "*/com.thinkyeah.galleryvault/shared_prefs/Kidd.xml*"
+        ],
+        "creation_date": "2026-08-13",
+        "last_update_date": "2026-08-13"
+    },
+    {
+        "filename": "galleryVault",
         "artifactKey": "galleryvault_applock_break_ins",
         "sourceTool": "ALEAPP",
         "Platform": "Android",
@@ -4860,6 +4877,86 @@
         ],
         "creation_date": "2026-08-06",
         "last_update_date": "2026-08-06"
+    },
+    {
+        "filename": "galleryVault",
+        "artifactKey": "galleryvault_cloud_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Cloud Account",
+        "description": "Cloud backup account bound to the vault, including provider, account identifier, drive status and monthly usage/quota.",
+        "category": "GalleryVault",
+        "notes": "drive_account_id is the cloud account (e.g. a Google account email) that GalleryVault is syncing hidden vault content to, independent of the device owner's own accounts. This ties hidden content to an off-device destination.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/databases/cloud_cache.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "galleryVault",
+        "artifactKey": "galleryvault_cloud_change_history",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Cloud Change History",
+        "description": "Change history of cloud entries, resolved back to file or folder names where the entry still exists",
+        "category": "GalleryVault",
+        "notes": "Change Action Value is presented as the raw numeric code recorded by the app; the mapping to add/modify/delete has not been confirmed against a large enough corpus to label with confidence. This log can outlive the file or folder row it refers to, so Entry Name may be blank for entries later removed from cloud_files/cloud_folders.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/databases/cloud_cache.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "galleryVault",
+        "artifactKey": "galleryvault_cloud_files",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Cloud Files",
+        "description": "Files present in the cloud backup copy of the vault, with resolved folder path, size, mime type and the per-file encryption key held in the cache",
+        "category": "GalleryVault",
+        "notes": "file_encryption_key is the key GalleryVault used to encrypt this file's content before upload; it is not the DES key used elsewhere in this parser. It is presented here so it is available if the corresponding cloud object is later obtained through legal process against the cloud provider.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/databases/cloud_cache.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "galleryVault",
+        "artifactKey": "galleryvault_cloud_folders",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Cloud Folders",
+        "description": "Folder tree of the cloud backup copy of the vault, with resolved parent paths",
+        "category": "GalleryVault",
+        "notes": "Mirrors the local vault folder structure as it exists in the cloud copy.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/databases/cloud_cache.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "galleryVault",
+        "artifactKey": "galleryvault_cloud_upload_tasks",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Cloud Upload Tasks",
+        "description": "Sync tasks queued to upload vault files to the cloud, including partial and failed transfers, joined to their raw-file/thumbnail parts",
+        "category": "GalleryVault",
+        "notes": "A row here shows a sync was attempted even when it never completed (Task State/Task Error Code non-zero and bytes uploaded less than bytes total), which is evidence distinct from a finished upload in galleryvault_cloud_files.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/databases/cloud_cache.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "galleryVault",
@@ -4938,6 +5035,22 @@
         ],
         "creation_date": "2026-08-06",
         "last_update_date": "2026-08-06"
+    },
+    {
+        "filename": "galleryVault",
+        "artifactKey": "galleryvault_preferences",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "GalleryVault - Preferences",
+        "description": "Parses GalleryVault account, vault storage and lock-related preferences from Kidd.xml.",
+        "category": "GalleryVault",
+        "notes": "Every row reports the interpreted preference label together with the original shared_prefs key so the value can be verified directly against Kidd.xml. LockPin components are presented as SHA1 and MD5. GalleryVault supports launcher icon disguise, including a calculator disguise. Last Android ID is the value used elsewhere in this parser to derive the DES key for AccountProfile.xml. Cloud Storage Type should be cross-referenced against galleryvault_cloud_account when cloud_cache.db is present.",
+        "author": "@segumarc",
+        "paths": [
+            "*/com.thinkyeah.galleryvault/shared_prefs/Kidd.xml*"
+        ],
+        "creation_date": "2026-08-13",
+        "last_update_date": "2026-08-18"
     },
     {
         "filename": "galleryVault",
@@ -8364,6 +8477,22 @@
         "last_update_date": "2024-05-11"
     },
     {
+        "filename": "microsoft_onedrive",
+        "artifactKey": "microsoft_onedrive",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Microsoft OneDrive",
+        "description": "Parses Microsoft OneDrive metadata and previews cached stream media",
+        "category": "Cloud Storage",
+        "notes": "Timestamps <= 0 are blanked. Storage path is resolved by recursively walking parent RID references. Cached streams are resolved via seeker.",
+        "author": "@stark4n6, Matt Beers, Anthony Reince",
+        "paths": [
+            "*/com.microsoft.skydrive/files/QTMetadata.db*"
+        ],
+        "creation_date": "2025-04-17",
+        "last_update_date": "2026-08-25"
+    },
+    {
         "filename": "smsmms",
         "artifactKey": "get_sms_mms_mms",
         "sourceTool": "ALEAPP",
@@ -9111,18 +9240,38 @@
         "last_update_date": "2023-03-14"
     },
     {
-        "filename": "OneDrive_Metadata",
-        "artifactKey": "get_onedrive",
+        "filename": "OperaBrowser",
+        "artifactKey": "opera_tab_navigation",
         "sourceTool": "ALEAPP",
         "Platform": "Android",
-        "name": "OneDrive Metadata",
-        "description": "Parses the QTMetadata.db from OneDrive",
-        "category": "Cloud Storage",
-        "notes": "Inline base64 image previews replaced with checked-in media; cached image streams are shown in the Preview (media) column, other types are summarised in Preview Info.",
-        "author": "Matt Beers and Anthony Reince",
-        "paths": "*/com.microsoft.skydrive/files/QTMetadata.db*",
-        "creation_date": "2025-04-17",
-        "last_update_date": "2026-07-10"
+        "name": "Opera Browser - Tab Navigation History",
+        "description": "The back/forward navigation stack recorded inside each Opera tab, from session_db's navigation_entry table: the pages the tab moved to, in order, with the page currently on screen flagged. Address-bar searches are decoded from Opera's own internal search-tracking URL scheme back into the text that was typed.",
+        "category": "Opera",
+        "notes": "This is the tab's own in-memory navigation stack, not a full visit log: standard back/forward semantics mean that going back and then following a different link overwrites the forward entry that link replaced, so a page visited and then navigated away from by going back can be absent here even though it really was viewed. The Chromium History artifact (chrome.py) logs  visit independently of the tab stack and does not have this gap, so the two should be read together. Search Query is decoded from the 'opera-internal://search' virtual URL Opera assigns to an address-bar search; entries without that scheme are direct page loads and the column is left blank rather than guessed at. navigation_entry itself carries no timestamp - confirmed against column, including the binary page_state and JSON user_data blobs. 'Last Visit Time' is recovered by matching this entry's URL, exactly, against Opera's own History database's urls.last_visit_time, and is left blank when no exact match exists, which happens for the internal 'operaui://startpage' entry tab starts from and, on the device this was validated against, for two address-bar searches whose visit did not leave a matching literal URL in History either. Because it is the URL's *last* visit rather than necessarily the visit this entry represents, a URL revisited later than this navigation would show that later time instead. If an extraction contains more than one Opera profile, only the first session_db/History pair found is used; a device with multiple profiles is a known, untested edge case rather than one confirmed to work.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/app_opera/session_db*",
+            "*/app_opera/History*"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-16"
+    },
+    {
+        "filename": "OperaBrowser",
+        "artifactKey": "opera_tabs",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Opera Browser - Tabs",
+        "description": "Browser tabs recorded in Opera's session_db tab-state store, open or closed, with each tab's position in the tab bar and the page it was showing. Opera keeps this session state independently of the shared Chromium History database, so a tab can appear here even if it was closed before any of its pages could sync into History's own tracking.",
+        "category": "Opera",
+        "notes": "Opera's regular browsing history, search terms, bookmarks, autofill, cookies and saved logins are already covered by this project's Chromium artifacts (chrome.py and the chrome*.py family), which already glob for 'app_opera' alongside Chrome, Samsung Browser and WebView, since Opera stores that data in the same Chromium schema. This module covers only what is unique to Opera and not already collected there: its own session/tab-state store. 'Restored' is Yes when a closed tab's own flag shows it was later reopened. session_db itself carries no timestamp of any kind - confirmed against  column of table, including the binary page_state and JSON user_data blobs, neither of which embeds one. 'Current Page Last Visit Time' is therefore not native to this store: it is recovered by matching the current page's URL, exactly, against Opera's own History database's urls.last_visit_time, and is left blank when no exact match exists (this happens for Opera's internal 'operaui://startpage' and, on the device this was validated against, for two address-bar searches whose visit did not leave a matching literal URL in History either). Because it is the URL's *last* visit and not necessarily the visit this specific tab made, a URL revisited after this tab session would show a later time than when this tab actually had it open. Two other Opera-only stores were inspected and left out of this release: reading.db (the Reading List/'save for later' feature) had zero rows on the device this was validated against, so its column mapping could not be confirmed against real content; and searchengines.db holds only the static list of built-in search engines, which is configuration rather than a user action. A private/incognito equivalent of this session store may exist under databases-off-the-record on a device where a private session was not fully torn down before extraction, but that folder was empty on the device this was validated against, so no parser for it is included here. If an extraction contains more than one Opera profile, only the first session_db/History pair found is used; a device with multiple profiles is a known, untested edge case rather than one confirmed to work.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/app_opera/session_db*",
+            "*/app_opera/History*"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-16"
     },
     {
         "filename": "OrnetBrowser",
@@ -9966,6 +10115,54 @@
         ],
         "creation_date": "2026-08-18",
         "last_update_date": "2026-08-18"
+    },
+    {
+        "filename": "PrivatePhotoVault",
+        "artifactKey": "private_photo_vault_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Private Photo Vault - Account Usage",
+        "description": "Install date and self-reported usage counters for the Private Photo Vault app, read from its main preferences file.",
+        "category": "Private Photo Vault",
+        "notes": "Private Photo Vault has no email/password account; these are app-level counters the app itself maintains, not a user identity. 'Key Event Count' and 'Last Key Event' come from a preference the app calls lastKeyEventDate/keyEventCount; its exact meaning is not documented publicly, so this module reports the raw value rather than asserting what triggers it. On the device this was validated against, its one recorded event's timestamp lands within a second of every imported media file's own creation timestamp, consistent with (but not proof of) the single PIN-setup/import session documented for this app on this device. 'Uses Encrypted Preferences' reflects the app's own usesEncryptedPreferencesV2 flag; when true, it confirms the app is using Android's Keystore-backed EncryptedSharedPreferences for its sensitive settings, which explains why a PIN, if one was set, is not recoverable from this file even though the file itself is plaintext XML - the values inside it are encrypted with a hardware-backed key that does not leave the device.",
+        "author": "@Gear-I & Claude",
+        "paths": [
+            "*/com.enchantedcloud.photovault/shared_prefs/APP_PREFERENCES.xml"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "PrivatePhotoVault",
+        "artifactKey": "private_photo_vault_albums",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Private Photo Vault - Albums",
+        "description": "Albums recorded in Private Photo Vault's local database, each with its own bucket identifier and creation time.",
+        "category": "Private Photo Vault",
+        "notes": "Read from the app's own ppv.db, opened read-only alongside its write-ahead log (ppv.db-wal) so that any transaction committed to the log but not yet checkpointed into the main file is still included. On the device this was validated against, two albums exist: one with bucket_id 'albums' holding the device's three imported pictures, and one, created one millisecond later at the same PIN-setup moment, with bucket_id 'albums_decoy' and no media in it. This module reports the bucket_id exactly as stored rather than asserting what feature it belongs to, but the literal string 'decoy' in an otherwise-empty, simultaneously-created second album is worth an examiner's attention.",
+        "author": "@Gear-I & Claude",
+        "paths": [
+            "*/com.enchantedcloud.photovault/databases/ppv.db*"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "PrivatePhotoVault",
+        "artifactKey": "private_photo_vault_media",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Private Photo Vault - Media",
+        "description": "Imported media files recorded in Private Photo Vault's local database, with each file's original dimensions, import time, and favourite/deleted/view-count state.",
+        "category": "Private Photo Vault",
+        "notes": "Read the same way as Private Photo Vault - Albums, including the write-ahead log. The image/video content behind each row is not recoverable from this extraction: the app encrypts every imported file on disk (confirmed - the files at File Path and Thumbnail Path do not begin with any recognizable image file signature), and while the database does store a per-file 'Encryption Key' and IV for each row, that stored key is itself an encrypted value (48 bytes once base64-decoded, not a bare 32-byte AES key) - consistent with Private Photo Vault - Account Usage's finding that this app uses Android Keystore-backed encrypted storage, whose unwrapping key is hardware-bound and does not leave the device. The wrapped key and IV are still reported here exactly as stored, in case a future extraction method recovers the missing unwrapping key, but this module makes no attempt to decrypt the media itself. 'View Count' and 'Favourite'/'Deleted' reflect the app's own tracked state for each file, not necessarily anything documented in an action sheet.",
+        "author": "@Gear-I & Claude",
+        "paths": [
+            "*/com.enchantedcloud.photovault/databases/ppv.db*"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
     },
     {
         "filename": "ProtonDrive",
@@ -10949,6 +11146,118 @@
         ],
         "creation_date": "2026-07-30",
         "last_update_date": "2026-07-30"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesPreferences",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - App Preferences",
+        "description": "Parses the key/value preference table of com.samsung.android.app.routines/databases/routine.db, which holds app-level settings and state such as first-run and metadata-loading times and recommendation counters.",
+        "category": "Samsung Bixby Routines",
+        "notes": "Values are reported as stored (the column is TEXT, so numeric-looking values are strings). Four keys observed in the tested extraction to hold epoch-millisecond values (init_time, latest_time, sleep_expired_time, update_noti_time) are decoded into a Converted Timestamp column; no other key in that extraction carried a value in the epoch range, and any other key is left blank in that column rather than converted on a guess. init_time is the earliest time recorded in this table and was not cross-checked against a package-manager install record, so it is indicative of install era rather than a confirmed install time. In the tested extraction update_noti_time fell 359 ms after the newest routine_history row, two values written by different code paths agreeing on when the service last ran. This table is app configuration rather than user content: it does not carry what routines existed.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-26"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesActions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - Routine Actions",
+        "description": "Parses the action_instance table of com.samsung.android.app.routines/databases/routine.db, the per-routine action wiring: which action tag, from which package, with which stored parameters, is attached to which routine.",
+        "category": "Samsung Bixby Routines",
+        "notes": "Rows are joined to the `routine` table on routine_id to carry the routine name where one is present; Routine Name is blank when the join finds nothing. intent_param and label_params hold app-defined parameter text and are reported as stored rather than decoded, since their structure varies by action tag. valid_state is an undocumented integer reported as stored. The tested extraction held no rows in this table, so this artifact is code-present and unexercised and the column meanings were derived from the table definition rather than from decoded rows.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-26",
+        "last_update_date": "2026-08-26"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesConditions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - Routine Conditions",
+        "description": "Parses the condition_instance table of com.samsung.android.app.routines/databases/routine.db, the per-routine trigger wiring: which condition tag, from which package, with which stored parameters, is attached to which routine.",
+        "category": "Samsung Bixby Routines",
+        "notes": "Rows are joined to the `routine` table on routine_id to carry the routine name where one is present; Routine Name is blank when the join finds nothing. intent_param, label_params and bundle_data hold app-defined parameter text and are reported as stored rather than decoded, since their structure varies by condition tag. is_negative marks a condition the app stores in its inverted form; valid_state is an undocumented integer reported as stored. The tested extraction held no rows in this table, so this artifact is code-present and unexercised and the column meanings were derived from the table definition rather than from decoded rows.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-26",
+        "last_update_date": "2026-08-26"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesRunHistory",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - Routine Run History",
+        "description": "Parses the routine_running_history table of com.samsung.android.app.routines/databases/routine.db, which records a named routine against a timestamp.",
+        "category": "Samsung Bixby Routines",
+        "notes": "This table carries routine_name alongside routine_id, so a row names the routine it refers to without depending on the routine still existing in the `routine` table. running_type and recover_type are undocumented integers and are reported as stored. Timestamp is decoded on the same magnitude basis as the other timestamps in this database. The tested extraction held no rows in this table, consistent with its `routine` table also being empty, so this artifact is code-present and unexercised: the column meanings were derived from the table definition and not confirmed against decoded rows. A zero-row result is a checked absence for that extraction, not a finding about whether any routine ran.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-26",
+        "last_update_date": "2026-08-26"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesPlaces",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - Saved Places",
+        "description": "Parses the location_history table of com.samsung.android.app.routines/databases/routine.db, which stores a coordinate pair with an address, locality and keyword label.",
+        "category": "Samsung Bixby Routines",
+        "notes": "The table definition pairs latitude and longitude with an address, locality and keyword, and an update_time. `type` is an undocumented integer reported as stored. KML output is produced for rows carrying both coordinates. A row records a place the app held at acquisition; it is not a record that the device was at that place, and the update_time is the row's own recorded time rather than a visit time. The tested extraction held no rows in this table, so this artifact is code-present and unexercised and the column meanings were derived from the table definition rather than from decoded rows.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-26",
+        "last_update_date": "2026-08-26"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesServiceLog",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - Service Log",
+        "description": "Parses the routine_history table of com.samsung.android.app.routines/databases/routine.db, an internal timestamped log kept by the Routines background service (job scheduling, metaloader and catalog-update events, widget provider callbacks).",
+        "category": "Samsung Bixby Routines",
+        "notes": "This is service telemetry rather than a record of a specific routine firing. In the tested extraction all 50 rows carried routine_id = -1, is_running = 1 and a null service_status, with Log Message text naming internal service events and no user routine, so four of the six columns held one value throughout. The routine_id join to the `routine` table is kept for a device that does record a real id, and Linked Routine Name is blank where the join finds nothing. Routine Run History is the table that names a routine against a time; use that artifact for that question. This table is a rolling buffer: in the tested extraction 50 rows were live while the autoincrement counter had reached 6252, so older rows are trimmed and the window the artifact covers is set by how much the service has written since, not by the acquisition period. It spanned 21 days there. The module reads the database with its write-ahead log applied, which is the state at acquisition; the main database file read without its log held 6 rows since trimmed and lacked the 3 most recent, so a copy of the .db alone is a different row set rather than a smaller one.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-26"
+    },
+    {
+        "filename": "samsungBixbyRoutines",
+        "artifactKey": "samsungBixbyRoutinesUserRoutines",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Samsung Bixby Routines - User Routines",
+        "description": "Parses the `routine` table of com.samsung.android.app.routines/databases/routine.db, which holds the named Bixby Routines automations stored on the device. The trigger and action wiring for each routine is held in the sibling condition_instance and action_instance tables, reported by the Routine Conditions and Routine Actions artifacts and joined on Routine ID.",
+        "category": "Samsung Bixby Routines",
+        "notes": "The `routine` table carries a unique per-row name and the presentation fields an automation is configured with; the sibling `condition` and `action` tables are the app-shipped catalog of available trigger and action building blocks, carrying resource ids and provider class names rather than user data, and are not parsed here. Toggle Time is reported as stored and decoded on the same magnitude basis as the other timestamps in this database; the tested extraction held no rows, so the column is code-present and unexercised and its meaning was not confirmed against a known reference event. routine_extra is a TEXT column of this table, not a separate table, and is not decoded here; it held no rows to inspect in the tested extraction. A zero-row result means no routine was present in this table at acquisition; it is not a finding that Bixby Routines was never configured, since a deleted routine would not appear here.",
+        "author": "@Gear-I, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.samsung.android.app.routines/databases/routine.db*"
+        ],
+        "creation_date": "2026-08-18",
+        "last_update_date": "2026-08-26"
     },
     {
         "filename": "samsungScpm",
@@ -12692,6 +13001,102 @@
         "last_update_date": "2025-07-28"
     },
     {
+        "filename": "Spotify",
+        "artifactKey": "spotify_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Spotify - Account",
+        "description": "The signed-in Spotify account's canonical identifiers, sign-in method, selected language and the app's own first-launch time, read from the app's main preferences file.",
+        "category": "Spotify",
+        "notes": "Spotify does not store the account's email address or display name anywhere on disk in this extraction confirmed by searching each file under the app's data directory, including shared_prefs and the per-user settings folder, for both. What is recoverable is the account's canonical username (a fixed opaque ID Spotify assigns at signup, exposed here as both 'crashlytics_user_id' and 'event-sender-event-owner', which agree) and that the sign-in method was email/password rather than a linked Facebook/Google/Apple account. Two of the twelve tested extractions carry this preferences file with none of those keys in it, which is what an installed but never signed in app looks like; those report no row rather than a row of blanks. 'App First Launch Time' is when Spotify's preferences were first written on this device, which is a reasonable proxy for install/first-run time but is not itself an install timestamp from the OS or Play Store.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/com.spotify.music/shared_prefs/spotify_preferences.xml"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "Spotify",
+        "artifactKey": "spotify_artist_profile_views",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Spotify - Artist Profile Views",
+        "description": "Artists recovered from cached responses to the API call Spotify's app makes when an artist's profile page is opened, with the artist's name and canonical URI as Spotify's own server returned them.",
+        "category": "Spotify",
+        "notes": "Source is the app's HTTP disk cache (cache/http-cache), specifically cached responses from the artist-identity-view/v2 endpoint, which the app calls when a user opens an artist's profile page; the response is plain JSON and 'Artist Name' / 'Artist URI' are read directly from its own 'name' and 'artistUri' fields. 'Response Received Time' comes from OkHttp-Received-Millis, a pseudo-header OkHttp's own disk cache writes into each cached entry's own metadata recording when the client received that response. Unlike a filesystem modification time, this value is baked into the cached data itself, so it does not change when the evidence is re-staged or copied elsewhere, which is what lets this artifact be regression-tested. It is a reasonable proxy for when the page was opened but is not itself confirmation of how long the page was viewed or that each track by that artist was played. Left blank on any entry where that pseudo-header is absent, rather than falling back to a filesystem time.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/com.spotify.music/cache/http-cache/*"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "Spotify",
+        "artifactKey": "spotify_now_playing_view",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Spotify - Now Playing View",
+        "description": "Tracks recovered from cached responses to the lyrics and merchandise API calls Spotify's app makes for whatever track is showing on its Now Playing screen, with the first cached lyric line for each track.",
+        "category": "Spotify",
+        "notes": "Source is the app's HTTP disk cache (cache/http-cache): the color-lyrics/v2 endpoint, requested for the track on the Now Playing screen, and the merch-npv-service/v1 endpoint, requested for the same track to populate a merchandise carousel below it. The Spotify track ID is read directly from each cached request's URL, not guessed at. 'First Lyric Line' is the first line of the time-synced lyrics decoded from the cached response body (also schema-less protobuf) - it is included, verbatim and without interpretation, because it is a real piece of the track's own lyrics recoverable from the device and is enough for an examiner to identify the song; this project does not maintain a track-ID-to-song-name lookup table, since one built from a single device would not generalise to any other extraction. 'Response Received Time' comes from OkHttp-Received-Millis, a pseudo-header OkHttp's own disk cache writes into each cached entry's own metadata recording when the client received that response. Unlike a filesystem modification time, this value is baked into the cached data itself, so it does not change when the evidence is re-staged or copied elsewhere, which is what lets this artifact be regression-tested. It is a reasonable proxy for when the track was on screen but is not itself a playback timestamp. Left blank on any entry where that pseudo-header is absent, rather than falling back to a filesystem time.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/com.spotify.music/cache/http-cache/*"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "Spotify",
+        "artifactKey": "spotify_playback_activity",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Spotify - Playback Activity",
+        "description": "Playback-related events recovered from Spotify's own local telemetry log: tracks played, playlists involved in an Android Auto session, and whether a session was playing from a downloaded local copy rather than streaming.",
+        "category": "Spotify",
+        "notes": "Source is event-sender.db's Events table, an internal analytics log Spotify's client keeps of its own activity; each row's 'fragments' column is a schema-less protobuf blob decoded the same way this project already decodes undocumented protobuf elsewhere (see YouTube.py). The table holds 58 distinct event types on the device this was validated against, most of them pure app diagnostics (ad errors, cache reports, connection state, audio driver info) with no forensic value; this artifact reports only the handful of event types confirmed to carry real user-facing content when decoded: PlaybackSegments and BoomboxPlaybackSession (a track was played), CorePlaybackFinished (a playback session ended), Download (a track or playlist download was initiated), AudioFileSelection (what file source, e.g. a local offline copy, played audio came from), and TrackNotPlayed (a queued track did not play, seen on this device only in an Android Auto context). 'Content URI' is populated only when the event's decoded fields contained a literal spotify:track:* or spotify:playlist:* string; 'Session ID' is an opaque hexadecimal value Spotify's own client reuses across the events that belong to the same playback session, included so related rows (e.g. a Download and the PlaybackSegments rows it fed) can be grouped, not because its own meaning is known. 'Notes' surfaces other short decoded string fields verbatim (e.g. 'offlined file', 'android-auto', 'logout') without interpretation; some of what lands there is an opaque identifier rather than readable status text, and those are reported as stored. The short string an AudioFileSelection event carries for where the audio came from took the values 'offlined file', 'cached file' and 'best matching bitrate' across the tested extractions; 'offlined file' and 'cached file' are not the same thing, the first being a copy the user had downloaded. Purely numeric fields (byte counts, bitrates, internal enum values) are not reported, since there is no public schema to confirm what they mean. Where an extraction carries the app's data directory more than once, the duplicate storage views of one file are collapsed and each genuinely separate copy is read, so a second Android user's events are reported alongside the first user's with no column separating them; the source paths listed for the artifact name every database the rows came from.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/com.spotify.music/databases/event-sender.db*"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "Spotify",
+        "artifactKey": "spotify_playlist_library",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Spotify - Playlist Library Activity",
+        "description": "Playlists Spotify's own local usage-tracking file has a record for, with the time each one was first interacted with and a snapshot of two internal usage counters recorded whenever that snapshot changed.",
+        "category": "Spotify",
+        "notes": "Source is frecency.pb, a per-account file Spotify uses to rank 'frequent and recent' content; it is not a public format, so this was reverse engineered directly against this device's real data rather than any documentation. A device with more than one Spotify account signed in holds one of these files per account and every one of them is read; 'Account Folder' is the name of the per-account directory a row's file sits in, reported as stored. On the device this was validated against that name is the account's canonical username followed by '-user', so it lines up with the Canonical Username column of Spotify - Account. Each playlist can appear more than once: Spotify appends a new snapshot each time the two counters change, so a playlist with several rows shows its usage growing over time, and the earliest row's time is effectively when it was first added. 'Counter A' and 'Counter B' are reported as raw integers because their exact meaning (e.g. play count vs. skip count vs. a weighted frecency score) could not be confirmed - but they are real values that grow with real use: on the device this was validated against, one playlist's Counter A went from 1 to 21 and Counter B from 1 to 4 across two snapshots roughly six months apart. The large opaque integer Spotify stores alongside each snapshot is not included: it did not decode to anything recognizable (not a timestamp, not a count) and is most likely an internal hash or sort key. This file only covers playlists Spotify's frecency tracker has touched; a playlist added to the Library but never opened or shuffled again may not appear here even though it exists elsewhere on the account.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/com.spotify.music/files/settings/Users/*/frecency.pb"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "Spotify",
+        "artifactKey": "spotify_recently_played",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Spotify - Recently Played",
+        "description": "Tracks recovered from Spotify's own cached response to its 'recently played' API call, each with the real timestamp Spotify's server recorded for when it was played and the playlist it was played from.",
+        "category": "Spotify",
+        "notes": "Source is the app's HTTP disk cache (cache/http-cache), specifically a cached response from the recently-played/v3 endpoint; the response body is schema-less protobuf, decoded the same way this project already decodes undocumented protobuf elsewhere. 'Played At' is a millisecond timestamp embedded directly in that response by Spotify's own server, not derived from any local file time. It is a per-entry value rather than a property of the request: on one tested extraction a single cached response carried 50 entries with 50 distinct times in descending order, and on two others the same entries kept byte-identical times across responses fetched weeks apart, five separate fetches on one of them. On the Pixel 7a research image the one entry decodes to 12:54 local on 2024-07-27, inside the 12:38 to 12:56 playback session that image's own creation log documents. Worth knowing when reading a single-entry response: the response's mc-etag header carries the newest entry's value, so where only one entry is cached the two are necessarily the same number, which is not evidence that the value is a collection-level stamp. This endpoint is requested with a limit of 50 entries, but the cached response on the device this was first validated against held only one - the app's local HTTP cache only ever holds the most recent response to a given request URL, so this reflects whatever this list looked like the last time the app asked, not a full play history. It should be read alongside Spotify - Playback Activity and Spotify - Now Playing View, which recover different, independent evidence of playback from other local sources.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/com.spotify.music/cache/http-cache/*"
+        ],
+        "creation_date": "2026-08-16",
+        "last_update_date": "2026-08-25"
+    },
+    {
         "filename": "sRecoveryhist",
         "artifactKey": "get_sRecoveryhist",
         "sourceTool": "ALEAPP",
@@ -13348,6 +13753,56 @@
         ],
         "creation_date": "2026-08-19",
         "last_update_date": "2026-08-19"
+    },
+    {
+        "filename": "Threema",
+        "artifactKey": "threema_account",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Threema - Account",
+        "description": "The signed-in Threema account's own Threema ID, display nickname, and any mobile number linked to it, read from the app's main preferences file.",
+        "category": "Threema",
+        "notes": "Threema does not use email/password sign-in; the account is the Threema ID itself (an 8-character code generated on first launch). 'Linked Mobile Number' is only present if the user opted to link a phone number to their ID for discoverability; it is not required to use the account and is absent if never set.",
+        "author": "@Gear-I & Claude",
+        "paths": [
+            "*/ch.threema.app/shared_prefs/ch.threema.app_preferences.xml"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "Threema",
+        "artifactKey": "threema_contacts",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Threema - Contacts",
+        "description": "Contacts recorded in Threema's local, SQLCipher-encrypted database, with each one's verification level as Threema's own client displays it and when the contact was first added.",
+        "category": "Threema",
+        "notes": "Threema encrypts its main database (threema4.db) at rest with SQLCipher; this module decrypts it in memory before reading it, using the same key.dat unwrapping algorithm documented publicly at github.com/wilzbach/threema-decrypt (a fixed 32-byte XOR mask followed by a SHA-1 checksum verification), reverse engineered and verified against this device's real key.dat and threema4.db - the checksum embedded in key.dat matched the derived key exactly, and the resulting decryption produced real, readable contact and message content that matches this device's documented action sheet. This only covers the common case where no local app passphrase/PIN was set to further protect key.dat (key.dat's own first byte, read directly rather than assumed, records this; on a device where it indicates passphrase protection this module leaves the database undecrypted rather than guess at a passphrase-derived key). The database is opened strictly read-only, and its write-ahead log (threema4.db-wal) is opened alongside it so that any transaction committed to the log but not yet checkpointed into the main file is still included - on the device this was validated against, the main file alone was several weeks stale and missing real, later content that only existed in the log. 'Verification Level' is Threema's own contact-verification indicator (0=Unverified, 1=Server-verified, 2=Fully verified, e.g. via QR code or NFC scan); on the device this was validated against, the one contact recorded at level 2 corresponds exactly to a 'via QR scan' verification event documented for that same contact. 'Group-Only / Removed' reflects Threema's own AcquaintanceLevel field on the contact record; Threema's own Android source documents this as a combined state meaning either that the contact is only known through a shared group and was never directly added, or that the user directly removed a formerly direct contact - the two cases cannot be told apart from this field alone, so both are reported together rather than guessing which applies.",
+        "author": "@Gear-I & Claude",
+        "paths": [
+            "*/ch.threema.app/files/key.dat",
+            "*/ch.threema.app/databases/threema4.db*"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "Threema",
+        "artifactKey": "threema_messages",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Threema - Messages",
+        "description": "One-to-one messages recorded in Threema's local, SQLCipher-encrypted database: text, image, static location, and voice/video call events, with direction, delivery/read status, and any quote-reply relationship between messages.",
+        "category": "Threema",
+        "notes": "Decrypted the same way as Threema - Contacts, including reading the database's write-ahead log alongside the main file; see that artifact's notes for the key.dat/SQLCipher method and its passphrase-protected limitation. On the device this was validated against, a pair of static-location messages exchanged in one conversation existed only in the write-ahead log and would have been missed entirely by reading the main database file alone. Only the four message-type combinations confirmed on this device are decoded: plain text; an image (filename, MIME type and file size are read from the message's own structured content, matched by value rather than by trusting a fixed field position, since that content is a positional JSON array with no field names of its own); a static location (latitude, longitude, accuracy in metres and a resolved address, read by fixed field position, since this content's structure - unlike the image case - showed the same fixed [latitude, longitude, accuracy, address] shape on every location message observed); and a call event (status/call ID/duration are read by name, since that part of the structure is a JSON object). Every call on this device carried the same numeric call-type marker regardless of whether it was really an audio or a video call, so this module does not report an audio/video distinction rather than guess at one; duration and direction are still reported and, on this device, matched a documented audio and video call exactly by duration. 'Quoted Message' is resolved via the replying message's own quotedMessageId against the original message's apiMessageId (a server-assigned protocol ID distinct from the database's own row id), not by row order. Group messages, distribution lists and polls are out of scope for this release: every corresponding table was empty on the device this was validated against, so their column mapping could not be confirmed against real content. A message can be missing from this table with a gap in the numbering between its neighbours; on the device this was validated against, exactly one such gap exists at the point in the conversation where the action sheet documents a message being deleted, but this module does not assert deletion from the gap alone since a gap has other possible causes (e.g. a message never finishing sync before extraction), and the database's own deletedAtUtc/editedAtUtc columns, which would confirm a deletion or edit directly, were unset on every row on this device.",
+        "author": "@Gear-I & Claude",
+        "paths": [
+            "*/ch.threema.app/files/key.dat",
+            "*/ch.threema.app/databases/threema4.db*"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
     },
     {
         "filename": "thunderbird",
@@ -16021,10 +16476,11 @@
         "name": "Application State",
         "description": "Extract information about bundle container path and data path for Applications",
         "category": "Installed Apps",
+        "notes": "The bundle identifier is read from each application identifier's compatibilityInfo blob, so an application identifier whose compatibilityInfo is absent or unparseable is logged and left out of this table. Absence of a bundle identifier here therefore means the mapping this parser needs was not available in applicationState.db. It is not evidence that the application was never installed, and other sources such as the Mobile Installation logs may still carry its install and uninstall history.",
         "author": "@AlexisBrignoni - @mxkrt",
         "paths": "*/mobile/Library/FrontBoard/applicationState.db*",
         "creation_date": "2025-08-27",
-        "last_update_date": "2026-08-21"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "userDefaults",
@@ -16045,20 +16501,37 @@
     },
     {
         "filename": "mobileInstall",
+        "artifactKey": "mobileInstall_container_only",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Apps - Container Activity Only",
+        "description": "Bundle IDs that mobile_installation.log mentions only through container or patch activity, with no installer-reported install or uninstall",
+        "category": "Mobile Installation Logs",
+        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time. These bundle IDs appear in the log but never in an 'Install successful', 'Uninstalling identifier' or 'Destroying container' line, so Apps - Installed and Apps - Uninstalled do not list them. That happens when the install predates the retained log window. Presence here shows the log mentioned the bundle; it does not establish that the app was installed, and absence of an install line is not evidence that it was not. App extension bundle IDs appear here because extensions have their own containers. Parent Bundle ID (by prefix) is filled in when another bundle ID in the same log is a dotted prefix of this one, which is Apple's convention for an extension and its host app; it is read from the identifier strings, not from a relationship the log records. The Source Event column names the most recent line that mentioned the bundle.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "**/mobile_installation.log.*",
+            "**/sysdiagnose_*.tar.gz"
+        ],
+        "creation_date": "2026-08-25",
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "mobileInstall",
         "artifactKey": "mobileInstall_historical",
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Apps - Historical Combined",
-        "description": "App install/update/uninstall/container/reboot events from mobile_installation.log",
+        "description": "Install, update, patch, uninstall, container and reboot events from mobile_installation.log",
         "category": "Mobile Installation Logs",
-        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time.",
-        "author": "@AlexisBrignoni",
+        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time. Patch-update lines record an attempt, not a completed update. Install kinds, container personas and version strings are reported as written. Version and Short Version carry the target of a patch attempt or the version of an installable bundle; From Version carries the source of a patch attempt.",
+        "author": "@AlexisBrignoni, Claude",
         "paths": [
             "**/mobile_installation.log.*",
             "**/sysdiagnose_*.tar.gz"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "mobileInstall",
@@ -16066,16 +16539,16 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Apps - Installed",
-        "description": "Apps whose most recent mobile_installation.log event is an install/update",
+        "description": "Bundle IDs whose most recent installer-reported outcome in mobile_installation.log is a successful install",
         "category": "Mobile Installation Logs",
-        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time.",
-        "author": "@AlexisBrignoni",
+        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time. State is set only by an installer-reported outcome: an 'Install successful' line, an 'Uninstalling identifier' line, or a 'Destroying container' line. In the tested corpora every 'Destroying container' line was written by MIUninstaller or MIUninstallNotifier. Container bookkeeping ('Made container live', written by makeContainerLiveReplacingContainer, and 'Data container moved', written by _refreshUUIDForContainer) is emitted during installs, updates and cleanup alike, so it is kept in Apps - Historical Combined and does not place a bundle here. A bundle whose install predates the retained log window has no 'Install successful' line and will not appear; absence here is not evidence that an app was never installed. The Source Event column names the line that set the state. The install kind is reported as written: Placeholder is the download stub the installer writes before the app itself installs, and Customer, System and Developer accompany the installed bundle.",
+        "author": "@AlexisBrignoni, Claude",
         "paths": [
             "**/mobile_installation.log.*",
             "**/sysdiagnose_*.tar.gz"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "appItunesmeta",
@@ -16099,16 +16572,32 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Apps - Uninstalled",
-        "description": "Apps whose most recent mobile_installation.log event is an uninstall/destroy",
+        "description": "Bundle IDs whose most recent installer-reported outcome in mobile_installation.log is an uninstall or container destruction",
         "category": "Mobile Installation Logs",
-        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time.",
-        "author": "@AlexisBrignoni",
+        "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time. State is set only by an installer-reported outcome: an 'Install successful' line, an 'Uninstalling identifier' line, or a 'Destroying container' line. In the tested corpora every 'Destroying container' line was written by MIUninstaller or MIUninstallNotifier. Container bookkeeping ('Made container live', written by makeContainerLiveReplacingContainer, and 'Data container moved', written by _refreshUUIDForContainer) is emitted during installs, updates and cleanup alike, so it is kept in Apps - Historical Combined and does not place a bundle here. A bundle whose install predates the retained log window has no 'Install successful' line and will not appear; absence here is not evidence that an app was never installed. The Source Event column names the line that set the state. The install kind is reported as written: Placeholder is the download stub the installer writes before the app itself installs, and Customer, System and Developer accompany the installed bundle.",
+        "author": "@AlexisBrignoni, Claude",
         "paths": [
             "**/mobile_installation.log.*",
             "**/sysdiagnose_*.tar.gz"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-25"
+    },
+    {
+        "filename": "uninstalledApplications",
+        "artifactKey": "uninstalled_applications_plist",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Apps - Uninstalled Applications Plist",
+        "description": "Bundle identifiers and dates recorded in /private/var/installd/Library/MobileInstallation/UninstalledApplications.plist, a property list whose keys are bundle identifiers and whose values are dates.",
+        "category": "Mobile Installation Logs",
+        "notes": "The file holds one date per bundle identifier, so a bundle that was installed and removed more than once carries only the date recorded against it here. The dates are read from the property list's own date type, which is stored in UTC. The file is not present on every device: it was found on two of the twenty-four tested images. Absence of the file, or of a bundle identifier within it, is absence of this source and is not evidence that no application was removed.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/installd/Library/MobileInstallation/UninstalledApplications.plist"
+        ],
+        "creation_date": "2026-08-25",
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "ashHistory",
@@ -16203,9 +16692,131 @@
         "category": "Battery",
         "notes": "Temperature scale: the stored Temperature value is centi-Celsius (Celsius x 100). Validated against 275 rows across BDC_SBC version 2.9 and 3.0 files from two test images: dividing by 100 yields 21.7-37.2 C, consistent with an operating device and rising while IsCharging is set, while a x1000 scale would imply near-freezing temperatures. The reference below states Celsius x 1000, which this testing indicates is a typo. The CSV header row in the files matches the column positions parsed here. Reference: Kevin Pagano, 'BDC - More Battery Temps & Charging Stats', https://www.stark4n6.com/2026/03/bdc-more-battery-temps-charging-stats.html",
         "author": "@stark4n6",
-        "paths": "*/Battery/BDC/BDC_SBC_*.csv",
+        "paths": [
+            "*/Battery/BDC/BDC_SBC_*.csv",
+            "*/BatteryBDC/BDC_SBC_*.csv"
+        ],
         "creation_date": "2026-03-18",
         "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_cpmsrc",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - CPMSRC",
+        "description": "Battery RC equivalent-circuit impedance model from BDC_CPMSRC logs",
+        "category": "Battery",
+        "notes": "Daily cadence. Series resistance plus four RC branches (fast to slow time constants). Header units read as mojibake when the file is decoded as Latin-1, so the CSV is read as UTF-8. Not present in the local test images, so parsing is header-driven off the documented column names.",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_CPMSRC_*.csv",
+            "*/BatteryBDC/BDC_CPMSRC_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_daily",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - Daily",
+        "description": "Daily battery health snapshots (capacity, cycle count) from BDC_Daily logs",
+        "category": "Battery",
+        "notes": "Roughly two rows per day. NominalChargeCapacity over DesignCapacity (from BDC_Once) gives the user-visible Maximum Capacity percentage. TimeAtHighSoc is a little-endian uint32 blob left as its raw hex token here.",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_Daily_*.csv",
+            "*/BatteryBDC/BDC_Daily_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_obc",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - OBC",
+        "description": "On-charger and external power transition events from BDC_OBC logs",
+        "category": "Battery",
+        "notes": "Event driven, one row per attach/detach/charge-state change. FamilyCode is a signed 32-bit IOPS adapter family code; the hex column recovers the 0xE0004xxx form used by IOKit. NotChargingReason is a bitmask (0 means charging normally).",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_OBC_*.csv",
+            "*/BatteryBDC/BDC_OBC_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_once",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - Once",
+        "description": "Static battery identity written once per battery pack from BDC_Once logs",
+        "category": "Battery",
+        "notes": "One row per battery pack (first boot with a new pack, or after a data reset). A new BatterySerialNumber and a fresh BDC_Once file signal a battery replacement. GasGaugeFirmwareVersion appears from schema version 1.7. Columns are read by header name, so older narrower-schema files still parse.",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_Once_*.csv",
+            "*/BatteryBDC/BDC_Once_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_smartcharging",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - SmartCharging",
+        "description": "Optimized Battery Charging policy decisions from BDC_SmartCharging logs",
+        "category": "Battery",
+        "notes": "Event driven. ChargeLimit drops to 80 when the 80 percent hold is engaged, and ChargingState 0 marks a paused/held charge. DecisionMaker was added in schema version 2.6, so columns are read by header name to stay aligned across versions.",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_SmartCharging_*.csv",
+            "*/BatteryBDC/BDC_SmartCharging_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_timestamps",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - Timestamps",
+        "description": "RTC-to-wall-clock set events for time reconstruction from BDC_Timestamps logs",
+        "category": "Battery",
+        "notes": "Each row records a system-clock set event against the monotonic RTC tick counter, which is forensically useful for spotting power-loss events, battery pulls and clock changes. Times are UTC.",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_Timestamps_*.csv",
+            "*/BatteryBDC/BDC_Timestamps_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
+    },
+    {
+        "filename": "batteryBDC",
+        "artifactKey": "battery_bdc_weekly",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Battery Data Collection (BDC) - Weekly",
+        "description": "Weekly gauge resistance table and operating time from BDC_Weekly logs",
+        "category": "Battery",
+        "notes": "One row every seven days. RaTableRaw0 is the raw Impedance Track Ra table (big-endian uint16 words) left as its raw hex token here; rising values over months indicate cell aging.",
+        "author": "@stark4n6, @ChrisJr404",
+        "paths": [
+            "*/Battery/BDC/BDC_Weekly_*.csv",
+            "*/BatteryBDC/BDC_Weekly_*.csv"
+        ],
+        "creation_date": "2026-08-17",
+        "last_update_date": "2026-08-17"
     },
     {
         "filename": "BeReal",
@@ -16442,15 +17053,16 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Biome - App Install",
-        "description": "Parses app install entries from biomes",
+        "description": "App install entries from the App.Install and _DKEvent.App.Install Biome streams",
         "category": "Biome",
+        "notes": "Covers two Biome streams that carry different record layouts. _DKEvent.App.Install records carry the activity, the bundle id, the event and write timestamps and the app display strings. App.Install records carry only a bundle id and one integer, which is reported as stored because no source documenting its meaning was identified. The Stream column names the source stream for each row. Records whose SEGB state is Deleted are reported with their timestamp and offset only. Paths containing 'tombstone' are not parsed. Across the tested images those files hold the Biome daemons' own record of retired stream files, naming the file, a byte size and a record count, and no record in them carried a bundle identifier or an application event.",
         "author": "@JohnHyla, @Gear-I",
         "paths": [
             "*/Biome/streams/restricted/_DKEvent.App.Install/local/*",
             "*/Biome/streams/restricted/App.Install/local/*"
         ],
         "creation_date": "2024-10-17",
-        "last_update_date": "2026-08-20"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "biomeAppInstallation",
@@ -16460,13 +17072,13 @@
         "name": "Biome - App Installation",
         "description": "Parses app installation events from the App.Installation biome stream: the bundle identifier, a per-app UUID, its short and build version, and the time the event was recorded. Complements the older App.Install and _DKEvent.App.Install streams.",
         "category": "Biome",
-        "notes": "The event type field takes values 1, 2 and 3 in the sample; which of install, update and removal each denotes is not confirmed, so the raw value is reported. Two 16 byte values accompany each event and are surfaced as hex digests; their role is not established.",
+        "notes": "The event type field takes values 0, 1, 2 and 3 in the tested sample; which of install, update and removal each denotes is not confirmed, so the raw value is reported. Two 16 byte values accompany each event and are surfaced as hex digests; their role is not established. The version and 16 byte fields are read with a pinned field type because some of those values are themselves valid protobuf and an inferring decode reports them as empty. Paths containing 'tombstone' are not parsed; across the tested images those files hold the Biome daemons' own record of retired stream files and carried no application event.",
         "author": "@abrignoni, @mattiaepi (Mattia Epifani)",
         "paths": [
             "*/streams/*/App.Installation/local/*"
         ],
         "creation_date": "2026-07-26",
-        "last_update_date": "2026-08-20"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "biomeAppIntentsTranscript",
@@ -18741,29 +19353,17 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Cash App",
-        "description": "Parses Cash App transactions and account data from the CCEntitySync SQLite stores.",
+        "description": "Parses Cash App customer and payment records from the CCEntitySync SQLite stores, decoding the ZSYNCCUSTOMER and ZSYNCPAYMENT protobuf blobs and the JSON payloads they carry.",
         "category": "Banking",
-        "author": "@gforce4n6",
+        "notes": "Merged from the original Cash App and Cash App (B) artifacts, which cashAppB.py provided until this change removed it. Rows come from ZPAYMENT joined to ZCUSTOMER on the customer token, so a customer record carrying no payment is not reported: the two tested stores held 65 and 21 customer records behind one payment each. Amounts are stored in the smallest denomination unit of the currency (e.g. 100 = $1.00 USD); both the stored value and a formatted value are reported. In the customer blob, protobuf field 3 held the display name, field 5 the avatar URL and field 8 the cashtag; field 8 was checked against one customer record whose own JSON payload carries the same cashtag string. Account Owner Role and Transaction State are read from the payment JSON payload, and the raw scan is used only where that payload is absent, which neither tested image exercised. On both tested images the single payment is a referral bonus still pending, and its payload carries no state key, no instrument object and no capture, payout or deposit timestamp, so Transaction State, Card Brand, Suffix, Instrument Display Name, Display Instrument, Instrument Type, Transaction ID, Receipt, Captured At, Reached Customer At, Paid Out At and Deposited At were empty on both reported rows; Cashtag was empty because the joined customer record on both images carries no cashtag field. Those columns are code-present and unexercised here, and a sample holding a settled card payment would close that gap. Customer Token and ID, and Name and Full Name, are read from separate sources (a table column and a protobuf field against the JSON payload) and agreed on each tested row. Customer Bitcoin Display Units is the customer's own bitcoin unit preference and not the unit of the payment amount. Reference: Square Developer Documentation, 'Working with Monetary Amounts', https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts",
+        "author": "@gforce4n6, @AlexisBrignoni, @charpy4n6, Claude",
         "paths": [
+            "*/mobile/Containers/Shared/AppGroup/*/CCEntitySync-internal.cashappapi.com.sqlite*",
             "*/mobile/Containers/Shared/AppGroup/*/CCEntitySync-api.squareup.com.sqlite*",
-            "*/mobile/Containers/Shared/AppGroup/*/CCEntitySync-internal.cashappapi.com.sqlite*"
+            "*/Environments/Production/Accounts/*/CCEntitySync-*.sqlite*"
         ],
         "creation_date": "2021-10-06",
-        "last_update_date": "2026-08-21"
-    },
-    {
-        "filename": "cashAppB",
-        "artifactKey": "get_cashAppB",
-        "sourceTool": "iLEAPP",
-        "Platform": "iOS",
-        "name": "Cash App (B)",
-        "description": "Parses Cash App activity from the production account cashappapi SQLite database (alternate location).",
-        "category": "Banking",
-        "notes": "Amounts are stored in the smallest denomination unit of the currency (e.g., 100 = $1.00 USD). Protobuf field positions for name/url/cashtag were established through testing. Reference: Square Developer Documentation, 'Working with Monetary Amounts', https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts",
-        "author": "Alexis Brignoni",
-        "paths": "*/Environments/Production/Accounts/*/*-internal.cashappapi.com.sqlite*",
-        "creation_date": "2025-08-24",
-        "last_update_date": "2026-08-21"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "celWireless",
@@ -22840,6 +23440,60 @@
         "last_update_date": "2025-10-14"
     },
     {
+        "filename": "KeepSafe",
+        "artifactKey": "keepsafe_account_security",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "KeepSafe - Account & PIN Security",
+        "description": "App-level account, install and PIN-security state from com.keepsafe.KeepSafe.plist (app container) and group.com.keepsafe.KeepSafe.plist (AppGroup, keyed by tracking id).",
+        "category": "KeepSafe",
+        "notes": "The PIN and invalid-PIN-count/timeout keys in group.com.keepsafe.KeepSafe.plist are stored under a '<tracking-id>.' prefix; this module reads shared-pin/shared-pin-type directly and the two '<tid>.'-prefixed keys by pattern match since the tracking id varies per install. In the image tested the PIN was stored in plain text, not hashed - report it exactly as stored, whatever the value.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Preferences/com.keepsafe.KeepSafe.plist",
+            "*/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.keepsafe.KeepSafe.plist"
+        ],
+        "creation_date": "2026-08-23",
+        "last_update_date": "2026-08-23"
+    },
+    {
+        "filename": "KeepSafe",
+        "artifactKey": "keepsafe_albums",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "KeepSafe - Albums",
+        "description": "Albums (KeepSafe calls them folders) decoded from the NSKeyedArchiver 'shared-folders' value in the AppGroup's group.com.keepsafe.KeepSafe.plist.",
+        "category": "KeepSafe",
+        "notes": "Cover Image Bytes is the size of the embedded cover thumbnail, not exported here.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.keepsafe.KeepSafe.plist"
+        ],
+        "creation_date": "2026-08-23",
+        "last_update_date": "2026-08-23"
+    },
+    {
+        "filename": "KeepSafe",
+        "artifactKey": "keepsafe_vault_items",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "KeepSafe - Vault Items",
+        "description": "Media items recorded in KeepSafe's RocksDB store (Documents/rdb), matched to the encrypted file each item's id names under Documents/<table>/. Reports the item's name, timestamps, album, GPS, and SHA-1/dimensions as KeepSafe itself recorded them for the original file, before encryption.",
+        "category": "KeepSafe",
+        "notes": "RocksDB *.sst tables are not read (see module docstring); only what is still in the write-ahead log(s) is reported, so a count here is a floor, not a ceiling, on what the vault has ever held. 'breakin_alert' and 'fake' were empty directories with no live records in the validation image, so their field mapping is unexercised - see module docstring for the tier of each claim.",
+        "author": "@Gear-I, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/rdb/*",
+            "*/mobile/Containers/Data/Application/*/Documents/rdb_backups/*/*",
+            "*/mobile/Containers/Data/Application/*/Documents/primary/*/*",
+            "*/mobile/Containers/Data/Application/*/Documents/breakin_alert/*/*",
+            "*/mobile/Containers/Data/Application/*/Documents/fake/*/*",
+            "*/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.keepsafe.KeepSafe.plist"
+        ],
+        "creation_date": "2026-08-23",
+        "last_update_date": "2026-08-23"
+    },
+    {
         "filename": "keyboard",
         "artifactKey": "keyboardAppUsage",
         "sourceTool": "iLEAPP",
@@ -24135,11 +24789,12 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "logarchive navigation",
-        "description": "Navigation entries",
+        "description": "Records logged by the MapsNavigation framework under the com.apple.Navigation subsystem",
         "category": "Unified Logs",
-        "author": "@AlexisBrignoni",
+        "notes": "Rows the MapsNavigation framework writes under the com.apple.Navigation subsystem, collected by subsystem rather than by message text. Across the six tested images the emitting processes are the Maps widget extension GeneralMapsWidget (955 rows on four images), navd (755 on five) and Maps.app (609 on two), with single-figure counts from assistantd, routined and destinationd on one image each. Categories observed on the iOS 16.5 through 18.7 images, with the number of images carrying each: MNNavigationXPC, MNNavigationService, MNNavigationStateManager and MNRouteStorage on four; MNLocationProvider on three; MNVoiceLanguageUtil, MNUserOptionsEngine and Navd on two; MNRouteEditor, MNSuggestedNavigationMode, MNRouteAttributes, MNSequence, MNCarPlayConnectionMonitor, MNRingerSwitchObserver, ProcessHandling and the three VirtualGarage categories on one each. The iOS 26.5.2 image shares only MNLocationProvider with those and otherwise logs two categories seen nowhere else, FamiliarRouteAuthorizationChecker and GEONavigationListener, which is why the subsystem prefix is matched instead of a list of categories. Until 2026-08-25 this artifact instead matched event_message against fifteen English spoken guidance phrases such as 'Starting route to' and 'your destination'. None of those phrases occurs in any of the 117,678,121 records across the six images listed in sample_data, every one of them an en-US device, so it reported nothing on all six. What the artifact reports is the framework's own activity around route planning and navigation service connections. It is not a record of a route being followed: on every tested image that logs a navigation state, the only values seen are MNNavigationStateTypeNoDestination, MNNavigationStateTypeNone and Stopped, so none of them holds an active turn by turn session. Whether spoken guidance text reaches the unified log at all is untested here, and 19.1 percent of messages on the iOS 18.7 image are redacted to <private>. An image captured during live navigation would settle it. Trace ID carries no value on any tested row, which is true of every artifact reading this table.",
+        "author": "@AlexisBrignoni, Claude",
         "creation_date": "2025-07-25",
-        "last_update_date": "2025-07-25"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "logarchive",
@@ -27723,14 +28378,14 @@
         "name": "Proton Mail - Inbox Messages",
         "description": "Messages cached by the Proton Mail iOS Inbox app, including decrypted subject, body, sender and recipients",
         "category": "Proton Mail",
-        "notes": "Reads the group.me.proton.mail cache used by Proton Mail 7.x (Inbox). In the tested image the cached subject, body, sender and recipient values are stored in clear text; the body is the HTML the app rendered. Folder is resolved from the app's own labels table. From Me is derived by comparing the message sender to the account's own addresses. The Attachment column shows the first cached attachment file for the message when it is present in the extraction; the Inbox Attachments artifact lists every attachment. A cached row reflects what the app had synced and decrypted locally, not necessarily the full mailbox.",
+        "notes": "Reads the group.me.proton.mail cache used by Proton Mail 7.x (Inbox). In the tested image the cached subject, body, sender and recipient values are stored in clear text; the store holds the HTML the app rendered, and Body is the readable text extracted from it (tags, styling and repeated whitespace removed). Links lists the distinct link targets the same body carries, in document order, as stored; the unmodified HTML stays in the source database. Folder is resolved from the app's own labels table. From Me is derived by comparing the message sender to the account's own addresses. The Attachment column shows the first cached attachment file for the message when it is present in the extraction; the Inbox Attachments artifact lists every attachment. A cached row reflects what the app had synced and decrypted locally, not necessarily the full mailbox.",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/Shared/AppGroup/*/support/*.db*",
             "*/Shared/AppGroup/*/cache/mail-cache/attachments/*"
         ],
         "creation_date": "2026-08-14",
-        "last_update_date": "2026-08-14"
+        "last_update_date": "2026-08-24"
     },
     {
         "filename": "storeUser",
@@ -28680,13 +29335,13 @@
         "description": "Reboot events detected in mobile_installation.log",
         "category": "Mobile Installation Logs",
         "notes": "Timestamps are reported as written in the log, which carries no timezone marker; in tested corpora the values were consistent with device-local time.",
-        "author": "@AlexisBrignoni",
+        "author": "@AlexisBrignoni, Claude",
         "paths": [
             "**/mobile_installation.log.*",
             "**/sysdiagnose_*.tar.gz"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-08-25"
     },
     {
         "filename": "appleStopwatch",
