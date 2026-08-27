@@ -2280,15 +2280,19 @@
             "appName": "Discord",
             "icon": "discord.webp",
             "websiteUrl": "https://discord.com/",
+            "category": "Communication",
             "appleStoreUrl": "https://apps.apple.com/us/app/discord-talk-play-hang-out/id985746746",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.discord",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": [],
-            "category": "Communication",
             "activeOnAppleStore": "true",
-            "activeOnPlayStore": "true"
+            "activeOnPlayStore": "true",
+            "notes": "Discord Inc. voice/text/community app (Android com.discord, iOS com.hammerandchisel.discord). Store title Discord - Talk, Play, Hang Out. Apple genre Social Networking. Distinct from Slack, Microsoft Teams, Telegram, and Guilded.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "com.discord",
+                "com.hammerandchisel.discord",
+                "Discord - Talk, Play, Hang Out"
+            ]
         },
         {
             "appName": "Disney+",
@@ -2912,10 +2916,18 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.mozilla.focus",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Privacy-focused companion to Firefox; not the main Firefox browser (org.mozilla.firefox).",
+            "notes": "Mozilla privacy browser (Android org.mozilla.focus, iOS org.mozilla.ios.Focus). Apple title Firefox Focus: Privacy browser; Play title Firefox Focus: No Fuss Browser. Firefox Klar (org.mozilla.klar / org.mozilla.ios.Klar) is the German-market name of the same app. Distinct from Firefox, Firefox Lockwise, DuckDuckGo, and Brave Browser.",
             "dateAdded": "2026-07-13",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "org.mozilla.focus",
+                "org.mozilla.ios.Focus",
+                "org.mozilla.klar",
+                "org.mozilla.ios.Klar",
+                "Firefox Focus: Privacy browser",
+                "Firefox Focus: No Fuss Browser",
+                "Firefox Klar"
+            ]
         },
         {
             "appName": "Firefox Lockwise",
@@ -3499,15 +3511,19 @@
             "appName": "Google Mail (Gmail)",
             "icon": "google-mail.webp",
             "websiteUrl": "https://mail.google.com/",
+            "category": "Email",
             "appleStoreUrl": "https://apps.apple.com/us/app/gmail-email-by-google/id422689480",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.gm",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": [],
-            "category": "Email",
             "activeOnAppleStore": "true",
-            "activeOnPlayStore": "true"
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC mail app (Android com.google.android.gm / legacy com.google.android.providers.gmail, iOS com.google.Gmail). Apple title Gmail - Email by Google; Play title Gmail. Apple genre Productivity. Distinct from Gmail Go, Apple Mail, Microsoft Outlook, Yahoo! Mail, ProtonMail, and GMX.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "com.google.android.gm",
+                "com.google.android.providers.gmail",
+                "com.google.Gmail"
+            ]
         },
         {
             "appName": "Google Maps",
@@ -4137,14 +4153,21 @@
         },
         {
             "appName": "Imgur",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "imgur.webp",
+            "websiteUrl": "https://imgur.com/",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/imgur-funny-memes-gif-maker/id639881495",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.imgur.mobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Imgur, Inc. image host and meme community (Android com.imgur.mobile, iOS imgurmobile). Store title Imgur: Funny Memes & GIF Maker. Apple genre Photo & Video. Distinct from Reddit, Tumblr, Flickr, and third-party Imgur browsers/uploaders.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "com.imgur.mobile",
+                "imgurmobile",
+                "Imgur: Funny Memes & GIF Maker"
+            ]
         },
         {
             "appName": "Imo Messenger",
@@ -4434,15 +4457,21 @@
         },
         {
             "appName": "KeepSafe",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "keepsafe.webp",
+            "websiteUrl": "https://www.keepsafe.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/secret-photo-vault-keepsafe/id510873505",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kii.safe",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "KeepSafe Software vault (Android com.kii.safe, iOS com.keepsafe.KeepSafe). Apple title Secret Photo Vault: Keepsafe; Play title Private Photo Vault - Keepsafe. Apple genre Photo & Video. Magnet Secret Photo Vault artifacts map here. Distinct from Private Photo Vault (Enchanted Cloud), GalleryVault, Sgallery, Calculator Photo Vault (PV), and Secret Calculator Photo Album.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-26",
             "alternateNames": [
-                "Keepsafe"
+                "com.kii.safe",
+                "com.keepsafe.KeepSafe",
+                "Keepsafe",
+                "Secret Photo Vault: Keepsafe"
             ]
         },
         {
@@ -5137,13 +5166,19 @@
         {
             "appName": "Microsoft Edge",
             "icon": "ms-edge.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-edge-browse-with-ai/id1288723196",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.microsoft.com/edge",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-edge/id1288723196",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.emmx",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft Chromium browser (Android com.microsoft.emmx, iOS com.microsoft.msedge). Apple genre Utilities. Magnet Edge Chromium and Chromebook Edge rows map here; Edge-Internet Explorer 10-11 WebCache rows also map to Microsoft Internet Explorer. Distinct from Microsoft Internet Explorer, Google Chrome, Kiwi Browser, Samsung Internet Browser, Whale, Brave Browser, Opera, and Firefox.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "com.microsoft.emmx",
+                "com.microsoft.msedge"
+            ]
         },
         {
             "appName": "Microsoft Excel",
@@ -6153,7 +6188,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enchantedcloud.photovault&hl=en",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Enchanted Cloud / Legendary Software Labs vault (com.enchantedcloud.photovault on Android and iOS). Play title Private Photo Vault; Apple title Private Photo Vault - Pic Safe. ArtiFast application key Android Private Photo Vault. Distinct from Private Photo Vault (Keepsafe). Pro package com.enchantedcloud.photovaultpro is delisted on Play.",
+            "notes": "Enchanted Cloud / Legendary Software Labs vault (com.enchantedcloud.photovault on Android and iOS). Play title Private Photo Vault; Apple title Private Photo Vault - Pic Safe. ArtiFast application key Android Private Photo Vault. Distinct from KeepSafe. Pro package com.enchantedcloud.photovaultpro is delisted on Play.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-08-18",
             "alternateNames": [
@@ -6162,17 +6197,6 @@
                 "Private Photo Vault",
                 "Private Photo Vault - Pic Safe"
             ]
-        },
-        {
-            "appName": "Private Photo Vault (Keepsafe)",
-            "icon": "private-photo-vault-keepsafe.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kii.safe&hl=en",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
         },
         {
             "appName": "Privet Photo Vault",
@@ -6824,14 +6848,21 @@
         },
         {
             "appName": "Session",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "session.webp",
+            "websiteUrl": "https://getsession.org/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/session-private-messenger/id1470168868",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=network.loki.messenger",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Session Foundation / Rangeproof private messenger, formerly Loki Messenger (Android network.loki.messenger, iOS com.loki-project.loki-messenger). Store title Session - Private Messenger. Apple genre Social Networking. Derived from Signal for Android; uses Oxen, not phone numbers. Distinct from Signal, SimpleX, Threema, TeleGuard, and Wire.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "network.loki.messenger",
+                "com.loki-project.loki-messenger",
+                "Session - Private Messenger"
+            ]
         },
         {
             "appName": "Shazam",
@@ -7603,14 +7634,20 @@
         },
         {
             "appName": "Threema",
-            "icon": "threema.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "icon": "threema.webp",
+            "websiteUrl": "https://threema.ch/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/threema-the-secure-messenger/id578665578",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ch.threema.app",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Threema GmbH paid private messenger (Android ch.threema.app, iOS ch.threema.iapp). Store title Threema. The Secure Messenger. Apple genre Social Networking. Distinct from Threema Work (ch.threema.app.work / ch.threema.work.iapp), Threema OnPrem, Signal, Session, SimpleX, TeleGuard, and Wire.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-26",
+            "alternateNames": [
+                "ch.threema.app",
+                "ch.threema.iapp"
+            ]
         },
         {
             "appName": "TigerConnect",
@@ -8291,14 +8328,19 @@
         {
             "appName": "Viber",
             "icon": "viber.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?hl=en&id=com.viber.voip",
-            "notes": "",
+            "websiteUrl": "https://www.viber.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/rakuten-viber-messenger/id382617920",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.viber.voip",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Rakuten Viber Media messenger (Android com.viber.voip, iOS com.viber). Store title Rakuten Viber Messenger. Apple genre Social Networking. Distinct from WhatsApp Messenger, Telegram, BOTIM, Imo Messenger, Line, and Skype.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-26",
             "alternateNames": [
-                "Viber Artifacts"
+                "com.viber.voip",
+                "com.viber",
+                "Rakuten Viber Messenger"
             ]
         },
         {

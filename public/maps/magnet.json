@@ -165,6 +165,7 @@
     "Cloud Box.com User Events": "Box",
     "Cloud Dropbox Files": "Dropbox",
     "Cloud Facebook Messenger Messages": "Meta Messenger (Facebook)",
+    "Cloud Gmail Messages": "Google Mail (Gmail)",
     "Cloud Google Calendar Events": "Google Calendar",
     "Cloud Google Calendar Events (Takeout)": "Google Calendar",
     "Cloud Google Drive Activity": "Google Drive",
@@ -230,13 +231,44 @@
     "Ecosia Top Sites": "Ecosia Browser",
     "Ecosia Web History": "Ecosia Browser",
     "Ecosia Web Visits": "Ecosia Browser",
+    "Edge Archived Keyword Search Terms": "Microsoft Edge",
+    "Edge Cache Data": "Microsoft Edge",
     "Edge Chromium Bookmarks": "Microsoft Edge",
     "Edge Chromium FavIcons": "Microsoft Edge",
     "Edge Chromium Keyword Search Terms": "Microsoft Edge",
     "Edge Chromium Tab History": "Microsoft Edge",
     "Edge Chromium Web History": "Microsoft Edge",
     "Edge Chromium Web Visits": "Microsoft Edge",
-    "Evernote Accounts": "Evernote",
+    "Edge Extensions": "Microsoft Edge",
+    "Edge Favorites": "Microsoft Edge",
+    "Edge Keyword Search Terms": "Microsoft Edge",
+    "Edge Last Session": "Microsoft Edge",
+    "Edge Reading Lists": "Microsoft Edge",
+    "Edge Top Sites": "Microsoft Edge",
+    "Edge-Internet Explorer 10-11 Content": [
+        "Microsoft Edge",
+        "Microsoft Internet Explorer"
+    ],
+    "Edge-Internet Explorer 10-11 Cookies": [
+        "Microsoft Edge",
+        "Microsoft Internet Explorer"
+    ],
+    "Edge-Internet Explorer 10-11 Daily-Weekly History": [
+        "Microsoft Edge",
+        "Microsoft Internet Explorer"
+    ],
+    "Edge-Internet Explorer 10-11 Dependency Entries": [
+        "Microsoft Edge",
+        "Microsoft Internet Explorer"
+    ],
+    "Edge-Internet Explorer 10-11 Downloads": [
+        "Microsoft Edge",
+        "Microsoft Internet Explorer"
+    ],
+    "Edge-Internet Explorer 10-11 Main History": [
+        "Microsoft Edge",
+        "Microsoft Internet Explorer"
+    ],    "Evernote Accounts": "Evernote",
     "Evernote Contacts": "Evernote",
     "Evernote Notes": "Evernote",
     "Evernote Work Chat": "Evernote",
@@ -298,6 +330,7 @@
     "Glide Users": "Glide",
     "Gmail Email Fragments": "Google Mail (Gmail)",
     "Gmail Emails": "Google Mail (Gmail)",
+    "Gmail Webmail": "Google Mail (Gmail)",
     "Google Calendar Calendars": "Google Calendar",
     "Google Calendar Events": "Google Calendar",
     "Google Calendar Reminders": "Google Calendar",
@@ -487,6 +520,7 @@
     "MySpace Chat - User Info": "MySpace",
     "MySpace Inbox Messages": "MySpace",
     "Omegle": "Omegle",
+    "Offline Gmail webmail": "Google Mail (Gmail)",
     "OneDrive": "Microsoft OneDrive",
     "OnStar RemoteLink Accounts": "OnStar RemoteLink",
     "OnStar RemoteLink Hotspot Info": "OnStar RemoteLink",
@@ -601,6 +635,14 @@
     "Samsung Messages": "Samsung Messages",
     "Samsung Notes": "Samsung Notes",
     "Samsung Text Message Logs": "Samsung Messages",
+    "Secret Photo Vault Albums": "KeepSafe",
+    "Secret Photo Vault Application Passwords": "KeepSafe",
+    "Secret Photo Vault Bookmarks": "KeepSafe",
+    "Secret Photo Vault Break-In Alerts": "KeepSafe",
+    "Secret Photo Vault Contacts": "KeepSafe",
+    "Secret Photo Vault Media": "KeepSafe",
+    "Secret Photo Vault Saved Passwords": "KeepSafe",
+    "Secret Photo Vault Tabs": "KeepSafe",
     "Signal Conversations - Android": "Signal",
     "Signal Group Members": "Signal",
     "Signal Groups": "Signal",
