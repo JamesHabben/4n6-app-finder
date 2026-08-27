@@ -99,7 +99,7 @@ function OneHitList({ groups, onOpenApp }) {
   );
 }
 
-function ResultsDashboard({ summary, onOpenApp }) {
+function ResultsDashboard({ summary, platformLabel, onOpenApp }) {
   const {
     total,
     tracked,
@@ -158,7 +158,8 @@ function ResultsDashboard({ summary, onOpenApp }) {
       <Col xs={24} lg={12}>
         <Card title="Tools on this device">
           <Text type="secondary" className="blind-spots-tool-counts-note">
-            Each bar is that tool&apos;s share of {tracked} tracked app{tracked === 1 ? '' : 's'}.
+            Each bar is that tool&apos;s share of {tracked} tracked app{tracked === 1 ? '' : 's'}
+            {platformLabel ? ` on ${platformLabel}` : ''}.
           </Text>
           <ul className="blind-spots-tool-counts">
             {toolCounts.map(tool => {
@@ -187,7 +188,8 @@ function ResultsDashboard({ summary, onOpenApp }) {
       <Col xs={24} lg={12}>
         <Card title="Tools per tracked app">
           <Text type="secondary" className="blind-spots-tool-counts-note">
-            How many forensic tools parse each of the {tracked} tracked apps.
+            How many forensic tools parse each of the {tracked} tracked apps
+            {platformLabel ? ` on ${platformLabel}` : ''}.
           </Text>
           <ToolsPerAppChart histogram={toolCountHistogram} />
         </Card>
@@ -195,7 +197,8 @@ function ResultsDashboard({ summary, onOpenApp }) {
       <Col xs={24} lg={12}>
         <Card title={`One-hit apps on this device (${oneHitCount})`}>
           <Text type="secondary" className="blind-spots-tool-counts-note">
-            Tracked apps parsed by exactly one tool. These are the operational blind spots.
+            Tracked apps parsed by exactly one tool
+            {platformLabel ? ` on ${platformLabel}` : ''}. These are the operational blind spots.
           </Text>
           <OneHitList groups={oneHitGroups} onOpenApp={onOpenApp} />
         </Card>

@@ -5,7 +5,7 @@ import { coverageRows } from 'services/blindSpots/summarizeInventory';
 
 const { Paragraph } = Typography;
 
-function ToolCoverageMatrix({ summary, onOpenApp }) {
+function ToolCoverageMatrix({ summary, platformLabel, onOpenApp }) {
   const { trackedApps, toolCounts, tracked } = summary;
   const rows = useMemo(
     () => coverageRows(trackedApps, toolCounts),
@@ -15,9 +15,10 @@ function ToolCoverageMatrix({ summary, onOpenApp }) {
   return (
     <div>
       <Paragraph type="secondary">
-        {tracked} tracked app{tracked === 1 ? '' : 's'} across {toolCounts.length} tools.
-        A filled dot means that tool parses the app. Columns include tools with zero hits
-        on this device. Sorted by tool count.
+        {tracked} tracked app{tracked === 1 ? '' : 's'} across {toolCounts.length} tools
+        {platformLabel ? ` on ${platformLabel}` : ''}.
+        A filled dot means that tool parses the app on this file&apos;s platform.
+        Columns include tools with zero hits on this device. Sorted by tool count.
       </Paragraph>
       <div className="blind-spots-coverage-wrap">
         <table className="blind-spots-coverage">

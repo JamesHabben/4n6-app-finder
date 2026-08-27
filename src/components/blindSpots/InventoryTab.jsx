@@ -69,7 +69,7 @@ function appMatchesTrackedFilter(record, values) {
   return values.some(value => (record.tracked ? 'yes' : 'no') === value);
 }
 
-function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
+function InventoryTab({ device, matchedApps, summary, tools, platformLabel, onOpenApp }) {
   const [searchTerm, setSearchTerm] = useState('');
   const [trackedFilterValues, setTrackedFilterValues] = useState([]);
   const [toolFilterValues, setToolFilterValues] = useState([]);
@@ -195,7 +195,9 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
         <Paragraph type="secondary">
           {summary.total} app{summary.total === 1 ? '' : 's'} from the file.
           {' '}
-          {summary.tracked} tracked in the catalog, {summary.supported} supported by at least one tool.
+          {summary.tracked} tracked in the catalog, {summary.supported} supported by at least one tool
+          {platformLabel ? ` on ${platformLabel}` : ''}.
+          Tool icons are limited to this file&apos;s platform.
           This is the user-app list recorded in the backup, not a complete filesystem inventory.
           System apps and apps excluded from backup may be absent.
         </Paragraph>
