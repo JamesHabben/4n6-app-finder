@@ -51,7 +51,7 @@ function PageBlindSpots() {
             type="info"
             showIcon
             className="blind-spots-resume"
-            message={
+            title={
               <Link to="/blind-spots/results">
                 View last results for {analysis.device?.name || analysis.source?.fileName}
               </Link>

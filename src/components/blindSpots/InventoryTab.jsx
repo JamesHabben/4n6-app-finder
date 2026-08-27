@@ -62,8 +62,16 @@ function appMatchesToolFilters(record, values) {
   return true;
 }
 
+function appMatchesTrackedFilter(record, values) {
+  if (!values?.length) {
+    return true;
+  }
+  return values.some(value => (record.tracked ? 'yes' : 'no') === value);
+}
+
 function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [trackedFilterValues, setTrackedFilterValues] = useState([]);
   const [toolFilterValues, setToolFilterValues] = useState([]);
 
   const toolFilters = useMemo(() => {
@@ -103,14 +111,17 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
         || (app.catalogApp?.appName || '').toLowerCase().includes(value)
       ));
 
-    return searched.filter(app => appMatchesToolFilters(app, toolFilterValues));
-  }, [matchedApps, searchTerm, toolFilterValues]);
+    return searched
+      .filter(app => appMatchesTrackedFilter(app, trackedFilterValues))
+      .filter(app => appMatchesToolFilters(app, toolFilterValues));
+  }, [matchedApps, searchTerm, trackedFilterValues, toolFilterValues]);
 
   const columns = useMemo(() => [
     {
       title: 'App',
       dataIndex: 'name',
       key: 'name',
+      filteredValue: null,
       sorter: (a, b) => (a.name || a.bundleId).localeCompare(b.name || b.bundleId),
       render: (name, row) => {
         if (!row.tracked) {
@@ -129,7 +140,8 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
         { text: 'No', value: 'no' },
       ],
       filterMultiple: false,
-      onFilter: (value, record) => (record.tracked ? 'yes' : 'no') === value,
+      filteredValue: trackedFilterValues.length ? trackedFilterValues : null,
+      onFilter: () => true,
       sorter: (a, b) => Number(b.tracked) - Number(a.tracked),
       render: tracked => (tracked ? 'Yes' : 'No'),
     },
@@ -151,6 +163,7 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
       title: 'Bundle ID',
       dataIndex: 'bundleId',
       key: 'bundleId',
+      filteredValue: null,
       sorter: (a, b) => a.bundleId.localeCompare(b.bundleId),
     },
     {
@@ -158,6 +171,7 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
       dataIndex: 'version',
       key: 'version',
       width: 140,
+      filteredValue: null,
       sorter: (a, b) => (a.version || '').localeCompare(b.version || ''),
       render: version => version || '—',
     },
@@ -165,10 +179,11 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
       title: 'Publisher',
       dataIndex: 'publisher',
       key: 'publisher',
+      filteredValue: null,
       sorter: (a, b) => (a.publisher || '').localeCompare(b.publisher || ''),
       render: publisher => publisher || '—',
     },
-  ], [onOpenApp, toolFilterValues, toolFilters]);
+  ], [onOpenApp, trackedFilterValues, toolFilterValues, toolFilters]);
 
   return (
     <div>
@@ -196,6 +211,7 @@ function InventoryTab({ device, matchedApps, summary, tools, onOpenApp }) {
           columns={columns}
           dataSource={filteredApps}
           onChange={(_pagination, filters) => {
+            setTrackedFilterValues(filters.tracked || []);
             setToolFilterValues(filters.tools || []);
           }}
           pagination={{ pageSize: 25, showSizeChanger: true }}
