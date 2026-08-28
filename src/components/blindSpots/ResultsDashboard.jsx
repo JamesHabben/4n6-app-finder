@@ -4,7 +4,10 @@ import {
   Bar,
   BarChart,
   CartesianGrid,
+  Cell,
   Legend,
+  Pie,
+  PieChart,
   ResponsiveContainer,
   Tooltip,
   XAxis,
@@ -14,11 +17,77 @@ import TrackedAppName from 'components/blindSpots/TrackedAppName';
 
 const { Text } = Typography;
 
-function barWidth(count, total) {
+function percentOf(part, total) {
   if (!total) {
-    return '0%';
+    return 0;
   }
-  return `${(count / total) * 100}%`;
+  return Math.round((part / total) * 100);
+}
+
+const COVERAGE_SLICES = [
+  { key: 'supported', name: 'Supported', fill: '#1677ff' },
+  { key: 'unparsed', name: 'Tracked with no tools', fill: '#faad14' },
+  { key: 'unknown', name: 'Not in catalog', fill: '#d9d9d9' },
+];
+
+function CoverageDonut({ total, supported, knownUnparsed, unknown }) {
+  const slices = [
+    { ...COVERAGE_SLICES[0], value: supported },
+    { ...COVERAGE_SLICES[1], value: knownUnparsed },
+    { ...COVERAGE_SLICES[2], value: unknown },
+  ].filter(slice => slice.value > 0);
+
+  return (
+    <div className="blind-spots-coverage-visual">
+      <div className="blind-spots-coverage-donut" aria-hidden={total === 0}>
+        <ResponsiveContainer width="100%" height="100%">
+          <PieChart>
+            <Pie
+              data={slices}
+              dataKey="value"
+              nameKey="name"
+              innerRadius="58%"
+              outerRadius="80%"
+              paddingAngle={slices.length > 1 ? 2 : 0}
+              stroke="none"
+            >
+              {slices.map(slice => (
+                <Cell key={slice.key} fill={slice.fill} />
+              ))}
+            </Pie>
+            <Tooltip
+              formatter={(value, name) => [
+                `${value} app${value === 1 ? '' : 's'}`,
+                name,
+              ]}
+              contentStyle={{ color: '#141414' }}
+              itemStyle={{ color: '#141414' }}
+              labelStyle={{ color: '#141414' }}
+              wrapperStyle={{ zIndex: 2 }}
+            />
+          </PieChart>
+        </ResponsiveContainer>
+        <div className="blind-spots-coverage-donut-center">
+          <strong>{percentOf(supported, total)}%</strong>
+          <span>supported</span>
+        </div>
+      </div>
+      <div className="blind-spots-coverage-legend">
+        <Text>
+          <span className="blind-spots-legend-swatch supported" />
+          {supported} supported by at least one tool ({percentOf(supported, total)}%)
+        </Text>
+        <Text>
+          <span className="blind-spots-legend-swatch unparsed" />
+          {knownUnparsed} tracked with no tools ({percentOf(knownUnparsed, total)}%)
+        </Text>
+        <Text>
+          <span className="blind-spots-legend-swatch unknown" />
+          {unknown} not in catalog ({percentOf(unknown, total)}%)
+        </Text>
+      </div>
+    </div>
+  );
 }
 
 function ToolsPerAppChart({ histogram }) {
@@ -122,37 +191,12 @@ function ResultsDashboard({ summary, platformLabel, onOpenApp }) {
             <Statistic title="Tracked" value={tracked} />
             <Statistic title="Supported" value={supported} />
           </div>
-          <div className="blind-spots-coverage-bar" aria-hidden={total === 0}>
-            <span
-              className="blind-spots-coverage-bar-supported"
-              style={{ width: barWidth(supported, total) }}
-              title={`${supported} supported`}
-            />
-            <span
-              className="blind-spots-coverage-bar-unparsed"
-              style={{ width: barWidth(knownUnparsed, total) }}
-              title={`${knownUnparsed} tracked with no tools`}
-            />
-            <span
-              className="blind-spots-coverage-bar-unknown"
-              style={{ width: barWidth(unknown, total) }}
-              title={`${unknown} not in catalog`}
-            />
-          </div>
-          <div className="blind-spots-coverage-legend">
-            <Text>
-              <span className="blind-spots-legend-swatch supported" />
-              {supported} supported by at least one tool
-            </Text>
-            <Text>
-              <span className="blind-spots-legend-swatch unparsed" />
-              {knownUnparsed} tracked with no tools
-            </Text>
-            <Text>
-              <span className="blind-spots-legend-swatch unknown" />
-              {unknown} not in catalog
-            </Text>
-          </div>
+          <CoverageDonut
+            total={total}
+            supported={supported}
+            knownUnparsed={knownUnparsed}
+            unknown={unknown}
+          />
         </Card>
       </Col>
       <Col xs={24} lg={12}>

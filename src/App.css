@@ -557,25 +557,56 @@
   margin-bottom: 1rem;
 }
 
-.blind-spots-coverage-bar {
+.blind-spots-coverage-visual {
   display: flex;
-  height: 12px;
-  border-radius: 6px;
-  overflow: hidden;
-  background: #f0f0f0;
-  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.75rem;
 }
 
-.blind-spots-coverage-bar-supported {
-  background: #1677ff;
+.blind-spots-coverage-donut {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  flex-shrink: 0;
 }
 
-.blind-spots-coverage-bar-unparsed {
-  background: #faad14;
+.blind-spots-coverage-donut .recharts-responsive-container {
+  position: relative;
+  z-index: 1;
 }
 
-.blind-spots-coverage-bar-unknown {
-  background: #d9d9d9;
+.blind-spots-coverage-donut .recharts-tooltip-wrapper {
+  z-index: 2;
+}
+
+.blind-spots-coverage-donut .recharts-default-tooltip,
+.blind-spots-coverage-donut .recharts-tooltip-item,
+.blind-spots-coverage-donut .recharts-tooltip-label {
+  color: #141414 !important;
+}
+
+.blind-spots-coverage-donut-center {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  text-align: center;
+}
+
+.blind-spots-coverage-donut-center strong {
+  font-size: 1.75rem;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.blind-spots-coverage-donut-center span {
+  font-size: 0.75rem;
+  color: rgba(0, 0, 0, 0.45);
 }
 
 .blind-spots-coverage-legend {
