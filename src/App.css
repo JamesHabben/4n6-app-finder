@@ -514,6 +514,31 @@
   height: auto;
 }
 
+.blind-spots-app-cell {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.blind-spots-app-icon,
+.blind-spots-app-icon-slot {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  border-radius: 4px;
+}
+
+.blind-spots-app-icon {
+  display: block;
+  object-fit: cover;
+}
+
+.blind-spots-app-label {
+  min-width: 0;
+}
+
 .blind-spots-tool-icons img {
   width: 24px;
   height: 24px;

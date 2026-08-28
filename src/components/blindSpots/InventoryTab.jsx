@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react';
 import { Input, Table, Typography } from 'antd';
 import DeviceSummary from 'components/blindSpots/DeviceSummary';
-import TrackedAppName from 'components/blindSpots/TrackedAppName';
+import { AppNameCell } from 'components/blindSpots/TrackedAppName';
 
-const { Paragraph, Text, Title } = Typography;
+const { Paragraph, Title } = Typography;
 
 function ToolIcons({ tools }) {
   if (!tools?.length) {
@@ -123,12 +123,7 @@ function InventoryTab({ device, matchedApps, summary, tools, platformLabel, onOp
       key: 'name',
       filteredValue: null,
       sorter: (a, b) => (a.name || a.bundleId).localeCompare(b.name || b.bundleId),
-      render: (name, row) => {
-        if (!row.tracked) {
-          return name || <Text type="secondary">{row.bundleId}</Text>;
-        }
-        return <TrackedAppName row={row} onOpen={onOpenApp} />;
-      },
+      render: (name, row) => <AppNameCell row={row} onOpen={onOpenApp} />,
     },
     {
       title: 'Tracked',

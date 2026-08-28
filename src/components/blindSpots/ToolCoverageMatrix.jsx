@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import { Typography } from 'antd';
-import TrackedAppName from 'components/blindSpots/TrackedAppName';
+import { AppNameCell } from 'components/blindSpots/TrackedAppName';
 import { coverageRows } from 'services/blindSpots/summarizeInventory';
 
 const { Paragraph } = Typography;
@@ -41,7 +41,7 @@ function ToolCoverageMatrix({ summary, platformLabel, onOpenApp }) {
             {rows.map(row => (
               <tr key={row.bundleId}>
                 <td className="coverage-app">
-                  <TrackedAppName row={row} onOpen={onOpenApp} />
+                  <AppNameCell row={row} onOpen={onOpenApp} />
                 </td>
                 {row.toolHits.map((hit, index) => (
                   <td key={toolCounts[index].shortName}>

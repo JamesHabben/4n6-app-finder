@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, Tooltip } from 'antd';
+import { Button, Tooltip, Typography } from 'antd';
 import { MATCH_METHOD_LABELS } from 'services/blindSpots/matchCatalogApps';
+
+const { Text } = Typography;
 
 function MatchTooltipTitle({ row }) {
   return (
@@ -18,6 +20,20 @@ function MatchTooltipTitle({ row }) {
   );
 }
 
+function CatalogAppIcon({ row }) {
+  const icon = row.catalogApp?.icon;
+  if (icon) {
+    return (
+      <img
+        className="blind-spots-app-icon"
+        src={`/app-icons/${icon}`}
+        alt=""
+      />
+    );
+  }
+  return <span className="blind-spots-app-icon-slot" aria-hidden />;
+}
+
 function TrackedAppName({ row, onOpen }) {
   const label = row.name || row.bundleId;
 
@@ -31,6 +47,21 @@ function TrackedAppName({ row, onOpen }) {
         {label}
       </Button>
     </Tooltip>
+  );
+}
+
+export function AppNameCell({ row, onOpen }) {
+  return (
+    <span className="blind-spots-app-cell">
+      <CatalogAppIcon row={row} />
+      {row.tracked
+        ? <TrackedAppName row={row} onOpen={onOpen} />
+        : (
+          <span className="blind-spots-app-label">
+            {row.name || <Text type="secondary">{row.bundleId}</Text>}
+          </span>
+        )}
+    </span>
   );
 }
 
