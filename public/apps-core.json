@@ -265,17 +265,21 @@
         },
         {
             "appName": "Adidas Running / Runtastic",
-            "icon": "adidas-running.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "adidas-running.webp",
+            "websiteUrl": "https://www.runtastic.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/adidas-running-run-tracker/id336599882",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.runtastic.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "adidas Runtastic run tracker (Android com.runtastic.android, iOS at.runtastic.gpssportapp). Store title adidas Running: Run tracker. Former product name Runtastic. Apple genre Health & Fitness. Cellebrite rows are legacy. MOBILEdit still maps discontinued Runtastic Mountain Bike / Road Bike SKUs here. Distinct from adidas Training, adidas shopping, Strava, Nike Run Club, Map My Run, and ASICS RunKeeper.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
+            "dateUpdated": "2026-08-28",
             "alternateNames": [
-                "com.runtastic.android"
-            ],
-            "category": "Health & Fitness"
+                "com.runtastic.android",
+                "at.runtastic.gpssportapp",
+                "adidas Running: Run tracker"
+            ]
         },
         {
             "appName": "Adium",
@@ -1053,6 +1057,25 @@
             "alternateNames": [
                 "com.appstar.callrecorder",
                 "com.appstar.callrecorderpro"
+            ]
+        },
+        {
+            "appName": "Avenza Maps",
+            "icon": "avenza-maps.webp",
+            "websiteUrl": "https://www.avenzamaps.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/avenza-maps-offline-mapping/id388424049",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.Avenza",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Avenza Systems Inc. offline GeoPDF/GeoTIFF maps (Android com.Avenza, iOS com.avenza.avios). Store title Avenza Maps: Offline Mapping. Former product name PDF Maps. Apple genre Navigation. No tool catalogs currently list it. Distinct from AllTrails, AlpineQuest, Google Maps, and Apple Maps.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.Avenza",
+                "com.avenza.avios",
+                "PDF Maps",
+                "Avenza Maps: Offline Mapping"
             ]
         },
         {
@@ -2476,13 +2499,42 @@
         {
             "appName": "Dolphin Browser",
             "icon": "dolphin-browser.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.dolphin.com",
+            "category": "Browser",
             "appleStoreUrl": "https://apps.apple.com/us/app/dolphin-mobile-browser/id634693702",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.mgeek.TunnyBrowser&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.mgeek.TunnyBrowser",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MOBOTAP Inc. browser (Android mobi.mgeek.TunnyBrowser, iOS RAPS.appstore.com.dolphin.browser.iphone). Play title Dolphin Browser: Fast, Private. Apple title Dolphin Mobile Browser. Apple genre Business. Historic SKUs: Classic (same Android package), Mini (com.dolphin.browser), Express (com.dolphin.browser.express.web), older iOS com.dolphin.browser.iphone, iOS12 SKU RAPS.appstore.com.dolphin.browser.iphone.ios12. Distinct from Boat Browser, CM Browser, Atomic Web Browser, Opera Mini, Google Chrome, and Firefox.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "mobi.mgeek.TunnyBrowser",
+                "com.dolphin.browser",
+                "com.dolphin.browser.express.web",
+                "com.dolphin.browser.iphone",
+                "RAPS.appstore.com.dolphin.browser.iphone",
+                "RAPS.appstore.com.dolphin.browser.iphone.ios12",
+                "Dolphin Mobile Browser"
+            ]
+        },
+        {
+            "appName": "DoorDash",
+            "icon": "doordash.webp",
+            "websiteUrl": "https://www.doordash.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/doordash-food-grocery-more/id719972451",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dd.doordash",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "DoorDash, Inc. consumer food/grocery delivery (Android com.dd.doordash, iOS doordash.DoorDashConsumer). Store title DoorDash: Food, Grocery, More. Apple genre Food & Drink. No tool catalogs currently list it. Distinct from DoorDash - Dasher (com.doordash.dasher / com.doordash.driverapp), Uber, and Uber Eats.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dd.doordash",
+                "doordash.DoorDashConsumer",
+                "DoorDash: Food, Grocery, More"
+            ]
         },
         {
             "appName": "Dropbox",
@@ -3192,13 +3244,19 @@
         {
             "appName": "Foursquare Swarm",
             "icon": "foursquare-swarm.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/foursquare-swarm-check-in-app/id870161082",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.foursquare.robin&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.swarmapp.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/swarm-check-in-explore-map/id870161082",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.foursquare.robin",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Foursquare Labs check-in app (Android and iOS com.foursquare.robin). Store title Swarm: Check In, Explore, Map. Apple genre Travel. Split from Foursquare City Guide in 2014. Distinct from Foursquare, Untappd, and Yelp: Food, Delivery & Reviews.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.foursquare.robin",
+                "Swarm: Check In, Explore, Map"
+            ]
         },
         {
             "appName": "FreeTone",
@@ -3260,6 +3318,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Gaia GPS",
+            "icon": "gaia-gps.webp",
+            "websiteUrl": "https://www.gaiagps.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/gaia-gps-mobile-trail-maps/id1201979492",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.trailbehind.android.gaiagps.pro",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Trailbehind / Outside Inc. backcountry trail maps (Android com.trailbehind.android.gaiagps.pro, iOS com.trailbehind.GaiaGPS.ng). Play title Gaia GPS: Offline Trail Maps; Apple title Gaia GPS: Mobile Trail Maps. Apple genre Navigation. No tool catalogs currently list it. Distinct from AllTrails, AlpineQuest, Avenza Maps, Google Maps, Apple Maps, and Strava.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.trailbehind.android.gaiagps.pro",
+                "com.trailbehind.GaiaGPS.ng",
+                "Gaia GPS: Offline Trail Maps",
+                "Gaia GPS: Mobile Trail Maps"
+            ]
         },
         {
             "appName": "GalleryVault",
@@ -4079,6 +4156,26 @@
             ]
         },
         {
+            "appName": "Hilton Honors",
+            "icon": "hilton-honors.webp",
+            "websiteUrl": "https://www.hilton.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/hilton-honors-book-hotels/id635150066",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.hilton.android.hhonors",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hilton Worldwide hotels and loyalty (Android com.hilton.android.hhonors, iOS com.hilton.hhonors). Store title Hilton Honors: Book Hotels. Former program spelling HHonors. Apple genre Travel. No tool catalogs currently list it. Distinct from Marriott Bonvoy, Airbnb, Booking.com, and Hotels.com.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.hilton.android.hhonors",
+                "com.hilton.hhonors",
+                "Hilton",
+                "HHonors",
+                "Hilton Honors: Book Hotels"
+            ]
+        },
+        {
             "appName": "HipChat",
             "icon": "hipchat.png",
             "websiteUrl": "",
@@ -4090,6 +4187,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Home Assistant",
+            "icon": "home-assistant.webp",
+            "websiteUrl": "https://www.home-assistant.io/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/home-assistant/id1099568401",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.homeassistant.companion.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Nabu Casa companion for the Home Assistant server (Android io.homeassistant.companion.android, iOS io.robbie.HomeAssistant). Store title Home Assistant. Apple genre Lifestyle. No tool catalogs currently list it. Distinct from Google Home, Amazon Alexa, SmartThings, and Apple Home.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "io.homeassistant.companion.android",
+                "io.robbie.HomeAssistant"
+            ]
+        },
+        {
             "appName": "Home Depot",
             "icon": "home-depot.webp",
             "websiteUrl": "https://www.homedepot.com/",
@@ -4098,10 +4212,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.thehomedepot",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Store title: The Home Depot (com.thehomedepot / com.thehomedepot.homedepot).",
+            "notes": "The Home Depot, Inc. consumer shopping app (Android com.thehomedepot, iOS com.thehomedepot.homedepot). Store title The Home Depot. Apple genre Shopping. LEAPP parses iOS account, store, search, and shopping-list artifacts. Distinct from Home Assistant, Lowe's, Ace Hardware, IKEA, and The Home Depot Driver Handheld.",
             "dateAdded": "2026-07-12",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.thehomedepot",
+                "com.thehomedepot.homedepot",
+                "The Home Depot"
+            ]
         },
         {
             "appName": "HONOR Gallery",
@@ -4754,13 +4872,20 @@
         {
             "appName": "Life360",
             "icon": "life360.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/life360-find-friends-family/id384830320",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.life360.android.safetymapd&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.life360.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/life360-family-safety-gps/id384830320",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.life360.android.safetymapd",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Life360 family location and safety (Android com.life360.android.safetymapd, iOS com.life360.safetymap). Store title Life360: Family Safety & GPS. Apple genre Social Networking. Distinct from Tile, Zenly, Tracker Detect, and Apple Find My.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.life360.android.safetymapd",
+                "com.life360.safetymap",
+                "Life360: Family Safety & GPS"
+            ]
         },
         {
             "appName": "Likee",
@@ -4798,14 +4923,20 @@
         {
             "appName": "LinkedIn",
             "icon": "linkedin.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "https://apps.apple.com/us/app/linkedin-network-job-finder/id288429040",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.linkedin.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/linkedin-community-network/id288429040",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.linkedin.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "LinkedIn Corporation / Microsoft professional network (Android com.linkedin.android, iOS com.linkedin.LinkedIn). Store title LinkedIn: Community & Network. Apple genre Business. Distinct from Facebook and X / Twitter.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-08-28",
             "alternateNames": [
-                "Linkedin"
+                "com.linkedin.android",
+                "com.linkedin.LinkedIn",
+                "Linkedin",
+                "LinkedIn: Community & Network"
             ]
         },
         {
@@ -5084,6 +5215,47 @@
             "alternateNames": []
         },
         {
+            "appName": "Marriott Bonvoy",
+            "icon": "marriott-bonvoy.webp",
+            "websiteUrl": "https://www.marriott.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/marriott-bonvoy-book-hotels/id455004730",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.marriott.mrt",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Marriott International hotels and loyalty (Android com.marriott.mrt, iOS com.marriott.iphoneprod). Store title Marriott Bonvoy: Book Hotels. Former programs Marriott Rewards and SPG/Starwood. Apple genre Travel. No tool catalogs currently list it. Distinct from Marriott Vacation Club, Airbnb, Booking.com, Hotels.com, and Expedia.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.marriott.mrt",
+                "com.marriott.iphoneprod",
+                "Marriott",
+                "Marriott Rewards",
+                "SPG",
+                "Starwood Preferred Guest",
+                "Marriott Bonvoy: Book Hotels"
+            ]
+        },
+        {
+            "appName": "MathWallet",
+            "icon": "mathwallet.webp",
+            "websiteUrl": "https://www.mathwallet.org",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mathwallet-web3-wallet/id1582612388",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mathwallet.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MATH GLOBAL FOUNDATION multi-chain Web3 wallet (Android com.mathwallet.android, iOS com.mathglobal.mathwallet5). Play title MathWallet; Apple title MathWallet - Web3 Wallet. Apple genre Utilities. No tool catalogs currently list it. Distinct from Trust Wallet, Coinbase, Base (formerly Coinbase Wallet), and BRD - bitcoin wallet.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mathwallet.android",
+                "com.mathglobal.mathwallet5",
+                "Math Wallet",
+                "MathWallet - Web3 Wallet"
+            ]
+        },
+        {
             "appName": "Mastodon",
             "icon": "mastodon.webp",
             "websiteUrl": "https://joinmastodon.org",
@@ -5317,16 +5489,20 @@
         },
         {
             "appName": "Microsoft Excel",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "icon": "ms-excel.webp",
+            "websiteUrl": "https://www.microsoft.com/microsoft-365/excel",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-excel/id586683407",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.excel",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft spreadsheet app (Android com.microsoft.office.excel, iOS com.microsoft.Office.Excel). Play title Microsoft Excel: Spreadsheets. Apple genre Productivity. Distinct from Microsoft Word, Microsoft PowerPoint, Microsoft OneNote, and Google Sheets.",
             "dateAdded": "2023-11-01",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.microsoft.office.excel",
+                "com.microsoft.Office.Excel"
+            ]
         },
         {
             "appName": "Microsoft Internet Explorer",
@@ -5448,16 +5624,20 @@
         },
         {
             "appName": "Microsoft Word",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "icon": "ms-word.webp",
+            "websiteUrl": "https://www.microsoft.com/microsoft-365/word",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/microsoft-word/id586447913",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.word",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft word processor (Android com.microsoft.office.word, iOS com.microsoft.Office.Word). Play title Microsoft Word: Edit Documents. Apple genre Productivity. Distinct from Microsoft Excel, Microsoft PowerPoint, Microsoft OneNote, and Google Docs.",
             "dateAdded": "2023-11-01",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.microsoft.office.word",
+                "com.microsoft.Office.Word"
+            ]
         },
         {
             "appName": "Mint Browser",
@@ -5597,6 +5777,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "MyFitnessPal",
+            "icon": "myfitnesspal.webp",
+            "websiteUrl": "https://www.myfitnesspal.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/myfitnesspal-calorie-counter/id341232718",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.myfitnesspal.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MyFitnessPal, Inc. calorie counter (Android com.myfitnesspal.android, iOS com.myfitnesspal.mfp). Store title MyFitnessPal: Calorie Counter. Apple genre Health & Fitness. No tool catalogs currently list it. Distinct from Fitbit, Samsung Health, Apple Health, Strava, Map My Run, Lose It!, and Cronometer.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.myfitnesspal.android",
+                "com.myfitnesspal.mfp",
+                "MyFitnessPal: Calorie Counter"
+            ]
         },
         {
             "appName": "MySpace",
@@ -5808,6 +6006,24 @@
                 "Odnoklassniki",
                 "OK.ru",
                 "одноклассники"
+            ]
+        },
+        {
+            "appName": "OfferUp",
+            "icon": "offerup.webp",
+            "websiteUrl": "https://offerup.com",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/offerup-buy-sell-marketplace/id468996152",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.offerup",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "OfferUp Inc. local buy/sell marketplace (Android com.offerup, iOS com.offerup.iphone.consumer). Store title OfferUp Buy & Sell Marketplace. Apple genre Shopping. No tool catalogs currently list it. Distinct from letgo, Ebay, Craigslist, and Bazoš.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.offerup",
+                "com.offerup.iphone.consumer",
+                "OfferUp Buy & Sell Marketplace"
             ]
         },
         {
@@ -6027,6 +6243,43 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "ParkMobile",
+            "icon": "parkmobile.webp",
+            "websiteUrl": "https://parkmobile.io",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/parkmobile-park-pay-go/id365399299",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.sharewire.parkmobilev2",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Parkmobile USA / Parkmobile, LLC parking payment (Android net.sharewire.parkmobilev2, iOS us.parkmobile.ParkMobile). Store title ParkMobile: Park. Pay. Go. Apple genre Navigation. Play com.parkmobile is EasyPark (Europe), not this app. Distinct from PayByPhone, SpotHero, ParkHouston, meterUP, and ParkNYC.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "net.sharewire.parkmobilev2",
+                "us.parkmobile.ParkMobile",
+                "ParkMobile: Park. Pay. Go."
+            ]
+        },
+        {
+            "appName": "ParkWhiz",
+            "icon": "parkwhiz.webp",
+            "websiteUrl": "https://www.parkwhiz.com",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/parkwhiz-1-parking-app/id595743376",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.parkwhiz.driverApp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "ParkWhiz, Inc. / FlashParking parking reservations (Android com.parkwhiz.driverApp, iOS com.parkwhiz.ParkWhiz). Apple title ParkWhiz - #1 Parking App. Play title ParkWhiz -- Parking App. Apple genre Navigation. ParkWhiz Mobile Attendant is a separate operator app. Distinct from ParkMobile, PayByPhone, SpotHero, and BestParking.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.parkwhiz.driverApp",
+                "com.parkwhiz.ParkWhiz",
+                "ParkWhiz - #1 Parking App",
+                "ParkWhiz -- Parking App"
+            ]
         },
         {
             "appName": "Parler",
@@ -6460,13 +6713,21 @@
         {
             "appName": "QQ",
             "icon": "qq.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mobileqq&hl=en",
-            "notes": "",
+            "websiteUrl": "https://im.qq.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/qq/id444934666",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mobileqq",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Tencent QQ messenger (Android com.tencent.mobileqq, iOS com.tencent.mqq). Store title QQ. Apple genre Social Networking. International SKUs com.tencent.mobileqqi / com.tencent.mQQi map here. Distinct from QQ Mail, WeChat, Weibo (微博), TIM, and QQ Browser (com.tencent.mttlite; Cellebrite QQ Browser currently still maps to this listing).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.tencent.mobileqq",
+                "com.tencent.mqq",
+                "com.tencent.mobileqqi",
+                "com.tencent.mQQi"
+            ]
         },
         {
             "appName": "QQ Mail",
@@ -6481,6 +6742,23 @@
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "QR Reader for iPhone",
+            "icon": "qr-reader-iphone.webp",
+            "websiteUrl": "https://www.tapmedia.co.uk",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/qr-reader-for-iphone/id368494609",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "TapMedia Ltd iOS QR/barcode scanner (com.TapMediaLtd.QRReader). Store title QR Reader for iPhone. Apple genre Utilities. iOS-only; no Play listing. Paid SKU QR Reader for iPhone (Premium) is com.TapMediaLtd.QRReaderPremium. Distinct from QR Code Reader by Scan, QR Droid, and generic MOBILEdit QR Code Reader.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.TapMediaLtd.QRReaderPremium",
+                "QR Reader for iPhone (Premium)"
+            ]
         },
         {
             "appName": "Quick office",
@@ -7425,13 +7703,19 @@
         {
             "appName": "Steam",
             "icon": "steam.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community&hl=en",
-            "notes": "",
+            "websiteUrl": "https://store.steampowered.com/mobile",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/steam-mobile/id495369748",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Valve mobile Steam client (Android com.valvesoftware.android.steam.community, iOS com.valvesoftware.Steam). Play title Steam. Apple title Steam Mobile. Apple genre Entertainment. Companion/store/Steam Guard app, not a game. Distinct from Steam Link, Steam Chat, Discord, Twitch, and Roblox.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.valvesoftware.android.steam.community",
+                "com.valvesoftware.Steam"
+            ]
         },
         {
             "appName": "Strava",
@@ -7517,6 +7801,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Tailscale",
+            "icon": "tailscale.webp",
+            "websiteUrl": "https://tailscale.com",
+            "category": "VPN",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tailscale/id1470499037",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tailscale.ipn",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Tailscale Inc. mesh VPN (Android com.tailscale.ipn, iOS io.tailscale.ipn.ios). Store title Tailscale. Apple genre Utilities. Uses WireGuard under the hood but is not the WireGuard app. No tool catalogs currently list it. Distinct from Nord VPN, Proton VPN, TunnelBear VPN, CyberGhost VPN, and WireGuard.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.tailscale.ipn",
+                "io.tailscale.ipn.ios"
+            ]
+        },
+        {
             "appName": "Talkatone",
             "icon": "",
             "websiteUrl": "",
@@ -7546,13 +7847,20 @@
         {
             "appName": "TamTam Messenger",
             "icon": "tamtam.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://tamtam.chat",
+            "category": "Communication",
             "appleStoreUrl": "",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.ok.messages",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "VK / Mail.ru Group messenger (Android ru.ok.messages, iOS ru.odnoklassniki.messenger). Formerly OK Messages. Play title TamTam: Messenger, chat, calls. VK shut the service down 2026-02-27; Apple and Play listings are gone. Distinct from OK: Social Network, VK, Telegram, ICQ, and TanTan.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "ru.ok.messages",
+                "ru.odnoklassniki.messenger",
+                "OK Messages"
+            ]
         },
         {
             "appName": "TanTan",
@@ -8124,6 +8432,25 @@
             ]
         },
         {
+            "appName": "Turo",
+            "icon": "turo.webp",
+            "websiteUrl": "https://turo.com/",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/turo-better-car-rental/id555063314",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.relayrides.android.relayrides",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Turo Inc. peer-to-peer car rental (Android com.relayrides.android.relayrides, iOS com.relayrides.ios.RelayRides). Formerly RelayRides. Store title Turo — Better car rental. Apple genre Travel. No tool catalogs currently list it. Distinct from Uber, Lyft, BlaBlaCar, Zipcar, Getaround, Hertz, and Enterprise.",
+            "dateAdded": "2026-08-28",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.relayrides.android.relayrides",
+                "com.relayrides.ios.RelayRides",
+                "RelayRides",
+                "Turo — Better car rental"
+            ]
+        },
+        {
             "appName": "Tusky",
             "icon": "tusky.webp",
             "websiteUrl": "https://tusky.app/",
@@ -8561,13 +8888,19 @@
         {
             "appName": "Waze",
             "icon": "waze.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.waze.com",
+            "category": "Maps & Navigation",
             "appleStoreUrl": "https://apps.apple.com/us/app/waze-navigation-live-traffic/id323229106",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.waze&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.waze",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google-owned crowdsourced navigation (Android com.waze, iOS com.waze.iphone). Store title Waze Navigation & Live Traffic. Apple genre Navigation. Distinct from Google Maps, Apple Maps, HERE WeGo, Yandex Maps, Yandex Navigator, and Wyze.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.waze",
+                "com.waze.iphone"
+            ]
         },
         {
             "appName": "Weather Underground",
@@ -8983,14 +9316,25 @@
         },
         {
             "appName": "Yandex Browser",
-            "icon": "yandex-browser.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "yandex-browser.webp",
+            "websiteUrl": "https://yandex.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yandex-browser-with-alice-ai/id483693909",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yandex.browser",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Yandex / Direct Cursus Chromium browser (Android com.yandex.browser, iOS ru.yandex.mobile.search, iPad ru.yandex.mobile.search.ipad). Store title Yandex Browser with Alice AI. Apple genre Utilities. Alpha/beta/Lite SKUs (com.yandex.browser.alpha / .beta / .lite) map here. Distinct from Yandex (ru.yandex.mobile search app), Yandex Maps, Yandex Navigator, Yandex Go, Google Chrome, Whale, and Samsung Internet Browser.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.yandex.browser",
+                "ru.yandex.mobile.search",
+                "ru.yandex.mobile.search.ipad",
+                "com.yandex.browser.alpha",
+                "com.yandex.browser.beta",
+                "com.yandex.browser.lite",
+                "Yandex Browser with Alice AI"
+            ]
         },
         {
             "appName": "Yandex Go",
@@ -9429,13 +9773,20 @@
         {
             "appName": "letgo",
             "icon": "letgo.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "websiteUrl": "https://www.letgo.com",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/tr/app/letgo-buy-sell-used-stuff/id986339882",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.abtnprojects.ambatana",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "letgo classifieds (Android com.abtnprojects.ambatana, iOS com.letgo.ios). Store title letgo: Buy & Sell Used Stuff. Apple genre Shopping. Apple US listing gone; Turkey listing still live. Play package is the historic Ambatana ID, not com.letgo.android. OfferUp acquired North American letgo in 2020 and merged that marketplace; this listing stays separate because Oxygen/MOBILEdit still treat letgo as its own app. Distinct from OfferUp, Ebay, Craigslist, and Wallapop.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-28",
-            "alternateNames": []
+            "dateUpdated": "2026-08-28",
+            "alternateNames": [
+                "com.abtnprojects.ambatana",
+                "com.letgo.ios",
+                "letgo: Buy & Sell Used Stuff"
+            ]
         },
         {
             "appName": "myAudi",
