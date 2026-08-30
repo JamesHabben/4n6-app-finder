@@ -3233,13 +3233,19 @@
         {
             "appName": "Foursquare",
             "icon": "foursquare.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "websiteUrl": "https://foursquare.com",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/foursquare/id306934924",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.joelapenna.foursquared",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Foursquare Labs City Guide (Android com.joelapenna.foursquared, iOS com.naveenium.foursquare). Split from Swarm in 2014; City Guide app sunset 2024-12-15, web 2025-04-28. Historic Apple id 306934924. Distinct from Foursquare Swarm, Yelp, Untappd, and Google Maps.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "com.joelapenna.foursquared",
+                "com.naveenium.foursquare"
+            ]
         },
         {
             "appName": "Foursquare Swarm",
@@ -3711,13 +3717,19 @@
         {
             "appName": "Google Keep",
             "icon": "google-keep.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "websiteUrl": "https://www.google.com/keep/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-keep-notes-and-lists/id1029207872",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.keep",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC notes and lists (Android com.google.android.keep, iOS com.google.Keep). Store title Google Keep - Notes and lists. Apple genre Productivity. Distinct from Microsoft OneNote, Evernote, Samsung Notes, Xiaomi Notes, Google Docs, and Google Tasks.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "com.google.android.keep",
+                "com.google.Keep"
+            ]
         },
         {
             "appName": "Google Mail (Gmail)",
@@ -4496,14 +4508,21 @@
         },
         {
             "appName": "Iron Browser",
-            "icon": "",
-            "websiteUrl": "",
+            "icon": "iron-browser.webp",
+            "websiteUrl": "https://www.srware.net/iron/",
+            "category": "Browser",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.iron.srware",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "SRWare Iron Chromium-based privacy browser (Android org.iron.srware). Play title Iron Browser - by SRWare; Play listing gone. No iOS app. Magnet parses Android and Chromebook. Distinct from Google Chrome, Chromium, Brave Browser, Kiwi Browser, Microsoft Edge, Samsung Internet Browser, Opera, and Yandex Browser.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "org.iron.srware",
+                "SRWare Iron",
+                "Iron Browser - by SRWare"
+            ]
         },
         {
             "appName": "Jianying (\u526a\u6620)",
@@ -4912,13 +4931,19 @@
         {
             "appName": "Line",
             "icon": "line.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://line.me",
+            "category": "Communication",
             "appleStoreUrl": "https://apps.apple.com/us/app/line/id443904275",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=jp.naver.line.android&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=jp.naver.line.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "LY Corporation messenger (Android jp.naver.line.android, iOS jp.naver.line). Store title LINE / LINE: Calls & Messages. Apple genre Social Networking. Distinct from KakaoTalk, WeChat, WhatsApp Messenger, Whale, and LINE Official Account.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "jp.naver.line.android",
+                "jp.naver.line"
+            ]
         },
         {
             "appName": "LinkedIn",
@@ -5064,13 +5089,21 @@
         {
             "appName": "Mail.Ru",
             "icon": "mail-ru.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.mail.mailapp&hl=en",
-            "notes": "",
+            "websiteUrl": "https://e.mail.ru",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mail-email-cloud-calendar/id511310430",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.mail.mailapp",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "VK / Mail.Ru Group email client (Android ru.mail.mailapp, iOS ru.mail.mail). Play title Mail: Email, Cloud, Calendar. Apple genre Productivity; historic id 511310430, US listing gone. Distinct from VK Mail, Mail.ee, myMail, Gmail, Yahoo! Mail, Mail.Ru Agent (ru.mail.agent), and Cloud Mail.Ru (ru.mail.cloud).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "ru.mail.mailapp",
+                "ru.mail.mail",
+                "Почта Mail.ru",
+                "Mail: Email, Cloud, Calendar"
+            ]
         },
         {
             "appName": "Mail.ee",
@@ -8039,13 +8072,19 @@
         {
             "appName": "TextNow",
             "icon": "textnow.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.textnow.com",
+            "category": "Communication",
             "appleStoreUrl": "https://apps.apple.com/us/app/textnow-call-text-unlimited/id314716233",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enflick.android.TextNow&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enflick.android.TextNow",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "TextNow, Inc. second-number calling and texting (Android com.enflick.android.TextNow, iOS com.tinginteractive.usms). Store title TextNow: Call + Text Unlimited. Apple genre Social Networking. Distinct from TextPlus, Text Me: Second Number, Text Free - Free Text + Call, Nextplus: Phone # Text + Call, Talkatone, and Burner.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "com.enflick.android.TextNow",
+                "com.tinginteractive.usms"
+            ]
         },
         {
             "appName": "TextPlus",
@@ -8405,14 +8444,22 @@
         },
         {
             "appName": "Tumblr",
-            "icon": "tumblr.jpg",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tumblr&hl=en",
-            "notes": "",
+            "icon": "tumblr.webp",
+            "websiteUrl": "https://www.tumblr.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tumblr-social-media-art/id305343404",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tumblr",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Tumblr, Inc. / Automattic blogging app (Android com.tumblr, iOS com.tumblr.tumblr). Store title Tumblr: Social Media & Art. Apple genre Social Networking. Distinct from Reddit, X / Twitter, Pinterest, Imgur, Flickr, Mastodon, and Threads (Instagram).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "com.tumblr",
+                "com.tumblr.tumblr",
+                "com.tumblra",
+                "Tumblr: Social Media & Art"
+            ]
         },
         {
             "appName": "TunnelBear VPN",
@@ -9530,14 +9577,20 @@
         },
         {
             "appName": "Zalo",
-            "icon": "zalo.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "zalo.webp",
+            "websiteUrl": "https://zalo.me",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/zalo/id579523206",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zing.zalo",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "VNG Corporation Vietnamese messenger (Android com.zing.zalo, iOS vn.com.vng.zingalo). Store title Zalo. Apple genre Social Networking. Distinct from Zangi Messenger, Viber, Line, WeChat, and KakaoTalk.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-08-30",
+            "alternateNames": [
+                "com.zing.zalo",
+                "vn.com.vng.zingalo"
+            ]
         },
         {
             "appName": "Zangi Messenger",
