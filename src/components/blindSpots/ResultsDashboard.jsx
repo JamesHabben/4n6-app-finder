@@ -13,7 +13,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts';
-import TrackedAppName from 'components/blindSpots/TrackedAppName';
+import { AppNameCell } from 'components/blindSpots/TrackedAppName';
 
 const { Text } = Typography;
 
@@ -158,7 +158,7 @@ function OneHitList({ groups, onOpenApp }) {
           <ul className="blind-spots-one-hit-apps">
             {group.apps.map(app => (
               <li key={app.bundleId || app.name}>
-                <TrackedAppName row={app} onOpen={onOpenApp} />
+                <AppNameCell row={app} onOpen={onOpenApp} />
               </li>
             ))}
           </ul>
