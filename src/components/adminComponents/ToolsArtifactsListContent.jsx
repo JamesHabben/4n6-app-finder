@@ -1,9 +1,10 @@
-import { useState, useContext, useEffect, useRef, useMemo } from "react";
+import { useState, useContext, useEffect, useRef, useMemo, useCallback } from "react";
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Button, Typography } from 'antd';
 import { useVirtualizer } from '@tanstack/react-virtual';
 
 import { DataContext, isMappedValue, mappedAppsFor, useToolArtifacts } from 'services/DataContext';
+import AppDetailsModal from 'components/AppDetailsModal';
 
 const EMPTY_LIST = [];
 const COLLAPSED_ROW_HEIGHT = 52;
@@ -21,11 +22,63 @@ function isUnmapped(artifact, tool) {
     return !isMappedValue(tool?.artifactMap?.[appName]);
 }
 
+function artifactPlatform(artifact, tool) {
+    const key = tool?.platformKey || 'Platform';
+    const value = artifact?.[key];
+    if (value == null || value === '') {
+        return null;
+    }
+    if (Array.isArray(value)) {
+        const label = value.filter(Boolean).join(', ');
+        return label || null;
+    }
+    return String(value);
+}
+
+function MappedAppLabel({ mappedValue, appByName, onOpenApp }) {
+    if (mappedValue === false) {
+        return <span className="artifact-tile-badge">false</span>;
+    }
+
+    const names = mappedAppsFor(mappedValue);
+    if (names.length === 0) {
+        return <span className="artifact-tile-badge">unmapped</span>;
+    }
+
+    return (
+        <span className="artifact-tile-mapped">
+            {names.map((appName, index) => {
+                const app = appByName?.get(appName);
+                return (
+                    <span key={appName}>
+                        {index > 0 ? ', ' : null}
+                        {app ? (
+                            <Button
+                                type="link"
+                                className="artifact-tile-app-link"
+                                onClick={(event) => {
+                                    event.stopPropagation();
+                                    onOpenApp(app);
+                                }}
+                            >
+                                {appName}
+                            </Button>
+                        ) : (
+                            appName
+                        )}
+                    </span>
+                );
+            })}
+        </span>
+    );
+}
+
 function ToolsArtifactsListContent() {
-    const { tools } = useContext(DataContext);
+    const { tools, appByName } = useContext(DataContext);
     const [selectedTool, setSelectedTool] = useState(null);
     const [showOnlyHighlighted, setShowOnlyHighlighted] = useState(false);
     const [expandedArtifacts, setExpandedArtifacts] = useState(() => new Set());
+    const [selectedApp, setSelectedApp] = useState(null);
     const navigate = useNavigate();
     const location = useLocation();
     const listParentRef = useRef(null);
@@ -129,6 +182,14 @@ function ToolsArtifactsListContent() {
       setExpandedArtifacts(new Set());
     };
 
+    const openMappedApp = useCallback((app) => {
+      setSelectedApp(app);
+    }, []);
+
+    const closeAppModal = useCallback(() => {
+      setSelectedApp(null);
+    }, []);
+
     return (
       <div className="artifacts-page">
         <div className="tool-buttons">
@@ -177,7 +238,7 @@ function ToolsArtifactsListContent() {
                       const expanded = isExpanded(artifact);
                       const name = getAppByNameKey(artifact, selectedTool);
                       const mappedValue = selectedTool?.artifactMap?.[name];
-                      const mappedApp = mappedValue === false ? 'false' : mappedAppsFor(mappedValue).join(', ');
+                      const platform = artifactPlatform(artifact, selectedTool);
 
                       return (
                         <div
@@ -208,11 +269,20 @@ function ToolsArtifactsListContent() {
                               >
                                 {name}
                               </Typography.Title>
-                              {unmapped ? (
-                                <span className="artifact-tile-badge">unmapped</span>
-                              ) : (
-                                <span className="artifact-tile-badge">{mappedApp}</span>
-                              )}
+                              <span className="artifact-tile-meta">
+                                {unmapped ? (
+                                  <span className="artifact-tile-badge">unmapped</span>
+                                ) : (
+                                  <MappedAppLabel
+                                    mappedValue={mappedValue}
+                                    appByName={appByName}
+                                    onOpenApp={openMappedApp}
+                                  />
+                                )}
+                                {platform ? (
+                                  <span className="platform-badge">{platform}</span>
+                                ) : null}
+                              </span>
                             </div>
                             {expanded && (
                               <div
@@ -244,6 +314,11 @@ function ToolsArtifactsListContent() {
                 </div>
               </div>
               )}
+        <AppDetailsModal
+          app={selectedApp}
+          open={Boolean(selectedApp)}
+          onCancel={closeAppModal}
+        />
       </div>
     );
   }

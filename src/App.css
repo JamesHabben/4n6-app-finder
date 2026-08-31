@@ -272,6 +272,33 @@
   opacity: 0.85;
 }
 
+.artifact-tile-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.artifact-tile-mapped {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  max-width: 28rem;
+}
+
+.artifact-tile-app-link {
+  padding: 0;
+  height: auto;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.artifact-tile-header .platform-badge {
+  margin-left: 0;
+}
+
 .artifact-tile-body {
   padding: 0 14px 14px;
   cursor: default;
