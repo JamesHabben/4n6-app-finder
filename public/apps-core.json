@@ -23,15 +23,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.onepassword.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Password manager by AgileBits (Android com.onepassword.android, iOS com.1password.1password). Store title 1Password: Password Manager. Predecessor iOS app 1Password 7 is com.agilebits.onepassword-ios (id568903335).",
+            "notes": "AgileBits Inc. password manager (Android com.onepassword.android, iOS com.1password.1password). Store title 1Password: Password Manager. Apple genre Productivity. Predecessor iOS 1Password 7 (com.agilebits.onepassword-ios, id 568903335) is still listed. Distinct from LastPass and Apple Keychain (Passwords).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.onepassword.android",
                 "com.1password.1password",
                 "com.agilebits.onepassword-ios",
-                "1Password: Password Manager",
-                "1Password 7 \u2022 Password Manager"
+                "1Password 7 • Password Manager"
             ]
         },
         {
@@ -43,9 +42,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.handmark.expressweather",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "OneLouder Apps (formerly Handmark Express Weather). Android com.handmark.expressweather. Play title 1Weather Forecasts & Radar. No Apple App Store listing. Distinct from 3D Flip Clock & Weather, AccuWeather: Weather Radar, Apple Weather, Yahoo Weather, Weather Underground, and Weather #1 Interactive Widgets.",
+            "notes": "OneLouder Apps (formerly Handmark Express Weather). Android com.handmark.expressweather. Play title 1Weather Forecasts & Radar. No Apple App Store listing. Distinct from 3D Flip Clock & Weather, AccuWeather: Weather Radar, Apple Weather, Yahoo Weather, and Weather Underground.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2026-08-24",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.handmark.expressweather",
                 "1Weather",
@@ -73,6 +72,23 @@
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-02",
             "alternateNames": []
+        },
+        {
+            "appName": "99acres",
+            "icon": "99acres.webp",
+            "websiteUrl": "https://www.99acres.com",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/99acres-property-search/id781765588",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nnacres.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Info Edge (India) Ltd. real-estate classifieds (Android com.nnacres.app, iOS com.infoedge.99acres). Play title 99acres Buy/Rent/Sell Property; Apple title 99acres - Property Search. Apple genre Business. Distinct from Magicbricks, Craigslist, OfferUp, and letgo.",
+            "dateAdded": "2026-08-31",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.nnacres.app",
+                "com.infoedge.99acres"
+            ]
         },
         {
             "appName": "Aloha Browser",
@@ -272,13 +288,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.runtastic.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "adidas Runtastic run tracker (Android com.runtastic.android, iOS at.runtastic.gpssportapp). Store title adidas Running: Run tracker. Former product name Runtastic. Apple genre Health & Fitness. Cellebrite rows are legacy. MOBILEdit still maps discontinued Runtastic Mountain Bike / Road Bike SKUs here. Distinct from adidas Training, adidas shopping, Strava, Nike Run Club, Map My Run, and ASICS RunKeeper.",
+            "notes": "adidas Runtastic run tracker (Android com.runtastic.android, iOS at.runtastic.gpssportapp). Store title adidas Running: Run tracker. Former product name Runtastic. Apple genre Health & Fitness. Cellebrite rows are legacy. Distinct from adidas Training, adidas shopping, Strava, Nike Run Club, Map My Run, and ASICS RunKeeper.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-28",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.runtastic.android",
                 "at.runtastic.gpssportapp",
-                "adidas Running: Run tracker"
+                "at.runtastic.runtastic.pro"
             ]
         },
         {
@@ -313,13 +329,20 @@
         {
             "appName": "Aeroflot",
             "icon": "aeroflot.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.aeroflot.ru",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/id580243869",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.aeroflot",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "PJSC Aeroflot airline app (Android ru.aeroflot, iOS ru.aeroflot.afl). Historic Apple id 580243869. Apple listing removed 2022; Play listing gone. Android continues on RuStore. Distinct from United Airlines, American Airlines (AA), Ryanair, Fly Delta, and Utair.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-25",
-            "alternateNames": []
+            "dateUpdated": "2026-08-31",
+            "alternateNames": [
+                "ru.aeroflot",
+                "ru.aeroflot.afl",
+                "Аэрофлот"
+            ]
         },
         {
             "appName": "Afaria",
@@ -337,13 +360,35 @@
         {
             "appName": "Agoda Hotels & Flights",
             "icon": "agoda.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.agoda.mobile.consumer&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.agoda.com",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/agoda-cheap-flights-hotels/id440676901",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.agoda.mobile.consumer",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Agoda Company Pte. Ltd. / Booking Holdings hotel and flight booking (Android com.agoda.mobile.consumer, iOS com.agoda.consumer). Store title Agoda: Cheap Flights & Hotels. Apple genre Travel. Distinct from Booking.com, Priceline, Airbnb, Expedia, and Hotels.com.",
             "dateAdded": "2023-10-31",
+            "dateUpdated": "2026-08-31",
+            "alternateNames": [
+                "com.agoda.mobile.consumer",
+                "com.agoda.consumer"
+            ]
+        },
+        {
+            "appName": "Air Serbia",
+            "icon": "air-serbia.webp",
+            "websiteUrl": "https://www.airserbia.com",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/air-serbia/id1527980517",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.airserbia.mobileapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Air SERBIA a.d. Beograd airline app (Android and iOS com.airserbia.mobileapp). Store title Air Serbia. Apple genre Travel. Distinct from Aeroflot, Ryanair, United Airlines, American Airlines (AA), and Fly Delta.",
+            "dateAdded": "2026-08-31",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [
+                "com.airserbia.mobileapp"
+            ]
         },
         {
             "appName": "AirGuard",
@@ -385,13 +430,12 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alibaba.aliexpresshd",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Alibaba consumer marketplace (Android com.alibaba.aliexpresshd, iOS com.alibaba.iAliexpress). Store title AliExpress - Shopping App. Apple genre Shopping. Distinct from Alipay, Alibaba.com B2B Trade App, Ebay, Wish, Amazon Shopping, Temu, and SHEIN.",
+            "notes": "Alibaba.com Singapore E-Commerce consumer marketplace (Android com.alibaba.aliexpresshd, iOS com.alibaba.iAliexpress). Store title AliExpress - Shopping App. Apple genre Shopping. Distinct from Alipay, Alibaba.com B2B Trade App, Ebay, Wish, Amazon Shopping, Temu, and SHEIN.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-27",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.alibaba.aliexpresshd",
-                "com.alibaba.iAliexpress",
-                "AliExpress - Shopping App"
+                "com.alibaba.iAliexpress"
             ]
         },
         {
@@ -431,13 +475,12 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.alltrails.alltrails",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Trail maps and recorded hikes/runs by AllTrails, Inc. Android com.alltrails.alltrails; iOS com.alltrails.AllTrails. Store title AllTrails: Hike, Bike & Run.",
+            "notes": "AllTrails, Inc. trail maps and recorded hikes/runs (Android com.alltrails.alltrails, iOS com.alltrails.AllTrails). Store title AllTrails: Hike, Bike & Run. Apple genre Health & Fitness. Distinct from AlpineQuest, Gaia GPS, Avenza Maps, Strava, Map My Run, and Adidas Running / Runtastic.",
             "dateAdded": "2023-10-22",
-            "dateUpdated": "2026-08-19",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.alltrails.alltrails",
-                "com.alltrails.AllTrails",
-                "AllTrails: Hike, Bike & Run"
+                "com.alltrails.AllTrails"
             ]
         },
         {
@@ -449,9 +492,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=psyberia.alpinequest.full",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Psyberia Android offline topo GPS (paid psyberia.alpinequest.full, free Lite psyberia.alpinequest.free). Play titles AlpineQuest Off-Road Explorer and AlpineQuest Explorer Lite. No official iOS app; Apple Alpin Quest PRO (com.alpinquest.app) is a different developer. Distinct from AllTrails, OruxMaps, Google Maps, and HERE WeGo.",
+            "notes": "Psyberia Android offline topo GPS (paid psyberia.alpinequest.full, free Lite psyberia.alpinequest.free). Play titles AlpineQuest Off-Road Explorer and AlpineQuest Explorer Lite. No official iOS app; Apple Alpin Quest PRO (com.alpinquest.app) is a different developer. Distinct from AllTrails, Gaia GPS, Avenza Maps, OruxMaps, Google Maps, and HERE WeGo.",
             "dateAdded": "2026-08-20",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "psyberia.alpinequest.full",
                 "psyberia.alpinequest.free",
@@ -464,13 +507,16 @@
             "websiteUrl": "https://www.amazon.com/alexa",
             "category": "AI & Assistants",
             "appleStoreUrl": "https://apps.apple.com/us/app/amazon-alexa/id944011620",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.dee.app&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.dee.app",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "AMZN Mobile LLC Alexa companion (Android com.amazon.dee.app, iOS com.amazon.echo). Store title Amazon Alexa. Apple genre Lifestyle. Distinct from Amazon Shopping, Amazon Kindle, Amazon Photos, Amazon Prime Video, Amazon Silk, and Google Home.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2026-07-13",
-            "alternateNames": []
+            "dateUpdated": "2026-08-31",
+            "alternateNames": [
+                "com.amazon.dee.app",
+                "com.amazon.echo"
+            ]
         },
         {
             "appName": "Amazon Kindle",
@@ -478,13 +524,16 @@
             "websiteUrl": "https://www.amazon.com/kindle-apps",
             "category": "Books",
             "appleStoreUrl": "https://apps.apple.com/us/app/amazon-kindle-reading-app/id302584613",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.kindle&hl=en",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amazon.kindle",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "AMZN Mobile LLC e-book reader (Android com.amazon.kindle, iOS com.amazon.Lassen). Store title Amazon Kindle: Reading App. Apple genre Book. Distinct from Apple Books, Amazon Shopping, Amazon Silk, and Amazon Photos.",
             "dateAdded": "2023-10-31",
-            "dateUpdated": "2026-07-12",
-            "alternateNames": []
+            "dateUpdated": "2026-08-31",
+            "alternateNames": [
+                "com.amazon.kindle",
+                "com.amazon.Lassen"
+            ]
         },
         {
             "appName": "Amazon Photos",
@@ -551,9 +600,9 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Chromium-based browser for Fire tablets, Fire TV, and Echo Show (com.amazon.cloud9). Not listed on Apple or Google Play; preinstalled on Fire OS. Oxygen title Amazon browser. Distinct from Amazon Shopping and Amazon Kindle.",
+            "notes": "Chromium-based browser for Fire tablets, Fire TV, and Echo Show (com.amazon.cloud9). Not listed on Apple or Google Play; preinstalled on Fire OS. Distinct from Amazon Shopping, Amazon Kindle, and Google Chrome.",
             "dateAdded": "2026-08-19",
-            "dateUpdated": "",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.amazon.cloud9"
             ]
@@ -880,6 +929,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Apple Music",
+            "icon": "apple-music.webp",
+            "websiteUrl": "https://www.apple.com/apple-music/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apple-music/id1108187390",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.apple.android.music",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Apple Inc. music streaming (Android com.apple.android.music, iOS com.apple.Music). Store title Apple Music. Apple genre Music. Distinct from Spotify, YouTube Music, SoundCloud, Shazam, Apple Podcasts, and Apple Music Classical.",
+            "dateAdded": "2026-08-31",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.apple.Music",
+                "com.apple.android.music"
+            ]
+        },
+        {
             "appName": "Apple Notes",
             "icon": "apple-notes.png",
             "websiteUrl": "",
@@ -977,17 +1043,20 @@
         },
         {
             "appName": "Apple Wallet",
-            "icon": "apple-wallet.png",
-            "websiteUrl": "",
+            "icon": "apple-wallet.webp",
+            "websiteUrl": "https://www.apple.com/wallet/",
             "category": "Finance",
             "appleStoreUrl": "https://apps.apple.com/us/app/apple-wallet/id1160481993",
             "googlePlayUrl": "",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "false",
-            "notes": "",
+            "notes": "Apple Inc. built-in passes and payments app (iOS com.apple.Passbook). Formerly Passbook. Apple Pay is the contactless payment feature of this app, not a separate store listing. Store title Apple Wallet. Distinct from Google Pay, Google Wallet, Samsung Wallet, Trust Wallet, and WalletPasses | Passbook Wallet.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-12",
-            "alternateNames": []
+            "dateUpdated": "2026-08-31",
+            "alternateNames": [
+                "com.apple.Passbook",
+                "Passbook"
+            ]
         },
         {
             "appName": "Apple Weather",
@@ -1089,12 +1158,10 @@
             "activeOnPlayStore": "true",
             "notes": "Hyperconnect LLC random video chat (Android com.azarlive.android, iOS com.hpcnt.azar). Play title Azar: Video Chat, Meet Friends; Apple title Azar: Chat, Meet Friends. Apple genre Social Networking. Distinct from Tango, Tinder, and BOTIM.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-27",
+            "dateUpdated": "2026-08-31",
             "alternateNames": [
                 "com.azarlive.android",
-                "com.hpcnt.azar",
-                "Azar: Chat, Meet Friends",
-                "Azar: Video Chat, Meet Friends"
+                "com.hpcnt.azar"
             ]
         },
         {
@@ -2604,7 +2671,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.duckduckgo.mobile.android",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "DuckDuckGo, Inc. Android com.duckduckgo.mobile.android; iOS com.duckduckgo.mobile.ios. Store title DuckDuckGo, optional Duck.ai. Apple genre Utilities. MOBILEdit DuckDuckGo Private Browser maps here. Distinct from Chrome, Firefox, Brave, Safari, and Firefox Focus.",
+            "notes": "DuckDuckGo, Inc. Android com.duckduckgo.mobile.android; iOS com.duckduckgo.mobile.ios. Store title DuckDuckGo, optional Duck.ai. Apple genre Utilities. Distinct from Chrome, Firefox, Brave, Safari, and Firefox Focus.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-08-19",
             "alternateNames": [
@@ -5375,7 +5442,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mts.meowchat",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Live video chat (com.mts.meowchat). Distinct from pet-translator apps also named MeowChat. MOBILEdit title appears truncated (\u201c\u2026 & M\u201d).",
+            "notes": "Live video chat (com.mts.meowchat). Distinct from pet-translator apps also named MeowChat. ",
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
@@ -6700,7 +6767,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cloudmosa.puffinFree",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "CloudMosa cloud browser (Android com.cloudmosa.puffinFree, iOS com.cloudmosa.PuffinFree). Play title Puffin Web Browser; Apple title Puffin Cloud Browser. ArtiFast application key Puffin Browser (Android-only). Distinct from Puffin Browser Pro (iOS com.cloudmosa.puffin) and Puffin Incognito Browser (com.cloudmosa.puffinIncognito). MOBILEdit also maps Puffin Academy, Pro, Cloud Browser, for Facebook, and TV Browser here.",
+            "notes": "CloudMosa cloud browser (Android com.cloudmosa.puffinFree, iOS com.cloudmosa.PuffinFree). Play title Puffin Web Browser; Apple title Puffin Cloud Browser. ArtiFast application key Puffin Browser (Android-only). Distinct from Puffin Browser Pro (iOS com.cloudmosa.puffin) and Puffin Incognito Browser (com.cloudmosa.puffinIncognito). ",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-08-18",
             "alternateNames": [
@@ -6785,7 +6852,7 @@
             "googlePlayUrl": "",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "false",
-            "notes": "TapMedia Ltd iOS QR/barcode scanner (com.TapMediaLtd.QRReader). Store title QR Reader for iPhone. Apple genre Utilities. iOS-only; no Play listing. Paid SKU QR Reader for iPhone (Premium) is com.TapMediaLtd.QRReaderPremium. Distinct from QR Code Reader by Scan, QR Droid, and generic MOBILEdit QR Code Reader.",
+            "notes": "TapMedia Ltd iOS QR/barcode scanner (com.TapMediaLtd.QRReader). Store title QR Reader for iPhone. Apple genre Utilities. iOS-only; no Play listing. Paid SKU QR Reader for iPhone (Premium) is com.TapMediaLtd.QRReaderPremium. Distinct from QR Code Reader by Scan, QR Droid.",
             "dateAdded": "2026-08-28",
             "dateUpdated": "",
             "alternateNames": [
@@ -7179,7 +7246,7 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Samsung Electronics Chromium browser (Android com.sec.android.app.sbrowser). Play title Samsung Browser; formerly Samsung Internet. No iOS app. ArtiFast application key Samsung Browser. MOBILEdit Samsung Internet Browser Beta maps here. Distinct from Google Chrome, Microsoft Edge, Kiwi Browser, Whale, Firefox, and Android Browser.",
+            "notes": "Samsung Electronics Chromium browser (Android com.sec.android.app.sbrowser). Play title Samsung Browser; formerly Samsung Internet. No iOS app. ArtiFast application key Samsung Browser. Distinct from Google Chrome, Microsoft Edge, Kiwi Browser, Whale, Firefox, and Android Browser.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-08-20",
             "alternateNames": [

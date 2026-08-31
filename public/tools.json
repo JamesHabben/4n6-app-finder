@@ -60,14 +60,14 @@
         "toolLongName": "MOBILedit Forensic",
         "website": "https://www.mobiledit.com/mobiledit-forensic",
         "toolVersion": "",
-        "toolReleaseDate": "2023-10-24",
+        "toolReleaseDate": "2026-08-31",
         "icon": "tool-logo-mobiledit.jpg",
-        "artifactListFile": "artifacts-mobiledit-20231025.json",
+        "artifactListFile": "artifacts-mobiledit.json",
         "mapFile": "maps/mobiledit.json",
         "appNameKey": "Application",
         "platformKey": "Platform",
         "documentationLocation": "website at https://apps.mobiledit.com/",
-        "extractionNotes": ""
+        "extractionNotes": "Live GET https://apps.mobiledit.com/api/applications plus per-id detail. One row per vendor application id. Keeps package, dataKinds, extractionTypes, store/website URLs, and iconUrl (URL only)."
     },
     {
         "toolShortName": "Hindsight",
