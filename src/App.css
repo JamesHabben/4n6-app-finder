@@ -541,7 +541,7 @@
   height: auto;
 }
 
-.blind-spots-app-cell {
+.app-name-with-icon {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -549,15 +549,15 @@
   max-width: 100%;
 }
 
-.blind-spots-app-icon,
-.blind-spots-app-icon-slot {
+.catalog-app-icon,
+.catalog-app-icon-slot {
   width: 20px;
   height: 20px;
   flex-shrink: 0;
   border-radius: 4px;
 }
 
-.blind-spots-app-icon {
+.catalog-app-icon {
   display: block;
   object-fit: cover;
 }

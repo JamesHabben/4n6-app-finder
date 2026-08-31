@@ -4,6 +4,7 @@ import { ArrowLeftOutlined } from '@ant-design/icons';
 import { Link, useNavigate, useSearchParams } from 'react-router-dom';
 import { DataContext } from 'services/DataContext';
 import AppDetailsModal from 'components/AppDetailsModal';
+import AppNameWithIcon from 'components/AppNameWithIcon';
 
 const { Paragraph, Title } = Typography;
 
@@ -89,7 +90,11 @@ function PageOneHitWonders() {
       dataIndex: 'appName',
       key: 'appName',
       sorter: (a, b) => a.appName.localeCompare(b.appName),
-      render: appName => <Link to={getAppHref(appName)}>{appName}</Link>,
+      render: (appName, record) => (
+        <AppNameWithIcon icon={record.icon}>
+          <Link to={getAppHref(appName)}>{appName}</Link>
+        </AppNameWithIcon>
+      ),
     },
     {
       title: 'Category',
