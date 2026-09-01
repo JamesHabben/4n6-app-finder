@@ -327,6 +327,24 @@
             ]
         },
         {
+            "appName": "Aegis Authenticator",
+            "icon": "aegis-authenticator.webp",
+            "websiteUrl": "https://getaegis.app/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.beemdevelopment.aegis",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Beem Development open-source 2FA client (Android com.beemdevelopment.aegis). Play title Aegis Authenticator - 2FA App; Play category Tools. No iOS app. Distinct from Google Authenticator, Microsoft Authenticator, Twilio Authy, 2FAS, and the unrelated Apple listing Aegis Authenticator (All About Radon).",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.beemdevelopment.aegis",
+                "Aegis",
+                "Aegis Authenticator - 2FA App"
+            ]
+        },
+        {
             "appName": "Aeroflot",
             "icon": "aeroflot.webp",
             "websiteUrl": "https://www.aeroflot.ru",
@@ -653,16 +671,19 @@
         },
         {
             "appName": "Android Calendar",
-            "icon": "android-calendar.png",
+            "icon": "android-calendar.webp",
             "websiteUrl": "",
+            "category": "Productivity",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "AOSP Calendar Provider and stock Calendar (com.android.providers.calendar; UI historically com.android.calendar). Preinstalled system component; not a Play/App Store listing. Distinct from Google Calendar, Apple Calendar, and Samsung Calendar.",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.android.calendar"
+            ]
         },
         {
             "appName": "Android Calls",
@@ -680,16 +701,19 @@
         },
         {
             "appName": "Android Contacts",
-            "icon": "android-contacts.png",
+            "icon": "android-contacts.webp",
             "websiteUrl": "",
+            "category": "Productivity",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "AOSP Contacts Provider and stock Contacts (com.android.providers.contacts; UI historically com.android.contacts). Preinstalled system component; not a Play/App Store listing. Distinct from Google Contacts and Apple Contacts.",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.android.contacts"
+            ]
         },
         {
             "appName": "Android Sound Recorder",
@@ -760,6 +784,23 @@
             "alternateNames": [
                 "chat.anti",
                 "Anti Chat"
+            ]
+        },
+        {
+            "appName": "AntennaPod",
+            "icon": "antennapod.webp",
+            "websiteUrl": "https://antennapod.org/",
+            "category": "Music & Audio",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.danoeh.antennapod",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Open-source Android podcast client (de.danoeh.antennapod). Play title AntennaPod - Podcast Player. No iOS app. Distinct from Apple Podcasts, Podcast Addict, Pocket Casts, Overcast, and Spotify.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "de.danoeh.antennapod",
+                "AntennaPod - Podcast Player"
             ]
         },
         {
@@ -1167,6 +1208,23 @@
             ]
         },
         {
+            "appName": "August",
+            "icon": "august.webp",
+            "websiteUrl": "https://august.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yale-access/id1450980221",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "August Home, Inc. smart lock (iOS com.august.yale.app). Store title Yale Access. Play listing for that bundle is gone. Distinct from August Home (com.august.iossapp / com.august.luna), Yale Home, Ring, and Schlage Home.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.august.yale.app",
+                "Yale Access"
+            ]
+        },
+        {
             "appName": "Automatic Call Recorder",
             "icon": "automatic-call-recorder.webp",
             "websiteUrl": "https://www.appliqato.com/",
@@ -1571,12 +1629,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Bitwarden Inc. open-source password manager (Android com.x8bit.bitwarden, iOS com.8bit.bitwarden). Store title Bitwarden Password Manager. Apple genre Productivity. Distinct from 1Password, LastPass, Apple Keychain (Passwords), Google Authenticator, and Microsoft Authenticator.",
+            "notes": "Bitwarden Inc. open-source password manager (Android com.x8bit.bitwarden, iOS com.8bit.bitwarden). Store title Bitwarden Password Manager. Apple genre Productivity. Distinct from 1Password, LastPass, Apple Keychain (Passwords), Aegis Authenticator, Google Authenticator, and Microsoft Authenticator.",
             "dateAdded": "2026-08-31",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-01",
             "alternateNames": [
                 "com.x8bit.bitwarden",
-                "com.8bit.bitwarden"
+                "com.8bit.bitwarden",
+                "Bitwarden"
             ]
         },
         {
@@ -2177,6 +2236,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Catima",
+            "icon": "catima.webp",
+            "websiteUrl": "https://catima.app/",
+            "category": "Shopping",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.hackerchick.catima",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Sylvia van Os / CatimaLoyalty local loyalty-card wallet (Android me.hackerchick.catima). Store title Catima — Loyalty Card Wallet. Also on F-Droid. Successor to Loyalty Card Keychain (Branden Archer); Catima can import that backup. Distinct from Apple Wallet, Google Wallet, Samsung Wallet, FidMe, Stocard, and Lidl Plus.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "me.hackerchick.catima",
+                "Catima — Loyalty Card Wallet"
+            ]
+        },
+        {
             "appName": "ChatGPT",
             "icon": "chatgpt.webp",
             "websiteUrl": "https://chatgpt.com/",
@@ -2320,6 +2396,24 @@
             "alternateNames": [
                 "com.clubhouse.app",
                 "co.alphaexploration.clubhouse"
+            ]
+        },
+        {
+            "appName": "CNN",
+            "icon": "cnn.webp",
+            "websiteUrl": "https://www.cnn.com/",
+            "category": "News",
+            "appleStoreUrl": "https://apps.apple.com/us/app/cnn-live-breaking-news/id331786748",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "CNN Interactive Group, Inc. news app (Android com.cnn.mobile.android.phone, iOS com.cnn.iphone). Store title CNN: Live & Breaking News. Apple genre News. Distinct from Apple News, BBC News, FOX News, NBC News, and NYTimes.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.cnn.mobile.android.phone",
+                "com.cnn.iphone",
+                "CNN: Live & Breaking News"
             ]
         },
         {
@@ -2810,15 +2904,21 @@
         {
             "appName": "Dust - Private Messenger",
             "icon": "dust-messenger.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.radicalapps.cyberdust&hl=en",
-            "activeOnAppleStore": "",
-            "activeOnPlayStore": "",
-            "notes": "",
+            "websiteUrl": "https://www.usedust.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/dust-a-safer-place-to-text/id690158616",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.radicalapps.cyberdust",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Radical App LLC ephemeral messenger, formerly Cyber Dust (Android com.radicalapps.cyberdust, iOS com.mentionmobile.cyberdust). Play title Dust - Private Messenger; Apple title Dust - a safer place to text. Apple genre Business. Distinct from Signal, Snapchat, Wickr Me, Confide, Session, and the unrelated Dust AI product at dust.tt.",
             "dateAdded": "2023-11-02",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.radicalapps.cyberdust",
+                "com.mentionmobile.cyberdust",
+                "Cyber Dust",
+                "Dust"
+            ]
         },
         {
             "appName": "Eagle IM",
@@ -2914,14 +3014,38 @@
         },
         {
             "appName": "Element",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "element.webp",
+            "websiteUrl": "https://element.io/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/element-classic/id1083446067",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=im.vector.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Vector Creations Matrix client, formerly Riot (Android and iOS im.vector.app). Store title Element Classic; Apple genre Business. Successor mobile client is Element X (separate package). Distinct from Element X, Element Pro, Conversations, Signal, Session, and Discord.",
             "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "im.vector.app",
+                "Riot",
+                "Riot.im"
+            ]
+        },
+        {
+            "appName": "Element X",
+            "icon": "element-x.webp",
+            "websiteUrl": "https://element.io/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/element-x-secure-chat-call/id1631335820",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.element.android.x",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Vector Creations next-gen Matrix client (Android io.element.android.x, iOS io.element.elementx). Play/Apple title Element X - Secure Chat & Call. Apple genre Social Networking. Not a rename of Element Classic. Distinct from Element, Element Pro, Conversations, Signal, Session, and Discord.",
+            "dateAdded": "2026-09-01",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [
+                "io.element.android.x",
+                "io.element.elementx"
+            ]
         },
         {
             "appName": "Elyments",
@@ -3199,6 +3323,23 @@
             ]
         },
         {
+            "appName": "Feeder",
+            "icon": "feeder.webp",
+            "websiteUrl": "https://github.com/spacecowboy/Feeder",
+            "category": "News",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nononsenseapps.feeder.play",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Space Cowboy open-source RSS/Atom/JSONFeed reader (Android com.nononsenseapps.feeder on F-Droid; Play flavor com.nononsenseapps.feeder.play). Play title Feeder; Play category Productivity. No iOS app. Distinct from feeder.co, Flipboard, Inoreader, and Google News.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.nononsenseapps.feeder",
+                "com.nononsenseapps.feeder.play"
+            ]
+        },
+        {
             "appName": "FileSafe",
             "icon": "",
             "websiteUrl": "",
@@ -3384,12 +3525,15 @@
         {
             "appName": "Flipboard",
             "icon": "flipboard.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=flipboard.app&hl=en",
+            "websiteUrl": "https://flipboard.com/",
+            "category": "News",
+            "appleStoreUrl": "https://apps.apple.com/us/app/flipboard-the-social-magazine/id358801284",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=flipboard.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
             "notes": "",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
+            "dateUpdated": "2026-09-01",
             "alternateNames": []
         },
         {
@@ -3413,6 +3557,78 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-30",
             "alternateNames": []
+        },
+        {
+            "appName": "Fossify Calendar",
+            "icon": "fossify-calendar.webp",
+            "websiteUrl": "https://www.fossify.org/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.fossify.calendar",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "FossifyOrg FOSS calendar app, successor to Simple Mobile Tools Calendar Pro (Android org.fossify.calendar; predecessor com.simplemobiletools.calendar.pro). Play title Fossify Calendar. No iOS app. Distinct from Fossify Notes, Fossify Gallery, Fossify Keyboard, Android Calendar, Apple Calendar, and Google Calendar.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.fossify.calendar",
+                "com.simplemobiletools.calendar.pro",
+                "Simple Calendar Pro"
+            ]
+        },
+        {
+            "appName": "Fossify Gallery",
+            "icon": "fossify-gallery.webp",
+            "websiteUrl": "https://www.fossify.org/",
+            "category": "Photo & Video",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.fossify.gallery",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "FossifyOrg FOSS gallery app, successor to Simple Mobile Tools Gallery Pro (Android org.fossify.gallery; predecessor com.simplemobiletools.gallery.pro). Play title Fossify Gallery. No iOS app. Distinct from Fossify Notes, Fossify Calendar, Fossify Keyboard, Apple Photos, Google Photos, and Samsung Gallery.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.fossify.gallery",
+                "com.simplemobiletools.gallery.pro",
+                "Simple Gallery Pro"
+            ]
+        },
+        {
+            "appName": "Fossify Keyboard",
+            "icon": "fossify-keyboard.webp",
+            "websiteUrl": "https://www.fossify.org/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.fossify.keyboard",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "FossifyOrg FOSS keyboard with a saved-clipboard manager (Android org.fossify.keyboard). Play title Fossify Keyboard Beta; Play category Tools. Successor to Simple Keyboard (com.simplemobiletools.keyboard). No iOS app. Distinct from Fossify Notes, Fossify Calendar, and Fossify Gallery.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.fossify.keyboard",
+                "Fossify Keyboard Beta"
+            ]
+        },
+        {
+            "appName": "Fossify Notes",
+            "icon": "fossify-notes.webp",
+            "websiteUrl": "https://www.fossify.org/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.fossify.notes",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "FossifyOrg FOSS notes app, successor to Simple Mobile Tools Notes Pro (Android org.fossify.notes; predecessor com.simplemobiletools.notes.pro). Play title Fossify Notes Beta. No iOS app. Distinct from Apple Notes, Google Keep, Samsung Notes, Evernote, Xiaomi Notes, and Simplenote.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.fossify.notes",
+                "com.simplemobiletools.notes.pro",
+                "Fossify Notes Beta",
+                "Simple Notes Pro"
+            ]
         },
         {
             "appName": "Foursquare",
@@ -3626,7 +3842,7 @@
             "activeOnPlayStore": "true",
             "notes": "Social network by GETTR USA, Inc. Same package com.gettr.gettr on Android and iOS. Apple title is GETTR - A Marketplace of Ideas. Distinct from Gett Travel and Getcontact. GTok is an in-app video feature, not a separate app.",
             "dateAdded": "2026-08-18",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-01",
             "alternateNames": [
                 "com.gettr.gettr",
                 "GETTR - A Marketplace of Ideas"
@@ -3905,14 +4121,20 @@
         },
         {
             "appName": "Google Home",
-            "icon": "google-home.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "google-home.webp",
+            "websiteUrl": "https://home.google.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-home/id680819774",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.chromecast.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC smart home and Cast client (Android com.google.android.apps.chromecast.app, iOS com.google.Chromecast). Store title Google Home. Play and Apple genre Lifestyle. Distinct from Nest, Apple Home, and Google Fit.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.google.android.apps.chromecast.app",
+                "com.google.Chromecast"
+            ]
         },
         {
             "appName": "Google Keep",
@@ -4833,6 +5055,39 @@
             "alternateNames": []
         },
         {
+            "appName": "Jitsi Meet",
+            "icon": "jitsi-meet.webp",
+            "websiteUrl": "https://jitsi.org/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/jitsi-meet/id1165103905",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.jitsi.meet",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "8x8, Inc. open-source video meetings (Android org.jitsi.meet, iOS com.atlassian.JitsiMeet.ios). Store title Jitsi Meet. Apple genre Social Networking. Joins meet.jit.si and self-hosted Jitsi servers. Distinct from Google Meet, Zoom, Microsoft Teams, Skype, 8x8 Work, and Whereby.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.jitsi.meet",
+                "com.atlassian.JitsiMeet.ios"
+            ]
+        },
+        {
+            "appName": "Joplin",
+            "icon": "joplin.webp",
+            "websiteUrl": "https://joplinapp.org/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/joplin/id1315599797",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.cozic.joplin",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Laurent Cozic open-source Markdown notes (Android and iOS net.cozic.joplin). Store title Joplin. Apple genre Productivity. Distinct from Evernote, Notion, Google Keep, Fossify Notes, Apple Notes, Obsidian, and Microsoft OneNote.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "net.cozic.joplin"
+            ]
+        },
+        {
             "appName": "Jott",
             "icon": "",
             "websiteUrl": "",
@@ -4903,14 +5158,22 @@
         },
         {
             "appName": "KYMS - Keep your media safe",
-            "icon": "kyms.jpg",
+            "icon": "kyms.webp",
             "websiteUrl": "",
+            "category": "Security & Privacy",
             "appleStoreUrl": "https://apps.apple.com/us/app/secret-photos-kyms/id462182115",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=it.ideasolutions.kyms",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "IdeaSolutions S.r.l. photo vault (Android it.ideasolutions.kyms, Play delisted; iOS paid it.ideasolutions.mediasafe and free it.ideasolutions.mediasafe-free). Apple titles Secret photos KYMS / Secret photos - KYMS. Apple genre Photo & Video. Distinct from KeepSafe, GalleryVault, Sgallery, and Calculator Photo Vault (PV).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "it.ideasolutions.kyms",
+                "it.ideasolutions.mediasafe",
+                "it.ideasolutions.mediasafe-free",
+                "Secret photos KYMS"
+            ]
         },
         {
             "appName": "Kakao Story",
@@ -4968,12 +5231,35 @@
             "appName": "Keek",
             "icon": "",
             "websiteUrl": "",
+            "category": "Social Networking",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Riavera short-video social app (iOS com.keek.keek). Rebranded to Peeks Social; the Android package com.keek is listed there. Not on Apple or Google Play under the Keek name. Distinct from Kik Messenger, Vine, KICK, KeekSocial, and keek: Goals Made Public.",
             "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.keek.keek"
+            ]
+        },
+        {
+            "appName": "KeePassDX",
+            "icon": "keepassdx.webp",
+            "websiteUrl": "https://www.keepassdx.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Kunzisoft KeePass client (Play com.kunzisoft.keepass.free, F-Droid com.kunzisoft.keepass.libre). Store title KeePassDX Passkey Vault. Android only. Distinct from Keeper Password Manager, KeepSafe, KeePassium, KeePass Touch, KeePass2Android, Bitwarden Password Manager, 1Password, and LastPass.",
+            "dateAdded": "2026-09-01",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [
+                "com.kunzisoft.keepass.free",
+                "com.kunzisoft.keepass.libre",
+                "KeePassDX Passkey Vault"
+            ]
         },
         {
             "appName": "KeepSafe",
@@ -4997,13 +5283,19 @@
         {
             "appName": "Keeper Password Manager",
             "icon": "keeper.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.keepersecurity.com/",
+            "category": "Security & Privacy",
             "appleStoreUrl": "https://apps.apple.com/us/app/keeper-password-manager/id287170072",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.callpod.android_apps.keeper&hl=en",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.callpod.android_apps.keeper",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Keeper Security, Inc. / Callpod password manager (Android com.callpod.android_apps.keeper, iOS D4D2433BGC). Store title Keeper Password Manager. Apple genre Productivity. Distinct from KeePassDX, KeepSafe, ASICS RunKeeper, Bitwarden Password Manager, 1Password, and LastPass.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-28",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.callpod.android_apps.keeper",
+                "D4D2433BGC"
+            ]
         },
         {
             "appName": "Kijiji",
@@ -5064,6 +5356,23 @@
             ]
         },
         {
+            "appName": "Kiwix",
+            "icon": "kiwix.webp",
+            "websiteUrl": "https://kiwix.org/",
+            "category": "Books",
+            "appleStoreUrl": "https://apps.apple.com/us/app/kiwix/id997079563",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.kiwix.kiwixmobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Kiwix Team / Wikimedia CH offline ZIM reader (Android org.kiwix.kiwixmobile, iOS self.Kiwix). Store title Kiwix. Apple genre Reference. Distinct from Kiwi Browser, the Wikipedia app, and Kiwi.com travel.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.kiwix.kiwixmobile",
+                "self.Kiwix"
+            ]
+        },
+        {
             "appName": "Kleinanzeigen",
             "icon": "kleinanzeigen.webp",
             "websiteUrl": "https://www.kleinanzeigen.de",
@@ -5120,6 +5429,23 @@
             "alternateNames": []
         },
         {
+            "appName": "LG ThinQ",
+            "icon": "lg-thinq.webp",
+            "websiteUrl": "https://www.lg.com/us/lg-thinq",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/lg-thinq/id993504342",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lgeha.nuts",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "LG Electronics appliance control (Android and iOS com.lgeha.nuts). Store title LG ThinQ. Formerly SmartThinQ. Play and Apple genre Lifestyle. Distinct from SmartThings, Google Home, August, and third-party ThinQ TV remotes.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lgeha.nuts",
+                "SmartThinQ"
+            ]
+        },
+        {
             "appName": "Lidl Plus",
             "icon": "lidl-plus.webp",
             "websiteUrl": "https://www.lidl.com/",
@@ -5156,14 +5482,23 @@
         },
         {
             "appName": "Likee",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "likee.webp",
+            "websiteUrl": "https://likee.video/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/likee-video-live-chat/id1251790681",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=video.like",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "LIKEME PTE. LTD. short-video and live app (Android and iOS video.like). Play title Likee-Live, Chat & Party Games; Apple title Likee - Video, Live, Chat. Formerly LIKE. Apple genre Photo & Video. Distinct from TikTok, Moj, MICO, BigoLive, Kwai, and Live.ly.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "video.like",
+                "LIKE",
+                "LIKEE",
+                "Likee-Live, Chat & Party Games",
+                "Likee - Video, Live, Chat"
+            ]
         },
         {
             "appName": "Lime",
@@ -5191,6 +5526,26 @@
             "alternateNames": [
                 "jp.naver.line.android",
                 "jp.naver.line"
+            ]
+        },
+        {
+            "appName": "Linkbox",
+            "icon": "linkbox.webp",
+            "websiteUrl": "https://www.teledisk.app/",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.linkbox.plus.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Secret Realm Studio cloud storage (Android com.linkbox.plus.android). Current Play title TeleDisk: Cloud Storage; formerly Linkbox / TeleBox. Android only. Distinct from Box, TeraBox, Dropbox, MEGA, Google Drive, LinkedIn, and unrelated LinkBox bookmark apps.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.linkbox.plus.android",
+                "TeleDisk",
+                "TeleDisk: Cloud Storage",
+                "TeleBox",
+                "LinkBox"
             ]
         },
         {
@@ -5235,6 +5590,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Loop Habit Tracker",
+            "icon": "loop-habit-tracker.webp",
+            "websiteUrl": "https://loophabits.org/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.isoron.uhabits",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Álinson S Xavier / iSoron open-source habit tracker (Android org.isoron.uhabits). Store title Loop Habit Tracker. Formerly uHabits. Android only. Distinct from iOS Loop: Habit Tracker (Islomjonov), Loop Habit Tracker* (Veloudos), Habit Tracker: Loop, Habitify, and Productive.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.isoron.uhabits",
+                "uHabits"
+            ]
+        },
+        {
             "appName": "Lunascape",
             "icon": "lunascape.webp",
             "websiteUrl": "https://www.lunascape.co.jp/",
@@ -5262,6 +5634,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Magisk",
+            "icon": "magisk.webp",
+            "websiteUrl": "https://github.com/topjohnwu/Magisk",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "John Wu (topjohnwu) Magisk manager (Android com.topjohnwu.magisk). Open-source Android system customization / root manager. Not on Apple or Google Play; GitHub is the official source. Distinct from KernelSU, SuperSU, and unofficial Magisk-named Play clones.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.topjohnwu.magisk",
+                "Magisk Manager"
+            ]
         },
         {
             "appName": "MediaTek Todos",
@@ -5717,13 +6106,18 @@
         {
             "appName": "Mi Browser",
             "icon": "mi-browser.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.mi.com/",
+            "category": "Browser",
             "appleStoreUrl": "",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mi.globalbrowser",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Xiaomi / Zhigu Corporation Limited browser (Android com.mi.globalbrowser). Store title Mi Browser. Android only. Distinct from Mint Browser, Google Chrome, Kiwi Browser, and AOSP Browser.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.mi.globalbrowser"
+            ]
         },
         {
             "appName": "MICO",
@@ -6072,20 +6466,6 @@
             "alternateNames": []
         },
         {
-            "appName": "My Files",
-            "icon": "my-files.webp",
-            "websiteUrl": "https://www.samsung.com/us/support/owners/app/my-files",
-            "category": "Productivity",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles",
-            "activeOnAppleStore": "false",
-            "activeOnPlayStore": "true",
-            "notes": "Samsung file manager (com.sec.android.app.myfiles).",
-            "dateAdded": "2026-07-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "My Tracks",
             "icon": "",
             "websiteUrl": "",
@@ -6115,6 +6495,23 @@
             ]
         },
         {
+            "appName": "myQ",
+            "icon": "myq.webp",
+            "websiteUrl": "https://www.myq.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/myq-garage-access-control/id456282559",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.chamberlain.android.liftmaster.myq",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "The Chamberlain Group garage and access control (Android com.chamberlain.android.liftmaster.myq, iOS com.myliftmaster.myq). Store title myQ Garage & Access Control. Play and Apple genre Lifestyle. Distinct from August, Google Home, LG ThinQ, myQ Community, and CRAFTSMAN myQ.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.myliftmaster.myq",
+                "com.chamberlain.android.liftmaster.myq"
+            ]
+        },
+        {
             "appName": "MySpace",
             "icon": "",
             "websiteUrl": "",
@@ -6124,6 +6521,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
             "alternateNames": []
+        },
+        {
+            "appName": "Nest",
+            "icon": "nest.webp",
+            "websiteUrl": "https://nest.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/nest/id464988855",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nest.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Nest Labs Inc. / Google home and camera app (Android com.nest.android, iOS com.nestlabs.jasper.release). Store title Nest. Play and Apple genre Lifestyle. Distinct from Google Home, Ring, August, and myQ.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.nest.android",
+                "com.nestlabs.jasper.release",
+                "Dropcam"
+            ]
         },
         {
             "appName": "Netflix",
@@ -6140,6 +6555,22 @@
             "alternateNames": [
                 "com.netflix.mediaclient",
                 "com.netflix.Netflix"
+            ]
+        },
+        {
+            "appName": "NewPipe",
+            "icon": "newpipe.webp",
+            "websiteUrl": "https://newpipe.net/",
+            "category": "Photo & Video",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "TeamNewPipe FOSS streaming client (Android org.schabi.newpipe). Not on Apple or Google Play; distributed via F-Droid and newpipe.net. Distinct from YouTube, YouTube Music, VLC Media Player, LibreTube, PipePipe, and iOS NewPipe Player.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.schabi.newpipe"
             ]
         },
         {
@@ -6492,6 +6923,22 @@
             ]
         },
         {
+            "appName": "Organic Maps",
+            "icon": "organic-maps.webp",
+            "websiteUrl": "https://organicmaps.app/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/organic-maps-offline-maps-gps/id1567437057",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=app.organicmaps",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Organic Maps OU FOSS offline OSM maps (Android and iOS app.organicmaps). Store title Organic Maps・Offline Map & GPS / Organic Maps・Offline Maps, GPS. Apple genre Navigation. Fork of the old open-source MAPS.ME. Distinct from MAPS.ME, OsmAnd, Google Maps, Apple Maps, OruxMaps, and Citymapper.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "app.organicmaps"
+            ]
+        },
+        {
             "appName": "Ornet Browser",
             "icon": "ornet-browser.webp",
             "websiteUrl": "http://www.strongerapps.com",
@@ -6522,6 +6969,25 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "OsmAnd",
+            "icon": "osmand.webp",
+            "websiteUrl": "https://osmand.net/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/osmand-maps-travel-navigate/id934850257",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.osmand",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "OsmAnd B.V. offline OSM maps (Android net.osmand and paid net.osmand.plus, iOS net.osmand.maps). Play titles OsmAnd — Maps & GPS Offline / OsmAnd+ — Maps & GPS Offline; Apple title OsmAnd Maps Travel & Navigate. Apple genre Travel. Distinct from Organic Maps, MAPS.ME, OruxMaps, Google Maps, Apple Maps, and Citymapper.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "net.osmand",
+                "net.osmand.plus",
+                "net.osmand.maps",
+                "OsmAnd+"
+            ]
         },
         {
             "appName": "Oura",
@@ -7337,7 +7803,7 @@
             "activeOnPlayStore": "true",
             "notes": "FishingNet hide-photos vault. Core package com.hld.anzenbokusu (Play title Sgallery - hide photos & video, delisted). Calculator skins: Calculator - hide photos (com.hld.anzenbokusufake, delisted) and Calculator - photo vault (com.hld.anzenbokusucal, still on Play). Vault in .privacy_safe. ALEAPP titles the parsers App Locker. Distinct from Calculator Photo Vault (PV), Calculator - Photo Vault & Vid, Calculator Vault, Calculator Lock, Calculator#, HideX, Secret Calculator Photo Album, GalleryVault, AppLock, and Playground Vault.",
             "dateAdded": "2026-08-19",
-            "dateUpdated": "2026-08-20",
+            "dateUpdated": "2026-09-01",
             "alternateNames": [
                 "com.hld.anzenbokusu",
                 "com.hld.anzenbokusufake",
@@ -7544,6 +8010,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Samsung My Files",
+            "icon": "samsung-my-files.webp",
+            "websiteUrl": "https://www.samsung.com/us/support/owners/app/my-files",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.myfiles",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Samsung file manager (Android com.sec.android.app.myfiles). Play listing My Files. No iOS app. Distinct from Files by Google, Google Drive, and Apple Files.",
+            "dateAdded": "2026-07-11",
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.sec.android.app.myfiles",
+                "My Files"
+            ]
+        },
+        {
             "appName": "Samsung Notes",
             "icon": "samsung-notes.png",
             "websiteUrl": "",
@@ -7567,6 +8050,24 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Samsung Wallet",
+            "icon": "samsung-wallet.webp",
+            "websiteUrl": "https://www.samsung.com/us/apps/samsung-wallet/",
+            "category": "Finance",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.samsung.android.spay",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Samsung Electronics Co., Ltd. payments and passes (Android com.samsung.android.spay; WearOS com.samsung.android.samsungpay.gear). Store title Samsung Wallet (Samsung Pay). Formerly Samsung Pay. Android only. Distinct from Apple Wallet, Google Pay, Google Wallet, Catima, and Trust Wallet.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.samsung.android.spay",
+                "com.samsung.android.samsungpay.gear",
+                "Samsung Pay"
+            ]
         },
         {
             "appName": "Samsung Weather",
@@ -7710,14 +8211,20 @@
         },
         {
             "appName": "Silent Phone",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "silent-phone.webp",
+            "websiteUrl": "https://www.silentcircle.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/silent-phone/id554269204",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.silentcircle.silentphone",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Silent Circle encrypted calling and messaging (Android com.silentcircle.silentphone; iOS com.silentcircle.SilentPhone). Play title Silent Phone - Secure Calling. Apple genre Business. Distinct from Signal, Session, SimpleX, Wire, Threema, and Confide.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-11",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.silentcircle.silentphone",
+                "com.silentcircle.SilentPhone"
+            ]
         },
         {
             "appName": "SimpleX",
@@ -8155,6 +8662,22 @@
             ]
         },
         {
+            "appName": "Syncthing",
+            "icon": "syncthing.webp",
+            "websiteUrl": "https://syncthing.net/",
+            "category": "File Sharing",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nutomic.syncthingandroid",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Official Syncthing Android wrapper (com.nutomic.syncthingandroid). GitHub syncthing/syncthing-android discontinued December 2024; removed from Play. Android only. Distinct from Syncthing-Fork (com.github.catfriend1.syncthingandroid), Möbius Sync, Synctrain, Resilio Sync, Dropbox, MEGA, and Sync.com.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.nutomic.syncthingandroid"
+            ]
+        },
+        {
             "appName": "T-Mobile Digits",
             "icon": "tmobile-digits.webp",
             "websiteUrl": "",
@@ -8282,6 +8805,22 @@
             "alternateNames": []
         },
         {
+            "appName": "Tasks.org",
+            "icon": "tasks-org.webp",
+            "websiteUrl": "https://tasks.org/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.tasks",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Tasks.org, LLC to-do manager (Android org.tasks). Store title Tasks.org: to-do list & tasks. Android only. Distinct from Google Tasks, Microsoft To Do, Todoist, and Fossify Notes.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.tasks"
+            ]
+        },
+        {
             "appName": "TeamViewer",
             "icon": "teamviewer.webp",
             "websiteUrl": "",
@@ -8352,6 +8891,22 @@
             "alternateNames": [
                 "Dubox",
                 "com.dubox.drive"
+            ]
+        },
+        {
+            "appName": "Termux",
+            "icon": "termux.webp",
+            "websiteUrl": "https://termux.dev/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.termux",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Android terminal emulator and Linux environment (com.termux). Store title Termux. Play developer Fredrik Fornwall; genre Tools. Android only. Distinct from Termius, iSH Shell, and Termux:API (com.termux.api).",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.termux"
             ]
         },
         {
@@ -8673,6 +9228,22 @@
             "activeOnPlayStore": "true"
         },
         {
+            "appName": "Trail Sense",
+            "icon": "trail-sense.webp",
+            "websiteUrl": "https://kylecorry.com/Trail-Sense/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kylecorry.trail_sense",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Kyle Corry offline hiking and navigation (Android com.kylecorry.trail_sense). Store title Trail Sense. Play genre Tools. Android only. Distinct from AllTrails, Gaia GPS, OsmAnd, Organic Maps, and the unrelated iOS app TrailSense: Hike & Bike GPS.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.kylecorry.trail_sense"
+            ]
+        },
+        {
             "appName": "Trans Aero Viagens e Turismo",
             "icon": "",
             "websiteUrl": "",
@@ -8882,6 +9453,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Tutanota",
+            "icon": "tutanota.webp",
+            "websiteUrl": "https://tuta.com/",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tuta-mail-secure-email/id922429609",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.tutao.tutanota",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Tutao GmbH encrypted email (Android and iOS de.tutao.tutanota). Formerly Tutanota; current store title Tuta Mail: Secure Email. Play genre Communication; Apple Productivity. Distinct from ProtonMail and Gmail.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "de.tutao.tutanota",
+                "Tuta Mail"
+            ]
+        },
+        {
             "appName": "TweetDeck",
             "icon": "",
             "websiteUrl": "",
@@ -9057,7 +9645,7 @@
             "activeOnPlayStore": "true",
             "notes": "Next Glass / Untappd, Inc. beer check-in and ratings (Android com.untappdllc.app, iOS com.untappdllc.com). Store titles Untappd: Find Beer You'll Love / Untappd: Find Drinks You Love. Apple genre Food & Drink. Distinct from Untappd for Business, Foursquare Swarm, Yelp: Food, Delivery & Reviews, and Vivino.",
             "dateAdded": "2026-08-24",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-01",
             "alternateNames": [
                 "com.untappdllc.app",
                 "com.untappdllc.com",
@@ -9347,13 +9935,22 @@
         {
             "appName": "WeChat",
             "icon": "wechat.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mm&hl=en",
-            "notes": "",
+            "websiteUrl": "https://www.wechat.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/wechat/id414478124",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mm",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Tencent messenger (Android com.tencent.mm, iOS com.tencent.xin). Store title WeChat. Chinese name Weixin (微信). Apple genre Social Networking. Distinct from QQ, Weibo (微博), WhatsApp Messenger, Line, and WeCom.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.tencent.mm",
+                "com.tencent.xin",
+                "com.tencent.xinWeChat",
+                "Weixin",
+                "微信"
+            ]
         },
         {
             "appName": "Web Browser (Litter Penguin)",
@@ -9516,6 +10113,24 @@
                 "com.mywickr.wickr2",
                 "com.mywickr.wickr",
                 "wickr"
+            ]
+        },
+        {
+            "appName": "Wikipedia",
+            "icon": "wikipedia.webp",
+            "websiteUrl": "https://www.wikipedia.org/",
+            "category": "Books",
+            "appleStoreUrl": "https://apps.apple.com/us/app/wikipedia/id324715238",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.wikipedia",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Wikimedia Foundation encyclopedia client (Android org.wikipedia, iOS org.wikimedia.wikipedia). Store title Wikipedia. Play genre Books & Reference; Apple Reference. Wikipedia Beta (org.wikipedia.beta) maps here. Distinct from Kiwix, Kiwi Browser, and Kiwi.com.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.wikipedia",
+                "org.wikimedia.wikipedia",
+                "org.wikipedia.beta"
             ]
         },
         {
@@ -9975,14 +10590,24 @@
         },
         {
             "appName": "Your Phone",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "your-phone.webp",
+            "websiteUrl": "https://www.microsoft.com/en-us/windows/sync-across-your-devices",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/link-to-windows/id6443686328",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.appmanager",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Microsoft Corporation phone–PC companion (Android com.microsoft.appmanager, iOS com.microsoft.LinkToWindows). Current store title Link to Windows; formerly Your Phone / Your Phone Companion. Windows desktop app is Phone Link. Apple genre Productivity. Distinct from Windows App Mobile.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.microsoft.appmanager",
+                "com.microsoft.LinkToWindows",
+                "desktop.microsoft.yourphone",
+                "Phone Link",
+                "Link to Windows",
+                "Your Phone Companion"
+            ]
         },
         {
             "appName": "Yubo",
