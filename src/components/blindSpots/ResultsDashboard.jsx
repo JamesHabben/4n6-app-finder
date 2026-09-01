@@ -14,6 +14,7 @@ import {
   YAxis,
 } from 'recharts';
 import { AppNameCell } from 'components/blindSpots/TrackedAppName';
+import ToolsPerAppChart from 'components/ToolsPerAppChart';
 
 const { Text } = Typography;
 
@@ -86,24 +87,6 @@ function CoverageDonut({ total, supported, knownUnparsed, unknown }) {
           {unknown} not in catalog ({percentOf(unknown, total)}%)
         </Text>
       </div>
-    </div>
-  );
-}
-
-function ToolsPerAppChart({ histogram }) {
-  return (
-    <div className="blind-spots-chart">
-      <ResponsiveContainer width="100%" height="100%">
-        <BarChart data={histogram} margin={{ top: 8, right: 8, left: 0, bottom: 0 }}>
-          <CartesianGrid strokeDasharray="3 3" vertical={false} />
-          <XAxis dataKey="label" interval={0} />
-          <YAxis allowDecimals={false} width={32} />
-          <Tooltip
-            formatter={(value) => [`${value} app${value === 1 ? '' : 's'}`, 'Tracked']}
-          />
-          <Bar dataKey="count" fill="#1677ff" radius={[3, 3, 0, 0]} />
-        </BarChart>
-      </ResponsiveContainer>
     </div>
   );
 }
@@ -235,7 +218,7 @@ function ResultsDashboard({ summary, platformLabel, onOpenApp }) {
             How many forensic tools parse each of the {tracked} tracked apps
             {platformLabel ? ` on ${platformLabel}` : ''}.
           </Text>
-          <ToolsPerAppChart histogram={toolCountHistogram} />
+          <ToolsPerAppChart histogram={toolCountHistogram} seriesName="Tracked" />
         </Card>
       </Col>
       <Col xs={24} lg={12}>

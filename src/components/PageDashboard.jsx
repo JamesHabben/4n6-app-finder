@@ -1,8 +1,13 @@
 import React, { useContext, useMemo } from 'react';
+import { Card, Typography } from 'antd';
 import { DataContext } from 'services/DataContext';
+import { buildToolCountHistogram } from 'services/toolCountHistogram';
 import ListBarCard from 'components/dashboardComponents/ListBarCard';
 import ProgressBarCard from 'components/dashboardComponents/ToolProgressCard';
 import OneHitWondersCard from 'components/dashboardComponents/OneHitWondersCard';
+import ToolsPerAppChart from 'components/ToolsPerAppChart';
+
+const { Text } = Typography;
 
 function getTopAppsByMappedTools(apps) {
   const appsWithTools = apps.filter(app => app.mappedTools && app.mappedTools.length > 0);
@@ -45,12 +50,25 @@ function PageDashboard() {
     [apps],
   );
   const oneHitWonderCounts = useMemo(() => getOneHitWonderCounts(apps), [apps]);
+  const toolCountHistogram = useMemo(
+    () => buildToolCountHistogram(apps, app => app.mappedTools?.length || 0),
+    [apps],
+  );
 
   return (
     <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: '1rem', textAlign: 'left' }}>
       <h1>App Analysis</h1>
       <div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', width: '100%', gap: '1rem' }}>
-        <OneHitWondersCard oneHitCount={oneHitWonders.length} totalApps={apps.length} />
+        <div className="dashboard-one-hit-column">
+          <OneHitWondersCard oneHitCount={oneHitWonders.length} totalApps={apps.length} />
+          <Card title="Tools per app">
+            <Text type="secondary" className="dashboard-chart-note">
+              How many forensic tools parse each of {apps.length} catalog apps.
+              Gray is listed with no tool map yet; gold is one-hit wonders.
+            </Text>
+            <ToolsPerAppChart histogram={toolCountHistogram} />
+          </Card>
+        </div>
         <ListBarCard
           items={oneHitWonderCounts}
           nameKey='toolLongName'

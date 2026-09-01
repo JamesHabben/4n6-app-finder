@@ -784,9 +784,23 @@
   background: #e8e8e8;
 }
 
+.tools-per-app-chart,
 .blind-spots-chart {
   width: 100%;
   height: 240px;
+}
+
+.dashboard-one-hit-column {
+  display: flex;
+  flex-direction: column;
+  width: 432px;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.dashboard-chart-note {
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .blind-spots-chart-categories {

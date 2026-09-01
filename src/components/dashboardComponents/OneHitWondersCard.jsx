@@ -25,13 +25,13 @@ function OneHitWondersCard({ oneHitCount, totalApps }) {
       role="link"
       tabIndex={0}
       aria-label={`View ${oneHitCount} one-hit wonder apps out of ${totalApps} total apps`}
-      style={{ margin: '1rem 0', width: 432, cursor: 'pointer' }}
+      style={{ width: '100%', cursor: 'pointer' }}
       styles={{ body: { display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem' } }}
     >
       <Progress
         type="circle"
         percent={percent}
-        size={220}
+        size={150}
         format={() => (
           <div>
             <div style={{ fontSize: '2rem', fontWeight: 600 }}>{oneHitCount}</div>

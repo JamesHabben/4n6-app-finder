@@ -1,3 +1,5 @@
+import { buildToolCountHistogram } from 'services/toolCountHistogram';
+
 function toolCount(app) {
   return app.catalogApp?.mappedTools?.length || 0;
 }
@@ -11,21 +13,6 @@ function categoryLabel(app) {
     return app.catalogApp?.category?.trim() || 'Uncategorized';
   }
   return app.genre?.trim() || 'Not in catalog';
-}
-
-function buildToolCountHistogram(trackedApps) {
-  const maxObserved = trackedApps.reduce((max, app) => Math.max(max, toolCount(app)), 0);
-  const bins = Array.from({ length: maxObserved + 1 }, (_, tools) => ({
-    tools,
-    label: tools === 1 ? '1 tool' : `${tools} tools`,
-    count: 0,
-  }));
-
-  trackedApps.forEach((app) => {
-    bins[toolCount(app)].count += 1;
-  });
-
-  return bins;
 }
 
 function buildOneHitGroups(trackedApps) {
@@ -107,7 +94,7 @@ export function summarizeInventory(matchedApps, tools) {
     knownUnparsed: tracked - supported,
     trackedApps,
     toolCounts,
-    toolCountHistogram: buildToolCountHistogram(trackedApps),
+    toolCountHistogram: buildToolCountHistogram(trackedApps, toolCount),
     oneHitGroups,
     oneHitCount: oneHitGroups.reduce((sum, group) => sum + group.apps.length, 0),
     categoryCounts: buildCategoryCounts(matchedApps),
