@@ -216,7 +216,23 @@
             "notes": "Anonymous Q&A social app (com.askfm). Platform discontinued December 1, 2024; store listings removed.",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
-            "alternateNames": []
+            "alternateNames": [            ]
+        },
+        {
+            "appName": "aTox",
+            "icon": "atox.webp",
+            "websiteUrl": "https://github.com/evilcorpltd/aTox",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ltd.evilcorp.atox",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Evil Corp Ltd Android Tox client (ltd.evilcorp.atox). Unmaintained; Play listing gone. Android only. Distinct from qTox, Toxic, Session, SimpleX, and Signal.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "ltd.evilcorp.atox"
+            ]
         },
         {
             "appName": "AVG AntiVirus & Security",
@@ -1725,6 +1741,23 @@
             ]
         },
         {
+            "appName": "Blue Mail",
+            "icon": "blue-mail.webp",
+            "websiteUrl": "https://bluemail.me/",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/blue-mail-email-calendar/id1063729305",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.bluemail.mail",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Blix Inc. email client (Android me.bluemail.mail, iOS me.bluemail.email). Play title Email Blue Mail - Calendar; Apple title Blue Mail - Email | Calendar. Apple genre Business. Distinct from Bluesky, Aqua Mail, Spark, ProtonMail, Tutanota, and Gmail.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "me.bluemail.mail",
+                "me.bluemail.email"
+            ]
+        },
+        {
             "appName": "Bluesky",
             "icon": "bluesky.webp",
             "websiteUrl": "https://bsky.app/",
@@ -2673,6 +2706,37 @@
             ]
         },
         {
+            "appName": "DIC-o Language Dictionaries",
+            "icon": "dic-o-language-dictionaries.webp",
+            "websiteUrl": "https://dic-o.com/",
+            "category": "Books",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/developer?id=DIC-o",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Petr Wagner / DIC-o bilingual offline dictionaries (Android com.dic_o.* per language pair). Play genre Books & Reference. Android only. Distinct from Google Translate and Duolingo.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dic_o.dico_cze_eng",
+                "com.dic_o.dico_cze_fra",
+                "com.dic_o.dico_cze_ger",
+                "com.dic_o.dico_cze_spa",
+                "com.dic_o.dico_eng_fra",
+                "com.dic_o.dico_eng_ger",
+                "com.dic_o.dico_eng_hrv",
+                "com.dic_o.dico_eng_ita",
+                "com.dic_o.dico_eng_pol",
+                "com.dic_o.dico_eng_spa",
+                "com.dic_o.dico_ger_ita",
+                "com.dic_o.dico_ger_pol",
+                "com.dic_o.dico_ger_por",
+                "com.dic_o.dico_ger_spa",
+                "com.dic_o.dico_svk_eng",
+                "com.dic_o.dico_svk_ger"
+            ]
+        },
+        {
             "appName": "Digital Wellbeing",
             "icon": "digital-wellbeing.webp",
             "websiteUrl": "https://support.google.com/android/answer/9346420",
@@ -2936,6 +3000,24 @@
                 "com.beint.zangj",
                 "Eagle Messenger",
                 "Eagle Messenger Video,Audio,Calling"
+            ]
+        },
+        {
+            "appName": "Easy4ip",
+            "icon": "easy4ip.webp",
+            "websiteUrl": "https://www.imou.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/imou-life/id1071165451",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mm.android.smartlifeiot",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Dahua / Huacheng consumer camera platform, now sold as Imou Life (Android com.mm.android.smartlifeiot, iOS com.dahuaoversea.easy4ip). Play and Apple genre Lifestyle. Other vendors ship the same platform under their own apps. Distinct from Dahua DMSS, Hik-Connect, Lorex Home, and EasyViewer Plus.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mm.android.smartlifeiot",
+                "com.dahuaoversea.easy4ip",
+                "Imou Life"
             ]
         },
         {
@@ -6744,6 +6826,23 @@
             ]
         },
         {
+            "appName": "Nykaa",
+            "icon": "nykaa.webp",
+            "websiteUrl": "https://www.nykaa.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/nykaa-makeup-beauty-shopping/id1022363908",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fsn.nykaa",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "FSN E-Commerce Ventures Limited beauty marketplace (Android com.fsn.nykaa, iOS com.nykaa.ios). Play title Nykaa - Beauty Shopping App; Apple title Nykaa – Makeup/Beauty Shopping. Distinct from Nykaa Fashion, Amazon Shopping, SHEIN India Fast Fashion, and Wish.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.fsn.nykaa",
+                "com.nykaa.ios"
+            ]
+        },
+        {
             "appName": "OK: Social Network",
             "icon": "ok-social.webp",
             "websiteUrl": "https://ok.ru/",
@@ -8178,6 +8277,22 @@
             ]
         },
         {
+            "appName": "SHEIN India Fast Fashion",
+            "icon": "shein-india-fast-fashion.webp",
+            "websiteUrl": "https://www.shein.in/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/in/app/shein-india-fast-fashion/id6504862567",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ril.shein",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Reliance Retail Limited India SHEIN storefront (Android and iOS com.ril.shein). Distinct from global SHEIN (com.zzkko), Temu, AliExpress, Amazon Shopping, and Wish.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.ril.shein"
+            ]
+        },
+        {
             "appName": "Sideline",
             "icon": "sideline.webp",
             "websiteUrl": "https://www.sideline.com",
@@ -8910,6 +9025,23 @@
             ]
         },
         {
+            "appName": "Tesla",
+            "icon": "tesla.webp",
+            "websiteUrl": "https://www.tesla.com/",
+            "category": "Automotive",
+            "appleStoreUrl": "https://apps.apple.com/us/app/tesla/id582007913",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.teslamotors.tesla",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Tesla, Inc. vehicle app (Android com.teslamotors.tesla, iOS com.teslamotors.TeslaApp). Play and Apple genre Lifestyle. Distinct from Tesla Robotaxi, Tesla One, and Tessie.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.teslamotors.tesla",
+                "com.teslamotors.TeslaApp"
+            ]
+        },
+        {
             "appName": "Text Free - Free Text + Call",
             "icon": "text-free.webp",
             "websiteUrl": "https://textfree.com/",
@@ -9275,6 +9407,23 @@
             "alternateNames": [
                 "ru.novilab-mobile.transaero",
                 "Трансаэро"
+            ]
+        },
+        {
+            "appName": "Trello",
+            "icon": "trello.webp",
+            "websiteUrl": "https://trello.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/trello-daily-task-tracker/id461504587",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.trello",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Atlassian / Trello, Inc. boards and cards (Android com.trello, iOS com.fogcreek.trello). Play title Trello: Personal Planner App; Apple title Trello: Daily Task Tracker. Distinct from Todoist, Microsoft To Do, Tasks.org, and Notion.",
+            "dateAdded": "2026-09-01",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.trello",
+                "com.fogcreek.trello"
             ]
         },
         {
@@ -10526,7 +10675,7 @@
         },
         {
             "appName": "Yeti - Campus Stories",
-            "icon": "",
+            "icon": "yeti-campus-stories.webp",
             "websiteUrl": "https://theyetiapp.com/",
             "category": "Social Networking",
             "appleStoreUrl": "",
@@ -10535,7 +10684,7 @@
             "activeOnPlayStore": "false",
             "notes": "Factyle / Cinemagram Inc. anonymous campus photo-video feed (Android com.yeti.android). Later Apple title Yeti - share snaps and meet people around you. Store listings removed. Distinct from Yik Yak, Snapchat, Whisper, Wigo, Cinemagram, YETI coolers, Yeti Escape, and Yeti Capture Everything.",
             "dateAdded": "2026-08-24",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-01",
             "alternateNames": [
                 "com.yeti.android",
                 "Yeti - share snaps and meet people around you"
@@ -10824,13 +10973,19 @@
         {
             "appName": "iCloud Drive",
             "icon": "",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.apple.com/icloud/",
+            "category": "Cloud Storage",
             "appleStoreUrl": "",
             "googlePlayUrl": "",
-            "notes": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Apple iCloud file hosting (com.apple.CloudDocs; desktop.apple.clouddocs on Mac/Windows). Accessed on iOS via Files, not a standalone store app. Distinct from Apple Files, Apple Photos, iCloud for Windows, Apple Mail, Dropbox, Google Drive, OneDrive, MEGA, and Box.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-09-01",
+            "alternateNames": [
+                "com.apple.CloudDocs",
+                "desktop.apple.clouddocs"
+            ]
         },
         {
             "appName": "iCloud for Windows",
