@@ -71,8 +71,8 @@
     },
     {
         "toolShortName": "Hindsight",
-        "toolLongName": "Hindsight Mobile Forensics",
-        "website": "https://www.absoluteds.com/products/hindsight-mobile-forensics/",
+        "toolLongName": "Hindsight Browser Forensics",
+        "website": "https://github.com/RyanDFIR/hindsight/",
         "toolVersion": "",
         "toolReleaseDate": "2023-11-01",
         "icon": "tool-logo-hindsight.png",
@@ -80,7 +80,7 @@
         "mapFile": "maps/hindsight.json",
         "appNameKey": "App Name",
         "platformKey": "Platform",
-        "documentationLocation": "website at https://www.hindsightforensic.com/",
+        "documentationLocation": "",
         "extractionNotes": ""
     },
     {
