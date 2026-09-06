@@ -41,6 +41,22 @@
         "last_update_date": "2025-03-14"
     },
     {
+        "filename": "accuWeather",
+        "artifactKey": "accuweather_location",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "AccuWeather Location",
+        "description": "The position AccuWeather stored for the device and the location it was set to use",
+        "category": "AccuWeather",
+        "notes": "One row per location record in the DataStore preferences file com.accuweather.android/files/datastore/SETTINGS_LOCATION_PREFERENCES.preferences_pb. The app's own SQLite database holds only home screen widget tables and was empty on the tested image, so this file is where the position lives. Latitude, Longitude and Fix Time are read from the GPS_LOCATION_COORDINATES value, which the app stores as a JSON object with latitude, longitude and lastKnownLocationFix members. Fix Time is Unix milliseconds and is reported as UTC. **The stored coordinates are rounded to three decimal places**, which is roughly 110 metres, so they are not the fix the platform handed the app. Measured by moving the device position and reading the file back three times: 38.897683 was stored as 38.898, 64.146600 as 64.147 and 51.507350 as 51.507. An examiner should treat the value as a neighbourhood, not a point. Location Key is the app's own numeric key for the place it was showing, and **it can lag the coordinates**: across those same three moves it changed once and then stayed on the previous place's key while the coordinates moved on, so the key can name somewhere the device has already left. The app resolves it through a lookup rather than deriving it locally, which is the likely reason, though that was not established here. Default Location is which source the app was set to use, 'gps_location' on the tested image. **The coordinates on the tested image are the Android emulator's default fix**, 38.898, -77.037, which is not a place anyone travelled to; they are reported because the field is the artifact, and an examiner reading a real device gets a real position in the same field. A row records the position the app last held, not a track. That the file keeps one coordinate pair and overwrites it was measured rather than assumed: moving the device twice replaced the pair both times and the file shrank from 285 to 284 to 283 bytes, never growing, so no previous position is retained and there is no way to tell how long the device was anywhere. Two neighbouring DataStore files are not parsed. SETTINGS_SHARED_PREFERENCES holds display, unit and notification settings, which say nothing about where the device was. one_app_native_settings_datastore holds the catalogue of national weather alert providers the app downloads, which is server data and would read as device activity if reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.accuweather.android/files/datastore/SETTINGS_LOCATION_PREFERENCES.preferences_pb"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
         "filename": "adbAuthorizations",
         "artifactKey": "adb_authorizations",
         "sourceTool": "ALEAPP",
@@ -3197,6 +3213,22 @@
         "last_update_date": "2025-09-09"
     },
     {
+        "filename": "cloudflareWarp",
+        "artifactKey": "cloudflare_warp_registration",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Cloudflare 1.1.1.1 WARP Registration and State",
+        "description": "The WARP registration this device holds and the VPN state the app recorded",
+        "category": "Cloudflare WARP",
+        "notes": "One row per value read from com.cloudflare.onedotonedotonedotone/shared_prefs/com.cloudflare.onedotonedotonedotone_preferences.xml, which is where the app keeps its state; it writes no database of its own. Registration Id and Account Id identify this installation to Cloudflare, and Account Type read 'free' on the tested image, so together they say the device registered with the service and on what footing. Terms Accepted and Registration Executed are ISO 8601 strings that carry their own UTC offset, so they are reported exactly as stored and need no conversion; on the tested device both ended in -04:00, the device's own zone. VPN Profile Installed, Service Running, Auto Connect and Tunnel Protocol are the app's own flags, reported as stored. Tunnel Protocol read 'masque'. Installed By is the installer package the app recorded, which said which store delivered it. **The private key is deliberately not reported.** The preferences file also holds warp_private_key, and a private key has no place in a forensic artifact; its presence is noted here so an examiner knows it exists in the file, and its value is left there. The public key and the tunnel peer configuration are not reported either, being long key material of no evidential use on their own. What a row supports is bounded: these values show the device registered with WARP and how the tunnel was configured at the moment of acquisition. They are current state, not history, so they do not say when the tunnel went up or down. **The app does write timestamped logs, and they are not parsed here.** Under cache/logs it keeps a console log and a native tunnel log; on the tested device those were 8.9 MB and 3.1 MB, the console log spanning about eight hours with ISO 8601 timestamps that carry their own offset, and holding 13,301 NetworkChangeReceiver entries alongside WarpTunnel, registration and autostart lines. An examiner chasing when the device was on which network, or when the tunnel restarted, should read those files; this artifact does not, and saying so is the point, because their being in cache makes them easy to overlook.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.cloudflare.onedotonedotonedotone/shared_prefs/com.cloudflare.onedotonedotonedotone_preferences.xml"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
         "filename": "cmh",
         "artifactKey": "get_cmh",
         "sourceTool": "ALEAPP",
@@ -3375,6 +3407,40 @@
         ],
         "creation_date": "2020-03-21",
         "last_update_date": "2020-03-21"
+    },
+    {
+        "filename": "fileManagerPlus",
+        "artifactKey": "filemanagerplus_thumbnails",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Cx File Explorer and File Manager+ Cached Thumbnails",
+        "description": "Thumbnail images these file managers rendered while browsing, recovered from their cache",
+        "category": "File Manager",
+        "notes": "One row per cached thumbnail under Android/data/<package>/cache/thumbnail336x336/ on shared storage. Cx File Explorer and File Manager+ are the same developer's apps and use an identical layout, so both are read here and the App column is taken from the package segment of the path, never from the file name. That matters: the two also ship an identically named database, so a glob keyed on a file name rather than the package would attribute one app's activity to the other. The thumbnail is a JPEG the app rendered while displaying a folder, so its presence is evidence the app displayed that item. **Whether it outlives the file it was made from is not guaranteed, and both outcomes were measured on the tested device.** A thumbnail whose source no longer exists anywhere on shared storage was found still cached and still rendering, which is the case that makes this cache worth reading. Against that, deleting a source image and then running the app removed exactly that file's thumbnail, taking the cache from five entries to four, so the app does prune. The difference appears to turn on whether the app has since revisited the folder, but that mechanism was not established here and is not claimed. What follows for an examiner is the useful part: a thumbnail present is evidence, while an absent thumbnail supports no conclusion either way, since it may never have been made or may have been pruned since. Kind is taken from the containing directory, which the app splits into dir_image, dir_video and dir_audio; on the tested image all rows were dir_image, and the video and audio directories existed and were empty, which is recorded rather than hidden. The cache file name is a set of hashes the app derives from the item, so it does not reverse to a path and no path is claimed here. The thumbnail's own content is what identifies it. File times are not reported: the framework restores only modification time when staging, so a cache file's timestamps describe the extraction rather than the browsing. The app's bookmarks table is not parsed here because every row on the tested image was a shipped default (DCIM, Movies and Music, all written at install time), and its last_visited preference held empty lists throughout, so neither carried user activity on this image.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Android/data/com.cxinventor.file.explorer/cache/thumbnail*/*/*",
+            "*/Android/data/com.alphainventor.filemanager/cache/thumbnail*/*/*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "fileManagerPlus",
+        "artifactKey": "filemanagerplus_scanned_folders",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Cx File Explorer and File Manager+ Scanned Folders",
+        "description": "Folders these file managers recorded scanning, with the time recorded against each",
+        "category": "File Manager",
+        "notes": "One row per record in Android/data/<package>/files/scanfile.full or scanfile.fast on shared storage. The file opens with a short header line, and each line after it is one record whose fields are separated by NUL bytes rather than by whitespace: a percent-encoded absolute path, a Unix millisecond time, two boolean flags, and and optionally a fifth field describing one file in that folder. The path is decoded here and the time is reported as UTC; the two flags are reported as stored because nothing says what they mean. Flag 2 read false on every one of the 170 records on the tested image while Flag 1 varied, so Flag 2 is a uniform column here rather than an empty one, and it is kept because a device whose scans differ would be the case worth seeing. That fifth field is KIND/COUNT/SIZE/MODIFIED/NAME, and the mapping is proven rather than assumed: files whose size was known appeared with their exact size, a 650 byte document and a 31,204 byte one, and the fourth member converts to that file's modification time. It is split into Content Kind, Item Count, File Name, File Size and File Modified; a name containing a slash is kept whole, and a field not matching the shape is passed through as the kind alone rather than being guessed at. This is the part worth an examiner's attention: the record names a file that was in that folder, with its size and modification time, so it can evidence a file that is no longer present. The format was read from the file itself, not from any published source, so a record that does not match that shape is skipped rather than guessed at, and the Records Skipped figure in the log says how many. What a row means is bounded: the app wrote the folder into its scan index with that time against it. It is not proof a person opened that folder, because the app indexes storage on its own. The two scan files differ, but barely: counted on the tested image, scanfile.fast held 42 records and scanfile.full 43, in both apps, so the fast sweep is not a small subset of the full one. Scan File column says which one a row came from. App is taken from the package segment of the path for the same reason as the thumbnail artifact.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Android/data/com.cxinventor.file.explorer/files/scanfile.*",
+            "*/Android/data/com.alphainventor.filemanager/files/scanfile.*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "dmss",
@@ -5361,6 +5427,24 @@
         "paths": "*/com.google.android.apps.nbu.files/databases/search_history_database*",
         "creation_date": "2021-01-18",
         "last_update_date": "2025-09-09"
+    },
+    {
+        "filename": "fing",
+        "artifactKey": "fing_app_state",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Fing App State and Last Network",
+        "description": "What the Fing app recorded about itself and the network it last scanned",
+        "category": "Fing",
+        "notes": "One row per value read from the app's own preference files and from files/network.last. This artifact is deliberately narrow, and the reason is worth stating plainly: **on the tested device Fing wrote no list of the devices it discovered**. A scan found four and displayed them, and nothing about those four exists anywhere in the container afterwards. No account was signed in, and whether signing in changes that was not tested, so the absence is reported for the anonymous case only. The app's databases directory holds only Firebase stores, and the two large files in its cache, AndroidDeviceDB and EthVendorDB, are vendor and device catalogues the app downloads, which are server data and are not reported here as anything the device did. What does survive is this: Last Scan is uiprefs last_scan_date and Discovery Count is its discovery_count, both written by the app itself. First Used, Last Used and App Version come from marketprefs. Privacy Agreed is that file's privacy.agreed key, which records when the policy was accepted on this device. All four times are Unix milliseconds and are reported as UTC. BSSID and Network Id come from files/network.last, a Java properties file the app writes for the network it last worked with; the BSSID identifies that wireless network, and Current Wifi is the flag stored beside it. The colons in the stored BSSID are backslash escaped by the properties writer and are unescaped here. Values are reported as stored, one per row, so nothing is inferred from them. A row dates app activity, not a person's presence on that network.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.overlook.android.fing/shared_prefs/uiprefs.xml",
+            "*/com.overlook.android.fing/shared_prefs/marketprefs.xml",
+            "*/com.overlook.android.fing/files/network.last"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "firefox",
@@ -8876,6 +8960,22 @@
         "last_update_date": "2026-08-01"
     },
     {
+        "filename": "kmplayer",
+        "artifactKey": "kmplayer_playback",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "KMPlayer Playback History",
+        "description": "Media KMPlayer opened, with the local URI or remote address of each and the time it was opened",
+        "category": "KMPlayer",
+        "notes": "One row per live entry of the Hive box com.kmplayer/databases/db/hive_url_meta_box.hive. KMPlayer is written in Flutter and keeps its state in Hive boxes rather than in SQLite. A Hive box is a flat log of frames and a later frame for the same key supersedes an earlier one, so only the surviving entries are reported; each frame carries its own CRC32 and the reader stops at the first frame that fails it. Hive stores a class as numbered fields and keeps the field names only in the app's compiled Dart, so the numbers were mapped against playback created deliberately on the tested device rather than read from any source. Two items were played: a local video opened by content URI and a video fetched from an http address, which is what lets the fields be told apart. Opened is field 10, Unix milliseconds, reported as UTC; both rows matched the wall clock of the play that produced them to the second. Address is field 3, which held the full content:// URI for the local play and the full http URL for the remote one, so on the remote row it records an address the device contacted. Title is field 1, which the app fills with the file name for a remote item and with the MediaStore id for a local one, so it is not always a human title. Source (as stored) is field 0; it read 0 on the local row and 1 on the remote row of the tested image, which is one observation of each and not enough to state what the field means, so it is reported as stored. A row records that the app opened the item, not that anyone watched it, and not how much was played. Other stores in the same app that are not parsed here: hive_media_flag_box holds a per-item playback flag block whose field meanings could not be established from two entries; hive_setting_box, hive_home_group_box and hive_quickbutton_box are app configuration and shipped menu layout; hive_mylist_box, hive_queue_list_box, hive_media_bookmark_box and hive_cloud_info_box were all zero bytes on the tested image and would carry user lists, queues and bookmarks on a device that used those features. The app also ships a VLC medialibrary SQLite at databases/db/database.dat; its Media, File and Folder tables were empty here because the in-app library was never scanned, and no existing module claims that path.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.kmplayer/databases/db/hive_url_meta_box.hive"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
         "filename": "knuddels",
         "artifactKey": "knuddels_account",
         "sourceTool": "ALEAPP",
@@ -10151,6 +10251,22 @@
         ],
         "creation_date": "2020-03-10",
         "last_update_date": "2026-09-02"
+    },
+    {
+        "filename": "moonReader",
+        "artifactKey": "moonreader_reading_sessions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Moon+ Reader Reading Sessions",
+        "description": "Books Moon+ Reader recorded time in, with the reading time, words read and progress it stored",
+        "category": "Moon+ Reader",
+        "notes": "One row per row of the statistics table in com.flyersoft.moonreader/databases/mrbooks.db. The app writes a row when it has recorded reading time against a file, and the row carries the file's full path, the accumulated reading time in milliseconds, the number of words it counted as read, and a per-day breakdown. Per-day Detail is the dates column reported as stored, because its encoding was read from one day's data and not from any source: on the tested image it held '20701|16323@1048 #19.64%', where 20701 is a count of days from the Unix epoch in the device's own local zone, 16323 and 1048 repeat that day's milliseconds and words, and 19.64% is how far through the file the reader had reached. The day number being local rather than UTC was measured: the reading was done at 03:04 UTC, which was 23:04 the previous evening in the device's America/New_York zone, and the app filed it under the previous day. Day (first entry) is therefore rendered as a plain date with no zone conversion, since converting a local day count as though it were UTC would move it. day's milliseconds and words, and 19.64% is how far through the file the reader had reached. A file read across several days carries several such groups, which was not exercised here, so the column is passed through rather than split. Reading Time (ms) and Words Read are the whole-file totals. There is no absolute timestamp in this table, so a row dates reading only to the day numbers inside Per-day Detail, and the Day (first entry) column is that first day number converted to a date for convenience. A row is evidence the app had the file open long enough to count time against it, not that a person read it. Other tables in the same database are not parsed here and were all empty on the tested image: books is the library shelf, and the tested book was read without being added to it, which is worth knowing because it means statistics records reading for a file that never appears in books; notes holds highlights and annotations; tmpbooks is a scratch list; covers2 holds cover images. Each would carry data on a device that used those features.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.flyersoft.moonreader/databases/mrbooks.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "moovit",
@@ -12022,6 +12138,22 @@
         ],
         "creation_date": "2021-10-12",
         "last_update_date": "2025-08-09"
+    },
+    {
+        "filename": "poweramp",
+        "artifactKey": "poweramp_library",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Poweramp Library and Play History",
+        "description": "Audio files Poweramp has indexed, with play counts, last played times and resume positions",
+        "category": "Poweramp",
+        "notes": "One row per row of folder_files in com.maxmpz.audioplayer/databases/folders.db, which is the player's own index of the audio in the folders it was pointed at. The file name is in folder_files and the directory is in the folders table, so Storage Path is the two joined; the module does not use folder_files.file_path, which was empty on every row of the tested image. The table carries two different time units and they were separated by measurement, not assumption: Last Played and Played Fully At are Unix milliseconds, while Date Indexed and File Created are Unix seconds, and on the tested image a millisecond value and a second value written moments apart both resolved to the same minute. All four are reported as UTC. Last Played, Play Count and Played Fully At mean different things, which was established by driving the app rather than inferred. Last Played is stamped when a track STARTS: two tracks skipped after a few seconds carry it and their Play Count stayed 0. Play Count, Total Play Count and Played Fully At move only when a track reaches its end: one track played to completion took Play Count from 0 to 1 and gained a Played Fully At stamp. So a row with Last Played set and Play Count 0 records a track that was started and not finished, and that distinction is the artifact's main value. Resume Position (ms) is the offset the app would resume from and is reset to 0 by a complete play, so a non-zero value marks a track left part way through. Artist, Album and Rating were empty or 0 on every row of the tested image because the audio it was built from carries no such tags and nothing was rated; the app reads them from the file and they populate on ordinary music. Year read 10000 on every row, which is the app's own placeholder for a file with no year tag rather than a date, and it is reported as stored. A row is evidence the app indexed the file, and a non-zero Play Count is evidence it played it to the end; neither is evidence a person was listening. Tables in the same database that are not parsed here: eq_presets (17,730 rows) and milk_presets (263) are visualisation and equaliser presets the app ships, reverb_presets and milk_preset_containers likewise; playlists, playlist_entries, queue, bookmarks, search_history, settings_search_history, cat_stats, known_devices and lrc_files were all empty on the tested image and hold user activity worth parsing on a device that has used those features; albums, artists, genres, composers and years are lookup rows the library builds from the same files this artifact already reports.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.maxmpz.audioplayer/databases/folders.db*"
+        ],
+        "creation_date": "2026-09-05",
+        "last_update_date": "2026-09-05"
     },
     {
         "filename": "primeVideo",
@@ -15202,6 +15334,39 @@
         ],
         "creation_date": "2026-09-02",
         "last_update_date": "2026-09-02"
+    },
+    {
+        "filename": "smsBackupRestore",
+        "artifactKey": "smsbackuprestore_backup_sets",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SMS Backup and Restore Backup Sets",
+        "description": "Backup files SMS Backup and Restore wrote, with the time of each and the number of items it recorded",
+        "category": "SMS Backup and Restore",
+        "notes": "One row per backup file the app wrote, read from the file's own <smses> or <calls> element. Backup Time is that element's backup_date attribute, Unix milliseconds, reported as UTC; on the tested image it matched the run to the second. Item Count is the count attribute the app wrote, and Items Parsed is how many child elements this module actually read, so the two disagreeing marks a truncated or partly written file rather than being hidden. Backup Set is the app's own UUID for the run and is what ties a backup file to its siblings. Backup Type is the type attribute, 'full' on the tested image. The app offers a cloud service or local storage, and only local files are visible in an extraction. On the tested device it was set to the app's own files directory, which is why the path is inside the app container, and that is the only location exercised here. Its dialog also offers a folder of the user's choosing; a backup written there would sit outside this glob and go unreported, which is a limit worth knowing rather than a claim about where such a device puts them. A backup file is a copy of the messages as they were at that moment, so it can hold messages that have since been deleted from the device, which is the reason the file is worth reading even when the live message store is also available.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.riteshsahu.SMSBackupRestore/files/sms-*.xml",
+            "*/com.riteshsahu.SMSBackupRestore/files/calls-*.xml"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "smsBackupRestore",
+        "artifactKey": "smsbackuprestore_messages",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "SMS Backup and Restore Messages",
+        "description": "Text messages recorded inside the backup files SMS Backup and Restore wrote",
+        "category": "SMS Backup and Restore",
+        "notes": "One row per <sms> element inside a backup file the app wrote. These are messages as they stood when the backup ran, so a row can describe a message that is no longer on the device. Timestamp is the element's date attribute, Unix milliseconds, reported as UTC. The file also carries the app's own readable_date, which is a local time string with no zone, and it is reported as stored beside the converted value so the two can be compared; on the tested image 1788675512995 and 'Sep 6, 2026 2:18:32 AM' are the same moment in the device's America/New_York zone. Direction is decoded from the type attribute, where 1 is a received message and 2 is a sent one, taken from the values present rather than from any published source, so anything else is reported as stored. Read is the app's read flag as stored. Contact Name is what the app resolved from the address book at backup time and read '(Unknown)' on all three rows of the tested image, where no contacts were saved. Whether it holds a name when the number is in contacts was not exercised. Only <sms> elements are read here. The app writes MMS and their attachments into the same file as <mms> elements with base64 parts, and call logs into a separate calls-*.xml; neither was present on the tested image, so neither is parsed and both are named here so the gap is visible rather than silent.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.riteshsahu.SMSBackupRestore/files/sms-*.xml"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "smsmms",
@@ -18718,10 +18883,10 @@
         "artifactKey": "get_Xender",
         "sourceTool": "ALEAPP",
         "Platform": "Android",
-        "name": "Xender - Contacts",
-        "description": "Parses the Xender profile rows recorded with connect_times = 0 (device ID and nickname) from the Xender trans-history database.",
+        "name": "Xender - Connected Devices",
+        "description": "Devices recorded in the Xender profile table, with how many times each connected and when it last did",
         "category": "File Transfer",
-        "notes": "The query returns only profile rows where connect_times = 0, so profiles with a recorded connection count are not listed here.",
+        "notes": "One row per row of the profile table in cn.xender/databases/trans-history-db. The table is the app's record of the remote devices it has connected to: device_id, the nickname that device advertised, its device type, how many times it has connected, and when it last did. **This artifact previously filtered on connect_times = 0 and could therefore never return a row.** The filter was removed. In the app's own code there is exactly one place that builds a profile row, saveRemoteDeviceInfo in cn/xender/core/provider/a.java, and it sets connect_times to 1 the first time a device is seen and to the previous value plus one afterwards, alongside last_connect_date from System.currentTimeMillis(). The column is declared INTEGER NOT NULL with no default and the data access object's only insert binds that value, so a row written by that path carries at least 1 and the old query matched nothing. That mapping was read from a **decompiled build** of version 18.8.0.prime, not from published source, and is cited as such; 332 of 14,054 classes did not decompile, so it is a thorough reading rather than an exhaustive one. Last Connected is last_connect_date, Unix milliseconds, reported as UTC. Connect Times is the count as stored. Device Type and Deleted are reported as stored because no source for their code lists was found. What a row supports is bounded: it records that the app holds a profile for that device, with the count and time the app itself wrote. It does not say what was transferred, which is the separate Messages artifact. No registered corpus carries Xender, so this could not be re-derived from case data. On an emulator with the app installed and opened, the profile table was present and empty, which also shows the device does not write its own profile there. A populated table needs a second device to connect to, which was not available, so the columns are code-present and unexercised against real rows.",
         "author": "@markmckinnon",
         "paths": [
             "*/cn.xender/databases/trans-history-db*"
@@ -18809,6 +18974,22 @@
         ],
         "creation_date": "2026-09-03",
         "last_update_date": "2026-09-04"
+    },
+    {
+        "filename": "xodo",
+        "artifactKey": "xodo_recent_documents",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Xodo PDF Recent Documents",
+        "description": "Documents Xodo recorded having open, with the page it was left on",
+        "category": "Xodo PDF",
+        "notes": "One row per entry of the prefs_pdfviewctrl_tab_manager value in com.xodo.pdf.reader/shared_prefs/com.xodo.pdf.reader_preferences.xml, which the app writes as a JSON object keyed by the document's full path. The app's four SQLite databases were all empty on the tested image, so the preferences file is where this lives. Last Viewed is the entry's tabLastViewedTimestamp and is stored as a local time string with no zone, so it is reported exactly as stored rather than converted; on the tested device 02:25:17.144 was 06:25 UTC, four hours ahead, and treating it as UTC would move the reading by that offset. Last Page is the page the document was left on and is the app's own value, which was 1 on the tested image for a one page document. Zoom and Page Presentation Mode are reported as stored. Document Path is the key of the entry, so it is the path as the app recorded it rather than a path resolved in the extraction; the file may no longer be present. A row is evidence the app had the document open, not that anyone read it. The app keeps no count of openings, which was measured rather than assumed: opening the same document a second time moved Last Viewed from 02:51:21.703 to 09:59:14.308 and added no field, the entry carrying fourteen members and none of them a counter. So a row dates the last view and says nothing about how many there were. The same preferences file also holds prefs_recent_files_N entries, one JSON object per recent file, and prefs_favorite_files_refs; those repeat the path this artifact already reports without adding a time, so they are not parsed. files/recently_used_cache/record.trn holds the same paths in a flattened form and is likewise not parsed.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.xodo.pdf.reader/shared_prefs/com.xodo.pdf.reader_preferences.xml"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "yahooMail",
@@ -19337,7 +19518,7 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "App Store - Searches",
-        "description": "Search terms submitted in the App Store, recovered from the cached search API requests",
+        "description": "Search terms the App Store app sent to its search API, recovered from the cached search and suggestion requests; a cached request does not establish that the term was submitted by the user",
         "category": "App Store",
         "notes": "In test data, cached suggestion requests appeared in per-keystroke progressions; whether a search term was submitted by the user is not established by a cache entry.",
         "author": "@AlexisBrignoni",
@@ -19492,26 +19673,10 @@
     },
     {
         "filename": "appleMapsTrips",
-        "artifactKey": "appleMapsSignificantLocations",
-        "sourceTool": "iLEAPP",
-        "Platform": "iOS",
-        "name": "Apple Maps Significant Locations (routined)",
-        "description": "Significant Location visits from the routined caches (ZRTLEARNEDLOCATIONOFINTERESTVISITMO in Local.sqlite and Cloud-V2.sqlite), with entry and exit times, coordinates and uncertainty; the Google Maps link is built from the coordinates and does not exist in the evidence.",
-        "category": "Locations",
-        "author": "ogmini",
-        "paths": [
-            "*/Library/Caches/com.apple.routined/Local.sqlite*",
-            "*/Library/Caches/com.apple.routined/Cloud-V2.sqlite*"
-        ],
-        "creation_date": "2026-03-04",
-        "last_update_date": "2026-08-21"
-    },
-    {
-        "filename": "appleMapsTrips",
         "artifactKey": "appleMapsSignificantLocationsVisits",
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
-        "name": "Apple Maps Significant Locations Visits (routined)",
+        "name": "Apple Maps Significant Locations (routined)",
         "description": "Significant Location places from the routined caches (ZRTLEARNEDLOCATIONOFINTERESTMO with its learned place, map item and address rows), with name, category, address fields and coordinates; the Google Maps link is built from the coordinates and does not exist in the evidence.",
         "category": "Locations",
         "author": "ogmini",
@@ -19520,7 +19685,23 @@
             "*/Library/Caches/com.apple.routined/Cloud-V2.sqlite*"
         ],
         "creation_date": "2026-03-04",
-        "last_update_date": "2026-08-21"
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "appleMapsTrips",
+        "artifactKey": "appleMapsSignificantLocations",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Apple Maps Significant Locations Visits (routined)",
+        "description": "Significant Location visits from the routined caches (ZRTLEARNEDLOCATIONOFINTERESTVISITMO in Local.sqlite and Cloud-V2.sqlite), with entry and exit times, coordinates and uncertainty; the Google Maps link is built from the coordinates and does not exist in the evidence.",
+        "category": "Locations",
+        "author": "ogmini",
+        "paths": [
+            "*/Library/Caches/com.apple.routined/Local.sqlite*",
+            "*/Library/Caches/com.apple.routined/Cloud-V2.sqlite*"
+        ],
+        "creation_date": "2026-03-04",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "appleMapsTrips",
@@ -19617,7 +19798,7 @@
         "name": "Apple Wallet Cards",
         "description": "Card number, expiry and card type strings pattern-matched from cached Passbook API responses in the Wallet app's Cache.db, with the cache entry time; heuristic matches that need verification.",
         "category": "Apple Wallet",
-        "notes": "Card values are pattern-matched from cached API responses and the type heuristic uses only the first digit; values require verification. Cache timestamps reflect response caching, not card enrollment. In tested images only iOS 13.3.1 yields a card row: the Passbook Cache.db is present but yields no card entries on the 13 other recorded corpus images (iOS 12-18) and on all 21 extractions in Mattia Epifani's 2026-08 comparison across 21 extractions (iOS 16.1.1-26.5.2). Wallet passes on current images are parsed by the Apple Wallet - Nano Passes and Apple Wallet Transactions artifacts.",
+        "notes": "Card values are pattern-matched from cached API responses and the type heuristic uses only the first digit; values require verification. Cache timestamps reflect response caching, not card enrollment. In tested images only iOS 13.3.1 yields a card row: the Passbook Cache.db is present but yields no card entries on the 20 other tested images that carry it (iOS 12-26) and on all 21 extractions in Mattia Epifani's 2026-08 comparison across 21 extractions (iOS 16.1.1-26.5.2). Wallet passes on current images are parsed by the Apple Wallet - Nano Passes and Apple Wallet Transactions artifacts.",
         "author": "@any333",
         "paths": "*/mobile/Containers/Data/Application/*/Library/Caches/com.apple.Passbook/Cache.db*",
         "creation_date": "2021-02-05",
@@ -20701,7 +20882,7 @@
         "name": "Biome - Battery Temperature",
         "description": "Parses battery temperature samples from the Device.Thermals.BatteryTemperature biome stream.",
         "category": "Biome",
-        "notes": "The raw value is temperature in hundredths of a degree Celsius (observed range 1900-3700, i.e. 19.00-37.00 C); both the converted and raw values are reported. Field 2 is reported raw as its meaning is not confirmed.",
+        "notes": "The raw value is temperature in hundredths of a degree Celsius (observed range 600-4300 across the four tested images, i.e. 6.00-43.00 C); both the converted and raw values are reported. Field 2 is reported raw as its meaning is not confirmed.",
         "author": "@abrignoni, @mattiaepi (Mattia Epifani)",
         "paths": [
             "*/streams/*/Device.Thermals.BatteryTemperature/local/*"
@@ -20981,7 +21162,7 @@
         "name": "Biome - Emoji Engagement",
         "description": "Parses emoji usage from the Emoji.Engagement biome stream. Each record holds the emoji the user engaged with, along with the Unicode code points so that skin tone modifiers, variation selectors and zero width joiner sequences stay visible in the report.",
         "category": "Biome",
-        "notes": "The context field decodes to a four character ASCII string that resembles a trailing locale fragment (values seen: n_US and n-US, consistent with en_US and en-US); it is reported both raw and decoded because that reading is not confirmed. Field 2 was 1 on every record observed and field 4 varied from 1 to 4; both are reported raw.",
+        "notes": "The context field decodes to a four character ASCII string that resembles a trailing locale fragment (values seen: n_US and n-US, consistent with en_US and en-US); it is reported both raw and decoded because that reading is not confirmed. Field 2 was 1 on every written record of the tested images and field 4 varied from 1 to 4; records in the deleted SEGB state carry neither, and both are reported raw.",
         "author": "@abrignoni",
         "paths": [
             "*/streams/*/Emoji.Engagement/local/*"
@@ -21091,7 +21272,7 @@
         "name": "Biome - Interface Orientation",
         "description": "Parses interface orientation changes from the Device.Display.InterfaceOrientation biome stream.",
         "category": "Biome",
-        "notes": "Value follows the UIInterfaceOrientation enumeration (UIKit, defined in UIApplication.h); the raw value is reported alongside the label. Read the landscape labels carefully: Apple crosses the two landscape cases against UIDeviceOrientation, so under UIInterfaceOrientation 3 is Landscape Right and 4 is Landscape Left, the opposite of the values in the _DKEvent.Display.Orientation stream parsed by Biome - Display Orientation DKEvent. Header text: UIInterfaceOrientationLandscapeLeft = UIDeviceOrientationLandscapeRight and UIInterfaceOrientationLandscapeRight = UIDeviceOrientationLandscapeLeft. Only values 0, 1 and 2 have been observed in sample data so far, and those three are identical in both enumerations, so the choice of enumeration is not yet confirmed by data: the stream name says interface orientation while the System Events plist describes it as capturing device orientation. A value of 5 or 6 appearing here would indicate the device enumeration instead, since UIInterfaceOrientation has no Face Up or Face Down case. Enumeration source: Apple UIKit headers UIApplication.h and UIDevice.h, mirrored at https://github.com/silent0123/OSXDev/blob/c943c2158bcd3a6caa3023e396e653cbe3832ae1/uSav-Mac/usavMac/UIKit.framework/Headers/UIApplication.h Stream reference: Mattia Epifani, '84 Streams Later, Part 2: Inside Apple Biome', https://blog.digital-forensics.it/2026/07/84-streams-later-part-2-inside-apple.html",
+        "notes": "Value follows the UIInterfaceOrientation enumeration (UIKit, defined in UIApplication.h); the raw value is reported alongside the label. Read the landscape labels carefully: Apple crosses the two landscape cases against UIDeviceOrientation, so under UIInterfaceOrientation 3 is Landscape Right and 4 is Landscape Left, the opposite of the values in the _DKEvent.Display.Orientation stream parsed by Biome - Display Orientation DKEvent. Header text: UIInterfaceOrientationLandscapeLeft = UIDeviceOrientationLandscapeRight and UIInterfaceOrientationLandscapeRight = UIDeviceOrientationLandscapeLeft. Only values 0, 1 and 2 have been observed on the written records of the tested images (records in the deleted SEGB state carry no value), and those three are identical in both enumerations, so the choice of enumeration is not yet confirmed by data: the stream name says interface orientation while the System Events plist describes it as capturing device orientation. A value of 5 or 6 appearing here would indicate the device enumeration instead, since UIInterfaceOrientation has no Face Up or Face Down case. Enumeration source: Apple UIKit headers UIApplication.h and UIDevice.h, mirrored at https://github.com/silent0123/OSXDev/blob/c943c2158bcd3a6caa3023e396e653cbe3832ae1/uSav-Mac/usavMac/UIKit.framework/Headers/UIApplication.h Stream reference: Mattia Epifani, '84 Streams Later, Part 2: Inside Apple Biome', https://blog.digital-forensics.it/2026/07/84-streams-later-part-2-inside-apple.html",
         "author": "@abrignoni, @mattiaepi (Mattia Epifani)",
         "paths": [
             "*/streams/*/Device.Display.InterfaceOrientation/local/*"
@@ -21333,7 +21514,7 @@
         "name": "Biome - Power Plugged In",
         "description": "Parses charger connect and disconnect events from the Device.Power.PluggedIn biome stream.",
         "category": "Biome",
-        "notes": "Field 3 is populated only while plugged in and is reported raw as its meaning is not confirmed. A record is written whenever the device is charging, which includes wireless charging as well as a physical cable connection (observation by Ian Whiffin). Modern counterpart of the _DKEvent.Device.IsPluggedIn stream parsed by Biome - Device Plugged In. Reference: Mattia Epifani, '84 Streams Later, Part 2: Inside Apple Biome', https://blog.digital-forensics.it/2026/07/84-streams-later-part-2-inside-apple.html",
+        "notes": "Field 3 is populated on every record that carries a power state, plugged in or not, and absent on the records that carry none; it is reported raw as its meaning is not confirmed. A record is written whenever the device is charging, which includes wireless charging as well as a physical cable connection (observation by Ian Whiffin). Modern counterpart of the _DKEvent.Device.IsPluggedIn stream parsed by Biome - Device Plugged In. Reference: Mattia Epifani, '84 Streams Later, Part 2: Inside Apple Biome', https://blog.digital-forensics.it/2026/07/84-streams-later-part-2-inside-apple.html",
         "author": "@abrignoni, @mattiaepi (Mattia Epifani)",
         "paths": [
             "*/streams/*/Device.Power.PluggedIn/local/*"
@@ -22709,7 +22890,7 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Cash App",
-        "description": "Parses Cash App customer and payment records from the CCEntitySync SQLite stores, decoding the ZSYNCCUSTOMER and ZSYNCPAYMENT protobuf blobs and the JSON payloads they carry.",
+        "description": "Parses Cash App payment records joined to their customer records from the CCEntitySync SQLite stores, decoding the ZSYNCPAYMENT and ZSYNCCUSTOMER protobuf blobs and the JSON payloads they carry; a customer with no payment is not reported.",
         "category": "Banking",
         "notes": "Merged from the original Cash App and Cash App (B) artifacts, which cashAppB.py provided until this change removed it. Rows come from ZPAYMENT joined to ZCUSTOMER on the customer token, so a customer record carrying no payment is not reported: the two tested stores held 65 and 21 customer records behind one payment each. Amounts are stored in the smallest denomination unit of the currency (e.g. 100 = $1.00 USD); both the stored value and a formatted value are reported. In the customer blob, protobuf field 3 held the display name, field 5 the avatar URL and field 8 the cashtag; field 8 was checked against one customer record whose own JSON payload carries the same cashtag string. Account Owner Role and Transaction State are read from the payment JSON payload, and the raw scan is used only where that payload is absent, which neither tested image exercised. On both tested images the single payment is a referral bonus still pending, and its payload carries no state key, no instrument object and no capture, payout or deposit timestamp, so Transaction State, Card Brand, Suffix, Instrument Display Name, Display Instrument, Instrument Type, Transaction ID, Receipt, Captured At, Reached Customer At, Paid Out At and Deposited At were empty on both reported rows; Cashtag was empty because the joined customer record on both images carries no cashtag field. Those columns are code-present and unexercised here, and a sample holding a settled card payment would close that gap. Customer Token and ID, and Name and Full Name, are read from separate sources (a table column and a protobuf field against the JSON payload) and agreed on each tested row. Customer Bitcoin Display Units is the customer's own bitcoin unit preference and not the unit of the payment amount. Reference: Square Developer Documentation, 'Working with Monetary Amounts', https://developer.squareup.com/docs/build-basics/working-with-monetary-amounts",
         "author": "@gforce4n6, @AlexisBrignoni, @charpy4n6, Claude",
@@ -23087,6 +23268,103 @@
         ],
         "creation_date": "2026-08-20",
         "last_update_date": "2026-08-20"
+    },
+    {
+        "filename": "coinbaseWallet",
+        "artifactKey": "coinbase_wallet_account",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase Wallet - Account",
+        "description": "The self-custody account the Coinbase Wallet app holds, with the time it was created and its primary address.",
+        "category": "Coinbase Wallet",
+        "notes": "One row per row of the account table in Documents/default/wallet-rn-v2.sqlite, joined to the wallet_group row that names the same account. This is the Coinbase Wallet app, bundle id org.toshi.distribution, which is a separate app from the Coinbase exchange app that coinbase.py reads; the two keep different stores and neither artifact reads the other's. Created is the moment the account was set up on the device. Account Type is reported as stored and held the value mnemonic on both tested images, which is the app's own word and is not read here as a statement about how any key was generated. The stored timestamps carry no zone marker and are read as UTC on the evidence of the app's own writing: the MMKV store beside this database holds a migration timestamp written with an explicit Z marker, and on the two tested images it sits 11 and 108 seconds before the account row, on the same date and hour, which a local-zone reading would place hours apart. Device ID and Active Wallet Group are read from that same MMKV store, Documents/mmkv/CBStore.plaintext. That store also holds a session access token and an authentication state blob; neither is reported here, and an examiner who needs them can read the file this artifact names. Account Nickname, Wallet Group Nickname and Hardware Derivation Path held no value on either tested image: the first two are names a person can set and had not been set, and the third is filled only where a hardware wallet is paired. MPC Conversion State, Deleted and Completed Backup Flow are columns the older of the two stores does not declare at all, so they are read as NULL there and carry values only on the newer one.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/default/wallet-rn-v2.sqlite*",
+            "*/mobile/Containers/Data/Application/*/Documents/mmkv/CBStore.plaintext"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "coinbaseWallet",
+        "artifactKey": "coinbase_wallet_addresses",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase Wallet - Addresses",
+        "description": "The blockchain addresses Coinbase Wallet derived for the account, with the derivation path and use flag of each.",
+        "category": "Coinbase Wallet",
+        "notes": "One row per row of the address table. These are addresses the app derived from the account rather than addresses it observed in use, and the counts show it: the derivation index ran from 0 to 19 on both tested images and the paths follow the BIP-44 shape, so the app derives a fixed run of addresses per chain and address type in advance. The presence of an address is therefore not evidence that it was ever used or funded. Balance is a string in the asset's own base unit and is mostly zero: a value other than zero appeared on one row of one tested image and on none of the other. Is Used is the app's own flag, reported as stored, and was true on 203 of 491 rows on one image and 200 of 406 on the other. Contract Address held no value on any row of either image, since every derived address there belongs to a chain's native asset rather than to a token. rows do establish is which addresses this device's account can control, which an examiner can search against a public blockchain. Is Change Address, Address Type, Blockchain, Currency Code and Network are reported as stored; the type values name address formats such as BitcoinSegWit and BitcoinLegacy and are the app's own labels. The same address can appear more than once where the app derived it under more than one asset, so the row count is higher than the count of distinct addresses: 491 rows against 270 distinct on one image and 406 against 226 on the other. Account ID held one value on every row of both tested images, which is what a device holding a single account looks like; it is kept because the column is what ties a row to the account the Account artifact reports.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/default/wallet-rn-v2.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "coinbaseWallet",
+        "artifactKey": "coinbase_wallet_assets",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase Wallet - Assets",
+        "description": "The per asset wallet rows Coinbase Wallet holds, with the balance recorded against each.",
+        "category": "Coinbase Wallet",
+        "notes": "One row per row of the wallet table, which the app keeps per asset rather than per holding: 207 and 203 rows on the two tested images against 26 and 23 distinct primary addresses. Balance held a value other than zero on exactly one row of each image, so this table describes what the app is configured to track rather than what the account holds, and a row is not evidence that the asset was ever held. Balance, Decimals and Minimum Balance are reported as stored, because the store carries the amounts as strings in each asset's own base unit and no unit conversion is applied here. Contract Address is set for tokens and blank for a chain's native asset. A separate table, curated_asset_setting, held 9,979 rows on one image and none on the other; it is the app's downloaded catalogue of assets it can display and is not reported. Minimum Balance, Asset UUID, Is Spam and Is Whitelist held no value on either tested image, and the last two are columns the older store does not declare. Last Balance Update Transaction Hash was set on one row of the newer image and on none of the older one. Image URL is the address of the asset icon the app shows and is set on every row; it is reported as stored and is not fetched. Account ID held one value on every row of both tested images, for the same reason.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/default/wallet-rn-v2.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "coinbaseWallet",
+        "artifactKey": "coinbase_wallet_xpubs",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase Wallet - Extended Public Keys",
+        "description": "The extended public keys Coinbase Wallet stored for the account, one per chain and address type.",
+        "category": "Coinbase Wallet",
+        "notes": "One row per BIP44XpubKey entry in the app's MMKV store at Documents/mmkv/CBStore.plaintext, read with the reader vendored at scripts/mmkv_parser.py. An extended public key lets every address below it be derived, so these rows reach further than the Addresses artifact, which lists only the run of addresses the app had already derived. It is a public key: it does not permit spending, and nothing here recovers or reports key material that would. The store held 11 of these on one tested image and 8 on the other. The MMKV key itself carries the currency, the address type and the account's primary address, and those are split into their own columns; the primary address in the key is upper cased by the app and is reported as stored rather than normalised, so it may differ in case from the same address elsewhere in this module. Account Primary Address held one value on each tested image, which is what a device with a single account looks like.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/mmkv/CBStore.plaintext"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "coinbaseWallet",
+        "artifactKey": "coinbase_wallet_signed_transactions",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase Wallet - Signed Transactions",
+        "description": "Signed transactions Coinbase Wallet held for broadcast, from its per chain tables.",
+        "category": "Coinbase Wallet",
+        "notes": "One row per row of ethereum_signed_tx, solana_signed_tx, utxo_signed_tx, xlm_signed_tx and xrp_signed_tx, told apart by the Source Table column. The five tables hold a transaction the app signed and was holding to broadcast, so a row would record an outgoing transfer the device prepared, which the Transactions artifact does not cover until the transfer appears in the history. All five were empty on both tested images, so this reader is code present and was not exercised, and the columns it reports are the ones the tables declare rather than ones observed carrying values. The columns each table does not declare are read as NULL, because the five schemas differ: only the Ethereum table carries a nonce and a wei value, only Solana carries a recent block hash, and the UTXO table names neither party.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/default/wallet-rn-v2.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "coinbaseWallet",
+        "artifactKey": "coinbase_wallet_transactions",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Coinbase Wallet - Transactions",
+        "description": "Transactions Coinbase Wallet recorded, with the addresses, amount and transaction hash of each.",
+        "category": "Coinbase Wallet",
+        "notes": "One row per row of tx_history_v2 and of the older tx_history table, told apart by the Source Table column; tx_history is present only on the older of the two tested stores and held no rows there. Transaction Hash is the value an examiner can look up on a public blockchain, which makes this the one part of the store that can be corroborated outside the device. From Address and To Address are the parties the row records, and the From Domain and To Domain columns carry the app's resolved name for either where it has one. Direction is read from the isSent flag the row stores. Amount, Fee and the gas columns are reported as stored, in each asset's own base unit, with no conversion applied. State and Type are reported as stored; both tested rows held state 3 and type RECEIVE. Transfers holds the row's own JSON list of the transfers inside the transaction, which is where a single transaction that moved more than one asset records each leg. One transaction was recorded on each tested image, so this artifact is proven on a single row per store rather than on a busy account. Contract Address, Gas Limit, Max Fee Per Gas, Max Priority Fee Per Gas, Base Fee Per Gas, Submission Type, From Domain and To Domain each held no value on the single row of either image. That is one observation per store rather than a property of the table: the one transaction on each is a receive, and no sent transaction was present to fill the fields a sender sets.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/default/wallet-rn-v2.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "ConnectedDeviceInformation",
@@ -24163,7 +24441,7 @@
             "*/Documents/fitbit.sqlite*"
         ],
         "creation_date": "2026-08-20",
-        "last_update_date": "2026-08-20"
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "fitbitIOS",
@@ -24173,13 +24451,13 @@
         "name": "Fitbit - Exercise Locations",
         "description": "Parses the GPS points the Fitbit iOS app recorded during exercise, with the coordinates, altitude, speed and accuracy of each.",
         "category": "Fitbit",
-        "notes": "One row per recorded point. These points belong to exercise sessions the app logged, not to continuous background tracking, and each is joined to its session through the location group the record names, so a point carries the name and start time of the exercise it came from. The timestamp is stored as an eight byte value holding a big endian double of seconds since the 2001 Apple epoch, which is unusual enough to be worth stating: it is not a plain numeric column. That reading is corroborated independently, because the heart rate table in the same database stores its own times as ISO text written by a different code path and its dates coincide with the span these points cover. All 9,419 points on the tested device decoded to one five day window. Interpolated marks a point the app flagged as filled in rather than measured, and is reported as stored so a derived position is not read as an observed one. Horizontal and vertical accuracy are the values the record carries. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it. Every copy of the database in the extraction is read rather than the first one found, so a device holding more than one app data container reports all of them.",
+        "notes": "One row per recorded point. These points belong to exercise sessions the app logged, not to continuous background tracking, and each is joined to its session through the location group the record names, so a point carries the name and start time of the exercise it came from. The timestamp is stored as an eight byte value holding a big endian double of seconds since the 2001 Apple epoch, which is unusual enough to be worth stating: it is not a plain numeric column. That reading is corroborated independently, because the heart rate table in the same database stores its own times as ISO text written by a different code path and its dates coincide with the span these points cover. All 9,419 points on the iOS 17.3 image (iphone11_ios17) decoded to one five day window. Interpolated marks a point the app flagged as filled in rather than measured, and is reported as stored so a derived position is not read as an observed one. Horizontal and vertical accuracy are the values the record carries. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it. Every copy of the database in the extraction is read rather than the first one found, so a device holding more than one app data container reports all of them.",
         "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
         "paths": [
             "*/Documents/fitbit.sqlite*"
         ],
         "creation_date": "2026-08-20",
-        "last_update_date": "2026-08-20"
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "fitbitIOS",
@@ -24189,13 +24467,13 @@
         "name": "Fitbit - Exercise Sessions",
         "description": "Parses the exercise sessions the Fitbit iOS app logged, with the start time, duration, distance and the tracker that recorded them.",
         "category": "Fitbit",
-        "notes": "One row per logged session. Start Time uses the same eight byte big endian double of seconds since the 2001 Apple epoch as the location points. Duration values are seconds. Has GPS is the flag the record carries and tells an examiner whether to expect points in the locations artifact for that session. Source Name and Source Type name the tracker that produced the session rather than the phone. Distance and speed are reported as stored, because the record separately carries a unit system code and nothing in the extraction maps that code to a unit, so the figures are not converted or labelled with a unit here. A stored date far outside any plausible range is treated as the app's own absent marker and left empty rather than rendered as a first century date. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "notes": "One row per logged session. Start Time uses the same eight byte big endian double of seconds since the 2001 Apple epoch as the location points. Duration values are seconds. Has GPS is the flag the record carries and tells an examiner whether to expect points in the locations artifact for that session. Source Name and Source Type name the tracker that produced the session rather than the phone. Distance and speed are reported as stored, because the record separately carries a unit system code and nothing in the extraction maps that code to a unit, so the figures are not converted or labelled with a unit here. A stored date far outside any plausible range is treated as the app's own absent marker and left empty rather than rendered as a first century date. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it. Source Name is a column older stores lack: the iOS 13.3.1, 14.3 and 15.3.1 images carry Source Type and Source ID but no ZSOURCENAME, so the column is blank there and the query reads it as NULL rather than failing. On the iOS 17.3 image 12 of 27 sessions have no Source Name stored either.",
         "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
         "paths": [
             "*/Documents/fitbit.sqlite*"
         ],
         "creation_date": "2026-08-20",
-        "last_update_date": "2026-08-20"
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "fitbitIOS",
@@ -24205,13 +24483,13 @@
         "name": "Fitbit - Heart Rate",
         "description": "Parses the heart rate samples the Fitbit iOS app stored, with the time and value of each.",
         "category": "Fitbit",
-        "notes": "One row per sample. Unlike the location and session times in the same database, these are stored as ISO text and are reported as the time they state; the text carries no zone, so no conversion is applied. Resolution is the value the record carries and is reported as stored. A sample places the tracker on a wearer at that moment rather than placing the phone, and the two are not the same device. On the tested device the samples were dense, 56,282 of them, so the artifact is large by nature. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it.",
+        "notes": "One row per sample. Unlike the location and session times in the same database, these are stored as ISO text and are reported as the time they state; the text carries no zone, so no conversion is applied. Resolution is the value the record carries and is reported as stored. A sample places the tracker on a wearer at that moment rather than placing the phone, and the two are not the same device. On the iOS 17.3 image (iphone11_ios17) the samples were dense, 56,282 of them, so the artifact is large by nature. Field mapping was done against a private sample provided by Mattia; no sample data is recorded for it. Older stores have no ZMANAGEDHEARTRATE table: the iOS 13.3.1 and 14.3 images keep per day heart rate rows in ZFBHEARTRATESTAT and the 15.3.1 image in ZHEARTRATESTAT, with intraday points archived in keyed archive blobs, and this artifact reads none of those, so it reports no rows on such stores and logs the skip.",
         "author": "@AlexisBrignoni, @mattiaepi (Mattia Epifani), Claude",
         "paths": [
             "*/Documents/fitbit.sqlite*"
         ],
         "creation_date": "2026-08-20",
-        "last_update_date": "2026-08-20"
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "FitnessWorkoutsLocationData",
@@ -24244,6 +24522,108 @@
         ],
         "creation_date": "2023-05-22",
         "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "foursquarePilgrim",
+        "artifactKey": "foursquare_pilgrim_trail",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Foursquare Pilgrim - Location Trail",
+        "description": "Rows of the Foursquare Pilgrim SDK location trail table, unpopulated on the two tested images.",
+        "category": "Locations",
+        "notes": "One row per row of PilgrimLocationTrail, whose columns the store itself declares as latitude, longitude, altitude, horizontal accuracy, timestamp, speed, heading, a used flag and two authorisation strings. Timestamp there is a number rather than the text used elsewhere in the same database and is read as Unix seconds, which is the form the visit rows use. This table was empty in all three tested stores, so the reader is code present and unexercised and the timestamp reading is taken from the sibling tables rather than observed here. The database contains a job named TrailPruningJob, so a store is expected to hold only a recent window of trail rows, and an empty table is not evidence that the device did not move.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/pilgrim-database.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "foursquarePilgrim",
+        "artifactKey": "foursquare_pilgrim_visits",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Foursquare Pilgrim - Location Visits",
+        "description": "Visits the Foursquare Pilgrim SDK recorded in the background, with the arrival and departure fix of each.",
+        "category": "Locations",
+        "notes": "One row per row of PilgrimLocationVisit in Library/pilgrim-database.sqlite. Arrival and Departure are stored as JSON holding a single location fix each: latitude, longitude, altitude, speed, heading, floor, horizontal and vertical accuracy, and a Unix timestamp in seconds, which is the form CoreLocation reports. The reported coordinates are the arrival fix, and the departure fix is carried in its own columns, so a row that moved between the two is visible. Dwell is the difference between the two timestamps and is computed here, not stored. Every one of the 755 rows across the three tested stores carried both an arrival and a departure and no departure preceded its arrival. Stop Detection Algorithm is reported as stored; the tested stores hold clientEma and clientEmaMallMode and nothing available defines either. These rows are collected in the background by the SDK rather than entered by a person, so a row is not a check-in and does not establish that anyone used the app at that moment. Arrival Floor (as stored) held no value on any row of either tested image: it is the floor a fix carries only where the operating system resolved one indoors, and it is kept because a store from a device that spent time in a mapped building can hold it. Pilgrim is a licensable SDK, so Container App names the app whose data container held the store, read from that container's own metadata plist, and no row is attributed to Foursquare by assumption. On the iOS 17.5.1 image two containers each held a store and their visit sets overlap without matching: 60 of the rows agree on arrival time, coordinates and departure time while 107 appear only in one and 104 only in the other, so the stores are reported separately and are not merged. The store is pruned by the SDK's own PruneLocationVisitsJob, so the window a store covers is bounded by that job rather than by the acquisition.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/pilgrim-database.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "foursquarePilgrim",
+        "artifactKey": "foursquare_pilgrim_movement",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Foursquare Pilgrim - Movement Log",
+        "description": "Location fixes the Foursquare Pilgrim SDK wrote to its own debug log, with the movement state on the rows that carry one.",
+        "category": "Locations",
+        "notes": "One row per row of PilgrimDebugLog whose data field carries a coordinate pair. The SDK writes that field as a Swift description rather than as JSON, so the coordinates, accuracy, speed, course, movement state and the app's own rendering of the local time are read out of it by pattern and any part that does not match is left blank. Rows without a coordinate are not reported, which excludes the SDK's request and response logging; those rows carry request headers including an API key, and nothing in them is reported here. Timestamp is the row's own timestamp column, stored as text with no zone marker. It is UTC on one of the tested images, measured rather than assumed: 359 rows there also carry the app's rendering of the same moment in a named local zone, and converting that rendering to UTC agreed with the column to within a minute on 357 of them, the difference being the lag between the fix and the write. The two that did not are rows whose own event text records an old fix being logged, one of them stating that a very old location was ignored, so the gap there is the age of the fix rather than a zone difference. The other two stores carry no such rendering, so the same reading is applied to them without that corroboration. Local Time and Local Time Zone are the app's own text where it is present, reported as stored. Speed State is reported as stored; the tested stores hold stopped, moving, honing and unknown, and nothing available defines them. Speed State (as stored) and Current Speed (as stored) are blank on the rows that record a monitored region rather than a fix, since those rows carry no movement state. Type (as stored) held the single value 2 on every reported row of both tested images, so only one of the log's types carries a coordinate, which is why this artifact reports far fewer rows than the table holds; Level (as stored) varies. Container App held one value on the iOS 16.5 image, where a single app embedded the SDK, and two on the iOS 17.5.1 image. Purged by the SDK's own PurgeOldLogsJob, so the window is bounded by that job.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/pilgrim-database.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "foursquarePilgrim",
+        "artifactKey": "foursquare_pilgrim_regions",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Foursquare Pilgrim - Regions",
+        "description": "Regions the Foursquare Pilgrim SDK held for the device, from its region table and its monitored stop region.",
+        "category": "Locations",
+        "notes": "One row per row of PilgrimRegion and of PilgrimStopRegion, told apart by the Source Table column. PilgrimRegion rows carry a centre coordinate and a probability; PilgrimStopRegion rows carry a centre, a radius and an identifier and there was one in each tested store. Probability, Type and Secondary Type are reported as stored: the tested rows hold type 1 with secondary type 0 or 2, and nothing available defines either number, so no meaning is given to them here. The SDK runs a job named HomeWorkJob in the same database, which is recorded here only as an observation about the store and is not evidence that any particular row is a home or a work location.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/pilgrim-database.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "foursquarePilgrim",
+        "artifactKey": "foursquare_pilgrim_resolved_visits",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Foursquare Pilgrim - Resolved Visits",
+        "description": "Visits the Foursquare Pilgrim SDK resolved to a named place or to a location type, with the venue record where one was attached.",
+        "category": "Locations",
+        "notes": "One row per row of PilgrimLastVisit and PilgrimBackFillVisit, which share a schema and are told apart by the Source Table column. Departure Time was blank on every row of both tested images, which is what a visit the device had not yet left looks like: the embedded visit carries an arrival and a null departure. Venue Name, Venue ID, Venue Categories and Venue Address were each blank on the iOS 16.5 image, whose row resolved to a location type with no venue attached, and carry values on the iOS 17.5.1 image. Region Latitude and Region Longitude were each blank on the iOS 17.5.1 image, whose rows recorded no region. PilgrimLastVisit held exactly one row in each tested store and PilgrimBackFillVisit was empty in all three, so the backfill half is code present and was not exercised. The venue field is JSON and carries the place's name, identifier, category names and a nested address with its own coordinates; where it is absent the row still records a location type. Location Type and Confidence are reported as stored; the tested rows hold home and venue, and high and med, and nothing available defines the full set. The row also embeds a copy of the visit in the same form the Location Visits artifact reads, so Arrival and Departure here come from that copy. On the one store whose row recorded region coordinates, those coordinates equalled one of the rows in PilgrimRegion, and that row carried the highest probability of the four; that is a single observation and no mapping between the two tables is asserted from it.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/pilgrim-database.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "foursquarePilgrim",
+        "artifactKey": "foursquare_pilgrim_system_visits",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Foursquare Pilgrim - System Visits",
+        "description": "Rows of the Foursquare Pilgrim SDK system visit table, unpopulated on the two tested images.",
+        "category": "Locations",
+        "notes": "One row per row of PilgrimCLVisit, whose columns the store declares as an arrival date, a departure date, a latitude, a longitude, a horizontal accuracy and a visit identifier. The table name and those columns follow the visit object the operating system's own location framework hands an app, which is a different source from the SDK's own stop detection in the Location Visits artifact, so the two can disagree and neither confirms the other. This table was empty in all three tested stores, so the reader is code present and unexercised, and its dates are read as the same text form the sibling tables in this database use rather than from observation here.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/pilgrim-database.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "foursquareSwarm",
@@ -24763,6 +25143,88 @@
         "last_update_date": "2026-08-21"
     },
     {
+        "filename": "gettr",
+        "artifactKey": "gettr_ios_app_state",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GETTR - App State",
+        "description": "Key and value rows from the app's two key value stores, which hold the signed in account record and the device identifier.",
+        "category": "GETTR",
+        "notes": "One row per row of the kv table in Documents/g.db and in Documents/private_<account name>.db, told apart by the Store column. The second file's name carries the account it belongs to and that name is reported in the Account column; g.db is not per account and its Account column is blank. Values are reported as stored, because the store mixes plain strings, JSON documents and cached page content under one column and nothing separates them but the key. The keys worth an examiner's attention on the tested image were user_me and auth_device_id in g.db, which hold the signed in account record and the identifier the app assigned the device, and in the per account file a cached copy of the timeline the app had shown, a cached user search result list and a direct message chat identifier. 20 rows were present in g.db and 19 in the per account file.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/g.db*",
+            "*/mobile/Containers/Data/Application/*/Documents/private_*.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gettr",
+        "artifactKey": "gettr_ios_cached_images",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GETTR - Cached Images",
+        "description": "Rows from the app's image cache, each pairing the address it requested with the file it wrote and the picture where it was recovered.",
+        "category": "GETTR",
+        "notes": "One row per row of the cacheObject table in Library/Application Support/libCachedImageData.db. Each row names the address the app requested and the file it wrote under Library/Caches/libCachedImageData, and where that file is in the extraction it is attached to the row, so the picture is shown rather than only named. A cached file is paired with the database from its own app container, so two containers holding a file of the same name are never confused. Touched and Valid Until are Unix milliseconds. A row records that the app fetched the address, which is not by itself evidence that a person chose to look at it: an image on a timeline the app loaded is cached the same way as one that was opened. All 12 rows on the tested image resolved to a file and every one of them was a picture. URL and Cache Key held the same value on all 12 rows of the tested image, so the app keyed this cache on the address it requested. Both are kept because the key is what the database joins on and a different release could key it otherwise.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Application Support/libCachedImageData.db*",
+            "*/mobile/Containers/Data/Application/*/Library/Caches/libCachedImageData/*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gettr",
+        "artifactKey": "gettr_ios_conversation_members",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GETTR - Conversation Members",
+        "description": "One row per account in each conversation the chat database holds, with that account's role and ban state.",
+        "category": "GETTR",
+        "notes": "Built from the members table of Documents/db_u<account id>.sqlite, joined to the users table for the account details and to the reads table for that account's last read position in the conversation. A row records that the account belongs to the conversation, which is not the same as the account having written anything in it. Username comes from the users row and falls back to the raw id. The roles, ban flags and the online flag are reported as stored. Four member rows and three user rows were present on the tested image. Channel Role, Invited, Banned In Conversation, Shadow Banned and Account Banned each held one value across the four rows of the tested image, which is what a single ordinary conversation with no restricted account looks like; four rows is too few for that to say anything about the app in general. The tested image held two conversations and four member rows across three accounts, so one account belonged to both.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/db_u*.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gettr",
+        "artifactKey": "gettr_ios_messages",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GETTR - Messages",
+        "description": "Direct messages from the app's per account chat database, with the sender, the conversation and the message text.",
+        "category": "GETTR",
+        "notes": "The chat database is Documents/db_u<account id>.sqlite, one per signed in account, and its schema is the Stream Chat client's rather than GETTR's own. Message Direction is derived by comparing each message's user id against the account id the same database records in connection_events.own_user, so it comes from a value the app stored rather than from the file name, and it is left blank when that row is absent. Sender is the username the users table carries for that id and falls back to the raw id when no users row matches. The timestamps are Unix seconds. A message deleted in the app keeps its row with Message Type deleted and no longer holds what it said, so the row still shows when it was sent and by whom: 3 of the 32 messages on the tested image were in that state, and 28 of the 32 carried text. Attachments holds the descriptor JSON as stored. Those descriptors name remote URLs rather than local files, and the four attachment URLs on the tested image matched no row of the app's own image cache, so no media is attached to a message here and the Cached Images artifact is where any recovered picture appears. Reaction Counts is reported as stored. Conversation holds the channel identifier and separates conversations on a device that has more than one. Reply Count held the single value 0 on all 32 rows of the tested image, so no message there carried a threaded reply. The 32 messages on the tested image were spread across two conversations, 17 outgoing and 15 incoming.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/db_u*.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gettr",
+        "artifactKey": "gettr_ios_notifications",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GETTR - Notifications",
+        "description": "Rows from the notification tables of the app's per account database, each carrying an action code and a payload.",
+        "category": "GETTR",
+        "notes": "One row per row of the notification, notification_v, notification_ls, notification_poll, mentions and mentions_v tables in Documents/private_<account name>.db, told apart by the Source Table column. The account name is taken from the file name, which is how the app names the store. Action is the app's own code and is reported as stored. Payload is the row's JSON as stored, and the other account identifiers and display names are read out of it where it parses. All six tables were empty on the tested image, so this reader is code present and was not exercised, and the columns are the ones the tables declare rather than ones observed carrying values.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/private_*.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
         "filename": "gmail",
         "artifactKey": "gmailLabelDetails",
         "sourceTool": "iLEAPP",
@@ -24986,6 +25448,42 @@
         ],
         "creation_date": "2026-08-19",
         "last_update_date": "2026-08-21"
+    },
+    {
+        "filename": "googleHome",
+        "artifactKey": "googleCastDevices",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Google Cast Framework - Devices",
+        "description": "Cast receivers recorded in the Google Cast SDK's CastFrameworkDB.sqlite inside an app's container, with the app that owns the container, the receiver's friendly name and model where the store holds them, IP address and port, and the last accessed and last discovered times.",
+        "category": "Google Home",
+        "notes": "Read from ZGCKDBDEVICEINFO in every Library/Caches/CastFrameworkDB.sqlite the extraction holds. The file is written by Google's Cast SDK, which many apps embed, so a store sits in the container of whichever app embeds it: Container App is the bundle id from that container's metadata plist, and on the 12 tested images holding the store the containers belonged to YouTube, Spotify, Netflix, Google Photos, Google Home, Disney+, ESPN, CNN, Facebook, NHL, MSNBC and Twitch; the Google Home app itself was on one of them. A row records that the SDK inside that app knew of a receiver; it does not establish that the user cast to it, and the store holds no playback history. Friendly Name and Model Name are the receiver's own strings as stored, present on 9 of the 31 device rows across the tested images. A device is reached from ZGCKDBDEVICEINFO through ZGCKDBLOCALCONNECTIONINFO (ZGCKDBDISCOVERYINFO.ZDEVICEINFO was null on every row), each device owning up to two discovery records that reference it through ZLOCALCONNECTIONINFO or ZLOCALCONNECTIONINFO1; both are followed, the newest discovery time is reported and Discovery Records gives how many were found. A device with no local connection record, 22 of the 31 rows, has blank IP Address, Port, Service Instance Name and Last Discovered Time and a Device Version and Capabilities of 0, which is why Last Accessed Time, present on every row, leads the table. All timestamps in this store are Core Data seconds since 2001-01-01. IP Address was a private network address on every row that carried one, so it places the receiver on its own network rather than on the internet. Older SDK stores lack the ZDEVICECONFIGCHANGETIMESTAMP and ZINTERNALSTATUS columns (the iOS 12 to 16 images); they are read as empty rather than failing the query, which until this change returned no device on 11 of the 12 images. Last Published Time and Device Config Change Time were empty on all 31 rows and Internal Status on all but 2; the columns are kept because the store defines them. Endpoint Device ID held the literal guestModeDeviceID on 21 of the 31 rows. The ZMANUFACTURER column was empty on every row of every tested image and is not reported. The relay access token this store also holds is deliberately not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Library/Caches/CastFrameworkDB.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist",
+            "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-08-31",
+        "last_update_date": "2026-08-31"
+    },
+    {
+        "filename": "googleHome",
+        "artifactKey": "googleCastNetwork",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Google Cast Framework - Networks",
+        "description": "Networks recorded in the Google Cast SDK's CastFrameworkDB.sqlite inside an app's container, with the app that owns the container and the last connected and last query times.",
+        "category": "Google Home",
+        "notes": "Read from ZGCKDBNETWORKINFO in every Library/Caches/CastFrameworkDB.sqlite the extraction holds. The file is written by Google's Cast SDK, which many apps embed, so Container App names the app whose container the store sits in, from that container's metadata plist; the apps seen on the 12 tested images are listed in the Devices artifact's notes. Network ID is the value the SDK stored to identify the network: an IPv4 address on 34 of the 38 tested rows and an IPv6 address on the other 4, never a network name, so it is reported as stored and must not be read as an SSID. Timestamps are Core Data seconds since 2001-01-01. Type and Analytics Enabled are reported as stored. Last Query Time was empty on all 38 tested rows; the column is kept because the store defines it.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/Library/Caches/CastFrameworkDB.sqlite*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist",
+            "*/mobile/Containers/Data/PluginKitPlugin/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-08-31",
+        "last_update_date": "2026-08-31"
     },
     {
         "filename": "googleChat",
@@ -25295,38 +25793,6 @@
         "author": "@AlexisBrignoni, Claude",
         "paths": [
             "*/Documents/*_HomeGraphModel*"
-        ],
-        "creation_date": "2026-08-31",
-        "last_update_date": "2026-08-31"
-    },
-    {
-        "filename": "googleHome",
-        "artifactKey": "googleCastDevices",
-        "sourceTool": "iLEAPP",
-        "Platform": "iOS",
-        "name": "Google Home - Cast Devices",
-        "description": "Cast devices the app discovered on the local network, with the IP address, port and the last discovered, accessed and published times.",
-        "category": "Google Home",
-        "notes": "Read from CastFrameworkDB.sqlite, one row per device in ZGCKDBDEVICEINFO. ZGCKDBDISCOVERYINFO.ZDEVICEINFO is null on every row, so the device is reached through ZGCKDBLOCALCONNECTIONINFO instead, and each device owns two discovery records that reference it through either ZLOCALCONNECTIONINFO or ZLOCALCONNECTIONINFO1; both are followed, the newest discovery time is reported and Discovery Records gives how many were found. All timestamps in this store are Core Data seconds since 2001-01-01. IP Address is a private network address in the tested sample, so it places the device on its own network rather than on the internet. Discovery is the app observing a device on the network it was joined to, which is not the same as the user casting to it, and the store holds no playback history. The relay access token this store also holds is deliberately not reported. Last Published Time and Device Config Change Time were empty on both devices in the tested sample; the columns are kept because the store defines them and another device may carry them. The app's data container was present on 1 of the 26 registered iOS corpora swept for it, so every count recorded here comes from that one extraction.",
-        "author": "@AlexisBrignoni, Claude",
-        "paths": [
-            "*/Library/Caches/CastFrameworkDB.sqlite*"
-        ],
-        "creation_date": "2026-08-31",
-        "last_update_date": "2026-08-31"
-    },
-    {
-        "filename": "googleHome",
-        "artifactKey": "googleCastNetwork",
-        "sourceTool": "iLEAPP",
-        "Platform": "iOS",
-        "name": "Google Home - Cast Network",
-        "description": "Networks the cast framework recorded, with the last connected and last query times.",
-        "category": "Google Home",
-        "notes": "Read from ZGCKDBNETWORKINFO in CastFrameworkDB.sqlite. Network ID is the value the framework stored to identify the network and on the tested sample it is an IPv4 address rather than a network name, so it is reported as stored and must not be read as an SSID. Timestamps are Core Data seconds since 2001-01-01. Type and Analytics Enabled are reported as stored. Last Query Time was empty on the single network row in the tested sample; the column is kept because the store defines it. The app's data container was present on 1 of the 26 registered iOS corpora swept for it, so every count recorded here comes from that one extraction.",
-        "author": "@AlexisBrignoni, Claude",
-        "paths": [
-            "*/Library/Caches/CastFrameworkDB.sqlite*"
         ],
         "creation_date": "2026-08-31",
         "last_update_date": "2026-08-31"
@@ -25824,6 +26290,105 @@
         ],
         "creation_date": "2026-07-25",
         "last_update_date": "2026-07-25"
+    },
+    {
+        "filename": "gpsTracks",
+        "artifactKey": "gps_tracks_ios_points",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GPS Tracks - Track Points",
+        "description": "Points recorded along GPS Tracks tracks, with coordinates, altitude, speed and heading.",
+        "category": "GPS Tracks",
+        "notes": "One row per row of ZCOURSEPOINT. Every one of the 170,418 points on the tested image carried a latitude and a longitude, and they fell between 2024-05-12 and 2024-07-06. Track Name is joined from the track the point names, so a point whose track row is gone still reports its coordinates with the name left blank. Speed, Average Speed, Distance, Distance Elapsed, Course, True Heading, Magnetic Heading and Glide Ratio are reported as stored, because the store carries no unit for any of them. Heart Rate is a column of this table and held no value on any row of the tested image; it is kept because a track recorded with a paired heart rate monitor can carry it. This table is large by nature, one row every few seconds of recording, so the artifact is correspondingly large. A separate table, ZSPEEDALTITUDEPOINT, holds a second series of 253,819 rows carrying only a date, a speed and an altitude with no coordinates; it is not reported here because the points in this artifact already carry speed and altitude and those rows cannot be placed on a map.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/GPS_Tracks.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gpsTracks",
+        "artifactKey": "gps_tracks_ios_tracks",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GPS Tracks - Tracks",
+        "description": "Tracks recorded in the GPS Tracks app, with the date, distance and duration each one stores.",
+        "category": "GPS Tracks",
+        "notes": "One row per row of ZTRACK and of ZCURRENTTRACK in Library/GPS_Tracks.sqlite, told apart by the Source Table column. ZCURRENTTRACK is the recording the app had open rather than a finished one, and on the tested image its row carried a later date than any saved track and no points of its own. Date, Sync Date and the point times are Core Data seconds since 2001 and are rendered in UTC. Distance, Time, Calories and Type are reported as stored: the store carries no unit for the first three and nothing available maps the type number to a meaning, so none is given here. Track ID is the identifier the app assigns, and the same identifier names the per track files under Library/Assets, so a track row can be tied to those files by name. Saved and Recovered come from ZCURRENTTRACK only and are blank for a saved track. Notes and Favorite (as stored) held no value on any row of the tested image: both are fields a person fills in on a track and neither had been used there.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/GPS_Tracks.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gpsTracks",
+        "artifactKey": "gps_tracks_ios_waypoints",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GPS Tracks - Waypoints",
+        "description": "Waypoints held in the GPS Tracks app, with the name, note and address where the row carries them.",
+        "category": "GPS Tracks",
+        "notes": "One row per row of ZWAYPOINT and of ZTRACKPOINT, told apart by the Source Table column. ZWAYPOINT rows stand on their own and ZTRACKPOINT rows name a track, so the second kind marks a position along a recorded track. Both carry a name, a note, an address and an alert radius in the same shape, and all twelve rows on the tested image carried coordinates and eleven of them carried a name. Sync Date held no value on any of the twelve, which is what a waypoint that has not synced looks like. Address is the text the row holds and is not resolved here; it was present on one row of the tested image and blank on the rest, so a blank address is not evidence about where the point is. Alert Radius, Position and Type are reported as stored. A waypoint records a place the app held, which is not by itself evidence that the device was there: a waypoint can be typed in or imported as well as marked in place.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/GPS_Tracks.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gpxFiles",
+        "artifactKey": "gpx_files",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GPX Files",
+        "description": "GPX files held in an app's Documents folder, with the tool named as having written each one.",
+        "category": "Locations",
+        "notes": "One row per GPX file found in an app's Documents folder. GPX is an open XML format published by Topografix and the values here are read from its own elements, so nothing is inferred: Creator is the file's creator attribute, Track Name is its name element, and the counts are of the trkseg, trkpt and wpt elements the file contains. Creator is the field that separates a file the device recorded from one it was given: on the tested images twelve files named Open GPX Tracker for iOS and two named other tools, a web route planner and a desktop mapping program, and those two are routes brought onto the device rather than traces of where it went. First Point Time and Last Point Time are the earliest and latest time elements in the file. GPX times carry an explicit zone and every one on the tested images ended in Z, so they are read as UTC from the file rather than assumed. Container App is the app whose data container held the file, read from that container's own metadata plist, because a Documents folder belongs to one app and a GPX file can be saved into A file whose name begins with recovery- is written by Open GPX Tracker for a session that was not saved normally. Four of them sat on the iOS 16.5 image and two of those had a saved file of the same name beside them: one matched its twin on point count and time span, and the other held 37,487 points against the saved file's 236, so a recovery file can preserve far more of a trace than the file that was kept. The other two had no counterpart at all. Track Name comes from the name element inside the trk element and is often absent: none of the eight files on the iOS 16.5 image carried one and two of the six on the iOS 17.5.1 image did.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/*.gpx",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gpxFiles",
+        "artifactKey": "gpx_track_points",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GPX Track Points",
+        "description": "The points recorded in GPX track files, with the coordinates, elevation and time each one carries.",
+        "category": "Locations",
+        "notes": "One row per trkpt element across the GPX files in an app's Documents folder. Latitude and longitude are the element's own attributes and elevation and time are its child elements, all read from the file. Timestamps carry an explicit zone in GPX and every one on the tested images ended in Z, so they are reported as UTC from the file. Elevation and Time are each absent on some points because the format does not require them; a point missing a time still reports its coordinates. Segment groups the points the file separates into trkseg elements, which an app writes when a recording is paused and resumed, so a jump in segment number marks a break in the trace rather than a break in the file. A point read from a file whose Creator names another tool is a route the device was given rather than one it recorded, and the Creator column carries that distinction onto every row. This artifact is large by nature: the fourteen files on the two tested images together hold 451,774 points, and two files account for 361,216 of them. Track Name is absent on every point of the iOS 16.5 image because none of its files names its track, and Container App held one value on both tested images because a single app's Documents folder held every GPX file on each. Time is the field most often missing: 8,004 points of the iOS 17.5.1 image carry none, and all of them come from the single file a web route planner created.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/*.gpx",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "gpxFiles",
+        "artifactKey": "gpx_waypoints",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "GPX Waypoints",
+        "description": "The waypoints marked in GPX files, with the name and time where the waypoint carries them.",
+        "category": "Locations",
+        "notes": "One row per wpt element across the GPX files in an app's Documents folder. A wpt is a point marked in its own right rather than one of a track's samples, so it is the part of a GPX file a person chose to record. Name, description, symbol and type are the element's own children and are reported as they appear; a waypoint carries none of them by requirement, so a blank name is a waypoint saved without one. Times carry an explicit zone in GPX and are read as UTC from the file. A waypoint in a file whose Creator names another tool was authored in that tool rather than on this device. A waypoint sits outside the track elements in the GPX schema, so no track name is carried on these rows even when the same file holds a track. Container App held one value on the iOS 16.5 image, where a single app's Documents folder held every GPX file, and one on the iOS 17.5.1 image for the same reason.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Documents/*.gpx",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "grindr",
@@ -26741,7 +27306,7 @@
         "name": "iCloud Wifi Networks",
         "description": "Wi-Fi networks synced via iCloud (com.apple.wifid.plist)",
         "category": "Wifi Connections",
-        "notes": "The synced-data plist lives at Library/SyncedPreferences/com.apple.wifid.plist and, in the only local test image carrying it (iOS 12.4), holds an empty values dictionary. The earlier glob matched any com.apple.wifid.plist and so reported the unrelated /System/Library/LaunchDaemons daemon configuration as the found file on most images; the narrower path stops that. Reference: cheeky4n6monkey (based on research by M. Epifani, H. Mahalik), 'iOS_sysdiagnose_forensic_scripts', https://github.com/cheeky4n6monkey/iOS_sysdiagnose_forensic_scripts",
+        "notes": "The synced-data plist lives at Library/SyncedPreferences/com.apple.wifid.plist; on the tested images it is present only on the iOS 12.4, 13.3.1 and 14.3 images, holding an empty values dictionary on the first and two and three networks on the other two, and it is absent from every iOS 15 to 26 image. The earlier glob matched any com.apple.wifid.plist and so reported the unrelated /System/Library/LaunchDaemons daemon configuration as the found file on most images; the narrower path stops that. Reference: cheeky4n6monkey (based on research by M. Epifani, H. Mahalik), 'iOS_sysdiagnose_forensic_scripts', https://github.com/cheeky4n6monkey/iOS_sysdiagnose_forensic_scripts",
         "author": "@ydkhatri",
         "paths": [
             "*/SyncedPreferences/com.apple.wifid.plist"
@@ -26898,14 +27463,14 @@
         "name": "IMO HD Chat - Messages",
         "description": "IMO HD chat messages and attachments",
         "category": "IMO HD Chat",
-        "notes": "URLs are constructed by the parser from object IDs using an observed IMO CDN pattern; they are not stored in the data.",
+        "notes": "URLs are constructed by the parser from object IDs using an observed IMO CDN pattern; they are not stored in the data. Older stores have no ZCONTACT_ALIAS column on the message table (the iOS 13.3.1 and 14.3 images), so on those the chat and sender names fall back from the contact table's display name straight to the alias stored on the message.",
         "author": "@stark4n6",
         "paths": [
             "*/IMODb2.sqlite*",
             "*/mobile/Containers/Data/Application/*/Library/Caches/videos/*.webp"
         ],
         "creation_date": "2026-06-23",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "instagramThreads",
@@ -27132,7 +27697,7 @@
         "name": "iOS Diagnostic Reports - Jetsam Events and Stackshots",
         "description": "Each jetsam event and stackshot report, with its time, the reason, the process the system jettisoned, the largest process and the processes that were frontmost.",
         "category": "iOS Diagnostic Reports",
-        "notes": "Read from the .ips reports whose metadata bug_type is 298 (JetsamEvent) or 288 (stackshot, named stacks or stacks+<app> on the tested images). Both bodies are JSON; Kind says which, and OS Build is the report's build value, one value per device. The jetsam report is documented by Apple in 'Identifying high-memory use with jetsam event reports' (https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports): largestProcess names the process using the most memory pages, only the jettisoned process carries a reason, and the documented reasons are per-process-limit, vm-pageshortage, vnode-limit, highwater, fc-thrashing and jettisoned; the tested images also carried sustained-memory-pressure, vm-compressor-space-shortage, vm-compressor-thrashing and (unknown-kill), reported as stored; Page Size is memoryStatus.pageSize. Frontmost Processes lists the jetsam processes whose states include frontmost, or the stackshot processes whose pids are in frontmostPids. The stackshot reason and its process list (processByPid) are read as stored; Apple's page names 288 as a stackshot and documents nothing more of it. Time is the report's date value, which carries a UTC offset, rendered in UTC. Processes Listed is the number of process entries in the report. A row records the processes the system saw at Time.",
+        "notes": "Read from the .ips reports whose metadata bug_type is 298 (JetsamEvent) or 288 (stackshot, named stacks or stacks+<app> on the tested images). Both bodies are JSON; Kind says which, and OS Build is the report's build value, one value per device on the tested images except one that carries two. The jetsam report is documented by Apple in 'Identifying high-memory use with jetsam event reports' (https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports): largestProcess names the process using the most memory pages, only the jettisoned process carries a reason, and the documented reasons are per-process-limit, vm-pageshortage, vnode-limit, highwater, fc-thrashing and jettisoned; the tested images also carried sustained-memory-pressure, vm-compressor-space-shortage, vm-compressor-thrashing and (unknown-kill), reported as stored; Page Size is memoryStatus.pageSize. Frontmost Processes lists the jetsam processes whose states include frontmost, or the stackshot processes whose pids are in frontmostPids. The stackshot reason and its process list (processByPid) are read as stored; Apple's page names 288 as a stackshot and documents nothing more of it. Time is the report's date value, which carries a UTC offset, rendered in UTC. Processes Listed is the number of process entries in the report. A row records the processes the system saw at Time.",
         "author": "@AlexisBrignoni, Claude",
         "paths": [
             "*/Library/Logs/CrashReporter/*.ips"
@@ -27148,7 +27713,7 @@
         "name": "iOS Diagnostic Reports - Processes in Jetsam Snapshots",
         "description": "The non-daemon processes listed in each jetsam event report, with the snapshot time, the process, its states and its memory pages.",
         "category": "iOS Diagnostic Reports",
-        "notes": "Read from the processes array of each bug_type 298 JetsamEvent report. Reference: Apple, 'Identifying high-memory use with jetsam event reports', https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports, which documents name, pid, states (such as frontmost or suspended), rpages, lifetimeMax, coalition, uuid and reason. Entries whose states include daemon are left out, because they are system services rather than apps; the count left out is written to the log (54,599 of 66,290 entries across the tested images, leaving 11,691 rows, 551 of them frontmost). States are joined as stored; Frontmost is True when they include frontmost. Resident Pages and Lifetime Max Pages are rpages and lifetimeMax in memory pages of the Page Size the parent report states. Jetsam Reason is set on the one jettisoned process of each report and blank on the rest. Age is the entry's age value as stored, with no unit stated. Snapshot Time is the report's date, rendered in UTC. A row records that the process existed at Snapshot Time in the state shown; suspended and idle processes were resident but not necessarily in use.",
+        "notes": "Read from the processes array of each bug_type 298 JetsamEvent report. Reference: Apple, 'Identifying high-memory use with jetsam event reports', https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports, which documents name, pid, states (such as frontmost or suspended), rpages, lifetimeMax, coalition, uuid and reason. Entries whose states include daemon are left out, because they are system services rather than apps; the count left out is written to the log (54,599 of 66,290 entries across the tested images, leaving 11,691 rows, 551 of them frontmost). States are joined as stored; Frontmost is True when they include frontmost. Resident Pages and Lifetime Max Pages are rpages and lifetimeMax in memory pages of the Page Size the parent report states. Jetsam Reason is set on the jettisoned process of a report and blank on the rest; one report on the tested images marks eleven processes. Age is the entry's age value as stored, with no unit stated. Snapshot Time is the report's date, rendered in UTC. A row records that the process existed at Snapshot Time in the state shown; suspended and idle processes were resident but not necessarily in use.",
         "author": "@AlexisBrignoni, Claude",
         "paths": [
             "*/Library/Logs/CrashReporter/*.ips"
@@ -27245,7 +27810,7 @@
         "name": "iOS Message Retention",
         "description": "Extract how long messages are kept on the device",
         "category": "Identifiers",
-        "notes": "iOS <=16 / iOS 17+ key naming per tested corpora. This directory can hold com.apple.MobileSMS.plist and com.apple.mobileSMS.plist as two different files; 6 of 20 tested images carry both, iOS 14.3 through 26.5.2. Every found file is read and each row's Setting names the source spelling it was read from. Where the report folder is on a case-insensitive volume, the file seeker preserves the second copy under a name tagged ~case- and the row's path points at the copy holding the bytes it reports; the run log records which source each tagged copy came from. On all 6 of those images the lowercase-spelled file held the same three IMDCKBackupController* keys and no retention key, so it is reported as 'No value'. Row counts are from runs on macOS. A directory input sitting on a case-insensitive volume holds only the single file that extraction kept, so both spellings can only arrive from archive or case-sensitive inputs. Reference: Apple Support, 'Delete messages and attachments', https://support.apple.com/guide/iphone/delete-messages-and-attachments-iph2c9c4bfcb/ios",
+        "notes": "iOS <=16 / iOS 17+ key naming per tested corpora. This directory can hold com.apple.MobileSMS.plist and com.apple.mobileSMS.plist as two different files; 6 of 23 tested images carry both, iOS 14.3 through 26.5.2. Every found file is read and each row's Setting names the source spelling it was read from. Where the report folder is on a case-insensitive volume, the file seeker preserves the second copy under a name tagged ~case- and the row's path points at the copy holding the bytes it reports; the run log records which source each tagged copy came from. On all 6 of those images the lowercase-spelled file held the same three IMDCKBackupController* keys and no retention key, so it is reported as 'No value'. Row counts are from runs on macOS. A directory input sitting on a case-insensitive volume holds only the single file that extraction kept, so both spellings can only arrive from archive or case-sensitive inputs. Reference: Apple Support, 'Delete messages and attachments', https://support.apple.com/guide/iphone/delete-messages-and-attachments-iph2c9c4bfcb/ios",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/mobile/Library/Preferences/com.apple.[Mm]obileSMS.plist"
@@ -27338,9 +27903,9 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "KeepSafe - Vault Items",
-        "description": "Media items recorded in KeepSafe's RocksDB store (Documents/rdb), matched to the encrypted file each item's id names under Documents/<table>/. Reports the item's name, timestamps, album, GPS, and SHA-1/dimensions as KeepSafe itself recorded them for the original file, before encryption.",
+        "description": "Media items recorded in the write-ahead logs of KeepSafe's RocksDB store (Documents/rdb), matched to the encrypted file each item's id names under Documents/<table>/, with the item's name, timestamps, album, GPS and SHA-1/dimensions as KeepSafe recorded them for the original file before encryption; items held only in the .sst tables are not read.",
         "category": "KeepSafe",
-        "notes": "RocksDB *.sst tables are not read (see module docstring); only what is still in the write-ahead log(s) is reported, so a count here is a floor, not a ceiling, on what the vault has ever held. 'breakin_alert' and 'fake' were empty directories with no live records in the validation image, so their field mapping is unexercised - see module docstring for the tier of each claim.",
+        "notes": "RocksDB *.sst tables are not read (see module docstring); only what is still in the write-ahead log(s) is reported, so a count here is a floor, not a ceiling, on what the vault has ever held. 'breakin_alert' and 'fake' were empty directories with no live records in the validation image, so their field mapping is unexercised - see module docstring for the tier of each claim. Newer builds shard each table into two-letter folders (primary/<xx>/<item-id>_100 on the iOS 17.3 image); the folder entries the file search returns beside the files, and the rdb_backups/<timestamp> folder itself, are skipped. The KeepSafe version recorded in sample_data is the app's own initialVersionInstalled preference, the version first installed rather than the one running at acquisition. On the iOS 17.5.1 image the container held the rdb stores and no table directory, so no item is reported there.",
         "author": "@Gear-I, Claude",
         "paths": [
             "*/mobile/Containers/Data/Application/*/Documents/rdb/*",
@@ -27787,7 +28352,7 @@
         "name": "knowledgeC - Do Not Disturb",
         "description": "Do Not Disturb Status from knowledgeC Database",
         "category": "KnowledgeC",
-        "notes": "Based on research by Geraldine Blay and Dan Ogden. In tested data rows are recorded only on the iOS 13.3.1 and 14.3 images; the iOS 12.4 and 15.0.2 images and every iOS 16.1.1-26.5.2 image checked (recorded corpora plus Mattia Epifani's 2026-08 comparison across 21 extractions (iOS 16.1.1-26.5.2)) yield no rows, so an empty result on current extractions is expected.",
+        "notes": "Based on research by Geraldine Blay and Dan Ogden. In tested data rows are recorded only on the iOS 13.3.1, 14.3 and 15.3.1 images; the iOS 12.4 and 15.0.2 images and every iOS 16.1.1-26.5.2 image checked (recorded corpora plus Mattia Epifani's 2026-08 comparison across 21 extractions (iOS 16.1.1-26.5.2)) yield no rows, so an empty result on current extractions is expected.",
         "author": "Geraldine Blay",
         "paths": [
             "*/mobile/Library/CoreDuet/Knowledge/knowledgeC.db*"
@@ -29138,7 +29703,7 @@
         "name": "Media Library",
         "description": "Media items (music, video, podcasts, e-books) from MediaLibrary.sqlitedb",
         "category": "Media Library",
-        "notes": "Media-kind value mapping observed in testing; not documented by a published source; unrecognized values are reported as stored. An item that carries more than one artwork_token row is reported once per token, so the row count can exceed the number of media items: on one tested iOS 18.3.2 image 1099 items produced 1339 rows, 240 of them having two tokens each. Date Purchased is left blank when item_store.date_purchased is 0, which is how the column reads for items with no stored purchase date; it was 0 on 3529 of 3533 rows across the seven tested images that hold media items.",
+        "notes": "Media-kind value mapping observed in testing; not documented by a published source; unrecognized values are reported as stored. An item that carries more than one artwork_token row is reported once per token, so the row count can exceed the number of media items: on one tested iOS 18.3.2 image 1099 items produced 1339 rows, 240 of them having two tokens each. Date Purchased is left blank when item_store.date_purchased is 0, which is how the column reads for items with no stored purchase date; it was 0 on 3822 of 3826 rows across the seven tested images that hold media items.",
         "author": "@ydkhatri",
         "paths": [
             "**/[Mm]edia[Ll]ibrary.sqlitedb*"
@@ -29154,7 +29719,7 @@
         "name": "Media Library - Database Properties",
         "description": "Key/value rows from the MediaLibrary.sqlitedb _MLDatabaseProperties table",
         "category": "Media Library",
-        "notes": "Every key/value row in the table is reported as stored; the meaning of the individual keys is not documented by a published source. In 20 tested images the table held between 8 and 37 keys each, 42 distinct keys across all of them.",
+        "notes": "Every key/value row in the table is reported as stored; the meaning of the individual keys is not documented by a published source. In 23 tested images the table held between 8 and 37 keys each, 42 distinct keys across all of them.",
         "author": "@ydkhatri",
         "paths": [
             "**/[Mm]edia[Ll]ibrary.sqlitedb*"
@@ -29942,6 +30507,22 @@
         "last_update_date": "2026-07-31"
     },
     {
+        "filename": "nytimes",
+        "artifactKey": "nytimes_recently_viewed",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "New York Times - Recently Viewed Articles",
+        "description": "Articles opened in the New York Times app, with the time each was read and its headline.",
+        "category": "New York Times",
+        "notes": "One row per entry of the app's recently viewed list, which it keeps in Library/Application Support/productionNewsreaderDatabase.sqlite. That file is a YapDatabase, so its rows are a collection name, a key and a serialised value, and the list is the single row of the RecentlyViewedList collection; the value is an NSKeyedArchiver archive and is resolved with the reader vendored at scripts/nska_deserialize.py. Each entry carries the moment the article was read along with the headline, byline, summary and address the app held for it, so a row records that this device opened that article at that time. The stored dates are NSDate values, which are seconds since 2001 in UTC, and are reported as UTC. The list is capped by the app's own maximumNumberOfRecentEntries value, which the artifact reports on each row: it was 200 on the tested image, so a device that has read more than that holds only the most recent, and the oldest row is not the first article ever read. The tested image held one entry, so this artifact is proven on a single row and its columns are otherwise the ones the archive declares. Everything else in the same database is content the app downloaded rather than a record of reading, and none of it is reported here: 3,265 rows in the Resource collection, 250 in Article, 263 in ImageContent and 7 in Video on the tested image are the articles and assets the app cached for offline use, which are present whether or not any of them was opened, and the Section, FeedSectionItems, FeedCollection, ChannelGroups and configuration collections describe the feed the app was showing. The sibling userSettingsDatabase.sqlite holds display preferences such as the theme and the font size and is not reported either. Kicker held no value on the single entry of the tested image: it is the short label a newsroom puts above a headline and the article carried none.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Application Support/productionNewsreaderDatabase.sqlite*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
         "filename": "notes",
         "artifactKey": "notes",
         "sourceTool": "iLEAPP",
@@ -30035,6 +30616,70 @@
         ],
         "creation_date": "2026-06-23",
         "last_update_date": "2026-06-24"
+    },
+    {
+        "filename": "notion",
+        "artifactKey": "notion_ios_blocks",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Notion - Blocks",
+        "description": "The content blocks Notion held on the device, with the text of each and the times it was created and last edited.",
+        "category": "Notion",
+        "notes": "One row per row of the block table in Library/LocalDatabase/notion.db. A block is Notion's unit of content, so a page and each paragraph, heading, list item or image inside it are separate rows joined by Parent ID, and Type says which kind a row is. Text is read from the row's properties field, which holds the block's rich text as nested JSON arrays; the text segments are joined and the formatting is dropped. 760 of the 949 rows on the tested image carried properties, so a blank Text is a block that stores its content elsewhere, such as an image, rather than an empty one. Created Time, Last Edited Time and Last Access Time are Unix milliseconds. Created By and Last Edited By are resolved against the notion_user table in the same store and fall back to the stored identifier when no user row matches; 890 of the rows recorded a creating user. Alive is the flag the row carries and was 0 on 3 rows of the tested image, and Moved To Trash Time was set on 1: a row that is not alive is content the store still holds after it was removed from view. This store is the device's cached copy of a workspace it synchronised, so a row is not evidence that the content was authored on this device, and Created By names the account credited in the workspace rather than the person at the keyboard. The store keeps a write-ahead log that is load-bearing in both directions on the tested image: reading with the log gives 949 blocks and reading the database alone gives 945, while the transactions table holds 5 rows without the log and none with it, so the log must travel with the database. Deleted From Trash Time held no value on any row of the tested image, which is what a store holds while nothing has been emptied out of the trash.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/LocalDatabase/notion.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "notion",
+        "artifactKey": "notion_ios_collections",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Notion - Collections",
+        "description": "The Notion databases the device cached, with the name and description of each.",
+        "category": "Notion",
+        "notes": "One row per row of the collection table, which is what Notion calls a database: a set of pages sharing a column schema. Name and Description hold rich text in the same nested JSON arrays the blocks use and are joined into plain text here. 15 of the 17 rows on the tested image carried a name. Column Names is read from the row's schema field, which maps an internal column key to that column's name and type; the names are listed and the types are not, and a collection whose schema does not parse reports a blank. The rows of a collection are blocks and are reported by the Blocks artifact, where the collection is named by Parent ID, so this artifact describes the containers rather than their contents. Alive (as stored) held the single value 1 and Parent Table the single value block on all 17 rows of the tested image, so nothing there had been removed and every collection sat inside a page.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/LocalDatabase/notion.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "notion",
+        "artifactKey": "notion_ios_page_activity",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Notion - Page Activity",
+        "description": "Page visits and exits Notion recorded, with the page each one names.",
+        "category": "Notion",
+        "notes": "One row per row of the records table whose record_table field is page_visit or page_exit, which is the app's own queue of events it holds for the server. Timestamp is the row's own timestamp in Unix milliseconds and Event Time is a second time the record's JSON carries, present on the page_visit rows. Page Title is joined from the block the record's parent_id names, so a visit to a page whose block row is absent still reports its identifier with the title left blank; that join resolved on 12 of the 12 visits and 11 of the 16 exits on the tested image. User is resolved against the notion_user table in the same store. A visit row records that the app opened the page on this device, which an edit time on the page itself does not, so the two answer different questions. This queue is drained as it is sent, so it holds recent activity rather than a history, and the rows present are bounded by that rather than by the acquisition. Space ID held one value on all 28 rows of the tested image, which is what a device signed in to a single workspace looks like.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/LocalDatabase/notion.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
+    },
+    {
+        "filename": "notion",
+        "artifactKey": "notion_ios_users",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Notion - Users",
+        "description": "The Notion accounts the device cached for the workspace, with the email address held against each.",
+        "category": "Notion",
+        "notes": "One row per row of the notion_user table. Every one of the 16 rows on the tested image carried an email address and a display name; the separate given name and family name fields were empty on all of them, and 9 carried a profile photo address. These are the accounts the device cached because they appear in the workspace it synchronised, so a row is not evidence that the person used this device, and the signed-in account is not distinguished here from the others; the space_user and user_root tables in the same store name the account the app was signed in as and are not reported by this artifact. Profile Photo is the address the record holds and is not fetched. Banned (as stored) and Suspended Time held no value on any of the 16 rows, which is what a workspace with no restricted account looks like.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/LocalDatabase/notion.db*"
+        ],
+        "creation_date": "2026-09-06",
+        "last_update_date": "2026-09-06"
     },
     {
         "filename": "chrome",
@@ -30158,7 +30803,7 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Onion Browser - Bookmarks",
-        "description": "Bookmarks saved in Onion Browser, with the page name, the URL and the stored site icon",
+        "description": "Bookmarks held in Onion Browser's bookmark store, including the defaults the app seeds on first run, with the page name, the URL and the stored site icon",
         "category": "Onion Browser",
         "notes": "Read from Documents/bookmarks.plist of the Onion Browser app (com.miketigas.OnionBrowser). The file holds a version number and a bookmarks list whose entries carry name, url and an icon value naming a PNG stored beside the plist. The app seeds a set of default bookmarks on first run, so a row does not on its own show the user added it. Reference: Bookmark.swift in the app's published source, github.com/OnionBrowser/OnionBrowser/blob/9a17dd4f2ee61697a8c65af5b09380b3d32646a8/OnionBrowser/Bookmarks/Bookmark.swift. The sibling host_settings.plist is not parsed: OrNET Browser, a different app, writes a file of the same name and layout.",
         "author": "@AlexisBrignoni, Claude",
@@ -32400,7 +33045,7 @@
         "name": "PowerLog - Torch",
         "description": "Torch (flashlight) events recorded by PowerLog (PLCameraAgent_EventForward_Torch table)",
         "category": "PowerLog",
-        "notes": "BundleId and Level are reported as stored; Level was 0 in every test-image row (iOS 12.4-26), so other values are unobserved. Rows are sparse: the test images held at most a few entries each. Timestamps are adjusted using PowerLog's time-offset table and the applied offset is reported per row; see the PowerLog - Application Runtime notes for the mechanism.",
+        "notes": "BundleId and Level are reported as stored; Level was 0 on 114 of the 120 tested rows (iOS 12.4-26) and 1 on 6 rows of two images. Rows are sparse: the test images held at most a few entries each. Timestamps are adjusted using PowerLog's time-offset table and the applied offset is reported per row; see the PowerLog - Application Runtime notes for the mechanism.",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/BatteryLife/*.PLSQL*",
@@ -34041,7 +34686,7 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Teleguard Messages",
-        "description": "TeleGuard chat messages and shared media",
+        "description": "TeleGuard chat messages, with the shared media file where the extraction holds it",
         "category": "Teleguard",
         "notes": "Timestamps are UTC (epoch milliseconds). Is Edited? held 0 on every message row of the tested extraction, so no message in it had been edited; the column is reported so an edited message is visible on an extraction that has one. Media was empty on every row: each item is resolved by the server file id a message records in its metadata, and the tested extraction carried no files under the app's Library/Caches/images directory, so its media messages have no bytes to show and the run logs one unresolved lookup for each. Call events and membership events are rows of this same table, of type CALL and SERVICE, and are also reported in full by Teleguard Calls and Teleguard Chat Events.",
         "author": "@abrignoni",
