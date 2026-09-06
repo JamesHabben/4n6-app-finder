@@ -1,3 +1,5 @@
+## 2026-09-06
+- Added Exterro FTK to the tools list
 ## 2026-08-26
 - Added the Blind Spots feature
   - in browser client only parsing of itunes backup plist

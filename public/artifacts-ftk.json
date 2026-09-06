@@ -1,0 +1,3022 @@
+[
+    {
+        "Attribute": "Launch Event",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Android turbo Health"
+    },
+    {
+        "Attribute": "Mobile Turbo Application",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Android turbo Health"
+    },
+    {
+        "Attribute": "Mobile turbo Battery Event",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Android turbo Health"
+    },
+    {
+        "Attribute": "Android Device Information",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Android Usage History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Android User Dictionary",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Application Activity - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Application Permissions - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Application Power Usage",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Google Play Application Details",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Google Play Installed Applications",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Google Play Searches",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Installed Applications",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "AIM Buddies",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android Call Logs",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android Kik Messenger Attachments",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "15.51.1.28280"
+    },
+    {
+        "Attribute": "Android Kik Messenger Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "15.51.1.28280"
+    },
+    {
+        "Attribute": "Android Kik Messenger Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "15.51.1.28280"
+    },
+    {
+        "Attribute": "Android Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "13.0.10.73"
+    },
+    {
+        "Attribute": "Android MMS",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android Sim Card Information",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android SMS",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android SMS/MMS",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android SMS/MMS (Content Provider)",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Android SnapChat Friends",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "12.33.0.19"
+    },
+    {
+        "Attribute": "Android SnapChat Photo Transfers",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "12.33.0.19"
+    },
+    {
+        "Attribute": "Android SnapChat Received Images",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "12.33.0.19"
+    },
+    {
+        "Attribute": "Android WhatsApp Accounts Information",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp Chats",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp Groups",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp Live Locations",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp Profile Pictures",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Android WhatsApp User Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Discord Logged-in Account",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "176.21"
+    },
+    {
+        "Attribute": "Discord Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "176.21"
+    },
+    {
+        "Attribute": "Facebook Messenger Calls",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Facebook Messenger Groups",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Facebook Messenger Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Facebook Messenger Users Contacted",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Google Duo Group Calls",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "177.0.485451249.duo.android_20 221002.73_p3.s"
+    },
+    {
+        "Attribute": "Google Duo Groups",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "177.0.485451249.duo.android_20 221002.73_p3.s"
+    },
+    {
+        "Attribute": "Google Hangouts Cached Images",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "177.0.485451249.duo.android_20 221002.73_p3.s"
+    },
+    {
+        "Attribute": "Google Hangouts Voice Calls",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "177.0.485451249.duo.android_20 221002.73_p3.s"
+    },
+    {
+        "Attribute": "Houseparty Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Houseparty Users",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "imo Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2023.04.2051"
+    },
+    {
+        "Attribute": "imo Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2023.04.2051"
+    },
+    {
+        "Attribute": "KakaoTalk Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "10.1.8"
+    },
+    {
+        "Attribute": "LINE Chats",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "13.6.1"
+    },
+    {
+        "Attribute": "LINE Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "13.6.1"
+    },
+    {
+        "Attribute": "LINE Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "13.6.1"
+    },
+    {
+        "Attribute": "LINE Pictures",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "13.6.1"
+    },
+    {
+        "Attribute": "Samsung Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Signal",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal Conversations - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal For Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal Group Members",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal Groups",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal Local User",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal Messages - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Signal Users",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "6.19.6"
+    },
+    {
+        "Attribute": "Skype Accounts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Skype Calls",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Skype Chat Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Skype Chatsync Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Skype Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Skype File Transfers",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Skype Group Chat",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "8.96.0.409"
+    },
+    {
+        "Attribute": "Snapchat Chat Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "12.33.0.19"
+    },
+    {
+        "Attribute": "Snapchat Received Videos",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "12.33.0.19"
+    },
+    {
+        "Attribute": "Telegram Chats - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "9.6.5"
+    },
+    {
+        "Attribute": "Telegram Contacts - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "9.6.5"
+    },
+    {
+        "Attribute": "Telegram Messages - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "9.6.5"
+    },
+    {
+        "Attribute": "Telegram Users - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "9.6.5"
+    },
+    {
+        "Attribute": "Viber Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "19.9.4.0"
+    },
+    {
+        "Attribute": "WeChat Friends",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "WeChat Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "WhatsApp",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "WhatsApp for Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Communication",
+        "supportedVersion": "2.23.8.76"
+    },
+    {
+        "Attribute": "Battery Statistics",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Bluetooth Devices",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Fitbit Floors",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Fitbit Heart Rate",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Fitbit Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Fitbit Steps",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Samsung Health Steps (Device)",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Samsung Health Steps (Wearable)",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Samsung Health User Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Samsung Well-Being",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card Activity",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card ICCID",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card IMSI",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card Phone Numbers",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card Service Providers",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card SMS Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Android Emails",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Android Gmail Conversations",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Android Yahoo Mail Attachments",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Android Yahoo Mail Emails",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Android Yahoo Mail User Accounts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Calendar Events",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Calendar Events (UFED Agent)",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Gmail Emails",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Google Calendar Calendars",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Google Calendar Events",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "ProtonMail Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "ProtonMail Emails",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Samsung Email Logs",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Android KeyStore",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Encryption and Credentials"
+    },
+    {
+        "Attribute": "Android KeyStore - GrayKey",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Encryption and Credentials"
+    },
+    {
+        "Attribute": "Android Google Map Tiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Android Google Maps",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Android Wi-Fi Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Google Maps Directions",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Last Known Locations",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Uber Accounts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel",
+        "supportedVersion": "4.472.10002"
+    },
+    {
+        "Attribute": "Uber Cached Locations",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel",
+        "supportedVersion": "4.472.10002"
+    },
+    {
+        "Attribute": "Uber Payments",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel",
+        "supportedVersion": "4.472.10002"
+    },
+    {
+        "Attribute": "Uber Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel",
+        "supportedVersion": "4.472.10002"
+    },
+    {
+        "Attribute": "Waze Places",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "AMR Files",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Audio",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Carved Video",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Google Photos Albums",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Google Photos Media",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Motion Photos",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Pictures",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Videos",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Attachment Time",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Mobile Application Attachment",
+        "applicableFor": "Microsoft Teams, Slack, LinkedIn and ChatGPT"
+    },
+    {
+        "Attribute": "Calls Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Mobile Calls",
+        "applicableFor": "Microsoft Teams and Skype"
+    },
+    {
+        "Attribute": "Conversations",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Mobile Chat Conversations",
+        "applicableFor": "Microsoft Teams, Skype, Slack, LinkedIn, TikTok and ChatGPT"
+    },
+    {
+        "Attribute": "Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Mobile Contacts",
+        "applicableFor": "Microsoft Teams, Skype, Slack, LinkedIn, TikTok and ChatGPT"
+    },
+    {
+        "Attribute": "Accounts Information",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Android Downloads",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "FCM (Firebase Cloud Messaging)",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Google Accounts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Wi-Fi Logs - Android",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Android Instagram Users",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "281.0.0.19.105"
+    },
+    {
+        "Attribute": "Android Tinder Accounts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "13.21.1",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "Android Tinder Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "13.21.1",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "Android Tinder Photos",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "13.21.1",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "Facebook Android Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Facebook Android Pictures",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Facebook Contacts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Facebook User/Friends",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "406.0.0.13.115"
+    },
+    {
+        "Attribute": "Instagram Direct Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "281.0.0.19.105"
+    },
+    {
+        "Attribute": "Instagram Group Members",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "281.0.0.19.105"
+    },
+    {
+        "Attribute": "Instagram Media",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "281.0.0.19.105"
+    },
+    {
+        "Attribute": "Instagram Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "281.0.0.19.105"
+    },
+    {
+        "Attribute": "Musical.ly Local Users",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking"
+    },
+    {
+        "Attribute": "Musical.ly Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking"
+    },
+    {
+        "Attribute": "Musical.ly Posts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking"
+    },
+    {
+        "Attribute": "Musical.ly Users",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking"
+    },
+    {
+        "Attribute": "Reddit Accounts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking"
+    },
+    {
+        "Attribute": "Tumblr Chat Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking"
+    },
+    {
+        "Attribute": "Twitter Direct Messages",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "9.87.0-release.0"
+    },
+    {
+        "Attribute": "Twitter Users Users",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Social Networking",
+        "supportedVersion": "9.87.0-release.0"
+    },
+    {
+        "Attribute": "Information / User Information",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Interest Topic",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Live Events",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Tweets",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Account",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Uber"
+    },
+    {
+        "Attribute": "Cached Location",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Uber"
+    },
+    {
+        "Attribute": "Cached Shortcuts",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Uber"
+    },
+    {
+        "Attribute": "Android Browser Bookmarks",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Android Browser Search Terms",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Android Browser Web History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Android Firefox Bookmarks",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Android Firefox Web History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Archived Keyword Search Terms",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Autofill",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Autofill Profiles",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Bookmarks",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Cookies",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Downloads",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Keyword Search Terms",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Logins",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Saved Credit Cards",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Tab History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Top SitesUs",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Web History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Web Visits",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Bookmarks",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium FavIcons",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Keyword Search Terms",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Tab History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Web History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Web Visits",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Firefox Cookies",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Firefox Web History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Firefox Web Visits",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Autofill",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Bookmarks",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Cookies",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Downloads",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera FavIcons",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Keyword Search Terms",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Top Sites",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Web History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Opera Web Visits",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "UC Browser Bookmarks",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "UC Browser Cookies",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "UC Browser Downloads",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "UC Browser History",
+        "Platform": "Android",
+        "chapter": "Mobile Forensics - Android",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Burner",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "5.2.8",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "ChatGPT",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "1.2025.189",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "LinkedIn (Chats)",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "4.1.818.1",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Mastodon",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "2.12.3",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Mega",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "11.0 (233270828) (odc1a146b7)",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "mewe",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "8.1.64.4",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Microsoft Teams (Chats)",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "1416/1.0.0.2023072702",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Threema",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "5.0.5",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "WhatsApp Business",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "2.26.23.73",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Wickrme",
+        "Platform": "Android",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "6.2.7",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Application Install States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Application Permissions - MacOS, iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome App In Focus (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Application Install (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Application Intent (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Backlight (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Battery Percentage (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Device plugged (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Hardware Reliability (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Notification (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome Text Input Session (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome User Activity (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Biome WiFi (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "File Application Smart Folder (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Installed Applications",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "InteractionC Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "InteractionC Interactions",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "iOS Device Information",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "iOS User Shortcut Dictionary",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "iOS User Word Dictionary",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "iTunes Metadata (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Activity Level",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Application Activities",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Application Focus",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Application Install",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Application Intents",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Application Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Application Web Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Device Lock States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Device Orientation",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Device Plugged-in",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Do Not Disturb Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Keybag Lock States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Notification Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Safari History",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Screen Backlight",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "KnowledgeC Siri UI Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Library Notification (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Mobile Application Permission (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Mobile Installed Application (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Screen Time Application Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Screen Time Synced Applications",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "States",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Stream Notification (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Wallet Payment Cards",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Wallet Transactions",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Weather Application (iOS)",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Application Usage"
+    },
+    {
+        "Attribute": "Audio routing",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Biome"
+    },
+    {
+        "Attribute": "Biome Application",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Biome"
+    },
+    {
+        "Attribute": "Device Orientation",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Biome"
+    },
+    {
+        "Attribute": "Launch",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Biome"
+    },
+    {
+        "Attribute": "Screen Backlight",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Biome"
+    },
+    {
+        "Attribute": "Spotlight",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Biome"
+    },
+    {
+        "Attribute": "AIM Buddies",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "AIM Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Apple Contacts - iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Discord Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "176"
+    },
+    {
+        "Attribute": "Facebook Messenger Calls",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "412"
+    },
+    {
+        "Attribute": "Facebook Messenger Groups",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "412"
+    },
+    {
+        "Attribute": "Facebook Messenger Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "412"
+    },
+    {
+        "Attribute": "Facebook Messenger Users Contacted",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "412"
+    },
+    {
+        "Attribute": "Google Duo Accounts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "Google Duo Group Calls",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "Google Duo Groups",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "Google Duo Users",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "Google Hangouts Voice Calls",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "Houseparty Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "Houseparty Users",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "imo Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "2023.4.5"
+    },
+    {
+        "Attribute": "imo Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "2023.4.5"
+    },
+    {
+        "Attribute": "iOS Call Logs",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "iOS Google Hangouts Cached Images",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "iOS Google Hangouts Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "6.0.230417"
+    },
+    {
+        "Attribute": "iOS iMessage/SMS/MMS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "iOS 14.0"
+    },
+    {
+        "Attribute": "iOS Kik Messenger Attachments",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "16.9.3"
+    },
+    {
+        "Attribute": "iOS Kik Messenger Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "16.9.3"
+    },
+    {
+        "Attribute": "iOS Kik Messenger Users",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "16.9.3"
+    },
+    {
+        "Attribute": "iOS Snapchat Conversations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "iOS Voice Mail",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication"
+    },
+    {
+        "Attribute": "iOS WhatsApp Accounts Information",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "23.8.78"
+    },
+    {
+        "Attribute": "iOS WhatsApp Chats",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "23.8.78"
+    },
+    {
+        "Attribute": "iOS WhatsApp Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "23.8.78"
+    },
+    {
+        "Attribute": "iOS WhatsApp Groups",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "23.8.78"
+    },
+    {
+        "Attribute": "iOS WhatsApp Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "23.8.78"
+    },
+    {
+        "Attribute": "Skype Accounts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype Calls",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype Chat Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype Chatsync Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype File Transfers",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype Group Chat",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype SMS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Skype Voicemails",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Slack Channel Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Slack Channels",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Slack Direct Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Slack Files",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Slack Users",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Slack Workspaces",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Snapchat Chat Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Snapchat Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Snapchat Group Members",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "Supported"
+    },
+    {
+        "Attribute": "Telegram Channel Chats - iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "9.6.3"
+    },
+    {
+        "Attribute": "Telegram Chats - iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "9.6.3"
+    },
+    {
+        "Attribute": "Telegram Messages - iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "9.6.3"
+    },
+    {
+        "Attribute": "Telegram Users - iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "9.6.3"
+    },
+    {
+        "Attribute": "WhatsApp for iOS",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Communication",
+        "supportedVersion": "23.8.78"
+    },
+    {
+        "Attribute": "Apple Health Distance",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Apple Health Floors",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Apple Health Heart Rate",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Apple Health Steps",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Apple Health Workout",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Bluetooth Devices",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Seen Bluetooth Devices",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card Activity",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card ICCID",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card Phone Numbers",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "SIM Card SMS Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Connected Devices"
+    },
+    {
+        "Attribute": "Activation Record",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Device Information"
+    },
+    {
+        "Attribute": "Mobile Device",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Device Information"
+    },
+    {
+        "Attribute": "Apple Mail",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Calendar Events",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Gmail Emails",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Google Calendar Calendars",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Google Calendar Events",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Proton",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Email and Calendar"
+    },
+    {
+        "Attribute": "Apple Keychain Generic Passwords",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Encryption and Credentials"
+    },
+    {
+        "Attribute": "Apple Keychain Internet Passwords",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Encryption and Credentials"
+    },
+    {
+        "Attribute": "Apple Keychain Saved Credit Cards",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Encryption and Credentials"
+    },
+    {
+        "Attribute": "Geo Service",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Geo Service"
+    },
+    {
+        "Attribute": "Apple Maps Searches",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Apple Maps Trips",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Cached Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "iOS Google Map Coordinates",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "iOS Maps",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "iOS Wi-Fi Profiles",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Parked Car Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Significant Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Significant Locations Visits",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Uber Accounts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel",
+        "supportedVersion": "3.569.10000"
+    },
+    {
+        "Attribute": "Uber Cached Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel",
+        "supportedVersion": "3.569.10000"
+    },
+    {
+        "Attribute": "Uber Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel",
+        "supportedVersion": "3.569.10000"
+    },
+    {
+        "Attribute": "Uber Profiles",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel",
+        "supportedVersion": "3.569.10000"
+    },
+    {
+        "Attribute": "Uber Rider Payment Details",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel",
+        "supportedVersion": "3.569.10000"
+    },
+    {
+        "Attribute": "Waze Places",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "WiFi Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Location and Travel"
+    },
+    {
+        "Attribute": "Mobile Apple Map",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Map Transition"
+    },
+    {
+        "Attribute": "Transition",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Map Transition"
+    },
+    {
+        "Attribute": "Audio",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Carved Video",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media"
+    },
+    {
+        "Attribute": "iOS Snapshots UTC (yyyy-mm-dd) Date/Time - UTC",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Live Photos",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Pictures",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Videos",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media"
+    },
+    {
+        "Attribute": "Business Category",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Cache",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "For Place List &",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Location",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Location",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Location Cache",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Postal Address",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Public event query",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Reverse Geo",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Reverse Geo",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Sorted List Node",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Media Information"
+    },
+    {
+        "Attribute": "Attachment",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Mobile Application Attachment",
+        "applicableFor": "Microsoft Teams, Slack, LinkedIn and ChatGPT"
+    },
+    {
+        "Attribute": "Call",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Mobile Call",
+        "applicableFor": "Skype"
+    },
+    {
+        "Attribute": "Conversations Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Mobile Chat Conversations",
+        "applicableFor": "iMessage, Skype, Slack, Microsoft Teams, LinkedIn and ChatGPT"
+    },
+    {
+        "Attribute": "Contacts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Mobile Contacts",
+        "applicableFor": "iMessage, Skype, Slack, Microsoft Teams, LinkedIn and ChatGPT"
+    },
+    {
+        "Attribute": "Sharing Daemon",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Mobile Sharing Daemon"
+    },
+    {
+        "Attribute": ".DS_Store Records",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "AirDrop Background Activity",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "AirDrop Discoverability",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Apple Accounts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Cell Tower Locations",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Google Accounts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Network Usage - Application Data",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Network Usage - Connections",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Owner Information",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog App Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Application State",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Battery Level",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Battery Shutdown",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Camera State",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Device Lock State",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Lightning Cable Status",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Process Data Usage",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Screen Autolock",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "PowerLog Timezone Information",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Siri Message Search Suggestions",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Operating System"
+    },
+    {
+        "Attribute": "Instagram Direct Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "281"
+    },
+    {
+        "Attribute": "Instagram Group Members",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "281"
+    },
+    {
+        "Attribute": "Instagram Media",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "281"
+    },
+    {
+        "Attribute": "Instagram Profiles",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "281"
+    },
+    {
+        "Attribute": "iOS Facebook Friends",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "412"
+    },
+    {
+        "Attribute": "iOS Facebook Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "412"
+    },
+    {
+        "Attribute": "iOS Instagram Posts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "281"
+    },
+    {
+        "Attribute": "iOS Tinder Accounts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "Supported",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "iOS Tinder Messages",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "Supported",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "iOS Tinder Photos",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Social Networking",
+        "supportedVersion": "Supported",
+        "supportNotes": "Partial Support"
+    },
+    {
+        "Attribute": "Media",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Profile Banner Media User",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Status Information",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Structured Location",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Tweets",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "URL",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "User Birthday",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Twitter"
+    },
+    {
+        "Attribute": "Cached Location",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Uber"
+    },
+    {
+        "Attribute": "Chrome Archived Keyword Search Terms",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Archived Web History",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Autofill",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Autofill Profiles",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Bookmarks",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Cookies",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Current Session",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Current Tabs",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Downloads",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome FavIcons",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Keyword Search Terms",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Last Session",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Last Tabs",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Logins",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Saved Credit Cards",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Shortcuts",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Tab History",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Top Sites",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Web History",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Chrome Web Visits",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Cloud Exports",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Decryption Support",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Bookmarks",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium FavIcons",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Logins",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Edge Chromium Web History",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "FTK can decrypt the following encryption types:",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "iOS Safari Recent Search Terms",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Malware/Phishing URLs",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Safari Bookmarks",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Safari Downloads",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Safari History",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "Safari iCloud Devices",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "Web Related"
+    },
+    {
+        "Attribute": "iCloud Client item",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "iCloud Documents"
+    },
+    {
+        "Attribute": "iCloud Server Items",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "iCloud Documents"
+    },
+    {
+        "Attribute": "iCloud Sync Name",
+        "Platform": "iOS",
+        "chapter": "Mobile Forensics - iOS",
+        "section": "iCloud Documents"
+    },
+    {
+        "Attribute": "ChatGPT",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "1.2025.196",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "LinkedIn (Chats)",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "9.1.318",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Mega",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "13.1.1",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "mewe",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "3.0.18",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Microsoft Teams (Chats)",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "5.8.0",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Threema",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "Supported",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "WhatsApp Business",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "24.14.78",
+        "source": "chat-table"
+    },
+    {
+        "Attribute": "Wickrme",
+        "Platform": "iOS",
+        "chapter": "Supported Chat Apps",
+        "section": "Supported Chat Apps",
+        "supportedVersion": "6.226.4.2",
+        "source": "chat-table"
+    }
+]

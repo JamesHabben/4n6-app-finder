@@ -96,5 +96,19 @@
         "platformKey": "Platform",
         "documentationLocation": "https://www.forensafe.com/artifact-reference.html",
         "extractionNotes": "Fetched from data/artifacts_info.json via capture-artifast-artifacts-list.py. iOS and Android only. appNameKey is vendor application (product grouping), not artifact_name."
+    },
+    {
+        "toolShortName": "FTK",
+        "toolLongName": "Exterro FTK",
+        "website": "https://www.exterro.com/digital-forensics-software/ftk-forensic-toolkit",
+        "toolVersion": "8.3",
+        "toolReleaseDate": "2026-07-01",
+        "icon": "tool-logo-ftk.jpg",
+        "artifactListFile": "artifacts-ftk.json",
+        "mapFile": "maps/ftk.json",
+        "appNameKey": "Attribute",
+        "platformKey": "Platform",
+        "documentationLocation": "https://d1kpmuwb7gvu1i.cloudfront.net/8.x/8.3.0/Exterro%20FTK%20Suite%208.3%20-%20Artifacts%20Guide.pdf",
+        "extractionNotes": "Parsed from the public FTK Suite Artifacts Guide PDF via capture-ftk-artifacts-list.py. Mobile Android/iOS Attribute names only (Associated Columns dropped). chapter/section come from PDF headings. Chat-table versions overlay matching attributes; unmatched chat products are source=chat-table stubs."
     }
 ]
