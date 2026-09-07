@@ -74,6 +74,22 @@
             "alternateNames": []
         },
         {
+            "appName": "7 day weather forecast",
+            "icon": "7-day-weather-forecast.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.infolife.ezweather.widget.galaxy.weather.widget",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Weather Widget Theme Dev Team / infolife ezWeather Android widget (mobi.infolife.ezweather.widget.galaxy.weather.widget). Play listing removed. No official iOS app. Distinct from 1Weather Forecasts & Radar, AccuWeather: Weather Radar, Apple Weather, Yahoo Weather, and mobi.infolife.ezweather.widget.hourlyweather.report.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "mobi.infolife.ezweather.widget.galaxy.weather.widget"
+            ]
+        },
+        {
             "appName": "99acres",
             "icon": "99acres.webp",
             "websiteUrl": "https://www.99acres.com",
@@ -88,6 +104,41 @@
             "alternateNames": [
                 "com.nnacres.app",
                 "com.infoedge.99acres"
+            ]
+        },
+        {
+            "appName": "A1 Cloud",
+            "icon": "a1-cloud.webp",
+            "websiteUrl": "https://a1cloud.rs",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/a1-cloud/id1032335779",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=rs.vipmobile.storage",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "A1 Srbija d.o.o. Beograd cloud storage for A1 Serbia subscribers (Android rs.vipmobile.storage, iOS rs.vipmobile.vipdrop). Formerly VipDrop. Store title A1 Cloud. Distinct from Dropbox, Google Drive, Microsoft OneDrive, MEGA, and A1 Drive: Cloud Storage (com.rhophi.A1-Drive).",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "rs.vipmobile.storage",
+                "rs.vipmobile.vipdrop",
+                "VipDrop"
+            ]
+        },
+        {
+            "appName": "ABA Mongolia",
+            "icon": "aba-mongolia.webp",
+            "websiteUrl": "https://www.aba.mn",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/aba-mongolia/id6447431571",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.abataxi",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Mongolia taxi, delivery, and vehicle-hire passenger app from Enkhbaatar Bat-Erdene (Android com.abataxi, iOS com.greenproject.aba). Store title ABA Mongolia. Distinct from Uber and Alyte.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.abataxi",
+                "com.greenproject.aba"
             ]
         },
         {
@@ -431,6 +482,22 @@
             ]
         },
         {
+            "appName": "AIO Launcher",
+            "icon": "aio-launcher.webp",
+            "websiteUrl": "https://aiolauncher.app",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.execbit.aiolauncher",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Evgenii Zobnin / AIO Mobile Soft Android home-screen launcher (ru.execbit.aiolauncher). Store title AIO Launcher. Play genre Personalization. No official iOS app. Distinct from Nova Launcher.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "ru.execbit.aiolauncher"
+            ]
+        },
+        {
             "appName": "Air Serbia",
             "icon": "air-serbia.webp",
             "websiteUrl": "https://www.airserbia.com",
@@ -449,14 +516,17 @@
         {
             "appName": "AirGuard",
             "icon": "airguard.webp",
-            "websiteUrl": "https://github.com/seemoo-lab/AirGuard",
+            "websiteUrl": "https://airguard.seemoo.de",
             "appleStoreUrl": "https://apps.apple.com/us/app/airguard-tracking-protection/id1659427454",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.seemoo.at_tracking_detection.release",
             "category": "Security & Privacy",
-            "notes": "",
+            "notes": "TU Darmstadt SEEMOO Lab open-source tracker detector for AirTags, SmartTags, and Find My Device accessories (Android de.seemoo.at_tracking_detection.release, iOS de.tu-darmstadt.seemoo.airguard). Play title AirGuard - AirTag protection; Apple title AirGuard - Tracking Protection. Apple genre Utilities. Distinct from Tracker Detect, Android Airtag Detection, and Apple Find My.",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": [],
+            "dateUpdated": "2026-09-07",
+            "alternateNames": [
+                "de.seemoo.at_tracking_detection.release",
+                "de.tu-darmstadt.seemoo.airguard"
+            ],
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
         },
@@ -475,6 +545,41 @@
             "alternateNames": [
                 "com.airbnb.android",
                 "com.airbnb.app"
+            ]
+        },
+        {
+            "appName": "Airtel App: Recharge & Bank",
+            "icon": "airtel-app-recharge-bank.webp",
+            "websiteUrl": "https://www.airtel.in/airtel-thanks-app",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/in/app/airtel-app-recharge-bank/id543184334",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.myairtelapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Bharti Airtel Limited India recharge, bills, UPI, and Payments Bank app (Android com.myairtelapp, iOS com.BhartiMobile.myairtel). Play title Airtel: Recharge, Bank & Loans; Apple title Airtel App: Recharge & Bank. Formerly Airtel Thanks. Apple genre Lifestyle. Distinct from CRED, Airtel Xstream Play, Wynk Music, and My Airtel Africa.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.myairtelapp",
+                "com.BhartiMobile.myairtel",
+                "Airtel Thanks"
+            ]
+        },
+        {
+            "appName": "Aisle",
+            "icon": "aisle.webp",
+            "websiteUrl": "https://www.aisle.co",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/aisle-indian-dating-app/id1001481078",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.aisle.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Aisle Network Pvt. Ltd. dating app (Android com.aisle.app, iOS co.aisle.app). Play title Aisle - Dating App For Indians; Apple title Aisle - Indian Dating App. Apple genre Lifestyle. Distinct from Tinder, Bumble, Hinge, and Coffee Meets Bagel.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.aisle.app",
+                "co.aisle.app"
             ]
         },
         {
@@ -555,6 +660,23 @@
                 "psyberia.alpinequest.full",
                 "psyberia.alpinequest.free",
                 "Alpine Quest"
+            ]
+        },
+        {
+            "appName": "Alyte",
+            "icon": "alyte.webp",
+            "websiteUrl": "https://mahindralogistics.com/mobility-solutions/alyte/",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/in/app/alyte/id6745873281",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mll.alyte",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MLL Mobility / Mahindra Logistics premium cabs (Android com.mll.alyte, iOS com.mobility.alyte). Play title Alyte - Premium Airport Cabs; Apple title Alyte. Apple genre Travel. Distinct from Uber, Lyft, Bolt, and Careem.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mll.alyte",
+                "com.mobility.alyte"
             ]
         },
         {
@@ -889,6 +1011,23 @@
             "alternateNames": [
                 "com.anydesk.anydeskandroid",
                 "com.anydesk.AnyDesk"
+            ]
+        },
+        {
+            "appName": "Apexmove",
+            "icon": "apexmove.webp",
+            "websiteUrl": "https://www.kospet.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/apexmove/id6479502087",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kospet.amazwear",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hongkong Amazwear Tech / KOSPET watch companion (Android com.kospet.amazwear, iOS com.Amazwear.app). Store title Apexmove. Apple genre Health & Fitness. Distinct from Zepp Life, Garmin Connect, Samsung Health, and Google Health (Fitbit).",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.kospet.amazwear",
+                "com.Amazwear.app"
             ]
         },
         {
@@ -1229,6 +1368,24 @@
             "alternateNames": [
                 "com.apple.weather",
                 "iOS Weather"
+            ]
+        },
+        {
+            "appName": "Arattai Messenger",
+            "icon": "arattai-messenger.webp",
+            "websiteUrl": "https://www.arattai.in",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/arattai-messenger/id1522469944",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.aratai.chat",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Zoho / Arattai Technology Solutions messenger (Android com.aratai.chat, iOS com.zoho.arattai). Store title Arattai Messenger. Apple genre Social Networking. Distinct from WhatsApp Messenger, Telegram, Signal, and JioChat.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.aratai.chat",
+                "com.zoho.arattai",
+                "Arattai"
             ]
         },
         {
@@ -1620,6 +1777,39 @@
             ]
         },
         {
+            "appName": "Binance",
+            "icon": "binance.webp",
+            "websiteUrl": "https://www.binance.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/gb/app/binance-buy-bitcoin-crypto/id1436799971",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.binance.dev",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Binance global crypto exchange (Android com.binance.dev, iOS com.czzhao.binance). Store title Binance: Buy Bitcoin & Crypto. Apple genre Finance. Not on the US App Store. Distinct from Binance.US, Trust Wallet, Coinbase, Base (formerly Coinbase Wallet), and Kraken.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.binance.dev",
+                "com.czzhao.binance"
+            ]
+        },
+        {
+            "appName": "Bitcoin.com",
+            "icon": "bitcoin-com.webp",
+            "websiteUrl": "https://www.bitcoin.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bitcoin-com-crypto-defi-wallet/id1252903728",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bitcoin.mwallet",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Saint Bitts self-custody wallet (Android and iOS com.bitcoin.mwallet). Play title Bitcoin.com: Crypto Wallet; Apple title Bitcoin.com: Crypto Wallet. Apple genre Finance. Distinct from Bitcoin Wallet (de.schildbach.wallet), BRD - bitcoin wallet, Trust Wallet, Coinbase, and BitPay.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bitcoin.mwallet"
+            ]
+        },
+        {
             "appName": "Biome",
             "icon": "biome.webp",
             "websiteUrl": "",
@@ -1826,11 +2016,10 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=xyz.blueskyweb.app",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Bluesky PBLLC AT Protocol social app (Android and iOS xyz.blueskyweb.app). Play title Bluesky; Apple title Bluesky Social. Apple genre Social Networking. Distinct from X / Twitter, Threads (Instagram), Mastodon, and Blue Mail.",
             "dateAdded": "2026-07-10",
-            "dateUpdated": "2026-08-15",
+            "dateUpdated": "2026-09-07",
             "alternateNames": [
-                "Bluesky Social",
                 "xyz.blueskyweb.app"
             ]
         },
@@ -2017,6 +2206,22 @@
             "alternateNames": [
                 "com.bumble.app",
                 "com.moxco.bumble"
+            ]
+        },
+        {
+            "appName": "Bybit",
+            "icon": "bybit.webp",
+            "websiteUrl": "https://www.bybit.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bybit-buy-crypto-bitcoin/id1488296980",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bybit.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Bybit Fintech crypto exchange (Android and iOS com.bybit.app). Play title Bybit: Buy Bitcoin & Crypto; Apple title Bybit: Buy Crypto & Bitcoin. Apple genre Finance. Distinct from Binance, Coinbase, Trust Wallet, and Bitcoin.com.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bybit.app"
             ]
         },
         {
@@ -2228,9 +2433,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.anthropic.claude",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Anthropic Claude (com.anthropic.claude). Distinct from ChatGPT. Apple genre is Productivity; catalog uses AI & Assistants to match ChatGPT.",
+            "notes": "Anthropic PBC Claude (Android and iOS com.anthropic.claude). Store title Claude by Anthropic. Apple genre Productivity. Distinct from ChatGPT, Grok, DeepSeek, and Amazon Alexa.",
             "dateAdded": "2026-08-17",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-07",
             "alternateNames": [
                 "com.anthropic.claude"
             ]
@@ -2701,6 +2906,23 @@
             ]
         },
         {
+            "appName": "Country Delight",
+            "icon": "country-delight.webp",
+            "websiteUrl": "https://www.countrydelight.in",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/country-delight-milk-grocery/id1090309756",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=app.mycountrydelight.in.countrydelight",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Beejapuri Dairy Private Limited milk and grocery delivery (Android app.mycountrydelight.in.countrydelight, iOS in.countrydelight.app). Store title Country Delight Milk & Grocery. Apple genre Food & Drink. Distinct from DoorDash and Uber Eats: Food Delivery.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "app.mycountrydelight.in.countrydelight",
+                "in.countrydelight.app"
+            ]
+        },
+        {
             "appName": "CoverMe",
             "icon": "coverme.webp",
             "websiteUrl": "",
@@ -2721,6 +2943,57 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "CRED",
+            "icon": "cred.webp",
+            "websiteUrl": "https://cred.club",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/in/app/cred-credit-cards-bills-upi/id1428580080",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dreamplug.androidapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Dreamplug Technologies credit cards, bills, and UPI (Android com.dreamplug.androidapp, iOS com.dreamplug.cred). Store title CRED: Credit Cards, Bills, UPI. Apple genre Finance. Not on the US App Store. Distinct from Google Pay and Cash App.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dreamplug.androidapp",
+                "com.dreamplug.cred"
+            ]
+        },
+        {
+            "appName": "Crunchyroll",
+            "icon": "crunchyroll.webp",
+            "websiteUrl": "https://www.crunchyroll.com",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/crunchyroll/id329913454",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.crunchyroll.crunchyroid",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Crunchyroll, LLC / Sony Pictures anime streaming (Android com.crunchyroll.crunchyroid, iOS com.crunchyroll.iphone). Play title Crunchyroll: Anime Streaming; Apple title Crunchyroll. Apple genre Entertainment. Distinct from Netflix, Disney+, Amazon Prime Video, and YouTube.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.crunchyroll.crunchyroid",
+                "com.crunchyroll.iphone"
+            ]
+        },
+        {
+            "appName": "Crypto.com Onchain Wallet",
+            "icon": "cryptocom-onchain-wallet.webp",
+            "websiteUrl": "https://crypto.com/onchain",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/crypto-com-onchain-wallet/id1512048310",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.defi.wallet",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Cronos Technologies / Crypto.com self-custody wallet (Android and iOS com.defi.wallet). Formerly Crypto.com DeFi Wallet. Store title Crypto.com: Onchain Wallet. Apple genre Finance. Distinct from the Crypto.com App, Trust Wallet, Metamask, and Bitcoin.com.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.defi.wallet",
+                "Crypto.com DeFi Wallet"
+            ]
         },
         {
             "appName": "Cx File Explorer",
@@ -4257,15 +4530,20 @@
         },
         {
             "appName": "Google Chat",
-            "icon": "google-chat.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "google-chat.webp",
+            "websiteUrl": "https://workspace.google.com/products/chat/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-chat/id1163852619",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.dynamite",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC Workspace messaging (Android com.google.android.apps.dynamite, iOS com.google.Dynamite). Store title Google Chat. Apple genre Business. Distinct from Google Hangouts, Google Meet, Gmail, Slack, and Microsoft Teams.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
+            "dateUpdated": "2026-09-07",
             "alternateNames": [
-                "googleChat"
+                "com.google.android.apps.dynamite",
+                "com.google.Dynamite",
+                "com.google.dynamite"
             ]
         },
         {
@@ -10910,6 +11188,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Xapo",
+            "icon": "xapo.webp",
+            "websiteUrl": "https://www.xapobank.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/gb/app/xapo-bank-save-in-btc-usd/id1560681080",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.xapo.bank",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Xapo Holdings / Xapo Bank Limited (Gibraltar). Historic wallet Android com.xapo (Play listing gone) and iOS com.iphone.XapoApp. Current store app Xapo Bank: Save in BTC & USD (Android and iOS com.xapo.bank). Apple genre Finance. Not on the US App Store. Distinct from Binance, Coinbase, Bitcoin.com, and Trust Wallet.",
+            "dateAdded": "2026-09-07",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.xapo",
+                "com.iphone.XapoApp",
+                "com.xapo.bank",
+                "Xapo Bank"
+            ]
         },
         {
             "appName": "Xender",
