@@ -90,6 +90,22 @@
             ]
         },
         {
+            "appName": "7- day weather forecast and daily temperature",
+            "icon": "7-day-weather-forecast-and-daily-temperature.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.infolife.ezweather.widget.hourlyweather.report",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Weather Widget Theme Dev Team / infolife ezWeather Android widget (mobi.infolife.ezweather.widget.hourlyweather.report). Play listing removed. No official iOS app. Distinct from 7 day weather forecast, Accurate Weather Forecast, Accurate Weather Forecast App & Radar, AccuWeather: Weather Radar, and 1Weather Forecasts & Radar.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "mobi.infolife.ezweather.widget.hourlyweather.report"
+            ]
+        },
+        {
             "appName": "99acres",
             "icon": "99acres.webp",
             "websiteUrl": "https://www.99acres.com",
@@ -226,6 +242,22 @@
             ]
         },
         {
+            "appName": "Armorfly Browser & Downloader - Private , Safe",
+            "icon": "armorfly-browser-downloader-private-safe.webp",
+            "websiteUrl": "",
+            "category": "Browser",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cmcm.armorfly",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Cheetah Mobile / CMCM Android browser (com.cmcm.armorfly). Store title Armorfly Browser & Downloader - Private , Safe. Play listing removed. No official iOS app. Distinct from CM Browser, ArmorText, Aloha Browser, Brave Browser, UC Browser, and Baidu Browser.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.cmcm.armorfly"
+            ]
+        },
+        {
             "appName": "ArmorText",
             "icon": "armortext.webp",
             "websiteUrl": "https://armortext.com/",
@@ -268,6 +300,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
             "alternateNames": [            ]
+        },
+        {
+            "appName": "Astrotalk - Talk to Astrologer",
+            "icon": "astrotalk-talk-to-astrologer.webp",
+            "websiteUrl": "https://astrotalk.com/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/astrotalk-talk-to-astrologer/id1208433822",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.astrotalk",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Codeyeti Software Solutions astrology consults (Android com.astrotalk, iOS codeyeti.com.AstroYeti). Store title Astrotalk - Talk to Astrologer. Apple genre Lifestyle. Distinct from InstaAstro, Astroyogi, Anytime Astro, and the Codeyeti astrologer-login app.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.astrotalk",
+                "codeyeti.com.AstroYeti"
+            ]
         },
         {
             "appName": "aTox",
@@ -331,6 +380,54 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-25",
             "alternateNames": []
+        },
+        {
+            "appName": "Accurate Weather Forecast",
+            "icon": "accurate-weather-forecast.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=modevelop.apps.accurate.weather.forecast",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Android weather app (modevelop.apps.accurate.weather.forecast). Play listing removed. No official iOS app. Distinct from AccuWeather: Weather Radar, 7 day weather forecast, Accurate Weather Forecast App & Radar (mobi.infolife.ezweather.livewallpaper.widget.forecast.app), Accurate Weather Live Forecast App, and Accurate Weather Report.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "modevelop.apps.accurate.weather.forecast"
+            ]
+        },
+        {
+            "appName": "Accurate Weather Forecast App & Radar",
+            "icon": "accurate-weather-forecast-app-radar.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.infolife.ezweather.livewallpaper.widget.forecast.app",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Weather Widget Theme Dev Team / infolife ezWeather Android widget (mobi.infolife.ezweather.livewallpaper.widget.forecast.app). Play listing removed. No official iOS app. Distinct from Accurate Weather Forecast (modevelop.apps.accurate.weather.forecast), 7 day weather forecast, AccuWeather: Weather Radar, Accurate Weather Live Forecast App, and Accurate Weather Report.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "mobi.infolife.ezweather.livewallpaper.widget.forecast.app"
+            ]
+        },
+        {
+            "appName": "Accurate Weather Live Forecast App",
+            "icon": "accurate-weather-live-forecast-app.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.infolife.ezweather.livewallpaper.wealwp.weatherforecast.realtime",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Weather Widget Theme Dev Team / infolife ezWeather Android widget (mobi.infolife.ezweather.livewallpaper.wealwp.weatherforecast.realtime). Play listing removed. No official iOS app. Distinct from Accurate Weather Forecast, Accurate Weather Forecast App & Radar, Accurate Weather Report, 7 day weather forecast, and AccuWeather: Weather Radar.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "mobi.infolife.ezweather.livewallpaper.wealwp.weatherforecast.realtime"
+            ]
         },
         {
             "appName": "AccuWeather: Weather Radar",
@@ -583,6 +680,24 @@
             ]
         },
         {
+            "appName": "Alice AI",
+            "icon": "alice-ai.webp",
+            "websiteUrl": "https://yandex.com/",
+            "category": "AI & Assistants",
+            "appleStoreUrl": "https://apps.apple.com/us/app/alice-ai-assistant/id6621272550",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yandex.aliceapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Yandex / Direct Cursus Computer Systems Trading LLC AI chat assistant (Android com.yandex.aliceapp, iOS com.yandex.alice-app). Play title Alice AI; Apple title Alice: AI assistant (US) / Alice AI: chat, photo, GPT (IN). Apple genre Productivity. Distinct from Yandex Browser, Yandex, ChatGPT, Claude, Grok, and Amazon Alexa.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.yandex.aliceapp",
+                "com.yandex.alice-app",
+                "Alice: AI assistant"
+            ]
+        },
+        {
             "appName": "AliExpress",
             "icon": "aliexpress.webp",
             "websiteUrl": "https://www.aliexpress.com/",
@@ -645,6 +760,23 @@
             ]
         },
         {
+            "appName": "Amberfog for VK",
+            "icon": "amberfog-for-vk.webp",
+            "websiteUrl": "https://vk.com/amberfog",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.amberfog.vkfree",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Dmitrii Lukashev unofficial VKontakte client (Android com.amberfog.vkfree; paid SKU com.amberfog.vk). Play title Amberfog for VK. Paid Play listing removed. No official iOS app. Distinct from VK, VK Messenger, VKontakte, and Kate Mobile.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.amberfog.vkfree",
+                "com.amberfog.vk"
+            ]
+        },
+        {
             "appName": "AlpineQuest",
             "icon": "alpinequest.webp",
             "websiteUrl": "https://www.alpinequest.net/",
@@ -680,6 +812,23 @@
             ]
         },
         {
+            "appName": "Alza",
+            "icon": "alza.webp",
+            "websiteUrl": "https://www.alza.cz",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/cz/app/alza/id582287621",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.alza.eshop",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Alza.cz a.s. electronics and general retail (Android cz.alza.eshop, iOS cz.juicymo.contracts.ios.Alza-01). Store title Alza. Apple genre Shopping. Not on the US App Store. Distinct from AliExpress and Amazon Shopping.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "cz.alza.eshop",
+                "cz.juicymo.contracts.ios.Alza-01"
+            ]
+        },
+        {
             "appName": "Amazon Alexa",
             "icon": "amazon-alexa.webp",
             "websiteUrl": "https://www.amazon.com/alexa",
@@ -694,6 +843,23 @@
             "alternateNames": [
                 "com.amazon.dee.app",
                 "com.amazon.echo"
+            ]
+        },
+        {
+            "appName": "Amazon India Shop, Pay, miniTV",
+            "icon": "amazon-india-shop-pay-minitv.webp",
+            "websiteUrl": "https://www.amazon.in/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/in/app/amazon-india-shop-pay-minitv/id1478350915",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=in.amazon.mShop.android.shopping",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Amazon Seller Services India shop, Pay, and miniTV (Android in.amazon.mShop.android.shopping, iOS com.amazon.AmazonIN). Store title Amazon India Shop, Pay, miniTV. Apple genre Shopping. Not on the US App Store. Distinct from Amazon Shopping, Amazon Kindle, Amazon Prime Video, Amazon Alexa, Amazon A to Z, and Flipkart Online Shopping App.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "in.amazon.mShop.android.shopping",
+                "com.amazon.AmazonIN"
             ]
         },
         {
@@ -1028,6 +1194,23 @@
             "alternateNames": [
                 "com.kospet.amazwear",
                 "com.Amazwear.app"
+            ]
+        },
+        {
+            "appName": "Apollo247",
+            "icon": "apollo247.webp",
+            "websiteUrl": "https://www.apollo247.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/in/app/apollo-247-health-medicine/id1496740273",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.apollo.patientapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Apollo Healthco / Apollo 24|7 India consults, pharmacy, and labs (Android com.apollo.patientapp, iOS com.apollo.apollo247). Store title Apollo 247 - Health & Medicine. Apple genre Medical. Not on the US App Store. Distinct from Apollo Doctor 247.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.apollo.patientapp",
+                "com.apollo.apollo247"
             ]
         },
         {
@@ -1727,6 +1910,24 @@
             ]
         },
         {
+            "appName": "Beeper: Universal Chat",
+            "icon": "beeper-universal-chat.webp",
+            "websiteUrl": "https://www.beeper.com/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/beeper-every-chat-in-one-app/id6499013100",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.beeper.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Automattic, Inc. unified inbox (Android com.beeper.android, iOS com.automattic.beeper). Play and Apple title Beeper: Every Chat in One App. Apple genre Social Networking. Distinct from Element, Element X, WhatsApp Messenger, Google Chat, Beeper Secure Messenger, and BeReal.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.beeper.android",
+                "com.automattic.beeper",
+                "Beeper: Every Chat in One App"
+            ]
+        },
+        {
             "appName": "BeeTalk",
             "icon": "beetalk.webp",
             "websiteUrl": "",
@@ -1757,6 +1958,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-13",
             "alternateNames": []
+        },
+        {
+            "appName": "bigbasket: Groceries and more",
+            "icon": "bigbasket-groceries-and-more.webp",
+            "websiteUrl": "https://www.bigbasket.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bigbasket-groceries-and-more/id660683603",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bigbasket.mobileapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Supermarket Grocery Supplies / Tata Digital grocery delivery (Android and iOS com.bigbasket.mobileapp). Store title bigbasket: Groceries and more. Apple genre Shopping. Distinct from bbinstant, bbdaily, Blinkit, Zepto, Instamart, JioMart, DMart Ready, and Uber Eats.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bigbasket.mobileapp"
+            ]
         },
         {
             "appName": "BigoLive",
@@ -2128,13 +2345,12 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.brave.browser&hl=en",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Privacy browser (Android com.brave.browser, iOS com.brave.ios.browser). Play title Brave Private Web Browser, VPN; Apple title Brave Browser & Search Engine. ArtiFast application key Brave.",
+            "notes": "Brave Software, Inc. privacy browser (Android com.brave.browser, iOS com.brave.ios.browser). Play title Brave Private Web Browser, VPN; Apple title Brave Browser & Search Engine. Apple genre Utilities. Distinct from Google Chrome, Firefox, Firefox Focus, DuckDuckGo, and RethinkDNS.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "com.brave.browser",
                 "com.brave.ios.browser",
-                "Brave",
                 "Brave Private Web Browser, VPN",
                 "Brave Browser & Search Engine"
             ]
@@ -2585,6 +2801,23 @@
             ]
         },
         {
+            "appName": "CCleaner",
+            "icon": "ccleaner.webp",
+            "websiteUrl": "https://www.ccleaner.com",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/ccleaner-phone-cleaner/id6450901367",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.piriform.ccleaner",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Piriform Ltd / Gen Digital phone cleaner (Android com.piriform.ccleaner, iOS com.piriform.ios.ccleaner). Store title CCleaner – Phone Cleaner. Apple genre Utilities. Distinct from Files by Google.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.piriform.ccleaner",
+                "com.piriform.ios.ccleaner"
+            ]
+        },
+        {
             "appName": "ChatGPT",
             "icon": "chatgpt.webp",
             "websiteUrl": "https://chatgpt.com/",
@@ -2925,13 +3158,19 @@
         {
             "appName": "CoverMe",
             "icon": "coverme.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "websiteUrl": "https://www.coverme.ws",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/id593652484",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ws.coverme.im",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "CoverMe Secure Messenger Inc. second-number calling and texting (Android ws.coverme.im, iOS com.coverme.covermeAdhoc). Play title CoverMe - Second Phone Number. iOS listing id 593652484 is not currently returned by Apple lookup. Distinct from Burner, TextNow, Text Free - Free Text + Call, and Hide My Text.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-08",
+            "alternateNames": [
+                "ws.coverme.im",
+                "com.coverme.covermeAdhoc"
+            ]
         },
         {
             "appName": "Craigslist",
@@ -3104,6 +3343,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Delhivery: Courier App",
+            "icon": "delhivery-courier-app.webp",
+            "websiteUrl": "https://www.delhivery.com/",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/in/app/delhivery-courier-app/id1629610870",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.delhiveryConsigneeApp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Delhivery Limited consumer courier booking and tracking (Android and iOS com.delhiveryConsigneeApp). Store title Delhivery: Courier App. Apple genre Utilities. Not on the US App Store. Distinct from DHL, Shiprocket, Porter, MyDTDC, and Borzo.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.delhiveryConsigneeApp"
+            ]
         },
         {
             "appName": "DHL",
@@ -3527,6 +3782,22 @@
                 "com.ecosia.android",
                 "com.ecosia.ecosiaapp",
                 "Ecosia: Search to plant trees"
+            ]
+        },
+        {
+            "appName": "Eidoo: Bitcoin and Ethereum Wallet and Exchange",
+            "icon": "eidoo-bitcoin-and-ethereum-wallet-and-exchange.webp",
+            "websiteUrl": "",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/app/id1279896253",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.eidoo.wallet.prodnet",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Eidoo Sagl Bitcoin and Ethereum wallet (Android and iOS io.eidoo.wallet.prodnet). Store title Eidoo: Bitcoin and Ethereum Wallet and Exchange. Both store listings removed. Former eidoo.io site is no longer the product. Distinct from Metamask, Trust Wallet, Exodus: Crypto Bitcoin Wallet, Coinbase, Bitcoin.com, and Ambire.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "io.eidoo.wallet.prodnet"
             ]
         },
         {
@@ -4090,6 +4361,23 @@
             ]
         },
         {
+            "appName": "Flipkart Online Shopping App",
+            "icon": "flipkart-online-shopping-app.webp",
+            "websiteUrl": "https://www.flipkart.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/flipkart-online-shopping-app/id742044692",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.flipkart.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Flipkart Internet Private Limited India retail (Android com.flipkart.android, iOS com.appflipkart.flipkart). Play title Flipkart Online Shopping App; Apple title Flipkart - Online Shopping App. Apple genre Shopping. Distinct from Shopsy, Flipkart Seller, super.money, Myntra, Amazon Shopping, Meesho, and AliExpress.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.flipkart.android",
+                "com.appflipkart.flipkart"
+            ]
+        },
+        {
             "appName": "Flock",
             "icon": "",
             "websiteUrl": "",
@@ -4271,6 +4559,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "FRND: Talk to Friends Online",
+            "icon": "frnd-talk-to-friends-online.webp",
+            "websiteUrl": "https://www.frnd.app/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/frnd-connect-feel-better/id6475403148",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dating.for.all",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Cold Brew Tech voice and chat (Android com.dating.for.all, iOS com.app.frnd). Play title FRND: Talk to Friends Online; Apple title FRND - Connect & Feel Better. Apple genre Social Networking. Distinct from Azar, Badoo: Dating. Chat. Friends, Tinder, Bumble, and Hike Messenger.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dating.for.all",
+                "com.app.frnd"
+            ]
         },
         {
             "appName": "GPS Camera 55",
@@ -4480,6 +4785,22 @@
             ]
         },
         {
+            "appName": "GO Chat",
+            "icon": "go-chat.webp",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/id501624063",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Legacy iOS messenger (com.3g.gochat). Historic Apple id 501624063. Store listing removed. No Play listing. Distinct from Google Chat, WeChat, Etisalat GoChat Messenger, GO Keyboard, and GO SMS Pro.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.3g.gochat"
+            ]
+        },
+        {
             "appName": "Google",
             "icon": "google.webp",
             "websiteUrl": "",
@@ -4511,6 +4832,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Google Authenticator",
+            "icon": "google-authenticator.webp",
+            "websiteUrl": "https://support.google.com/accounts/answer/1066447",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-authenticator/id388497605",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC TOTP authenticator (Android com.google.android.apps.authenticator2, iOS com.google.Authenticator). Store title Google Authenticator. Apple genre Utilities. Distinct from Aegis Authenticator, Microsoft Authenticator, Bitwarden Password Manager, and Apple Keychain (Passwords).",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.google.android.apps.authenticator2",
+                "com.google.Authenticator"
+            ]
         },
         {
             "appName": "Google Calendar",
@@ -4782,21 +5120,29 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.messaging",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "Formerly Android Messages / Messages by Google. Magnet Android SMS/MMS keys include system mmssms.db recovery often used with this app.",
+            "notes": "Google LLC SMS and RCS (Android and Wear OS com.google.android.apps.messaging). Play title Google Messages. No iOS app. Formerly Android Messages / Messenger by Google. Distinct from Apple Messages, Samsung Messages, Google Chat, Google Allo, and Meta Messenger (Facebook).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-14",
-            "alternateNames": []
+            "dateUpdated": "2026-09-08",
+            "alternateNames": [
+                "com.google.android.apps.messaging"
+            ]
         },
         {
             "appName": "Google Pay",
-            "icon": "google-pay.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "google-pay.webp",
+            "websiteUrl": "https://pay.google.com/intl/en_in/about/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/in/app/google-pay-save-pay-manage/id1193357041",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.paisa.user",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC India UPI payments (Android com.google.android.apps.nbu.paisa.user, iOS com.google.paisa). Play title Google Pay: Secure UPI payment; Apple title Google Pay: Save, Pay, Manage. Apple genre Finance. Not on the US App Store. Distinct from Google Wallet (com.google.android.apps.walletnfcrel), Apple Wallet, Samsung Wallet, PhonePe, and CRED.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-08",
+            "alternateNames": [
+                "com.google.android.apps.nbu.paisa.user",
+                "com.google.paisa"
+            ]
         },
         {
             "appName": "Google Phone",
@@ -4904,6 +5250,22 @@
             "alternateNames": []
         },
         {
+            "appName": "Google Trips - Travel Planner",
+            "icon": "google-trips-travel-planner.webp",
+            "websiteUrl": "",
+            "category": "Travel",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.travel.onthego",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Google LLC trip planner (Android com.google.android.apps.travel.onthego). Store title Google Trips - Travel Planner. Mobile apps discontinued 5 Aug 2019. Distinct from Google Maps, Google, TripAdvisor, TripIt, and Airbnb.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.google.android.apps.travel.onthego"
+            ]
+        },
+        {
             "appName": "Google Voice",
             "icon": "google-voice.png",
             "websiteUrl": "",
@@ -4969,6 +5331,23 @@
             ]
         },
         {
+            "appName": "Grab - Taxi & Food Delivery",
+            "icon": "grab-taxi-food-delivery.webp",
+            "websiteUrl": "https://www.grab.com/",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/grab-taxi-ride-food-delivery/id647268330",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grabtaxi.passenger",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Grabtaxi Holdings passenger app (Android com.grabtaxi.passenger, iOS com.grabtaxi.iphone). Play title Grab - Taxi & Food Delivery; Apple title Grab: Taxi Ride, Food Delivery. Apple genre Travel. Distinct from Grab Driver, Uber, Uber Eats: Food Delivery, Careem, and Bolt.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.grabtaxi.passenger",
+                "com.grabtaxi.iphone"
+            ]
+        },
+        {
             "appName": "Grok",
             "icon": "grok.webp",
             "websiteUrl": "https://grok.com/",
@@ -4977,10 +5356,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=ai.x.grok",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "X Corp. / xAI assistant (Android ai.x.grok, iOS ai.x.GrokApp). Store title Grok AI. Apple genre Productivity. Distinct from ChatGPT, Claude, DeepSeek - AI Assistant, Alice AI, and Amazon Alexa.",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-08",
+            "alternateNames": [
+                "ai.x.grok",
+                "ai.x.GrokApp"
+            ]
         },
         {
             "appName": "GroupMe",
@@ -5037,7 +5419,7 @@
             "activeOnPlayStore": "true",
             "notes": "Hinge, Inc. (Match Group). Android co.hinge.app; iOS co.hinge.mobile.ios. Store title Hinge Dating App: Match & Date. Apple genre Lifestyle. Distinct from Tinder, Bumble, OkCupid, Grindr, and Plenty of Fish.",
             "dateAdded": "2026-08-20",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "co.hinge.app",
                 "co.hinge.mobile.ios"
@@ -5546,6 +5928,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": []
+        },
+        {
+            "appName": "InShot",
+            "icon": "inshot.webp",
+            "websiteUrl": "https://inshot.cc",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/inshot-video-editor/id997362197",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.camerasideas.instashot",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "SHANTANU PTE. LTD. video and photo editor (Android com.camerasideas.instashot, iOS com.camerasideas.InstaShot). Play title Video Editor & Maker - InShot; Apple title InShot - Video Editor. Apple genre Photo & Video. Distinct from CapCut and Instagram.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.camerasideas.instashot",
+                "com.camerasideas.InstaShot"
+            ]
         },
         {
             "appName": "Instagram",
@@ -6134,7 +6533,7 @@
             "activeOnPlayStore": "true",
             "notes": "LY Corporation messenger (Android jp.naver.line.android, iOS jp.naver.line). Store title LINE / LINE: Calls & Messages. Apple genre Social Networking. Distinct from KakaoTalk, WeChat, WhatsApp Messenger, Whale, and LINE Official Account.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-30",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "jp.naver.line.android",
                 "jp.naver.line"
@@ -6729,6 +7128,22 @@
             "dateUpdated": "2026-09-01",
             "alternateNames": [
                 "com.mi.globalbrowser"
+            ]
+        },
+        {
+            "appName": "MiChat -Chat & Meet New People",
+            "icon": "michat.webp",
+            "websiteUrl": "https://www.michat.sg",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/in/app/michat-chat-meet-new-people/id1436584861",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.michatapp.im",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MICHAT PTE. LIMITED (Singapore). Android and iOS share com.michatapp.im. Play title MiChat - Chat, Make Friends. Nearby people, groups, and moments-style chat. Distinct from Xiaomi Mi apps, WeChat, MICO, MeetMe, MeowChat, and Invida’s MiChat.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.michatapp.im"
             ]
         },
         {
@@ -8149,7 +8564,7 @@
             "activeOnPlayStore": "true",
             "notes": "Legendary Software Labs vault, formerly Enchanted Cloud (com.enchantedcloud.photovault on Android and iOS). Play title Private Photo Vault; Apple title Private Photo Vault - Pic Safe. Apple genre Photo & Video. Pro package com.enchantedcloud.photovaultpro is delisted on Play. Distinct from KeepSafe, GalleryVault, Sgallery, Calculator Photo Vault (PV), and Secret Calculator Photo Album.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-27",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "com.enchantedcloud.photovault",
                 "com.enchantedcloud.photovaultpro",
@@ -9395,7 +9810,7 @@
             "activeOnPlayStore": "true",
             "notes": "Spotify AB music and podcasts (Android com.spotify.music, iOS com.spotify.client). Store title Spotify: Music and Podcasts. Apple genre Music. Distinct from Spotify Kids, Spotify for Artists, YouTube Music, SoundCloud, Shazam, Apple Music, and stats.fm.",
             "dateAdded": "2026-08-18",
-            "dateUpdated": "2026-08-27",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "com.spotify.music",
                 "com.spotify.client",
@@ -9869,9 +10284,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enflick.android.TextNow",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "TextNow, Inc. second-number calling and texting (Android com.enflick.android.TextNow, iOS com.tinginteractive.usms). Store title TextNow: Call + Text Unlimited. Apple genre Social Networking. Distinct from TextPlus, Text Me: Second Number, Text Free - Free Text + Call, Nextplus: Phone # Text + Call, Talkatone, and Burner.",
+            "notes": "TextNow, Inc. second-number calling and texting (Android com.enflick.android.TextNow, iOS com.tinginteractive.usms). Store title TextNow: Call + Text Unlimited. Apple genre Social Networking. Distinct from TextPlus, Text Me: Second Number, Text Free - Free Text + Call, Nextplus: Phone # Text + Call, Talkatone, Burner, and CoverMe.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-30",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "com.enflick.android.TextNow",
                 "com.tinginteractive.usms"
@@ -10801,6 +11216,23 @@
             "alternateNames": []
         },
         {
+            "appName": "VivaVideo",
+            "icon": "vivavideo.webp",
+            "websiteUrl": "https://www.vivavideo.tv",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/vivavideo-video-cut-editor/id738897668",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.quvideo.xiaoying",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "QuVideo / Hangzhou Xiaoying Innovation Technology video editor (Android com.quvideo.xiaoying). Play title VivaVideo - Video Cut & Editor. Formerly XiaoYing. Play genre Video Players & Editors. iOS listing id 738897668 is not currently returned by Apple lookup. Distinct from InShot, CapCut, VivaCut, and Tempo.",
+            "dateAdded": "2026-09-08",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.quvideo.xiaoying",
+                "XiaoYing"
+            ]
+        },
+        {
             "appName": "Voxer",
             "icon": "voxer.webp",
             "websiteUrl": "",
@@ -11713,7 +12145,7 @@
             "activeOnPlayStore": "true",
             "notes": "Zoom Communications, Inc. Android and iOS us.zoom.videomeetings. Store title Zoom Workplace (formerly Zoom - One Platform to Connect). Apple genre Business. Distinct from Google Meet, Microsoft Teams, Skype, Zoom Workplace for Intune, and Zoom for Home TV.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-20",
+            "dateUpdated": "2026-09-08",
             "alternateNames": [
                 "us.zoom.videomeetings",
                 "Zoom Workplace"
