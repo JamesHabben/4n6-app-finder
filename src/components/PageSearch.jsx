@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext, useMemo, useDeferredValue, useCallback, memo } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useContext, useMemo, useDeferredValue, useCallback, memo, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Input, Row, Col } from 'antd';
 import { LoadingOutlined } from '@ant-design/icons';
@@ -22,15 +22,48 @@ const SearchResults = memo(function SearchResults({ apps, onAppClick }) {
   );
 });
 
+function isTouchPrimaryDevice() {
+  return window.matchMedia('(pointer: coarse)').matches;
+}
+
+function readSearchTermFromQuery(search) {
+  const searchQuery = new URLSearchParams(search).get('search');
+  if (!searchQuery) {
+    return '';
+  }
+  return decodeURIComponent(searchQuery).replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 function PageSearch() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const navigate = useNavigate();
+  const location = useLocation();
+  const [searchTerm, setSearchTerm] = useState(() => readSearchTermFromQuery(window.location.search));
   const deferredSearchTerm = useDeferredValue(searchTerm);
   const isSearchStale = searchTerm !== deferredSearchTerm;
   const { apps, tools } = useContext(DataContext);
   const [selectedApp, setSelectedApp] = useState(null);
   const [isModalVisible, setIsModalVisible] = useState(false);
-  const navigate = useNavigate();
-  const location = useLocation();
+  const searchInputRef = useRef(null);
+
+  useLayoutEffect(() => {
+    if (isTouchPrimaryDevice() || new URLSearchParams(window.location.search).has('app')) {
+      return;
+    }
+
+    const focusBox = () => {
+      const input = searchInputRef.current;
+      input?.focus({ preventScroll: true });
+      input?.input?.focus({ preventScroll: true });
+    };
+
+    focusBox();
+    const frame = window.requestAnimationFrame(focusBox);
+    const timeoutId = window.setTimeout(focusBox, 50);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.clearTimeout(timeoutId);
+    };
+  }, []);
 
   useEffect(() => {
     const params = new URLSearchParams(location.search);
@@ -38,7 +71,7 @@ function PageSearch() {
     const appName = params.get('app');
 
     if (searchQuery) {
-      const safeSearchQuery = decodeURIComponent(searchQuery).replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      const safeSearchQuery = readSearchTermFromQuery(location.search);
       if (safeSearchQuery !== searchTerm) {
         setSearchTerm(safeSearchQuery);
       }
@@ -72,14 +105,25 @@ function PageSearch() {
 
   const clearSearch = () => {
     setSearchTerm('');
-    navigate(`/`);
   };
 
   useEffect(() => {
-    if (searchTerm) {
-      navigate(`/?search=${encodeURIComponent(searchTerm)}`);
+    const params = new URLSearchParams(location.search);
+    if (params.has('app')) {
+      return;
     }
-  }, [searchTerm]);
+
+    if (searchTerm) {
+      if (readSearchTermFromQuery(location.search) !== searchTerm) {
+        navigate(`/?search=${encodeURIComponent(searchTerm)}`, { replace: true });
+      }
+      return;
+    }
+
+    if (params.has('search')) {
+      navigate('/', { replace: true });
+    }
+  }, [searchTerm, navigate, location.search]);
 
   const closeAppModal = () => {
     setIsModalVisible(false);
@@ -95,6 +139,7 @@ function PageSearch() {
     <div style={{ padding: '5vh 1rem' }}>
       <div style={{ display: 'flex', alignItems: 'center', flexDirection: 'column', marginBottom: '1rem', textAlign: 'left' }}>
         <Input
+          ref={searchInputRef}
           className="searchBar"
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
