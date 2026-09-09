@@ -8505,16 +8505,20 @@
         {
             "appName": "Potato Chat",
             "icon": "potato-chat.webp",
-            "websiteUrl": "",
+            "websiteUrl": "https://www.potato.im",
             "category": "Communication",
             "appleStoreUrl": "https://apps.apple.com/us/app/potato-chat/id1204726898",
-            "googlePlayUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.potato.messenger.play",
             "activeOnAppleStore": "false",
             "activeOnPlayStore": "false",
-            "notes": "Telegram-fork messenger (org.potatochat.PotatoEnterprise / org.potato.messenger). Apple US listing removed; Android typically sideloaded, not on Play.",
+            "notes": "HorseMen Technologies SA. Telegram-fork messenger. iOS org.potatochat.PotatoEnterprise; Android org.potato.messenger (Play used org.potato.messenger.play). Clients still offered at potato.im. Apple listing id 1204726898 and Play are removed. Distinct from Telegram, Telegram X, and Plus Messenger.",
             "dateAdded": "2026-07-12",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-09",
+            "alternateNames": [
+                "org.potatochat.PotatoEnterprise",
+                "org.potato.messenger",
+                "org.potato.messenger.play"
+            ]
         },
         {
             "appName": "Prey Anti-Theft",
@@ -9525,13 +9529,19 @@
         {
             "appName": "Skout",
             "icon": "skout.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
+            "websiteUrl": "https://www.skout.com",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/skout-dating-app-live-chat/id302324249",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.skout.android",
-            "notes": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "The Meet Group / ParshipMeet (Apple seller Skout, Inc.). Android com.skout.android; iOS com.skout.SKOUT. Play title Skout - Meet, Chat, Go Live; Apple title Skout Dating App & Live Chat. Apple genre Social Networking. Distinct from MeetMe, Tagged, SayHi Chat Meet Dating People, Azar, and Skype.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-09",
-            "alternateNames": []
+            "dateUpdated": "2026-09-09",
+            "alternateNames": [
+                "com.skout.android",
+                "com.skout.SKOUT"
+            ]
         },
         {
             "appName": "SkyFire Browser",
@@ -10135,12 +10145,29 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.telegram.messenger",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Telegram FZ-LLC. Android org.telegram.messenger; iOS ph.telegra.Telegraph. Apple genre Social Networking; store title Telegram Messenger. Telegram X (org.thunderdog.challegram / org.telegram.TelegramHD) maps here. Distinct from Plus Messenger and TeleGuard.",
+            "notes": "Telegram FZ-LLC. Android org.telegram.messenger; iOS ph.telegra.Telegraph. Apple genre Social Networking; store title Telegram Messenger. Distinct from Telegram X, Plus Messenger, and TeleGuard.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-19",
+            "dateUpdated": "2026-09-09",
             "alternateNames": [
                 "org.telegram.messenger",
                 "ph.telegra.Telegraph"
+            ]
+        },
+        {
+            "appName": "Telegram X",
+            "icon": "telegram-x.webp",
+            "websiteUrl": "https://telegram.org",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.thunderdog.challegram",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Telegram FZ-LLC. Official alternate Android client (org.thunderdog.challegram), TDLib-based. Android-only on Play. Older iOS SKU org.telegram.TelegramHD is delisted. Distinct from Telegram (org.telegram.messenger), Plus Messenger, TeleGuard, and Nicegram.",
+            "dateAdded": "2026-09-09",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.thunderdog.challegram",
+                "org.telegram.TelegramHD"
             ]
         },
         {
@@ -10232,16 +10259,15 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.pinger.textfree",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Pinger TextFree second-number app (Android com.pinger.textfree and legacy com.pinger.ppa; iOS com.pinger.textfreeWithVoice and older com.pinger.textfreeVoiceWithVoicemail). Current Play/Apple title Text Free: Second Phone Number. Sibling Play listing Text Free: Calling & Texting (com.pinger.textfree.call) is also mapped here via Oxygen/MOBILEdit. Distinct from Sideline, Pinger: Call Plus Texting App (com.pinger.pingerphone2), Text Me: Second Number, TextNow, and textPlus.",
+            "notes": "Pinger, Inc. TextFree second-number app (Android com.pinger.textfree and legacy com.pinger.ppa; iOS com.pinger.textfreeWithVoice and older com.pinger.textfreeVoiceWithVoicemail). Play/Apple title Text Free: Second Phone Number. Sibling Android SKU Text Free: Calling & Texting (com.pinger.textfree.call) is a separate Play listing. Distinct from Sideline, Pinger: Call Plus Texting App (com.pinger.pingerphone2), Text Me: Second Number, TextNow, and textPlus.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-09-09",
             "alternateNames": [
                 "com.pinger.textfree",
                 "com.pinger.textfreeWithVoice",
                 "com.pinger.textfree.call",
                 "com.pinger.ppa",
-                "com.pinger.textfreeVoiceWithVoicemail",
-                "TextFree"
+                "com.pinger.textfreeVoiceWithVoicemail"
             ]
         },
         {
@@ -10498,6 +10524,23 @@
                 "com.tomtom.USA2GB",
                 "TomTom GPS",
                 "TomTom GO Navigation"
+            ]
+        },
+        {
+            "appName": "TomTom GO Ride: Motorcycle GPS",
+            "icon": "tomtom-go-ride.webp",
+            "websiteUrl": "https://www.tomtom.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.roadcaptain.app",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "TomTom International BV motorcycle navigation, discontinued 2024-09-15. Android io.roadcaptain.app (Road Captain lineage); iOS bundle com.tomtom.GoRide. Distinct from TomTom Go GPS (GO Expert / GO Navigation), TomTom AmiGO / Maps & Traffic, Google Maps, Waze, and Sygic GPS Navigation & Maps.",
+            "dateAdded": "2026-09-09",
+            "dateUpdated": "",
+            "alternateNames": [
+                "io.roadcaptain.app",
+                "com.tomtom.GoRide"
             ]
         },
         {
@@ -10858,7 +10901,7 @@
             "activeOnPlayStore": "true",
             "notes": "Twitch Interactive, Inc. (Amazon). Android tv.twitch.android.app; iOS tv.twitch. Store title Twitch: Live Streaming. Apple genre Photo & Video. Distinct from YouTube and Discord.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-20",
+            "dateUpdated": "2026-09-09",
             "alternateNames": [
                 "tv.twitch.android.app",
                 "tv.twitch"
@@ -11261,6 +11304,23 @@
             ]
         },
         {
+            "appName": "WearPro",
+            "icon": "wearpro.webp",
+            "websiteUrl": "https://www.dtno1.com/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/wearpro/id1527442282",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dtno1.WearPro",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Shenzhen Wanruxia Technology Co., Ltd. (DTNO.1). Companion app for DTNO.1 smartwatches. Android com.dtno1.WearPro; iOS com.dtno1.WearPro (dump also uses com.dtno1.wearpro). Can sync health data to Apple Health. Distinct from WearJoy, Da Fit, Google Wear OS, and Apple Watch / Apple Health.",
+            "dateAdded": "2026-09-09",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.dtno1.WearPro",
+                "com.dtno1.wearpro"
+            ]
+        },
+        {
             "appName": "Weather Underground",
             "icon": "weather-underground.webp",
             "websiteUrl": "https://www.wunderground.com/",
@@ -11399,6 +11459,22 @@
                 "com.whatsapp",
                 "net.whatsapp.WhatsApp",
                 "Whatsapp"
+            ]
+        },
+        {
+            "appName": "Whatschat",
+            "icon": "whatschat.webp",
+            "websiteUrl": "",
+            "category": "Social Networking",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.miniwebs.whatschat",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Miniwebs S.L.U. Android-only nearby/geo chat (com.miniwebs.whatschat). Play removed. Distinct from WhatsApp Messenger, WhatsChat – Chat (Intercon Media), WhatsChat Messenger (Leora), WhatsChat (com.usal.jrodrigo.whatschat), and Azync Labs iPad WhatsChat.",
+            "dateAdded": "2026-09-09",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.miniwebs.whatschat"
             ]
         },
         {
@@ -11550,6 +11626,40 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "WorldCard Mobile",
+            "icon": "worldcard-mobile.webp",
+            "websiteUrl": "http://worldcard.penpowerinc.com",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/worldcard-mobile/id333211045",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.penpower.bcr.worldcard",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Penpower Inc. / Penpower Technology Ltd. Paid business-card OCR scanner. Android com.penpower.bcr.worldcard; iOS com.penpower.worldcardmobileen. Distinct from WorldCard Mobile Lite, WorldCard for Office 365, CamScanner, and Adobe Scan.",
+            "dateAdded": "2026-09-09",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.penpower.bcr.worldcard",
+                "com.penpower.worldcardmobileen"
+            ]
+        },
+        {
+            "appName": "WorldCard Mobile Lite",
+            "icon": "worldcard-mobile-lite.webp",
+            "websiteUrl": "http://worldcard.penpowerinc.com",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/worldcard-mobile-lite/id369872974",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.penpower.bcr.worldcard.lite",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Penpower Inc. / Penpower Technology Ltd. Free/capped business-card OCR scanner (Lite contact limit). Android com.penpower.bcr.worldcard.lite; iOS com.penpower.worldcardmobileliteen. Play listing removed. Distinct from WorldCard Mobile (paid), WorldCard for Office 365, CamScanner, and Adobe Scan.",
+            "dateAdded": "2026-09-09",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.penpower.bcr.worldcard.lite",
+                "com.penpower.worldcardmobileliteen"
+            ]
         },
         {
             "appName": "Words With Friends",
@@ -11784,17 +11894,16 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yandex.browser",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Yandex / Direct Cursus Chromium browser (Android com.yandex.browser, iOS ru.yandex.mobile.search, iPad ru.yandex.mobile.search.ipad). Store title Yandex Browser with Alice AI. Apple genre Utilities. Alpha/beta/Lite SKUs (com.yandex.browser.alpha / .beta / .lite) map here. Distinct from Yandex (ru.yandex.mobile search app), Yandex Maps, Yandex Navigator, Yandex Go, Google Chrome, Whale, and Samsung Internet Browser.",
+            "notes": "Yandex / Direct Cursus Chromium browser (Android com.yandex.browser, iOS ru.yandex.mobile.search, iPad ru.yandex.mobile.search.ipad). Store title Yandex Browser with Alice AI. Apple genre Utilities. Alpha, beta, and Lite SKUs use com.yandex.browser.alpha / .beta / .lite. Distinct from Alice AI, Yandex (ru.yandex.mobile search app), Yandex Maps, Yandex Navigator, Yandex Go, Google Chrome, Whale, and Samsung Internet Browser.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-28",
+            "dateUpdated": "2026-09-09",
             "alternateNames": [
                 "com.yandex.browser",
                 "ru.yandex.mobile.search",
                 "ru.yandex.mobile.search.ipad",
                 "com.yandex.browser.alpha",
                 "com.yandex.browser.beta",
-                "com.yandex.browser.lite",
-                "Yandex Browser with Alice AI"
+                "com.yandex.browser.lite"
             ]
         },
         {
