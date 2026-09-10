@@ -2011,6 +2011,24 @@
             ]
         },
         {
+            "appName": "Binance.US - Buy Crypto & BTC",
+            "icon": "binance-us-buy-crypto-btc.webp",
+            "websiteUrl": "https://www.binance.us",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/binance-us-buy-crypto-btc/id1492670702",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.binance.us",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "BAM Technology Services Inc. US crypto exchange (Android com.binance.us, iOS us.binance.fiat). Play title Binance.US: Buy BTC & Crypto. Apple genre Finance. Distinct from Binance (com.binance.dev / com.czzhao.binance), Coinbase, Trust Wallet, and Kraken.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.binance.us",
+                "us.binance.fiat",
+                "Binance.US: Buy BTC & Crypto"
+            ]
+        },
+        {
             "appName": "Bitcoin.com",
             "icon": "bitcoin-com.webp",
             "websiteUrl": "https://www.bitcoin.com",
@@ -2056,6 +2074,39 @@
                 "co.bird.android",
                 "co.bird.Ride",
                 "Bird — Ride Electric"
+            ]
+        },
+        {
+            "appName": "Bistro: Food in minutes",
+            "icon": "bistro-food-in-minutes.webp",
+            "websiteUrl": "https://bistro.blinkit.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bistro-food-in-minutes/id6670203019",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.blinkit.bistro",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Blink Commerce Private Limited / Blinkit prepared-food delivery (Android and iOS com.blinkit.bistro), in select Indian cities. Store title Bistro: Food in minutes. Apple genre Food & Drink. Distinct from DoorDash, Uber Eats: Food Delivery, bigbasket, and the Blinkit grocery app.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.blinkit.bistro"
+            ]
+        },
+        {
+            "appName": "bitchat mesh",
+            "icon": "bitchat-mesh.webp",
+            "websiteUrl": "https://github.com/permissionlesstech/bitchat",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bitchat-mesh/id6748219622",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bitchat.droid",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "permissionless tech, llc Bluetooth mesh messenger (Android com.bitchat.droid, iOS chat.bitchat); Play publisher Verse Communication PBC. Play title bitchat. Apple genre Social Networking. Nearby chat over Bluetooth LE without accounts or phone numbers; optional Nostr when internet is available. Distinct from Briar, Session, Signal, WhatsApp, and Bridgefy.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "chat.bitchat",
+                "com.bitchat.droid"
             ]
         },
         {
@@ -2208,6 +2259,24 @@
             ]
         },
         {
+            "appName": "Blinkit: Groceries & more",
+            "icon": "blinkit-groceries-more.webp",
+            "websiteUrl": "https://www.blinkit.com",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/blinkit-groceries-more/id960335206",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.grofers.customerapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Blink Commerce Private Limited grocery delivery, formerly Grofers (Android com.grofers.customerapp, iOS com.grofers.consumer). Store title Blinkit: Groceries & more. Apple genre Food & Drink. Distinct from Bistro: Food in minutes, bigbasket: Groceries and more, Zepto, and Uber Eats: Food Delivery.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.grofers.consumer",
+                "com.grofers.customerapp",
+                "Grofers"
+            ]
+        },
+        {
             "appName": "Blue Mail",
             "icon": "blue-mail.webp",
             "websiteUrl": "https://bluemail.me/",
@@ -2238,6 +2307,22 @@
             "dateUpdated": "2026-09-07",
             "alternateNames": [
                 "xyz.blueskyweb.app"
+            ]
+        },
+        {
+            "appName": "BluSmart:Premium Cabs in Dubai",
+            "icon": "blusmart-premium-cabs-in-dubai.webp",
+            "websiteUrl": "",
+            "category": "Transportation",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.blusmart.rider",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "BluSmart Mobility Tech Private Ltd. / BLU-SMART MOBILITY PRIVATE LIMITED electric chauffeur cab app for Dubai (Android com.blusmart.rider). Play title BluSmart:Premium Cabs in Dubai. Play listing removed. No current iOS listing for this package. Distinct from the India BluSmart rider app (com.blusmart.blusmart), Uber, Careem, Bolt (formerly Taxify), and Ola.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.blusmart.rider"
             ]
         },
         {
@@ -2284,6 +2369,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Bolt Food: Delivery & Takeaway",
+            "icon": "bolt-food-delivery-takeaway.webp",
+            "websiteUrl": "https://food.bolt.eu/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bolt-food/id1451492388",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bolt.deliveryclient",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "BOLT TECHNOLOGY OU food delivery (Android com.bolt.deliveryclient, iOS ee.bolt.deliveryclient). Play title Bolt Food: Delivery & Takeaway; Apple title Bolt Food. Apple genre Food & Drink. Distinct from Bolt (formerly Taxify), Uber Eats: Food Delivery, DoorDash, and Careem.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bolt.deliveryclient",
+                "ee.bolt.deliveryclient"
+            ]
+        },
+        {
             "appName": "Booking.com",
             "icon": "booking-com.webp",
             "websiteUrl": "https://www.booking.com/",
@@ -2298,6 +2400,22 @@
             "alternateNames": [
                 "com.booking",
                 "com.booking.BookingApp"
+            ]
+        },
+        {
+            "appName": "BookMyShow.com",
+            "icon": "bookmyshow-com.webp",
+            "websiteUrl": "https://in.bookmyshow.com",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bookmyshow-movies-events/id405894842",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bt.bms",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Bigtree Entertainment Pvt. Ltd. movie and events ticketing (Android com.bt.bms, iOS BookMyShow.com). Store title BookMyShow | Movies & Events. Apple genre Entertainment. Distinct from BookMyShow Partner, Fandango, and District: Movies Events Dining.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bt.bms"
             ]
         },
         {
@@ -3315,6 +3433,23 @@
             "dateUpdated": "",
             "alternateNames": [
                 "com.dailymotion.dailymotion"
+            ]
+        },
+        {
+            "appName": "Day One Diary: Daily Journal",
+            "icon": "day-one-diary-daily-journal.webp",
+            "websiteUrl": "https://dayoneapp.com",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/day-one-daily-journal-diary/id1044867788",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.dayoneapp.dayone",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Automattic / Bloom Built Inc. journal (Android com.dayoneapp.dayone, iOS com.bloombuilt.dayone-ios). Play title Day One Diary: Daily Journal; Apple title Day One: Daily Journal & Diary. Apple genre Health & Fitness. Distinct from Apple Journal, Journey - Diary, Journal, and Apple Notes.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bloombuilt.dayone-ios",
+                "com.dayoneapp.dayone"
             ]
         },
         {
@@ -4619,6 +4754,22 @@
             ]
         },
         {
+            "appName": "Galaxy Wearable",
+            "icon": "galaxy-wearable.webp",
+            "websiteUrl": "https://www.samsung.com/support/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.samsung.android.app.watchmanager",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Samsung Electronics Co., Ltd. Android companion for Galaxy Watch, Buds, and other wearables (com.samsung.android.app.watchmanager). Store title Galaxy Wearable. No iOS app under this package. Distinct from Samsung Health, Samsung Galaxy Watch (Gear S) on iOS (com.samsung.gearwatch), Samsung Galaxy Buds (com.samsung.galaxybuds), Garmin Connect, and Google Health (Fitbit).",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.samsung.android.app.watchmanager"
+            ]
+        },
+        {
             "appName": "GalleryVault",
             "icon": "galleryvault.webp",
             "websiteUrl": "https://thinkyeah.com/",
@@ -4720,6 +4871,24 @@
             "alternateNames": [
                 "com.gettr.gettr",
                 "GETTR - A Marketplace of Ideas"
+            ]
+        },
+        {
+            "appName": "GG Messenger",
+            "icon": "gg-messenger.webp",
+            "websiteUrl": "https://www.gg.pl",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/gg/id308095268",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=pl.gadugadu",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Fintecom S.A. / Fintecom Sp. z o.o. Polish messenger, formerly Gadu-Gadu (Android pl.gadugadu, iOS pl.ggnetwork.mobilne). Play title GG Messenger; Apple title GG. Apple genre Social Networking. Distinct from Meta Messenger, Session, Garmin Messenger, and gg taxi.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Gadu-Gadu",
+                "pl.gadugadu",
+                "pl.ggnetwork.mobilne"
             ]
         },
         {
@@ -5263,6 +5432,24 @@
             "dateUpdated": "",
             "alternateNames": [
                 "com.google.android.apps.travel.onthego"
+            ]
+        },
+        {
+            "appName": "Google TV",
+            "icon": "google-tv.webp",
+            "websiteUrl": "https://tv.google.com",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/google-tv-watch-movies-tv/id746894884",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.android.videos",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Google LLC movies and TV app, formerly Google Play Movies & TV (Android com.google.android.videos, iOS com.google.Movies). Play title Google TV; Apple title Google TV: Watch Movies & TV. Apple genre Entertainment. Distinct from YouTube, YouTube TV, Google Play Store, Google Play Books & Audiobooks, Netflix, and Amazon Prime Video.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.google.Movies",
+                "com.google.android.videos",
+                "Google Play Movies & TV"
             ]
         },
         {
@@ -7690,17 +7877,30 @@
             "alternateNames": []
         },
         {
-            "appName": "Navmii GPS USA (Navfree)",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.navfree.android.OSM.USA&hl=en_US",
-            "activeOnAppleStore": "",
+            "appName": "Navmii GPS regional (Navfree)",
+            "icon": "navmii-gps-regional-navfree.webp",
+            "websiteUrl": "http://support.navmii.com/android",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/id405922167",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.navfree.android.OSM.USA",
+            "activeOnAppleStore": "false",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "Navmii / Navfree per-region OSM GPS SKUs. Android USA com.navfree.android.OSM.USA still on Play (title Navmii GPS USA (Navfree)). iOS country SKUs include com.navfree.ios.USA and com.navfree.ios.OSM.{ANZ,BRA,CAN,DEU,FRA,IND,IVS,MEX}; com.navfree.iphone.gbi is the GB/Ireland SKU. Apple listings removed. Distinct from Navmii GPS World (Navfree) (com.navfree.android.OSM.ALL / com.navmii.ios.OSM.WORLD), Google Maps, and HERE WeGo.",
             "dateAdded": "2023-11-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-10",
+            "alternateNames": [
+                "com.navfree.android.OSM.USA",
+                "com.navfree.iphone.gbi",
+                "com.navfree.ios.OSM.ANZ",
+                "com.navfree.ios.OSM.BRA",
+                "com.navfree.ios.OSM.CAN",
+                "com.navfree.ios.OSM.DEU",
+                "com.navfree.ios.OSM.FRA",
+                "com.navfree.ios.OSM.IND",
+                "com.navfree.ios.OSM.IVS",
+                "com.navfree.ios.OSM.MEX",
+                "com.navfree.ios.USA"
+            ]
         },
         {
             "appName": "Navmii GPS World (Navfree)",
@@ -9219,6 +9419,24 @@
             ]
         },
         {
+            "appName": "Samsung Launcher",
+            "icon": "",
+            "websiteUrl": "https://www.samsung.com/us/apps/one-ui/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.sec.android.app.launcher",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Samsung Electronics One UI home screen (Android com.sec.android.app.launcher), preinstalled on Galaxy phones. Play title Samsung One UI Home. Play genre Personalization. No iOS app. Distinct from Nova Launcher, Microsoft Launcher, Pixel Launcher, and Samsung Honeyboard.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.sec.android.app.launcher",
+                "Samsung Experience Home",
+                "Samsung One UI Home"
+            ]
+        },
+        {
             "appName": "Samsung Memo",
             "icon": "samsung-memo.png",
             "websiteUrl": "",
@@ -9743,6 +9961,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Solid Explorer",
+            "icon": "solid-explorer.webp",
+            "websiteUrl": "https://neatbytes.com/solidexplorer/",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=pl.solidexplorer2",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "NeatBytes Android dual-pane file manager (pl.solidexplorer2). Play title Solid Explorer File Manager. Play genre Tools. No iOS app. Distinct from Cx File Explorer, File Manager+, Files by Google, Samsung My Files, and ES File Explorer.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "pl.solidexplorer2"
+            ]
         },
         {
             "appName": "Solocator",
@@ -11877,13 +12111,19 @@
         {
             "appName": "Yandex",
             "icon": "yandex-start.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "websiteUrl": "https://yandex.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yandex-with-alice-ai/id1050704155",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.yandex.searchplugin",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Yandex / Direct Cursus Computer Systems Trading LLC search and home-screen app (Android ru.yandex.searchplugin, iOS ru.yandex.mobile). Play title Yandex Start (Play developer currently ABS LLC KZ). Apple title Yandex with Alice AI. Apple genre Utilities. Includes Alice search, caller ID, weather, and a start page; not the Chromium Yandex Browser. Distinct from Yandex Browser, Alice AI, Yandex Maps, Yandex Navigator, Yandex Go, and Google.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-09-10",
+            "alternateNames": [
+                "ru.yandex.mobile",
+                "ru.yandex.searchplugin"
+            ]
         },
         {
             "appName": "Yandex Browser",
@@ -11927,14 +12167,19 @@
         },
         {
             "appName": "Yandex Mail",
-            "icon": "yandex-mail.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "yandex-mail.webp",
+            "websiteUrl": "https://360.yandex.com/mail/",
+            "category": "Email",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yandex-mail/id441785419",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.yandex.mail",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Yandex / Direct Cursus Computer Systems Trading LLC mail client (Android and iOS ru.yandex.mail), part of Yandex 360. Play title Yandex Mail: Email & Cloud. Apple genre Productivity. Distinct from Yandex.Disk, Yahoo! Mail, Gmail, and Microsoft Outlook.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-10",
+            "alternateNames": [
+                "ru.yandex.mail"
+            ]
         },
         {
             "appName": "Yandex Maps",
@@ -11972,25 +12217,40 @@
         },
         {
             "appName": "Yandex.Disk",
-            "icon": "yandex-disk.png",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "icon": "yandex-disk.webp",
+            "websiteUrl": "https://disk.yandex.com",
+            "category": "Cloud Storage",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yandex-disk-secure-storage/id553266487",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.yandex.disk",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Yandex / Direct Cursus Computer Systems Trading LLC cloud storage (Android and iOS ru.yandex.disk), part of Yandex 360. Play title Yandex Disk – Cloud Storage; Apple title Yandex Disk secure storage. Apple genre Productivity. Distinct from Yandex Mail, Yandex Browser, Dropbox, MEGA, and Google Drive.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-11-02",
-            "alternateNames": []
+            "dateUpdated": "2026-09-09",
+            "alternateNames": [
+                "ru.yandex.disk"
+            ]
         },
         {
             "appName": "Yandex.Money",
-            "icon": "yandex-money.png",
-            "websiteUrl": "",
+            "icon": "yandex-money.webp",
+            "websiteUrl": "https://yoomoney.ru",
+            "category": "Finance",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=ru.yoo.money",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "NCO YooMoney LLC (ООО НКО «ЮМани») wallet, formerly Yandex.Money, now branded YooMoney / ЮMoney (Android ru.yoo.money, previously ru.yandex.money; iOS ru.yandex.mobile.money). Sberbank-owned. Play and App Store listings removed; Android APK is distributed from yoomoney.ru. Play title was YooMoney — wallet, cashback. Distinct from Sberbank online, QIWI Wallet, PayPal, WebMoney Keeper, and Yandex Pay.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-10",
+            "alternateNames": [
+                "YooMoney",
+                "ru.yandex.mobile.money",
+                "ru.yandex.money",
+                "ru.yoo.money",
+                "ЮMoney",
+                "Яндекс.Деньги"
+            ]
         },
         {
             "appName": "Yaxim",
