@@ -116,13 +116,13 @@
         "toolLongName": "MSAB XRY / XAMN",
         "website": "https://www.msab.com/",
         "toolVersion": "",
-        "toolReleaseDate": "2026-09-10",
+        "toolReleaseDate": "2026-09-11",
         "icon": "tool-logo-msab.jpg",
         "artifactListFile": "artifacts-msab.json",
         "mapFile": "maps/msab.json",
         "appNameKey": "App Name",
         "platformKey": "Platform",
-        "documentationLocation": "In-product supported applications list in XRY/XAMN.",
-        "extractionNotes": "Captured from inside the tool. App name and platform only; no tool version, artifact types, or extra metadata were available."
+        "documentationLocation": "Official MSAB supported-apps JSON export.",
+        "extractionNotes": "Flattened from 4af-etl/msab/supported-apps-initial.json via capture-msab-artifacts-list.py. One row per OS + package pair. App names HTML-unescaped. Package and supported versions included when present."
     }
 ]

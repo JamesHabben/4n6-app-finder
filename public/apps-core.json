@@ -1117,6 +1117,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Android Email",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Email",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "AOSP stock Email (com.android.email; Google AOSP builds used com.google.android.email). Preinstalled IMAP/Exchange client, not a store listing. Distinct from Google Mail (Gmail), Samsung Email, FairEmail, and Apple Mail.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-09-11",
+            "alternateNames": [
+                "com.android.email",
+                "com.google.android.email"
+            ]
+        },
+        {
             "appName": "Android Sound Recorder",
             "icon": "",
             "websiteUrl": "",
@@ -1888,6 +1905,24 @@
             "alternateNames": [
                 "com.baidu.BaiduMap",
                 "com.baidu.map"
+            ]
+        },
+        {
+            "appName": "BankID",
+            "icon": "bankid.webp",
+            "websiteUrl": "https://www.bankid.com",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bankid-security-app/id433151512",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.bankid.bus",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Finansiell ID-Teknik BID AB Swedish e-ID (Android com.bankid.bus, iOS com.bankidapp.BankID). Play title BankID security app; Apple US BankID Security App, SE BankID säkerhetsapp. Distinct from Norwegian BankID (Stø AS, no.bankid.BankID) and Vipps.",
+            "dateAdded": "2026-09-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.bankid.bus",
+                "com.bankidapp.BankId",
+                "com.bankidapp.BankID"
             ]
         },
         {
@@ -3349,6 +3384,22 @@
             "alternateNames": []
         },
         {
+            "appName": "Colibri - Telegram unofficial",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.viento.colibri",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Viento unofficial Telegram-API client (Android org.viento.colibri). Play listing is gone; last known version 10.2.9 around January 2023. Android only. Distinct from Telegram, Plus Messenger, aka, ClubMessenger Unofficial Telegram, and Colibri X.",
+            "dateAdded": "2026-09-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.viento.colibri"
+            ]
+        },
+        {
             "appName": "ColorNote",
             "icon": "colornote.webp",
             "websiteUrl": "https://www.colornote.com/",
@@ -4153,17 +4204,6 @@
             "alternateNames": []
         },
         {
-            "appName": "Email",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Email.cz",
             "icon": "",
             "websiteUrl": "",
@@ -4431,6 +4471,24 @@
             "alternateNames": [
                 "com.nononsenseapps.feeder",
                 "com.nononsenseapps.feeder.play"
+            ]
+        },
+        {
+            "appName": "Fetion (\u98de\u4fe1)",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cn.com.fetion",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "China Mobile messenger (Android cn.com.fetion, iOS cn.10086.feixin.fetion). Stores gone; service ended 2022. Distinct from WeChat, QQ, Yixin (\u6613\u4fe1), and \u98de\u4e66.",
+            "dateAdded": "2026-09-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "cn.com.fetion",
+                "cn.10086.feixin.fetion",
+                "\u98de\u4fe1"
             ]
         },
         {
@@ -6241,13 +6299,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.imo.android.imous&hl=en",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "imo video/chat (Android com.imo.android.imous / com.imo.android.imoim, iOS co.babypenguin.imo). Store title imo video calls and chat HD. ArtiFast application key IMO.",
+            "notes": "imo video/chat (Android com.imo.android.imous / com.imo.android.imoim / HD SKU com.imo.android.imoimhd, iOS co.babypenguin.imo). Store title imo video calls and chat HD. ArtiFast application key IMO. Distinct from imo Lite (com.imo.android.imoimlite).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-09-11",
             "alternateNames": [
                 "imoHD_Chat",
                 "com.imo.android.imous",
                 "com.imo.android.imoim",
+                "com.imo.android.imoimhd",
                 "co.babypenguin.imo",
                 "imoimiphone",
                 "IMO",
@@ -6353,6 +6412,23 @@
             "dateUpdated": "",
             "alternateNames": [
                 "com.lemon.lv"
+            ]
+        },
+        {
+            "appName": "Jack'd",
+            "icon": "jackd.webp",
+            "websiteUrl": "https://www.jackd.com",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/jackd-gay-chat-dating/id350426804",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.jackd.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Perry Street Software gay/bi/trans dating (Android mobi.jackd.android, iOS com.gagediell.GageDiell). Play title Jack’d - Gay Chat & Dating; Apple title Jack’d - Gay chat & dating. Apple genre Social Networking. Distinct from SCRUFF, Grindr, Bender, and BoyAhoy.",
+            "dateAdded": "2026-09-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "mobi.jackd.android",
+                "com.gagediell.GageDiell"
             ]
         },
         {
@@ -6895,6 +6971,23 @@
             "alternateNames": [
                 "jp.naver.line.android",
                 "jp.naver.line"
+            ]
+        },
+        {
+            "appName": "LINE WORKS",
+            "icon": "line-works.webp",
+            "websiteUrl": "https://line-works.com/en/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/jp/app/line-works/id1012129122",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.gworks.oneapp.works",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "LINE WORKS Corp. business chat suite (Android com.gworks.oneapp.works, iOS com.nhncorp.worksone). Play title LINE WORKS: Team Communication; Apple JP title LINE WORKS - ビジネスチャット. Apple genre Business; US App Store lookup is empty. Distinct from Line, LINE Official Account, LINE WORKS Drive, and LINE WORKS AiNote.",
+            "dateAdded": "2026-09-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.gworks.oneapp.works",
+                "com.nhncorp.worksone"
             ]
         },
         {
@@ -7637,12 +7730,13 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.microsoft.office.outlook",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Microsoft email/calendar client (mobile was Acompli). Android com.microsoft.office.outlook; iOS com.microsoft.Office.Outlook. Apple genre Productivity. Hotmail became Outlook.com in 2012; Magnet Hotmail Webmail, Outlook Webmail, and Outlook Web App map here. Distinct from Microsoft To Do, Mail and Calendar, and myMail.",
+            "notes": "Microsoft email/calendar client (mobile was Acompli). Android com.microsoft.office.outlook; iOS com.microsoft.Office.Outlook. Discontinued Outlook.com Android client was com.outlook.Z7 (Seven Networks). Apple genre Productivity. Hotmail became Outlook.com in 2012. Distinct from Microsoft To Do, Mail and Calendar, and myMail.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-19",
+            "dateUpdated": "2026-09-11",
             "alternateNames": [
                 "com.microsoft.office.outlook",
                 "com.microsoft.Office.Outlook",
+                "com.outlook.Z7",
                 "Acompli",
                 "Hotmail"
             ]
@@ -7845,6 +7939,23 @@
             "alternateNames": [
                 "com.flyersoft.moonreader",
                 "com.flyersoft.moonreaderp"
+            ]
+        },
+        {
+            "appName": "MoonPay",
+            "icon": "moonpay.webp",
+            "websiteUrl": "https://www.moonpay.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/moonpay-buy-crypto-btc/id1635031432",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.moonpay",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Eighteenth September Limited crypto on-ramp (Android com.moonpay, iOS com.moonpay.app). Play title MoonPay: Buy Crypto & Bitcoin; Apple title MoonPay: Buy Crypto & BTC. Distinct from Coinbase, Metamask, Zengo, Trust Wallet, and Moon+ Reader.",
+            "dateAdded": "2026-09-11",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.moonpay",
+                "com.moonpay.app"
             ]
         },
         {

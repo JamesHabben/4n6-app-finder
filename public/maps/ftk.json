@@ -6,6 +6,7 @@
     "Android Browser Web History": "Android Browser",
     "Android Call Logs": "Android Calls",
     "Android Contacts": "Android Contacts",
+    "Android Emails": false,
     "Android Firefox Bookmarks": "Firefox",
     "Android Firefox Web History": "Firefox",
     "Android Gmail Conversations": "Google Mail (Gmail)",

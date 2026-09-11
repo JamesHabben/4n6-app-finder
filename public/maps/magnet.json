@@ -44,6 +44,7 @@
     "Android Contacts (UFED Agent)": "Android Contacts",
     "Android Dropbox": "Dropbox",
     "Android Dropbox Account Info": "Dropbox",
+    "Android Emails": false,
     "Android Facebook Messages": "Facebook",
     "Android Facebook Messenger Attachments": "Meta Messenger (Facebook)",
     "Android Facebook Pictures": "Facebook",
