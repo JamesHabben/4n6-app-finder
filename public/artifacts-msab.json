@@ -1,0 +1,2090 @@
+[
+    {
+        "App Name": "360 Browser (360 浏览器)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "360 Browser (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "360 Browser (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "360 Browser (Service - Yahoo Mail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "AIM (AOL Instant Messenger)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "aka",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "AliExpress Shopping App",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Alipay 支付宝",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "All Documents Reader PDF Xlsx",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Amaq",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Android Email",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Apple Activities",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Calendar & Tasks",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Calls",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Contacts",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Health",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple iMessage",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Journal",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Mail",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Maps",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Messages",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Notes",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Recent Messaging",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Safari (Service - GMail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Safari (Service - Google Translate)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Safari (Service - Yahoo Mail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Safari",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Siri",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple SMS & MMS",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Voice Memos",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Wallet",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Apple Weather",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "AppLock (DoMobile Lab)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Ask.fm",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Autel Sky",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "AutoMapa",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Badoo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Badoo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Baidu Browser (百度浏览器)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Baidu Browser (百度浏览器)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Baidu Map (百度地图)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Baidu Map",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BankID",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BankID",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Beluga",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Bender",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Bender",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Best plus messenger 2021",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Bestgram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BGram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Bigo Live",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Bigo Live",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "BitTorrent® - Torrent Downloads",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BlackBerry Maps",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "BlackBerry Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BlackBerry Messenger",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "BlackBerry Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Blacklist",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BlackSMS - Text Crypt (Ranebord)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Blendr",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Blendr",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Boltgram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "BoyAhoy",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Brave Browser",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Brosix",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Bumble",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Bumble",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Calculator#",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Calculator#",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Catch Notes",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Cell 411",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Cell 411",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Cerberus",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Chat Telegram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "ChatGPT",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "ChatGPT",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "ChatON",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "ChatON",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Chatous",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "CheetahGram Secure Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Chrome (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Chrome (Service - GMail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Chrome (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Chrome (Service - Google Translate)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Chrome (Service - Yahoo Mail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Chrome (Service - Yahoo Mail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Chrome",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Chrome",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "ClubMessenger Unoffical Telegram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Coffee Meets Bagel",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Coinbase",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Coinbase",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Coinbase Wallet",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Colibri - Telegram unofficial",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Confide",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Confide",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "CoPilot",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Copy9",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "crunchSMS",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "CX File Explorer",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Desk Notes",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Discord",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Discord",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "DJI GO 4",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "DJI GO",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "docomo mail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Document Reader, PDF Converter",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Documents To Go Premium",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Dolphin Browser (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Dolphin Browser",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Dolphin Browser Beta",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Dolphin Browser for iPad",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Dolphin Browser",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Dolphin Browser Mini",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Dolphin Browser X",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Dropbox",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Dropbox",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Duck Duck Go",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "eBay",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "eBLASTER",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "eBuddy",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "eBuddy Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Element",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "ElGrami Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Evernote",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Evernote",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Exodus",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Exodus",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Facebook",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Facebook",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Facebook Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Facebook Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Facebook Messenger Lite",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Facebook Messenger",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "Fetion",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Fetion",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "File Manager - XFolder",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "File Manager Plus",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Files by Google",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "FileSafe",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Find My",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Find My iPhone",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "FireChat",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "FireChat",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Firefox (Service - GMail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Firefox (Service - Google Translate)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Firefox (Service - Yahoo Mail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Firefox",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Firefox",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Fitbit",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Foursquare",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "FreeFlight Pro (Parrot SA)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Fring",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Fring",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Garmin",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Garmin Mechanic",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "GB WhatsApp Pro",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "GIF Chat",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Ginlo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "GMail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "GMail",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Allo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Allo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Digital Wellbeing",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Drive",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Duo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Duo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Duo",
+        "Platform": "KaiOS"
+    },
+    {
+        "App Name": "Google Earth",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Earth",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Keep",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Latitude",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Location",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Maps",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Maps",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Maps",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "Google Mobile",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google Pay",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Photos",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Search",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Talk",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Talk",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "Google Translate",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google Translate",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Google+",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Google+",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Graph Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Grindr",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Grindr",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "GroupMe",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "GroupMe",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Hangouts (replaces Talk)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Hangouts",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "HERE Maps",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "HeyTell",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "HeyTell",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Hide It Pro (Audio Manager)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Hide It Pro",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Hide My Text",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Hide SMS",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "hitta.se",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Hot or Not",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Hot or Not",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "HotGold Unofficial Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Houseparty",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Houseparty",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "HTC Plurk",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "ICQ Free",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "ICQ Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "iMe Messenger and Crypto Wallet",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "imo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "imo hd",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "imo hd",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "imo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "imo Lite",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Instagram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Instagram",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "InstaMessage",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Internet Explorer",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "Jack'd",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Jack'd",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "K9 Mail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "KakaoTalk",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "KakaoTalk",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "KDDI au mail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "KDDI au sms",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "KeepSafe",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "KeepSafe",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Kik",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Kik",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "laiwang (来往)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Line",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Line",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Line Works",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Line Works",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "LinkedIn",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "LinkedIn",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Litchi",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Maps+",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Mastodon",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Mastodon",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "MCleaner",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Me2Day",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MeetMe",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MeetMe",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Messenger WithYou",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MetaMask",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MetaMask",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "MeWe",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MeWe",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Mi Talk (米聊)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Microsoft Teams",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Microsoft Teams",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Mobo HiTel",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MoboGram my",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Mobogram new",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MoboTel Plus Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Molly",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Momo (English)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Momo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Monkey Run",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "MoonPay",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "MoonPay",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "MyPeople",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Navfree",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Navfree GPS Live",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "NAVIGON",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Navigon MobileNavigator",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "nearox",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "nearox",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Nicegram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Nike+ GPS",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Nimbuzz",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "NQ Mobile Vault",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "NS WhatsApp",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Odnoklassniki (Одноклассники)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "OG WhatsApp Pro",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Olvid",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Olvid",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "ooVoo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "ooVoo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Opera (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Opera (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Opera",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Opera Mini Browser (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Opera Mini Browser (Service - GMail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Opera Mini Browser (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Opera Mini Browser (Service - Google Translate)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Opera Mini Browser (Service - Yahoo Mail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Opera Mini Browser",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Opera Mini Web browser",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Pasmo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "PayPal",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Periscope",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Periscope",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Phantom",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Phantom",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "PIN Messages",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "PingChat!",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "PingChat!",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "PingChat!",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Pinterest",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Pinterest",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "PlayStation App",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "PlurQ Free",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Plus Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Plus Messenger SMS",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Pokémon GO",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Pokémon GO",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Private Photo Vault",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Private Text & Call - Hide SMS (CoverMe)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Proton Mail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Proton Mail",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Puffin Web Browser",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Puffin Web Browser Free",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Puffin Web Browser Free",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Puffin Web Browser",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ (腾讯 QQ)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QQ Browser (浏览器) (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QQ Browser (浏览器) (Service - GMail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ Browser (浏览器) (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QQ Browser (浏览器) (Service - Google Translate)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ Browser (浏览器)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QQ Browser (浏览器)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ HD 2014",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ HD",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QQ International",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QQ International",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "QQ Lite",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QuizClash",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "QuizClash",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Reddit",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "rednote",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "rednote",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Renren (人人)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Renren (人人)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Replika - My AI Friend",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Rugram Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "RunKeeper",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "SafePal",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "SafePal",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Samsung Digital Wellbeing",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Samsung Gallery",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Samsung Honeyboard Clipboard",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Samsung Korean sms and mms",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Samsung My Files",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Samsung Rubin",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "sCloudBackup",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Scruff",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Scruff",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Search Bing!",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Secret",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Seecrypt",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Seecrypt",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Session",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Session",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Sigma Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Signal Private Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Signal Private Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Silence",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "SilentPhone",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "SilentPhone",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "SimpleX",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "SimpleX",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Sina UC (新浪UC)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Sina Weibo (新浪微博)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Singles AroundMe",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Singles AroundMe",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Skout",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Skout",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Skout+",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Skout+",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Skred Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Skred Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Skype",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Skype for iPad",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Skype",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Skype",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "Slack",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Slack",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Snapchat",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Snapchat",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Sogou Map (搜狗地图)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Sogou Map (搜狗地图)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "sp-mode mail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Suica",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Surespot Encrypted Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Surespot Encrypted Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Swisscom iO",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Sygic",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "System Browser (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "System Browser (Service - Yahoo Mail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "System Browser",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Talkatone",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Talkatone",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TamTam Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TamTam Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Tango",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Tango",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Telegram (Web Version)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Telegram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Telegram",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Telegram X",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "teletala plus",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TeleTurk",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TeleVPN",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Tencent QQ (腾讯 QQ)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TeraBox",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TeraBox",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TextMe",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TextNow",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Threads",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Threads",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Threema",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Threema",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Threema Libre",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TigerText",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TigerText",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TikTok - Make Your Day",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TikTok - Make Your Day",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TikTok Pte. Ltd.",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Tinder",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Tinder",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Tink",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Tink",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TomTom",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TomTom Places",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Touch",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Touch",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TouchDown 4 Not-So-Smartphones",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TouchDown For Smartphones",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "TouchDown HD",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "truecaller",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "truecaller",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Trust Wallet",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Trust Wallet",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Tumblr",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Tumblr",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "TurboTel Pro",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Twitter",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Twitter",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Twitterrific for Twitter",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Uber Driver",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Uber",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "UberEATS",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "UC Browser (UC 浏览器)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "UC Browser (UC 浏览器)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "UC Browser International",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "UC Browser International",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "uTorrent Torrent Downloader",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Vaulty",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "VBrowser",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Viber",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Viber",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Viber",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "Vidogram",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Vine",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "VKontakte (ВКонтакте)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "VKontakte",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Voxer",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Voxer",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Vuze Torrent Downloader",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Wasted",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Waze",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Waze",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "WeChat",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "WeChat",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "WeChat",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "WeTel",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "WhatsApp",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "WhatsApp Business",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "WhatsApp Business",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "WhatsApp",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "WhatsApp",
+        "Platform": "KaiOS"
+    },
+    {
+        "App Name": "WhatsApp Plus",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "WhatsApp",
+        "Platform": "Series 40"
+    },
+    {
+        "App Name": "WhatsApp",
+        "Platform": "Windows Phone"
+    },
+    {
+        "App Name": "Whisper",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Wickr",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Wickr",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Wickr Pro",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Windows Live Messenger",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "Wire",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Wire",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Wizz App",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "X",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "X",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "X Tel",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "xPal",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "xPal",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yahoo Mail",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yahoo! Mail",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yahoo! Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yahoo! Messenger",
+        "Platform": "BlackBerry OS"
+    },
+    {
+        "App Name": "Yahoo! Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yahoo! Search",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yandex Browser (Service - GMail)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yandex Browser (Service - GMail)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yandex Browser (Service - Google Translate)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yandex Browser (Service - Google Translate)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yandex Browser",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yandex Mail (Яндекс Почта)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yandex Maps (Яндекс Карты)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yandex Maps",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yandex Navigator (Яндекс Навигатор)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yandex Navigator",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Yixin (易信)",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Yixin (易信)",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "YouTube",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "YouTube",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Z Plus Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Zalo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Zalo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Zangi Private Messenger",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Zangi Private Messenger",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Zello PTT Walkie Talkie",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Zello Walkie Talkie",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "Zengo",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "Zengo",
+        "Platform": "iOS"
+    },
+    {
+        "App Name": "ZOOM Cloud Meetings",
+        "Platform": "Android"
+    },
+    {
+        "App Name": "ZOOM Cloud Meetings",
+        "Platform": "iOS"
+    }
+]

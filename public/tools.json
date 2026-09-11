@@ -110,5 +110,19 @@
         "platformKey": "Platform",
         "documentationLocation": "https://d1kpmuwb7gvu1i.cloudfront.net/8.x/8.3.0/Exterro%20FTK%20Suite%208.3%20-%20Artifacts%20Guide.pdf",
         "extractionNotes": "Parsed from the public FTK Suite Artifacts Guide PDF via capture-ftk-artifacts-list.py. Mobile Android/iOS Attribute names only (Associated Columns dropped). chapter/section come from PDF headings. Chat-table versions overlay matching attributes; unmatched chat products are source=chat-table stubs."
+    },
+    {
+        "toolShortName": "MSAB",
+        "toolLongName": "MSAB XRY / XAMN",
+        "website": "https://www.msab.com/",
+        "toolVersion": "",
+        "toolReleaseDate": "2026-09-10",
+        "icon": "tool-logo-msab.jpg",
+        "artifactListFile": "artifacts-msab.json",
+        "mapFile": "maps/msab.json",
+        "appNameKey": "App Name",
+        "platformKey": "Platform",
+        "documentationLocation": "In-product supported applications list in XRY/XAMN.",
+        "extractionNotes": "Captured from inside the tool. App name and platform only; no tool version, artifact types, or extra metadata were available."
     }
 ]

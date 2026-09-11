@@ -52,6 +52,25 @@
             ]
         },
         {
+            "appName": "360 Browser",
+            "icon": "360-browser.webp",
+            "websiteUrl": "https://browser.360.cn/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/id892311054",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.qihoo.browser",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Beijing Qihoo Technology / Qihoo 360 Chromium browser (Android com.qihoo.browser, iOS net.qihoo.browser). Apple title 360浏览器-极速版-安全上网-文件扫描PDF工具. Apple genre Utilities. Desktop client 360 Safe Browser. Play listing gone. Distinct from UC Browser, Baidu Browser (百度), QQ Browser, Google Chrome, and 360 Security.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.qihoo.browser",
+                "net.qihoo.browser",
+                "360浏览器",
+                "360 Safe Browser"
+            ]
+        },
+        {
             "appName": "3D Flip Clock & Weather",
             "icon": "3d-flip-clock.webp",
             "websiteUrl": "",
@@ -680,6 +699,23 @@
             ]
         },
         {
+            "appName": "aka",
+            "icon": "aka.webp",
+            "websiteUrl": "https://akamessenger.org/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/aka/id1476189685",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.aka.messenger",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Unofficial Telegram-network client (org.aka.messenger). Play developer aka Messenger; Apple seller Novel Digital Marketing LLC. Distinct from Telegram, Telegram X, Plus Messenger, ClubMessenger Unofficial Telegram, and iMe Messenger. Do not fold aka lite (org.aka.lite).",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.aka.messenger",
+                "aka Messenger"
+            ]
+        },
+        {
             "appName": "Alice AI",
             "icon": "alice-ai.webp",
             "websiteUrl": "https://yandex.com/",
@@ -826,6 +862,23 @@
             "alternateNames": [
                 "cz.alza.eshop",
                 "cz.juicymo.contracts.ios.Alza-01"
+            ]
+        },
+        {
+            "appName": "Amaq",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "News",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Islamic State / Daesh Amaq News Agency Android client (also styled Amaq Agency / \u0648\u0643\u0627\u0644\u0629 \u0623\u0639\u0645\u0627\u0642). Never listed on Apple or Google Play; distributed as sideloaded APKs with varying package names. No iOS App Store app. Distinct from Google News and from unrelated App Store titles such as Aman.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "Amaq Agency",
+                "\u0648\u0643\u0627\u0644\u0629 \u0623\u0639\u0645\u0627\u0642"
             ]
         },
         {
@@ -1641,6 +1694,40 @@
             ]
         },
         {
+            "appName": "Autel Sky",
+            "icon": "autel-sky.webp",
+            "websiteUrl": "https://www.autelrobotics.com/download/app/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/autel-sky/id1571426955",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.autel.autelsky",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Autel Robotics Co., Ltd. flight app for EVO Nano and EVO Lite (com.autel.autelsky). Apple listing is gone; Android APK is now from Autel's site. Distinct from DJI GO, Litchi for DJI Drones, and Autel Explorer.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.autel.autelsky",
+                "AutelSky"
+            ]
+        },
+        {
+            "appName": "AutoMapa",
+            "icon": "automapa.webp",
+            "websiteUrl": "https://en.automapa.pl/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/automapa/id392945795",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=pl.aqurat.automapa",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "AutoMapa sp. z o.o. Poland/Europe offline GPS (Android pl.aqurat.automapa, iOS pl.aqurat.iAM). Play title AutoMapa - offline navigation. Includes LiveDrive traffic and AutoRadar. Distinct from HERE WeGo, Sygic GPS Navigation & Maps, Navmii, Yandex Maps, Waze, and Google Maps.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "pl.aqurat.automapa",
+                "pl.aqurat.iAM"
+            ]
+        },
+        {
             "appName": "Automatic Call Recorder",
             "icon": "automatic-call-recorder.webp",
             "websiteUrl": "https://www.appliqato.com/",
@@ -1943,6 +2030,57 @@
                 "com.beetalk",
                 "com.garena.BeeTalk",
                 "Beetalk"
+            ]
+        },
+        {
+            "appName": "Beluga",
+            "icon": "beluga.webp",
+            "websiteUrl": "https://beluga.uniquevision.co.jp/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/beluga/id1470357181",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=jp.co.uniquevision.beluga.beluga3",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Unique Vision Company, Japan social-media posting/approval tool (Android jp.co.uniquevision.beluga.beluga3, iOS jp.co.uniquevision.beluga). Requires a Beluga web account. Apple genre Social Networking. Distinct from Meta Messenger (Facebook), Beluga Eats, Beluga Social, and Beluga Dive.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "jp.co.uniquevision.beluga",
+                "jp.co.uniquevision.beluga.beluga3"
+            ]
+        },
+        {
+            "appName": "Bender",
+            "icon": "bender.webp",
+            "websiteUrl": "https://benderdating.com/",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bender/id1563347365",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.benderdating.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Bender Dating Ltd gender-inclusive dating (com.benderdating.app on Android and iOS). Apple genre Social Networking. Distinct from Badoo: Dating. Chat. Friends, Bumble, Blendr, Grindr, and Bender Connect.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.benderdating.app"
+            ]
+        },
+        {
+            "appName": "Best Plus Messenger 2021",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=messenger.plus.com",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API clone of Plus Messenger (Android messenger.plus.com). Play title Plus Messenger 2021; last seen version 7.2.1 around January 2021. Listing is gone. Android only. Distinct from Plus Messenger (org.telegram.plus), Telegram, ClubMessenger Unofficial Telegram, aka, Bestgram, and BGram.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "messenger.plus.com",
+                "Plus Messenger 2021",
+                "Messenger Plus 2021"
             ]
         },
         {
@@ -2452,6 +2590,22 @@
             "alternateNames": [
                 "com.air-watch.boxer",
                 "com.boxer.email"
+            ]
+        },
+        {
+            "appName": "BoyAhoy",
+            "icon": "boyahoy.webp",
+            "websiteUrl": "",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/boyahoy/id315257056",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.boyahoy.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Skout Inc. gay chat/dating (Android com.boyahoy.android). Play title BoyAhoy - Gay Chat & Friend. Apple and Play listings are gone. Distinct from Skout, Grindr, Blendr, Bender, and the paid BoyAhoy+ SKU.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.boyahoy.android"
             ]
         },
         {
@@ -3098,6 +3252,23 @@
             "alternateNames": [
                 "com.clubhouse.app",
                 "co.alphaexploration.clubhouse"
+            ]
+        },
+        {
+            "appName": "ClubMessenger Unofficial Telegram",
+            "icon": "clubmessenger-unofficial-telegram.webp",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.iclubs.chat",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "ZhongGuo Tong Studio unofficial Telegram client (Android io.iclubs.chat). Play/APK title ClubMessager UnofficalTelegram; Play genre Social. Delisted; last known version 9.3.3.2. No iOS app. Distinct from Telegram, Telegram X, Plus Messenger, Aniways Messenger, Potato Chat, and iMe Messenger.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "io.iclubs.chat",
+                "ClubMessager"
             ]
         },
         {
@@ -7643,6 +7814,23 @@
             ]
         },
         {
+            "appName": "Monkey Run",
+            "icon": "monkey-run.webp",
+            "websiteUrl": "https://joinlit.app/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/lit-meet-chat-by-monkey-run/id6780193588",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Monkey Run LLC / MONKEY RUN, TOV nearby friends chat (iOS com.mr.lit). Apple title LIT Meet & Chat, by Monkey Run. Apple genre Social Networking. No Android Play listing. Distinct from Yubo, Azar: Chat, Meet Friends, Momo, and endless-runner games named Monkey Run.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mr.lit",
+                "LIT Meet & Chat, by Monkey Run"
+            ]
+        },
+        {
             "appName": "Moon+ Reader",
             "icon": "moon-plus-reader.webp",
             "websiteUrl": "https://www.moondownload.com/",
@@ -11214,6 +11402,24 @@
             ]
         },
         {
+            "appName": "Uber Driver",
+            "icon": "uber-driver.webp",
+            "websiteUrl": "https://www.uber.com/drive/",
+            "category": "Transportation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/uber-driver-drive-deliver/id1131342792",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ubercab.driver",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Uber Technologies driver app for rides and delivery (Android com.ubercab.driver, iOS com.ubercab.UberPartner). Store title Uber - Driver: Drive & Deliver. Apple genre Business. Distinct from Uber (rider), Uber Eats: Food Delivery (consumer), Uber Lite, Lyft, and DoorDash.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.ubercab.driver",
+                "com.ubercab.UberPartner",
+                "Uber - Driver: Drive & Deliver"
+            ]
+        },
+        {
             "appName": "Uber Eats: Food Delivery",
             "icon": "uber-eats.webp",
             "websiteUrl": "https://www.ubereats.com/",
@@ -11519,6 +11725,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": []
+        },
+        {
+            "appName": "Wasted",
+            "icon": "wasted.webp",
+            "websiteUrl": "https://github.com/x13a/Wasted",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=me.lucky.wasted",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "x13a FOSS Android panic lock/wipe (me.lucky.wasted). Play title Wasted. Play genre Tools. No iOS app. Companion Duress is a separate app. Distinct from Digital Wellbeing and from iOS apps also titled Wasted.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "me.lucky.wasted"
+            ]
         },
         {
             "appName": "Waze",
@@ -12316,6 +12538,23 @@
             ]
         },
         {
+            "appName": "Yixin (\u6613\u4fe1)",
+            "icon": "yixin.webp",
+            "websiteUrl": "https://www.yixin.im/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/cn/app/id683688634",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=im.yixin",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Zhejiang Yixin Technology (\u6d59\u6c5f\u7ffc\u4fe1\u79d1\u6280) messenger, originally China Telecom and NetEase (Android im.yixin). Apple title \u6613\u4fe1\uff5c\u8ba9\u804a\u5929\u66f4\u7eaf\u7cb9 (id 683688634). Apple genre Social Networking. Apple and Play listings gone. Distinct from WeChat, QQ, and SI-TECH Teamshub (com.sitech.OnconNBC).",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "im.yixin",
+                "\u6613\u4fe1"
+            ]
+        },
+        {
             "appName": "YouTube",
             "icon": "youtube.jpg",
             "websiteUrl": "",
@@ -12428,6 +12667,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": []
+        },
+        {
+            "appName": "Zengo",
+            "icon": "zengo.webp",
+            "websiteUrl": "https://www.zengo.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/zengo-crypto-bitcoin-wallet/id1440147115",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zengo.wallet",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "ZenGo Ltd. self-custody crypto wallet with no seed phrase (Android com.zengo.wallet, iOS kzencorp.mobile.ios). Store title Zengo: Crypto & Bitcoin Wallet. Apple genre Finance. Distinct from Trust Wallet, Exodus: Crypto Bitcoin Wallet, Coinbase, Metamask, and Zengo Business.",
+            "dateAdded": "2026-09-10",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.zengo.wallet",
+                "kzencorp.mobile.ios",
+                "ZenGo",
+                "Zengo: Crypto & Bitcoin Wallet"
+            ]
         },
         {
             "appName": "Zenly",
