@@ -1151,6 +1151,87 @@
         "last_update_date": "2025-03-14"
     },
     {
+        "filename": "avastCleanup",
+        "artifactKey": "avast_cleanup_app_storage",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Avast Cleanup App Storage and Data Usage",
+        "description": "Per-app storage size and data usage recorded by an Avast Cleanup scan",
+        "category": "Avast Cleanup",
+        "notes": "One row per package, built from com.avast.android.cleaner/databases/AppDb.db by joining AppDataUsageItem to AppGrowingSizeItem on packageName. On the tested image each table held 23 rows over 23 distinct packages with no package repeated in either, and the two package sets were identical, so the join returned 23 rows and dropped nothing.\n**The two tables are not joined on their date columns.** Each row carries its own write time, and on the tested image the two times differed on every one of the 23 packages, by between 3,413,949 and 3,414,360 milliseconds, so the two tables were written in separate passes about 57 minutes apart and a join on date would have matched nothing.\nData Usage (bytes) and App Size (bytes) are reported as stored and the app's unit for them was not sourced. App Name is looked up from the CachedApp table in the separate databases/cleaner store of the same container, so a second Android user's copy of that cache cannot name this user's packages. It held 6 packages covering 5 of the 23, so the column is blank on the other 18.\nRecorded and Size Recorded are Unix milliseconds reported as UTC. A row is evidence the scan measured that package at that moment, not evidence of activity by a person.\n**Avast Cleanup and CCleaner ship databases with identical file names**, so every path pattern here is anchored on the com.avast.android.cleaner directory and the code checks for that segment again before reading. The two apps' schemas differ, which is why this is a separate module rather than a widening of the CCleaner one: the photo table alone differs in four column names (dateTaken, cvScore, classifiedAsBad and similarityAnalysisDone here against date, score, isBad and wasAnalyzedForDuplicates there), and the duplicate-photo tables have different names and different designs.\n**Most of this app's content exists only in the write-ahead log**, so every path pattern here ends in * to take the -wal sidecar along with the database. Measured on this image by reading each store with and without its log: without it the cleaner, PhotoAnalyzerDb.db and VideoOptimizerDb.db files report no tables at all, and AppDb.db reports its tables but one AppDataUsageItem row short, 22 against 23.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.avast.android.cleaner/databases/AppDb.db*",
+            "*/com.avast.android.cleaner/databases/cleaner*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "avastCleanup",
+        "artifactKey": "avast_cleanup_cleaning_history",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Avast Cleanup Cleaning History",
+        "description": "Cleaning operations Avast Cleanup recorded, with the bytes each reported removing",
+        "category": "Avast Cleanup",
+        "notes": "One row per row of the CleanedItem table in com.avast.android.cleaner/databases/cleaner.\n**Cleaned is written when the cleaning finishes, not when it is asked for.** Measured once on the tested device by starting a Quick Clean and reading the table afterwards: the recorded time was 20.5 seconds after the tap that started the clean. One observation, so the gap on a larger clean was not established.\nCleaned is Unix milliseconds reported as UTC. Cleaning Type, Category Id and Group Item are reported as stored; no lookup table for the numeric category was found in the store, so the integer would be printed rather than named. The tested image held 1 row, of type QUICK_CLEAN, with Category Id and Group Item both empty, so a row is not necessarily categorised.\nBytes Cleaned is the app's own cleanedValueInBytes. **A row records that the app reported removing that many bytes; it does not identify which files were removed, and the store retains no list of them.**\nThe store's IgnoredItem, TransferredItem and cloudqueue tables held no rows on the tested image and are a checked absence, as are AppNotificationItem in AppDb.db and every table of BatteryAnalysisDb.db and purchase_database.\nThe app's directory-scanner.db is not parsed. Its AloneDir, AppLeftOver, JunkDir, UsefulCacheDir and ExcludedDir tables are the vendor's own definitions of what counts as junk rather than anything found on the device: on the tested image AppLeftOver carried rows naming com.avast.cleanup.test.app1 and Test1, and JunkDir entries carried regular expressions such as junk/[.{8}]. The app's own config.xml preferences are not parsed either: every value in it is an opaque base64 blob rather than readable text, and no key for them was looked for.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.avast.android.cleaner/databases/cleaner*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "avastCleanup",
+        "artifactKey": "avast_cleanup_duplicate_photos",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Avast Cleanup Duplicate Photo Sets",
+        "description": "Images Avast Cleanup grouped together as duplicates of one another",
+        "category": "Avast Cleanup",
+        "notes": "One row per image per set, from the DuplicatesSetMember table in com.avast.android.cleaner/databases/PhotoAnalyzerDb.db. Set is the app's setId and every image sharing one is a member of that set.\n**The link to the photo analysis artifact is one the store declares**: the table's own primary key is the path and it carries a foreign key on that path to MediaDbItem, so a member row names the analyzed image rather than being matched to it on size or time. That is read from the table's own CREATE statement in the tested image.\n**The table held no rows on the tested image**, so this artifact is present and unexercised there. Its columns come from the schema, not from observed values.\nGrouping is the app's own judgement and the basis for it was not sourced, so a row records that Avast Cleanup considered the images duplicates, not that they are byte-identical. Detected is Unix milliseconds reported as UTC.\nThis table is not the one CCleaner uses. CCleaner keeps a DuplicatesSet table whose members are a JSON map, so the two apps are read by separate code.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.avast.android.cleaner/databases/PhotoAnalyzerDb.db*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "avastCleanup",
+        "artifactKey": "avast_cleanup_photo_analysis",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Avast Cleanup Photo Analysis",
+        "description": "Images on the device that Avast Cleanup's photo analyzer indexed and scored",
+        "category": "Avast Cleanup",
+        "notes": "One row per row of MediaDbItem in com.avast.android.cleaner/databases/PhotoAnalyzerDb.db, which is the analyzer's own index of images it found on shared storage. Path is the app's recorded absolute path on the device and Media Store Id is Android's own media identifier for the same file. On the tested image all 15 rows carried a distinct path and a distinct media id.\nPhoto Taken is the dateTaken column, Unix milliseconds reported as UTC. The column stores -1 where the app recorded no date and that is reported as blank, which was the case on 9 of the 15 rows.\nDark Score, Blurry Score, Colour Score and Quality Score are the app's own scores, reported as stored with no scale sourced. Marked Bad is the app's classifiedAsBad flag and was set on 1 of the 15 rows. Faces Detected is the app's own facesCount and read 0 on every row, so the column is populated and its non-zero behaviour was not exercised here. Orientation, Is HDR and Invalid read 0 on every row too, for the same reason.\nThe image file itself is not rendered here: the path is what the store records, and the file is reported by the artifacts that read shared storage.\nA row is evidence the analyzer indexed the file, not evidence a person viewed it, and a path the analyzer never recorded is not evidence the image was never on the device.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.avast.android.cleaner/databases/PhotoAnalyzerDb.db*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "avastCleanup",
+        "artifactKey": "avast_cleanup_video_analysis",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Avast Cleanup Video Analysis",
+        "description": "Videos on the device that Avast Cleanup's optimizer inspected, with codec detail",
+        "category": "Avast Cleanup",
+        "notes": "One row per row of VideoOptimizerMediaItem in com.avast.android.cleaner/databases/VideoOptimizerDb.db. Path is the app's recorded absolute path; the table's own primary key is that path, and the tested image held 4 rows over 4 distinct paths.\nLast Modified and Analyzed are Unix milliseconds reported as UTC. Last Modified is the file's own time as the app read it and Analyzed is when the app inspected it.\nDuration, dimensions, rotation, frame rate, codecs and bitrates are reported as stored. The three clips placed on this device deliberately were compared against the files themselves with ffprobe: the recorded duration (6,000, 15,000 and 30,000 ms), dimensions (640 by 360 on all three), frame rate (15, 25 and 25) and size matched exactly, and the one clip carrying no audio track is the one whose Audio Codec is blank.\n**Video Bitrate (kbps) is the whole file's rate, not the video stream's.** On all four rows of this image it equals the file size in bits divided by the duration, to the kilobit: 43, 82, 839 and 332.\nIs HDR, Has DRM and Invalid read 0 on every row, and Video Codec read video/avc on every row, so none of those four is exercised on more than one value here.\n**The scan reaches files another app wrote.** The fourth row of the tested image is a video saved out of a different app into the device camera folder, which is worth knowing because it means this table can record a file whose own app keeps no record of it.\nA row is evidence the optimizer inspected the file, not evidence a person played it.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.avast.android.cleaner/databases/VideoOptimizerDb.db*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
         "filename": "avesGallery",
         "artifactKey": "aves_entries",
         "sourceTool": "ALEAPP",
@@ -1508,6 +1589,150 @@
         ],
         "creation_date": "2026-08-30",
         "last_update_date": "2026-08-30"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_key_value_store",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink App Key Value Store",
+        "description": "Values the Blink app stored in its own key and value table",
+        "category": "Blink",
+        "notes": "Rows come from the key_value_pair table of the app's Room database, which is a key and value store the app writes. Value is reported as stored because Value Type does not say whether a value is a timestamp: on the tested file the three values typed LONG were a Unix millisecond timestamp, a network id and a zero. Two keys on that file held an ISO 8601 timestamp typed STRING, and one of those carried a -04:00 offset, which is the offset America/New_York was on for that value's date and is the zone the network row records. Some keys embed a camera id, and two on the tested file also began with a brace character. What each key means, and the full set of keys the app can write, are not established. Measured on one BlinkRoom file supplied by Christian Frahm, who reports it came from a Samsung SM-A166U running Android 16: 15 rows. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_app_messages",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink App Messages",
+        "description": "Notices the Blink app raised in its own interface, with the network they belong to",
+        "category": "Blink",
+        "notes": "Rows come from the message table of the app's Room database, which holds notices the app raised in its own interface. The table has no sender or recipient column, so nothing in it records a message a person sent or received. Created Timestamp is stored as a Unix value in milliseconds and is converted here rather than passed to a helper that infers the unit: read as seconds, the single value on the tested file gives a year outside the range a date can represent, which is what rules that unit out. Network ID names the row in Blink Network Information the message belongs to. Sub Message held an empty string on the tested file's single row; it is reported because it is a separate column of the message record, and whether the app ever fills it was not established. Priority and Dismiss Until are reported as stored; Dismiss Until is an integer that was zero on the tested file and whether it is a timestamp is not established. The message text on that file named a camera by the same name Blink Camera Information reports. Message ID is an autoincrement value that reached 11 with 1 row held, so the table does not hold every message ever written; whether the app removes them or the supplied file was edited is not established. Measured on one BlinkRoom file supplied by Christian Frahm, who reports it came from a Samsung SM-A166U running Android 16: 1 row. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_camera_entitlements",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Camera Entitlements",
+        "description": "Per-camera feature entitlements the Blink app recorded, with the status stored for each",
+        "category": "Blink",
+        "notes": "Each row is one entitlement the entitlement table records against one camera. That table's primary key is (target, target_id, name), so target_id alone does not identify a device: the join matches entitlement.target_id against camera.id and entitlement.target against camera.type, which is the pairing the tested file used. Joining on target_id alone returned the same 26 rows on that file because no camera id and sync module id collided there, and the table's own primary key is what says such a collision is permitted. Entitlement Target, Entitlement Name and Entitlement Status are reported as stored; the tested file held the status values ACTIVE, SUBSCRIPTION_REQUIRED and NOT_ELIGIBLE, and the full set of values for each of the three columns is not established. Entitlement Target held one value on that file because the account had a single camera model, and it is kept because it is half of the key that ties an entitlement to its device. The same table also holds entitlements whose target is the account rather than a device, 4 rows on the tested file, and those are reported by neither this artifact nor Blink Syncmodule Entitlements. The join is a left join, so a camera carrying no entitlement row is still reported with the entitlement columns blank; no tested file exercised that case. Measured on one BlinkRoom file supplied by the contributor, who reports it came from a Samsung SM-A166U running Android 16: 26 rows, 13 entitlements against each of 2 cameras. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "Christian Frahm",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_camera_information",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Camera Information",
+        "description": "Cameras recorded in the Blink app's local database, with the serial number, model and the timestamps stored on each record",
+        "category": "Blink",
+        "notes": "Rows come from the camera table of the app's Room database, data/data/com.immediasemi.android.blink/databases/BlinkRoom. Created Timestamp and Updated Timestamp are stored as ISO 8601 text carrying an explicit UTC offset and are reported as stored; on the tested file both carried +00:00. What causes either to change is not established, so neither should be read as a record of a person viewing or operating the camera. Camera Model is the type column as stored; on the tested file its value was also the entitlement target used in Blink Camera Entitlements, and the full set of model codes is not established. The camera table holds 30 columns and this artifact reports 8 of them, including network_id, which names the row in Blink Network Information that this camera belongs to. The rest were left out as state at acquisition or as internal identifiers; they include armed, battery, wifi_signal, lfr_signal, thumbnail and its timestamp, snooze, onboarding and subscription identifiers. Measured on one BlinkRoom file supplied by the contributor, who reports it came from a Samsung SM-A166U running Android 16: 2 rows. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "Christian Frahm",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_network_information",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Network Information",
+        "description": "The Blink network a sync module and its cameras belong to, with the IANA time zone stored for it",
+        "category": "Blink",
+        "notes": "Rows come from the network table of the app's Room database. Blink groups a sync module and its cameras into a network, which the app presents as one system; camera.network_id and syncmodule.network_id name the network a device belongs to and both artifacts report that id. Time Zone is an IANA zone name stored on the network row. It is not needed to read any timestamp in this database: every stored timestamp measured across the tested file carried its own UTC offset or was a Unix epoch value, so none of them is ambiguous. What sets the zone, and what the app uses it for, were not established. Network Name is the label stored for the system; whether a person chose it or the app supplied a default was not established. Daylight Saving, Armed and Save All Live Views are integer columns reported as stored and the full set of values each can take is not established. Created Timestamp and Updated Timestamp are stored as ISO 8601 text carrying an explicit UTC offset and are reported as stored. On the tested file the network record's created_at preceded the sync module record's by 8 seconds and the two camera records' by 2 minutes 43 seconds and 5 minutes 32 seconds. What that ordering means, and whether it holds generally, were not established. The priority column is not reported. Measured on one BlinkRoom file supplied by Christian Frahm, who reports it came from a Samsung SM-A166U running Android 16: 1 row. An account with one network produces one row, so every column holds a single value on that file. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_subscriptions",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Subscriptions",
+        "description": "Subscription records the Blink app stored, with the plan, trial window and cycle dates",
+        "category": "Blink",
+        "notes": "Rows come from the subscription table of the app's Room database. Target and Target ID name what a subscription is attached to, and that vocabulary is not the one the entitlement table uses: on the tested file the single subscription's target did not appear as an entitlement target, and its target id matched no camera, sync module or network id in the same file, so what it points at is not established. camera.subscription_id was zero on both cameras and the sync module's was empty, so nothing in that file tied a device to this subscription. Subscription Type, Source, Active, Attached, Cycle State, Cycle Action and Trial Period are reported as stored and the full set of values each can take is not established. The five timestamp columns are stored as ISO 8601 text carrying an explicit UTC offset and are reported as stored; Cycle Timestamp, Trial Starts Timestamp and Trial Ends Timestamp are nullable in the schema and were filled on the tested file. An account with one subscription produces one row, so every column holds a single value on that file. Measured on one BlinkRoom file supplied by Christian Frahm, who reports it came from a Samsung SM-A166U running Android 16: 1 row. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_syncmodule_entitlements",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Syncmodule Entitlements",
+        "description": "Per-sync-module feature entitlements the Blink app recorded, with the status stored for each",
+        "category": "Blink",
+        "notes": "Each row is one entitlement the entitlement table records against one sync module. That table's primary key is (target, target_id, name), so target_id alone does not identify a device: the join matches entitlement.target_id against syncmodule.id and entitlement.target against syncmodule.type, which is the pairing the tested file used. On that file syncmodule.subtype held a different value and joining on it instead returns no rows. Entitlement Target, Entitlement Name and Entitlement Status are reported as stored and the full set of values for each is not established. Entitlement Target held one value on that file because the account had a single sync module type, and it is kept because it is half of the key that ties an entitlement to its device. Syncmodule ID and Syncmodule Serial Number hold one value on every row when the account has a single sync module, which is what the tested file held; they are kept so a row names its own device without a join back to Blink Syncmodule Information. The same table also holds entitlements whose target is the account rather than a device and those are not reported here. The join is a left join, so a sync module carrying no entitlement row is still reported with the entitlement columns blank; no tested file exercised that case. Measured on one BlinkRoom file supplied by the contributor, who reports it came from a Samsung SM-A166U running Android 16: 4 rows against 1 sync module. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "Christian Frahm",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_syncmodule_information",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Syncmodule Information",
+        "description": "Sync modules recorded in the Blink app's local database, with serial number, status and local storage state",
+        "category": "Blink",
+        "notes": "Rows come from the syncmodule table of the app's Room database. Network ID names the row in Blink Network Information that this sync module belongs to. Created Timestamp and Updated Timestamp are stored as ISO 8601 text carrying an explicit UTC offset and are reported as stored; on the tested file both carried +00:00. Local Storage Compatible and Local Storage Enabled are the local_storage_compatible and local_storage_enabled integer columns; Local Storage Status is the separate local_storage_status text column. The tested file held a text status of ACTIVE beside integer flags of 1, and with a single sync module on that file the relationship between the three is not established, so each is reported as stored. Syncmodule Status and Local Storage Status are reported as stored and the full set of values either can take is not established. Measured on one BlinkRoom file supplied by the contributor, who reports it came from a Samsung SM-A166U running Android 16: 1 row. An account with one sync module produces one row, so every column holds a single value on that file. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "Christian Frahm",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-08-20",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "BlinkApp",
+        "artifactKey": "blink_tracking_events",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Blink Tracking Events",
+        "description": "App events the Blink app recorded with a timestamp, reported by the name it stored",
+        "category": "Blink",
+        "notes": "Rows come from the tracking_event table of the app's Room database. Timestamp is stored as ISO 8601 text carrying a Z offset and is reported as stored. Event Name is reported as stored and the full set of names the app can write is not established; the single row on the tested file carried the name SESSION_BACKGROUNDED. Event ID is an autoincrement value that reached 5274 with 1 row held, so the table does not hold every event ever written; whether the app removes them or the supplied file was edited is not established. Nothing in the table names a camera, a network or an account. Measured on one BlinkRoom file supplied by Christian Frahm, who reports it came from a Samsung SM-A166U running Android 16: 1 row. That is the only data this module has been run against, and a sanitized copy of it is committed as the module's test case; a second Blink extraction would be the first test of any of this against another account.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.immediasemi.android.blink/databases/BlinkRoom*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
     },
     {
         "filename": "blueskymessages",
@@ -3116,6 +3341,7 @@
         "name": "Chrome Autofill - Entries",
         "description": "Parses Chrome autofill entries",
         "category": "Chromium",
+        "notes": "A 'Web Data' database that cannot be read is logged and skipped, and the remaining browsers on the device are still reported. A database whose journal SQLite treats as hot cannot be opened through a read-only handle, because replaying that journal has to write. A non-empty journal is not by itself hot: four non-empty sidecars beside Chromium databases in the registered Android corpora were tested by opening the database read-only, and three of the four opened normally. The one that did not is on the pixel3_a12 image, the Gmail WebView copy of 'Web Data' under data_mirror, whose 16-byte sidecar holds the LevelDB text 'MANIFEST-000001' rather than a rollback journal. The storage-view dedupe selects the data/data spelling of that same database, so the unreadable copy is not opened during a normal run on this image; read with its journal ignored it holds no autofill rows.",
         "author": "Kevin Pagano (@stark4n6)",
         "paths": [
             "*/app_chrome/Default/Web Data*",
@@ -3124,7 +3350,7 @@
             "*/app_webview/Default/Web Data*"
         ],
         "creation_date": "2020-03-19",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "chromeAutofill",
@@ -3143,7 +3369,7 @@
             "*/app_webview/Default/Web Data*"
         ],
         "creation_date": "2020-03-19",
-        "last_update_date": "2026-08-08"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "browserCachechrome",
@@ -3198,7 +3424,7 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "ChromeDIPS",
-        "description": "Module Description: Parses Chromium DIPS (Detect Incidental Party State)",
+        "description": "Parses Chromium DIPS (Detect Incidental Party State)",
         "category": "Chromium",
         "author": "Kevin Pagano (@stark4n6)",
         "paths": [
@@ -4822,7 +5048,7 @@
         "name": "Emulated Storage Metadata - Audio",
         "description": "Parses media store metadata (audio)",
         "category": "Emulated Storage Metadata",
-        "notes": "MediaStore records DATE_ADDED and DATE_MODIFIED in seconds since epoch and DATE_TAKEN in milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns",
+        "notes": "Reads each com.google.android.providers.media.module external.db found, including a second Android user's, and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror paths. A copy under data/misc_ce/N/rollback/, where installd's snapshotAppData copies an app's credential encrypted data, is also read as a separate database: on hc_pixel8pro_a16 every path in the copy is also in the live database, while on pixel3_a12 the copy's files table lists 31 paths that the live database's files table does not. Reference: AOSP, 'InstalldNativeService::snapshotAppData', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/InstalldNativeService.cpp#1676 The Source DB Path column names the database each row came from, and the report's 'located at' line lists every database read, including any that returned no rows. MediaStore records DATE_ADDED and DATE_MODIFIED in seconds since epoch and DATE_TAKEN in milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/com.google.android.providers.media.module/databases/external.db*",
@@ -4839,7 +5065,7 @@
         "name": "Emulated Storage Metadata - Downloads",
         "description": "Parses media store metadata (downloads)",
         "category": "Emulated Storage Metadata",
-        "notes": "MediaStore records DATE_ADDED and DATE_MODIFIED in seconds since epoch and DATE_TAKEN in milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns",
+        "notes": "Reads each com.google.android.providers.media.module external.db found, including a second Android user's, and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror paths. A copy under data/misc_ce/N/rollback/, where installd's snapshotAppData copies an app's credential encrypted data, is also read as a separate database: on hc_pixel8pro_a16 every path in the copy is also in the live database, while on pixel3_a12 the copy's files table lists 31 paths that the live database's files table does not. Reference: AOSP, 'InstalldNativeService::snapshotAppData', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/InstalldNativeService.cpp#1676 The Source DB Path column names the database each row came from, and the report's 'located at' line lists every database read, including any that returned no rows. MediaStore records DATE_ADDED and DATE_MODIFIED in seconds since epoch and DATE_TAKEN in milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/com.google.android.providers.media.module/databases/external.db*",
@@ -4856,7 +5082,7 @@
         "name": "Emulated Storage Metadata - Files",
         "description": "Parses media store metadata (files)",
         "category": "Emulated Storage Metadata",
-        "notes": "MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
+        "notes": "Reads each com.google.android.providers.media.module external.db found, including a second Android user's, and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror paths. A copy under data/misc_ce/N/rollback/, where installd's snapshotAppData copies an app's credential encrypted data, is also read as a separate database: on hc_pixel8pro_a16 every path in the copy is also in the live database, while on pixel3_a12 the copy's files table lists 31 paths that the live database's files table does not. Reference: AOSP, 'InstalldNativeService::snapshotAppData', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/InstalldNativeService.cpp#1676 The Source DB Path column names the database each row came from, and the report's 'located at' line lists every database read, including any that returned no rows. MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/com.google.android.providers.media.module/databases/external.db*",
@@ -4873,7 +5099,7 @@
         "name": "Emulated Storage Metadata - Files (Legacy)",
         "description": "Parses media store metadata (files, older schema)",
         "category": "Emulated Storage Metadata",
-        "notes": "MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
+        "notes": "Reads each com.android.providers.media external.db found and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror paths. The Source DB Path column names the database each row came from, and the report's 'located at' line lists every database read, including any that returned no rows. MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/com.google.android.providers.media.module/databases/external.db*",
@@ -4890,7 +5116,7 @@
         "name": "Emulated Storage Metadata - Images",
         "description": "Parses media store metadata (images)",
         "category": "Emulated Storage Metadata",
-        "notes": "MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
+        "notes": "Reads each com.google.android.providers.media.module external.db found, including a second Android user's, and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror paths. A copy under data/misc_ce/N/rollback/, where installd's snapshotAppData copies an app's credential encrypted data, is also read as a separate database: on hc_pixel8pro_a16 every path in the copy is also in the live database, while on pixel3_a12 the copy's files table lists 31 paths that the live database's files table does not. Reference: AOSP, 'InstalldNativeService::snapshotAppData', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/InstalldNativeService.cpp#1676 The Source DB Path column names the database each row came from, and the report's 'located at' line lists every database read, including any that returned no rows. MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/com.google.android.providers.media.module/databases/external.db*",
@@ -4907,7 +5133,7 @@
         "name": "Emulated Storage Metadata - Videos",
         "description": "Parses media store metadata (videos)",
         "category": "Emulated Storage Metadata",
-        "notes": "MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
+        "notes": "Reads each com.google.android.providers.media.module external.db found, including a second Android user's, and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror paths. A copy under data/misc_ce/N/rollback/, where installd's snapshotAppData copies an app's credential encrypted data, is also read as a separate database: on hc_pixel8pro_a16 every path in the copy is also in the live database, while on pixel3_a12 the copy's files table lists 31 paths that the live database's files table does not. Reference: AOSP, 'InstalldNativeService::snapshotAppData', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/InstalldNativeService.cpp#1676 The Source DB Path column names the database each row came from, and the report's 'located at' line lists every database read, including any that returned no rows. MediaStore records ORIENTATION as a rotation in degrees, so 0 and 180 are reported as Horizontal and 90 and 270 as Vertical; any other value, including NULL, is passed through unchanged. DATE_ADDED and DATE_MODIFIED are seconds since epoch and DATE_TAKEN is milliseconds, and this parser decodes them that way. Reference: AOSP, 'MediaStore.MediaColumns.ORIENTATION', https://developer.android.com/reference/android/provider/MediaStore.MediaColumns#ORIENTATION",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/com.google.android.providers.media.module/databases/external.db*",
@@ -6032,16 +6258,16 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "GalleryVault - Account Profile",
-        "description": "Decrypts GalleryVault account profile information stored in AccountProfile.xml using the Android ID recorded in Kidd.xml.",
+        "description": "Decrypts each GalleryVault AccountProfile.xml with the DES key derived from the last_android_id in the Kidd.xml of the same app container.",
         "category": "GalleryVault",
-        "notes": "GalleryVault encrypts account profile values using DES. The account profile is decrypted using key material derived from the Android ID recorded in Kidd.xml. The Account Token column reports the token field of the decrypted AccountInfo structure where present.",
-        "author": "@segumarc",
+        "notes": "GalleryVault stores its account fields DES-ECB encrypted in AccountProfile.xml. The 8-byte key is the first eight characters of the last_android_id value in Kidd.xml; this was confirmed by decryption on the tested images, where AccountEmail, AccountId and the AccountInfo JSON recovered cleanly. AccountProfile.xml and Kidd.xml are paired within a single app container: the duplicate storage views of one container are collapsed first, then each container's profile is decrypted only with the Kidd.xml from the same container, so on a device with more than one Android user each user's profile is keyed on its own android_id rather than another user's. The Android User column is read from the path above the package directory: data/data is user 0, and data/user/N and data_mirror/data_ce/<volume>/N are user N; it is blank where the path shows none of these. A row is one decrypted field, so each account contributes eight rows, and Account Token is the token field of the decrypted AccountInfo where present. A container holding only one of the two files is skipped, since it cannot be decrypted. Every AccountProfile.xml and Kidd.xml that produced a row is named in the source path. The single-container decryption is proven on the corpora below; the two-user pairing was exercised on a constructed two-container input built from these images, as no tested extraction carried the app under more than one Android user.",
+        "author": "@segumarc, @AlexisBrignoni, Claude",
         "paths": [
             "*/com.thinkyeah.galleryvault/shared_prefs/AccountProfile.xml*",
             "*/com.thinkyeah.galleryvault/shared_prefs/Kidd.xml*"
         ],
         "creation_date": "2026-08-13",
-        "last_update_date": "2026-08-13"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "galleryVault",
@@ -8518,15 +8744,15 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "installedappsGass",
-        "description": "Parses application records (bundle ID, version code and SHA-256 hash) from the app_info table of the Google Play services gass.db.",
+        "description": "Parses application records (bundle ID, version code and SHA-256 hash) from the app_info table of each Google Play services gass.db.",
         "category": "Installed Apps",
-        "notes": "A row records an application known to the app_info table. Whether the application was still installed at the time of extraction is not established by its presence here.",
+        "notes": "Reads each gass.db found under com.google.android.gms, including a second Android user's, and takes one copy where one user's database appears under more than one of the data/data, data/user/N and data_mirror/data_ce/null/N paths. The User column is read from those directories: data/data gives 0 and the other two give N. Reference: AOSP, 'create_data_user_ce_path', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/utils.cpp#180 Reference: AOSP, 'InstalldNativeService::tryMountDataMirror', https://android.googlesource.com/platform/frameworks/native/+/2827a4a16b0340ecd07c2d5a6c89991799b362bb/cmds/installd/InstalldNativeService.cpp#3787 On samsungs20_a13 the two databases sit under Volumes/userdata/data and Volumes/userdata/user/150, which are read the same way. The column is blank where the path shows none of these directories, which no tested image did. The report's 'located at' line lists every database read, including any that returned no rows. Each row is a distinct package name, version code and SHA-256 hash from one database's app_info table, so a package recorded under several version codes has a row for each: on hc_pixel8pro_a16 the 696 rows hold 107 distinct package names. A version code in this table can differ from the one data/system/packages.list gives: on hc_pixel8pro_a16 the table's only row for com.google.android.gms has 253830035 and packages.list gives 262031035. Whether an application was still installed at the time of extraction is not established by its rows here.",
         "author": "@abrignoni",
         "paths": [
             "*/com.google.android.gms/databases/gass.db*"
         ],
         "creation_date": "2020-03-01",
-        "last_update_date": "2026-08-01"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "installedappsLibrary",
@@ -9367,6 +9593,40 @@
         ],
         "creation_date": "2026-06-30",
         "last_update_date": "2026-08-01"
+    },
+    {
+        "filename": "kwai",
+        "artifactKey": "kwai_saved_videos",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Kwai Saved Videos",
+        "description": "Video files in shared storage carrying the name shape Kwai gives a saved video",
+        "category": "Kwai",
+        "notes": "One row per file in the device camera folder whose name carries the app's save pattern: a run of digits, then _play.mp4_logo_, then a trailing region code. The digit run is required to be 6 to 25 digits long, so a file carrying the rest of the shape with a shorter or longer run is not reported. The ids seen on the tested device are 19 digits.\n**The leading digits are the app's own PHOTO_ID**, which is what joins the file back to the Kwai Watched Videos row for the same video. That is a recorded identifier rather than a match on size or time. On the tested device one video was saved through the app's share sheet and its file name carried the identifier of a video already present in the watch table.\n**The file name pattern rests on a single observation.** One save was produced during testing; a second attempt wrote no file and reported no error, so the shape of the name is described from one example and may vary by app version or region.\nA file is reported because its name matches that shape. Nothing inside the file establishes which app wrote it, so a row is a name match and not an attribution.\nThe one saved file measured was written into the device camera folder rather than a folder of the app's own, so it sits beside camera output. The store the app keeps for downloaded video, OFFLINE_VIDEO_ENTITY in com.kwai.video/databases/offline_video.db, stayed empty through that save, so the record of a saved video is the file name and not that table.\nVideo renders the file, and only when its bytes really open with an ISO base media header: the name says MP4 and the header is what is checked before the file is registered as one, so a row whose Video cell is empty is a file that either did not open that way or that the report could not register.\nA row is evidence the file is present under a name the app writes, not that the app is still installed.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/DCIM/Camera/*_play.mp4_logo_*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "kwai",
+        "artifactKey": "kwai_watched_videos",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "Kwai Watched Videos",
+        "description": "Videos Kwai recorded playing, with how long each played where the app recorded it",
+        "category": "Kwai",
+        "notes": "One row per row of FEED_PHOTO in com.kwai.video/databases/kwai_feed_photo.db, which is the app's own record of the videos it played. Video Id is the app's PHOTO_ID. The sibling engagement store and the name of a saved video file both use it for the same video, which is what joins those to this row.\nStarted is the PLAY_TIME column, Unix milliseconds reported as UTC. It marks playback beginning, which was measured against the device clock rather than assumed: across three viewing sessions, seven rows that correspond to a swipe were written 258 to 345 milliseconds after the swipe that brought the video up, and the video that plays automatically on launch was written 1,314 and 1,979 milliseconds after the two measured relaunches.\nSession groups rows into one run of the app. It is the SESSION_ID column, and it changed on every force stop and relaunch during testing, giving 11 rows under 3 session identifiers. Feed is the TYPE column and read hot on every row of the tested device, so it is reported as stored.\n**Not every video that was watched gets a row, and what decides that was not established.** Five swipes produced three rows, four produced two and six produced four. It is not a pending write: the table was re-read after 75 seconds with the app idle and untouched and neither the row count nor the newest Started value moved. An absent row is therefore not evidence a video was not watched.\nEnded, Watched (ms), Video Length (ms), Pauses and the four interaction columns come from the vse table of the sibling store com.kwai.video/databases/kwaifeaturecenter.db, joined on content_id equal to PHOTO_ID within one app container, so a second Android user's engagement row cannot reach the first user's video. That table held 5 of the 11 videos on the tested device and no video the watch table did not also hold, so those columns are blank on the rest. Every one of its columns is stored as text even where the value is a number or a boolean.\n**Ended marks the video being left, and Watched (ms) is time actually playing.** On four of the five joined rows, Ended minus Started equals Watched (ms) to within 425 milliseconds. On the fifth it does not: that row was left on screen for about 30 minutes while only 8 minutes of playing was recorded, so the column is not wall-clock time on screen.\n**Watched (ms) can exceed Video Length (ms)** and did on two rows, by 18,870 against 6,450 and by 493,592 against 15,700. So it is not a position within the video, and how a value larger than the video's own length is arrived at was not established.\n**Downloaded did not record a save that happened.** The one video saved to the device through the app's own share sheet during testing carries download_status false in this table, so a false value is not evidence the video was not saved. The Kwai Saved Videos artifact reports the files that were.\nLiked, Followed, Commented and Downloaded read false on all five rows that carry them and are blank on the other six, so all four are identical across this image and none has been seen holding a true value. They are separate columns in the store and are reported separately.\nSaved Video renders a file in shared storage whose leading digits are exactly this video's identifier, where one is present and its bytes really open with an ISO base media header. The two must also belong to the same Android user, read from the app directory on one side and from the shared storage path on the other, so one user's saved file is never shown on another user's row; where the shared storage path names no user the code reads it as user 0 and a second user's row therefore renders nothing.\nLLSID is reported as stored. It repeats across neighbouring rows and its meaning was not established. Three vse columns are not reported because nothing distinguishes their values on the tested device: page read SELECTED_VIDEO on all five rows, play_sound_volume read 5 on all five, and comment_stay_duration_ms read 0 on all five.\nA row is evidence the app played the video, not that a person watched it.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.kwai.video/databases/kwai_feed_photo.db*",
+            "*/com.kwai.video/databases/kwaifeaturecenter.db*",
+            "*/DCIM/Camera/*_play.mp4_logo_*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
     },
     {
         "filename": "last_boot_time",
@@ -10313,6 +10573,44 @@
         "last_update_date": "2021-01-31"
     },
     {
+        "filename": "megaCloud",
+        "artifactKey": "mega_cached_media",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "MEGA - Cached Media",
+        "description": "Files in MEGA's thumbnail, preview and temporary caches, with the node handle read from the file name",
+        "category": "Mega",
+        "notes": "One row per file staged from MEGA's thumbnailsMEGA, previewsMEGA and tempMEGA caches. All three name the file after the node handle, with or without an extension; a name that is not an 8 character handle is reported with an empty Handle rather than guessed at, which was the case for 1 of the 112 rows across the tested images. The rows break down as thumbnailsMEGA 60, previewsMEGA 35, tempMEGA 17. 55 resolved to a node in the same extraction's node cache. The rest did not, and on pixel3_a12 that is every row, because that image's node cache is at a version with no nodes table. Handle in the Node Cache therefore holds one value on every row of a given image on the tested set, and Name in the Node Cache is blank on every row of pixel3_a12 for the same reason. Size on Disk is the size of the staged file, not a size the store recorded.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mega.privacy.android.app/megaclient_statecache*.db*",
+            "*/mega.privacy.android.app/cache/thumbnailsMEGA/*",
+            "*/mega.privacy.android.app/cache/previewsMEGA/*",
+            "*/mega.privacy.android.app/cache/tempMEGA/*"
+        ],
+        "creation_date": "2026-09-12",
+        "last_update_date": "2026-09-12"
+    },
+    {
+        "filename": "megaCloud",
+        "artifactKey": "mega_cloud_files",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "MEGA - Cloud Files",
+        "description": "Files, folders and root nodes in the MEGA node cache, with the folder path rebuilt from the stored parent links",
+        "category": "Mega",
+        "notes": "Read from the nodes table of megaclient_statecache<version>_<account>.db in the MEGA app's own directory, the local node cache the MEGA SDK keeps for a signed in account. The nodes table appears from cache version 13: the SDK's LAST_DB_VERSION_WITHOUT_NOD is 12 (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/db.cpp#L137), and the version 12 store on pixel3_a12 holds only the statecache blob table, whose rows DbTable::put writes through PaddedCBC::encrypt (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/db.cpp#L68), and it produces no rows here. Cache versions 14 and 15 were read across the tested images. The name column is the value Node::displayname returns (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/db/sqlite.cpp#L1619), so it is the decrypted file or folder name rather than ciphertext. displayname returns the literal CRYPTO_ERROR when a node carries no name attribute (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/node.cpp#L1013); that was the case on 9 rows across the tested images, and all 9 of them are the root, vault and rubbish nodes, which have no name attribute of their own. Item Type is the SDK's nodetype_t (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/types.h#L421), Share Type decodes the ShareType_t bits the SDK writes from getShareType (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/types.h#L434), Label is nodelabel_t (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/types.h#L456), and In Rubbish, Is Version and Marked Sensitive are the three bits of Node::Flags (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/node.h#L474). Values outside those vocabularies are reported as stored. Folder Path is built by walking each node's parenthandle to the root. The root, vault and rubbish nodes carry no name of their own, so a path starts at the first named folder below them; 3 rows per image have no path on that basis. Created and Modified are the ctime and mtime columns, which the SDK binds from the node's own ctime and mtime; the SDK documents both as seconds since the epoch (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/megaapi.h#L1333 and https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/megaapi.h#L1342). Where the store has no size column the size is taken from the counter blob, which NodeCounter::serialize writes as files, folders, storage, versions and version storage (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/node.cpp#L4018); Files in Folder, Folders in Folder and Folder Size come from that same blob on folder rows. The store can carry its whole schema in the write-ahead log. On pixel7a_a14 the main database file holds 0 tables when the log is ignored and 2 when it is applied, and all 7 rows this artifact reports for that image come from the log, so a path pattern that does not stage the sidecars reports the app as holding nothing. The app directory is present under more than one Android storage view. On pixel3_a12 the 3 views hold 150 cache entries between them for 50 distinct files, and the Cached Media artifact reports 50 rows there, so the duplicate views collapse rather than multiplying. Measured on the tested images: Share Type was LINK on 4 rows and NO_SHARES on the rest, Favourite was Yes on 0 rows, none of the three flag columns was Yes on any row, and Description and Tags were empty on every row. Cached Copy is the file MEGA kept on the device for that node, matched on the handle in the cache file name; 19 of the 33 reported rows carried one, and Cache Holding the Copy names which cache it came from. Account Handle and Node Cache Version hold one value per image because each tested image held one account's cache at one version, and Share Value (as stored) is the integer behind Share Type.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mega.privacy.android.app/megaclient_statecache*.db*",
+            "*/mega.privacy.android.app/cache/thumbnailsMEGA/*",
+            "*/mega.privacy.android.app/cache/previewsMEGA/*",
+            "*/mega.privacy.android.app/cache/tempMEGA/*"
+        ],
+        "creation_date": "2026-09-12",
+        "last_update_date": "2026-09-12"
+    },
+    {
         "filename": "mega_transfers",
         "artifactKey": "get_mega_transfers",
         "sourceTool": "ALEAPP",
@@ -11247,15 +11545,16 @@
         "name": "Network Action Predictor",
         "description": "Parses the Network Action Predictor from Chromium Based Browsers",
         "category": "Chromium",
+        "notes": "Reads the network_action_predictor table from the Chromium profiles the declared paths match, one storage view per file, and reports user_text, url, number_of_hits and number_of_misses as stored. A Magisk mirror copy is skipped as a duplicate; 1 registered corpus carries a Magisk mirror path and it holds no copy of this file, so that branch is unexercised. Measured over all 42 registered Android corpora on 2026-09-11: 34 carry a file named Network Action Predictor and every copy sits under app_chrome/Default or app_sbrowser/Default. No copy sits under app_opera or app_webview on any of them, although 3 carry an app_opera directory and 39 carry an app_webview directory, so both of those declared patterns are unexercised. Row counts come from profile-driven runs over the 20 registered zip corpora, cross-checked against a direct read of the same databases; the two agree on all 20. Nine of them reported rows, 1,172 rows from com.android.chrome and 2,029 from com.microsoft.emmx. The com.brave.browser copy held the table and no rows on all 7 run corpora carrying it, and of the 9 Samsung Browser copies read 6 hold no network_action_predictor table and 3 hold it empty, so no Brave or Samsung Browser row was observed. An absent browser here is not evidence that browser was unused. Where a device carries more than one Android user each profile is reported separately: on russell_pixel6a_a13 the Android user 0 Chrome profile holds 273 rows and the user 10 profile holds none.",
         "author": "Kevin Pagano (@stark4n6)",
         "paths": [
-            "*/app_Chrome/Default/Network Action Predictor*",
+            "*/app_chrome/Default/Network Action Predictor*",
             "*/app_sbrowser/Default/Network Action Predictor*",
-            "*/app_opera/Network Action Predicator*",
+            "*/app_opera/Network Action Predictor*",
             "*/app_webview/Default/Network Action Predictor*"
         ],
         "creation_date": "2020-03-19",
-        "last_update_date": "2026-07-10"
+        "last_update_date": "2026-09-11"
     },
     {
         "filename": "newpipe",
@@ -14257,15 +14556,15 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "Samsung Media Provider - Files",
-        "description": "Media files indexed by the Samsung media provider (media.db, files table): file path and name, taken/added/modified times, coordinates and packed address, the URL and app a captured file came from, and the favorite/hidden/trashed/deleted flags.",
+        "description": "Files listed in the Samsung media provider's files table (media.db): file path and name, taken, added and modified times, coordinates and packed address, the captured URL and captured app values, the Is Favorite, Is Hide, Is Trashed and Deleted values as stored, and the database each row came from.",
         "category": "Samsung Media Provider",
-        "notes": "The Address column is the packed multi-part string as stored (parts separated by '|'). Reference: Cellebrite Location Booklet 2025.",
+        "notes": "The Address column is the packed multi-part string as stored (parts separated by '|'). Reference: Cellebrite Location Booklet 2025. Every media.db the declared path matches is read, except that where one user's database appears under more than one of the data/data, data/user and data_mirror/data_ce storage paths, only one copy is read. A database present only under data_mirror/data_ce is read as well; no tested image carries one, and that case was exercised on a constructed tree. On cookbook_a11 and samsungs20_a13 a second media.db sits under user/150, and each image's system/users/150.xml records user 150 as a managed profile named Secure Folder. The Source DB Path column names the database each row came from, and the report's located-at line lists every database read, including any that returned no rows. Is Hide and Deleted held no value on any row of the ten tested images, and Is Favorite and Is Trashed held only 0 or no value, so the tested images do not show what any other value in those columns records.",
         "author": "@abrignoni",
         "paths": [
             "*/com.samsung.android.providers.media/databases/media.db*"
         ],
         "creation_date": "2026-07-30",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "samsungMediaProvider",
@@ -14273,15 +14572,15 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "Samsung Media Provider - Locations",
-        "description": "Reverse-geocoded places recorded by the Samsung media provider (media.db, location table): coordinates with the resolved country, locality, street and full address text.",
+        "description": "Entries in the Samsung media provider's location table (media.db): coordinates with country, locality, street and address text, and the database each row came from.",
         "category": "Samsung Media Provider",
-        "notes": "Reference: Cellebrite Location Booklet 2025.",
+        "notes": "Reference: Cellebrite Location Booklet 2025. Every media.db the declared path matches is read, except that where one user's database appears under more than one of the data/data, data/user and data_mirror/data_ce storage paths, only one copy is read. A database present only under data_mirror/data_ce is read as well; no tested image carries one, and that case was exercised on a constructed tree. On cookbook_a11 and samsungs20_a13 a second media.db sits under user/150, and each image's system/users/150.xml records user 150 as a managed profile named Secure Folder; on both images that database held no location rows. The Source DB Path column names the database each row came from, and the report's located-at line lists every database read, including any that returned no rows.",
         "author": "@abrignoni",
         "paths": [
             "*/com.samsung.android.providers.media/databases/media.db*"
         ],
         "creation_date": "2026-07-30",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "SamsungNotes",
@@ -17261,7 +17560,7 @@
         "name": "TikTok - Contacts",
         "description": "Parses TikTok contacts (UID, nickname, unique ID, avatar and follow status) from the TikTok IM databases.",
         "category": "TikTok",
-        "notes": "Contacts come from IM_USER_BASE_INFO in the db_im_contact databases and from SIMPLE_USER in db_im_xx. A UID present in more than one store is reported once, from the first store that carries it, with IM_USER_BASE_INFO preferred since it also records an update timestamp. Update Time, Blocked and Deleted are only available from IM_USER_BASE_INFO; Blocked and Deleted are reported as stored since no source for those integers was verified.\nPath patterns are anchored to the TikTok package names, com.zhiliaoapp.musically and com.ss.android.ugc.trill; only the former appears in the registered corpora, and files under any other package name are not read.",
+        "notes": "Contacts come from IM_USER_BASE_INFO in the db_im_contact databases and from SIMPLE_USER in db_im_xx. A UID present in more than one store is reported once, from the first store that returns it, with IM_USER_BASE_INFO preferred since it also records an update timestamp. Update Time, Blocked and Deleted are only available from IM_USER_BASE_INFO; Blocked and Deleted are reported as stored since no source for those integers was verified. IM_USER_BASE_INFO rows are reported only when that table has every column this artifact selects; on three tested images it lacked a DELETED column, so none of its rows were reported and the rows shown came from SIMPLE_USER alone.\nPath patterns are anchored to the TikTok package names, com.zhiliaoapp.musically and com.ss.android.ugc.trill; only the former appears in the registered corpora, and files under any other package name are not read.",
         "author": "@abrignoni",
         "paths": [
             "*/com.zhiliaoapp.musically/*db_im_xx*",
@@ -17270,7 +17569,7 @@
             "*/com.ss.android.ugc.trill/*db_im_contact*"
         ],
         "creation_date": "2021-03-02",
-        "last_update_date": "2026-08-28"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "tikTok",
@@ -17294,9 +17593,9 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "TikTok - Messages",
-        "description": "Parses TikTok direct messages (timestamp, user, nickname, message, links, read state and conversation) from the TikTok IM databases, covering the per-account _im.db files found.",
+        "description": "Parses TikTok direct messages (timestamp, user, nickname, message, links, read state and conversation) from the TikTok IM databases, covering each <uid>_im.db file found.",
         "category": "TikTok",
-        "notes": "_im.db files are named <account uid>_im.db and all of them are parsed; the Account ID column carries each file's uid and messages whose sender equals it are marked Outgoing.\nEvery msg row is reported. The Message, link and sticker columns are filled only when the row's content field holds JSON; rows whose content is not JSON report the SQL columns alone, with Message Type and Deleted as stored since no source for those integers was verified.\nSender names are resolved against SIMPLE_USER in db_im_xx and IM_USER_BASE_INFO in the db_im_contact databases, where present. A sender in neither store shows a bare UID.\nPath patterns are anchored to the TikTok package names, com.zhiliaoapp.musically and com.ss.android.ugc.trill; only the former appears in the registered corpora. Another app can keep IM databases whose names match the same file patterns (observed with Lemon8, com.bd.nproject, on one tested image); the package anchor keeps those files out of this artifact.",
+        "notes": "Every database named <uid>_im.db is parsed, including those named biz_2_<uid>_im.db. The Account ID column carries the uid from the file name, and messages whose sender equals it are marked Outgoing. On the tested images every database holding messages was named for a uid listed in logged_in_uid_list in aweme_user.xml. Two tested images also held another <uid>_im.db and a biz_2_<uid>_im.db, both without messages, named for a uid that logged_in_uid_list does not contain.\nEvery msg row is reported when the msg table has every column this artifact selects, which held on every tested image. The Message, Link GIF Name and Link GIF URL columns are filled only when the row's content field holds JSON; rows whose content is not JSON report the SQL columns alone, with Message Type and Deleted as stored since no source for those integers was verified.\nSender names are resolved against SIMPLE_USER in db_im_xx and IM_USER_BASE_INFO in the db_im_contact databases, where present. A sender in neither store shows a bare UID.\nPath patterns are anchored to the TikTok package names, com.zhiliaoapp.musically and com.ss.android.ugc.trill; only the former appears in the registered corpora. Another app can keep IM databases whose names match the same file patterns (observed with Lemon8, com.bd.nproject, on one tested image); the package anchor keeps those files out of this artifact.",
         "author": "@abrignoni",
         "paths": [
             "*/com.zhiliaoapp.musically/*_im.db*",
@@ -17307,7 +17606,7 @@
             "*/com.ss.android.ugc.trill/*db_im_contact*"
         ],
         "creation_date": "2021-03-02",
-        "last_update_date": "2026-08-28"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "tinder",
@@ -18268,7 +18567,7 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "VerizonRDD-Battery",
-        "description": "Module Description: Parses Verizon RDD Analytics Battery History",
+        "description": "Parses Verizon RDD Analytics Battery History",
         "category": "Verizon RDD Analytics",
         "author": "John Hyla",
         "paths": [
@@ -18283,7 +18582,7 @@
         "sourceTool": "ALEAPP",
         "Platform": "Android",
         "name": "VerizonRDD-WIFI",
-        "description": "Module Description: Parses Verizon RDD Wifi Data",
+        "description": "Parses Verizon RDD Wifi Data",
         "category": "Verizon RDD Analytics",
         "author": "John Hyla",
         "paths": [
@@ -19518,6 +19817,57 @@
         "last_update_date": "2026-08-19"
     },
     {
+        "filename": "youCamPerfect",
+        "artifactKey": "youcam_perfect_app_state",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "YouCam Perfect App State",
+        "description": "Install-level values YouCam Perfect keeps in its own settings file",
+        "category": "YouCam Perfect",
+        "notes": "One row per copy of com.cyberlink.youperfect/shared_prefs/YOUPERFECT_ANDROID_SETTING.xml that holds at least one of the four keys below. A copy holding none of them, and a copy that does not parse as XML, are skipped and produce no row.\n**First Launch is APP_FIRST_LAUNCH_TIME, Unix milliseconds reported as UTC, and it was corroborated against the platform's own install record**: the value read 19 seconds after the firstInstallTime that the package manager reports for the app on the tested device.\nInstallation Id is the InstallationId key, an identifier the app generates for itself. It is reported as stored; it is not an account, and what the app sends it to was not established.\nCountry is the KEY_PREVIOUS_COUNTRY_CODE key, reported as stored. How the app arrives at that value was not established, so it is not evidence of where the device was.\nLast Photo Picker Check is the LAST_PHOTO_PICKER_CHECK_TIME key, Unix milliseconds. What it counts was not established beyond its name, so a reader should not treat it as the last time a photo was chosen.\nThe file's other keys are advertising, subscription and tutorial state and are not reported.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.cyberlink.youperfect/shared_prefs/YOUPERFECT_ANDROID_SETTING.xml"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "youCamPerfect",
+        "artifactKey": "youcam_perfect_images",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "YouCam Perfect Images",
+        "description": "Photos YouCam Perfect recorded, with the copy it cached where one is present",
+        "category": "YouCam Perfect",
+        "notes": "One row per row of the Image table in com.cyberlink.youperfect/databases/pht.sqlite. The app writes more than one row for the same photo, so Media Store Id repeats and Record Id is the row's own identifier.\n**Media Store Id is Android's own media identifier**, and Stored Path, Media Store Size and Media Store Modified are read from the platform media database in the same container, joined on that id. Both package names Android has used for that database are read, com.google.android.providers.media.module and com.android.providers.media, and only the first exists on this image. The join was measured: all five ids held on the tested device matched a row in it, and for every row carrying dimensions those dimensions matched the ones the media database records for the same file. An extraction without that database leaves those three columns blank.\n**A row whose Source Modified, File Type, Width and Height are empty is not evidence the photo was opened.** The app writes such a row for each photo its own picker lists. Measured on the device this image came from, after the image was captured, by opening one album of eight photos and selecting none of them: the table went from the 7 rows this image holds to 15, and the eight new rows were exactly the eight photos in that album.\n**Source Modified is the photo file's own modification time, not a time the app did anything.** It is the CaptureTime column, Unix seconds reported as UTC. Every row of this image that carries a value reads 1788744945, which is exactly what the media database records as that file's modification time. The second value was produced on the device after this image was captured, by opening a screenshot the media database records as modified at 1789173261: the rows written for it read 1789173261. The columns are filled in when a photo is selected, including on the row the picker had already written.\nCached Copy renders the file the ImageCache table records for this row at the highest Level, which on the tested device is the full size copy rather than the small one; where that file is not in the extraction, or its name carries no image extension, the next Level down is tried. Cached Copies counts every file the table records for the row, rendered or not. The app writes two per image on the tested device, a full size and a small one, at the moment the editor loads the photo. **Leaving the editor without saving deletes them.** Measured on the device after this image was captured, by opening one photo, which took ImageCache from the 4 rows this image holds to 6, then pressing back without saving, which took it to 4 again while the Image row stayed. So a cached copy present is not evidence an edit was saved, and a cached copy absent is not evidence a photo was never opened.\nEdit Steps counts this row's entries in ImageDevelopHistoryStep. Those entries survived leaving the editor unsaved in the same test. On this image every one of them carried an empty step name and a default settings blob, so no edit operation is named and the count is not a count of edits made. One of the three entries this image holds carries an image id of -1, which matches no row, so it is counted against nothing and is not reported.\nRating, Orientation, PresetCommand, Temperature, RawSDKMode, ShareTo, ThumbOrientation, OriginalColorSpace and SourceOrientation are not reported: each read a single value across the three rows of this image that carry any metadata, so nothing distinguishes them. RefreshModifiedTime is not reported either, because it equalled CaptureTime on every row of this image.\nThe store's Media, Message, Friend, CLGroup, GroupAlbum, Sticker and StickerPack tables held no rows and are a checked absence. The app's other databases are not user data and are not parsed: pfcommon.sqlite CACHE and interstitial_db.db src hold vendor-supplied promotion and pricing catalogues downloaded from the app's servers, countly.sqlite holds a queue of analytics the app was sending, more.sqlite holds the app's own interface strings, and exoplayer_internal.db indexes video the app cached for playback.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/com.cyberlink.youperfect/databases/pht.sqlite*",
+            "*/com.cyberlink.youperfect/cache/imagecache/*",
+            "*/com.google.android.providers.media.module/databases/external.db*",
+            "*/com.android.providers.media/databases/external.db*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "youCamPerfect",
+        "artifactKey": "youcam_perfect_saved_photos",
+        "sourceTool": "ALEAPP",
+        "Platform": "Android",
+        "name": "YouCam Perfect Saved Photos",
+        "description": "Image files sitting in the folder YouCam Perfect writes its output to",
+        "category": "YouCam Perfect",
+        "notes": "One row per file in the device's DCIM/YouCam Perfect folder, and per file in any folder below it.\n**The app records a saved photo nowhere else.** Its PhotoExport2 table stayed at zero rows through a save that really did write a file, so this folder is the record. Measured on the device after this image was captured, by opening a photo in the editor and pressing Save: a 41,394 byte JPEG appeared in DCIM/YouCam Perfect while PhotoExport2 stayed empty. This image was captured before that save, holds no such folder, and so reports no rows here.\n**The file name is a local wall clock and carries no time zone.** It is written as year, month, day, hour, minute, second and milliseconds separated by hyphens. On that same save the name read 2026-09-11-23-02-00-451.jpg on a device set to America/New_York, and the file's own modification time was 23:02:00 in that same zone. The name is reported as stored and no instant is asserted from it, because the zone a name was written in is not recorded in the name.\n**The folder name and the file name shape both rest on a single observation**, one save on one app version, so a different version or a different device may write elsewhere or name differently. A row is evidence a file is present under the name and folder the app writes, not that the app produced this particular file.\nSaved renders the file when its name carries an image extension the report can display, and is blank otherwise, so a file of another kind saved into this folder is still reported by name and size with nothing rendered. Modified is the file's own modification time as the extraction carries it.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/DCIM/YouCam Perfect/*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
         "filename": "ZangiChats",
         "artifactKey": "zangichats",
         "sourceTool": "ALEAPP",
@@ -20207,6 +20557,25 @@
         "last_update_date": "2026-08-15"
     },
     {
+        "filename": "apple_sms_preview_ktx_atx",
+        "artifactKey": "apple_sms_preview_ktx_atx",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Apple SMS Preview Cache",
+        "description": "Preview images Messages cached under com.apple.MobileSMS, covering the attachment, sticker, location and search preview folders, plus the name recorded when a contact card or location was shared",
+        "category": "SMS & iMessage",
+        "notes": "Reads the .ktx, .jpeg and .png files Messages caches under com.apple.MobileSMS/Previews/. The Preview Type column is the folder each file sits in (Attachments, StickerCache, Location or Search), which is recorded by the app rather than inferred. The Container column is decided by the file's magic bytes, not its extension, because the extension and the container disagree on some files: files named .ktx in this cache were AAPL ATX containers, Khronos KTX1, or KTX1 behind an eight byte little endian length, and files named .jpeg were sometimes ATX rather than JPEG. ATX is decoded by the shared leapp_functions/parsers/apple_atx parser and its best-effort ASTC 4x4 tile-order heuristic, the same code the Apple ATX Images artifact uses; that ATX layout was derived from observed files and is not vendor-documented. KTX1 is decoded by scripts/ktx/ios_ktx2png, the same reader the App Snapshots artifact uses. PNG and JPEG files are reported as stored without conversion. A file whose container is not recognised, or that a decoder rejects, is still listed with whatever fields parsed plus a Status note, but no image. Messages also writes a plist beside a preview when a contact card or a location is shared, and the Shared Name column carries the title the app composed for it, copied onto the other files in the same folder. That names what was shared, not who sent it. A location share is titled Current Location on every tested image, so it establishes that a location was shared and not where. Plists in this cache that carry no contact fields, which on the tested images were Live Photo complement metadata and an asset flag, record no share and are not reported. Beyond that name this artifact reports file timestamps, container and texture metadata only; it does not link a preview to a specific message, direction, or send or receive time. The cache also holds copies of some attachments; the Messages artifact reports those from Library/SMS/Attachments with their message context.",
+        "author": "@charpy4n6, Claude",
+        "paths": [
+            "*/com.apple.MobileSMS/Previews/*.ktx",
+            "*/com.apple.MobileSMS/Previews/*.jpeg",
+            "*/com.apple.MobileSMS/Previews/*.png",
+            "*/com.apple.MobileSMS/Previews/*.plist"
+        ],
+        "creation_date": "2026-09-09",
+        "last_update_date": "2026-09-10"
+    },
+    {
         "filename": "appleWalletPasses",
         "artifactKey": "get_appleWalletNanoPasses",
         "sourceTool": "iLEAPP",
@@ -20291,7 +20660,7 @@
         "author": "@mxkrt - @AlexisBrignoni",
         "paths": "*/mobile/Library/FrontBoard/applicationState.db*",
         "creation_date": "2025-08-04",
-        "last_update_date": "2026-08-21"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "applicationStateDB",
@@ -20305,7 +20674,7 @@
         "author": "@mxkrt - @AlexisBrignoni",
         "paths": "*/mobile/Library/FrontBoard/applicationState.db*",
         "creation_date": "2025-08-04",
-        "last_update_date": "2026-08-21"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "applicationStateDB",
@@ -23372,7 +23741,7 @@
         "name": "Call History",
         "description": "Extract Call History",
         "category": "Call History",
-        "notes": "Call type and disconnected-cause value mappings are community-established decodes reported as observed; unrecognized values are reported as stored.",
+        "notes": "Call type and disconnected-cause value mappings are community-established decodes reported as observed; unrecognized values are reported as stored. When both CallHistory.storedata and CallHistoryTemp.storedata hold records, rows from both are reported with a Source File path column and the report names both stores. On none of the nine registered corpora run did both stores hold records, so that path was exercised on a constructed tree with the same records under both names.",
         "author": "@AlexisBrignoni - @JohnHyla",
         "paths": [
             "*/mobile/Library/CallHistoryDB/CallHistory*",
@@ -24044,7 +24413,7 @@
             "*/mobile/Library/CoreAccessories/Analytics/acc_analytics_accessoryd_v3.db*"
         ],
         "creation_date": "2023-08-01",
-        "last_update_date": "2025-11-21"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "coreAccessoriesUserEvent",
@@ -24060,7 +24429,7 @@
             "*/mobile/Library/CoreAccessories/Analytics/acc_analytics_UserEventAgent_v3.db*"
         ],
         "creation_date": "2023-08-01",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "coverMe",
@@ -25684,6 +26053,184 @@
         ],
         "creation_date": "2026-07-29",
         "last_update_date": "2026-07-30"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_account",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Account",
+        "description": "Account directories the app kept, with the cached profile on the one it recorded a user profile id for.",
+        "category": "Health & Fitness",
+        "notes": "One row per account directory under Documents/users/ in the app's container. The app names that directory for the signed-in account: it was the account's email address on the iOS 17.3, 15.3.1 and 14.3 images and an identifier on the iOS 26.2.1 image. It also keeps a directory named anonymous, which carried no user profile id on any tested image, which is why 2 rows are reported for one account on three of the images. The profile columns come from caches that sit at container level rather than under an account directory, so they are filled only on the row whose own directory records a user profile id, and the anonymous row carries the directory name alone. Country Code and the user profile id are read from that directory's GCMUserSettingsUserLocationKey and the rest of the profile from Library/Caches/DataCache/GCMCacheManagerPersonalInformationCachePath/GCMCacheManagerUserSettingsDataCacheFile. Height is in centimetres and Weight in grams, as the cache stores them. Birth Date is a Cocoa absolute time, reported as stored in UTC; on the iOS 17.3 image it fell on midnight of its own day in the time zone the same cache records for the profile, so the day it names in UTC can be a different day from the one the profile holds. Profile Time Zone comes from the personal information cache and carried a zone on the iOS 17.3, 15.3.1 and 26.2.1 images, while the iOS 14.3 image's older cache does not hold one and leaves it blank. Wake Time and Sleep Time are seconds after midnight, as stored. Gender (as stored), Handedness (as stored), Time Format (as stored), Units Of Measure (as stored) and Activity Level (as stored) are reported as stored and nothing available defines their values. VO2 Max Cycling and Activity Level (as stored) both held -1 on the profile row of all four tested images that carry the app, which is what the cache carries for those two unrelated fields there rather than a relationship between them. VO2 Max Running carried a reading on three of those four and -1 on the fourth. Nothing available defines -1. Incident Detection Contact Name is the name the app held for its incident detection feature and was present on the iOS 14.3 image only. Last Logged In is the app's LastLoggedInDateFileName, a Cocoa absolute time, and records a time the app wrote rather than a sign-in a person performed. Country Code Verified Timestamp is text in the cache and is reported as stored. Full Name, Display Name, Garmin GUID, Authentication Domain, App Version and Profile Image come from Library/Preferences/group.com.garmin.connect.plist in the shared app group container, which holds a cached profile as JSON and the profile picture as base64 inside it. Those six are attached only where the profile id that file carries equals the user profile id the account directory records. The two agreed on every tested image that carries the app, so the branch that refuses a mismatch is present and was not exercised here. App Version is that file's GCMAppVersion key and equalled the CFBundleShortVersionString of the installed app bundle on all 4 tested images that carry the app. Profile Image is decoded from the file's own imageData field and is the picture the app cached for the account, not a file a person saved. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/Library/Application Support/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/Documents/users/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist",
+            "*/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.com.garmin.connect.plist",
+            "*/mobile/Containers/Shared/AppGroup/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_activities",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Activities",
+        "description": "Activities held in the app's calendar cache, with the start and end of the cached track where the app kept one.",
+        "category": "Health & Fitness",
+        "notes": "One row per entry of the app's calendar cache that carries an activity name, read from Library/Caches/DataCache/GCMCacheManagerConnectCalendarCachePath/GCMCacheManagerConnectCalendarCacheFile, an NSKeyedArchiver plist. That cache held 72 entries on the iOS 17.3 image and 67 on the iOS 15.3.1 image, of which 5 and 4 carry an activity name and are reported here; the rest carry no activity and are reported by the Daily Metrics artifact. Start Time (Device Local) is the app's own startTimestampLocal read as a wall clock reading rather than as an instant, and it is carried as text so nothing downstream can attach a zone to it. The app writes a GMT value beside the local one on the per-day entries of the same cache, and on every one of the 11 and 5 entries of the two tested images that carry both, the local value was 4 hours behind the GMT value. Activity entries carry only the local value, so no UTC instant is recorded for an activity and none is computed here. Latitude and Longitude are the start of the track the app cached for that activity and End Latitude and End Longitude its end, read from Library/Application Support/DataCache/com.garmin.activity.common.polyline/ where each file is named for the activity id. All 9 activity rows across the two images matched a cached track on that id. Track Points Recorded is the point count the cache states for the activity and Track Points Cached is the number of points the cached track decodes to; the cached track was shorter than the recorded count on all 9 rows (2,598 recorded against 1,062 cached on one image and 1,729 against 782 on the other), so the cached track is a sample of the activity rather than the recorded track. Lap Count held 4 on 4 of the 5 rows of the iOS 17.3 image and a different value on the other, and one value on all 4 rows of the iOS 15.3.1 image. Cache Record Written is the entry's own creationDate, a Cocoa absolute time, so it records when the app wrote the entry and not when the activity happened. Activity Type ID, Sport Type Key and Item Type are reported as stored. Sport Type Key and Item Type held 0 on every row of both images. Activity Type ID held 0 on 8 rows and 2 on 1 row of the 9 reported, and the row holding 2 is the one whose activity name records walking while the rows holding 0 record running; nothing available defines either value and no mapping is asserted from that. On the iOS 14.3 image the container held no calendar cache and no track cache, and on the iOS 26.2.1 image the container held neither of those either, keeping a Documents/connect_apollo_db directory instead whose cached activity list documents were empty when read directly; this module does not read that directory, so neither image produced a row here. A row records what the app cached about an activity reported by a device on the account. It does not establish who was wearing that device. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/Library/Application Support/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_activity_tracks",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Activity Tracks",
+        "description": "Points of the sampled track the app cached for an activity.",
+        "category": "Health & Fitness",
+        "notes": "One row per point of the track the app cached for an activity, from Library/Application Support/DataCache/com.garmin.activity.common.polyline/ where each file is named for the activity id and holds a JSON document. The coordinates come from the document's encodedSamples field, a Google encoded polyline, decoded here. The decode was checked against the same document's own recorded bounds: on all 9 tracks the minimum and maximum of the decoded latitudes and longitudes equalled the document's minLat, maxLat, minLon and maxLon to five decimal places, and the first decoded point equalled its startLat and startLon to the same precision. The point count is smaller than the count the activity cache records: 1,062 points decoded across 5 tracks on the iOS 17.3 image against 2,598 recorded, and 782 across 4 tracks on the iOS 15.3.1 image against 1,729. The field is named for samples and the cached track is a sample of the activity, so the points here are not the recorded track and the line between two consecutive points is not a recorded path. No time is stored per point, so Activity Name and Activity Start come from the calendar cache entry with the same activity id and every point of one track carries the same pair. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/Library/Application Support/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_cached_images",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Cached Images",
+        "description": "Images the app downloaded and kept in its image cache, with the address each was fetched from.",
+        "category": "Health & Fitness",
+        "notes": "One row per file in Library/Caches/com.pinterest.PINDiskCache.PINRemoteImageManagerCache inside the Garmin container whose bytes, or whose archived data object's bytes, carry a JPEG, PNG, GIF or RIFF signature. The cache file name is the address the app fetched the image from, percent encoded, and Address is that name decoded. On the iOS 17.3 image the cache held 13 such files and on the iOS 15.3.1 image 23. Image Kind is derived from the address: an address under /profile_images/ is a profile image, one under /images/badges/ a badge, and one under /device-images/ or /products/ a product image. Garmin User ID In Address is the number the profile image address ends with. On both images that carry profile images one of those numbers equalled the user profile id of the signed-in account, and the iOS 15.3.1 image carried 5 distinct numbers in total, so the cache holds profile images of Garmin accounts other than the signed-in one. An image here was downloaded by the app. Its presence does not establish that a person viewed it, and the numbers in the addresses are reported as stored without any relationship to the account being asserted. One entry can be a transformed copy of another: on 3 of the tested images an address ended in a marker the caching library appends and named a profile image the cache also held under its own address, and both are reported. A transformed copy is written as an archived data object rather than as raw bytes and both forms are read. On the iOS 26.2.1 image the app kept no such cache. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/com.pinterest.PINDiskCache.PINRemoteImageManagerCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_daily_heart_rate",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Daily Heart Rate",
+        "description": "Per-day heart rate record the app cached in its Move IQ store.",
+        "category": "Health & Fitness",
+        "notes": "One row per day in Library/Caches/DataCache/GCMCacheManagerMoveIQCachePath/GCMCacheManagerMoveIQCacheFile that carries a heart rate record or a heart rate zone record. 8 days were reported on the iOS 17.3 image and 7 on the iOS 15.3.1 image. A day can carry the zone record without the heart rate record: the zone floors were present on all 8 and all 7 rows while Resting Heart Rate was present on 4 and 5. Minimum Heart Rate and Maximum Heart Rate are in the same record as the resting value and were blank on every row of the iOS 17.3 image and present on 5 rows of the iOS 15.3.1 image, so an absent value there is the record not carrying one rather than a reading of zero. Device ID is in that record too and was blank on every row of both images; it is kept because the record declares it. Day Start and Day End are present on 7 and 5 rows, the rows that carry the heart rate record. Zone 1 Floor, Zone 2 Floor, Zone 3 Floor, Zone 4 Floor, Zone 5 Floor, Resting Heart Rate Used and Maximum Heart Rate Used come from the day's heartRateZoneData and are the thresholds the app held rather than measurements of that day, so each of those seven held one value across every day of both images. Training Method and Sport are reported as stored; both held 0 on every row of both images. The User Profile ID on every row of both images equalled the user profile id the Account artifact reports for the signed-in account. The same day record also carries a heart rate series, a per-minute movement series and a sleep event list, which the Heart Rate Samples, Movement Samples and Sleep Events artifacts report. The record's own listOfEvents was empty on every day of both images. On the iOS 14.3 image the file was present and held only a cache bookkeeping key with no day, and on the iOS 26.2.1 image the app kept no such file, so neither produced a row. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_daily_metrics",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Daily Metrics",
+        "description": "Per-day entries of the app's calendar cache that carry no activity, with whichever of steps, sleep, stress, body battery and heart rate the entry holds for that day.",
+        "category": "Health & Fitness",
+        "notes": "One row per entry of the calendar cache that carries no activity name, from the same file the Activities artifact reads. 67 of the 72 entries on the iOS 17.3 image and 63 of 67 on the iOS 15.3.1 image are reported here. An entry carries a subset of the columns and the subset differs by Item Type, so most columns are blank on most rows: on the iOS 17.3 image Steps and Step Goal carried a value on 14 rows, Sleep Duration on 9, and the stress, body battery and heart rate columns on 11 each. Item Type is reported as stored. Nothing available defines the values, and which columns an entry carries is the only thing here that separates them. Start Time (UTC) is the entry's startTimestampGMT and is present on 11 of the 67 rows on the iOS 17.3 image and 5 of 63 on the other; the rest of the rows record a calendar day and no instant, so Calendar Date leads the table. Start Time (Device Local) is the app's own startTimestampLocal read as a wall clock reading rather than as an instant, and it is carried as text so nothing downstream can attach a zone to it. The app writes a GMT value beside the local one on the per-day entries of the same cache, and on every one of the 11 and 5 entries of the two tested images that carry both, the local value was 4 hours behind the GMT value. Cache Record Written is the entry's own creationDate. The entry also carries a distance, which was 0 on every reported row of both images, so it is not given a column of its own here. Moderate Intensity Minutes and Vigorous Intensity Minutes held the same value as each other on every reported row of both images, either 0 or -1, and both are kept because the entry declares them separately. A row is what the app cached for that day, so an absent day is not evidence that the device recorded nothing, and the window the cache covers is not established. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_devices",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Devices",
+        "description": "Device records the app kept in its device caches.",
+        "category": "Health & Fitness",
+        "notes": "One row per device record in the app's device caches, with Cache File naming the cache the row came from. Three caches are read and which of them a container holds differs by app version: Library/Application Support/DataCache/GCMGarmindevicesStore/GCMGarmindevicesStorePairedDevices and Library/Application Support/DataCache/Devices/RealRegisteredDevicesStoreCacheFile were both present on the iOS 17.3, 15.3.1 and 26.2.1 images, and the iOS 14.3 image held neither and kept Library/Caches/DataCache/Devices/GCMCacheManagerRegisteredDevicesCacheFile instead, whose keys are spelled differently and are resolved here. Each tested image held one Garmin device, so the 2 rows on the iOS 17.3 image are one device reported from two caches and they carry the same Unit ID; a row is a cache record, not a device. The two caches carry different parts of the record. Last Connected is a Cocoa absolute time and is held only by the paired store, so it is blank on the registered store's rows. Part Number, Product SKU and Application Key are held only by the registered store, and Bluetooth Low Energy Identifier only by the paired store, which carried one on the iOS 17.3 and 26.2.1 images and none on the others. On the iOS 15.3.1 image the paired store held the unit id and the connection time and nothing else, so Product Name, Friendly Name and Product Number are blank on that row, and Product Number is blank on the iOS 14.3 image, whose older cache does not carry it. Friendly Name equalled Product Name on every row of every image that filled both. Firmware Version is reported as stored and the two caches spell it differently for the same device at the same moment: on the iOS 17.3 image they held 7.80 and 780 and on the iOS 26.2.1 image 17.05 and 1705, the integer being the dotted reading times a hundred in both cases. NFC Chip Type and Payment Cards Cached come from Library/Caches/GarminPayWalletMetadataCache and GarminPayWalletItemsCache, joined to the row on the unit id the wallet caches record; the cached card list was empty on every image that held one, so Payment Cards Cached was 0 throughout and no card is recorded here. The app's own product catalogue cache is not read: it lists Garmin products the app ships knowledge of rather than devices the account holds. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read. That guard is exercised by the tested images rather than only present: the image cache directory this module also matches belongs to a third party library that other apps embed, and on the iOS 14.3 image 194 of its files were staged while the 5 inside the Garmin container were the only ones reported. On the two tested images that do not carry Garmin Connect, 79 and 147 such files were staged and every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/Library/Application Support/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/Library/Caches/GarminPay*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_heart_rate_samples",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Heart Rate Samples",
+        "description": "Heart rate readings the app cached through the day, from its Move IQ store.",
+        "category": "Health & Fitness",
+        "notes": "One row per entry of the heart rate series a day's record carries, from its allDayHRData hrDetail heartRateArray. The store is Library/Caches/DataCache/GCMCacheManagerMoveIQCachePath/GCMCacheManagerMoveIQCacheFile, an NSKeyedArchiver plist holding one record per calendar day. The Daily Heart Rate artifact reports the rest of that record. Sample Time is the entry's own startGMT, a Cocoa absolute time, so it is an instant and not a wall clock reading. Heart Rate is reported as stored and the store gives no unit; 2,940 entries across 5 days were reported on the iOS 15.3.1 image and 6 of them carried no value, which is the entry holding none rather than a reading of zero. The gap between consecutive entries within a day was 120 seconds on 2,929 of the 2,935 gaps and longer on the other 6, so the series has breaks where the app cached no reading and a row is not evidence that the next reading is 120 seconds later. The iOS 17.3 image kept day records whose heart rate series was empty, so it reported nothing here while still reporting the day rows in Daily Heart Rate, and the iOS 14.3 and 26.2.1 images hold no day record at all. A row records what the app cached for that moment. It does not establish that a particular person was wearing the device. User Profile ID is the id the record itself carries and held the one value 89370933 across every reported row of both images, which is the single account the app was signed in as; it is kept so a row carries its own account rather than taking one from the artifact it sits in. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_movement_samples",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Movement Samples",
+        "description": "Per-minute movement readings the app cached through the day, from its Move IQ store.",
+        "category": "Health & Fitness",
+        "notes": "One row per entry of the movement series a day's record carries, from its movementDetail movementArray. The store is Library/Caches/DataCache/GCMCacheManagerMoveIQCachePath/GCMCacheManagerMoveIQCacheFile, an NSKeyedArchiver plist holding one record per calendar day. The Daily Heart Rate artifact reports the rest of that record. Sample Time is the entry's own startGMT, a Cocoa absolute time. Movement Value is reported as stored: the store gives no unit and nothing available defines the scale, so the column is the number the app cached and not a distance, a step count or an intensity in any named unit. 6,630 entries across 5 days were reported on the iOS 15.3.1 image, 3,645 of them zero, and a zero entry is reported rather than dropped so that the series is not read as continuous movement. The gap between consecutive entries within a day was 60 seconds on every one of the 6,625 gaps, so a full day is 1,440 entries and one of the 5 days is short at 870. The iOS 17.3 image kept day records whose movement series was empty, so it reported nothing here, and the iOS 14.3 and 26.2.1 images hold no day record at all. A row records what the app cached for that minute. It does not establish that a particular person was carrying or wearing the device. User Profile ID is the id the record itself carries and held the one value 89370933 across every reported row of both images, which is the single account the app was signed in as; it is kept so a row carries its own account rather than taking one from the artifact it sits in. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "garminConnect",
+        "artifactKey": "garmin_ios_sleep_events",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Garmin Connect - Sleep Events",
+        "description": "Instants the app cached in the sleep event list of its Move IQ store, with the type it recorded for each.",
+        "category": "Health & Fitness",
+        "notes": "One row per entry of the sleep event list a day's record carries, from its allDayHRData sleepEventList. The store is Library/Caches/DataCache/GCMCacheManagerMoveIQCachePath/GCMCacheManagerMoveIQCacheFile, an NSKeyedArchiver plist holding one record per calendar day. The Daily Heart Rate artifact reports the rest of that record. Event Time is the entry's own timeStamp, a Cocoa absolute time. Event Type is reported as stored; the tested images hold 0 and 1 and 2 and 3 and nothing available defines them, so no meaning is given to the numbers here and none should be read into the artifact's name beyond the list the app calls a sleep event list. What the data does show, measured on both images: a day's record carries up to four entries, and on all 15 pairs the entry typed 1 came before the entry typed 0 and the entry typed 3 came before the entry typed 2, with the gap within a pair running from 6.08 to 10.73 hours. The same instants repeat across neighbouring days under a different type: the iOS 15.3.1 image reported 20 rows holding 14 distinct instants, while the iOS 17.3 image reported 10 rows holding 10 distinct instants because its day records are not consecutive. Every row is reported because each is a stored entry, and Calendar Date Of The Record is the day whose record held it rather than the day the instant falls on. The iOS 14.3 and 26.2.1 images hold no day record, so neither produced a row. A row records an instant the app cached. It does not establish that a particular person was asleep or awake. User Profile ID is the id the record itself carries and held the one value 89370933 across every reported row of both images, which is the single account the app was signed in as; it is kept so a row carries its own account rather than taking one from the artifact it sits in. The app container is identified from its own .com.apple.mobile_container_manager.metadata.plist, and a file is read only when it sits inside a container whose plist names com.garmin.connect.mobile or group.com.garmin.connect, so a file matched in another app's container is not read.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Caches/DataCache/*",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
     },
     {
         "filename": "geodMapTiles",
@@ -30417,6 +30964,42 @@
         "last_update_date": "2026-07-31"
     },
     {
+        "filename": "megaCloud",
+        "artifactKey": "mega_app_users",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "MEGA - App Users",
+        "description": "Users held in the MEGA app's own Core Data file, with the email and name it recorded for them",
+        "category": "MEGA",
+        "notes": "Read from the ZUSER table of MEGACD.sqlite, which is the app's own store and separate from the contacts table in the karere chat database that the MEGA - Contacts artifact reports. 12 rows across the tested images, with an email on 11 of them and a nickname on 0. Interacted With is reported as stored; its meaning is not established. Avatar is the file in MEGA's thumbnailsV3 cache named after the user handle, which is 11 characters where a node handle is 8; 7 of the 12 rows carried one. First Name and Last Name hold one value across every row of fsfull002_ios17, which is what that image stores rather than a column that failed to fill.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/MEGACD.sqlite*",
+            "*/Library/Caches/thumbnailsV3/*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "megaCloud",
+        "artifactKey": "mega_cached_media",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "MEGA - Cached Media",
+        "description": "Thumbnails, previews and original files MEGA kept on the device, keyed by the handle in the cache file name",
+        "category": "MEGA",
+        "notes": "One row per file staged from MEGA's thumbnailsV3, previewsV3 and originalV3 caches. thumbnailsV3 and previewsV3 name the file after the handle; originalV3 uses a folder named for the handle and keeps the file's own name inside it. 118 rows across the tested images: thumbnailsV3 71, previewsV3 32, originalV3 15. 94 resolved to a node in the same extraction's node cache and 24 did not, so the cache holds files the node listing alone does not account for. Where an originalV3 file could be compared, the name on disk equalled the name in the node cache on 10 of 10 and differed on 0. The thumbnailsV3 cache also holds contact avatars, which are named after the 11 character user handle rather than the 8 character node handle; 7 such rows are reported by the App Users artifact and every one of them appears here with the node cache lookup answering No. Size on Disk is the size of the staged file, not a size the store recorded.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/megaclient_statecache*.db*",
+            "*/Library/Caches/thumbnailsV3/*",
+            "*/Library/Caches/previewsV3/*",
+            "*/Library/Caches/originalV3/*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
         "filename": "mega",
         "artifactKey": "mega_chat_messages",
         "sourceTool": "iLEAPP",
@@ -30449,6 +31032,25 @@
         "last_update_date": "2026-08-07"
     },
     {
+        "filename": "megaCloud",
+        "artifactKey": "mega_cloud_files",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "MEGA - Cloud Files",
+        "description": "Files, folders and root nodes in the MEGA node cache, with the folder path rebuilt from the stored parent links",
+        "category": "MEGA",
+        "notes": "Read from the nodes table of megaclient_statecache<version>_<account>.db, the local node cache the MEGA SDK keeps for a signed in account. The nodes table appears from cache version 13: the SDK's LAST_DB_VERSION_WITHOUT_NOD is 12 (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/db.cpp#L137), and the version 12 store on fsfull002_ios17 holds only the statecache blob table, whose rows DbTable::put writes through PaddedCBC::encrypt (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/db.cpp#L68), and it produces no rows here. Cache versions 13 and 14 were read across the tested images. The name column is the value Node::displayname returns (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/db/sqlite.cpp#L1619), so it is the decrypted file or folder name rather than ciphertext. displayname returns the literal CRYPTO_ERROR when a node carries no name attribute (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/node.cpp#L1013); that was the case on 12 rows across the tested images, and all 12 of them are the root, vault and rubbish nodes, which have no name attribute of their own. Item Type is the SDK's nodetype_t (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/types.h#L421), Share Type decodes the ShareType_t bits the SDK writes from getShareType (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/types.h#L434), Label is nodelabel_t (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/types.h#L456), and In Rubbish, Is Version and Marked Sensitive are the three bits of Node::Flags (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/mega/node.h#L474). Values outside those vocabularies are reported as stored. Folder Path is built by walking each node's parenthandle to the root. The root, vault and rubbish nodes carry no name of their own, so a path starts at the first named folder below them; 3 rows per image have no path on that basis, and on every tested image those are exactly the rows whose Item Type is one of those three. Created and Modified are the ctime and mtime columns, which the SDK binds from the node's own ctime and mtime; the SDK documents both as seconds since the epoch (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/megaapi.h#L1333 and https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/include/megaapi.h#L1342). The stored schema differs between images that report the same cache version in their file name, so every column is resolved per file and a column the store lacks is reported blank. Measured on the tested images: Modified is blank on every row of hickman_ios15, whose store has no mtime column; the stores on hc_ios18_7 and hc_ios26 have no size column, so their Size is taken from the counter blob instead, which NodeCounter::serialize writes as files, folders, storage, versions and version storage (https://github.com/meganz/sdk/blob/b93cc672b92eb61fefe84a21719657c13a9b11c0/src/node.cpp#L4018); Label is filled on hc_ios18_7 and hc_ios26 and blank elsewhere; Description and Tags were empty on every row of every tested image, including the images whose store has those columns. Files in Folder, Folders in Folder and Folder Size come from that same counter blob on folder rows. Measured on every one of the 664 folder rows in the three stores read directly, Files in Folder equals the number of files below the folder, Folder Size equals the sum of their sizes, and Folders in Folder equals the number of folders below it plus the folder itself, with 664 agreeing and 0 differing. Share Type was LINK on 4 rows and NO_SHARES on the rest, Favourite was Yes on 0 rows and none of the three flag columns was Yes on any row. The same node cache is written to more than one container on a device, and the copies can differ: on hc_ios18_7 the app's own container held 8 nodes the shared group container did not, while on iphone11_ios17 all three copies held the identical 1,301 nodes. Rows are therefore unioned on the node handle within an account, so hc_ios18_7 reports 20 rows rather than the 44 a per file reading would give, and every copy read is named on the located at line. Cached Copy is the file MEGA kept on the device for that node, matched on the handle in the cache file name; 62 of the 2627 rows reported across the tested images carried one, and Cache Holding the Copy names which cache it came from. Three columns hold one value per image and are kept for that reason: Account Handle and Node Cache Version, because each tested image held one account's cache at one version, and Share Value (as stored), the integer behind Share Type. Cached Copy and Cache Holding the Copy are blank on every row of an image whose MEGA container has no thumbnailsV3, previewsV3 or originalV3 directory, which is the case on hc_ios26.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/megaclient_statecache*.db*",
+            "*/Library/Caches/thumbnailsV3/*",
+            "*/Library/Caches/previewsV3/*",
+            "*/Library/Caches/originalV3/*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
         "filename": "mega",
         "artifactKey": "mega_contacts",
         "sourceTool": "iLEAPP",
@@ -30462,6 +31064,41 @@
         ],
         "creation_date": "2026-08-07",
         "last_update_date": "2026-08-07"
+    },
+    {
+        "filename": "megaCloud",
+        "artifactKey": "mega_offline_files",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "MEGA - Offline Files",
+        "description": "Rows in the MEGA offline node table, each giving a node handle, a stored path and a recorded download time",
+        "category": "MEGA",
+        "notes": "Read from the ZOFFLINENODE table of MEGACD.sqlite. The reported columns are ZDOWNLOADEDDATE, ZLOCALPATH, ZBASE64HANDLE, ZPARENTBASE64HANDLE and ZFINGERPRINT, reported under those readings of their names; no source for the column meanings was found and the table held no rows to check them against. The table was present and empty on every tested image, so this artifact produced 0 rows and none of its columns has been exercised against real data. Downloaded is ZDOWNLOADEDDATE read as Cocoa Core Data time, on the same basis as the other MEGACD.sqlite dates; that reading is unexercised here.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/MEGACD.sqlite*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "megaCloud",
+        "artifactKey": "mega_recent_items",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "MEGA - Recent and Favourite Items",
+        "description": "Entries in the MEGA widget lists of recently used and favourite cloud items",
+        "category": "MEGA",
+        "notes": "Read from the ZQUICKACCESSWIDGETRECENTITEM and ZQUICKACCESSWIDGETFAVOURITEITEM tables of the app's own Core Data file, MEGACD.sqlite. The List column says which table a row came from. 20 rows across the tested images, all of them from the Recents table; the Favourites table was present and empty on every tested image, so 0 rows came from it. Timestamp is ZTIMESTAMP read as Cocoa Core Data time. It does not date the individual item: on each of the 4 images that produced rows, every row carried the same value, including the two images that produced eight rows each. On those two the single value is later than the newest date any row's own name carries, so what the value records is not established and it must not be read as when that item was used. Is Update is reported as stored; its meaning is not established. Cached Copy is the file MEGA kept for that node handle, matched on the handle; 12 of the 20 rows carried one, and Cache Holding the Copy names which cache it came from. Both are blank on every row of an image whose MEGA container has no such cache, which is the case on hc_ios26.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/MEGACD.sqlite*",
+            "*/Library/Caches/thumbnailsV3/*",
+            "*/Library/Caches/previewsV3/*",
+            "*/Library/Caches/originalV3/*"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
     },
     {
         "filename": "metamask",
@@ -31967,15 +32604,15 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Personalization Portrait - Locations",
-        "description": "Locations aggregated for Apple's personalization features",
+        "description": "Location records from PPSQLDatabase.db, with the bundle ID and, where recorded, the group ID of the source each record references",
         "category": "Locations",
-        "notes": "Aggregated locations are not proof that the device visited a place; the source bundle and group provide essential attribution context. Based on research by Sarah Edwards: https://www.mac4n6.com/blog/2020/6/2/guest-post-by-bizzybarney-a-peek-inside-the-ppsqldatabasedb-personalization-portrait-database",
+        "notes": "A location record is not proof that the device was at that place. The cited research describes this database as aggregating data from many sources and says attribution must be done carefully. Bundle ID, Group ID and Source Time are read from the sources row that each record's source_id references; Source Time is that row's seconds_from_1970 value, read as Unix epoch seconds, and what it marks is not established here. Latitude and Longitude can be blank, and a record missing either is left out of the KML output. Reference: @bizzybarney, 'A Peek Inside the PPSQLDatabase.db Personalization Portrait Database', guest post on mac4n6.com, https://www.mac4n6.com/blog/2020/6/2/guest-post-by-bizzybarney-a-peek-inside-the-ppsqldatabasedb-personalization-portrait-database",
         "author": "@AlexisBrignoni",
         "paths": [
             "*/mobile/Library/PersonalizationPortrait/PPSQLDatabase.db*"
         ],
         "creation_date": "2026-07-28",
-        "last_update_date": "2026-07-28"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "Ph001BasicAssetData",
@@ -32838,14 +33475,14 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Ph085-accountsd-cloud-Service-Enable-Log-Plist",
-        "description": "Parses basic data from */PhotoData/private/com.apple.accountsd/cloudServiceEnableLog.plist which is a plist that tracks when Cloud Photos Library (CPL) and Shared Albums have been enabled. Based on research and published blogs written by Scott Koenig https://theforensicscooter.com/2024/05/18/ileapp-parsers-photos-sqlite-queries/",
+        "description": "Parses basic data from */PhotoData/private/com.apple.accountsd/cloudServiceEnableLog.plist which is a plist that records when iCloud Photo Library (CPL) and Shared Albums were enabled or disabled. Based on research and published blogs written by Scott Koenig https://theforensicscooter.com/2022/05/02/photos-sqlite-query-documentation-notable-artifacts/",
         "category": "Photos.sqlite",
         "author": "Scott Koenig",
         "paths": [
             "*/com.apple.accountsd/cloudServiceEnableLog.plist"
         ],
         "creation_date": "2026-05-28",
-        "last_update_date": "2026-07-27"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "Ph086astsdcloudServiceEnableLogplist",
@@ -32853,14 +33490,14 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Ph086-assetsd-cloud-Service-Enable-Log-Plist",
-        "description": "Parses basic data from */PhotoData/private/com.apple.assetsd/cloudServiceEnableLog.plist which is a plist that tracks when Cloud Photos Library (CPL) has been enabled. Based on research and published blogs written by Scott Koenig https://theforensicscooter.com/2024/05/18/ileapp-parsers-photos-sqlite-queries/",
+        "description": "Parses basic data from */PhotoData/private/com.apple.assetsd/cloudServiceEnableLog.plist which is a plist that records when iCloud Photo Library (CPL) was enabled or disabled. Based on research and published blogs written by Scott Koenig https://theforensicscooter.com/2022/05/02/photos-sqlite-query-documentation-notable-artifacts/",
         "category": "Photos.sqlite",
         "author": "Scott Koenig",
         "paths": [
             "*/com.apple.assetsd/cloudServiceEnableLog.plist"
         ],
         "creation_date": "2026-05-28",
-        "last_update_date": "2026-07-31"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "Ph087UFEDdevcievaluesplist",
@@ -36187,6 +36824,62 @@
         "last_update_date": "2026-07-31"
     },
     {
+        "filename": "tutanota",
+        "artifactKey": "tutanota_ios_accounts",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Tutanota - Accounts",
+        "description": "Accounts the app held credentials for, from its credentials database.",
+        "category": "Email",
+        "notes": "One row per row of the credentials table in credentials.sqlite, which the app keeps in its shared app group container. The file is a plain SQLite database and is read directly. Sourced from the app's own code at tutao/tutanota commit 3b8e8472bba09342d49851f0e14bb22b398879a8: app-ios/TutanotaSharedFramework/Credentials/CredentialsDatabase.swift names the file credentials.sqlite and creates these tables, and it opens the file with the SqliteDb class, whose own comment in app-ios/Sqlcipher/SqliteDb.swift states that it does not set the key for SQLCipher. That code describes the current app; the reading here is what the tested images hold, and the database on the tested image carries no meta table, which that code creates. Login is the address the account signs in with and User ID is the account identifier the app uses. Credential Type and Credential Encryption Mode are reported as stored; the tested image holds internal and DEVICE_LOCK, and the database also carries the three modes the app allows, BIOMETRICS, DEVICE_LOCK and SYSTEM_PASSWORD. The row stores an access token, an offline database key and an encrypted password, and a separate table stores a credential encryption key. All four are encrypted, so this artifact reports only whether each is present and prints none of them. The offline database is opened by openDb(userId:dbkey:) in app-ios/TutanotaSharedFramework/Offline/SqlCipherDb.swift with a per-account key, and the key that protects the credential fields is held through the iOS keychain by app-ios/TutanotaSharedFramework/Keychain/KeychainEncryption.swift. Neither key is in the filesystem, so the mail the offline database holds is not readable from an extraction alone. Offline Database is the file in the same container whose name carries this row's user id, matched on that id rather than by position, and Offline Database Size is that file's size in bytes. Only the iOS 17.3 image held a credentials database. The iOS 15.3.1, 14.3 and 13.3.1 images, running Tutanota 3.112.6, 3.80.5 and 3.69.2, hold no such file, so they report nothing here while still reporting a push registration. A file is read only when it sits inside a container whose own .com.apple.mobile_container_manager.metadata.plist names de.tutao.tutanota or group.de.tutao.tutanota, so a credentials.sqlite belonging to another app is not read. On the two tested images that do not carry the app every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Shared/AppGroup/*/credentials.sqlite*",
+            "*/mobile/Containers/Shared/AppGroup/*/offline_*.sqlite*",
+            "*/mobile/Containers/Data/Application/*/Documents/offline_*.sqlite*",
+            "*/mobile/Containers/Shared/AppGroup/*/.com.apple.mobile_container_manager.metadata.plist",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "tutanota",
+        "artifactKey": "tutanota_ios_offline_stores",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Tutanota - Offline Stores",
+        "description": "Offline mail databases the app kept, one per account, with whether each could be read.",
+        "category": "Email",
+        "notes": "One row per offline database the app kept, matched by the name shape offline_<user id>.sqlite. The app writes one per account and names it for that account, so User ID In File Name is read from the file name. On the iOS 17.3 image that id equalled the user id of the one row in the credentials database, and on the iOS 15.3.1 image it equalled the user id the push registration carries. Reads As Plain SQLite is measured here by opening the file: it was No on both stores, and First Sixteen Bytes is the head of each file, neither of which is the SQLite magic. The offline database is opened by openDb(userId:dbkey:) in app-ios/TutanotaSharedFramework/Offline/SqlCipherDb.swift with a per-account key, and the key that protects the credential fields is held through the iOS keychain by app-ios/TutanotaSharedFramework/Keychain/KeychainEncryption.swift. Neither key is in the filesystem, so the mail the offline database holds is not readable from an extraction alone. So a row records that an offline mail database exists for that account and how large it is, and nothing about the mail in it. The iOS 14.3 and 13.3.1 images, running Tutanota 3.80.5 and 3.69.2, hold no offline database. The app moved the file between releases: it was in the app's own Documents folder on the iOS 15.3.1 image and in the shared app group container on the iOS 17.3 image, and both locations are read. A file is read only when it sits inside a container whose own .com.apple.mobile_container_manager.metadata.plist names de.tutao.tutanota or group.de.tutao.tutanota. On the two tested images that do not carry the app every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Shared/AppGroup/*/offline_*.sqlite*",
+            "*/mobile/Containers/Data/Application/*/Documents/offline_*.sqlite*",
+            "*/mobile/Containers/Shared/AppGroup/*/.com.apple.mobile_container_manager.metadata.plist",
+            "*/mobile/Containers/Data/Application/*/.com.apple.mobile_container_manager.metadata.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
+        "filename": "tutanota",
+        "artifactKey": "tutanota_ios_push_registration",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "Tutanota - Push Registration",
+        "description": "The push registration the app kept in its preferences, with the server it registered against.",
+        "category": "Email",
+        "notes": "One row per preferences file that carries the app's sseInfo value, from Library/Preferences/de.tutao.tutanota.plist in the app's data container and Library/Preferences/group.de.tutao.tutanota.plist in its shared app group container. The iOS 17.3 image holds the value in both files with the same push identifier in each, which is why it reports 2 rows for one device; the other three images hold it in one file and report one row each. Push Identifier is the identifier the app registered for server sent events and Server Origin is the server it registered against. That origin was https://mail.tutanota.com on the iOS 13.3.1, 14.3 and 15.3.1 images and https://app.tuta.com on the iOS 17.3 image, whose app bundle is named Tuta Mail and carries version 232.240621.0 against 3.69.2, 3.80.5 and 3.112.6 on the others. User IDs is the list the same value carries: it named one account on the iOS 13.3.1, 14.3 and 15.3.1 images and was empty on the iOS 17.3 image, whose account identifier is in the credentials database instead. Last Missed Notification Check is a plist date and is present on the iOS 14.3 and 15.3.1 images only. Last Processed Notification ID is reported as stored. Repeating Alarm Notifications is the number of entries in the app's stored repeating alarm list, which is a JSON array kept as bytes; it held none on every image that carries the key and the key is absent on the iOS 13.3.1 image, so no calendar alarm is reported from any tested image. A row records a registration the app made. It does not establish that any notification was delivered or read. On the two tested images that do not carry the app every artifact in this module reported nothing.",
+        "author": "@AlexisBrignoni, Claude",
+        "paths": [
+            "*/mobile/Containers/Data/Application/*/Library/Preferences/de.tutao.tutanota.plist",
+            "*/mobile/Containers/Shared/AppGroup/*/Library/Preferences/group.de.tutao.tutanota.plist"
+        ],
+        "creation_date": "2026-09-11",
+        "last_update_date": "2026-09-11"
+    },
+    {
         "filename": "twint",
         "artifactKey": "twint_transactions",
         "sourceTool": "iLEAPP",
@@ -36513,10 +37206,11 @@
         "name": "United - IFE Playback Resume Positions",
         "description": "Inflight entertainment playback resume positions from prefs and Core Data.",
         "category": "United Airlines",
-        "notes": "Core Data table: ZUACDINFLIGHTMEDIA; also app prefs com.united.UnitedCustomerFacingIPhone.plist (.mpd / MOV_* resume keys).",
+        "notes": "Core Data table: ZUACDINFLIGHTMEDIA; also app prefs com.united.UnitedCustomerFacingIPhone.plist (.mpd / MOV_* resume keys). On abe_ios16 the Core Data store is read and its ZUACDINFLIGHTMEDIA table is present with no rows. The preferences plist was not found on any of the 21 registered corpora whose listings were checked, so the preferences branch is unexercised.",
         "author": "James Habben",
         "paths": [
-            "*/UnitediPhoneCoreData.sqlite**/com.united.UnitedCustomerFacingIPhone/Library/Preferences/com.united.UnitedCustomerFacingIPhone.plist"
+            "*/UnitediPhoneCoreData.sqlite*",
+            "*/com.united.UnitedCustomerFacingIPhone/Library/Preferences/com.united.UnitedCustomerFacingIPhone.plist"
         ],
         "creation_date": "2026-07-13",
         "last_update_date": "2026-07-31"
@@ -36780,7 +37474,7 @@
         "name": "Voicemail",
         "description": "Extract voicemail",
         "category": "Call History",
-        "notes": "Reference: A. Hoog & K. Strzempka, 'iPhone and iOS Forensics' (Syngress, 2011), voicemail.db flags: 67 = old, 75 = deleted, 3 = recent.",
+        "notes": "Reference: A. Hoog & K. Strzempka, 'iPhone and iOS Forensics' (Syngress, 2011), voicemail.db flags: 67 = old, 75 = deleted, 3 = recent. When no voicemail.db is present, one row is reported per audio file with its transcript matched by file stem, and the report names the audio and transcript files read. The 19 registered corpora found to carry voicemail files all carry the database as well, so that path was exercised on a constructed tree of audio and transcript files without it.",
         "author": "@JohannPLW - @AlexisBrignoni",
         "paths": [
             "*/mobile/Library/Voicemail/voicemail.db*",
@@ -37061,14 +37755,14 @@
         "name": "WhatsApp - Call History",
         "description": "Extract call history from WhatsApp",
         "category": "WhatsApp",
-        "notes": "The ZOUTCOME values 0, 1 and 4 are labelled Ended, Missed and Rejected; that mapping has no vendor source and no recorded count, and unrecognized values are reported as stored.",
+        "notes": "The ZOUTCOME values 0, 1 and 4 are labelled Ended, Missed and Rejected; that mapping has no vendor source and no recorded count, and unrecognized values are reported as stored. Incoming (as stored), Video Call, Missed and Missed Reason come from the ZWAAGGREGATECALLEVENT row this call belongs to, joined on the call's own Z1CALLEVENTS, which the artifact also reports as Aggregate Event ID. That row is per group of calls rather than per call: 2 aggregates across the tested images covered more than one call, so where two rows share an Aggregate Event ID those four columns describe the group and not the individual call. Video Call and Missed are the ZVIDEO and ZMISSED booleans rendered Yes and No; across the 20 rows of the 5 tested images that hold any, Video Call was Yes on 12 and Missed was Yes on 4. Missed Reason is reported as stored: the only value held is 1, and nothing available defines it. Incoming (as stored) is the app's own ZINCOMING flag and Direction beside it is derived from the group call creator, so the two are independent readings of the same thing: they agreed on all 16 rows where both are present and disagreed on none. On the iOS 14.3 image Direction is blank on every row because that release has no group call creator column, and the stored flag fills in there. Bytes Sent and Bytes Received are the call's own byte counts. Call ID is the call's ZCALLIDSTRING and was present on 14 of the 20 rows; the column is absent from the database on the iOS 17.1 and 14.3 images. Group JID held no value on any row of any tested image, so no group call is recorded among them, and the column is kept because the database declares it. The file also holds ZWAJOINABLECALLEVENT, present and empty on every tested image, and ZWAUPCOMINGCALLEVENT, present and empty on all but the iOS 14.3 image, which does not have it; neither is read. Ending Timestamp is the start plus the stored duration, so it equals Starting Timestamp on a call of no duration: 7 of the 20 rows have a duration of 00:00:00 and those are exactly the rows where the two timestamps are equal, and exactly the rows whose Disconnected cause reads Missed. Contact Fullname and Phone Number come from the separate address book database and were filled on 12 of the 20 rows, blank where the participant has no entry there. Contact ID is the participant the call was with and can legitimately repeat: it held a single value across every row of the 2 rows of the iOS 17.1 image and the 4 rows of the iOS 14.3 image, which is that many calls with the same party.",
         "author": "@Vinceckert",
         "paths": [
             "*/mobile/Containers/Shared/AppGroup/*/CallHistory.sqlite*",
             "*/mobile/Containers/Shared/AppGroup/*/ContactsV2.sqlite*"
         ],
         "creation_date": "2024-05-31",
-        "last_update_date": "2026-08-09"
+        "last_update_date": "2026-09-11"
     },
     {
         "filename": "whatsAppExtended",
@@ -37189,7 +37883,7 @@
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
         "name": "Wi-Fi Analytics - Geotags",
-        "description": "Geotagged Wi-Fi networks recorded by wifianalyticsd",
+        "description": "Wi-Fi geotags from DeviceAnalyticsModel.sqlite in the com.apple.wifianalyticsd directory, with the linked BSSID and SSID",
         "category": "Wi-Fi",
         "notes": "Dates use the Apple Cocoa epoch. Locations should be corroborated.",
         "author": "@AlexisBrignoni",
@@ -37197,7 +37891,7 @@
             "*/root/Library/Application Support/com.apple.wifianalyticsd/DeviceAnalyticsModel.sqlite*"
         ],
         "creation_date": "2026-07-28",
-        "last_update_date": "2026-07-28"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "threeBars",
@@ -37462,19 +38156,37 @@
     },
     {
         "filename": "wifiNetworkStoreModel",
+        "artifactKey": "wifiNetworkStoreModelGeotags",
+        "sourceTool": "iLEAPP",
+        "Platform": "iOS",
+        "name": "WiFi Network Store - Geotags",
+        "description": "Geotag records from the WiFiNetworkStoreModel store, with the SSIDs of the network records they are linked to",
+        "category": "Network",
+        "notes": "One row per ZGEOTAG record in each WiFiNetworkStoreModel.sqlite the declared paths match, read with its write-ahead log when one is present; a database the query cannot read is logged and skipped. Source File names the database a row came from. Geotag Date is the record's date attribute, a Core Data date read as seconds since 2001-01-01 UTC; nothing in the store says what event it marks. Latitude, Longitude and BSSID are reported as stored, and the GeoTag entity defines no accuracy attribute. The two SSID columns follow the geotag's to-one relationships higherBandNetwork and lowerBandNetwork, which the model defines as pointing at a RootNetwork record and the store keeps as that record's Z_PK in ZHIGHERBANDNETWORK and ZLOWERBANDNETWORK. The two network Record ID columns report those stored values and match Record ID in WiFi Network Store - Networks for the same Source File. The relationship names are reported as the model writes them; nothing in the store defines a band. The model is WiFiNetworkStoreModel.momd, found on each image that held the store, and each tested store's Z_METADATA version hashes match its current version. No tested geotag held both links, and 8 of the 21 on the iOS 12.4 image held neither; those rows are reported with the network columns blank. As a cross-check on the tested images, 14 of the 18 geotags holding a link had a BSSID listed among the same device's known networks (com.apple.wifi.plist on iOS 12.4 and 13.3.1, com.apple.wifi.known-networks.plist on iOS 14.3), all 14 under the SSID the link names. Of those, the 12 with a channel recorded there showed channel 32 or above for the 5 linked through higherBandNetwork and channel 14 or below for the 7 linked through lowerBandNetwork. Earlier versions of Wifi Known Networks, now WiFi Network Store - Networks, paired each network with the geotag sharing its Z_PK, which the store does not record as a relationship, and read ZHIGHERBANDNETWORK and ZLOWERBANDNETWORK as 5 GHz and 2.4 GHz flags; on the three images that held the store, 1 of the 9 pairings that join produced matched a recorded link. The model on the iOS 13.3.1 and 14.3 images adds taggedCount, which held 0 on all 5 geotags there and is not reported. On the iOS 13.3.1 image all 3 geotags existed only in the write-ahead log, on the iOS 12.4 image the log alone held 4 of the 21, and on the iOS 14.3 image the database file read without its log held 2 geotag records whose Z_PK values differ from the 2 reported. Of 26 iOS extractions checked, the store was present on three (iOS 12.4, 13.3.1 and 14.3) and absent from the rest, including iOS 15.3.1 and 26.5.2 images. None of the 26 carried it under com.apple.wifianalyticsd, so that declared path is unexercised.",
+        "author": "@KevinPagano, @AlexisBrignoni, Claude",
+        "paths": [
+            "*/Library/Application Support/WiFiNetworkStoreModel.sqlite*",
+            "*/Library/Application Support/com.apple.wifianalyticsd/WiFiNetworkStoreModel.sqlite*"
+        ],
+        "creation_date": "2026-09-12",
+        "last_update_date": "2026-09-12"
+    },
+    {
+        "filename": "wifiNetworkStoreModel",
         "artifactKey": "get_wifiNetworkStoreModel",
         "sourceTool": "iLEAPP",
         "Platform": "iOS",
-        "name": "Wifi Known Networkss",
-        "description": "Parses Wifi details found in WiFiNetworkStoreModel database",
+        "name": "WiFi Network Store - Networks",
+        "description": "Network records from the WiFiNetworkStoreModel store, with counts of the geotag records linked to each",
         "category": "Network",
-        "author": "@KevinPagano",
+        "notes": "One row per ZNETWORK record in each WiFiNetworkStoreModel.sqlite the declared paths match, read with its write-ahead log when one is present; a database the query cannot read is logged and skipped. Source File names the database a row came from. Entity is the Core Data entity name Z_PRIMARYKEY gives for the row's Z_ENT, and was RootNetwork on every tested row. The authFlag (as stored) column carries the integer unchanged, because nothing in the store documents its values. Geotags via higherBandNetwork and Geotags via lowerBandNetwork count the ZGEOTAG records whose relationship of that name holds this record's Z_PK. Those relationships are defined in the WiFiNetworkStoreModel Core Data model found on each image that held the store (usr/sbin/WiFiNetworkStoreModel.momd on iOS 12.4 and 13.3.1, System/Library/PrivateFrameworks/MobileWiFi.framework/WiFiNetworkStoreModel.momd on iOS 14.3), and each tested store's Z_METADATA version hashes match that model's current version. Earlier versions of this artifact were named Wifi Known Networks and reported beside each network the geotag sharing its Z_PK, a pairing the store does not record; WiFi Network Store - Geotags now reports geotags through the relationships the store does record. An SSID in this store need not appear among the same device's known networks: 1 of 7 on the iOS 12.4 image and 1 of 2 on the iOS 13.3.1 image were absent from the List of known networks in com.apple.wifi.plist, while the one SSID on the iOS 14.3 image was present in com.apple.wifi.known-networks.plist. The model's BlacklistedNetwork entity (blacklistDate, expireDate, bssid, fenceSize, location) held no record in any tested store, and those attributes are not reported. The Score records linked to the networks are not reported: switchedToCount and switchedAwayFromCount held 0 on all 10 tested Score records, isLongTermNetwork held no value on any, and isMoving, isOmniPresent and isTCPGood held at most one distinct value in each tested store, with meanings the store does not document. On the iOS 13.3.1 image both network records existed only in the write-ahead log, on the iOS 12.4 image the log alone held 1 of the 7, and on the iOS 14.3 image the database file read without its log held a network record whose Z_PK differs from the reported one. Of 26 iOS extractions checked, the store was present on three (iOS 12.4, 13.3.1 and 14.3) and absent from the rest, including iOS 15.3.1 and 26.5.2 images. None of the 26 carried it under com.apple.wifianalyticsd, so that declared path is unexercised.",
+        "author": "@KevinPagano, @AlexisBrignoni, Claude",
         "paths": [
             "*/Library/Application Support/WiFiNetworkStoreModel.sqlite*",
             "*/Library/Application Support/com.apple.wifianalyticsd/WiFiNetworkStoreModel.sqlite*"
         ],
         "creation_date": "2022-08-23",
-        "last_update_date": "2026-07-30"
+        "last_update_date": "2026-09-12"
     },
     {
         "filename": "appleWifiPlist",

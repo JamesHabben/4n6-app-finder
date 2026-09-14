@@ -15,6 +15,27 @@
     },
     "appsList": [
         {
+            "appName": "+Message",
+            "icon": "plus-message.webp",
+            "websiteUrl": "https://www.docomo.ne.jp/service/plus_message/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/jp/app/id1358576433",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kddi.android.cmail",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "NTT Docomo, KDDI, and SoftBank RCS messaging. Android carrier clients com.kddi.android.cmail, com.nttdocomo.android.msg, and jp.softbank.mb.plusmessage; iOS App Store client com.plusmessage published by Openwave Messaging K.K. Play title \uff0b\u30e1\u30c3\u30bb\u30fc\u30b8\uff08\u30d7\u30e9\u30b9\u30e1\u30c3\u30bb\u30fc\u30b8\uff09; Apple title the same. Play genre Communication; Apple Social Networking. KDDI client was au SMS / C-mail. Distinct from Play-store clones, Apple Messages, Google Messages, LINE, and Plus Messenger.",
+            "dateAdded": "2023-10-11",
+            "dateUpdated": "2026-09-14",
+            "alternateNames": [
+                "com.kddi.android.cmail",
+                "com.nttdocomo.android.msg",
+                "jp.softbank.mb.plusmessage",
+                "com.plusmessage",
+                "\uff0b\u30e1\u30c3\u30bb\u30fc\u30b8",
+                "\u30d7\u30e9\u30b9\u30e1\u30c3\u30bb\u30fc\u30b8"
+            ]
+        },
+        {
             "appName": "1Password",
             "icon": "1password.webp",
             "websiteUrl": "https://1password.com/",
@@ -351,6 +372,42 @@
             "dateUpdated": "",
             "alternateNames": [
                 "ltd.evilcorp.atox"
+            ]
+        },
+        {
+            "appName": "Avast Cleanup",
+            "icon": "avast-cleanup.webp",
+            "websiteUrl": "https://www.avast.com",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/avast-cleanup-phone-cleaner/id6478222193",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.avast.android.cleaner",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Avast Software s.r.o. phone cleaner (Android com.avast.android.cleaner, iOS com.avast.ios.cleaner). Store title Avast Cleanup – Phone Cleaner. Apple genre Utilities. Distinct from Avast One: Antivirus, Security, AVG AntiVirus & Security, and CCleaner.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "2026-09-14",
+            "alternateNames": [
+                "com.avast.android.cleaner",
+                "com.avast.ios.cleaner"
+            ]
+        },
+        {
+            "appName": "Avast One: Antivirus, Security",
+            "icon": "avast-one-antivirus-security.webp",
+            "websiteUrl": "https://www.avast.com",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/avast-one-security-privacy/id1276551855",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.avast.android.mobilesecurity",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Avast Software s.r.o. / Gen Digital mobile security (Android com.avast.android.mobilesecurity, iOS com.avast.ios.security). Play title Avast One: Antivirus, Security; Apple title Avast One: Security & Privacy. Replaced Avast Mobile Security. Apple genre Utilities. Distinct from Avast Cleanup, AVG AntiVirus & Security, and CCleaner.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.avast.android.mobilesecurity",
+                "com.avast.ios.security",
+                "Avast Antivirus & Security",
+                "Avast One: Security & Privacy"
             ]
         },
         {
@@ -2795,17 +2852,6 @@
             ]
         },
         {
-            "appName": "C-Mail",
-            "icon": "",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
-            "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
-        },
-        {
             "appName": "Cake Browser",
             "icon": "cake-browser.webp",
             "websiteUrl": "",
@@ -3874,17 +3920,21 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.mgeek.TunnyBrowser",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "MOBOTAP Inc. browser (Android mobi.mgeek.TunnyBrowser, iOS RAPS.appstore.com.dolphin.browser.iphone). Play title Dolphin Browser: Fast, Private. Apple title Dolphin Mobile Browser. Apple genre Business. Historic SKUs: Classic (same Android package), Mini (com.dolphin.browser), Express (com.dolphin.browser.express.web), older iOS com.dolphin.browser.iphone, iOS12 SKU RAPS.appstore.com.dolphin.browser.iphone.ios12. Distinct from Boat Browser, CM Browser, Atomic Web Browser, Opera Mini, Google Chrome, and Firefox.",
+            "notes": "MOBOTAP Inc. browser (Android mobi.mgeek.TunnyBrowser, iOS RAPS.appstore.com.dolphin.browser.iphone). Play title Dolphin Browser: Fast, Private. Apple title Dolphin Mobile Browser. Apple genre Business. Historic SKUs: Classic (same Android package), Mini (com.dolphin.browser), Express (com.dolphin.browser.express.web), Beta (com.dolphin.browser.lab.en), iPad (com.dolphin.browser.pad), older iOS com.dolphin.browser.iphone, iOS12 SKU RAPS.appstore.com.dolphin.browser.iphone.ios12, Chinese iOS com.dolphin.browser.iphone.chinese, Japan Play com.dolphin.browser.android.jp. Distinct from Boat Browser, CM Browser, Atomic Web Browser, Opera Mini, Google Chrome, and Firefox.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-28",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
-                "mobi.mgeek.TunnyBrowser",
                 "com.dolphin.browser",
+                "com.dolphin.browser.android.jp",
                 "com.dolphin.browser.express.web",
                 "com.dolphin.browser.iphone",
+                "com.dolphin.browser.iphone.chinese",
+                "com.dolphin.browser.lab.en",
+                "com.dolphin.browser.pad",
+                "Dolphin Mobile Browser",
+                "mobi.mgeek.TunnyBrowser",
                 "RAPS.appstore.com.dolphin.browser.iphone",
-                "RAPS.appstore.com.dolphin.browser.iphone.ios12",
-                "Dolphin Mobile Browser"
+                "RAPS.appstore.com.dolphin.browser.iphone.ios12"
             ]
         },
         {
@@ -5022,18 +5072,33 @@
             "websiteUrl": "https://connect.garmin.com/",
             "appleStoreUrl": "https://apps.apple.com/us/app/garmin-connect/id583446403",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.garmin.android.apps.connectmobile",
-            "notes": "Garmin wearable companion (Android com.garmin.android.apps.connectmobile, iOS com.garmin.connect.mobile). Store title Garmin Connect\u2122. ArtiFast application key Garmin.",
+            "notes": "Garmin International wearable companion (Android com.garmin.android.apps.connectmobile, iOS com.garmin.connect.mobile). Store title Garmin Connect\u2122. Apple genre Health & Fitness. Distinct from Garmin StreetPilot OnBoard, Garmin Messenger, Garmin Mechanic, Garmin Drive, Strava, Google Health (Fitbit), Samsung Health, and Apple Health.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
                 "com.garmin.android.apps.connectmobile",
-                "com.garmin.connect.mobile",
-                "Garmin",
-                "Garmin Connect\u2122"
+                "com.garmin.connect.mobile"
             ],
             "category": "Health & Fitness",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true"
+        },
+        {
+            "appName": "Garmin StreetPilot OnBoard",
+            "icon": "",
+            "websiteUrl": "https://www.garmin.com",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/garmin-u-s-a/id435490305",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Garmin International iPhone turn-by-turn family with maps on the device (regional SKUs under com.garmin.onboard). Store titles included Garmin U.S.A. (id 435490305) and Garmin N. America. Garmin discontinued mobile navigation apps; StreetPilot OnBoard is gone from the App Store. Distinct from Garmin Connect, Garmin Drive, StreetPilot onDemand, Navigon, Garmin Mechanic, and the marine OnBoard man-overboard system.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.garmin.onboard",
+                "StreetPilot OnBoard"
+            ]
         },
         {
             "appName": "Gate Guru",
@@ -6861,6 +6926,23 @@
             "alternateNames": []
         },
         {
+            "appName": "Kwai",
+            "icon": "kwai.webp",
+            "websiteUrl": "https://www.kwai.com",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/kwai-short-video-community/id1338605092",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kwai.video",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "JOYO TECHNOLOGY PTE. LTD. international short-video app (Android com.kwai.video, iOS com.kwai.intl). Play title Kwai - Video & Drama; Apple title Kwai - Short Video Community. Apple genre Entertainment. Distinct from TikTok, Likee, Moj, BigoLive, and China 快手.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.kwai.intl",
+                "com.kwai.video"
+            ]
+        },
+        {
             "appName": "LastPass",
             "icon": "lastpass.webp",
             "websiteUrl": "https://www.lastpass.com/",
@@ -7137,9 +7219,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=mega.privacy.android.app",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Mega Limited. Android mega.privacy.android.app; iOS mega.ios. Apple genre Productivity; store title MEGA: Encrypted Cloud Storage. Distinct from Dropbox and Google Drive. Chat artifacts are the in-app MEGA Chat (karere), not a separate client.",
+            "notes": "Mega Networks LLC encrypted cloud (Android mega.privacy.android.app, iOS mega.ios). Apple title MEGA: Encrypted Cloud Storage; Play title MEGA. Apple genre Productivity. Distinct from Dropbox, Google Drive, and iCloud Drive. In-app MEGA Chat (karere) is not a separate client.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-20",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
                 "mega.privacy.android.app",
                 "mega.ios"
@@ -7852,7 +7934,39 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [            ]
+        },
+        {
+            "appName": "MoboGram my",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.stargram.alpha",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API Android client with built-in proxies (com.stargram.alpha). APK title MoboGram my / Mobogeram; last seen version 8.4.1. Play listing is gone. Android only. Distinct from Mobogram new, MoboTel Plus Messenger, Telegram, Telegram X, and Plus Messenger.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.stargram.alpha"
+            ]
+        },
+        {
+            "appName": "Mobogram new",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mobogram.proxyzedef",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API Android client with proxies (com.mobogram.proxyzedef). Last seen version 8.2.3-proxyzedef. Play listing is gone. Android only. Distinct from MoboGram my, MoboTel Plus Messenger, Telegram, Telegram X, and Plus Messenger.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mobogram.proxyzedef"
+            ]
         },
         {
             "appName": "Modes and Routines",
@@ -8100,7 +8214,23 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-10-31",
-            "alternateNames": []
+            "alternateNames": [            ]
+        },
+        {
+            "appName": "nearox",
+            "icon": "",
+            "websiteUrl": "https://www.nearox.com",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/nearox/id482941832",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.nearox.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "WOIZZER AG gay social/dating (Android com.nearox.android). Stores gone; last Android around 6.1.1 in 2016. Distinct from Grindr, SCRUFF, Jack'd, and BoyAhoy.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.nearox.android"
+            ]
         },
         {
             "appName": "Nest",
@@ -8421,6 +8551,23 @@
             ]
         },
         {
+            "appName": "Olvid",
+            "icon": "olvid.webp",
+            "websiteUrl": "https://olvid.io",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/olvid/id1414865219",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=io.olvid.messenger",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Olvid private messenger (Android and iOS io.olvid.messenger; iOS app group group.io.olvid.messenger). No phone number. Apple genre Social Networking. Distinct from Signal, Session, SimpleX, Threema, Wire, and Briar.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "group.io.olvid.messenger",
+                "io.olvid.messenger"
+            ]
+        },
+        {
             "appName": "Omegle",
             "icon": "omegle.webp",
             "websiteUrl": "",
@@ -8532,16 +8679,20 @@
             "icon": "opera.webp",
             "websiteUrl": "https://www.opera.com/",
             "category": "Browser",
-            "appleStoreUrl": "https://apps.apple.com/us/app/opera-ai-browser-with-vpn/id1411869974",
+            "appleStoreUrl": "https://apps.apple.com/us/app/opera-browser-with-vpn/id1411869974",
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.opera.browser",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Opera Norway AS full browser (Android com.opera.browser, iOS com.opera.OperaTouch). Apple title Opera: AI browser with VPN; Play title Opera: Private Web Browser. Apple genre Utilities. Oxygen/Cellebrite Opera Mobile is this Android package. Distinct from Opera Mini, Opera GX, Opera VPN (com.opera.vpn), and Coast (com.opera.Coast).",
+            "notes": "Opera Norway AS full browser (Android com.opera.browser, beta com.opera.browser.beta, iOS com.opera.OperaTouch). Play title Opera: Private Web Browser; Apple title Opera Browser with VPN. Apple genre Utilities. Related SKUs Coast (com.opera.Coast) and Opera VPN (com.opera.vpn). Distinct from Opera Mini and Opera GX.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-27",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
                 "com.opera.browser",
+                "com.opera.browser.beta",
+                "com.opera.Coast",
                 "com.opera.OperaTouch",
+                "com.opera.vpn",
+                "Opera Browser with VPN",
                 "Opera: AI browser with VPN",
                 "Opera: Private Web Browser"
             ]
@@ -8818,7 +8969,24 @@
             "notes": "",
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [            ]
+        },
+        {
+            "appName": "Phantom",
+            "icon": "phantom.webp",
+            "websiteUrl": "https://phantom.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/phantom-trading-wallet/id1598432977",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=app.phantom",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Phantom Technologies Incorporated self-custody crypto wallet (Android and iOS app.phantom). Store title Phantom: Trading Wallet. Apple genre Finance. Distinct from Metamask, MoonPay, Trust Wallet, Coinbase, Zengo, and DJI GO.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "app.phantom",
+                "Phantom: Trading Wallet"
+            ]
         },
         {
             "appName": "Phoenix browser",
@@ -8894,7 +9062,25 @@
             "notes": "",
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
-            "alternateNames": []
+            "alternateNames": [            ]
+        },
+        {
+            "appName": "PingChat!",
+            "icon": "",
+            "websiteUrl": "http://www.pingchat.com",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.enflick.android.ping",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Enflick Inc. cross-platform IM (Android com.enflick.android.ping, iOS com.enflick.ping), also on BlackBerry. Rebranded to Touch in 2011; Play listing gone. Distinct from TextNow and from unrelated Ping Chat messengers.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.enflick.android.ping",
+                "com.enflick.ping",
+                "PingChat"
+            ]
         },
         {
             "appName": "Pinterest",
@@ -9140,14 +9326,18 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cloudmosa.puffinFree",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "CloudMosa cloud browser (Android com.cloudmosa.puffinFree, iOS com.cloudmosa.PuffinFree). Play title Puffin Web Browser; Apple title Puffin Cloud Browser. ArtiFast application key Puffin Browser (Android-only). Distinct from Puffin Browser Pro (iOS com.cloudmosa.puffin) and Puffin Incognito Browser (com.cloudmosa.puffinIncognito). ",
+            "notes": "CloudMosa, Inc. cloud browser family (Android com.cloudmosa.puffinFree, iOS com.cloudmosa.PuffinFree). Play title Puffin Web Browser; Apple title Puffin Cloud Browser. Apple genre Utilities. Pro, Academy, Facebook, and TV SKUs are the same CloudMosa line. Distinct from Puffin Incognito Browser, UC Browser, Dolphin Browser, Maxthon Browser, Opera, and Kiwi Browser.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
                 "com.cloudmosa.puffinFree",
                 "com.cloudmosa.PuffinFree",
-                "Puffin Cloud Browser",
-                "Puffin Browser"
+                "com.cloudmosa.puffin",
+                "com.cloudmosa.puffinAcademy",
+                "com.cloudmosa.PuffinAcademy",
+                "com.cloudmosa.puffinFB",
+                "com.cloudmosa.CherryFB",
+                "com.cloudmosa.puffinTV"
             ]
         },
         {
@@ -9192,14 +9382,35 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mobileqq",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Tencent QQ messenger (Android com.tencent.mobileqq, iOS com.tencent.mqq). Store title QQ. Apple genre Social Networking. International SKUs com.tencent.mobileqqi / com.tencent.mQQi map here. Distinct from QQ Mail, WeChat, Weibo (微博), TIM, and QQ Browser (com.tencent.mttlite; Cellebrite QQ Browser currently still maps to this listing).",
+            "notes": "Tencent QQ messenger (Android com.tencent.mobileqq, iOS com.tencent.mqq). Store title QQ. Apple genre Social Networking. Related SKUs: International (com.tencent.mobileqqi / com.tencent.mQQi), Lite (com.tencent.qqlite), HD (com.tencent.minihd.qq / com.tencent.mipadqq), older Android com.tencent.qq. Distinct from QQ Mail, WeChat, Weibo (微博), TIM, and QQ Browser.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-28",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
+                "com.tencent.minihd.qq",
+                "com.tencent.mipadqq",
                 "com.tencent.mobileqq",
-                "com.tencent.mqq",
                 "com.tencent.mobileqqi",
-                "com.tencent.mQQi"
+                "com.tencent.mqq",
+                "com.tencent.mQQi",
+                "com.tencent.qq",
+                "com.tencent.qqlite"
+            ]
+        },
+        {
+            "appName": "QQ Browser",
+            "icon": "qq-browser.webp",
+            "websiteUrl": "https://browser.qq.com/",
+            "category": "Browser",
+            "appleStoreUrl": "https://apps.apple.com/us/app/qq浏览器-腾讯ai浏览器/id370139302",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tencent.mtt",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Tencent QQ浏览器 (Android com.tencent.mtt, iOS com.tencent.mttlite). Apple title QQ浏览器-腾讯AI浏览器. Apple genre Utilities. Play listing gone in the US. Distinct from QQ, QQ Mail, UC Browser, and Baidu Browser (百度).",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.tencent.mtt",
+                "com.tencent.mttlite"
             ]
         },
         {
@@ -9399,6 +9610,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2023-11-02",
             "alternateNames": []
+        },
+        {
+            "appName": "Renren (人人)",
+            "icon": "",
+            "websiteUrl": "https://renren.com",
+            "category": "Social Networking",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.renren.mobile.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Renren Inc. / Oak Pacific campus SNS, formerly Xiaonei (Android com.renren.mobile.android, iOS com.xiaonei.xiaonei). Stores gone. Distinct from Weibo (微博), WeChat, QQ, and later 人人直播 builds that reused the Android package.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.renren.mobile.android",
+                "com.xiaonei.xiaonei",
+                "Xiaonei"
+            ]
         },
         {
             "appName": "RethinkDNS",
@@ -11368,9 +11597,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.tutao.tutanota",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Tutao GmbH encrypted email (Android and iOS de.tutao.tutanota). Formerly Tutanota; current store title Tuta Mail: Secure Email. Play genre Communication; Apple Productivity. Distinct from ProtonMail and Gmail.",
+            "notes": "Tutao GmbH encrypted email (Android and iOS de.tutao.tutanota). Formerly Tutanota; current store title Tuta Mail: Secure Email. Play genre Communication; Apple Productivity. Distinct from Tuta Calendar, ProtonMail, and Gmail.",
             "dateAdded": "2026-09-01",
-            "dateUpdated": "",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
                 "de.tutao.tutanota",
                 "Tuta Mail"
@@ -11928,6 +12157,22 @@
             ]
         },
         {
+            "appName": "WeTel",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.powerasdev.wetel",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API Android client marketed as an anti-filter / proxy Telegram (com.powerasdev.wetel). Play title WeTel | ضد فیلتر | بدون فیلتر; developer WeTel Team. Play listing is gone. Android only. Distinct from Telegram, Telegram X, X Tel, Z Plus Messenger, Plus Messenger, WeChat, and WhatsApp Messenger.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.powerasdev.wetel"
+            ]
+        },
+        {
             "appName": "Web Browser (Litter Penguin)",
             "icon": "",
             "websiteUrl": "",
@@ -12011,6 +12256,23 @@
             ]
         },
         {
+            "appName": "WhatsApp Business",
+            "icon": "whatsapp-business.webp",
+            "websiteUrl": "https://www.whatsapp.com/business/",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/whatsapp-business/id1386412985",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.whatsapp.w4b",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Meta / WhatsApp Inc. business messenger (Android com.whatsapp.w4b, iOS net.whatsapp.WhatsAppSMB). Separate app sandbox from consumer WhatsApp. Store title WhatsApp Business. Apple genre Business. Distinct from WhatsApp Messenger, GBWhatsApp, FMWhatsApp, and Whatschat.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.whatsapp.w4b",
+                "net.whatsapp.WhatsAppSMB"
+            ]
+        },
+        {
             "appName": "WhatsApp Messenger",
             "icon": "whatsapp.webp",
             "websiteUrl": "https://www.whatsapp.com/",
@@ -12019,9 +12281,9 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.whatsapp",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "Consumer WhatsApp (Android com.whatsapp, iOS net.whatsapp.WhatsApp). Store title WhatsApp Messenger. ArtiFast application key WhatsApp (Android + iOS; also includes WhatsApp Business artifact names). Distinct from WhatsApp Business (com.whatsapp.w4b / net.whatsapp.WhatsAppSMB), currently mapped to this listing in Cellebrite, MOBILEdit, and Oxygen.",
+            "notes": "Consumer WhatsApp (Android com.whatsapp, iOS net.whatsapp.WhatsApp). Store title WhatsApp Messenger. ArtiFast application key WhatsApp (Android + iOS; also includes WhatsApp Business artifact names). Distinct from WhatsApp Business (com.whatsapp.w4b / net.whatsapp.WhatsAppSMB).",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-08-18",
+            "dateUpdated": "2026-09-14",
             "alternateNames": [
                 "com.whatsapp",
                 "net.whatsapp.WhatsApp",
@@ -12107,6 +12369,22 @@
             ]
         },
         {
+            "appName": "Wickr Pro",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Former Wickr LLC enterprise messenger (Android com.mywickr.pro). Amazon discontinued Wickr Pro on 2024-01-31 and pointed networks at AWS Wickr. Distinct from Wickr Me, AWS Wickr, Wickr Enterprise (self-hosted), and Wire.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mywickr.pro"
+            ]
+        },
+        {
             "appName": "Wikipedia",
             "icon": "wikipedia.webp",
             "websiteUrl": "https://www.wikipedia.org/",
@@ -12148,6 +12426,22 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "2026-07-11",
             "alternateNames": []
+        },
+        {
+            "appName": "Windows Live Messenger",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Microsoft IM, formerly MSN Messenger. Service shut down in 2013 and accounts were pointed at Skype. Distinct from Skype, Skype for Business, and Microsoft Teams.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "MSN Messenger"
+            ]
         },
         {
             "appName": "Wire",
@@ -12193,6 +12487,23 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Wizz App",
+            "icon": "wizz-app.webp",
+            "websiteUrl": "https://www.wizzapp.com/",
+            "category": "Social Networking",
+            "appleStoreUrl": "https://apps.apple.com/us/app/wizz-app-chat-now/id1452906710",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=info.wizzapp",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "VLB / Wizz stranger-chat app (Android info.wizzapp, iOS com.vlbapps.wizz). Store title Wizz App - chat now. Apple genre Social Networking. Distinct from Wizz Air, Yubo, and Whisper.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "info.wizzapp",
+                "com.vlbapps.wizz"
+            ]
         },
         {
             "appName": "WorldCard Mobile",
@@ -12286,6 +12597,22 @@
             ]
         },
         {
+            "appName": "X Tel",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.xtel.messenger",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API Android client with built-in proxies (com.xtel.messenger). Play listing is gone; MSAB last saw 8.4.1. Android only. Distinct from Telegram X, Telegram, Plus Messenger, Z Plus Messenger, MoboGram my, and xPal.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.xtel.messenger"
+            ]
+        },
+        {
             "appName": "Xabber",
             "icon": "xabber.png",
             "websiteUrl": "https://www.xabber.com/",
@@ -12363,15 +12690,37 @@
             ]
         },
         {
+            "appName": "xPal",
+            "icon": "xpal.webp",
+            "websiteUrl": "https://xpal.com",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/xpal-ultra-secure-messenger/id1536908440",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mess.engerx",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "XPAL.com Corporation encrypted messenger (Android and iOS com.mess.engerx). Store title xPal Ultra Secure Messenger. Apple genre Social Networking. Distinct from Xave, Signal, Wire, Session, Zangi Messenger, and Telegram.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mess.engerx"
+            ]
+        },
+        {
             "appName": "Yahoo Search",
             "icon": "yahoo-search.webp",
-            "websiteUrl": "",
-            "appleStoreUrl": "",
-            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.search&hl=en",
-            "notes": "",
+            "websiteUrl": "https://search.yahoo.com/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/yahoo-search-your-daily-hub/id361071600",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.yahoo.mobile.client.android.search",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Yahoo Inc. search hub (Android com.yahoo.mobile.client.android.search, iOS com.yahoo.search2). Store title Yahoo Search: Your Daily Hub. Play genre Tools; Apple Productivity. Distinct from Yahoo!, Yahoo! Mail, Yahoo Weather, and Yahoo! Messenger.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2023-10-30",
-            "alternateNames": []
+            "dateUpdated": "2026-09-14",
+            "alternateNames": [
+                "com.yahoo.search2",
+                "com.yahoo.mobile.client.android.search"
+            ]
         },
         {
             "appName": "Yahoo Weather",
@@ -12666,6 +13015,22 @@
             ]
         },
         {
+            "appName": "YouCam Perfect",
+            "icon": "youcam-perfect.webp",
+            "websiteUrl": "https://www.perfectcorp.com/consumer/apps/ycp",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/youcam-perfect-ai-photo-editor/id768469908",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.cyberlink.youperfect",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Perfect Mobile Corp. AI photo editor and beauty camera (Android and iOS com.cyberlink.youperfect). Apple title YouCam Perfect:AI Photo Editor; Play title YouCam Perfect - Photo Editor. Apple genre Photo & Video. Distinct from YouCam Makeup, YouCam Enhance, PicsArt, Snapseed, and VSCO.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.cyberlink.youperfect"
+            ]
+        },
+        {
             "appName": "YouTube",
             "icon": "youtube.jpg",
             "websiteUrl": "",
@@ -12725,6 +13090,22 @@
             "dateAdded": "2023-10-31",
             "dateUpdated": "2023-11-10",
             "alternateNames": []
+        },
+        {
+            "appName": "Z Plus Messenger",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.zplusopet.org",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API Android client with built-in MTProto proxies (com.zplusopet.org). Play listing is gone; MSAB last saw 8.4.1. Android only. Distinct from Plus Messenger, Best Plus Messenger 2021, MoboGram my, Mobogram new, Telegram, and Telegram X.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.zplusopet.org"
+            ]
         },
         {
             "appName": "Zalo",
