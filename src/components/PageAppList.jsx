@@ -17,12 +17,38 @@ const ALIAS_COUNTS = {
   [WISH_LIST_PATH]: ['0'],
 };
 
-function buildSearchParams({ tools = [], counts = [], appName, includeCounts }) {
+const DEFAULT_PAGE = 1;
+const DEFAULT_PAGE_SIZE = 25;
+const PAGE_SIZE_OPTIONS = ['10', '25', '50', '100'];
+
+function parsePositiveInt(value, fallback) {
+  const parsed = Number(value);
+  return Number.isInteger(parsed) && parsed > 0 ? parsed : fallback;
+}
+
+function sameStringList(left, right) {
+  return left.map(String).join('\0') === right.map(String).join('\0');
+}
+
+function buildSearchParams({
+  tools = [],
+  counts = [],
+  appName,
+  includeCounts,
+  page = DEFAULT_PAGE,
+  pageSize = DEFAULT_PAGE_SIZE,
+}) {
   const nextParams = new URLSearchParams();
   if (includeCounts) {
     counts.forEach(count => nextParams.append('count', count));
   }
   tools.forEach(tool => nextParams.append('tool', tool));
+  if (pageSize !== DEFAULT_PAGE_SIZE) {
+    nextParams.set('pageSize', String(pageSize));
+  }
+  if (page !== DEFAULT_PAGE) {
+    nextParams.set('page', String(page));
+  }
   if (appName) {
     nextParams.set('app', appName);
   }
@@ -110,6 +136,9 @@ function PageAppList() {
     return searchParams.getAll('count').filter(count => count !== '');
   }, [impliedCounts, searchParams]);
 
+  const selectedPageSize = parsePositiveInt(searchParams.get('pageSize'), DEFAULT_PAGE_SIZE);
+  const selectedPage = parsePositiveInt(searchParams.get('page'), DEFAULT_PAGE);
+
   const selectedAppName = searchParams.get('app');
 
   const selectedApp = useMemo(() => {
@@ -179,33 +208,63 @@ function PageAppList() {
 
   const heading = headingForCounts(selectedCounts);
 
-  const handleTableChange = useCallback((_pagination, filters) => {
+  const handleTableChange = useCallback((pagination, filters) => {
     const nextTools = (filters.toolName || []).filter(Boolean);
-    const nextCounts = (filters.toolCount || []).filter(count => count !== undefined && count !== null && count !== '');
+    const nextCounts = (filters.toolCount || [])
+      .filter(count => count !== undefined && count !== null && count !== '')
+      .map(String);
+    const filtersChanged = (
+      !sameStringList(nextTools, selectedTools)
+      || !sameStringList(nextCounts, selectedCounts)
+    );
+    const nextPageSize = parsePositiveInt(pagination?.pageSize, selectedPageSize);
+    const nextPage = filtersChanged
+      ? DEFAULT_PAGE
+      : parsePositiveInt(pagination?.current, selectedPage);
     const staysOnAlias = Boolean(
       impliedCounts
       && nextCounts.length === impliedCounts.length
-      && nextCounts.every((count, index) => String(count) === impliedCounts[index]),
+      && nextCounts.every((count, index) => count === impliedCounts[index]),
     );
     const nextPath = staysOnAlias ? pathname : APP_LIST_PATH;
     const nextParams = buildSearchParams({
       tools: nextTools,
-      counts: nextCounts.map(String),
+      counts: nextCounts,
       appName: selectedAppName || undefined,
       includeCounts: nextPath === APP_LIST_PATH,
+      page: nextPage,
+      pageSize: nextPageSize,
     });
 
     navigate({ pathname: nextPath, search: searchFromParams(nextParams) }, { replace: true });
-  }, [impliedCounts, navigate, pathname, selectedAppName]);
+  }, [
+    impliedCounts,
+    navigate,
+    pathname,
+    selectedAppName,
+    selectedCounts,
+    selectedPage,
+    selectedPageSize,
+    selectedTools,
+  ]);
 
   const closeAppModal = useCallback(() => {
     const nextParams = buildSearchParams({
       tools: selectedTools,
       counts: selectedCounts,
       includeCounts,
+      page: selectedPage,
+      pageSize: selectedPageSize,
     });
     setSearchParams(nextParams, { replace: true });
-  }, [includeCounts, selectedCounts, selectedTools, setSearchParams]);
+  }, [
+    includeCounts,
+    selectedCounts,
+    selectedPage,
+    selectedPageSize,
+    selectedTools,
+    setSearchParams,
+  ]);
 
   const getAppHref = useCallback((appName) => {
     const params = buildSearchParams({
@@ -213,10 +272,12 @@ function PageAppList() {
       counts: selectedCounts,
       appName,
       includeCounts,
+      page: selectedPage,
+      pageSize: selectedPageSize,
     });
     const query = params.toString();
     return query ? `?${query}` : '?';
-  }, [includeCounts, selectedCounts, selectedTools]);
+  }, [includeCounts, selectedCounts, selectedPage, selectedPageSize, selectedTools]);
 
   const columns = [
     {
@@ -285,7 +346,12 @@ function PageAppList() {
           columns={columns}
           dataSource={searchedRows}
           onChange={handleTableChange}
-          pagination={{ pageSize: 25, showSizeChanger: true }}
+          pagination={{
+            current: selectedPage,
+            pageSize: selectedPageSize,
+            pageSizeOptions: PAGE_SIZE_OPTIONS,
+            showSizeChanger: true,
+          }}
         />
         <AppDetailsModal
           app={selectedApp}
