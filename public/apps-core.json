@@ -836,6 +836,22 @@
             "alternateNames": []
         },
         {
+            "appName": "All Documents Reader PDF Xlsx",
+            "icon": "all-documents-reader-pdf-xlsx.webp",
+            "websiteUrl": "",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=alldocumentsreader.documentviewer",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Bucket Of Apps Android document viewer (alldocumentsreader.documentviewer). Play title All Documents Reader PDF Xlsx. Android only. Distinct from Adobe Acrobat Reader, PDF Reader & Editor: Xodo, Microsoft Word, and similarly named iOS All Document Reader apps.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "alldocumentsreader.documentviewer"
+            ]
+        },
+        {
             "appName": "AllTrails",
             "icon": "alltrails.webp",
             "websiteUrl": "https://www.alltrails.com",
@@ -2176,6 +2192,38 @@
             ]
         },
         {
+            "appName": "Bestgram",
+            "icon": "bestgram.webp",
+            "websiteUrl": "https://www.bestadio.com",
+            "category": "Communication",
+            "appleStoreUrl": "https://apps.apple.com/us/app/bestgram/id1541881651",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=the.best.gram",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Unofficial Telegram-API Android client (the.best.gram). Play title Bestgram. Historic Apple listing is gone. Distinct from Telegram, Telegram X, Plus Messenger, Best Plus Messenger 2021, BGram, aka, and ClubMessenger Unofficial Telegram.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "the.best.gram"
+            ]
+        },
+        {
+            "appName": "BGram",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.telegram.BifToGram",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Unofficial Telegram-API Android client by Biftor (org.telegram.BifToGram). Play title BGram. Play listing is gone. Android only. Distinct from Telegram, Telegram X, Bestgram, Plus Messenger, Best Plus Messenger 2021, and ClubMessenger Unofficial Telegram.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.telegram.BifToGram"
+            ]
+        },
+        {
             "appName": "BiP",
             "icon": "bip.webp",
             "websiteUrl": "https://bip.com/",
@@ -2440,6 +2488,23 @@
             ]
         },
         {
+            "appName": "BlackSMS - Text Crypt (Ranebord)",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.blacksms",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Ranebord Android SMS encrypt/decrypt client (com.blacksms). Play title BlackSMS - Text Crypt. Both sender and recipient needed the app. Play listing is gone. Android only. Distinct from Blacklist, TrueCaller, and Apple Messages.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.blacksms",
+                "BlackSMS"
+            ]
+        },
+        {
             "appName": "Blackberry Messenger (BBM)",
             "icon": "bbm.webp",
             "websiteUrl": "",
@@ -2455,6 +2520,23 @@
                 "com.bbm",
                 "com.blackberry.bbm1",
                 "BlackBerry Messenger"
+            ]
+        },
+        {
+            "appName": "Blacklist",
+            "icon": "",
+            "websiteUrl": "",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=org.baole.app.blacklist",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "AntTek Mobile Android call and SMS blocker (org.baole.app.blacklist). Play title BlackList. Play listing is gone. Android only. Distinct from TrueCaller, Mr. Number, and Calls Blacklist - Call Blocker (com.vladlee.easyblacklist).",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "org.baole.app.blacklist",
+                "BlackList"
             ]
         },
         {
@@ -2613,6 +2695,22 @@
             "alternateNames": [
                 "com.bolt.deliveryclient",
                 "ee.bolt.deliveryclient"
+            ]
+        },
+        {
+            "appName": "Boltgram",
+            "icon": "boltgram.webp",
+            "websiteUrl": "",
+            "category": "Communication",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.boltgram.messenger.org",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "Unofficial Telegram-API Android client (com.boltgram.messenger.org). Play title Boltgram Messenger. Android only. Distinct from Telegram, Telegram X, Bestgram, BGram, Plus Messenger, and Bolt (formerly Taxify).",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.boltgram.messenger.org"
             ]
         },
         {
@@ -3126,15 +3224,21 @@
             ]
         },
         {
-            "appName": "Catch",
+            "appName": "Catch Notes",
             "icon": "",
             "websiteUrl": "",
+            "category": "Productivity",
             "appleStoreUrl": "",
-            "googlePlayUrl": "",
-            "notes": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.threebanana.notes",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Catch.com / formerly Snaptic and Three Banana notes app (Android com.threebanana.notes, iOS com.snaptic.-banana). Service shut down 2013-08-30. Distinct from Apple Notes, Evernote, Google Keep, and Simplenote.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "",
-            "alternateNames": []
+            "dateUpdated": "2026-09-14",
+            "alternateNames": [
+                "com.threebanana.notes",
+                "com.snaptic.-banana"
+            ]
         },
         {
             "appName": "Catima",
@@ -3168,6 +3272,22 @@
             "alternateNames": [
                 "com.piriform.ccleaner",
                 "com.piriform.ios.ccleaner"
+            ]
+        },
+        {
+            "appName": "Cell 411",
+            "icon": "",
+            "websiteUrl": "https://getcell411.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "https://apps.apple.com/us/app/cell-411/id1023158186",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.safearx.cell411",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "SafeARX / Cell 411 Inc. peer-to-peer emergency alert app (Android and iOS com.safearx.cell411). Store listings removed around summer 2023. Distinct from Citizen, Life360, Nextdoor, and Apple Emergency SOS.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.safearx.cell411"
             ]
         },
         {
@@ -3230,6 +3350,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Cerberus",
+            "icon": "cerberus.webp",
+            "websiteUrl": "https://www.cerberusapp.com/",
+            "category": "Security & Privacy",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ssurebrec",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "LSDroid srl Android anti-theft / find-my-phone (com.ssurebrec; older installs com.lsdroid.cerberus). Play title Anti-theft Alarm Phone Tracker. Android only. Distinct from Google Find My Device, Prey, Lookout, and Avast Mobile Security.",
+            "dateAdded": "2026-09-14",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lsdroid.cerberus",
+                "com.ssurebrec"
+            ]
         },
         {
             "appName": "CheckMyTrip",
