@@ -790,6 +790,25 @@
   height: 240px;
 }
 
+.app-list-tool-cell {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.app-list-tool-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.app-list-tool-item img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
 .dashboard-one-hit-column {
   display: flex;
   flex-direction: column;

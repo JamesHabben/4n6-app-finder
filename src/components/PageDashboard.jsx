@@ -1,4 +1,5 @@
-import React, { useContext, useMemo } from 'react';
+import React, { useCallback, useContext, useMemo } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Card, Typography } from 'antd';
 import { DataContext } from 'services/DataContext';
 import { buildToolCountHistogram } from 'services/toolCountHistogram';
@@ -6,6 +7,7 @@ import ListBarCard from 'components/dashboardComponents/ListBarCard';
 import ProgressBarCard from 'components/dashboardComponents/ToolProgressCard';
 import OneHitWondersCard from 'components/dashboardComponents/OneHitWondersCard';
 import ToolsPerAppChart from 'components/ToolsPerAppChart';
+import { APP_LIST_PATH, ONE_HIT_PATH, WISH_LIST_PATH } from 'components/PageAppList';
 
 const { Text } = Typography;
 
@@ -44,7 +46,19 @@ function getOneHitWonderCounts(apps) {
 }
 
 function PageDashboard() {
+  const navigate = useNavigate();
   const { apps, tools } = useContext(DataContext);
+  const openToolCount = useCallback((toolsCount) => {
+    if (toolsCount === 0) {
+      navigate(WISH_LIST_PATH);
+      return;
+    }
+    if (toolsCount === 1) {
+      navigate(ONE_HIT_PATH);
+      return;
+    }
+    navigate(`${APP_LIST_PATH}?count=${toolsCount}`);
+  }, [navigate]);
   const oneHitWonders = useMemo(
     () => apps.filter(app => app.mappedTools?.length === 1),
     [apps],
@@ -65,8 +79,9 @@ function PageDashboard() {
             <Text type="secondary" className="dashboard-chart-note">
               How many forensic tools parse each of {apps.length} catalog apps.
               Gray is listed with no tool map yet; gold is one-hit wonders.
+              Click a bar to open that list.
             </Text>
-            <ToolsPerAppChart histogram={toolCountHistogram} />
+            <ToolsPerAppChart histogram={toolCountHistogram} onBarClick={openToolCount} />
           </Card>
         </div>
         <ListBarCard

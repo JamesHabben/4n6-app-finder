@@ -20,7 +20,7 @@ function barFill(tools) {
   return '#1677ff';
 }
 
-function ToolsPerAppChart({ histogram, seriesName = 'Apps' }) {
+function ToolsPerAppChart({ histogram, seriesName = 'Apps', onBarClick }) {
   return (
     <div className="tools-per-app-chart">
       <ResponsiveContainer width="100%" height="100%">
@@ -37,7 +37,18 @@ function ToolsPerAppChart({ histogram, seriesName = 'Apps' }) {
             itemStyle={{ color: '#141414' }}
             labelStyle={{ color: '#141414' }}
           />
-          <Bar dataKey="count" radius={[3, 3, 0, 0]}>
+          <Bar
+            dataKey="count"
+            radius={[3, 3, 0, 0]}
+            cursor={onBarClick ? 'pointer' : 'default'}
+            isAnimationActive={false}
+            onClick={(data) => {
+              const toolsCount = data?.payload?.tools ?? data?.tools;
+              if (onBarClick && toolsCount !== undefined) {
+                onBarClick(toolsCount);
+              }
+            }}
+          >
             {histogram.map(bin => (
               <Cell key={bin.tools} fill={barFill(bin.tools)} />
             ))}

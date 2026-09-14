@@ -1,13 +1,14 @@
 import React from 'react';
 import { Card, Progress, Typography } from 'antd';
 import { useNavigate } from 'react-router-dom';
+import { ONE_HIT_PATH } from 'components/PageAppList';
 
 const { Text } = Typography;
 
 function OneHitWondersCard({ oneHitCount, totalApps }) {
   const navigate = useNavigate();
   const percent = totalApps > 0 ? Number(((oneHitCount / totalApps) * 100).toFixed(1)) : 0;
-  const openOneHitWonders = () => navigate('/dashboard/one-hit-wonders');
+  const openOneHitWonders = () => navigate(ONE_HIT_PATH);
 
   const handleKeyDown = event => {
     if (event.key === 'Enter' || event.key === ' ') {

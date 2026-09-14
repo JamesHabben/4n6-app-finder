@@ -1,3 +1,5 @@
+## 2026-09-14
+- App list by tool count, with One-Hit Wonders and Wish List shortcuts
 ## 2026-09-10
 - Added MSAB XRY / XAMN to the tools list
 ## 2026-09-06
