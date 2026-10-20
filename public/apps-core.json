@@ -322,10 +322,14 @@
             "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.fitnesskeeper.runkeeper.pro",
             "activeOnAppleStore": "true",
             "activeOnPlayStore": "true",
-            "notes": "",
+            "notes": "ASICS Runner App, Inc. GPS run tracker (Android com.fitnesskeeper.runkeeper.pro, iOS RunKeeperPro). Play title ASICS Runkeeper: Fitness App. Apple title ASICS Runkeeper—Run Tracker. Apple genre Health & Fitness. Distinct from adidas Running, Strava, Nike Run Club, and Map My Run.",
             "dateAdded": "2023-10-11",
-            "dateUpdated": "2026-07-11",
-            "alternateNames": []
+            "dateUpdated": "2026-10-20",
+            "alternateNames": [
+                "com.fitnesskeeper.runkeeper.pro",
+                "RunKeeperPro",
+                "ASICS Runkeeper—Run Tracker"
+            ]
         },
         {
             "appName": "ASKfm",
@@ -356,6 +360,24 @@
             "alternateNames": [
                 "com.astrotalk",
                 "codeyeti.com.AstroYeti"
+            ]
+        },
+        {
+            "appName": "ATAK-CIV (Civil Use)",
+            "icon": "atak-civ-civil-use.webp",
+            "websiteUrl": "https://tak.gov",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.atakmap.app.civ",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "true",
+            "notes": "TAK Product Center / DoD Android Team Awareness Kit civil build (com.atakmap.app.civ). Open-source geospatial situational awareness. Play category Maps & Navigation. Distinct from iTAK.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.atakmap.app.civ",
+                "ATAK",
+                "Team Awareness Kit"
             ]
         },
         {
@@ -503,6 +525,22 @@
             "dateUpdated": "",
             "alternateNames": [
                 "mobi.infolife.ezweather.livewallpaper.wealwp.weatherforecast.realtime"
+            ]
+        },
+        {
+            "appName": "Accurate Weather Report",
+            "icon": "accurate-weather-report.webp",
+            "websiteUrl": "",
+            "category": "Weather",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=mobi.infolife.ezweather.widget.weather.location.app.roi",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Weather Widget Theme Dev Team / infolife ezWeather Android widget (mobi.infolife.ezweather.widget.weather.location.app.roi). Play listing removed. No official iOS app. Distinct from Accurate Weather Forecast, Accurate Weather Forecast App & Radar, Accurate Weather Live Forecast App, 7 day weather forecast, and AccuWeather: Weather Radar.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "mobi.infolife.ezweather.widget.weather.location.app.roi"
             ]
         },
         {
@@ -770,6 +808,22 @@
             "alternateNames": [
                 "org.aka.messenger",
                 "aka Messenger"
+            ]
+        },
+        {
+            "appName": "Alarm Clock - Wake up Music",
+            "icon": "alarm-clock-wake-up-music.webp",
+            "websiteUrl": "https://www.impalastudios.com/alarm-clock/",
+            "category": "Productivity",
+            "appleStoreUrl": "https://apps.apple.com/us/app/alarm-clock-wake-up-music/id406141511",
+            "googlePlayUrl": "",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "false",
+            "notes": "Impala Studios B.V. iOS alarm / nightstand clock (com.alarmclockcompany.alarmclock4free). Apple genre Utilities. No current Android dump row. Distinct from Apple Clock.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.alarmclockcompany.alarmclock4free"
             ]
         },
         {
@@ -1996,6 +2050,24 @@
                 "com.bankid.bus",
                 "com.bankidapp.BankId",
                 "com.bankidapp.BankID"
+            ]
+        },
+        {
+            "appName": "Barcode Scanner",
+            "icon": "barcode-scanner.webp",
+            "websiteUrl": "https://github.com/zxing/zxing",
+            "category": "Productivity",
+            "appleStoreUrl": "",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.google.zxing.client.android",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "ZXing / Zebra Crossing Android barcode client (com.google.zxing.client.android). Play listing removed. No official iOS app. Distinct from QR & Barcode Scanner, QR Reader for iPhone, QR Droid, and QRbot.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.google.zxing.client.android",
+                "ZXing",
+                "ZXing Barcode Scanner"
             ]
         },
         {
@@ -4019,6 +4091,23 @@
             "alternateNames": [
                 "com.disney.disneyplus",
                 "Disney Plus"
+            ]
+        },
+        {
+            "appName": "District",
+            "icon": "district.webp",
+            "websiteUrl": "https://www.district.in/",
+            "category": "Entertainment",
+            "appleStoreUrl": "https://apps.apple.com/us/app/district-movies-events-dining/id6670536058",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.application.zomato.district",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Zomato / Eternal Limited India movies, events, and dining app (Android com.application.zomato.district, iOS com.district.prod). Store title District: Movies Events Dining. Apple genre Lifestyle. Distinct from BookMyShow.com and Fandango.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.application.zomato.district",
+                "com.district.prod"
             ]
         },
         {
@@ -6395,6 +6484,23 @@
             ]
         },
         {
+            "appName": "HryFine",
+            "icon": "hryfine.webp",
+            "websiteUrl": "http://lhzl666.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/hryfine/id1447215452",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.lianhezhuli.hyfit",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Shenzhen United Power Technology Co., Ltd. generic Bluetooth fitness-band companion (Android com.lianhezhuli.hyfit, iOS com.yscoco.watch). Apple genre Sports. Distinct from Garmin Connect, Zepp Life, Samsung Health, and Google Health (Fitbit).",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.lianhezhuli.hyfit",
+                "com.yscoco.watch"
+            ]
+        },
+        {
             "appName": "Icing",
             "icon": "icing.webp",
             "websiteUrl": "https://developer.android.com/guide/topics/search/appsearch",
@@ -6818,6 +6924,25 @@
             "alternateNames": []
         },
         {
+            "appName": "KakaoMap",
+            "icon": "kakaomap.webp",
+            "websiteUrl": "https://map.kakao.com/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/kakaomap-korea-no-1-map/id304608425",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.daum.android.map",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Kakao Corp. Korea maps and navigation (Android net.daum.android.map, iOS net.daum.maps). Formerly Daum Map. Play title KakaoMap - Map / Navigation. Apple title KakaoMap - Korea No.1 Map. Apple genre Navigation. Distinct from KakaoTalk, Kakao Story, Google Maps, and Apple Maps.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "net.daum.android.map",
+                "net.daum.maps",
+                "Daum Map",
+                "카카오맵"
+            ]
+        },
+        {
             "appName": "KakaoTalk",
             "icon": "kakaotalk.webp",
             "websiteUrl": "https://www.kakaocorp.com/page/service/service/KakaoTalk",
@@ -6929,6 +7054,22 @@
             ]
         },
         {
+            "appName": "Kick",
+            "icon": "kick.webp",
+            "websiteUrl": "https://www.kick.com",
+            "category": "Photo & Video",
+            "appleStoreUrl": "https://apps.apple.com/us/app/kick-live-streaming/id6446202561",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.kick.mobile",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Kick Streaming Pty Ltd live streaming (Android and iOS com.kick.mobile). Play title KICK: Live Streaming. Apple title KICK - Live Streaming. Apple genre Photo & Video. Distinct from Twitch, YouTube, and Kik Messenger.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.kick.mobile"
+            ]
+        },
+        {
             "appName": "Kijiji",
             "icon": "kijiji.webp",
             "websiteUrl": "https://www.kijiji.ca",
@@ -7035,6 +7176,24 @@
             ]
         },
         {
+            "appName": "Knot.dating",
+            "icon": "knot-dating.webp",
+            "websiteUrl": "https://knot.dating",
+            "category": "Dating",
+            "appleStoreUrl": "https://apps.apple.com/us/app/knot-dating-ai-matrimony/id6736513328",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.knotdating.live",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Hoodlive Internet Private Limited India AI matrimony / matchmaking (Android com.knotdating.live, iOS com.join.knotdating). Store title Knot.dating - AI Matrimony. Apple genre Social Networking. Distinct from Tinder, Bumble, and Aisle.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.knotdating.live",
+                "com.join.knotdating",
+                "Knot.Dating"
+            ]
+        },
+        {
             "appName": "KnowledgeC",
             "icon": "knowledgec.webp",
             "websiteUrl": "",
@@ -7061,6 +7220,23 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "komoot",
+            "icon": "komoot.webp",
+            "websiteUrl": "https://www.komoot.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/komoot-hike-bike-run/id447374873",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=de.komoot.android",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "komoot GmbH hike / bike / run planner and GPS navigator (Android de.komoot.android, iOS de.komoot.berlinbikeapp). Store title komoot - hike, bike & run. Apple genre Health & Fitness. Distinct from AllTrails, Strava, Map My Run, and Adidas Running / Runtastic.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "de.komoot.android",
+                "de.komoot.berlinbikeapp"
+            ]
         },
         {
             "appName": "Kwai",
@@ -7306,6 +7482,25 @@
             ]
         },
         {
+            "appName": "Luno",
+            "icon": "luno.webp",
+            "websiteUrl": "https://www.luno.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/luno-buy-crypto-and-us-stocks/id927362479",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=co.bitx.android.wallet",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Luno Group / Luno Pte Ltd crypto exchange and wallet (Android co.bitx.android.wallet, iOS za.co.Bitx). Formerly BitX. Play title Luno: Buy Bitcoin & Crypto. Apple title Luno: Buy Crypto and US Stocks. Apple genre Finance. Distinct from Coinbase, Binance, BRD - bitcoin wallet, and Phantom.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "co.bitx.android.wallet",
+                "za.co.bitx",
+                "za.co.Bitx",
+                "BitX"
+            ]
+        },
+        {
             "appName": "Lyft",
             "icon": "lyft.webp",
             "websiteUrl": "",
@@ -7315,6 +7510,43 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Magicbricks",
+            "icon": "magicbricks.webp",
+            "websiteUrl": "https://www.magicbricks.com",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/magicbricks-property-search/id486328406",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.timesgroup.magicbricks",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Magicbricks Realty Services / Times Group India real-estate classifieds (Android com.timesgroup.magicbricks, iOS com.timesgroup.magicbricksdist). Play title Magicbricks Buy, Rent Property. Apple title Magicbricks Property Search. Apple genre Business. Distinct from 99acres, Craigslist, OfferUp, and letgo.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.timesgroup.magicbricks",
+                "com.timesgroup.magicbricksdist",
+                "MagicBricks"
+            ]
+        },
+        {
+            "appName": "MagicPin",
+            "icon": "magicpin.webp",
+            "websiteUrl": "https://magicpin.in",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/in/app/magicpin-food-fashion-delivery/id1171775851",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.magicpin.local",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Samast Technologies Private Limited India local deals, dining, and food delivery (Android com.magicpin.local, iOS in.magicpin.ios). Play title magicpin:Food Delivery, Dining. Apple title magicpin:Food|Fashion|Delivery. Apple genre Food & Drink. Not on the US App Store. Distinct from Magicbricks, District, and Blinkit: Groceries & more.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.magicpin.local",
+                "in.magicpin.ios",
+                "magicpin",
+                "magicpin:Food Delivery, Dining"
+            ]
         },
         {
             "appName": "Magisk",
@@ -7446,6 +7678,24 @@
             "alternateNames": []
         },
         {
+            "appName": "MakeMyTrip",
+            "icon": "makemytrip.webp",
+            "websiteUrl": "https://www.makemytrip.com",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/makemytrip-flight-hotel-bus/id530488359",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.makemytrip",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "MakeMyTrip India Pvt. Ltd. flights, hotels, buses, and trains (Android com.makemytrip, iOS com.Iphone.MMT). Play title MakeMyTrip - Flights & Hotels. Apple title MakeMyTrip Flight, Hotel, Bus. Apple genre Travel. Distinct from Booking.com, Agoda Hotels & Flights, and Expedia.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.makemytrip",
+                "com.Iphone.MMT",
+                "MMT"
+            ]
+        },
+        {
             "appName": "Mandarin IM",
             "icon": "mandarin-im.webp",
             "websiteUrl": "",
@@ -7559,6 +7809,24 @@
             "alternateNames": []
         },
         {
+            "appName": "Mappls",
+            "icon": "mappls.webp",
+            "websiteUrl": "https://about.mappls.com/app/",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mappls-mapmyindia-maps/id723492531",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mmi.maps",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "CE Info Systems Limited (MapmyIndia) maps, navigation, and safety alerts (Android com.mmi.maps, iOS com.mapmyindia.mmi). Play title Mappls MapmyIndia Maps, Safety. Apple title Mappls MapmyIndia Maps. Apple genre Navigation. Distinct from Google Maps, Apple Maps, KakaoMap, and Mappy.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mmi.maps",
+                "com.mapmyindia.mmi",
+                "MapmyIndia"
+            ]
+        },
+        {
             "appName": "Mappy",
             "icon": "mappy.webp",
             "websiteUrl": "https://www.mappy.com/",
@@ -7571,6 +7839,23 @@
             "dateAdded": "2026-07-13",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Mapy.com",
+            "icon": "mapy-com.webp",
+            "websiteUrl": "https://mapy.com",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/mapy-com-maps-offline-gps/id411411020",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.seznam.mapy",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Seznam.cz a.s. outdoor maps, GPS navigation, and offline planner (Android/iOS cz.seznam.mapy). Play title Mapy.com: Offline Outdoor Maps. Apple title Mapy.com: Maps Offline & GPS. Formerly Mapy.cz. Apple genre Travel. Distinct from Mappy, Google Maps, komoot, and AllTrails.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "cz.seznam.mapy",
+                "Mapy.cz"
+            ]
         },
         {
             "appName": "Marco Polo",
@@ -7663,7 +7948,7 @@
             "activeOnPlayStore": "true",
             "notes": "Sgrouples Inc. social network (formerly Sgrouples). Android and iOS both com.mewe. Apple genre Social Networking. Distinct from MeetMe.",
             "dateAdded": "2026-07-11",
-            "dateUpdated": "2026-08-19",
+            "dateUpdated": "2026-10-20",
             "alternateNames": [
                 "com.mewe",
                 "Sgrouples"
@@ -7679,6 +7964,23 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Meesho",
+            "icon": "meesho.webp",
+            "websiteUrl": "https://meesho.com/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/meesho-online-shopping/id1457958492",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.meesho.supply",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Meesho Inc. / Meesho Technologies Private Limited India marketplace (Android com.meesho.supply, iOS com.meesho.Meesho). Play title Meesho: Online Shopping App. Apple title Meesho: Online Shopping. Apple genre Shopping. Distinct from Flipkart, Amazon Shopping, Myntra, AliExpress, and MagicPin.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.meesho.supply",
+                "com.meesho.Meesho"
+            ]
         },
         {
             "appName": "Meet24",
@@ -8031,6 +8333,23 @@
             ]
         },
         {
+            "appName": "MobiKwik",
+            "icon": "mobikwik.webp",
+            "websiteUrl": "https://www.mobikwik.com",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/in/app/mobikwik-loans-upi-wallet/id600002523",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.mobikwik_new",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "One MobiKwik Systems Limited India wallet, UPI, and loans (Android com.mobikwik_new, iOS com.mobikwik). Store title MobiKwik: Loans, UPI & Wallet. Not on the US App Store. Play listing is India-oriented. Apple genre Finance. Distinct from Paytm, PhonePe, Google Pay, and BHIM.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.mobikwik_new",
+                "com.mobikwik"
+            ]
+        },
+        {
             "appName": "Mint Browser",
             "icon": "",
             "websiteUrl": "",
@@ -8306,6 +8625,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "My Train (Můj vlak)",
+            "icon": "my-train.webp",
+            "websiteUrl": "https://www.cd.cz",
+            "category": "Travel",
+            "appleStoreUrl": "https://apps.apple.com/us/app/my-train-můj-vlak/id839519767",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.cd.mujvlak.an",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "České dráhy, a.s. Czech Railways tickets and journey info (Android cz.cd.mujvlak.an, iOS cz.cd.mujvlak). Apple title My train (Můj vlak). Apple genre Travel.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "cz.cd.mujvlak.an",
+                "cz.cd.mujvlak",
+                "Můj vlak"
+            ]
         },
         {
             "appName": "MyFitnessPal",
@@ -8956,6 +9293,25 @@
             ]
         },
         {
+            "appName": "Packeta",
+            "icon": "packeta.webp",
+            "websiteUrl": "https://www.zasilkovna.cz/",
+            "category": "Shopping",
+            "appleStoreUrl": "https://apps.apple.com/us/app/packeta/id1439905771",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=cz.zasilkovna.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Zásilkovna s.r.o. / Packeta Group parcel pickup and Z-BOX app (Android cz.zasilkovna.app, iOS cz.zasilkovna.zasilkovna). Czech brand Zásilkovna. Apple genre Shopping. Distinct from DHL.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "cz.zasilkovna.app",
+                "cz.zasilkovna.zasilkovna",
+                "Zásilkovna",
+                "Zasilkovna"
+            ]
+        },
+        {
             "appName": "Pebble Smartwatch",
             "icon": "pebble.webp",
             "websiteUrl": "",
@@ -8982,6 +9338,23 @@
             "dateAdded": "2026-07-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "ParKing",
+            "icon": "parking.webp",
+            "websiteUrl": "https://iltalentapps.wixsite.com/talent-apps/parking",
+            "category": "Maps & Navigation",
+            "appleStoreUrl": "https://apps.apple.com/us/app/parking-find-my-parked-car/id1233322576",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=il.talent.parking",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "Talent Apps / Tal Porat parked-car locator (Android and iOS il.talent.parking). Play title ParKing: Where is my car? Find. Apple title ParKing - Find My Parked Car. Apple genre Navigation. Distinct from ParkMobile, ParkWhiz, and PayByPhone.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "il.talent.parking",
+                "ParKing - Find My Parked Car"
+            ]
         },
         {
             "appName": "ParkMobile",
@@ -9076,6 +9449,42 @@
             ]
         },
         {
+            "appName": "Paytm",
+            "icon": "paytm.webp",
+            "websiteUrl": "https://paytm.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/paytm-secure-upi-payments/id473941634",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=net.one97.paytm",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "One97 Communications Ltd. India UPI / wallet / recharge app (Android net.one97.paytm, iOS com.one97.paytm). Store title Paytm: Secure UPI Payments. Apple genre Finance. Distinct from Google Pay, PhonePe, Paypal, and PayByPhone. Do not fold Paytm Money or merchant SKUs here.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "net.one97.paytm",
+                "com.one97.paytm",
+                "पेटीएम"
+            ]
+        },
+        {
+            "appName": "Pedometer - Step Counter",
+            "icon": "pedometer-step-counter.webp",
+            "websiteUrl": "https://ito-technologies.com",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/pedometer-%CE%B1-step-counter/id1027151285",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.tayu.tau.pedometer",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "ITO Technologies, Inc. step counter (Android com.tayu.tau.pedometer, iOS com.ito-technologies.Pedometer). Play title Pedometer - Step Counter. Apple title Pedometer α - Step Counter. Apple genre Health & Fitness. Distinct from Google Fit, Samsung Health, and Apple Health.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.ito-technologies.Pedometer",
+                "com.tayu.tau.pedometer",
+                "Pedometer α - Step Counter"
+            ]
+        },
+        {
             "appName": "Peeks Social",
             "icon": "peeks-social.webp",
             "websiteUrl": "",
@@ -9126,6 +9535,24 @@
             ]
         },
         {
+            "appName": "PharmEasy",
+            "icon": "pharmeasy.webp",
+            "websiteUrl": "https://pharmeasy.in/",
+            "category": "Health & Fitness",
+            "appleStoreUrl": "https://apps.apple.com/us/app/pharmeasy-healthcare-app/id982432643",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.phonegap.rxpal",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "India online pharmacy, labs, and doctor consults (Android com.phonegap.rxpal, iOS com.pharmeasy.PharmEasy). Store title PharmEasy - Healthcare App. Apple genre Medical. Distinct from Apollo247.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.pharmeasy.PharmEasy",
+                "com.phonegap.rxpal",
+                "RxPal"
+            ]
+        },
+        {
             "appName": "Phoenix browser",
             "icon": "",
             "websiteUrl": "",
@@ -9146,6 +9573,24 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "PhonePe",
+            "icon": "phonepe.webp",
+            "websiteUrl": "https://www.phonepe.com/",
+            "category": "Finance",
+            "appleStoreUrl": "https://apps.apple.com/us/app/phonepe-upi-gold-insurance/id1170055821",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.phonepe.app",
+            "activeOnAppleStore": "true",
+            "activeOnPlayStore": "true",
+            "notes": "PhonePe Private Limited India UPI / recharge / insurance app (Android com.phonepe.app, iOS com.phonepe.PhonePeApp). Play title PhonePe UPI Payments, Loan App; Apple title PhonePe: UPI, Gold, Insurance. Apple genre Finance. Distinct from Google Pay, Paytm, Paypal, and BHIM.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.phonepe.app",
+                "com.phonepe.phonepeapp",
+                "com.phonepe.PhonePeApp"
+            ]
         },
         {
             "appName": "Photo Vault Pro",
@@ -9298,6 +9743,25 @@
             "dateAdded": "2023-10-11",
             "dateUpdated": "",
             "alternateNames": []
+        },
+        {
+            "appName": "Pocket",
+            "icon": "pocket.webp",
+            "websiteUrl": "https://getpocket.com/",
+            "category": "News",
+            "appleStoreUrl": "https://apps.apple.com/us/app/pocket-stay-informed/id309601447",
+            "googlePlayUrl": "https://play.google.com/store/apps/details?id=com.ideashower.readitlater.pro",
+            "activeOnAppleStore": "false",
+            "activeOnPlayStore": "false",
+            "notes": "Mozilla read-it-later app (Android com.ideashower.readitlater.pro, iOS com.ideashower.ReadItLaterPro). Originally Read It Later. Play title Pocket: Save. Read. Grow. Apple title Pocket: Stay Informed. Apple genre News. Mozilla shut the service down 2025-07-08 and removed store listings. Distinct from Pocket Casts.",
+            "dateAdded": "2026-10-20",
+            "dateUpdated": "",
+            "alternateNames": [
+                "com.ideashower.ReadItLaterPro",
+                "com.ideashower.readitlater.pro",
+                "Read It Later",
+                "Pocket: Stay Informed"
+            ]
         },
         {
             "appName": "Podcast Addict",
